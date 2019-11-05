@@ -42,7 +42,7 @@ for i, x in protein_list0.iterrows():
     pdb_file = infile + s0 +'/model1.pdb'
     second_file = '/Users/luho/Documents/GitHub/De-nevo-protein-3D-structure-yeast/pdb_itasser_structure_mapping/' + s0 + '@model1.pdb'
     shutil.copy(pdb_file, second_file)
-    protein_list0['pdbid'][i] = s0 + '@model1.pdb'
+    protein_list0['pdbid'][i] = s0 + '@model1'
 
 # then we check the residues number in each pdb file and compared it with the original protein length
 from Bio.PDB.PDBParser import PDBParser
@@ -50,7 +50,7 @@ protein_list0['protein_length'] = [None]*len(protein_list0['geneID'])
 for i, x in protein_list0.iterrows():
     print(i, x['pdbid'])
     s0 = x['pdbid']
-    in_file = '/Users/luho/Documents/GitHub/De-nevo-protein-3D-structure-yeast/pdb_itasser_structure_mapping/' + s0
+    in_file = '/Users/luho/Documents/GitHub/De-nevo-protein-3D-structure-yeast/pdb_itasser_structure_mapping/' + s0 + '.pdb'
     p = PDBParser()
     structure = p.get_structure(s0, in_file)
     model = structure[0]
@@ -65,5 +65,5 @@ for i, x in protein_list0.iterrows():
 protein_list0['sstart2'] = [1]*len(protein_list0['geneID'])
 protein_list0['send2'] = protein_list0['protein_length']
 protein_list0['locus'] = protein_list0['geneID']
-protein_list0.to_excel('pdb_itasser.xlsx')
+protein_list0.to_excel('/Users/luho/Documents/GitHub/De-nevo-protein-3D-structure-yeast/pdb_itasser.xlsx')
 # lastly we will calculate the residue distance matrix
