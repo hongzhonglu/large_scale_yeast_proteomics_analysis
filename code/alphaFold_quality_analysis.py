@@ -25,7 +25,6 @@ for i in all_pdb:
 data_merge = pd.DataFrame({"id":all_pdb, "score":PITT_score})
 data_merge_low_quality = data_merge[data_merge["score"] < 75]
 data_merge_high_quality = data_merge[data_merge["score"] >= 75]
-data_merge.to_excel("result/alphafold_quality.xlsx")
 
 
 # based on quality, estimate which enzyme from Yeast8 need re-modelling
@@ -59,6 +58,8 @@ def multiMapping (description, item1, item2, dataframe=True, sep=";", removeDupl
             result[i] = None
     return result
 data_merge["gene"] = multiMapping(description=id_mapping["GeneName"], item1=id_mapping["Entry"], item2=data_merge["id_update"])
+data_merge.to_excel("result/alphafold_quality_with_gene_ID.xlsx")
+
 
 # input model information
 yeast_gem = pd.read_excel("/Users/xluhon/Documents/GitHub/yeast-GEM/model/yeast-GEM.xlsx", sheet_name="GENES")
