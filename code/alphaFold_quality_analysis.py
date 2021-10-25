@@ -57,6 +57,7 @@ def multiMapping (description, item1, item2, dataframe=True, sep=";", removeDupl
         else:
             result[i] = None
     return result
+
 data_merge["gene"] = multiMapping(description=id_mapping["GeneName"], item1=id_mapping["Entry"], item2=data_merge["id_update"])
 data_merge.to_excel("result/alphafold_quality_with_gene_ID.xlsx")
 
