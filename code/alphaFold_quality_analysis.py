@@ -1,5 +1,7 @@
 # Ref to this nice tutorial:
 # http://rasbt.github.io/biopandas/tutorials/Working_with_PDB_Structures_in_DataFrames/
+# volume calculation
+"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb"
 
 
 from Bio.PDB import *
@@ -25,6 +27,7 @@ for i in all_pdb:
 data_merge = pd.DataFrame({"id":all_pdb, "score":PITT_score})
 data_merge_low_quality = data_merge[data_merge["score"] < 75]
 data_merge_high_quality = data_merge[data_merge["score"] >= 75]
+
 
 
 # based on quality, estimate which enzyme from Yeast8 need re-modelling
@@ -63,6 +66,7 @@ data_merge.to_excel("result/alphafold_quality_with_gene_ID.xlsx")
 
 
 # input model information
+# remove column of "#"
 yeast_gem = pd.read_excel("/Users/xluhon/Documents/GitHub/yeast-GEM/model/yeast-GEM.xlsx", sheet_name="GENES")
 
 # merge the structure information with model
@@ -81,8 +85,13 @@ ax.set_ylabel("Density")
 score_list = yeast_gem["average_score"].tolist()
 score_high =[x for x in score_list if x >= 75]
 
+# save the data
+yeast_gem0 = yeast_gem[['NAME','SHORT NAME', 'structure_id','average_score']]
+yeast_gem0.to_excel("result/yeast_gem_with_structure_id_and_score.xlsx")
+
+
 # find position of specific protein
-data_merge["id_update"][data_merge["id_update"] == "P38427"].index[0]
+# data_merge["id_update"][data_merge["id_update"] == "P38427"].index[0]
 
 
 

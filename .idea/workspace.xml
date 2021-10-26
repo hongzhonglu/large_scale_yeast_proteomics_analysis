@@ -4,8 +4,9 @@
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/alphaFold_quality_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/protein_size_calculation_based_on_rough_estimation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/protein_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/sce_protein_size_rough.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/sce_protein_size_rough.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/preprocess_pdb_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/preprocess_pdb_file_ITASSER.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure_based_parameters.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
