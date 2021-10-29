@@ -14,7 +14,7 @@ data_merge = pd.read_csv("data/sce_protein_weight.tsv",sep='\t')
 # calculate the size of proteins
 radius_list = []
 volume_list = []
-surface_list = []
+section_area_list = []
 for i, x in data_merge.iterrows():
     print(x["proteins_molecular_weight"])
     molecular_weight = x["proteins_molecular_weight"]
@@ -22,13 +22,13 @@ for i, x in data_merge.iterrows():
     radius_list.append(radius) # unit is the nm!!
     volume = 4/3*math.pi*radius**3
     volume_list.append(volume)
-    surface = 4*math.pi*radius**2
-    surface_list.append(surface)
+    section_area = math.pi*radius**2
+    section_area_list.append(section_area)
 
 
 data_merge["radius"] = radius_list
 data_merge["volume"] = volume_list
-data_merge["surface"] = surface_list
+data_merge["section_area"] = section_area_list
 
 data_merge.to_excel("result/sce_protein_size_rough.xlsx")
 
@@ -119,9 +119,13 @@ data_merge1 = data_merge[~data_merge['Protein'].isnull()]
 data_merge1["Total_Volume"] = singleMapping(volume_df0["Total_Volume"],volume_df0["Protein"],data_merge1["Protein"])
 data_merge1["Void_Volume"] = singleMapping(volume_df0["Void_Volume"],volume_df0["Protein"],data_merge1["Protein"])
 data_merge1["VDW_Volume"] = singleMapping(volume_df0["VDW_Volume"],volume_df0["Protein"],data_merge1["Protein"])
+data_merge1["radius_new"] = singleMapping(volume_df0["radius"],volume_df0["Protein"],data_merge1["Protein"])
+data_merge1["section_area_new"] = singleMapping(volume_df0["section_area"],volume_df0["Protein"],data_merge1["Protein"])
+
+
+data_merge1.to_excel("result/sce_protein_size_3D_structure_combine.xlsx")
 
 # plot the density graph
-data_merge1.to_excel("result/sce_protein_size_3D_structure_combine.xlsx")
 ax = data_merge1.plot.scatter(x='volume', y='Total_Volume')
 ax.set_title("")
 ax.set_xlabel("Rough estimated volume(nm^3)")
