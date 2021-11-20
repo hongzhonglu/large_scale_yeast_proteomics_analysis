@@ -30,8 +30,6 @@ data_merge["radius"] = radius_list
 data_merge["volume"] = volume_list
 data_merge["section_area"] = section_area_list
 
-data_merge.to_excel("result/sce_protein_size_rough.xlsx")
-
 # second part
 # calculate the protein size based on its protein 3D structures
 input_file = "data/OutputDir_alphafold_pdb_11554388610859884589.txt"
@@ -74,7 +72,6 @@ volume_df0 = volume_df.copy()
 volume_df0["Total_Volume"] = volume_df["Total_Volume"]/1000
 volume_df0["Void_Volume"] = volume_df["Void_Volume"]/1000
 volume_df0["VDW_Volume"] = volume_df["VDW_Volume"]/1000
-volume_df0.to_excel("result/sce_protein_size_3D_structure.xlsx")
 
 
 # calculate the radius and sectional area of a protein
@@ -123,8 +120,6 @@ data_merge1["radius_new"] = singleMapping(volume_df0["radius"],volume_df0["Prote
 data_merge1["section_area_new"] = singleMapping(volume_df0["section_area"],volume_df0["Protein"],data_merge1["Protein"])
 
 
-data_merge1.to_excel("result/sce_protein_size_3D_structure_combine.xlsx")
-
 # plot the density graph
 ax = data_merge1.plot.scatter(x='volume', y='Total_Volume')
 ax.set_title("")
@@ -132,3 +127,17 @@ ax.set_xlabel("Rough estimated volume(nm^3)")
 ax.set_ylabel("Structure_based volume(nm^3)")
 ax.set_xlim(0,350)
 ax.set_ylim(0,350)
+
+# however some proteins did not have protein 3D structures, then we still need the data from the molecualr weight
+data_merge1 = data_merge1[['DBID', 'locus','Total_Volume', 'section_area_new']]
+gene_no_structure = list(set(data_merge["locus"])-set(data_merge1["locus"]))
+data_need_added = data_merge[data_merge["locus"].isin(gene_no_structure)]
+data_need_added = data_need_added[['DBID', 'locus','volume', 'section_area']]
+data_need_added.columns = ['DBID', 'locus','Total_Volume', 'section_area_new']
+
+# combine the dataset
+data_for_save = pd.concat([data_merge1, data_need_added], axis=0)
+data_for_save.to_excel("result/sce_protein_size_3D_structure.xlsx")
+
+
+

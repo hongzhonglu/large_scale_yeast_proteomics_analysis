@@ -1,4 +1,4 @@
-# this script is to process proteomics datasets
+# this script is to rescale proteomics datasets
 # 2021-11-16
 
 
@@ -61,10 +61,10 @@ Ncell = 1/Mcell #1.1e7
 # set a coefficent to transform the mmol/g.Biomass into molecular/cell
 # this step should be careful in the late calculation
 coefficient0 = 6.022e20/Ncell
-abundance["abundance_per_biomass3"] = abundance["abundance_per_biomass2"]*coefficient0 # Molecular/cell
+abundance["copy_per_cell"] = abundance["abundance_per_biomass2"]*coefficient0 # Molecular/cell
 
-
-
+# output
+abundance.to_excel("result/abundance_paxdb.xlsx")
 
 
 
