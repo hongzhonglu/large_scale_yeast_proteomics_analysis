@@ -91,13 +91,18 @@ gene_combine.to_excel("result/gene_compartment_mapping.xlsx")
 #genes_mitochondrion = getGeneListFromLocation(gene_combine, 'mitochondrion')
 
 
+
+
 # Creating a bar chart with the parameters
 # first remove the duplications
-gene_combine["combine"] = gene_combine["DBID"] + "@" + gene_combine["compartment"]
-gene_combine1 = gene_combine.drop_duplicates(subset='combine', keep="last") # this step is not right!!
-#genes_mitochondrion = getGeneListFromLocation(gene_combine, 'mitochondrion')
+# this step is not right!! This is because that the column of compartment is from manual check, maybe not right in some protein compartment annotations.
 
+gene_combine["combine"] = gene_combine["DBID"] + "@" + gene_combine["compartment"]
+gene_combine1 = gene_combine.drop_duplicates(subset='combine', keep="last")
 component_analysis2 = gene_combine1['compartment'].value_counts()
+component_analysis2.to_excel("result/main_compartment_statistical_analysis.xlsx")
+
+# plot
 x_value = list(component_analysis2.index)
 y_value = list(component_analysis2.values)
 plt.figure(figsize=(4,3))
@@ -107,7 +112,7 @@ plt.xlabel('Compartment', fontsize=15)
 plt.ylabel('Count', fontsize=15)
 plt.xticks(rotation=90)
 plt.show()
-plt.savefig("result/gene_compartment_analysis.pdf")
+#plt.savefig("result/gene_compartment_analysis.pdf")
 
 
 # special analysis of mitochrondria
