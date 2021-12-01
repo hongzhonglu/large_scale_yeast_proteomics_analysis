@@ -2,19 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/code/Combine_pro_compartment_abundance_and_size.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/code/proteomics_abundance_data_process.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Combine_pro_compartment__abundance_and_size.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/proteomics_comparment_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/proteomics_comparment_annotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/proteomics_data_process.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/yeast_gem_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/yeast_GEM_preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/all_component_analysis.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_component_analysis.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/all_component_manual_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_component_manual_check.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_protein_weight.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_weight.tsv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/abundance_paxdb.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/abundance_paxdb.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/gene_compartment_mapping.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/gene_compartment_mapping.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/~$abundance_paxdb.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/yeast_GEM_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/yeast_GEM_preprocess.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
