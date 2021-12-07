@@ -210,3 +210,8 @@ plt.show()
 
 
 
+
+# analyze another models based on deep learning
+# can't be input through cobrapy
+dir2 = "../data/deep_learning_data/emodel_Saccharomyces_cerevisiae_Posterior_mean.mat"
+ecYeast_DL = load_matlab_model(dir2)
