@@ -2,21 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/Combine_pro_compartment_abundance_and_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/Combine_pro_compartment_abundance_and_size.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/alphaFold_quality_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/calculateResidueDistance_pdb_homo.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ecYeast8_annotation_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/ecYeast8_annotation_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ecYeast_add_missing_kcats.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/ecYeast_add_missing_kcats.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ecYeast_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/ecYeast_simulation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/ecYeast_simulation_minimization_protein_volume.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/ecYeast_simulation_minimization_protein_volume.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/mainFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainFunction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/organell_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/organell_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/protein_complexes_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/protein_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/proteomics_abundance_data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/proteomics_abundance_data_process.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/proteomics_comparment_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/proteomics_comparment_annotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/yeastGEM_and_proYeastDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/yeastGEM_and_proYeastDB.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_ITASSER.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_ITASSER.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/pdb_itasser.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/pdb_itasser.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/other/protein_list.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/protein_list.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -107,6 +95,7 @@
       <recent name="$PROJECT_DIR$/result" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/code" />
