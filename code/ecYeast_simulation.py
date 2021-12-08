@@ -139,7 +139,7 @@ gem_rxn_nov.to_excel("../result/flux_check.xlsx")
 plt.figure()
 plt.plot(growth, protein_pool, marker='.',label='protein_pool')
 plt.xlabel('Growth rate (/h)')
-plt.ylabel('rate (mmol/gDW.h)')
+plt.ylabel('rate (mmol/gDW)')
 plt.legend(loc='upper left')
 plt.show()
 # from the above simulation it could find the secretion of acetate
