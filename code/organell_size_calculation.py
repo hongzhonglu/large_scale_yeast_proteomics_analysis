@@ -1,8 +1,7 @@
 # this script is to calculate the organell size parameters based on single protein
 # 2021-10-14
 import math
-
-
+from src.protein_process import *
 
 ## Volume
 Vcell = 82 # assume cell size is 82 um^3
@@ -60,14 +59,6 @@ Vp = Vcell*Vp_Vcell_ratio
 Dp = 2*(3*Vp/(4*math.pi))**(1/3)
 Spm = 4*math.pi*(Dp/2)**2
 Spm_Scell_ratio = Spm/Scell
-
-
-def getSurfaceRatio(volume_ratio = 0.005/100, Vcell = 82, Scell=91.27):
-    Vany = Vcell * volume_ratio
-    Dany = 2 * (3 * Vany / (4 * math.pi)) ** (1 / 3)
-    Sanym = 4 * math.pi * (Dany / 2) ** 2
-    ratio = Sanym / Scell
-    return ratio
 
 getSurfaceRatio(volume_ratio = 8.5/100, Vcell = 82, Scell=91.27)
 getSurfaceRatio(volume_ratio = 1/100, Vcell = 82, Scell=91.27)

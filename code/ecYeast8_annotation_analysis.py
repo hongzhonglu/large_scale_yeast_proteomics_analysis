@@ -4,20 +4,17 @@ new gene and new reaction analysis for Yeast8 compared with Yeast7
 5th, Nov, 2018'''
 
 # Import packages
-import pandas as pd
-import numpy as np
 import os    ##for directory
 import sys
 import pprint
-from cobra.io import read_sbml_model, load_matlab_model
-from collections import Counter
-import matplotlib.pyplot as plt
+from cobra.io import load_matlab_model
+
 os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
-sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
-pprint.pprint(sys.path)
+#sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
+#pprint.pprint(sys.path)
 
 # import self function
-from mainFunction import *
+from src.mainFunction import *
 
 # input the subsystem information
 gem_dataframe = pd.read_excel('/Users/xluhon/Documents/GitHub/model_correction/result/yeastGEM_with subsystem.xlsx')
@@ -29,11 +26,6 @@ ecYeast = correctSomeWrongFormat(ecYeast)
 gem_met_nov = produceMetaboliteList(ecYeast)
 gem_rxn_nov = produceRxnList(ecYeast)
 gem_gene_nov = produceGeneList(ecYeast)
-
-
-
-
-
 
 # add subsytem
 gem_rxn_nov['subsystem'] = [None]*len(gem_rxn_nov['equation'])

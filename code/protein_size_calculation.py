@@ -7,6 +7,7 @@ import os    ##for directory
 import numpy as np
 import pandas as pd
 import math
+from src.mainFunction import *
 
 # Input the datasets
 data_merge = pd.read_csv("data/sce_protein_weight.tsv",sep='\t')
@@ -85,30 +86,6 @@ volume_df0["section_area"] = all_sectional_area
 # read id map file and merge the protein volume calculated by different methods
 id_mapping = pd.read_excel("result/alphafold_quality_with_gene_ID.xlsx")
 id_mapping["id"] = id_mapping["id"].str.replace(".pdb","")
-
-def singleMapping (description, item1, item2, dataframe=True):
-    """get the single description of from item1 for item2 based on mapping"""
-    #description = w
-    #item1 = v
-    #item2 = testData
-    # used for the list data
-    if dataframe:
-        description = description.tolist()
-        item1 = item1.tolist()
-        item2 = item2.tolist()
-    else:
-        pass
-    index = [None]*len(item2)
-    result = [None]*len(item2)
-    tt = [None]*len(item2)
-    for i in range(len(item2)):
-        if item2[i] in item1:
-            index[i] = item1.index(item2[i])
-            result[i] = description[index[i]]
-        else:
-            index[i] = None
-            result[i] = None
-    return result
 
 data_merge["Protein"] = singleMapping(id_mapping["id"], id_mapping["gene"], data_merge["locus"])
 

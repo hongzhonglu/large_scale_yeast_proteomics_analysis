@@ -10,6 +10,7 @@ import numpy as np
 import pandas as pd
 from Bio.PDB.PDBParser import PDBParser
 from biopandas.pdb import PandasPdb
+from src.mainFunction import *
 
 pdbfile = "/Users/xluhon/Documents/alphafold_pdb/"
 all_pdb = os.listdir(pdbfile)
@@ -35,32 +36,6 @@ data_merge = pd.read_excel("result/alphafold_quality.xlsx")
 data_merge["id_update"] = data_merge["id"].str.replace("AF-", "").str.replace("-F1-model_v1.pdb","")
 # get the gene id based on uniprot id
 id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
-# need a function here
-def multiMapping (description, item1, item2, dataframe=True, sep=";", removeDuplicates=True):
-    """get multiple description of from item1 for item2 based on mapping"""
-    #description = w
-    #item1 = v
-    #item2 = testData
-    #used for the list data
-    if dataframe:
-        description = description.tolist()
-        item1 = item1.tolist()
-        item2 = item2.tolist()
-    else:
-        pass
-    result = [None]*len(item2)
-    for i in range(len(item2)):
-        if item2[i] in item1:
-            index0 = [description[index] for index in range(len(item1)) if item1[index] == item2[i]]
-            if removeDuplicates:
-                index1 = pd.unique(index0).tolist()
-            else:
-                index1 = index0
-            result[i] = sep.join(str(e) for e in index1) #string cat
-        else:
-            result[i] = None
-    return result
-
 data_merge["gene"] = multiMapping(description=id_mapping["GeneName"], item1=id_mapping["Entry"], item2=data_merge["id_update"])
 data_merge.to_excel("result/alphafold_quality_with_gene_ID.xlsx")
 

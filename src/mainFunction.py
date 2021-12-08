@@ -7,9 +7,6 @@
 import re
 import numpy as np
 import pandas as pd
-import os    ##for directory
-import sys
-import pprint
 
 
 
@@ -735,3 +732,16 @@ def getGeneListFromLocation(gene_location_annotation, location):
     gene_list = list(set(gene_subset["Systematic_name"].tolist()))
     return gene_list
 
+# generate a vector of number
+def frange(start, stop, step):
+    """
+    This function is like range, step can be float value, like 0.1
+    :param start:
+    :param stop:
+    :param step:
+    :return:
+    """
+    i = start
+    while i < stop:
+        yield i
+        i += step

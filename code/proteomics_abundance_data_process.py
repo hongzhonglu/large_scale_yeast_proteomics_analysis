@@ -2,14 +2,10 @@
 # 2021-11-16
 
 
-import os    ##for directory
-import numpy as np
-import pandas as pd
-import math
 import sys
 sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
 # import self function
-from mainFunction import *
+from src.mainFunction import *
 
 # part 1
 # Input the datasets from paxDB

@@ -2,9 +2,7 @@
 # which model should be used?
 # first compare the model difference
 # version 1
-from cobra.io import read_sbml_model, load_matlab_model
-import pandas as pd
-import matplotlib.pyplot as plt
+from cobra.io import load_matlab_model
 import os
 import sys
 import pprint
@@ -13,7 +11,7 @@ sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-ye
 pprint.pprint(sys.path)
 
 # import self function
-from mainFunction import *
+from src.mainFunction import *
 
 dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
 

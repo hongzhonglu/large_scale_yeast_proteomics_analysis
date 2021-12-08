@@ -3,17 +3,13 @@
 # 2021-11-20
 
 
-import os    ## for directory
-import numpy as np
-import pandas as pd
-import math
 import sys
 import statistics
 
 # os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
 sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
 # import self function
-from mainFunction import *
+from src.mainFunction import *
 
 # input the pro structure size data
 pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")

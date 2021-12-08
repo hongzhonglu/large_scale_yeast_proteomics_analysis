@@ -2,78 +2,20 @@
 # which model should be used?
 # first compare the model difference
 # version 1
-from cobra.io import read_sbml_model, load_matlab_model
-import pandas as pd
+from cobra.io import load_matlab_model
 import matplotlib.pyplot as plt
 import os
 import sys
 import pprint
 os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
-sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
-pprint.pprint(sys.path)
+#sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
+#pprint.pprint(sys.path)
 
 # import self function
-from mainFunction import *
+from src.mainFunction import *
+from src.ecGEM_process import *
 
-# function copy from strain_design repo
-def ecYeastMinimalMedia(model):
-    """
-    This function is used to define a simple media for ecYeast
-    :param model:
-    :return: a model with the defined the minimal media
-    """
-    rxnID = []
-    rxnName = []
-    for i, x in enumerate(model.reactions):
-        rxnID.append(x.id)
-        rxnName.append(x.name)
 
-    exchange_rxn =[x for x, y in zip(rxnID, rxnName) if '_REV' in x and 'exchange' in y]
-    # first block any uptake
-    for i, x in enumerate(exchange_rxn):
-        rxn0 = exchange_rxn[i]
-        #print(rxn0)
-        model.reactions.get_by_id(rxn0).upper_bound = 0
-
-    #Allow uptake of essential components
-    model.reactions.get_by_id("r_1654_REV").upper_bound = 10000 #ammonium exchange (reversible)
-    model.reactions.get_by_id("r_1861_REV").upper_bound = 10000 #iron(2+) exchange (reversible)
-    model.reactions.get_by_id("r_2100_REV").upper_bound = 10000 #water exchange (reversible)
-    model.reactions.get_by_id("r_1992_REV").upper_bound = 10000 #oxygen exchange (reversible)
-    model.reactions.get_by_id("r_2005_REV").upper_bound = 10000 #phosphate exchange (reversible)
-    model.reactions.get_by_id("r_2060_REV").upper_bound = 10000 #sulphate exchange (reversible)
-    model.reactions.get_by_id("r_1832_REV").upper_bound = 10000 #H+ exchange (reversible)
-    return model
-
-def frange(start, stop, step):
-    """
-    This function is like range, step can be float value, like 0.1
-    :param start:
-    :param stop:
-    :param step:
-    :return:
-    """
-    i = start
-    while i < stop:
-        yield i
-        i += step
-
-# chemostat simulations
-def chemostatSimulation(model0, D0):
-    growth = D0
-    with model0:
-        model0 = ecYeastMinimalMedia(model0)
-        # set growth
-        model0.reactions.get_by_id("r_2111").bounds = (growth, growth)
-        # minimization glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
-        model0.objective = {model0.reactions.r_1714_REV: -1}
-        solution2 = model0.optimize()
-        GR = solution2.fluxes["r_1714_REV"]  # get the glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
-        model0.objective = {model0.reactions.prot_pool_exchange: -1}
-        solution3 = model0.optimize()
-    return solution3
 dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
 
 ecYeast = load_matlab_model(dir1)
@@ -133,50 +75,6 @@ model.reactions.get_by_id("r_1549").upper_bound = 0 # assume (R,R)-2,3-butanedio
 
 
 # part2 simulation under the same framework
-def simulationCompare(model_in, growth_in):
-
-    with model_in:
-        model0 = ecYeastMinimalMedia(model_in)
-        # set growth
-        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
-        # minimization glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
-        model0.objective = {model0.reactions.r_1714_REV: -1}
-        solution00 = model0.optimize()
-        GR = solution00.fluxes["r_1714_REV"]  # get the glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
-        model0.objective = {model0.reactions.prot_pool_exchange: -1}
-        solution1 = model0.optimize()
-
-    with model_in:
-        model0 = ecYeastMinimalMedia(model_in)
-        # set growth
-        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
-        # minimization glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
-        model0.objective = {model0.reactions.r_1714_REV: -1}
-        solution2 = model0.optimize()
-
-    with model_in:
-        model0 = ecYeastMinimalMedia(model_in)
-        # set growth
-        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
-        # minimization glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
-        model0.objective = {model0.reactions.prot_pool_exchange: -1}
-        solution3 = model0.optimize()
-
-    with model_in:
-        model0 = ecYeastMinimalMedia(model_in)
-        # set growth
-        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
-        # minimization glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
-        model0.objective = new_objective
-        solution4 = model0.optimize()
-    return solution1, solution2, solution3, solution4
-
-
 growth = [0.01, 0.02, 0.03,0.04,0.05, 0.06,0.07, 0.08, 0.09, 0.1, 0.12,0.14,0.16,0.18, 0.2,0.22,0.24,0.26,0.28, 0.3, 0.31, 0.32, 0.33, 0.34, 0.35]
 
 glucose_uptake1 = []
@@ -191,7 +89,7 @@ pro_pool4 = []
 
 for i in growth:
     print(i)
-    s1,s2,s3,s4=simulationCompare(model_in=model1, growth_in=i)
+    s1,s2,s3,s4=simulationCompare(model_in=model, growth_in=i, objective=new_objective)
     g1,g2,g3,g4=s1.fluxes['r_1714_REV'],s2.fluxes['r_1714_REV'],s3.fluxes['r_1714_REV'],s4.fluxes['r_1714_REV']
     p1, p2, p3,p4 = s1.fluxes['prot_pool_exchange'], s2.fluxes['prot_pool_exchange'], s3.fluxes['prot_pool_exchange'], s4.fluxes['prot_pool_exchange']
     glucose_uptake1.append(g1)
@@ -225,7 +123,3 @@ plt.ylabel('protein pool (mmol/gDW)')
 plt.legend(loc='upper left')
 plt.ylim(0, 0.2)
 plt.show()
-
-
-
-

@@ -6,6 +6,8 @@ import os    ##for directory
 import numpy as np
 import pandas as pd
 import math
+from src.mainFunction import *
+
 
 # Input the datasets
 single_size = pd.read_excel("result/sce_protein_size_3D_structure_combine.xlsx")
@@ -32,32 +34,6 @@ complex_parse = pd.DataFrame({"complex":complex_list,"subunit":subunit_list,"cou
 complex_parse["count"] = complex_parse["count"].astype(float)
 
 complex_parse["gene"] = complex_parse["subunit"].str.replace("-MONOMER", "")
-
-# connect with the structure parameters based on gene IDs
-def singleMapping (description, item1, item2, dataframe=True):
-    """get the single description of from item1 for item2 based on mapping"""
-    #description = w
-    #item1 = v
-    #item2 = testData
-    # used for the list data
-    if dataframe:
-        description = description.tolist()
-        item1 = item1.tolist()
-        item2 = item2.tolist()
-    else:
-        pass
-    index = [None]*len(item2)
-    result = [None]*len(item2)
-    tt = [None]*len(item2)
-    for i in range(len(item2)):
-        if item2[i] in item1:
-            index[i] = item1.index(item2[i])
-            result[i] = description[index[i]]
-        else:
-            index[i] = None
-            result[i] = None
-    return result
-
 complex_parse["Total_Volume"] = singleMapping(single_size["Total_Volume"],single_size["locus"],complex_parse["gene"])
 complex_parse["radius_new"] = singleMapping(single_size["radius"],single_size["locus"],complex_parse["gene"])
 complex_parse["section_area_new"] = singleMapping(single_size["section_area"],single_size["locus"],complex_parse["gene"])
