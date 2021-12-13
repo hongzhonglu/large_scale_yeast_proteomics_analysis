@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast8_annotation_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast8_annotation_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/Combine_pro_compartment_abundance_and_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/organelle_proteomics_parameters.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/all_component_manual_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_component_manual_check.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,11 +96,11 @@
       <recent name="$PROJECT_DIR$/result" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/code" />
-      <recent name="$PROJECT_DIR$/pdb_itasser_structure_mapping" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

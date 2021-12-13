@@ -96,6 +96,10 @@ data_merge1["VDW_Volume"] = singleMapping(volume_df0["VDW_Volume"],volume_df0["P
 data_merge1["radius_new"] = singleMapping(volume_df0["radius"],volume_df0["Protein"],data_merge1["Protein"])
 data_merge1["section_area_new"] = singleMapping(volume_df0["section_area"],volume_df0["Protein"],data_merge1["Protein"])
 
+CHECK = data_merge1[data_merge1["locus"]=="YMR231W"] # the protein has no structure size data
+data_merge1=data_merge1[~(data_merge1["locus"]=="YMR231W")]
+
+
 
 # plot the density graph
 ax = data_merge1.plot.scatter(x='volume', y='Total_Volume')
