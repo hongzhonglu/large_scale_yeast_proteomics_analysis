@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_ITASSER.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_ITASSER.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other/pdb_itasser.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/pdb_itasser.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/other/protein_list.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/protein_list.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast8_annotation_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast8_annotation_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -30,3 +30,6 @@ gene_no_kinetic = list(set(gene_list)-set(gene_prot_list))
 
 # TODO: there are 167 proteins with no kinetic information. Need additional check!
 # how to get the missing kcat information
+
+
+

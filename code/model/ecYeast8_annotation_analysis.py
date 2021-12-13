@@ -53,7 +53,6 @@ gem_rxn_nov['subsystem'] = transport(gem_rxn_nov['formula'].tolist(), gem_rxn_no
 
 
 
-
 #the following is not used!
 #remove the transport reaction
 gem_rxn_transport = gem_rxn_nov[gem_rxn_nov['subsystem'].str.contains('Transport', na=False)]
