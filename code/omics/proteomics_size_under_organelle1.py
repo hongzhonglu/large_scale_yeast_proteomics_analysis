@@ -6,6 +6,7 @@ import statistics
 
 # import self function
 from src.mainFunction import *
+from src.protein_process import *
 
 # input the pro structure size data
 pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
@@ -15,7 +16,10 @@ pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 pro_location = pd.read_excel("result/gene_compartment_mapping.xlsx")
 pro_location = pro_location[['DBID', 'Systematic_name','GO_Name', 'Annot_Type', 'compartment']]
 
-# input the pro abundance from different sources
+# input the pro abundance from two reference different sources
+# the calculated result is quite similar to each other
+
+
 # should further explore how to scale protein abundance to get absolute concentrations
 # input data from SGD
 # pro_abundance = pd.read_csv("data/sce_protein_abundance_sgd.tsv", sep='\t')
@@ -39,51 +43,10 @@ pro_abundance.columns = ["gene", "absolute_abundance","median_absolute_abundance
 pro_abundance = pro_abundance[pro_abundance["absolute_abundance"].notna()]
 
 
-# a function to calculate the total volume of proteins and total sectional area of proteins
 
 
-def getStructureSize(genes_select0, pro_size0=pro_size, pro_abundance0=pro_abundance):
-    """
-    The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
-    It should be noted that the unit of pro_abundance is molecules per cell.
-    :param genes_select0:
-    :param pro_size0:
-    :param pro_abundance0:
-    :return:
-    """
 
-    # should make sure no structure size data is nan
-    combine_df = pd.DataFrame({"gene": genes_select0}) # change it as a dataframe
-    combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
-    combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
-    combine_df["abundance"] = singleMapping(pro_abundance0["absolute_abundance"], pro_abundance0['gene'],
-                                            combine_df["gene"])
 
-    # for the protein without abundance, use the median value from this group.
-    # calculate the abundance median value
-    abundance0 = combine_df["abundance"].tolist()
-    abundance1 = [x for x in abundance0 if np.isnan(x) == False]
-    abundance_median = statistics.median(abundance1) # here for the protein without abundance, the median value from this group is used. But maybe not correct at some cases
-    abundance_update = []
-    for x in abundance0:
-        if np.isnan(x) == False:
-            x0 = x
-        else:
-            x0 = abundance_median
-        abundance_update.append(x0)
-    combine_df["abundance_update"] = abundance_update
-
-    # calculate the size of all proteins for the selected gene list
-    # 1 纳米(nm)=0.001 微米(um)
-    total_volume = sum(combine_df["abundance_update"] * combine_df["Volume"])
-    # change nm^3 into um^3
-    total_volume_um = total_volume / 1e9
-
-    # 1 纳米(nm)=0.001 微米(um)
-    total_area = sum(combine_df["abundance_update"] * combine_df["section_area"])
-    # change nm^2 into um^2
-    total_area_um = total_area / 1e6
-    return total_volume_um, total_area_um
 
 
 
@@ -94,15 +57,15 @@ def getStructureSize(genes_select0, pro_size0=pro_size, pro_abundance0=pro_abund
 # volume
 location0 = 'mitochondrion'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-Vm,y= getStructureSize(genes_select0=genes_select)
+Vm,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
 
 location0 = 'nucleus'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-Vn,y= getStructureSize(genes_select0=genes_select)
+Vn,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
 
 location0 = 'cytosol'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-Vc,y= getStructureSize(genes_select0=genes_select)
+Vc,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
 
 
 
@@ -111,21 +74,21 @@ Vc,y= getStructureSize(genes_select0=genes_select)
 # area
 location0 = 'mitochondrial outer membrane'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-x,Smom= getStructureSize(genes_select0=genes_select)
+x,Smom= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
 
 location0 = 'mitochondrial inner membrane'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-x,Smim= getStructureSize(genes_select0=genes_select)
+x,Smim= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
 
 
 location0 = 'nuclear membrane'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-x,Snm= getStructureSize(genes_select0=genes_select)
+x,Snm= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
 
 
 location0 = 'plasma membrane'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-x,Scellm= getStructureSize(genes_select0=genes_select)
+x,Scellm= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
 
 
 

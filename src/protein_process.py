@@ -1,6 +1,8 @@
 import math
-
-
+import numpy as np
+import statistics
+import pandas as pd
+from src.mainFunction import *
 
 def getSurfaceRatio(volume_ratio = 0.005/100, Vcell = 82, Scell=91.27):
     """
@@ -28,6 +30,48 @@ def getGeneListFromLocation(gene_location_annotation, location):
     gene_list = list(set(gene_subset["Systematic_name"].tolist()))
     return gene_list
 
+def getStructureSize(genes_select0, pro_size0, pro_abundance0):
+    """
+    The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
+    It should be noted that the unit of pro_abundance is molecules per cell.
+    :param genes_select0:
+    :param pro_size0: the unit is nm^3 (volume) or nm^2 (area)
+    :param pro_abundance0: the unite is moleculars per cell
+    :return:
+    """
+
+    # should make sure no structure size data is nan
+    combine_df = pd.DataFrame({"gene": genes_select0}) # change it as a dataframe
+    combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
+    combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
+    combine_df["abundance"] = singleMapping(pro_abundance0["absolute_abundance"], pro_abundance0['gene'],
+                                            combine_df["gene"])
+
+    # for the protein without abundance, use the median value from this group.
+    # calculate the abundance median value
+    abundance0 = combine_df["abundance"].tolist()
+    abundance1 = [x for x in abundance0 if np.isnan(x) == False]
+    abundance_median = statistics.median(abundance1) # here for the protein without abundance, the median value from this group is used. But maybe not correct at some cases
+    abundance_update = []
+    for x in abundance0:
+        if np.isnan(x) == False:
+            x0 = x
+        else:
+            x0 = abundance_median
+        abundance_update.append(x0)
+    combine_df["abundance_update"] = abundance_update
+
+    # calculate the size of all proteins for the selected gene list
+    # 1 纳米(nm)=0.001 微米(um)
+    total_volume = sum(combine_df["abundance_update"] * combine_df["Volume"])
+    # change nm^3 into um^3
+    total_volume_um = total_volume / 1e9
+
+    # 1 纳米(nm)=0.001 微米(um)
+    total_area = sum(combine_df["abundance_update"] * combine_df["section_area"])
+    # change nm^2 into um^2
+    total_area_um = total_area / 1e6
+    return total_volume_um, total_area_um
 
 
 

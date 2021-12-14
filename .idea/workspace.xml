@@ -3,9 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/Combine_pro_compartment_abundance_and_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/organelle_proteomics_parameters.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/all_component_manual_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_component_manual_check.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/organelle_proteomics_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_abundance_data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/abundance_paxdb.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/deep_learning_data/Saccharomyces_cerevisiae_PredictionResults.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/deep_learning_data/emodel_Saccharomyces_cerevisiae_Posterior_mean.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/yeast_proteomics_example_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/yeast_proteomics_example_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -86,11 +90,13 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/example_data" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/example_data" />
+      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/result" />
