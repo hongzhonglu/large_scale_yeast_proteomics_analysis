@@ -1,10 +1,11 @@
-# this script is to rescale proteomics datasets
+# this script is to transform the unit of proteomics datasets from mmol/gDW or g/gDW into molecular/cell
 # 2021-11-16
 
 import sys
 # sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
 # import self function
 from src.mainFunction import *
+from src.protein_process import *
 
 
 # coeffcient change
@@ -62,11 +63,9 @@ abundance_ex_corrected["molecular/cell"] = abundance_ex_corrected["mmol/gDW"] * 
 abundance_ex_corrected.to_excel("data/proteomics/yeast_proteomics_example_scale.xlsx")
 
 
-
-
 # TODO
 # test the new coefficient???
-coefficient0 = 6.55e9
+coefficient0 = 6.5789e9 # this coefficent is from proteomics quality check to transfer mmol/gDW into molecular/cell
 abundance_ex_corrected["molecular/cell"] = abundance_ex_corrected["mmol/gDW"] * coefficient0 # Molecular/cell
 abundance_ex_corrected.to_excel("data/proteomics/yeast_proteomics_example_scale.xlsx")
 
@@ -75,9 +74,32 @@ abundance_ex_corrected.to_excel("data/proteomics/yeast_proteomics_example_scale.
 
 
 
+# input latest dataset of Carl
+abundance_ex = pd.read_excel("data/proteomics/data_PNAS_2021.xlsx")
+abundance_ex['g/gDW'] =(abundance_ex['replicate 1 (g gDW-1)']+ abundance_ex['replicate 2 (g gDW-1)']+ abundance_ex['replicate 3 (g gDW-1)'])/3
+abundance_ex=abundance_ex[['Symbol','g/gDW']]
+abundance_ex.columns = ['gene','g/gDW']
+
+abundance_ex1 = splitAbundance(pro_df=abundance_ex)
+sum(abundance_ex1['g/gDW'])
 
 
+mw = pd.read_csv("data/sce_protein_weight.tsv", sep="\t")
+mw = mw[["locus","proteins_molecular_weight"]]
+mw.columns = ["gene name", "MW"]
+mw["MW_Kda"] = mw["MW"]/1000
 
+abundance_ex1["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abundance_ex1["gene"])
+
+abundance_ex_check = abundance_ex1[abundance_ex1["MW_Kda"].isna()]
+abundance_ex1=abundance_ex1[~abundance_ex1["MW_Kda"].isna()]
+
+
+abundance_ex1["mmol/gDW"] = abundance_ex1["g/gDW"]/abundance_ex1["MW_Kda"]# #mmol/g biomass
+
+abundance_ex1["molecular/cell"] = abundance_ex1["mmol/gDW"] * coefficient0 # Molecular/cell
+abundance_ex1.to_excel("data/proteomics/data_PNAS_2021_scale.xlsx")
+sum(abundance_ex1["molecular/cell"])
 
 
 

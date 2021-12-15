@@ -16,9 +16,15 @@ pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 pro_location = pd.read_excel("result/gene_compartment_mapping.xlsx")
 pro_location = pro_location[['DBID', 'Systematic_name','GO_Name', 'Annot_Type', 'compartment']]
 
+
+
+
+
+
+
 # input the pro abundance from different sources
 # should further explore how to scale protein abundance to get absolute concentrations
-# input data from SGD
+# input dataset1
 pro_abundance = pd.read_excel("data/proteomics/yeast_proteomics_example_scale.xlsx")
 pro_abundance = pro_abundance[["genes","molecular/cell"]]
 pro_abundance.columns = ['gene','molecular/cell']
@@ -29,6 +35,21 @@ pro_abundance = pro_abundance[pro_abundance["molecular/cell"].notna()]
 abundance_cut_off = 8*1e7
 pro_abundance = pro_abundance[pro_abundance['molecular/cell'] <= abundance_cut_off]
 pro_abundance = splitAbundance(pro_df=pro_abundance)
+
+
+
+# input dataset2
+pro_abundance = pd.read_excel("data/proteomics/data_PNAS_2021_scale.xlsx")
+pro_abundance = pro_abundance[["gene","molecular/cell"]]
+pro_abundance.columns = ['gene','molecular/cell']
+pro_abundance = pro_abundance[pro_abundance["molecular/cell"].notna()]
+
+# it shows after the data transformation, the calculate size of protein itself is larger than the organelle. So issues exist.
+# first remove the proteins with abundance larger than 1000 0000 moleculars/cell.
+abundance_cut_off = 8*1e7
+pro_abundance = pro_abundance[pro_abundance['molecular/cell'] <= abundance_cut_off]
+pro_abundance = splitAbundance(pro_df=pro_abundance)
+
 
 
 # test
@@ -44,7 +65,6 @@ Vn,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abunda
 location0 = 'cytosol'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
 Vc,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
-
 
 
 

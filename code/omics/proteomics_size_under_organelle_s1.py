@@ -30,12 +30,16 @@ pro_abundance.columns = ["gene", "molecular/cell",'SD'] # protein abundance per 
 pro_abundance = pro_abundance[pro_abundance["molecular/cell"].notna()]
 
 
+
+
 # input data from cell system, 2018
 pro_abundance = pd.read_excel("data/proteomics/yeast_proteomics_example_cell_system_2018.xlsx")
 pro_abundance = pro_abundance[["Systematic Name","Mean molecules per cell","Median molecules per cell"]]
 pro_abundance.columns = ["gene", "absolute_abundance","median_absolute_abundance"] # protein abundance per cell
 pro_abundance.columns = ['gene','molecular/cell', "median_absolute_abundance"]
 pro_abundance = pro_abundance[pro_abundance["molecular/cell"].notna()]
+
+
 
 
 # input data from nature methods 2014

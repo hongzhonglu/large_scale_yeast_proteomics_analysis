@@ -76,12 +76,13 @@ def getStructureSize(genes_select0, pro_size0, pro_abundance0):
 
 def splitAbundance(pro_df):
     """
-    The function is used to quality check of protein abundance in molecular/cell before entering next step.
+    The function is used to quality check of protein abundance in molecular/cell or other unit before entering next step.
     :param pro_df: A dataframe should columns-gene,molecular/cell.
     :return:
     """
     # sometimes it shows mutiple proteins together have one abundance value, here we need a function to do the quality check!
     len1 = pro_df.shape[0]
+    colnames=pro_df.columns
     pro_df1 = pro_df[pro_df['gene'].str.contains(';')]
     if (len(pro_df1) > 0):
         print('Mutiple protein have one abudance value! Need quality check.')
@@ -93,9 +94,10 @@ def splitAbundance(pro_df):
         s = x["gene"].split(";")
         len0 = len(s)
         gene0 = gene0 + s
-        v = [x["molecular/cell"] / len0] * len0
+        v = [x[colnames[1]] / len0] * len0
         abundance0 = abundance0 + v
-    pro_df1 = pd.DataFrame({"gene": gene0, "molecular/cell": abundance0})
+    gene0=[x.strip(" ") for x in gene0]
+    pro_df1 = pd.DataFrame({"gene": gene0, colnames[1]: abundance0})
 
     pro_df = pd.concat([pro_df1, pro_df2], axis=0)
     len2 = pro_df.shape[0]
