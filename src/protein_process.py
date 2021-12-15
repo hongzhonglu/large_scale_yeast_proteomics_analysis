@@ -44,7 +44,7 @@ def getStructureSize(genes_select0, pro_size0, pro_abundance0):
     combine_df = pd.DataFrame({"gene": genes_select0}) # change it as a dataframe
     combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
     combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
-    combine_df["abundance"] = singleMapping(pro_abundance0["absolute_abundance"], pro_abundance0['gene'],
+    combine_df["abundance"] = singleMapping(pro_abundance0["molecular/cell"], pro_abundance0['gene'],
                                             combine_df["gene"])
 
     # for the protein without abundance, use the median value from this group.
@@ -74,7 +74,36 @@ def getStructureSize(genes_select0, pro_size0, pro_abundance0):
     return total_volume_um, total_area_um
 
 
+def splitAbundance(pro_df):
+    """
+    The function is used to quality check of protein abundance in molecular/cell before entering next step.
+    :param pro_df: A dataframe should columns-gene,molecular/cell.
+    :return:
+    """
+    # sometimes it shows mutiple proteins together have one abundance value, here we need a function to do the quality check!
+    len1 = pro_df.shape[0]
+    pro_df1 = pro_df[pro_df['gene'].str.contains(';')]
+    if (len(pro_df1) > 0):
+        print('Mutiple protein have one abudance value! Need quality check.')
+    pro_df2 = pro_df[~pro_df['gene'].str.contains(';')]
+    gene0 = []
+    abundance0 = []
+    for i, x in pro_df1.iterrows():
+        # print(i, x)
+        s = x["gene"].split(";")
+        len0 = len(s)
+        gene0 = gene0 + s
+        v = [x["molecular/cell"] / len0] * len0
+        abundance0 = abundance0 + v
+    pro_df1 = pd.DataFrame({"gene": gene0, "molecular/cell": abundance0})
 
+    pro_df = pd.concat([pro_df1, pro_df2], axis=0)
+    len2 = pro_df.shape[0]
+
+    if (len2 > len1):
+        print('Complete the quality check!')
+
+    return pro_df
 
 
 

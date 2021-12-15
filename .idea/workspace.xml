@@ -3,12 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/organelle_proteomics_parameters.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle1.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_abundance_data_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/abundance_paxdb.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/deep_learning_data/Saccharomyces_cerevisiae_PredictionResults.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/deep_learning_data/emodel_Saccharomyces_cerevisiae_Posterior_mean.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/yeast_proteomics_example_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/yeast_proteomics_example_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/yeastGEM_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/yeastGEM_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_quality_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_quality_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle1.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle_s1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle_s2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_abundance_sgd.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/sce_protein_abundance_sgd.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/yeast_proteomics_example.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/yeast_proteomics_example.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/yeast_proteomics_example_cell_system_2018.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/yeast_proteomics_example_cell_system_2018.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/yeast_proteomics_example_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/yeast_proteomics_example_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/abundance_paxdb.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -90,23 +94,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/example_data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/model" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/model" />
+      <recent name="$PROJECT_DIR$/data/proteomics" />
       <recent name="$PROJECT_DIR$/data/example_data" />
       <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code" />
-      <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/result" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/proteomis_data" />
       <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/code" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />

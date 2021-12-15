@@ -1,4 +1,4 @@
-# this script is to try combine compartment annotation with protein reference abundance and size
+#  this script is to process proteins with unit of molecular/cell directly calculated from literature.
 # Hongzhong Lu
 # 2021-11-20
 
@@ -16,41 +16,19 @@ pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 pro_location = pd.read_excel("result/gene_compartment_mapping.xlsx")
 pro_location = pro_location[['DBID', 'Systematic_name','GO_Name', 'Annot_Type', 'compartment']]
 
-# input the pro abundance from two reference different sources
-# the calculated result is quite similar to each other
-
-
+# input the pro abundance from different sources
 # should further explore how to scale protein abundance to get absolute concentrations
 # input data from SGD
-# pro_abundance = pd.read_csv("data/sce_protein_abundance_sgd.tsv", sep='\t')
-# pro_abundance = pro_abundance[["Systematic_name","Abundance_median"]]
-# pro_abundance.columns = ["gene", "absolute_abundance"] # protein abundance per cell
-# pro_abundance = pro_abundance[pro_abundance["absolute_abundance"].notna()]
+pro_abundance = pd.read_excel("data/proteomics/yeast_proteomics_example_scale.xlsx")
+pro_abundance = pro_abundance[["genes","molecular/cell"]]
+pro_abundance.columns = ['gene','molecular/cell']
+pro_abundance = pro_abundance[pro_abundance["molecular/cell"].notna()]
 
-
-# input data from paxdb
-# it seems that the data from paxdb is not very consistent with organell size
-# pro_abundance = pd.read_excel("data/abundance_paxdb.xlsx")
-# pro_abundance = pro_abundance[["genes","copy_per_cell"]]
-# pro_abundance.columns = ["gene", "absolute_abundance"] # protein abundance per cell
-# pro_abundance = pro_abundance[pro_abundance["absolute_abundance"].notna()]
-
-
-# input data from cell system, 2018
-pro_abundance = pd.read_excel("data/yeast_proteomics_example_cell_system_2018.xlsx")
-pro_abundance = pro_abundance[["Systematic Name","Mean molecules per cell","Median molecules per cell"]]
-pro_abundance.columns = ["gene", "absolute_abundance","median_absolute_abundance"] # protein abundance per cell
-pro_abundance = pro_abundance[pro_abundance["absolute_abundance"].notna()]
-
-
-
-
-
-
-
-
-
-
+# it shows after the data transformation, the calculate size of protein itself is larger than the organelle. So issues exist.
+# first remove the proteins with abundance larger than 1000 0000 moleculars/cell.
+abundance_cut_off = 8*1e7
+pro_abundance = pro_abundance[pro_abundance['molecular/cell'] <= abundance_cut_off]
+pro_abundance = splitAbundance(pro_df=pro_abundance)
 
 
 # test

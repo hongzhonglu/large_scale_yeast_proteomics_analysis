@@ -1,8 +1,4 @@
 # Based on yeast-GEM 8.5
-#
-
-"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb"
-
 
 from Bio.PDB import *
 import os    ##for directory
@@ -35,4 +31,9 @@ GEM_yeast.reactions.get_by_id("r_1697").bounds = (7.633,7.633) #co2
 solution = GEM_yeast.optimize()
 GEM_yeast.summary()
 fluxes = pd.DataFrame(solution.fluxes)
+
+
+
+
+
 
