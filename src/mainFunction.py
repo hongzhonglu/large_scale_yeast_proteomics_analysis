@@ -547,7 +547,7 @@ def exchange(s1, subystem):
         print(i)
         if ' --> ' in x:
             x0 = x.split(' --> ')
-            if len(x0[1]) >=1:
+            if len(x0[1]) >= 1:
                 #subystem.append('General')  # exchange
                 subystem[i] = subystem[i]
             else:
@@ -555,12 +555,22 @@ def exchange(s1, subystem):
                 print(subystem[i])
         if ' <=> ' in x:
             x0 = x.split(' <=> ')
-            if len(x0[1]) >=1:
+            if len(x0[1]) >= 1:
                 #subystem.append('General')  # exchange
                 subystem[i] = subystem[i]
             else:
                 subystem[i] ='Exchange reaction' #exchange
                 print(subystem[i])
+
+        if ' => ' in x:
+            x0 = x.split(' => ')
+            if len(x0[1]) >= 1:
+                #subystem.append('General')  # exchange
+                subystem[i] = subystem[i]
+            else:
+                subystem[i] ='Exchange reaction' #exchange
+                print(subystem[i])
+
         else:
             subystem[i] = subystem[i]
     return subystem
@@ -633,6 +643,9 @@ def transport(s1, subsysem):
     :return:
     """
     for i, x0 in enumerate(s1):
+
+        #x0 = "ATP[c] + H2O[c] + propionyl-CoA[c] => ADP[m] + H+[m] + phosphate[m] + propionyl-CoA[m]"
+
         x1 = re.findall(r"\[([A-Za-z0-9_\s]+)\]", x0)
         x0 = x0.replace('(','[')
         x0 = x0.replace(')',']')
@@ -642,27 +655,34 @@ def transport(s1, subsysem):
             x3 = x2.split("<=>")
         elif "<->" in x2: #bigg database format
             x3 = x2.split("<->")
+        elif "=>" in x2: #bigg database format
+            x3 = x2.split("=>")
         else:
             x3 = x2.split("-->")
         x3 = [x.strip() for x in x3]
         x1=pd.unique(x1).tolist() #remove the duplicated
-        if '+' in x3[0]:
-            x30=x3[0].split('+')
+
+        if ' + ' in x3[0]:
+            x30=x3[0].split(' + ')
+            x30 = [x.strip() for x in x30]
+            x30 = [x for x in x30 if x != '']
         else:
             x30=x3[0]
-        x30=[x.strip() for x in x30]
-        x30 = [x for x in x30 if x != '']
-        if '+' in x3[1]:
-            x31 = x3[1].split('+')
+
+        if len(x3) == 2:
+            x31 = x3[1]
+            if ' + ' in x3[1]:
+                x31 = x3[1].split(' + ')
+                x31 = [x.strip() for x in x31]
+                x31 = [x for x in x31 if x != '']
         else:
-            x31=x3[1]
-        x31 = [x.strip() for x in x31]
-        x31 = [x for x in x31 if x != '']
+            x31="None"
+
 
         if set(x30) == set(x31):
             subsysem[i] ='Transport' + '['+', '.join(x1)+']'
             print(subsysem[i])
-        elif set(x30)-set(['ATP','H2O']) == set(x31) - set(['ADP','phosphate','H']):
+        elif set(x30)-set(['ATP','H2O']) == set(x31) - set(['ADP','phosphate','H+']): # note H AND H+
             subsysem[i] = 'Transport' + '[' + ', '.join(x1) + ']'
             print(subsysem[i])
         else:

@@ -1,3 +1,55 @@
+from cobra.io import read_sbml_model
+import pandas as pd
+from src.mainFunction import *
+
+def getALLGEMgene():
+    """
+    The function is used to get the metabolic gene list.
+    :return:
+    """
+    GEM_yeast = read_sbml_model('/Users/xluhon/Documents/GitHub/yeast-GEM/model/yeast-GEM.xml')
+    gene_yeast = []
+    for x in GEM_yeast.genes:
+        print(x.id)
+        gene_yeast.append(x.id)
+    return gene_yeast
+
+
+def getTransporterCellMembraneGEM():
+    """
+    Get the transporter proteins of plasma membrane from GEMs
+    :return:
+    """
+    GEM_subsystem = pd.read_csv('data/subsystem/Rxn_unique_subsystem_v2.tsv', sep="\t")
+    GEM_subsystem_t = GEM_subsystem[GEM_subsystem['subsystem_unique'].str.contains("Transport")]
+    GEM_subsystem_t = GEM_subsystem_t[~GEM_subsystem_t['subsystem_unique'].str.contains("er")]
+    GEM_subsystem_t = GEM_subsystem_t[
+        GEM_subsystem_t['subsystem_unique'].str.contains("e") | GEM_subsystem_t['subsystem_unique'].str.contains("ce")]
+    GEM_subsystem_t = GEM_subsystem_t[~GEM_subsystem_t["GENE ASSOCIATION"].isna()]
+    # get the related gene list
+    # there 121 genes from GEMs
+    rxn_gene = getRXNgeneMapping(rxn0=GEM_subsystem_t['ID'], gpr0=GEM_subsystem_t['GENE ASSOCIATION'])
+    m_gene_plasma_membrane = list(set((rxn_gene['gene'])))
+    # analyze glucose
+    #glucose_transporter = rxn_gene[rxn_gene['rxnID'] == rxnID]
+    #m_glucose_transporter = list(set((glucose_transporter['gene'])))
+    return m_gene_plasma_membrane
+
+
+def getProteinForRxnGEM(rxnID):
+    """
+    Get the proteins based on reaction IDs
+    :param rxnID: a list with gene id, like ['r_1166']
+    :return:
+    """
+    GEM_subsystem = pd.read_csv('data/subsystem/Rxn_unique_subsystem_v2.tsv', sep="\t")
+    rxn_gene = getRXNgeneMapping(rxn0=GEM_subsystem['ID'], gpr0=GEM_subsystem['GENE ASSOCIATION'])
+    # analyze glucose
+    df = rxn_gene[rxn_gene['rxnID'].isin(rxnID)]
+    pro_list = list(set((df['gene'])))
+    return pro_list
+
+
 def exchange_ecYeast(s1, subystem):
     """
     this function is used to define the exchange reaction

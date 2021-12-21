@@ -66,7 +66,8 @@ def proMassRatioAtCell(protein_abundance, yeast_cell_weight=47.65):
     mw = pd.read_csv("data/sce_protein_weight.tsv", sep="\t")
     mw = mw[["locus", "proteins_molecular_weight"]]
     mw.columns = ["gene name", "MW"]
-    #yeast_cell_weight = 47.65 # pg, this data is based  on  one literature, which maybe not right !
+    # yeast_cell_weight = 47.65 # pg, this data is based  on  one literature, which maybe not right !
+    # yeast_cell_weight = 13 # pg, this data should be reasonable.
     protein_abundance["MW"] = singleMapping(mw["MW"], mw["gene name"], protein_abundance["gene"])
     protein_abundance = protein_abundance[protein_abundance["MW"].notna()]
     protein_abundance["mol/cell"] = protein_abundance["molecular/cell"] / 6.022e+23

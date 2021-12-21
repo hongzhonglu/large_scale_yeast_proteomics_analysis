@@ -42,6 +42,7 @@ pro_abundance = pro_abundance[pro_abundance["molecular/cell"].notna()]
 
 
 
+
 # input data from nature methods 2014
 pro_abundance = pd.read_excel("data/proteomics/data_Nature_method_2014.xlsx")
 pro_abundance = pro_abundance[["ORF","Copy number"]]
@@ -54,23 +55,22 @@ pro_abundance = splitAbundance(pro_df=pro_abundance)
 
 
 
-
-
-
 # test
 # volume
 location0 = 'mitochondrion'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-Vm,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
+pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+Vm,y= getStructureSize(pro_size0=pro_size, abundance0=pro_abundance1)
 
 location0 = 'nucleus'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-Vn,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
+pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+Vn,y= getStructureSize(pro_size0=pro_size, abundance0=pro_abundance1)
 
 location0 = 'cytosol'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-Vc,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
-
+pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+Vc,y= getStructureSize(pro_size0=pro_size, abundance0=pro_abundance1)
 
 
 
@@ -78,86 +78,21 @@ Vc,y= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abunda
 # area
 location0 = 'mitochondrial outer membrane'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-x,Smom= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
+pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+x,Smom= getStructureSize(pro_size0=pro_size, abundance0=pro_abundance1)
 
 location0 = 'mitochondrial inner membrane'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-x,Smim= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
-
+pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+x,Smim= getStructureSize(pro_size0=pro_size, abundance0=pro_abundance1)
 
 location0 = 'nuclear membrane'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-x,Snm= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
-
+pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+x,Snm= getStructureSize(pro_size0=pro_size, abundance0=pro_abundance1)
 
 location0 = 'plasma membrane'
+# for all related genes
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
-x,Scellm= getStructureSize(genes_select0=genes_select,pro_size0=pro_size, pro_abundance0=pro_abundance)
-
-
-
-
-
-
-# The following are two detailed examples
-# with the mitochondrion volume as an example
-location0 = 'mitochondrion'
-genes_select = getGeneListFromLocation(pro_location, location0)
-# change it as a dataframe
-combine_df = pd.DataFrame({"gene": genes_select})
-combine_df["Volume"] = singleMapping(pro_size['Total_Volume'],pro_size['locus'],combine_df["gene"])
-combine_df["section_area"] = singleMapping(pro_size['section_area_new'],pro_size['locus'],combine_df["gene"])
-combine_df["abundance"] = singleMapping(pro_abundance["absolute_abundance"],pro_abundance['gene'],combine_df["gene"])
-
-# for the protein without abundance, use the median value from this group.
-# calculate the abundance median value
-abundance0 = combine_df["abundance"].tolist()
-abundance1 = [x for x in abundance0 if np.isnan(x) == False]
-abundance_median = statistics.median(abundance1)
-abundance_update = []
-for x in abundance0:
-    if np.isnan(x) == False:
-        x0 = x
-    else:
-        x0 = abundance_median
-    abundance_update.append(x0)
-combine_df["abundance_update"] = abundance_update
-
-# calculate the size of all proteins in mitochondrion
-# 1 纳米(nm)=0.001 微米(um)
-total_volume = sum(combine_df["abundance_update"]*combine_df["Volume"])
-# change nm^3 into um^3
-total_volume_um = total_volume/1e9
-
-
-
-# next we explore the area of sectional area calculated from proteins
-# with the mitochondrion outer membrane as an example
-# it initially shows that the organell membrane area is more constrainted than organell size
-location0 = 'mitochondrial outer membrane'
-genes_select = getGeneListFromLocation(pro_location, location0)
-# change it as a dataframe
-combine_df = pd.DataFrame({"gene": genes_select})
-combine_df["Volume"] = singleMapping(pro_size['Total_Volume'],pro_size['locus'],combine_df["gene"])
-combine_df["section_area"] = singleMapping(pro_size['section_area_new'],pro_size['locus'],combine_df["gene"])
-combine_df["abundance"] = singleMapping(pro_abundance["absolute_abundance"],pro_abundance['gene'],combine_df["gene"])
-
-# for the protein without abundance, use the median value from this group.
-# calculate the abundance median value
-abundance0 = combine_df["abundance"].tolist()
-abundance1 = [x for x in abundance0 if np.isnan(x) == False]
-abundance_median = statistics.median(abundance1)
-abundance_update = []
-for x in abundance0:
-    if np.isnan(x) == False:
-        x0 = x
-    else:
-        x0 = abundance_median
-    abundance_update.append(x0)
-combine_df["abundance_update"] = abundance_update
-
-# calculate the size of all proteins in mitochondrion
-# 1 纳米(nm)=0.001 微米(um)
-total_area = sum(combine_df["abundance_update"]*combine_df["section_area"])
-# change nm^2 into um^2
-total_area_um = total_area/1e6
+pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+x,Scellm= getStructureSize(pro_size0=pro_size, abundance0=pro_abundance1)

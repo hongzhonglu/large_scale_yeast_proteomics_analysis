@@ -3,11 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast8_annotation_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast8_annotation_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_minimization_protein_volume.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_minimization_occupancy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_structure_constraints.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/yeastGEM_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/yeastGEM_preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/proteomics_quality_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_quality_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle_s1.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle_s1.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle_s2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_size_under_organelle_s2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/yeast_proteomics_example_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/yeast_proteomics_example_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/data_PNAS_2021_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/data_PNAS_2021_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/gene_compartment_mapping.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/gene_compartment_mapping.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ecGEM_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainFunction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,23 +97,23 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/proteomics" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/omics" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/proteomics" />
-      <recent name="$PROJECT_DIR$/code/model" />
-      <recent name="$PROJECT_DIR$/data/example_data" />
       <recent name="$PROJECT_DIR$/code/omics" />
+      <recent name="$PROJECT_DIR$/code/model" />
+      <recent name="$PROJECT_DIR$/data/proteomics" />
+      <recent name="$PROJECT_DIR$/data/example_data" />
       <recent name="$PROJECT_DIR$/code" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/subsystem" />
       <recent name="$PROJECT_DIR$/data/proteomis_data" />
       <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -179,6 +187,17 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/mainFunction.py</url>
+          <line>633</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Simulation using ITASSER/YPR001W/cscore.txt">

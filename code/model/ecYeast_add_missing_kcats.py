@@ -6,13 +6,13 @@ from cobra.io import load_matlab_model
 import os
 import sys
 import pprint
-os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
-sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
+#os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
+#sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
 pprint.pprint(sys.path)
 
 # import self function
 from src.mainFunction import *
-
+from src.model_process import *
 dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
 
 ecYeast = load_matlab_model(dir1)
@@ -29,6 +29,19 @@ gene_prot_list = gene_prot["GPR"].to_list()
 gene_no_kinetic = list(set(gene_list)-set(gene_prot_list))
 
 # TODO: there are 167 proteins with no kinetic information. Need additional check!
+# check which reaction contains these genes with no kinetic parameters
+
+
+GEM_subsystem = pd.read_csv('data/subsystem/Rxn_unique_subsystem_v2.tsv', sep="\t")
+rxn_gene = getRXNgeneMapping(rxn0=GEM_subsystem['ID'], gpr0=GEM_subsystem['GENE ASSOCIATION'])
+# analyze glucose
+df = rxn_gene[rxn_gene['gene'].isin(gene_no_kinetic)]
+GEM_select = GEM_subsystem[GEM_subsystem['ID'].isin(df['rxnID'])]
+# it shows a lot of transport has no kcat data!
+
+
+
+
 # how to get the missing kcat information
 
 

@@ -13,7 +13,7 @@ import pprint
 
 # import self function
 from src.mainFunction import *
-from src.ecGEM_process import *
+from src.model_process import *
 
 
 dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
