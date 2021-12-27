@@ -3,6 +3,7 @@
 # first compare the model difference
 # version 1
 from cobra.io import load_matlab_model
+from cobra import Reaction, Metabolite
 import os
 import sys
 import pprint
@@ -41,8 +42,102 @@ GEM_select = GEM_subsystem[GEM_subsystem['ID'].isin(df['rxnID'])]
 
 
 
+# try to add the glucose transporter
+genes_select_glucose = getProteinForRxnGEM(rxnID=['r_1166'])
+# input the molecular weight information
+molecular_weight = pd.read_csv('data/sce_protein_weight.tsv', sep="\t")
+molecular_weight_select = molecular_weight[molecular_weight['locus'].isin(genes_select_glucose)]
 
-# how to get the missing kcat information
 
+
+
+
+model = ecYeast.copy()
+
+# EC 2.5.1.32
+MW1 = molecular_weight_select['proteins_molecular_weight'].mean()
+kcat1 = 125 # s^(-1)
+
+
+# firstly add the new metabolite
+model.add_metabolites(Metabolite('prot_glc_trans',compartment='ce', formula= '', name=''))
+
+
+# define the reactions
+dict1 = {model.metabolites.get_by_id('s_0565'): -1,
+         model.metabolites.get_by_id('prot_glc_trans'): -1/(kcat1*3600),
+         model.metabolites.get_by_id('s_0563'): 1,
+        }
+
+
+reaction = Reaction('psedo_glc_trans')  # rxn ID
+reaction.name = ''
+reaction.subsystem = 'Transport'
+reaction.lower_bound = 0  # This is the default
+reaction.upper_bound = 1000  # This is the default
+reaction.EC = ''
+reaction.add_metabolites(dict1)
+reaction.gene_reaction_rule = ''
+model.add_reactions([reaction])
+
+
+
+
+# add the protein pool to the crtYB
+dict2 = {model.metabolites.get_by_id('prot_pool'): -MW1/1000,
+         model.metabolites.get_by_id('prot_glc_trans'):1
+        }
+
+
+reaction = Reaction('draw_psedo_glc_trans')  # rxn ID
+reaction.name = ''
+reaction.subsystem = ''
+reaction.lower_bound = 0  # This is the default
+reaction.upper_bound = 1000  # This is the default
+reaction.EC = ''
+reaction.add_metabolites(dict2)
+reaction.gene_reaction_rule = ''
+model.add_reactions([reaction])
+
+
+# check the reaction
+for r in model.reactions:
+    print(r.id, r.name, r.reaction, r.compartments, sep="\t")
+
+# try to simulate using the new models
+model.reactions.get_by_id("r_1634").upper_bound = 0 # assume acetate is not produced!
+model.reactions.get_by_id("r_2033").upper_bound = 0 # assume pyruvate is not produced!
+model.reactions.get_by_id("r_1631").upper_bound = 0 # assume acetaldehyde is not produced!
+model.reactions.get_by_id("r_1549").upper_bound = 0 # assume (R,R)-2,3-butanediol is not produced!
+
+
+# turn off the original glucose transporter
+model.reactions.get_by_id("r_1166").bounds = (0,0) # assume (R,R)-2,3-butanediol is not produced!
+
+
+
+
+
+model0 = ecYeastMinimalMedia(model)
+# set growth
+growth = 0.35
+model0.reactions.get_by_id("r_2111").bounds = (growth, growth)
+# minimization glucose uptake rate
+model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
+model0.objective = {model0.reactions.r_1714_REV: -1}
+solution2 = model0.optimize()
+
+solution2.fluxes['psedo_glc_trans']
+
+
+
+GR = solution2.fluxes["r_1714_REV"]  # get the glucose uptake rate
+model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
+model0.objective = {model0.reactions.prot_pool_exchange: -1}
+solution3 = model0.optimize()
+solution3.fluxes['draw_psedo_glc_trans']
+
+solution3.fluxes['prot_pool_exchange']
+solution3.fluxes["r_1761"]
 
 

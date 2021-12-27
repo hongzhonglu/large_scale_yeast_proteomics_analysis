@@ -65,4 +65,3 @@ x4, Scellm4, analysis_df4 = getStructureSize(pro_size0=pro_size, abundance0=abun
 
 
 
-

@@ -36,8 +36,26 @@ ecYeast = load_matlab_model(dir1)
 gem_rxn_nov = pd.read_excel('data/gem_rxn_nov.xlsx')
 gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("draw_prot")]
 test_rxn = gene_prot["name"].to_list()
+
 #then get the protein volume information
 #input the protein volume datasets
 pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
-gene_prot["pro_volume"] = singleMapping(pro_size['Total_Volume'], pro_size['locus'], gene_prot['GPR'])
-pro_volume = gene_prot["pro_volume"].to_list()
+gene_prot["Volume"] = singleMapping(pro_size['Total_Volume'], pro_size['locus'], gene_prot['GPR'])
+gene_prot["section_area"] = singleMapping(pro_size['section_area_new'], pro_size['locus'], gene_prot['GPR'])
+
+# first analyze the proteins for specific rxn
+genes_select_glucose = getProteinForRxnGEM(rxnID=['r_1166'])
+gene_prot0 = gene_prot[gene_prot['GPR'].isin(genes_select_glucose)]
+
+
+
+
+
+
+
+
+
+
+
+
+
