@@ -44,7 +44,9 @@ gene_prot["Volume"] = singleMapping(pro_size['Total_Volume'], pro_size['locus'],
 gene_prot["section_area"] = singleMapping(pro_size['section_area_new'], pro_size['locus'], gene_prot['GPR'])
 
 # first analyze the proteins for specific rxn
+# now the model has no kinetic information for the glucose
 genes_select_glucose = getProteinForRxnGEM(rxnID=['r_1166'])
+
 gene_prot0 = gene_prot[gene_prot['GPR'].isin(genes_select_glucose)]
 
 

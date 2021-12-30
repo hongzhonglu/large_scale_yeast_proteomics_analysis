@@ -45,8 +45,8 @@ def setReferenceProCopy():
     pro_abundance = pro_abundance[pro_abundance["molecular/cell"].notna()]
     reference_copy = pro_abundance
     statistics_analysis = reference_copy.describe()
-    v_ten_percent = reference_copy['molecular/cell'].quantile(0.1)
     v_five_percent = reference_copy['molecular/cell'].quantile(0.05)
+    v_ten_percent = reference_copy['molecular/cell'].quantile(0.1)
     return reference_copy, v_five_percent, v_ten_percent
 
 
@@ -81,7 +81,7 @@ def getProAundance(genes_select0, pro_abundance0):
     
     # use the second choice
     # load the reference molecular copies
-    ref_abundance,v_5, v_10 = setReferenceProCopy()
+    ref_abundance, v_5, v_10 = setReferenceProCopy()
     # set a dict
     gene_abundance = {}
     for i, x in ref_abundance.iterrows():

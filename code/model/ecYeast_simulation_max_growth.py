@@ -74,6 +74,9 @@ solution.fluxes["r_1714_REV"]
 solution.fluxes['prot_pool_exchange']
 
 
+
+
+
 # here compare the predicted proteomics and measured？
 # plot the relation between the predict and measured proteins
 flux_max = solution.fluxes
@@ -81,7 +84,7 @@ result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result = result[result['rxnID'].str.contains("draw_prot")]
 result['rxnID'] = result['rxnID'].str.replace("draw_prot_", "")
 ID_map = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
-result['geneID']  = singleMapping(ID_map['GeneName'], ID_map['Entry'], result['rxnID'])
+result['geneID'] = singleMapping(ID_map['GeneName'], ID_map['Entry'], result['rxnID'])
 
 
 
@@ -125,6 +128,7 @@ plt.xlim(-10, -3)
 plt.ylim(-10, -3)
 plt.xlabel("log10(Measured_protein_level)")
 plt.ylabel("log10(Predicted_protein_usage)")
+
 
 # remove the proteins with zero
 result1 = result[result['flux'] > 0]

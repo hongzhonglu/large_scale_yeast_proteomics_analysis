@@ -65,3 +65,9 @@ x4, Scellm4, analysis_df4 = getStructureSize(pro_size0=pro_size, abundance0=abun
 
 
 
+## more analysis
+# here we further transfer the unit of molecular/cell into mmol/gDW
+analysis_df4['mmol/gDW'] = analysis_df4['molecular/cell_global']/6.5789e9
+analysis_df4.to_excel("data/glucose_transporter_abundance.xlsx")
+
+

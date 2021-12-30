@@ -152,6 +152,8 @@ plt.show()
 # from the above simulation it could find the secretion of acetate
 gem_rxn_nov.to_excel("result/flux_check_xia_dataset.xlsx")
 
+
+
 # input the measured values
 omcis_jianye = pd.read_csv("data/proteomics/Omics_from_Jianye.csv")
 columns0 = list(omcis_jianye.columns)
@@ -205,8 +207,9 @@ plt.ylabel("log10(Predicted_protein_usage)")
 new_df1 = new_df[new_df['D=0.027_M'] > 0]
 new_df1 = new_df1[new_df1['D=0.027'] > 0]
 r2_score(np.log10(new_df1['D=0.027_M']), np.log10(new_df1['D=0.027']), multioutput='variance_weighted')
-corr, _ = pearsonr(np.log10(new_df1['D=0.027_M']), np.log10(new_df1['D=0.027']))
-print(corr)
+corr, ss = pearsonr(np.log10(new_df1['D=0.027_M']), np.log10(new_df1['D=0.027']))
+print("Correlation coefficient:", corr)
+print("Correlation p_value:", ss)
 
 
 # analysis 2
@@ -222,5 +225,10 @@ plt.ylabel("log10(Predicted_protein_usage)")
 new_df1 = new_df[new_df['D=0.379_M'] > 0]
 new_df1 = new_df1[new_df1['D=0.379'] > 0]
 r2_score(np.log10(new_df1['D=0.379_M']), np.log10(new_df1['D=0.379']), multioutput='variance_weighted')
-corr, _ = pearsonr(np.log10(new_df1['D=0.379_M']), np.log10(new_df1['D=0.379']))
-print(corr)
+corr, ss = pearsonr(np.log10(new_df1['D=0.379_M']), np.log10(new_df1['D=0.379']))
+print("Correlation coefficient:", corr)
+print("Correlation p_value:", ss)
+
+
+
+

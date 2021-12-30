@@ -27,7 +27,7 @@ coefficient0 = 6.022e20/Ncell
 
 # process the experimentally proteomic datasets
 # This original dataset is from www.pnas.org/cgi/doi/10.1073/pnas.1918216117
-abundance_ex = pd.read_excel("data/proteomics/yeast_proteomics_example.xlsx")
+abundance_ex = pd.read_excel("data/proteomics/omics_Francesca.xlsx")
 abundance_ex = abundance_ex[["GeneNameOrdered","average(g/gDW)"]]
 abundance_ex.columns = ["genes","g/gDW"]
 
@@ -60,14 +60,14 @@ abundance_ex_corrected = pd.concat([abudance_ex_1, abudance_ex_2], axis=0)
 abundance_ex_corrected["mmol/gDW"] = abundance_ex_corrected["g/gDW"]/abundance_ex_corrected["MW_Kda"]# #mmol/g biomass
 one_strange = abundance_ex_corrected[abundance_ex_corrected['genes']=='YMR142C']
 abundance_ex_corrected["molecular/cell"] = abundance_ex_corrected["mmol/gDW"] * coefficient0 # Molecular/cell
-abundance_ex_corrected.to_excel("data/proteomics/yeast_proteomics_example_scale.xlsx")
+abundance_ex_corrected.to_excel("data/proteomics/omics_Francesca_scale.xlsx")
 
 
 # TODO
 # test the new coefficient???
 coefficient0 = 6.5789e9 # this coefficent is from proteomics quality check to transfer mmol/gDW into molecular/cell
 abundance_ex_corrected["molecular/cell"] = abundance_ex_corrected["mmol/gDW"] * coefficient0 # Molecular/cell
-abundance_ex_corrected.to_excel("data/proteomics/yeast_proteomics_example_scale.xlsx")
+abundance_ex_corrected.to_excel("data/proteomics/omics_Francesca_scale.xlsx")
 
 
 
@@ -100,36 +100,3 @@ abundance_ex1["mmol/gDW"] = abundance_ex1["g/gDW"]/abundance_ex1["MW_Kda"]# #mmo
 abundance_ex1["molecular/cell"] = abundance_ex1["mmol/gDW"] * coefficient0 # Molecular/cell
 abundance_ex1.to_excel("data/proteomics/data_PNAS_2021_scale.xlsx")
 sum(abundance_ex1["molecular/cell"])
-
-
-
-
-
-
-
-
-
-
-
-
-# not used anymore
-# Input the datasets from paxDB
-# update the unit
-abundance = pd.read_csv("data/info_yeast/abundance_table.csv")
-# Get the molecular weight data
-mw = pd.read_csv("data/info_yeast/all_peptides_mw.csv")
-mw["MW_Kda"] = mw["MW"]/1000
-abundance["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abundance["genes"])
-# scale the dataset
-coefficient_protein_in_biomass = 0.45
-abundance["abundance_w1"] = abundance["MW_Kda"]*abundance["abundance"]
-w_total = sum(abundance["abundance_w1"])
-abundance["abundance_scale"] = abundance["abundance_w1"]/w_total
-abundance["abundance_per_biomass"] = abundance["abundance_scale"]*coefficient_protein_in_biomass # g/g biomass
-abundance["abundance_per_biomass2"] = abundance["abundance_per_biomass"]/abundance["MW_Kda"]# #mmol/g biomass
-abundance["molecular/cell"] = abundance["abundance_per_biomass2"]*coefficient0 # Molecular/cell
-
-
-
-
-
