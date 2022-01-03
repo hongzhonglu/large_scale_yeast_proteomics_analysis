@@ -4,11 +4,10 @@
 # version 1
 from cobra.io import load_matlab_model
 from cobra import Reaction, Metabolite
-import os
+
 import sys
 import pprint
-#os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
-#sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
+
 pprint.pprint(sys.path)
 
 # import self function
@@ -26,8 +25,11 @@ for x in ecYeast.genes:
 gem_rxn_nov = produceRxnList(ecYeast)
 gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("draw_prot")]
 gene_prot_list = gene_prot["GPR"].to_list()
-
 gene_no_kinetic = list(set(gene_list)-set(gene_prot_list))
+
+
+
+
 
 # TODO: there are 167 proteins with no kinetic information. Need additional check!
 # check which reaction contains these genes with no kinetic parameters
@@ -52,26 +54,34 @@ molecular_weight_select = molecular_weight[molecular_weight['locus'].isin(genes_
 
 
 
-model = ecYeast.copy()
 
+
+
+
+
+
+
+# a whole process to add the glucose transporter sectional area as constraints
+model = ecYeast.copy()
 # EC 2.5.1.32
 MW1 = molecular_weight_select['proteins_molecular_weight'].mean()
 kcat1 = 125 # s^(-1)
 
 
 # firstly add the new metabolite
-model.add_metabolites(Metabolite('prot_glc_trans',compartment='ce', formula= '', name=''))
+model.add_metabolites(Metabolite('prot_glc_trans',compartment='c', formula='', name=''))
 
 
-# define the reactions
+# rewrite the reaction in transporting glucose through a pseudo glucose transporter
+# as there are total about 20 glucose transporters, here we just use one pseudo transporter
 dict1 = {model.metabolites.get_by_id('s_0565'): -1,
          model.metabolites.get_by_id('prot_glc_trans'): -1/(kcat1*3600),
          model.metabolites.get_by_id('s_0563'): 1,
         }
 
 
-reaction = Reaction('psedo_glc_trans')  # rxn ID
-reaction.name = ''
+reaction = Reaction('pseudo_glc_trans')  # rxn ID
+reaction.name = 'pseudo_glc_trans'
 reaction.subsystem = 'Transport'
 reaction.lower_bound = 0  # This is the default
 reaction.upper_bound = 1000  # This is the default
@@ -81,16 +91,12 @@ reaction.gene_reaction_rule = ''
 model.add_reactions([reaction])
 
 
-
-
-# add the protein pool to the crtYB
+# add the protein pool to the glucose transporter
 dict2 = {model.metabolites.get_by_id('prot_pool'): -MW1/1000,
          model.metabolites.get_by_id('prot_glc_trans'):1
         }
-
-
-reaction = Reaction('draw_psedo_glc_trans')  # rxn ID
-reaction.name = ''
+reaction = Reaction('draw_pseudo_glc_trans')  # rxn ID
+reaction.name = 'draw_pseudo_glc_trans'
 reaction.subsystem = ''
 reaction.lower_bound = 0  # This is the default
 reaction.upper_bound = 1000  # This is the default
@@ -98,27 +104,35 @@ reaction.EC = ''
 reaction.add_metabolites(dict2)
 reaction.gene_reaction_rule = ''
 model.add_reactions([reaction])
-
-
 # check the reaction
 for r in model.reactions:
     print(r.id, r.name, r.reaction, r.compartments, sep="\t")
 
+
+
+
+
 # try to simulate using the new models
-model.reactions.get_by_id("r_1634").upper_bound = 0 # assume acetate is not produced!
-model.reactions.get_by_id("r_2033").upper_bound = 0 # assume pyruvate is not produced!
-model.reactions.get_by_id("r_1631").upper_bound = 0 # assume acetaldehyde is not produced!
-model.reactions.get_by_id("r_1549").upper_bound = 0 # assume (R,R)-2,3-butanediol is not produced!
-
-
-# turn off the original glucose transporter
-model.reactions.get_by_id("r_1166").bounds = (0,0) # assume (R,R)-2,3-butanediol is not produced!
-
-
-
-
-
 model0 = ecYeastMinimalMedia(model)
+model0.reactions.get_by_id("r_1634").upper_bound = 0 # assume acetate is not produced!
+model0.reactions.get_by_id("r_2033").upper_bound = 0 # assume pyruvate is not produced!
+model0.reactions.get_by_id("r_1631").upper_bound = 0 # assume acetaldehyde is not produced!
+model0.reactions.get_by_id("r_1549").upper_bound = 0 # assume (R,R)-2,3-butanediol is not produced!
+# turn off the original glucose transporter
+model0.reactions.get_by_id("r_1166").bounds = (0, 0) # assume (R,R)-2,3-butanediol is not produced!
+
+
+
+
+# here we can set the constraint for glucose transporter
+coefficient1 = 6.5789e9
+Sglucose_trans = 4.2 #4.2 # um^2 upper bound of sectional area occupied by glucose transporter
+glucose_transporter_area = 20.344 # nm^2 average of glucose transporters sectional area in yeast
+model0.reactions.get_by_id("draw_pseudo_glc_trans").upper_bound = 1e6*Sglucose_trans/(coefficient1*glucose_transporter_area)
+
+
+
+
 # set growth
 growth = 0.35
 model0.reactions.get_by_id("r_2111").bounds = (growth, growth)
@@ -126,8 +140,8 @@ model0.reactions.get_by_id("r_2111").bounds = (growth, growth)
 model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
 model0.objective = {model0.reactions.r_1714_REV: -1}
 solution2 = model0.optimize()
-
-solution2.fluxes['psedo_glc_trans']
+solution2.fluxes['pseudo_glc_trans']
+solution2.fluxes['draw_pseudo_glc_trans']
 
 
 
@@ -135,9 +149,7 @@ GR = solution2.fluxes["r_1714_REV"]  # get the glucose uptake rate
 model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
 model0.objective = {model0.reactions.prot_pool_exchange: -1}
 solution3 = model0.optimize()
-solution3.fluxes['draw_psedo_glc_trans']
-
+solution3.fluxes['draw_pseudo_glc_trans']
 solution3.fluxes['prot_pool_exchange']
 solution3.fluxes["r_1761"]
-
 
