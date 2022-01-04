@@ -3,14 +3,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats_for_glucose_transporter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/proteomics_size_for_ecGEM.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/proteomics_size_for_ecGEM.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/omics_collect.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/omics_collect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/omics_glucose_transporter.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/omics_glucose_transporter.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/omics_measured_combine.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/data_PNAS_2021_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/data_PNAS_2021_scale.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_Francesca_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_Francesca_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_quality_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_quality_check.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gem_rxn_nov.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/gem_rxn_nov.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/glucose_transporter_copy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/glucose_transporter_copy_double_check.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/omics_glucose_transporter.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/omics_glucose_transporter_double_check.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,8 +96,8 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/omics" />
-      <recent name="$PROJECT_DIR$/data/proteomics" />
       <recent name="$PROJECT_DIR$/code/model" />
+      <recent name="$PROJECT_DIR$/data/proteomics" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/example_data" />
     </key>

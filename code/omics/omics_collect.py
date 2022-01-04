@@ -132,42 +132,11 @@ pro_abundance.columns = ["gene", "Mean molecules per cell_cell_system_2018","Med
 
 
 # input data from cell reports 2017
+# note this data is obtained under exponential growth phases
 pro_abundance2 = pd.read_excel("data/proteomics/protein_copy_cell_report_2017.xlsx")
-
 
 
 
 # combine data from different source?
 protein_copy = pd.merge(left=pro_abundance2, right=pro_abundance, left_on=['gene'], right_on=['gene'], how="left")
 protein_copy.to_excel("data/proteomics/protein_copy_combine.xlsx")
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# application 1 - check the glucose transporter abundance
-glucose_transporter = pd.read_excel("data/glucose_transporter_abundance_check.xlsx")
-glucose_transporter = glucose_transporter[glucose_transporter['Note'].isna()]
-omics_glucose_transporter = omics_combine[omics_combine['all_gene'].isin(glucose_transporter['gene'])]
-omics_glucose_transporter.to_excel("data/omics_glucose_transporter.xlsx")
-
-
-glucose_transporter_copy = protein_copy[protein_copy['gene'].isin(glucose_transporter['gene'])]
-glucose_transporter_copy['section_area'] = singleMapping(glucose_transporter['section_area'],glucose_transporter['gene'],glucose_transporter['gene'])
-# get the section area
-glucose_transporter_copy.to_excel("data/glucose_transporter_copy.xlsx")
-
-
-
-
-
-

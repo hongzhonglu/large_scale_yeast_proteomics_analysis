@@ -32,6 +32,7 @@ coefficient1 = 6.5789e9 # this coefficient is from proteomics quality check to t
 coefficient2 = 7.8298e9 # this coefficient is from cell systems paper
 
 
+
 # To calculate the structure constraint , we need change the unit g protein per biomass into  molecular per cell!
 A = 1 # mmol protein/gDW
 B = A*coefficient2 # molecular protein/cell

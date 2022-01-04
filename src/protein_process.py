@@ -174,7 +174,3 @@ def splitAbundance(pro_df):
         print('Complete the quality check!')
 
     return pro_df
-
-
-
-
