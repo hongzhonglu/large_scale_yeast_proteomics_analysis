@@ -114,8 +114,10 @@ print(proMassRatioFromCopy(protein_copy=protein_copy1))
 print(proMassRatioFromBenMethod(protein_copy=protein_copy1))
 
 
-
-
+# input the data from paxdb
+protein_copy = pd.read_csv("data/proteomics/abundance_table.csv")
+protein_copy['molecular/cell'] = protein_copy['abundance']*80
+print(proMassRatioFromCopy(protein_copy=protein_copy))
 
 
 

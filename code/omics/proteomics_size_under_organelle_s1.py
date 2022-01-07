@@ -96,3 +96,6 @@ location0 = 'plasma membrane'
 genes_select = getGeneListFromLocation(gene_location_annotation=pro_location, location=location0)
 pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
 x,Scellm= getStructureSize(pro_size0=pro_size, abundance0=pro_abundance1)
+
+
+
