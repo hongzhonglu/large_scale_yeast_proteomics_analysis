@@ -65,5 +65,23 @@ getSurfaceRatio(volume_ratio = 1/100, Vcell = 82, Scell=91.27)
 
 
 
+# check the ratio of surface and volume in cell and protein level
+## Volume
+#Vcell = 40 # assume cell size is 82 um^3
+#Dcell = 2*(3*Vcell/(4*math.pi))**(1/3)
+Dcell = 4.24
+Scell = 4*math.pi*(Dcell/2)**2 # 91.27 um^2
+Vcell = 4/3*math.pi*(Dcell/2)**3
+ratio_surface_to_volume1 = Scell/Vcell
+
+
+# the average protein diameter 4.46 nm
+Dcell = Dcell/1000
+Scell = 4*math.pi*(Dcell/2)**2
+S_section = math.pi*(Dcell/2)**2
+Vcell = 4/3*math.pi*(Dcell/2)**3
+ratio_surface_to_volume2 = Scell/Vcell
+ratio_section_area_to_volume2 = S_section/Vcell
+
 
 

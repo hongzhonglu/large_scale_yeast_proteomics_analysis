@@ -121,4 +121,5 @@ data_for_save = pd.concat([data_merge1, data_need_added], axis=0)
 data_for_save.to_excel("result/sce_protein_size_3D_structure.xlsx")
 
 
-
+# radius
+volume_df0["radius"].describe()

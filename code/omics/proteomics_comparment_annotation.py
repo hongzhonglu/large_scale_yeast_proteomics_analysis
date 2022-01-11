@@ -106,3 +106,7 @@ genes_mito_envelope = getGeneListFromLocation(gene_g1_m, 'mitochondrial envelope
 # gene_need_check1 = list(set(genes_mito_membrane) - set(genes_mito_om + genes_mito_im + genes_mito_is))
 genes_cytoplasm = getGeneListFromLocation(compartment2, 'cytoplasm')
 genes_cytosol = getGeneListFromLocation(compartment2, 'cytosol')
+
+
+
+

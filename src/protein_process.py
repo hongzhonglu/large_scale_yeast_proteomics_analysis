@@ -19,19 +19,6 @@ def getSurfaceRatio(volume_ratio = 0.005/100, Vcell = 82, Scell=91.27):
     return ratio
 
 
-def getGeneListFromLocation(gene_location_annotation, location):
-    """
-    The function is to extract gene list based on its compartment information
-    :param gene_location_annotation:
-    :param location:
-    :return:
-    """
-    #location = 'mitochondrial envelope'
-    gene_subset = gene_location_annotation[gene_location_annotation["GO_Name"]==location]
-    gene_list = list(set(gene_subset["Systematic_name"].tolist()))
-    return gene_list
-
-
 def setReferenceProCopy():
     """
     This function is used to set the reference protein molecular/cell! If we still could not find the values from the
@@ -69,40 +56,45 @@ def getProAundance(genes_select0, pro_abundance0):
     # calculate the abundance median value
     abundance0 = combine_df["molecular/cell"].tolist()
     abundance1 = [x for x in abundance0 if np.isnan(x) == False]
-    abundance_median = statistics.median(abundance1) # here for the protein without abundance, the median value from this group is used. But maybe not correct at some cases
-    abundance_update = []
-    for x in abundance0:
-        if np.isnan(x) == False:
-            x0 = x
-        else:
-            x0 = abundance_median
-        abundance_update.append(x0)
-    combine_df["molecular/cell_local"] = abundance_update
-    
-    # use the second choice
-    # load the reference molecular copies
-    ref_abundance, v_5, v_10 = setReferenceProCopy()
-    # set a dict
-    gene_abundance = {}
-    for i, x in ref_abundance.iterrows():
-        print(i)
-        gene_abundance[x['gene']] = x['molecular/cell']
-    
-    abundance_update2 = []
-    for i, x in combine_df.iterrows():
-        print(i)
-        ss = x['molecular/cell']
-        if np.isnan(ss) == False:
-            x0 = ss
-        elif x['gene'] in ref_abundance['gene'].tolist():
-            x0 = gene_abundance[x['gene']]   
-        else:
-            x0 = v_5
-        abundance_update2.append(x0)
-    
-    combine_df["molecular/cell_global"] = abundance_update2
+    if len(abundance1) < 1:
+        return "no_abundance"
+    else:
+        abundance_median = statistics.median(
+            abundance1)  # here for the protein without abundance, the median value from this group is used. But maybe not correct at some cases
+        abundance_update = []
+        for x in abundance0:
+            if np.isnan(x) == False:
+                x0 = x
+            else:
+                x0 = abundance_median
+            abundance_update.append(x0)
+        combine_df["molecular/cell_local"] = abundance_update
+
+        # use the second choice
+        # load the reference molecular copies
+        ref_abundance, v_5, v_10 = setReferenceProCopy()
+        # set a dict
+        gene_abundance = {}
+        for i, x in ref_abundance.iterrows():
+            print(i)
+            gene_abundance[x['gene']] = x['molecular/cell']
+
+        abundance_update2 = []
+        for i, x in combine_df.iterrows():
+            print(i)
+            ss = x['molecular/cell']
+            if np.isnan(ss) == False:
+                x0 = ss
+            elif x['gene'] in ref_abundance['gene'].tolist():
+                x0 = gene_abundance[x['gene']]
+            else:
+                x0 = v_5
+            abundance_update2.append(x0)
+
+        combine_df["molecular/cell_global"] = abundance_update2
 
     return combine_df
+
 
 
 def getStructureSize(pro_size0, abundance0, need_check="No"):
@@ -121,6 +113,8 @@ def getStructureSize(pro_size0, abundance0, need_check="No"):
     combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
     combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
     combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
+    # it shows that some genes have no locus
+    combine_df = combine_df[~combine_df["section_area"].isna()]
 
     # calculate the size of all proteins for the selected gene list
     # 1 纳米(nm)=0.001 微米(um)
@@ -174,3 +168,183 @@ def splitAbundance(pro_df):
         print('Complete the quality check!')
 
     return pro_df
+
+
+
+def getGoTermGeneList(input1, input2):
+    """
+    This function is generate the GO term and its gene list
+    :parameter1: a directory contain a excel file with gene GO term annotation
+    :parameter2: a directory contain a excel file with gene id mapping
+    :return: A dict. GO_term as key and gene list as value
+    ------------
+    Usage:
+    GO_term_gene = getGoTermGeneList(input1="data/pnas.1921890117.sd01_GO_term.xlsx", input2="data/sce_protein_weight.tsv")
+
+    Hongzhong Lu
+    2022.01.07
+    """
+    # Input the datasets from paxDB
+    GO_term = pd.read_excel(input1)
+    GO_term['GO-slim mapper process term'] = GO_term['GO-slim mapper process term'].str.strip()
+
+    gene_info = pd.read_csv(input2, sep="\t")
+    gene_short_name = gene_info['gene_name'].tolist()
+    gene_short_name = [str(x) for x in gene_short_name]
+    gene_info['gene_name'] = gene_short_name
+    gene_short_name2 = []
+    gene_locus = gene_info['locus'].tolist()
+    for x, y in zip(gene_short_name, gene_locus):
+        print(x, y)
+        if x == 'nan':
+            gene_short_name2.append(y)
+        else:
+            gene_short_name2.append(x)
+    # build a dict
+    # it shows that some genes have no locus
+    # be careful in this step
+    gene_name_dict = {}
+    for w, v in zip(gene_short_name2, gene_locus):
+        gene_name_dict[w] = v
+
+    # build GO_term dict
+    GO_dict = {}
+    for i, x in GO_term.iterrows():
+        print(i)
+        ss = list(x)
+        name = ss[0]
+        ss = ss[1:]
+        mylist = [str(x) for x in ss]
+        newlist = [v for v in mylist if v != 'nan']
+        # get the gene OFR name base on short gene ID
+        key_all = gene_name_dict.keys()
+        newlist1 = []
+        for x in newlist:
+            if x in key_all:
+                x0 = gene_name_dict[x]
+            else:
+                x0 = x
+            newlist1.append(x0)
+        GO_dict[name] = newlist1
+    return GO_dict
+
+
+
+def getGeneListFromLocation(gene_location_annotation, location):
+    """
+    The function is to extract gene list based on its compartment information
+    :param gene_location_annotation: A dataframe contains the annotation of each protein
+    :param location: A string represent the compartment name
+    :return:
+    """
+    #location = 'mitochondrial envelope'
+    gene_subset = gene_location_annotation[gene_location_annotation["GO_Name"]==location]
+    gene_list = list(set(gene_subset["Systematic_name"].tolist()))
+    return gene_list
+
+
+
+def getCompartmentGeneList(filter="Yes"):
+    """
+    This function to build a compartment dict, with which we can get the gene list from the compartment name
+
+    :param filter:
+    :return:
+    """
+
+    # Input the datasets from paxDB
+    compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
+
+    # extract compartment
+    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
+                           'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+    compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
+
+    # filter out compartment with "complex" or "subunit"
+    compartment2 = compartment1[~compartment1["GO_Name"].str.contains("complex")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("subunit")]
+    # firstly remove some general cellular component
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("snRNP")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("spindle")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("actin")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("cellular_component")]
+
+    # analyze the annotation type
+    annotation_type = compartment2["Annot_Type"].tolist()
+    annotation_type = list(set(annotation_type))
+    # here if we remove "computational"
+    compartment_with_evidence = compartment2[compartment2["Annot_Type"] != 'computational']
+    compartment_with_computation = compartment2[compartment2["Annot_Type"] == 'computational']
+    # in one procedure, if a protein has no compartment annotation from manual and high-throughput, then the computational is used!
+    compartment_addition = compartment_with_computation[~compartment_with_computation["Systematic_name"].isin(compartment_with_evidence["Systematic_name"])]
+    compartment_combine = pd.concat([compartment_with_evidence, compartment_addition])
+
+    # build the dict
+    compartment_dict_all = {}
+    for i, x in compartment2.iterrows():
+        print(i, x)
+        if x['GO_Name'] in compartment_dict_all.keys():
+            compartment_dict_all[x['GO_Name']] = list(set(compartment_dict_all[x['GO_Name']] + [x["Systematic_name"]]))
+        else:
+            compartment_dict_all[x['GO_Name']] = list(set([x["Systematic_name"]]))
+    # filter
+    compartment_dict_all0 = {}
+    for key in compartment_dict_all.keys():
+        print(key)
+        value = compartment_dict_all[key]
+        if len(value) >= 6:
+            compartment_dict_all0[key] = value
+        else:
+            pass
+
+    compartment_dict2 = {}
+    for i, x in compartment_combine.iterrows():
+        print(i, x)
+        if x['GO_Name'] in compartment_dict2.keys():
+            compartment_dict2[x['GO_Name']] = list(set(compartment_dict2[x['GO_Name']] + [x["Systematic_name"]]))
+        else:
+            compartment_dict2[x['GO_Name']] = list(set([x["Systematic_name"]]))
+    # filter
+    compartment_dict20 = {}
+    for key in compartment_dict2.keys():
+        print(key)
+        value = compartment_dict2[key]
+        if len(value) >= 6:
+            compartment_dict20[key] = value
+        else:
+            pass
+    if filter == "Yes":
+        return compartment_dict20
+    else:
+        return compartment_dict_all0
+
+
+
+def AllProteomicsAnalysis(pro_df):
+    """
+    The function is used to do the general statistical analysis of proteomics datasets across conditions.
+    :param pro_df: A dataframe to store proteomics, with column "gene"
+    :return:
+
+    _____
+
+    usage: AllProteomicsAnalysis(pro_df=protein_copy_all1)
+    """
+    protein_copy_all2 = pro_df.drop(columns=['gene'])
+    ss = protein_copy_all2.describe()
+    # get the top 1000 proteins based on their molecular copies
+    new_df = pro_df[['gene']]
+    # Get the top 1000 proteins
+    column20 = protein_copy_all2.columns
+    for x in column20:
+        print(x)
+        df = pro_df[['gene', x]]
+        ss2 = df.sort_values(by=[x], ascending=False)
+        ss2_top1000 = ss2.iloc[0:1000, ]
+        df[x][~df['gene'].isin(ss2_top1000['gene'])] = None
+        new_df[x] = df[x]
+    # analysis
+    new_df1 = new_df[column20]
+    ss1 = new_df1.describe()
+    ss1.to_excel("data/proteomics/protein_copy_statistical_top1000.xlsx")
+    ss.to_excel("data/proteomics/protein_copy_statistical.xlsx")
