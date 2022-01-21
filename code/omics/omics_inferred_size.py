@@ -41,6 +41,7 @@ AllProteomicsAnalysis(pro_df=protein_copy_all1)
 
 
 
+
 # input the pro structure size data
 pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
 pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
@@ -48,6 +49,11 @@ pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 # the protein location here is based on manual check, but it contains annotation from computation!!
 pro_location = pd.read_excel("result/gene_compartment_mapping.xlsx")
 pro_location = pro_location[['DBID', 'Systematic_name','GO_Name', 'Annot_Type', 'compartment']]
+
+
+
+
+
 
 
 
@@ -88,6 +94,10 @@ compartment = getCompartmentGeneList(filter="Yes") # based on the automatic way
 location0 = "mitochondrial inner membrane"
 genes_select = compartment[location0]
 pro_df = protein_copy_all1
+# abundance check
+pro_df_test = pro_df[pro_df["gene"].isin(genes_select)]
+pro_df_test.to_excel("data/abundance_check_test.xlsx")
+
 
 
 # read the model

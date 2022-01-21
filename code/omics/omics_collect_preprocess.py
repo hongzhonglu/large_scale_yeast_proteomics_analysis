@@ -121,6 +121,43 @@ protein_abundance3.to_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx", 
 
 
 
+# input the datasets from Jianye
+# Part 1 Collect all the data in the unit of mmol/gDW
+# input the Jianye's data
+# Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
+growth2 = [0.027, 0.044, 0.102, 0.152, 0.214, 0.254, 0.284, 0.334, 0.379, 0.43]
+all_dilution = []
+for i in growth2:
+    if i < 0.43:
+        print(i)
+        string0 = "D=" + str(i)
+        all_dilution.append(string0)
+    else:
+        break
+# input the measured values
+omics_jianye = pd.read_csv("data/proteomics/Omics_from_Jianye.csv")
+columns0 = list(omics_jianye.columns)
+columns0 = [x for x in columns0 if "RNA" not in x]
+columns0 = [x for x in columns0 if "XIA" not in x]
+omics_jianye0 = omics_jianye[columns0]
+new_columns0 = ['Accession','Gene'] + [x + "_M" for x in all_dilution]
+omics_jianye0.columns = new_columns0
+omics_jianye1 = omics_jianye0[['Accession','Gene']]
+
+for x in new_columns0:
+    if "_M" in x:
+        print(x)
+        ss1 = omics_jianye0[x]*1e-09
+        omics_jianye1[x] = list(ss1)
+# id mapping
+id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
+omics_jianye1['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], omics_jianye1['Accession'])
+# compare the above dataset with the original Jianye datasets
+
+
+
+
+
 
 
 

@@ -10,6 +10,7 @@ from src.protein_process import *
 
 # Part 1 Collect all the data in the unit of mmol/gDW
 # input the Jianye's data
+# Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
 growth2 = [0.027, 0.044, 0.102, 0.152, 0.214, 0.254, 0.284, 0.334, 0.379, 0.43]
 all_dilution = []
 for i in growth2:
@@ -41,6 +42,7 @@ omics_jianye1['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'
 
 
 # input the tao's data
+# Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
 # input the measured values
 omics_tao = pd.read_csv("data/proteomics/Omics_from_tao.csv")
 columns0 = list(omics_tao.columns)
@@ -90,7 +92,7 @@ omics_Rahul = pd.read_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx")
 
 
 # combine data from different source?
-# get the common gene
+# get all genes
 all_gene = set(omics_carl['gene'].tolist()) | set(omics_francesca['genes'].tolist()) | set(omics_tao1['gene'].tolist()) | set(omics_jianye1['gene'].tolist()) | set(omics_johan['gene'].tolist()) | set(omics_Rahul['gene'].tolist())
 all_gene = list(set(all_gene))
 new_df = pd.DataFrame({"all_gene": all_gene})
