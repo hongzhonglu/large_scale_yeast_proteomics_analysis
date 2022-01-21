@@ -41,7 +41,6 @@ AllProteomicsAnalysis(pro_df=protein_copy_all1)
 
 
 
-
 # input the pro structure size data
 pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
 pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]

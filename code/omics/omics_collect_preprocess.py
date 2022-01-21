@@ -21,6 +21,9 @@ id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 
 
 
+
+
+
 ############## datasets preprocess ###################################
 # This original dataset is from www.pnas.org/cgi/doi/10.1073/pnas.1918216117
 abundance_ex = pd.read_excel("data/proteomics/omics_Francesca.xlsx")
@@ -224,7 +227,7 @@ abudance_jianye_1=abudance_jianye_1[column1]
 abundance_jianye_corrected = pd.concat([abudance_jianye_1, abudance_jianye2], axis=0)
 
 abundance_jianye_corrected['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], abundance_jianye_corrected['Majority protein IDs'])
-column2 = ["gene"] + column1[2:]
+column2 = ["gene"] + column1[1:]
 abundance_jianye_corrected=abundance_jianye_corrected[column2]
 abundance_jianye_corrected.to_excel("data/proteomics/abundance_jianye_corrected.xlsx", index=False)
 

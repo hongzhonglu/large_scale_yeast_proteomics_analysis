@@ -3,18 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/omics_collect.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/omics_collect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/omics_collect_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/omics_collect_preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/abundance_table_paxdb_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/abundance_table_paxdb_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/omics_inferred_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/omics_inferred_size.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/combine_protein_copy.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/data_PNAS_2021_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/data_PNAS_2021_scale.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_Francesca_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_Francesca_scale.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/proteomics_Rahul_2020_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/proteomics_Rahul_2020_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$protein_copy_statistical.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
