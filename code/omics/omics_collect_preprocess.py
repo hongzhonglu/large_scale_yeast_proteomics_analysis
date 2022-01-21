@@ -8,20 +8,26 @@ from src.mainFunction import *
 from src.protein_process import *
 
 
+# some general datasets
 # Get the molecular weight data using the data from SGD with more genes
 mw = pd.read_csv("data/sce_protein_weight.tsv", sep="\t")
 mw = mw[["locus","proteins_molecular_weight"]]
 mw.columns = ["gene name", "MW"]
 mw["MW_Kda"] = mw["MW"]/1000
+# ID mapping between uniprot ID and gene locus IDs
+id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 
 
-# process the experimentally proteomic datasets
+
+
+
+############## datasets preprocess ###################################
 # This original dataset is from www.pnas.org/cgi/doi/10.1073/pnas.1918216117
 abundance_ex = pd.read_excel("data/proteomics/omics_Francesca.xlsx")
+# remove one outlier data point
+abundance_ex['Glucose_phase(g/gDW)'][abundance_ex["genes"]=="YMR142C"] = None
+
 abundance_ex["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abundance_ex["genes"])
-
-
-
 # Some species process. It could find that some rows with two proteins. Here assume the two proteins are identical in abundance，taking half of total protein abundance.
 abudance_ex_1 = abundance_ex[~abundance_ex["MW_Kda"].isna()]
 abudance_ex_check = abundance_ex[abundance_ex["MW_Kda"].isna()]
@@ -55,9 +61,6 @@ for x in column0:
         pass
 
 
-
-
-
 abudance_ex2["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abudance_ex2["genes"])
 # combine the above two datasets
 abundance_ex_corrected = pd.concat([abudance_ex_1, abudance_ex2], axis=0)
@@ -74,8 +77,7 @@ abundance_ex_corrected1.to_excel("data/proteomics/omics_Francesca_scale.xlsx")
 
 
 
-
-
+############## datasets preprocess ###################################
 # input latest dataset of Carl
 coefficient1 = 6.5789e9
 abundance_ex = pd.read_excel("data/proteomics/data_PNAS_2021.xlsx")
@@ -91,6 +93,9 @@ abundance_ex1["molecular/cell"] = abundance_ex1["mmol/gDW"]*coefficient1 # unit 
 abundance_ex1.to_excel("data/proteomics/data_PNAS_2021_scale.xlsx")
 
 
+
+
+############## datasets preprocess ###################################
 # input data from paxdb
 protein_copy = pd.read_csv("data/proteomics/abundance_table_paxdb.csv")
 protein_copy['molecular/cell'] = protein_copy['abundance']*80 # here assume the number of total protein moleculars is 80 million to do the scale!
@@ -100,6 +105,9 @@ protein_copy.to_excel("data/proteomics/abundance_table_paxdb_scale.xlsx", index=
 
 
 
+
+
+############## datasets preprocess ###################################
 # input data from other lab
 # this data is from Proteome overabundance enables respiration but limitation onsets carbon overflow
 # the unit is molecular/pgDCW, need change it as mmol/gDW
@@ -120,7 +128,7 @@ protein_abundance3.to_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx", 
 
 
 
-
+############## datasets preprocess ###################################
 # input the datasets from Jianye
 # Part 1 Collect all the data in the unit of mmol/gDW
 # input the Jianye's data
@@ -150,9 +158,75 @@ for x in new_columns0:
         ss1 = omics_jianye0[x]*1e-09
         omics_jianye1[x] = list(ss1)
 # id mapping
-id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 omics_jianye1['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], omics_jianye1['Accession'])
+
+
+
+
+
+
 # compare the above dataset with the original Jianye datasets
+omics_jianye_original = pd.read_excel("data/proteomics/proteomics_Jianye_original.xlsx")
+# first update isoform of proteins and change it as a signle protein
+ID_new = []
+for i, x in omics_jianye_original.iterrows():
+    #print(i)
+    ss = x["Majority protein IDs"]
+    if "-2" in x["Majority protein IDs"]:
+        print(x["Majority protein IDs"])
+        ss1 = ss.replace("-2","").replace("-3","")
+        ss2 = ss1.split(";")[0]
+        print(ss2)
+        ID_new.append(ss2)
+    else:
+        ID_new.append(ss)
+
+omics_jianye_original1 = omics_jianye_original
+omics_jianye_original1["Majority protein IDs"] = ID_new
+
+
+abudance_jianye_1 = omics_jianye_original1[~omics_jianye_original1["Majority protein IDs"].str.contains(";")]
+abudance_jianye_check = omics_jianye_original1[omics_jianye_original1["Majority protein IDs"].str.contains(";")]
+gene0 = []
+abundance0 =[]
+column0 = abudance_jianye_check.columns
+abudance_jianye_check11 = abudance_jianye_check.copy()
+gene0 = []
+num0 = []
+for x in column0:
+    if "Majority protein IDs" in x:
+        ss = abudance_jianye_check[x].tolist()
+        for v in ss:
+            v1 = v.split(";")
+            gene0= gene0+v1
+            num0.append(len(v1))
+    else:
+        pass
+
+abudance_jianye2 = pd.DataFrame({"Majority protein IDs": gene0})
+
+
+for x in column0:
+    if "D=" in x:
+        ss = abudance_jianye_check[x].tolist()
+        abudance0 = []
+        for v,n in zip(ss,num0):
+            v1 = [v/n]*n
+            abudance0 = abudance0 + v1
+        abudance_jianye2[x] = abudance0
+
+    else:
+        pass
+
+
+column1 = [x for x in column0 if x !="Gene Name"]
+abudance_jianye_1=abudance_jianye_1[column1]
+abundance_jianye_corrected = pd.concat([abudance_jianye_1, abudance_jianye2], axis=0)
+
+abundance_jianye_corrected['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], abundance_jianye_corrected['Majority protein IDs'])
+column2 = ["gene"] + column1[2:]
+abundance_jianye_corrected=abundance_jianye_corrected[column2]
+abundance_jianye_corrected.to_excel("data/proteomics/abundance_jianye_corrected.xlsx", index=False)
 
 
 

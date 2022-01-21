@@ -9,38 +9,6 @@ from src.protein_process import *
 
 
 # Part 1 Collect all the data in the unit of mmol/gDW
-# input the Jianye's data
-# Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
-growth2 = [0.027, 0.044, 0.102, 0.152, 0.214, 0.254, 0.284, 0.334, 0.379, 0.43]
-all_dilution = []
-for i in growth2:
-    if i < 0.43:
-        print(i)
-        string0 = "D=" + str(i)
-        all_dilution.append(string0)
-    else:
-        break
-# input the measured values
-omics_jianye = pd.read_csv("data/proteomics/Omics_from_Jianye.csv")
-columns0 = list(omics_jianye.columns)
-columns0 = [x for x in columns0 if "RNA" not in x]
-columns0 = [x for x in columns0 if "XIA" not in x]
-omics_jianye0 = omics_jianye[columns0]
-new_columns0 = ['Accession','Gene'] + [x + "_M" for x in all_dilution]
-omics_jianye0.columns = new_columns0
-omics_jianye1 = omics_jianye0[['Accession','Gene']]
-
-for x in new_columns0:
-    if "_M" in x:
-        print(x)
-        ss1 = omics_jianye0[x]*1e-09
-        omics_jianye1[x] = list(ss1)
-# id mapping
-id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
-omics_jianye1['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], omics_jianye1['Accession'])
-
-
-
 # input the tao's data
 # Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
 # input the measured values
@@ -76,6 +44,11 @@ omics_francesca = pd.read_excel("data/proteomics/omics_Francesca_scale.xlsx")
 omics_johan = pd.read_excel("data/proteomics/omics_johan.xlsx")
 
 
+# input the Tyler's data
+omics_Tyler = pd.read_excel("data/proteomics/Proteome_ref.xlsx", sheet_name="Sce_0.1_Tyler")
+omics_Tyler = omics_Tyler[['GeneName_S288C', 'Standard(mmol/gDW)']]
+omics_Tyler.columns = ['gene', 'mmol/gDW_Tyler_D0.1']
+
 
 # TO-DO add new datasets
 # input data from other lab
@@ -93,7 +66,7 @@ omics_Rahul = pd.read_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx")
 
 # combine data from different source?
 # get all genes
-all_gene = set(omics_carl['gene'].tolist()) | set(omics_francesca['genes'].tolist()) | set(omics_tao1['gene'].tolist()) | set(omics_jianye1['gene'].tolist()) | set(omics_johan['gene'].tolist()) | set(omics_Rahul['gene'].tolist())
+all_gene = set(omics_carl['gene'].tolist()) | set(omics_francesca['genes'].tolist()) | set(omics_tao1['gene'].tolist()) | set(omics_johan['gene'].tolist()) | set(omics_Tyler['gene'].tolist()) | set(omics_Rahul['gene'].tolist())
 all_gene = list(set(all_gene))
 new_df = pd.DataFrame({"all_gene": all_gene})
 
@@ -108,7 +81,7 @@ df_combine1 = pd.merge(left=df_combine, right=omics_carl, left_on=['all_gene'], 
 df_combine1 = df_combine1[['all_gene','Glucose_phase(mmol/gDW)', 'Diauxic_shift(mmol/gDW)', 'Ethanol_phase(mmol/gDW)','mmol/gDW_carl']]
 
 df_combine2 = pd.merge(left=df_combine1, right=omics_tao1, left_on=['all_gene'], right_on=['gene'], how="left")
-df_combine3 = pd.merge(left=df_combine2, right=omics_jianye1, left_on=['all_gene'], right_on=['gene'], how="left")
+df_combine3 = pd.merge(left=df_combine2, right=omics_Tyler, left_on=['all_gene'], right_on=['gene'], how="left")
 df_combine4 = pd.merge(left=df_combine3, right=omics_johan, left_on=['all_gene'], right_on=['gene'], how="left")
 df_combine5 = pd.merge(left=df_combine4, right=omics_Rahul, left_on=['all_gene'], right_on=['gene'], how="left")
 # get the new column
@@ -153,17 +126,25 @@ pro_abundance.columns = ["gene", "Mean molecules per cell_cell_system_2018","Med
 # input data from cell reports 2017
 # note this data is obtained under exponential growth phases
 pro_abundance2 = pd.read_excel("data/proteomics/protein_copy_cell_report_2017.xlsx")
+# filter out one sample with very few total protein copy number
+pro_abundance2 =pro_abundance2[[x for x in pro_abundance2.columns if x !="Chong et al. 2015 - Copy "]]
+
 
 # input data from paxdb
 # In the dataset, it assumes that total molecular is 80 million
 pro_abundance3 = pd.read_excel("data/proteomics/abundance_table_paxdb_scale.xlsx")
 
 
+# input data from Jianye
+pro_jianye = pd.read_excel("data/proteomics/abundance_jianye_corrected.xlsx")
+
+
+
 # combine data from different source?
 protein_copy = pd.merge(left=pro_abundance2, right=pro_abundance, left_on=['gene'], right_on=['gene'], how="left")
 protein_copy1 = pd.merge(left=pro_abundance3, right=protein_copy, left_on=['gene'], right_on=['gene'], how="outer")
+protein_copy2 = pd.merge(left=protein_copy1, right=pro_jianye, left_on=['gene'], right_on=['gene'], how="outer")
 
-
-protein_copy1.to_excel("data/proteomics/protein_copy_combine.xlsx",index=False)
+protein_copy2.to_excel("data/proteomics/protein_copy_combine.xlsx",index=False)
 
 
