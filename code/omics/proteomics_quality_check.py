@@ -24,7 +24,7 @@ def proMassRatioFromCopy(protein_copy):
     protein_copy = protein_copy[protein_copy["MW"].notna()]
     protein_copy = protein_copy[protein_copy["molecular/cell"].notna()]
     # procedure 1 from kcat DL paper
-    protein_copy["mmol/gDW"] = protein_copy["molecular/cell"] / (6.02 * 10e20) / 13 * 10e12
+    protein_copy["mmol/gDW"] = protein_copy["molecular/cell"] / (6.02 * 10e20) / 13 * 10e12 ##Change unit to [protein molecules/cell], assume yeast cell weight is 13[pg], Avogadro constant is 6.02*10^23
     protein_copy["mg/gDW"] = protein_copy["mmol/gDW"] * protein_copy["MW"]
     # calculate the protein ratio
     protein_ratio = sum(protein_copy["mg/gDW"]) / 1000

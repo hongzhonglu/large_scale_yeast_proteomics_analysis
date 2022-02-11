@@ -33,7 +33,7 @@ column21 = ['gene'] + column20
 protein_copy_all1 = protein_copy_all[column21]
 protein_copy_all1.to_excel("data/proteomics/all_protein_copy.xlsx")
 # statistical analysis of all proteomics datasets
-AllProteomicsAnalysis(pro_df=protein_copy_all1)
+result_df = AllProteomicsAnalysis(pro_df=protein_copy_all1)
 
 
 
@@ -82,7 +82,7 @@ for col0 in column20:
     result1[col0] = value1
     result2[col0] = value2
 result1.to_excel("data/proteomics/volume_size_across_compartment.xlsx")
-result2.to_excel("data/proteomics/membrance_size_across_compartment.xlsx")
+result2.to_excel("data/proteomics/membrane_size_across_compartment.xlsx")
 
 
 

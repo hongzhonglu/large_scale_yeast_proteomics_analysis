@@ -348,3 +348,4 @@ def AllProteomicsAnalysis(pro_df):
     ss1 = new_df1.describe()
     ss1.to_excel("data/proteomics/protein_copy_statistical_top1000.xlsx")
     ss.to_excel("data/proteomics/protein_copy_statistical.xlsx")
+    return ss

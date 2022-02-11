@@ -3,14 +3,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/omics_combined_with_physiology.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/omics_combined_with_physiology.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/omics_combined_with_physiology.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/organelle_membrane_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/omics_inferred_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/omics_inferred_size.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_quality_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_quality_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrance_size_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrance_size_across_compartment.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrance_size_across_compartment.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_sysbio.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_sysbio.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$membrance_size_across_compartment.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$physiology_collection.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
