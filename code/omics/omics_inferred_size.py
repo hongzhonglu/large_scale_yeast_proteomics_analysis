@@ -32,10 +32,6 @@ column20 = [x for x in column2 if x is not 'gene']
 column21 = ['gene'] + column20
 protein_copy_all1 = protein_copy_all[column21]
 protein_copy_all1.to_excel("data/proteomics/all_protein_copy.xlsx")
-# statistical analysis of all proteomics datasets
-result_df = AllProteomicsAnalysis(pro_df=protein_copy_all1)
-
-
 
 
 
@@ -48,9 +44,6 @@ pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 # the protein location here is based on manual check, but it contains annotation from computation!!
 pro_location = pd.read_excel("result/gene_compartment_mapping.xlsx")
 pro_location = pro_location[['DBID', 'Systematic_name','GO_Name', 'Annot_Type', 'compartment']]
-
-
-
 
 
 
@@ -83,7 +76,6 @@ for col0 in column20:
     result2[col0] = value2
 result1.to_excel("data/proteomics/volume_size_across_compartment.xlsx")
 result2.to_excel("data/proteomics/membrane_size_across_compartment.xlsx")
-
 
 
 

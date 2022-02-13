@@ -31,7 +31,7 @@ def setReferenceProCopy():
     pro_abundance.columns = ['gene', 'molecular/cell', "median_absolute_abundance"]
     pro_abundance = pro_abundance[pro_abundance["molecular/cell"].notna()]
     reference_copy = pro_abundance
-    statistics_analysis = reference_copy.describe()
+    # statistics_analysis = reference_copy.describe()
     v_five_percent = reference_copy['molecular/cell'].quantile(0.05)
     v_ten_percent = reference_copy['molecular/cell'].quantile(0.1)
     return reference_copy, v_five_percent, v_ten_percent
@@ -39,12 +39,12 @@ def setReferenceProCopy():
 
 def getProAundance(genes_select0, pro_abundance0):
     """
+    Note: this function need double check!!!
+
     The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
     It should be noted that the unit of pro_abundance is molecules per cell.
     :param genes_select0:
-    :param pro_size0: the unit is nm^3 (volume) or nm^2 (area)
     :param pro_abundance0: the unite is moleculars per cell
-    :param need_check:
     :return:
     """
 
@@ -59,8 +59,8 @@ def getProAundance(genes_select0, pro_abundance0):
     if len(abundance1) < 1:
         return "no_abundance"
     else:
-        abundance_median = statistics.median(
-            abundance1)  # here for the protein without abundance, the median value from this group is used. But maybe not correct at some cases
+        # use the first choice: for gene with no measured abundance, use the median value for the gene from the same compartment
+        abundance_median = statistics.median(abundance1)  # here for the protein without abundance, the median value from this group is used. But maybe not correct at some cases
         abundance_update = []
         for x in abundance0:
             if np.isnan(x) == False:
@@ -70,7 +70,8 @@ def getProAundance(genes_select0, pro_abundance0):
             abundance_update.append(x0)
         combine_df["molecular/cell_local"] = abundance_update
 
-        # use the second choice
+
+        # use the second choice: for gene with no measured abundance, use the value from the reference conditions??
         # load the reference molecular copies
         ref_abundance, v_5, v_10 = setReferenceProCopy()
         # set a dict
@@ -101,7 +102,6 @@ def getStructureSize(pro_size0, abundance0, need_check="No"):
     """
     The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
     It should be noted that the unit of pro_abundance is molecules per cell.
-    :param genes_select0:
     :param pro_size0: the unit is nm^3 (volume) or nm^2 (area)
     :param pro_abundance0: the unite is moleculars per cell
     :param need_check:
@@ -112,7 +112,7 @@ def getStructureSize(pro_size0, abundance0, need_check="No"):
     combine_df = abundance0
     combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
     combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
-    combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
+    #combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
     # it shows that some genes have no locus
     combine_df = combine_df[~combine_df["section_area"].isna()]
 
@@ -133,6 +133,29 @@ def getStructureSize(pro_size0, abundance0, need_check="No"):
         combine_df["total_area"] = combine_df["molecular/cell_global"] * combine_df["section_area"]
         combine_df = combine_df.sort_values(by=['total_area'], ascending=False)
         return total_volume_um, total_area_um, combine_df
+
+
+
+def getOrganelleAbundance(abundance0, need_check="No"):
+    """
+    The function is used to calculate the total protein abundance for a group of genes from specific location.
+    It should be noted that the unit of pro_abundance is molecules per cell.
+    :param pro_abundance0: the unite is moleculars per cell
+    :param need_check:
+    :return:
+    """
+
+    # should make sure no structure size data is nan
+    combine_df = abundance0
+    #combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
+    # calculate the size of all proteins for the selected gene list
+    # 1 纳米(nm)=0.001 微米(um)
+    total_abundance = sum(combine_df["molecular/cell_global"])
+
+    if need_check=="No":
+        return total_abundance
+    else:
+        return combine_df
 
 
 

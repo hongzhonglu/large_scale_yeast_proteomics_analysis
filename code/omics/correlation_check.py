@@ -7,11 +7,13 @@ from src.model_process import *
 from src.mainFunction import *
 from src.protein_process import *
 import seaborn as sns
-
+from scipy.stats import pearsonr
 
 
 # input the physiological datasets from Rosemerry
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
+
+
 # input the volume size data
 volume_size = pd.read_excel("data/proteomics/volume_size_across_compartment.xlsx")
 volume_size_tr = volume_size.transpose()
@@ -34,7 +36,7 @@ size_column = list(volume_size_rosemery2.columns)
 zeors_array = np.zeros( (len(column1), len(size_column)) )
 
 
-from scipy.stats import pearsonr
+
 for i in range(0,len(column1)):
     print(i)
     for j in range(0,len(size_column)):
@@ -75,7 +77,6 @@ size_column = list(membrane_size_rosemery2.columns)
 zeors_array = np.zeros( (len(column1), len(size_column)) )
 
 
-from scipy.stats import pearsonr
 for i in range(0,len(column1)):
     print(i)
     for j in range(0,len(size_column)):
@@ -109,4 +110,34 @@ ax = sns.heatmap(df0, cmap="YlGnBu")
 plt.savefig("result/figure/correlation_analysis_membrane.pdf", bbox_inches='tight')
 
 
+
+# check the correlation between protein abundance and sectional surface size
+abundance_organelle = pd.read_excel("data/proteomics/protein_abundance_across_compartment.xlsx")
+
+Sample_ID_select = ['prot.1','prot.2', 'prot.3','prot.7','prot.8','prot.9','prot.10','prot.11','prot.12','prot.13','prot.14','prot.15','prot.16','prot.17','prot.18','prot.19','prot.20','prot.21']
+abundance_organelle = abundance_organelle[Sample_ID_select +["compartment"]]
+abundance_organelle = abundance_organelle[abundance_organelle["compartment"].isin(column_select)]
+membrane_size0 = membrane_size[Sample_ID_select +["compartment"]]
+membrane_size0 = membrane_size0[membrane_size0["compartment"].isin(column_select)]
+
+correlation = []
+for xx in column_select:
+    print(xx)
+    ss1 = membrane_size0[membrane_size0["compartment"]==xx].values.tolist()[0][0:18]
+    ss2 = abundance_organelle[abundance_organelle["compartment"]==xx].values.tolist()[0][0:18]
+    pccs = pearsonr(ss1, ss2)
+    correlation.append(pccs[0])
+
+    title0 = 'result/figure/correlaton_' + xx + '.pdf'
+    print(title0)
+    #plt.figure()
+    plt.figure(figsize=(5, 5))
+    ss2 = [x/100000 for x in ss2]
+    plt.scatter(ss2, ss1)
+    plt.xlabel("total protein copy/10^5",fontsize=18)
+    plt.ylabel("total protein sectional area",fontsize=18)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
+    plt.title(xx, y=1.01)
+    plt.savefig(title0, bbox_inches='tight')
 
