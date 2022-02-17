@@ -27,9 +27,29 @@ GO_component_all = list(set(compartment2["GO_Name"].tolist()))
 compartment2 = compartment2[~compartment2["GO_Name"].str.contains("snRNP")]
 compartment2 = compartment2[~compartment2["GO_Name"].str.contains("spindle")]
 compartment2 = compartment2[~compartment2["GO_Name"].str.contains("actin")]
+compartment2 = compartment2[~compartment2["GO_Name"].str.contains("cellular_component")]
+
 # here we need firstly analyze the cellular component information and then filter some unused one?
-component_analysis = compartment2['GO_Name'].value_counts()
-component_analysis.to_excel("data/all_component_analysis.xlsx")
+# component_analysis = compartment2['GO_Name'].value_counts()
+
+# only analyze the compartment with manual check
+compartment_manual = compartment2[compartment2["Annot_Type"]=="manually curated"]
+genes_manual = list(set(compartment_manual["Systematic_name"].tolist()))
+
+compartment_ht = compartment2[compartment2["Annot_Type"]=="high-throughput"]
+genes_ht = list(set(compartment_ht["Systematic_name"].tolist()))
+
+compartment_c = compartment2[compartment2["Annot_Type"]=="computational"]
+genes_c = list(set(compartment_c["Systematic_name"].tolist()))
+
+
+
+
+
+
+
+
+
 
 # re-input the manual check result
 component_manual_check = pd.read_excel("data/all_component_manual_check.xlsx")
@@ -106,7 +126,3 @@ genes_mito_envelope = getGeneListFromLocation(gene_g1_m, 'mitochondrial envelope
 # gene_need_check1 = list(set(genes_mito_membrane) - set(genes_mito_om + genes_mito_im + genes_mito_is))
 genes_cytoplasm = getGeneListFromLocation(compartment2, 'cytoplasm')
 genes_cytosol = getGeneListFromLocation(compartment2, 'cytosol')
-
-
-
-

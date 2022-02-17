@@ -3,10 +3,66 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_Crabtree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/correlation_check.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/correlation_check.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/omics_inferred_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/omics_inferred_size.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/organelle_membrane_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/organelle_membrane_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_comparment_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_comparment_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/proteomics_comparment_annotation_automatic_way.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/proteomics_comparment_annotation_automatic_way.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/total_protein_copy_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/total_protein_copy_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/all_component_analysis.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/all_component_analysis.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/correlation_analysis_membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/correlation_analysis_membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy all datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy all datasets.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from jianye.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from jianye.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary NH4 limitation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary NH4 limitation.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_Golgi membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_Golgi membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_cellular bud membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_cellular bud membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_endoplasmic reticulum membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_endoplasmic reticulum membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_endosome membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_endosome membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_late endosome membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_late endosome membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial inner membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial inner membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial outer membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial outer membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_nuclear inner membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_nuclear inner membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_nuclear membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_nuclear membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_peroxisomal membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_peroxisomal membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_prospore membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_prospore membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_Golgi membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_Golgi membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_cellular bud membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_cellular bud membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_endoplasmic reticulum membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_endoplasmic reticulum membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_endosome membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_endosome membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_late endosome membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_late endosome membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrial inner membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrial inner membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrial membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrial membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrial outer membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrial outer membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_nuclear inner membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_nuclear inner membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_nuclear membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_nuclear membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_peroxisomal membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_peroxisomal membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_prospore membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_prospore membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_vacuolar membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_vacuolar membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_vacuolar membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_vacuolar membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_Golgi membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_Golgi membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_cellular bud membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_cellular bud membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_endoplasmic reticulum membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_endoplasmic reticulum membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_endosome membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_endosome membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_late endosome membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_late endosome membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_mitochondrial inner membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_mitochondrial inner membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_mitochondrial membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_mitochondrial membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_mitochondrial outer membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_mitochondrial outer membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_nuclear inner membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_nuclear inner membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_nuclear membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_nuclear membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_peroxisomal membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_peroxisomal membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_prospore membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_prospore membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qo2_vacuolar membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qo2_vacuolar membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy all datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy all datasets.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy from jianye.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy from jianye.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy from rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy from rosemary.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total_protein copy other datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total_protein copy other datasets.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total_protein copy rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total_protein copy rosemary.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,12 +156,40 @@
       <recent name="$PROJECT_DIR$/data/example_data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/proteomics" />
       <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/data/subsystem" />
-      <recent name="$PROJECT_DIR$/data/proteomis_data" />
     </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="proteomics_abundance_unit_unify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="De-nevo-protein-3D-structure-yeast" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/omics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/proteomics_abundance_unit_unify.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.proteomics_abundance_unit_unify" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
@@ -186,6 +270,21 @@
           <url>file://$PROJECT_DIR$/src/mainFunction.py</url>
           <line>633</line>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/omics_inferred_size.py</url>
+          <line>115</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/omics_inferred_size.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/omics_inferred_size.py</url>
+          <line>92</line>
+          <option name="timeStamp" value="5" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

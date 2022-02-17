@@ -1,5 +1,8 @@
-# Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
-# Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
+# check the following correlation between:
+# 1. organelle volume, phenotype data
+# 2. organelle membrane, phenotype data
+# 3. organelle membrane, the related protein abundance
+
 
 import matplotlib.pyplot as plt
 import os
@@ -140,4 +143,3 @@ for xx in column_select:
     plt.yticks(fontsize=15)
     plt.title(xx, y=1.01)
     plt.savefig(title0, bbox_inches='tight')
-

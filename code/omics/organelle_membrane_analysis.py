@@ -13,7 +13,8 @@ import seaborn as sns
 # input the physiological datasets from Rosemerry
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
 # input the membrane size data
-membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment.xlsx")
+# membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment.xlsx")
+membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation.xlsx")
 membrane_size_tr = membrane_size.transpose()
 membrane_size_tr0 = membrane_size_tr.rename(columns=membrane_size_tr.iloc[1])
 
@@ -87,7 +88,7 @@ plt.show()
 # here we only explore the condition with only NH4 limitation
 combine_data2 = combine_data[combine_data["Nitrogen source"] =="NH4"]
 combine_data2 = combine_data2[combine_data2["limiting nutrient"] =="N"]
-
+combine_data2.to_excel("data/proteomics/rosemary_data_analysis.xlsx")
 
 # plot the figures and do the statistical analysis
 x = combine_data2["qO2 (mmol/gDW h)"].tolist()
@@ -144,8 +145,12 @@ column_select10 = [x for x in column_select10 if "network" not in x]
 column_select10 = [x for x in column_select10 if "space" not in x]
 
 # because the size of plasma membrane and fungal-type vacuole membrane is so bigger, exclude them firstly
-column_select10 = [x for x in column_select10 if x!="plasma membrane"]
-column_select10 = [x for x in column_select10 if x!="fungal-type vacuole membrane"]
+# column_select10 = [x for x in column_select10 if x!="plasma membrane"]
+# column_select10 = [x for x in column_select10 if x!="fungal-type vacuole membrane"]
+column_select10 = [x for x in column_select10 if x!="mitochondrial membrane"] # remove duplicates?
+column_select10 = [x for x in column_select10 if x!="vacuolar membrane"] # remove duplicates?
+
+
 membrane_only = combine_data2[column_select10]
 
 # calculate the ratio of each organelle membrane relative to total membrane
@@ -173,8 +178,7 @@ for y0 in column_select10:
     sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
     plt.axvline(x=0.18, color='k', linestyle='--')
     plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0+ " occupied area",fontsize=15)
-    plt.savefig(title0)
+    plt.ylabel(y0 + " occupied area",fontsize=15)
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.savefig(title0, bbox_inches='tight')
@@ -187,8 +191,7 @@ for y0 in column_select10:
     sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
     plt.axvline(x=5.4, color='k', linestyle='--')
     plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0+ " occupied area",fontsize=15)
-    plt.savefig(title0)
+    plt.ylabel(y0 + " occupied area",fontsize=15)
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.savefig(title0, bbox_inches='tight')

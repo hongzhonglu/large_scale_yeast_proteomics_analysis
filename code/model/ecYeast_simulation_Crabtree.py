@@ -80,7 +80,12 @@ plt.xlabel('Growth rate (/h)')
 plt.ylabel('rate (mmol/gDW.h)')
 plt.legend(loc='upper left')
 plt.ylim(0, 40)
-plt.show()
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.savefig("result/figure/crabtree_effect_simulation.pdf", bbox_inches='tight')
+
+
+
 
 # from the above simulation it could find the secretion of acetate
 gem_rxn_nov.to_excel("result/flux_check.xlsx")

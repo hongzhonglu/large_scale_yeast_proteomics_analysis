@@ -173,4 +173,3 @@ plt.yticks(fontsize=12)
 plt.savefig("result/figure/dilution rate-total_copy from rosemary NH4 limitation.pdf")
 
 
-

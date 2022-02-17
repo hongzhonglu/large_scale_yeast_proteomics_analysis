@@ -1,6 +1,11 @@
 # this script is to transform the unit of proteomics datasets from mmol/gDW or g/gDW into molecular/cell
 # 2021-11-16
 
+
+import matplotlib.pyplot as plt
+
+
+
 # coeffcient change based on yeast ME model paper
 # this data maybe not right!
 # then how to transform the absolute abundance into one cell?
@@ -48,10 +53,16 @@ def calculateCoefficient(cell_volume0):
     coefficent20 = 1 / coefficent10  # from mmol/gDW into molecular/cell
     return coefficent20
 
+# example
 cell_volume_list = [30,31,32,33,34,35,36,37,38,39,40]
 coefficent_list = [calculateCoefficient(cell_volume0=x) for x in cell_volume_list]
-
-import matplotlib.pyplot as plt
 plt.figure()
 plt.scatter(cell_volume_list, coefficent_list)
 
+
+# curation of rosemary datasets based on the fitted cell volume under different growth rates
+coefficient2 = 7.8298e9 # this is the original coefficient used in cell system paper!
+growth_rate = [0.05, 0.1, 0.13, 0.18, 0.3, 0.35]
+cell_volume_fit = [30,30,30,30, 40.2, 42.833]
+coefficent_list = [calculateCoefficient(cell_volume0=x) for x in cell_volume_fit]
+curation_coefficent = [x/coefficient2 for x in coefficent_list]
