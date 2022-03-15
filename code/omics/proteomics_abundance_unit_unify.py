@@ -3,7 +3,7 @@
 
 
 import matplotlib.pyplot as plt
-
+import pandas as pd
 
 
 # coeffcient change based on yeast ME model paper
@@ -53,16 +53,32 @@ def calculateCoefficient(cell_volume0):
     coefficent20 = 1 / coefficent10  # from mmol/gDW into molecular/cell
     return coefficent20
 
-# example
-cell_volume_list = [30,31,32,33,34,35,36,37,38,39,40]
-coefficent_list = [calculateCoefficient(cell_volume0=x) for x in cell_volume_list]
-plt.figure()
-plt.scatter(cell_volume_list, coefficent_list)
+def calculateCurationCoefficent():
+    # curation of rosemary datasets based on the fitted cell volume under different growth rates
+    # fitting formula to calculate the coefficients
+    # when miu > 0.2, cell_volume = 77.32 miu + 15.771
+    # when miu < 0.2, average volume is 28 um^3
 
+    # Rosemary sample ID
+    Sample_ID_select = ['prot.1','prot.2', 'prot.3','prot.7','prot.8','prot.9','prot.10','prot.11','prot.12','prot.13','prot.14','prot.15','prot.16','prot.17','prot.18','prot.19','prot.20','prot.21']
+    coefficient2 = 7.8298e9  # this is the original coefficient used in cell system paper!
+    growth_rate = [0.05, 0.1, 0.13, 0.18, 0.3, 0.35]
+    cell_volume_fit = [28, 28, 28, 28, 38.967, 42.833]
+    coefficent_list = [calculateCoefficient(cell_volume0=x) for x in cell_volume_fit]
+    curation_coefficent = [x / coefficient2 for x in coefficent_list]
+    new_coefficent = []
+    for x in curation_coefficent:
+        print(x)
+        s = [x] * 3
+        new_coefficent = new_coefficent + s
+    cell_volume_all = []
+    for x in cell_volume_fit:
+        print(x)
+        s = [x] * 3
+        cell_volume_all = cell_volume_all + s
+    curation_info_rosemary = pd.DataFrame({"ID":Sample_ID_select, "cell_size":cell_volume_all, "curation_coefficent": new_coefficent})
 
-# curation of rosemary datasets based on the fitted cell volume under different growth rates
-coefficient2 = 7.8298e9 # this is the original coefficient used in cell system paper!
-growth_rate = [0.05, 0.1, 0.13, 0.18, 0.3, 0.35]
-cell_volume_fit = [30,30,30,30, 40.2, 42.833]
-coefficent_list = [calculateCoefficient(cell_volume0=x) for x in cell_volume_fit]
-curation_coefficent = [x/coefficient2 for x in coefficent_list]
+    return curation_info_rosemary
+
+# test
+df_curated = calculateCurationCoefficent()

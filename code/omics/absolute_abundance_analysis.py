@@ -1,5 +1,5 @@
-# Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
-# Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
+# Calcualte the absolute protein abundance from each organelle
+# 2022-03-14
 
 import matplotlib.pyplot as plt
 import os
@@ -61,6 +61,3 @@ for col0 in Sample_ID_select:
     result1[col0] = value1
 
 result1.to_excel("data/proteomics/protein_abundance_across_compartment.xlsx")
-
-
-

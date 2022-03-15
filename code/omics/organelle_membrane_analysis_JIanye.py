@@ -21,13 +21,13 @@ membrane_size_tr0 = membrane_size_tr.rename(columns=membrane_size_tr.iloc[1])
 
 
 
-# only take rosemery physiology dataset
-physiology_rosemery = physiology_data[physiology_data["kinetic"].str.contains("_M")]
-# only take rosemery proteomics
-membrane_size_rosemery = membrane_size_tr0[membrane_size_tr0.index.str.contains("_M")]
-membrane_size_rosemery["sample_ID"] = list(membrane_size_rosemery.index)
+# only take selected physiology dataset
+physiology_selected = physiology_data[physiology_data["kinetic"].str.contains("_M")]
+# only take selected proteomics
+membrane_size_selected = membrane_size_tr0[membrane_size_tr0.index.str.contains("_M")]
+membrane_size_selected["sample_ID"] = list(membrane_size_selected.index)
 # combine the physiological datasets and proteomics datasets
-combine_data = pd.merge(left=membrane_size_rosemery, right=physiology_rosemery, left_on=['sample_ID'], right_on=['kinetic'], how="left")
+combine_data = pd.merge(left=membrane_size_selected, right=physiology_selected, left_on=['sample_ID'], right_on=['kinetic'], how="left")
 # further filter based on Nitrogen limitation or carbon limitation
 
 
@@ -68,11 +68,11 @@ plt.show()
 
 # check the physiological parameter correlations
 plt.figure()
-plt.scatter(physiology_rosemery["dilution rate (/h)"], physiology_rosemery["qGlucose (mmol/gDW h)"], marker='.', label='Glucose')
-plt.scatter(physiology_rosemery["dilution rate (/h)"], physiology_rosemery["qO2 (mmol/gDW h)"], marker='.',label='O2')
-plt.scatter(physiology_rosemery["dilution rate (/h)"], physiology_rosemery["qCO2 (mmol/gDW h)"], marker='.',label='CO2')
-plt.scatter(physiology_rosemery["dilution rate (/h)"], physiology_rosemery["qEtOH (mmol/gDW h)"], marker='.',label='ethanol')
-plt.scatter(physiology_rosemery["dilution rate (/h)"], physiology_rosemery["qAce (mmol/gDW h)"], marker='.',label='acetate')
+plt.scatter(physiology_selected["dilution rate (/h)"], physiology_selected["qGlucose (mmol/gDW h)"], marker='.', label='Glucose')
+plt.scatter(physiology_selected["dilution rate (/h)"], physiology_selected["qO2 (mmol/gDW h)"], marker='.',label='O2')
+plt.scatter(physiology_selected["dilution rate (/h)"], physiology_selected["qCO2 (mmol/gDW h)"], marker='.',label='CO2')
+plt.scatter(physiology_selected["dilution rate (/h)"], physiology_selected["qEtOH (mmol/gDW h)"], marker='.',label='ethanol')
+plt.scatter(physiology_selected["dilution rate (/h)"], physiology_selected["qAce (mmol/gDW h)"], marker='.',label='acetate')
 plt.xlabel('Growth rate (/h)')
 plt.ylabel('rate (mmol/gDW.h)')
 plt.legend(loc='upper left')

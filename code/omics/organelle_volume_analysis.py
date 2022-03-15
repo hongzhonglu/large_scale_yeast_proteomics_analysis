@@ -11,6 +11,9 @@ import seaborn as sns
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
 # input the membrane size data
 volume_size = pd.read_excel("data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation.xlsx")
+volume_size = pd.read_excel("data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
+
+
 volume_size_tr = volume_size.transpose()
 volume_size_tr0 = volume_size_tr.rename(columns=volume_size_tr.iloc[1])
 
@@ -18,14 +21,14 @@ volume_size_tr0 = volume_size_tr.rename(columns=volume_size_tr.iloc[1])
 
 
 # calculate the total volume of proteins
-protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
+protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy_rosemary.xlsx")
 # input the pro structure size data
 pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
 pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 
 protein_copy_all1["pro_volume"] = singleMapping(pro_size['Total_Volume'],pro_size['locus'],protein_copy_all1['gene'])
 sample_ID = list(protein_copy_all1.columns)
-sample_ID = sample_ID[2:78]
+sample_ID = sample_ID[1:19]
 volume_list = []
 for x in sample_ID:
     ss1 = protein_copy_all1[[x,"pro_volume"]]
@@ -143,9 +146,36 @@ for y0 in column_select1:
 
 
 
+# add the yeast cell size data
+# check the correlation between organelle proteins volume with cell size
+df_curated = calculateCurationCoefficent()
 
+df_curated["total_pro_volume"] = total_pro_volume["total_pro_volume"]
+df_curated["total_pro_volume/cell_size"] = df_curated["total_pro_volume"]/df_curated["cell_size"]
 
+# plot
+x0="growth_rate"
+y0="total_pro_volume/cell_size"
+sns.lmplot(x=x0, y=y0, data=df_curated, lowess=True, height=4, aspect=1)
+plt.xlabel(x0, fontsize=15)
+plt.ylabel(y0, fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.axvline(x=0.18, color='k', linestyle='--')
 
-
-
-
+# check the volume ratio relative to cell size
+for y0 in column_select1:
+    combine_data2[y0] = combine_data2[y0]/df_curated["cell_size"]
+x0 = "dilution rate (/h)"
+for y0 in column_select1:
+    title0 = 'result/figure/rose_miu_' + y0 + '_relative_to_cell_size.pdf'
+    print(title0)
+    #plt.figure()
+    sns.lmplot(x=x0, y=y0, data=combine_data2,
+               lowess=True,height=4, aspect=1)
+    plt.xlabel(x0, fontsize=15)
+    plt.ylabel(y0, fontsize=15)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.axvline(x=0.18, color='k', linestyle='--')
+    plt.savefig(title0)
