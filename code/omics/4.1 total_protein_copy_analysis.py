@@ -1,5 +1,5 @@
-# Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
-# Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
+# Some in general analysis based on total protein copies, dilution rate for datasets from different samples.
+# Note here we assume that the cell average weigth is 13 pg!
 
 import matplotlib.pyplot as plt
 import os
@@ -171,5 +171,7 @@ plt.ylabel(y0, fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.savefig("result/figure/dilution rate-total_copy from rosemary NH4 limitation.pdf")
+
+
 
 

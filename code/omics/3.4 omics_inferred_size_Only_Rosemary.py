@@ -137,15 +137,6 @@ result1.to_excel("data/proteomics/volume_size_across_compartment_Rosemary_NH4_li
 result2.to_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
 
 
-
-
-
-
-
-
-
-
-
 # fungal-type vacuole
 #import seaborn as sns
 #ss = pro_abundance1

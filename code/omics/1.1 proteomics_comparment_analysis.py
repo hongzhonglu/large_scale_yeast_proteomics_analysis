@@ -110,19 +110,6 @@ plt.show()
 gene_g1_m = gene_g1[gene_g1["compartment"]=="mitochondrion/mitochondrial membrane"]
 gene_g1_others = gene_g1[~(gene_g1["compartment"]=="mitochondrion/mitochondrial membrane")]
 # try to remove duplicates in mitochrondria
-gene_g1_m.to_excel("data/gene_g1_m.xlsx")
 genes_mitochondrion = getGeneListFromLocation(gene_g1_m, 'mitochondrion')
 genes_mito_om = getGeneListFromLocation(gene_g1_m, 'mitochondrial outer membrane')
 genes_mito_im = getGeneListFromLocation(gene_g1_m, 'mitochondrial inner membrane')
-genes_mito_is = getGeneListFromLocation(gene_g1_m, 'mitochondrial intermembrane space')
-genes_mito_matrix = getGeneListFromLocation(gene_g1_m, 'mitochondrial matrix')
-genes_mito_membrane = getGeneListFromLocation(gene_g1_m, 'mitochondrial membrane')
-genes_mito_envelope = getGeneListFromLocation(gene_g1_m, 'mitochondrial envelope')
-# it is shown some genes in the envelope, but not belong to om or im
-# only three proteins were not assigned as om or im,
-# so we only assume they are in mitochondrion.
-# It is also shown that some proteins were annotated as membrane but not at im, om and is.
-# gene_need_check = list(set(genes_mito_envelope)-set(genes_mito_om + genes_mito_im))
-# gene_need_check1 = list(set(genes_mito_membrane) - set(genes_mito_om + genes_mito_im + genes_mito_is))
-genes_cytoplasm = getGeneListFromLocation(compartment2, 'cytoplasm')
-genes_cytosol = getGeneListFromLocation(compartment2, 'cytosol')

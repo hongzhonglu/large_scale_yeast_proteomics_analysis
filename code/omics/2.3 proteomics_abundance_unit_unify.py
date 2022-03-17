@@ -82,3 +82,5 @@ def calculateCurationCoefficent():
 
 # test
 df_curated = calculateCurationCoefficent()
+
+
