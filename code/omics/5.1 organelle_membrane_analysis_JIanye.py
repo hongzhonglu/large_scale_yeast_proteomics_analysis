@@ -30,20 +30,6 @@ membrane_size_selected["sample_ID"] = list(membrane_size_selected.index)
 combine_data = pd.merge(left=membrane_size_selected, right=physiology_selected, left_on=['sample_ID'], right_on=['kinetic'], how="left")
 # further filter based on Nitrogen limitation or carbon limitation
 
-
-# plot the figures and do the statistical analysis
-x = combine_data["qO2 (mmol/gDW h)"].tolist()
-y1 = combine_data["mitochondrial outer membrane"].tolist()
-y2 = combine_data["mitochondrial inner membrane"].tolist()
-fig = plt.figure(figsize=(5,5))
-sns.regplot(x, y1, ci=95)
-sns.regplot(x, y2, ci=95)
-fig.legend(labels=['outer membrane','inner membrane'])
-plt.legend(loc='upper left')
-plt.xlabel('qO2 (mmol/gDW h)')
-plt.ylabel('Occupied membrane area (µm²)')
-
-
 x = combine_data["dilution rate (/h)"].tolist()
 y1 = combine_data["mitochondrial outer membrane"].tolist()
 y2 = combine_data["mitochondrial inner membrane"].tolist()
@@ -55,14 +41,6 @@ plt.legend(loc='upper left')
 plt.xlabel('dilution rate (/h)')
 plt.ylabel('Occupied membrane area (µm²)')
 
-
-
-
-plt.figure()
-plt.scatter(combine_data["mitochondrial outer membrane"],combine_data["mitochondrial inner membrane"])
-plt.xlabel('mitochondrial outer membrane')
-plt.ylabel('mitochondrial inner membrane')
-plt.show()
 
 
 
@@ -138,33 +116,6 @@ for y0 in column_select10:
     plt.yticks(fontsize=12)
     plt.savefig(title0, bbox_inches='tight')
 
-x0 = 'qO2 (mmol/gDW h)'
-for y0 in column_select10:
-    title0 = 'result/figure/jianye_qo2_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=5.4, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-
-x0 = 'total protein content (g/gDW)'
-for y0 in column_select10:
-    title0 = 'result/figure/jianye_total_protein_content_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=0.286, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
 
 
 
@@ -173,11 +124,21 @@ x0 = "dilution rate (/h)"
 for y0 in column_select10:
     title0 = 'result/figure/jianye_miu_ratio_' + y0 + '.pdf'
     print(title0)
-    plt.figure(figsize=(4,4))
-    sns.scatterplot(x=x0, y=y0, data=membrane_only_ratio)
-    plt.axvline(x=0.284, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied ratio",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
+    if y0 != "mitochondrial inner membrane":
+        sns.lmplot(x=x0, y=y0, data=membrane_only_ratio, lowess=True, height=4, aspect=1)
+        plt.axvline(x=0.284, color='k', linestyle='--')
+        plt.xlabel(x0, fontsize=12)
+        plt.ylabel(y0 + " occupied ratio", fontsize=15)
+        plt.xticks(fontsize=12)
+        plt.yticks(fontsize=12)
+        plt.savefig(title0, bbox_inches='tight')
+    else:
+        plt.figure()
+        sns.lineplot(x=x0, y=y0, data=membrane_only_ratio,  marker="o")
+        plt.axvline(x=0.284, color='k', linestyle='--')
+        plt.xlabel(x0, fontsize=12)
+        plt.ylabel(y0 + " occupied ratio", fontsize=15)
+        plt.xticks(fontsize=12)
+        plt.yticks(fontsize=12)
+        plt.savefig(title0, bbox_inches='tight')
+

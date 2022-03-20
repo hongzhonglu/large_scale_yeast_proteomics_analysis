@@ -308,12 +308,18 @@ membrane_per_cell_surface["qO2 (mmol/gDW h)"] = combine_data2["qO2 (mmol/gDW h)"
 
 
 
+membrane_only["cell_surface_area"] = df_curated["cell_surface_area"]
+
+
+
+
+
+
 # plot the figure in ratio
 x0 = "dilution rate (/h)"
 for y0 in column_select10:
     title0 = 'result/figure/rose_miu_ratio_' + y0 + '_per_cell_surface.pdf'
     print(title0)
-
     sns.lmplot(x=x0, y=y0, data=membrane_per_cell_surface, lowess=True, height=4, aspect=1)
     plt.axvline(x=0.18, color='k', linestyle='--')
     plt.xlabel(x0,fontsize=12)
@@ -340,5 +346,17 @@ for y0 in column_select10:
 
 
 
+# plot the figure
+x0 = "cell_surface_area"
+for y0 in column_select10:
+    title0 = 'result/figure/rose_' + y0 + '_relation_to_cell_surface.pdf'
+    print(title0)
+    sns.lmplot(x=x0, y=y0, data=membrane_only, lowess=True, height=4, aspect=1)
+    plt.xlabel(x0,fontsize=12)
+    plt.axvline(x=48, color='k', linestyle='--')
+    plt.ylabel(y0,fontsize=15)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.savefig(title0, bbox_inches='tight')
 
 

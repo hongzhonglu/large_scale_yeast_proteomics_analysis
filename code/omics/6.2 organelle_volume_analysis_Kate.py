@@ -7,8 +7,7 @@ import seaborn as sns
 
 
 
-# input the physiological datasets from Rosemerry
-# input the physiological datasets from Rosemerry
+# input the physiological datasets from Kate
 sample_info_kate = pd.read_excel("data/proteomics/datasets_kate_2020.xlsx", sheet_name="sample_information")
 sample_info_kate = sample_info_kate.transpose()
 sample_info_kate1 = sample_info_kate.iloc[1: , :]
