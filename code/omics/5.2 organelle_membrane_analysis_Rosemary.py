@@ -13,9 +13,8 @@ import seaborn as sns
 # input the physiological datasets from Rosemerry
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
 # input the membrane size data
-# membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment.xlsx")
-membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation.xlsx")
-membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
+# membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation.xlsx") # not curated
+membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx") # curated based on cell size under different growth rate
 
 membrane_size_tr = membrane_size.transpose()
 membrane_size_tr0 = membrane_size_tr.rename(columns=membrane_size_tr.iloc[1])

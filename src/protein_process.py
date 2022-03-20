@@ -54,6 +54,7 @@ def getProAundance(genes_select0, pro_abundance0):
                                             combine_df["gene"])
     # for the protein without abundance, use the median value from this group.
     # calculate the abundance median value
+    combine_df.fillna(value=pd.np.nan, inplace=True) # change none into nan in the dataframe
     abundance0 = combine_df["molecular/cell"].tolist()
     abundance1 = [x for x in abundance0 if np.isnan(x) == False]
     if len(abundance1) < 1:
@@ -213,13 +214,13 @@ def splitAbundance(pro_df):
     gene0 = []
     abundance0 = []
     for i, x in pro_df1.iterrows():
-        # print(i, x)
+        print(i, x)
         s = x["gene"].split(";")
         len0 = len(s)
         gene0 = gene0 + s
         v = [x[colnames[1]] / len0] * len0
         abundance0 = abundance0 + v
-    gene0=[x.strip(" ") for x in gene0]
+    gene0 = [x.strip(" ") for x in gene0]
     pro_df1 = pd.DataFrame({"gene": gene0, colnames[1]: abundance0})
 
     pro_df = pd.concat([pro_df1, pro_df2], axis=0)

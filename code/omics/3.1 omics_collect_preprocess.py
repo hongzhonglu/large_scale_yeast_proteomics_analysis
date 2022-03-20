@@ -132,8 +132,6 @@ protein_abundance3.to_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx", 
 
 
 ############## datasets preprocess ###################################
-# input the datasets from Jianye
-# Part 1 Collect all the data in the unit of mmol/gDW
 # input the Jianye's data
 # Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
 growth2 = [0.027, 0.044, 0.102, 0.152, 0.214, 0.254, 0.284, 0.334, 0.379, 0.43]
@@ -169,8 +167,9 @@ omics_jianye1['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'
 
 
 # compare the above dataset with the original Jianye datasets
+# in the original Jianye datasets, the unit is protein copies/cell, so no additional unit conversion is needed!
 omics_jianye_original = pd.read_excel("data/proteomics/proteomics_Jianye_original.xlsx")
-# first update isoform of proteins and change it as a signle protein
+# first update isoform of proteins and change it as a single protein
 ID_new = []
 for i, x in omics_jianye_original.iterrows():
     #print(i)
@@ -228,8 +227,144 @@ abundance_jianye_corrected = pd.concat([abudance_jianye_1, abudance_jianye2], ax
 
 abundance_jianye_corrected['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], abundance_jianye_corrected['Majority protein IDs'])
 column2 = ["gene"] + column1[1:]
-abundance_jianye_corrected=abundance_jianye_corrected[column2]
+abundance_jianye_corrected = abundance_jianye_corrected[column2]
 abundance_jianye_corrected.to_excel("data/proteomics/abundance_jianye_corrected.xlsx", index=False)
+
+
+############## datasets preprocess ###################################
+# this is dataset from Kate
+# the unit is protein molecules per pg CDW
+abundance_kate = pd.read_excel("data/proteomics/datasets_kate_2020.xlsx")
+sample_info_kate = pd.read_excel("data/proteomics/datasets_kate_2020.xlsx", sheet_name="sample_information")
+sample_info_kate = sample_info_kate.transpose()
+sample_info_kate1 = sample_info_kate.iloc[1: , :]
+sample_info_kate1.columns = sample_info_kate.iloc[0]
+sample_info_kate1["sample_ID"] = list(sample_info_kate1.index)
+
+# change the unit as mmol/gDW
+abundance_kate2 = abundance_kate
+column_k = abundance_kate.columns
+for x in column_k:
+    print(x)
+    if x != "gene":
+        abundance_kate2[x] = abundance_kate[x]/6.022e23*1000*1e12
+    else:
+        continue
+
+abundance_kate2.to_excel("data/proteomics/abundance_kate.xlsx", index=False)
+
+
+# change the mmol/gDW as molecular/cell
+coefficient1 = 7.8298e9
+abundance_kate3 = abundance_kate2
+for x in column_k:
+    print(x)
+    if x != "gene":
+        abundance_kate3[x] = abundance_kate2[x]*coefficient1
+    else:
+        continue
+
+abundance_kate3.to_excel("data/proteomics/protein_copy_kate.xlsx", index=False)
+
+# statistical analysis of all proteomics datasets
+result_df = AllProteomicsAnalysis(pro_df=abundance_kate3)
+result_df0 = result_df.transpose()
+result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
+
+
+
+
+
+############## datasets preprocess ###################################
+# input the tao's data
+# Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
+# input the measured values
+omics_tao = pd.read_csv("data/proteomics/Omics_from_tao.csv")
+columns0 = list(omics_tao.columns)
+columns0 = [x for x in columns0 if "RNA" not in x]
+omics_tao0 = omics_tao[columns0]
+
+omics_tao1 = omics_tao0[['Accession','Gene']]
+
+for x in columns0:
+    if "prot" in x:
+        print(x)
+        ss1 = omics_tao0[x]*1e-09
+        omics_tao1[x] = list(ss1)
+# id mapping
+id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
+omics_tao1['gene'] = multiMapping(id_mapping['GeneName'], id_mapping['Entry'], omics_tao1['Accession'])
+
+
+# from multiMapping function, it could find one uniprot ID could have multiple locus gene ID
+column_tao2 = list(omics_tao1.columns)
+column_tao2 = column_tao2[3:45]
+pd_null = pd.DataFrame()
+for x in column_tao2:
+    select0 = ["gene", x]
+    select_value = omics_tao1[select0]
+    select_value1 = splitAbundance(select_value)
+    pd_null = pd.concat([pd_null, select_value1], axis=1)
+
+_, i = np.unique(pd_null.columns, return_index=True)
+omics_tao2 = pd_null.iloc[:, i]
+omics_tao2.to_excel("data/proteomics/Omics_from_tao_scale.xlsx", index=False)
+
+
+
+############## datasets preprocess ###################################
+# input the tao's data published in Nature communication, 2020.
+# Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
+# input the measured values
+omics_tao_nc = pd.read_excel("data/proteomics/Proteomics_NC_2020_rosmary.xlsx")
+columns0 = list(omics_tao_nc.columns)
+columns0 = [x for x in columns0 if "RNA" not in x]
+omics_tao_nc0 = omics_tao_nc[columns0]
+
+omics_tao_nc1 = omics_tao_nc0[['Accession','Gene']]
+
+for x in columns0:
+    if "prot" in x:
+        print(x)
+        ss1 = omics_tao_nc0[x]*1e-09
+        omics_tao_nc1[x] = list(ss1)
+# id mapping
+id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
+omics_tao_nc1['gene'] = multiMapping(id_mapping['GeneName'], id_mapping['Entry'], omics_tao_nc1['Accession'])
+
+# from multiMapping function, it could find one uniprot ID could have multiple locus gene ID
+column_tao2 = list(omics_tao_nc1.columns)
+column_tao2 = column_tao2[2:10]
+pd_null = pd.DataFrame()
+for x in column_tao2:
+    select0 = ["gene", x]
+    select_value = omics_tao_nc1[select0]
+    select_value1 = splitAbundance(select_value)
+    pd_null = pd.concat([pd_null, select_value1], axis=1)
+
+_, i = np.unique(pd_null.columns, return_index=True)
+omics_tao_nc2 = pd_null.iloc[:, i]
+omics_tao_nc2.to_excel("data/proteomics/Omics_from_tao_nc_scale.xlsx", index=False)
+
+
+# change the mmol/gDW as molecular/cell
+coefficient1 = 7.8298e9
+omics_tao_nc3 = omics_tao_nc2
+for x in column_tao2:
+    print(x)
+    if x != "gene":
+        omics_tao_nc3[x] = omics_tao_nc3[x]*coefficient1
+    else:
+        continue
+
+omics_tao_nc3.to_excel("data/proteomics/protein_copy_tao_nc.xlsx", index=False)
+
+# statistical analysis of all proteomics datasets
+result_df = AllProteomicsAnalysis(pro_df=omics_tao_nc3)
+result_df0 = result_df.transpose()
+result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
+
+############## datasets preprocess ###################################
 
 
 

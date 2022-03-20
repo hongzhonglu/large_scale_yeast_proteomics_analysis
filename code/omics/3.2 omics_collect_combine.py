@@ -9,24 +9,8 @@ from src.protein_process import *
 
 
 # Part 1 Collect all the data in the unit of mmol/gDW
-# input the tao's data
-# Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
-# input the measured values
-omics_tao = pd.read_csv("data/proteomics/Omics_from_tao.csv")
-columns0 = list(omics_tao.columns)
-columns0 = [x for x in columns0 if "RNA" not in x]
-omics_tao0 = omics_tao[columns0]
+omics_tao1 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
 
-omics_tao1 = omics_tao0[['Accession','Gene']]
-
-for x in columns0:
-    if "prot" in x:
-        print(x)
-        ss1 = omics_tao0[x]*1e-09
-        omics_tao1[x] = list(ss1)
-# id mapping
-id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
-omics_tao1['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], omics_tao1['Accession'])
 
 
 
