@@ -27,8 +27,6 @@ protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
 # only analyze the rosemary datasets under NH4 limitation?
 Sample_ID_select = ['prot.1','prot.2', 'prot.3','prot.7','prot.8','prot.9','prot.10','prot.11','prot.12','prot.13','prot.14','prot.15','prot.16','prot.17','prot.18','prot.19','prot.20','prot.21']
 protein_copy_all1 = protein_copy_all1[Sample_ID_select+["gene"]]
-
-
 protein_copy_all_rosemary = protein_copy_all1.copy()
 # curate the protein copies based on newly calculated size
 df_curated = calculateCurationCoefficent()
@@ -38,6 +36,8 @@ for i, sid in enumerate(Sample_ID_select):
     protein_copy_all_rosemary[sid] = protein_copy_all_rosemary[sid]*curation_coefficent[i]
 
 protein_copy_all_rosemary.to_excel("data/proteomics/all_protein_copy_rosemary.xlsx")
+
+
 
 
 # recalculation based on the curated protein abundances
@@ -85,44 +85,21 @@ result2.to_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_
 #sns.displot(ss, x="molecular/cell")
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-# original datasets
-# compartment curation
-# here for the following two membrane, only the compartment annotation with experimental evidence is used.
-# also for the fungal-type vacuole membrane, some proteins belong to the metabolic enzymes with high abundance were removed.
-# all_compartment = ['plasma membrane']
-gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
-# all_compartment = ['fungal-type vacuole membrane']
-gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
-result1 = pd.DataFrame({"compartment": all_compartment})
-result2 = pd.DataFrame({"compartment": all_compartment})
+# go term
+go_term = getGoTermGeneList(input1="data/pnas.1921890117.sd01_GO_term.xlsx", input2="data/sce_protein_weight.tsv")
+all_go_term = list(go_term.keys())
+result1 = pd.DataFrame({"go_term": all_go_term})
+result2 = pd.DataFrame({"go_term": all_go_term})
 for col0 in Sample_ID_select:
     print(col0)
     value1=[]
     value2=[]
-    for y in all_compartment:
+    for y in all_go_term:
         print(y)
         location0 = y
-        pro_abundance = protein_copy_all1[['gene',col0]]
+        pro_abundance = protein_copy_all_rosemary[['gene',col0]]
         pro_abundance.columns = ['gene','molecular/cell']
-        if y == "plasma membrane":
-            genes_select = gene_plasma_membrane["gene"].tolist()# for the test
-        elif y == "fungal-type vacuole membrane":
-            genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
-            genes_select = [x for x in genes_select if x not in ["YAL005C","YLL024C"]] # remove two genes for fungal type vacuole membrane
-        else:
-            genes_select = compartment[y]
+        genes_select = go_term[y]
         pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
         if pro_abundance1 is "no_abundance":
             value1.append(None)
@@ -133,7 +110,9 @@ for col0 in Sample_ID_select:
             value2.append(S)
     result1[col0] = value1
     result2[col0] = value2
-result1.to_excel("data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation.xlsx")
-result2.to_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation.xlsx")
+
+result1.to_excel("data/proteomics/volume_size_across_go_term_Rosemary.xlsx")
+result2.to_excel("data/proteomics/membrance_size_across_go_term_Rosemary.xlsx")
+
 
 

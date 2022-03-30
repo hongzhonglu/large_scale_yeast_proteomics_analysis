@@ -66,7 +66,6 @@ plt.show()
 # here we only explore the condition with only NH4 limitation
 combine_data2 = combine_data
 
-
 # check the ratio of each organelle membrane size
 column_select = list(combine_data2.columns)
 column_select1 = [x for x in column_select if "membrane" in x]
@@ -99,24 +98,6 @@ for i, x in membrane_only.iterrows():
         membrane_only_ratio.iloc[i0,j] = ratio
 
 membrane_only_ratio["dilution rate (/h)"] = combine_data2["dilution rate (/h)"]
-
-
-
-# plot the figure in occupied area
-x0 = "dilution rate (/h)"
-for y0 in column_select10:
-    title0 = 'result/figure/jianye_miu_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=0.18, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-
 
 
 # plot the figure in ratio

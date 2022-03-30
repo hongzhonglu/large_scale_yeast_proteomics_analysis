@@ -115,10 +115,69 @@ for y0 in column_select1:
     plt.savefig(title0, bbox_inches='tight')
 
 
+#############################################################################
+# analyze the organelle volume as a whole
+#############################################################################
+
+g1 = volume_size_ratio1[volume_size_ratio1["sample_ID"]==5]
+g1 = g1[column_select1]
+g10 = g1.mean()
+g100 = pd.DataFrame(g10)
+g100.columns = ["C:N=5"]
+
+g2 = volume_size_ratio1[volume_size_ratio1["sample_ID"]==115]
+g2 = g2[column_select1]
+g20 = g2.mean()
+g200 = pd.DataFrame(g20)
+g200.columns = ["C:N=115"]
+
+# combine
+pd_null = pd.concat([g100, g200], axis=1)
+pd_null["compartment"] = list(pd_null.index)
+pd_null["Relative change"] = 2*(pd_null["C:N=115"]-pd_null["C:N=5"])/(pd_null["C:N=5"]+pd_null["C:N=115"])*100
+#pd_null["fold_change"] = pd_null["C:N=50"] / pd_null["C:N=5"]
+pd_null = pd_null.sort_values(by=['Relative change'], ascending=False)
+
+# plot
+x0='C:N=5'
+y0='C:N=115'
+plt.figure()
+sns.set_style('darkgrid')
+sns.scatterplot(x=x0, y=y0, data=pd_null)
+plt.xlabel(x0, fontsize=12)
+plt.ylabel(y0, fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.plot([0, 0.4], [0, 0.4], linewidth=2)
+plt.xlim(0,0.4)
+plt.ylim(0,0.4)
+# annotate the dataset points
+xs=pd_null[x0].tolist()
+ys=pd_null[y0].tolist()
+tlab=list(pd_null.index)
+for x, y, lab in zip(xs, ys, tlab):
+    plt.annotate(lab,  # this is the text (put lab here to use tlab as string)
+                 (x, y),  # this is the point to label
+                 textcoords="offset points",  # how to position the text
+                 xytext=(0, 10),  # distance from text to points (x,y)
+                 ha='center',
+                 fontsize=5)
+plt.show()
+plt.savefig("result/figure/organelle protein volume correlation analysis.pdf", bbox_inches='tight')
 
 
-
-
-
-
+# bar plot
+x0='compartment'
+y0='Relative change'
+plt.figure()
+sns.set_style('darkgrid')
+sns.barplot(x=x0, y=y0, data=pd_null, capsize=.2)
+plt.xlabel(x0, fontsize=12)
+plt.ylabel(y0 + " in C:N=115 vs C:N=5 (%)", fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.xticks(rotation=90)
+plt.axhline(y=0, color='k', linestyle='-')
+plt.show()
+plt.savefig("result/figure/organelle protein volume correlation analysis2.pdf", bbox_inches='tight')
 

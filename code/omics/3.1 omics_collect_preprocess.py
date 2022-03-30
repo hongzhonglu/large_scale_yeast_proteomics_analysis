@@ -133,41 +133,9 @@ protein_abundance3.to_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx", 
 
 ############## datasets preprocess ###################################
 # input the Jianye's data
-# Absolute protein and mRNA abundances (fmol/mgDW) by rosemery
-growth2 = [0.027, 0.044, 0.102, 0.152, 0.214, 0.254, 0.284, 0.334, 0.379, 0.43]
-all_dilution = []
-for i in growth2:
-    if i < 0.43:
-        print(i)
-        string0 = "D=" + str(i)
-        all_dilution.append(string0)
-    else:
-        break
-# input the measured values
-omics_jianye = pd.read_csv("data/proteomics/Omics_from_Jianye.csv")
-columns0 = list(omics_jianye.columns)
-columns0 = [x for x in columns0 if "RNA" not in x]
-columns0 = [x for x in columns0 if "XIA" not in x]
-omics_jianye0 = omics_jianye[columns0]
-new_columns0 = ['Accession','Gene'] + [x + "_M" for x in all_dilution]
-omics_jianye0.columns = new_columns0
-omics_jianye1 = omics_jianye0[['Accession','Gene']]
-
-for x in new_columns0:
-    if "_M" in x:
-        print(x)
-        ss1 = omics_jianye0[x]*1e-09
-        omics_jianye1[x] = list(ss1)
-# id mapping
-omics_jianye1['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], omics_jianye1['Accession'])
-
-
-
-
-
-
-# compare the above dataset with the original Jianye datasets
+# Rosemary dataset is not reasonable, so only the following datasets is used!
 # in the original Jianye datasets, the unit is protein copies/cell, so no additional unit conversion is needed!
+# Note: in the current calculation by Jianye, the assume cell mass is 13 pg.
 omics_jianye_original = pd.read_excel("data/proteomics/proteomics_Jianye_original.xlsx")
 # first update isoform of proteins and change it as a single protein
 ID_new = []
@@ -224,11 +192,46 @@ for x in column0:
 column1 = [x for x in column0 if x !="Gene Name"]
 abudance_jianye_1=abudance_jianye_1[column1]
 abundance_jianye_corrected = pd.concat([abudance_jianye_1, abudance_jianye2], axis=0)
+#abundance_jianye_corrected['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], abundance_jianye_corrected['Majority protein IDs'])
+abundance_jianye_corrected['gene'] = multiMapping(id_mapping['GeneName'], id_mapping['Entry'], abundance_jianye_corrected['Majority protein IDs'])
 
-abundance_jianye_corrected['gene'] = singleMapping(id_mapping['GeneName'], id_mapping['Entry'], abundance_jianye_corrected['Majority protein IDs'])
 column2 = ["gene"] + column1[1:]
 abundance_jianye_corrected = abundance_jianye_corrected[column2]
-abundance_jianye_corrected.to_excel("data/proteomics/abundance_jianye_corrected.xlsx", index=False)
+
+
+# from multiMapping function, it could find one uniprot ID could have multiple locus gene ID
+column_jianye2 = list(abundance_jianye_corrected.columns)
+column_jianye2 = column_jianye2[1:10]
+pd_null = pd.DataFrame()
+for x in column_jianye2:
+    select0 = ["gene", x]
+    select_value = abundance_jianye_corrected[select0]
+    select_value1 = splitAbundance(select_value)
+    pd_null = pd.concat([pd_null, select_value1], axis=1)
+
+_, i = np.unique(pd_null.columns, return_index=True)
+omics_jianye_2 = pd_null.iloc[:, i]
+
+omics_jianye_2.to_excel("data/proteomics/protein_copy_jianye.xlsx", index=False)
+
+
+
+# change it as abundance, from protein copy/cell to mmol/gDW
+coefficient1 = 7.8298e9
+abundance_jianye3 = omics_jianye_2.copy()
+for x in column_jianye2:
+    print(x)
+    if x != "gene":
+        abundance_jianye3[x] = omics_jianye_2[x]/coefficient1
+    else:
+        continue
+
+abundance_jianye3.to_excel("data/proteomics/abundance_jianye.xlsx", index=False)
+
+
+
+
+
 
 
 ############## datasets preprocess ###################################
@@ -256,7 +259,7 @@ abundance_kate2.to_excel("data/proteomics/abundance_kate.xlsx", index=False)
 
 # change the mmol/gDW as molecular/cell
 coefficient1 = 7.8298e9
-abundance_kate3 = abundance_kate2
+abundance_kate3 = abundance_kate2.copy()
 for x in column_k:
     print(x)
     if x != "gene":
@@ -332,6 +335,7 @@ for x in columns0:
 id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 omics_tao_nc1['gene'] = multiMapping(id_mapping['GeneName'], id_mapping['Entry'], omics_tao_nc1['Accession'])
 
+
 # from multiMapping function, it could find one uniprot ID could have multiple locus gene ID
 column_tao2 = list(omics_tao_nc1.columns)
 column_tao2 = column_tao2[2:10]
@@ -349,7 +353,7 @@ omics_tao_nc2.to_excel("data/proteomics/Omics_from_tao_nc_scale.xlsx", index=Fal
 
 # change the mmol/gDW as molecular/cell
 coefficient1 = 7.8298e9
-omics_tao_nc3 = omics_tao_nc2
+omics_tao_nc3 = omics_tao_nc2.copy()
 for x in column_tao2:
     print(x)
     if x != "gene":
@@ -364,11 +368,78 @@ result_df = AllProteomicsAnalysis(pro_df=omics_tao_nc3)
 result_df0 = result_df.transpose()
 result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
 
+
+
+
+
 ############## datasets preprocess ###################################
+# this data is sysbio, cell systems, 2017
+# the unit is molecular/pgDCW, need change it as mmol/gDW
+protein_abundance = pd.read_excel("data/proteomics/omics_from_cell_systems_2017.xlsx")
+colnames = protein_abundance.columns
+protein_abundance1 = protein_abundance[colnames[1:]]
+colnames0 = colnames[1:]
+protein_abundance3 = protein_abundance[[colnames[0]]]
+protein_abundance3.columns = ['gene']
+for x in colnames0:
+    print(x)
+    protein_abundance3[x] = protein_abundance[x]/6.022e23*1000*1e12
+
+protein_abundance3.to_excel("data/proteomics/omics_from_cell_systems_2017_scale.xlsx", index=False)
+
+# change the mmol/gDW as molecular/cell
+coefficient1 = 7.8298e9
+protein_abundance4 = protein_abundance3.copy()
+for x in colnames0:
+    print(x)
+    if x != "gene":
+        protein_abundance4[x] = protein_abundance3[x]*coefficient1
+    else:
+        continue
+
+protein_abundance4.to_excel("data/proteomics/protein_copy_from_cell_systems_2017_scale.xlsx", index=False)
+# statistical analysis of all proteomics datasets
+result_df = AllProteomicsAnalysis(pro_df=protein_abundance4)
+result_df0 = result_df.transpose()
+result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
 
 
 
+############## datasets preprocess ###################################
+# TODO
+# different substrates
+# the unit is mmol/gDW
+carbon_source1 = pd.read_excel("data/proteomics/Proteome_ref_carbon_source.xlsx", sheet_name="Sce_carbon1")
+carbon_source2 = pd.read_excel("data/proteomics/Proteome_ref_carbon_source.xlsx", sheet_name="Sce_carbon2")
+colname_s1 = carbon_source1.columns
+colname_s1 = [x for x in colname_s1 if "mmol" in x]
 
+colname_s2 = carbon_source2.columns
+colname_s2 = [x for x in colname_s2 if "mmol" in x]
+
+carbon_source10 = carbon_source1[['gene'] + colname_s1]
+carbon_source20 = carbon_source2[['gene'] + colname_s2]
+carbon_source_combine = pd.merge(left=carbon_source10, right=carbon_source20, left_on=['gene'], right_on=['gene'], how="left")
+carbon_source_combine = carbon_source_combine.drop(columns="ref_glc_mm_rich_aerobic(mmol/gDW)_y")
+carbon_source_combine.to_excel("data/proteomics/omics_from_carbon_source_scale.xlsx", index=False)
+
+colnames0 = carbon_source_combine.columns
+# change the mmol/gDW as molecular/cell
+coefficient1 = 7.8298e9
+carbon_source_combine2 = carbon_source_combine.copy()
+for x in colnames0:
+    print(x)
+    if x != "gene":
+        carbon_source_combine2[x] = carbon_source_combine[x]*coefficient1
+    else:
+        continue
+
+carbon_source_combine2.to_excel("data/proteomics/protein_copy_from_carbon_source_scale.xlsx", index=False)
+
+# statistical analysis of all proteomics datasets
+result_df = AllProteomicsAnalysis(pro_df=carbon_source_combine2)
+result_df0 = result_df.transpose()
+result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
 
 
 
