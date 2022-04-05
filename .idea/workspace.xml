@@ -3,18 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_size_Only_Jianye.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.6 omics_inferred_size_Only_Jianye.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_size_protein_abundance_correlation_for_different_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/4.5 omics_inferred_size_protein_abundance_correlation_for_different_samples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.6 omics_inferred_size_Only_Kate.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.8 omics_inferred_size_Only_Kate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.6 omics_inferred_size_Only_Tao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.7 omics_inferred_size_Only_Tao2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.7 omics_inferred_size_Cell_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.9 omics_inferred_size_Cell_system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/5.1 organelle_membrane_analysis_JIanye.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/5.2 organelle_membrane_analysis_JIanye.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/5.2 organelle_membrane_analysis_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/5.1 organelle_membrane_analysis_Rosemary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/5.3 organelle_membrane_analysis_Kate.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/5.4 organelle_membrane_analysis_Kate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/6.2 organelle_volume_analysis_Kate.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.4 organelle_volume_analysis_Kate.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/6.2 organelle_volume_analysis_tao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.3 organelle_volume_analysis_tao2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/4.4 correlation_among_organelle_protein(or GO_term)_volume_across_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/4.4 correlation_among_organelle_protein(or GO_term)_volume_across_samples.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/4.5 omics_inferred_size_protein_abundance_correlation_for_different_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/4.5 Correlation_between_protein_size_and_its_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/5.1 organelle_membrane_analysis_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/5.1 organelle_membrane_analysis_Rosemary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/5.2 organelle_membrane_analysis_JIanye.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/5.2 organelle_membrane_analysis_JIanye.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/6.1 organelle_volume_analysis_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.1 organelle_volume_analysis_Rosemary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/6.2 organelle_volume_analysis_jianye.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.2 organelle_volume_analysis_jianye.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_complexes_size_calculation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/organell protein volume ratio relative to total protein volume from Jianye.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/organell protein volume ratio relative to total protein volume from Jianye.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ratio_of_organelle_volume_to_total_protein_volume.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ratio_of_organelle_volume_to_total_protein_volume.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/correlation_analysis_organelle_volume.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/correlation_analysis_organelle_volume.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/Glucose_phase vs Ethanol_phase in GO-term.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Glucose_phase vs Ethanol_phase in GO-term.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/Min_ave_aerobic vs Min_ave_anaerobic in GO-term.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Min_ave_aerobic vs Min_ave_anaerobic in GO-term.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/figure/correlation_analysis_membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/correlation_analysis_membrane.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/figure/correlaton_Golgi membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/correlaton_Golgi membrane.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/figure/correlaton_endoplasmic reticulum membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/correlaton_endoplasmic reticulum membrane.pdf" afterDir="false" />
@@ -40,33 +41,50 @@
       <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_nucleolus ratio per total protein volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_nucleolus ratio per total protein volume.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_nucleus ratio per total protein volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_nucleus ratio per total protein volume.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_peroxisome ratio per total protein volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_peroxisome ratio per total protein volume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_Golgi membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_Golgi membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_cellular bud membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_cellular bud membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_endoplasmic reticulum membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_endoplasmic reticulum membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_endosome membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_endosome membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_fungal-type vacuole membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_fungal-type vacuole membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_late endosome membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_late endosome membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_mitochondrial inner membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_mitochondrial inner membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_mitochondrial outer membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_mitochondrial outer membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_nuclear inner membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_nuclear inner membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_nuclear membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_nuclear membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_peroxisomal membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_peroxisomal membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_plasma membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_plasma membrane.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_prospore membrane.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ratio_prospore membrane.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/figure/jianye_miu_ribosome ratio per total protein volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/jianye_miu_ribosome ratio per total protein volume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_Golgi apparatus.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_Golgi membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_cellular bud membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_cytosol.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_cytosolic ribosome.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_endoplasmic reticulum membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_endoplasmic reticulum.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_endosome membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_endosome.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_fungal-type vacuole membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_fungal-type vacuole.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_late endosome membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_lipid droplet.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_mitochondrial inner membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_mitochondrial outer membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_mitochondrial ribosome.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_mitochondrion.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_nuclear inner membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_nuclear membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_nucleolus.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_nucleus.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_peroxisomal membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_peroxisome.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_plasma membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_prospore membrane.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_ribosome.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/prot.1 vs prot.19 in GO-term.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/prot.1 vs prot.19 in GO-term.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/prot.1 vs prot.19 in organelle.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/prot.1 vs prot.19 in organelle.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/prot.7 vs prot.19 in GO-term.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/prot.7 vs prot.19 in GO-term.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/prot.7 vs prot.19 in organelle.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/prot.7 vs prot.19 in organelle.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_Golgi apparatus_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_cytosol_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_cytosolic ribosome_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_endoplasmic reticulum_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_endosome_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_fungal-type vacuole_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_lipid droplet_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial ribosome_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrion_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_nucleolus_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_nucleus_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_peroxisome_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ribosome_relative_to_cell_size.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_Golgi apparatus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_Golgi apparatus.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_cytosol.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_cytosol.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_cytosolic ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_cytosolic ribosome.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_endoplasmic reticulum.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_endoplasmic reticulum.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_endosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_endosome.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_fungal-type vacuole.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_fungal-type vacuole.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_lipid droplet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_lipid droplet.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_mitochondrial ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_mitochondrial ribosome.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_mitochondrion.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_mitochondrion.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_nucleolus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_nucleolus.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_nucleus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_nucleus.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_peroxisome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_peroxisome.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_qs_ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_qs_ribosome.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -123,3 +123,67 @@ for y0 in column_select10:
         plt.yticks(fontsize=12)
         plt.savefig(title0, bbox_inches='tight')
 
+
+# try to put all the result together
+membrane_only_ratio["sample_ID"] = combine_data2["sample_ID"]
+
+membrane_only_ratio2 = membrane_only_ratio.transpose()
+membrane_only_ratio2.columns = combine_data2["sample_ID"]
+membrane_only_ratio2 = membrane_only_ratio2.iloc[0:13,:]
+
+
+
+
+
+# plot
+x0='D=0.284_M'
+y0='D=0.379_M'
+
+membrane_only_ratio2["Relative change"] = 2*(membrane_only_ratio2[y0]-membrane_only_ratio2[x0])/(membrane_only_ratio2[x0]+membrane_only_ratio2[y0])*100
+membrane_only_ratio2 = membrane_only_ratio2.sort_values(by=['Relative change'], ascending=False)
+membrane_only_ratio2["compartment"] = list(membrane_only_ratio2.index)
+
+plt.figure()
+sns.set_style('darkgrid')
+sns.scatterplot(x=x0, y=y0, data=membrane_only_ratio2)
+plt.xlabel(x0, fontsize=12)
+plt.ylabel(y0, fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+
+plt.plot([0, 0.45], [0, 0.45], linewidth=2)
+plt.xlim(0,0.45)
+plt.ylim(0,0.45)
+# annotate the dataset points
+xs=membrane_only_ratio2[x0].tolist()
+ys=membrane_only_ratio2[y0].tolist()
+tlab=list(membrane_only_ratio2.index)
+for x, y, lab in zip(xs, ys, tlab):
+    plt.annotate(lab,  # this is the text (put lab here to use tlab as string)
+                 (x, y),  # this is the point to label
+                 textcoords="offset points",  # how to position the text
+                 xytext=(0, 10),  # distance from text to points (x,y)
+                 ha='center',
+                 fontsize=5)
+plt.show()
+plt.savefig("result/figure/organelle membrane correlation analysis for " + y0 + " vs " + x0 + ".pdf", bbox_inches='tight')
+
+
+# bar plot
+x00='compartment'
+y00='Relative change'
+plt.figure()
+sns.set_style('darkgrid')
+sns.barplot(x=x00, y=y00, data=membrane_only_ratio2, capsize=.2)
+plt.xlabel(x00, fontsize=12)
+plt.ylabel(y00 + "_" + y0 + " vs " + x0, fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.xticks(rotation=90)
+plt.axhline(y=0, color='k', linestyle='-')
+plt.show()
+plt.savefig("result/figure/organelle membrane relative change for " + y0 + " vs " + x0 + ".pdf", bbox_inches='tight')
+
+
+
+

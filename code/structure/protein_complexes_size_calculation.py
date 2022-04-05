@@ -32,6 +32,8 @@ for i, x in protein_complex.iterrows():
 
 complex_parse = pd.DataFrame({"complex":complex_list,"subunit":subunit_list,"count":subunit_count})
 complex_parse["count"] = complex_parse["count"].astype(float)
+complex_parse.to_excel("data/complex_info.xlsx")
+
 
 complex_parse["gene"] = complex_parse["subunit"].str.replace("-MONOMER", "")
 complex_parse["Total_Volume"] = singleMapping(single_size["Total_Volume"],single_size["locus"],complex_parse["gene"])

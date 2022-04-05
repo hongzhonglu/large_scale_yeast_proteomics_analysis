@@ -19,6 +19,8 @@ def linearFit(df, x_name, y_name, type):
     y = df[y_name]
     x_name = x_name.split("(")[0]
     y_name = y_name.split("(")[0]
+    x_name = x_name.replace("/", "_per_")
+    y_name = y_name.replace("/", "_per_")
     title0 = "result/figure/" + x_name + " vs " + y_name + " in " + type + ".pdf"
     coef = np.polyfit(x, y, 1)
     poly1d_fn = np.poly1d(coef)
@@ -80,6 +82,9 @@ print(volume_size.columns)
 # plot
 linearFit(df=volume_size, x_name="Min_ave_aerobic(mmol/gDW)", y_name='Min_ave_anaerobic(mmol/gDW)',type="organelle")
 linearFit(df=volume_size, x_name="Glucose_phase(mmol/gDW)", y_name='Ethanol_phase(mmol/gDW)', type="organelle")
+linearFit(df=volume_size, x_name="Glucose_phase(mmol/gDW)", y_name='mmol/gDW_carl', type="organelle")
+
+
 
 
 
@@ -88,6 +93,7 @@ volume_size2 = pd.read_excel("data/proteomics/volume_size_across_go_term.xlsx")
 # plot
 linearFit(df=volume_size2, x_name="Min_ave_aerobic(mmol/gDW)", y_name='Min_ave_anaerobic(mmol/gDW)', type="GO-term")
 linearFit(df=volume_size2, x_name="Glucose_phase(mmol/gDW)", y_name='Ethanol_phase(mmol/gDW)', type="GO-term")
+linearFit(df=volume_size2, x_name="Glucose_phase(mmol/gDW)", y_name='mmol/gDW_carl', type="GO-term")
 
 
 
