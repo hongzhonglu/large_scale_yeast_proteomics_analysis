@@ -1,7 +1,5 @@
 # Ref to this nice tutorial:
 # http://rasbt.github.io/biopandas/tutorials/Working_with_PDB_Structures_in_DataFrames/
-# volume calculation
-"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb"
 
 
 from Bio.PDB import *
