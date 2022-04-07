@@ -45,6 +45,8 @@ rm *.pdb.gz
 """
 
 
+
+
 ###############################################################
 # for the e.coli
 # pdb dir
@@ -81,4 +83,39 @@ rm *.pdb.gz
 
 
 
+
+
+###############################################################
+# for the SCHPO
+# pdb dir
+dir0 = "/Users/xluhon/Documents/UP000002485_284812_SCHPO_v2/"
+all_file = os.listdir(dir0)
+
+# make new dir
+os.mkdir("/Users/xluhon/Documents/" + "alphafold_pdb_SCHPO")
+
+# copy files
+output = "/Users/xluhon/Documents/" + "alphafold_pdb_SCHPO"
+for x in all_file:
+    print(x)
+    if ".pdb.gz" in x:
+        try:
+            shutil.copy(dir0 + str(x), output)
+        except:
+            pass
+
+# uncompress the gz files
+
+"""
+cd /Users/xluhon/Documents/alphafold_pdb_SCHPO
+gunzip -k *.gz
+"""
+
+# further remove file in .gz format
+"""
+rm *.pdb.gz
+"""
+
+# calculate the volume
+"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb_SCHPO"
 
