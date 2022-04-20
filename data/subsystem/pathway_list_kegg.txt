@@ -1,0 +1,518 @@
+path:sce00010	Glycolysis / Gluconeogenesis
+path:sce00020	Citrate cycle (TCA cycle)
+path:sce00030	Pentose phosphate pathway
+path:sce00040	Pentose and glucuronate interconversions
+path:sce00051	Fructose and mannose metabolism
+path:sce00052	Galactose metabolism
+path:sce00053	Ascorbate and aldarate metabolism
+path:sce00061	Fatty acid biosynthesis
+path:sce00062	Fatty acid elongation
+path:sce00071	Fatty acid degradation
+path:sce00072	Synthesis and degradation of ketone bodies
+path:sce00073	Cutin, suberine and wax biosynthesis
+path:sce00100	Steroid biosynthesis
+path:sce00120	Primary bile acid biosynthesis
+path:sce00121	Secondary bile acid biosynthesis
+path:sce00130	Ubiquinone and other terpenoid-quinone biosynthesis
+path:sce00140	Steroid hormone biosynthesis
+path:sce00190	Oxidative phosphorylation
+path:sce00195	Photosynthesis
+path:sce00196	Photosynthesis - antenna proteins
+path:sce00220	Arginine biosynthesis
+path:sce00230	Purine metabolism
+path:sce00231	Puromycin biosynthesis
+path:sce00232	Caffeine metabolism
+path:sce00240	Pyrimidine metabolism
+path:sce00250	Alanine, aspartate and glutamate metabolism
+path:sce00253	Tetracycline biosynthesis
+path:sce00254	Aflatoxin biosynthesis
+path:sce00260	Glycine, serine and threonine metabolism
+path:sce00261	Monobactam biosynthesis
+path:sce00270	Cysteine and methionine metabolism
+path:sce00280	Valine, leucine and isoleucine degradation
+path:sce00281	Geraniol degradation
+path:sce00290	Valine, leucine and isoleucine biosynthesis
+path:sce00300	Lysine biosynthesis
+path:sce00310	Lysine degradation
+path:sce00311	Penicillin and cephalosporin biosynthesis
+path:sce00330	Arginine and proline metabolism
+path:sce00331	Clavulanic acid biosynthesis
+path:sce00332	Carbapenem biosynthesis
+path:sce00333	Prodigiosin biosynthesis
+path:sce00340	Histidine metabolism
+path:sce00350	Tyrosine metabolism
+path:sce00351	DDT degradation
+path:sce00360	Phenylalanine metabolism
+path:sce00361	Chlorocyclohexane and chlorobenzene degradation
+path:sce00362	Benzoate degradation
+path:sce00363	Bisphenol degradation
+path:sce00364	Fluorobenzoate degradation
+path:sce00365	Furfural degradation
+path:sce00380	Tryptophan metabolism
+path:sce00400	Phenylalanine, tyrosine and tryptophan biosynthesis
+path:sce00401	Novobiocin biosynthesis
+path:sce00402	Benzoxazinoid biosynthesis
+path:sce00403	Indole diterpene alkaloid biosynthesis
+path:sce00404	Staurosporine biosynthesis
+path:sce00405	Phenazine biosynthesis
+path:sce00410	beta-Alanine metabolism
+path:sce00430	Taurine and hypotaurine metabolism
+path:sce00440	Phosphonate and phosphinate metabolism
+path:sce00450	Selenocompound metabolism
+path:sce00460	Cyanoamino acid metabolism
+path:sce00471	D-Glutamine and D-glutamate metabolism
+path:sce00472	D-Arginine and D-ornithine metabolism
+path:sce00473	D-Alanine metabolism
+path:sce00480	Glutathione metabolism
+path:sce00500	Starch and sucrose metabolism
+path:sce00510	N-Glycan biosynthesis
+path:sce00511	Other glycan degradation
+path:sce00512	Mucin type O-glycan biosynthesis
+path:sce00513	Various types of N-glycan biosynthesis
+path:sce00514	Other types of O-glycan biosynthesis
+path:sce00515	Mannose type O-glycan biosynthesis
+path:sce00520	Amino sugar and nucleotide sugar metabolism
+path:sce00521	Streptomycin biosynthesis
+path:sce00522	Biosynthesis of 12-, 14- and 16-membered macrolides
+path:sce00523	Polyketide sugar unit biosynthesis
+path:sce00524	Neomycin, kanamycin and gentamicin biosynthesis
+path:sce00525	Acarbose and validamycin biosynthesis
+path:sce00531	Glycosaminoglycan degradation
+path:sce00532	Glycosaminoglycan biosynthesis - chondroitin sulfate / dermatan sulfate
+path:sce00533	Glycosaminoglycan biosynthesis - keratan sulfate
+path:sce00534	Glycosaminoglycan biosynthesis - heparan sulfate / heparin
+path:sce00540	Lipopolysaccharide biosynthesis
+path:sce00550	Peptidoglycan biosynthesis
+path:sce00561	Glycerolipid metabolism
+path:sce00562	Inositol phosphate metabolism
+path:sce00563	Glycosylphosphatidylinositol (GPI)-anchor biosynthesis
+path:sce00564	Glycerophospholipid metabolism
+path:sce00565	Ether lipid metabolism
+path:sce00590	Arachidonic acid metabolism
+path:sce00591	Linoleic acid metabolism
+path:sce00592	alpha-Linolenic acid metabolism
+path:sce00600	Sphingolipid metabolism
+path:sce00601	Glycosphingolipid biosynthesis - lacto and neolacto series
+path:sce00603	Glycosphingolipid biosynthesis - globo and isoglobo series
+path:sce00604	Glycosphingolipid biosynthesis - ganglio series
+path:sce00620	Pyruvate metabolism
+path:sce00621	Dioxin degradation
+path:sce00622	Xylene degradation
+path:sce00623	Toluene degradation
+path:sce00624	Polycyclic aromatic hydrocarbon degradation
+path:sce00625	Chloroalkane and chloroalkene degradation
+path:sce00626	Naphthalene degradation
+path:sce00627	Aminobenzoate degradation
+path:sce00630	Glyoxylate and dicarboxylate metabolism
+path:sce00633	Nitrotoluene degradation
+path:sce00640	Propanoate metabolism
+path:sce00642	Ethylbenzene degradation
+path:sce00643	Styrene degradation
+path:sce00650	Butanoate metabolism
+path:sce00660	C5-Branched dibasic acid metabolism
+path:sce00670	One carbon pool by folate
+path:sce00680	Methane metabolism
+path:sce00710	Carbon fixation in photosynthetic organisms
+path:sce00720	Carbon fixation pathways in prokaryotes
+path:sce00730	Thiamine metabolism
+path:sce00740	Riboflavin metabolism
+path:sce00750	Vitamin B6 metabolism
+path:sce00760	Nicotinate and nicotinamide metabolism
+path:sce00770	Pantothenate and CoA biosynthesis
+path:sce00780	Biotin metabolism
+path:sce00785	Lipoic acid metabolism
+path:sce00790	Folate biosynthesis
+path:sce00791	Atrazine degradation
+path:sce00830	Retinol metabolism
+path:sce00860	Porphyrin and chlorophyll metabolism
+path:sce00900	Terpenoid backbone biosynthesis
+path:sce00901	Indole alkaloid biosynthesis
+path:sce00902	Monoterpenoid biosynthesis
+path:sce00903	Limonene and pinene degradation
+path:sce00904	Diterpenoid biosynthesis
+path:sce00905	Brassinosteroid biosynthesis
+path:sce00906	Carotenoid biosynthesis
+path:sce00908	Zeatin biosynthesis
+path:sce00909	Sesquiterpenoid and triterpenoid biosynthesis
+path:sce00910	Nitrogen metabolism
+path:sce00920	Sulfur metabolism
+path:sce00930	Caprolactam degradation
+path:sce00940	Phenylpropanoid biosynthesis
+path:sce00941	Flavonoid biosynthesis
+path:sce00942	Anthocyanin biosynthesis
+path:sce00943	Isoflavonoid biosynthesis
+path:sce00944	Flavone and flavonol biosynthesis
+path:sce00945	Stilbenoid, diarylheptanoid and gingerol biosynthesis
+path:sce00950	Isoquinoline alkaloid biosynthesis
+path:sce00960	Tropane, piperidine and pyridine alkaloid biosynthesis
+path:sce00965	Betalain biosynthesis
+path:sce00966	Glucosinolate biosynthesis
+path:sce00970	Aminoacyl-tRNA biosynthesis
+path:sce00980	Metabolism of xenobiotics by cytochrome P450
+path:sce00981	Insect hormone biosynthesis
+path:sce00982	Drug metabolism - cytochrome P450
+path:sce00983	Drug metabolism - other enzymes
+path:sce00984	Steroid degradation
+path:sce01010	Overview of biosynthetic pathways
+path:sce01040	Biosynthesis of unsaturated fatty acids
+path:sce01051	Biosynthesis of ansamycins
+path:sce01052	Type I polyketide structures
+path:sce01053	Biosynthesis of siderophore group nonribosomal peptides
+path:sce01054	Nonribosomal peptide structures
+path:sce01055	Biosynthesis of vancomycin group antibiotics
+path:sce01056	Biosynthesis of type II polyketide backbone
+path:sce01057	Biosynthesis of type II polyketide products
+path:sce01058	Acridone alkaloid biosynthesis
+path:sce01059	Biosynthesis of enediyne antibiotics
+path:sce01060	Biosynthesis of plant secondary metabolites
+path:sce01061	Biosynthesis of phenylpropanoids
+path:sce01062	Biosynthesis of terpenoids and steroids
+path:sce01063	Biosynthesis of alkaloids derived from shikimate pathway
+path:sce01064	Biosynthesis of alkaloids derived from ornithine, lysine and nicotinic acid
+path:sce01065	Biosynthesis of alkaloids derived from histidine and purine
+path:sce01066	Biosynthesis of alkaloids derived from terpenoid and polyketide
+path:sce01070	Biosynthesis of plant hormones
+path:sce01100	Metabolic pathways
+path:sce01110	Biosynthesis of secondary metabolites
+path:sce01120	Microbial metabolism in diverse environments
+path:sce01130	Biosynthesis of antibiotics
+path:sce01200	Carbon metabolism
+path:sce01210	2-Oxocarboxylic acid metabolism
+path:sce01212	Fatty acid metabolism
+path:sce01220	Degradation of aromatic compounds
+path:sce01230	Biosynthesis of amino acids
+path:sce01501	beta-Lactam resistance
+path:sce01502	Vancomycin resistance
+path:sce01503	Cationic antimicrobial peptide (CAMP) resistance
+path:sce01521	EGFR tyrosine kinase inhibitor resistance
+path:sce01522	Endocrine resistance
+path:sce01523	Antifolate resistance
+path:sce01524	Platinum drug resistance
+path:sce02010	ABC transporters
+path:sce02020	Two-component system
+path:sce02024	Quorum sensing
+path:sce02025	Biofilm formation - Pseudomonas aeruginosa
+path:sce02026	Biofilm formation - Escherichia coli
+path:sce02030	Bacterial chemotaxis
+path:sce02040	Flagellar assembly
+path:sce02060	Phosphotransferase system (PTS)
+path:sce03008	Ribosome biogenesis in eukaryotes
+path:sce03010	Ribosome
+path:sce03013	RNA transport
+path:sce03015	mRNA surveillance pathway
+path:sce03018	RNA degradation
+path:sce03020	RNA polymerase
+path:sce03022	Basal transcription factors
+path:sce03030	DNA replication
+path:sce03040	Spliceosome
+path:sce03050	Proteasome
+path:sce03060	Protein export
+path:sce03070	Bacterial secretion system
+path:sce03320	PPAR signaling pathway
+path:sce03410	Base excision repair
+path:sce03420	Nucleotide excision repair
+path:sce03430	Mismatch repair
+path:sce03440	Homologous recombination
+path:sce03450	Non-homologous end-joining
+path:sce03460	Fanconi anemia pathway
+path:sce04010	sceK signaling pathway
+path:sce04011	sceK signaling pathway - yeast
+path:sce04012	ErbB signaling pathway
+path:sce04013	sceK signaling pathway - fly
+path:sce04014	Ras signaling pathway
+path:sce04015	Rap1 signaling pathway
+path:sce04016	sceK signaling pathway - plant
+path:sce04020	Calcium signaling pathway
+path:sce04022	cGMP-PKG signaling pathway
+path:sce04024	cAMP signaling pathway
+path:sce04060	Cytokine-cytokine receptor interaction
+path:sce04062	Chemokine signaling pathway
+path:sce04064	NF-kappa B signaling pathway
+path:sce04066	HIF-1 signaling pathway
+path:sce04068	FoxO signaling pathway
+path:sce04070	Phosphatidylinositol signaling system
+path:sce04071	Sphingolipid signaling pathway
+path:sce04072	Phospholipase D signaling pathway
+path:sce04075	Plant hormone signal transduction
+path:sce04080	Neuroactive ligand-receptor interaction
+path:sce04110	Cell cycle
+path:sce04111	Cell cycle - yeast
+path:sce04112	Cell cycle - Caulobacter
+path:sce04113	Meiosis - yeast
+path:sce04114	Oocyte meiosis
+path:sce04115	p53 signaling pathway
+path:sce04120	Ubiquitin mediated proteolysis
+path:sce04122	Sulfur relay system
+path:sce04130	SNARE interactions in vesicular transport
+path:sce04136	Autophagy - other
+path:sce04137	Mitophagy - animal
+path:sce04138	Autophagy - yeast
+path:sce04139	Mitophagy - yeast
+path:sce04140	Autophagy - animal
+path:sce04141	Protein processing in endoplasmic reticulum
+path:sce04142	Lysosome
+path:sce04144	Endocytosis
+path:sce04145	Phagosome
+path:sce04146	Peroxisome
+path:sce04150	mTOR signaling pathway
+path:sce04151	PI3K-Akt signaling pathway
+path:sce04152	AMPK signaling pathway
+path:sce04210	Apoptosis
+path:sce04211	Longevity regulating pathway
+path:sce04212	Longevity regulating pathway - worm
+path:sce04213	Longevity regulating pathway - multiple species
+path:sce04214	Apoptosis - fly
+path:sce04215	Apoptosis - multiple species
+path:sce04216	Ferroptosis
+path:sce04217	Necroptosis
+path:sce04218	Cellular senescence
+path:sce04260	Cardiac muscle contraction
+path:sce04261	Adrenergic signaling in cardiomyocytes
+path:sce04270	Vascular smooth muscle contraction
+path:sce04310	Wnt signaling pathway
+path:sce04320	Dorso-ventral axis formation
+path:sce04330	Notch signaling pathway
+path:sce04340	Hedgehog signaling pathway
+path:sce04341	Hedgehog signaling pathway - fly
+path:sce04350	TGF-beta signaling pathway
+path:sce04360	Axon guidance
+path:sce04370	VEGF signaling pathway
+path:sce04371	Apelin signaling pathway
+path:sce04380	Osteoclast differentiation
+path:sce04390	Hippo signaling pathway
+path:sce04391	Hippo signaling pathway - fly
+path:sce04392	Hippo signaling pathway - multiple species
+path:sce04510	Focal adhesion
+path:sce04512	ECM-receptor interaction
+path:sce04514	Cell adhesion molecules (CAMs)
+path:sce04520	Adherens junction
+path:sce04530	Tight junction
+path:sce04540	Gap junction
+path:sce04550	Signaling pathways regulating pluripotency of stem cells
+path:sce04610	Complement and coagulation cascades
+path:sce04611	Platelet activation
+path:sce04612	Antigen processing and presentation
+path:sce04614	Renin-angiotensin system
+path:sce04620	Toll-like receptor signaling pathway
+path:sce04621	NOD-like receptor signaling pathway
+path:sce04622	RIG-I-like receptor signaling pathway
+path:sce04623	Cytosolic DNA-sensing pathway
+path:sce04624	Toll and Imd signaling pathway
+path:sce04626	Plant-pathogen interaction
+path:sce04630	Jak-STAT signaling pathway
+path:sce04640	Hematopoietic cell lineage
+path:sce04650	Natural killer cell mediated cytotoxicity
+path:sce04657	IL-17 signaling pathway
+path:sce04658	Th1 and Th2 cell differentiation
+path:sce04659	Th17 cell differentiation
+path:sce04660	T cell receptor signaling pathway
+path:sce04662	B cell receptor signaling pathway
+path:sce04664	Fc epsilon RI signaling pathway
+path:sce04666	Fc gamma R-mediated phagocytosis
+path:sce04668	TNF signaling pathway
+path:sce04670	Leukocyte transendothelial migration
+path:sce04672	Intestinal immune network for IgA production
+path:sce04710	Circadian rhythm
+path:sce04711	Circadian rhythm - fly
+path:sce04712	Circadian rhythm - plant
+path:sce04713	Circadian entrainment
+path:sce04720	Long-term potentiation
+path:sce04721	Synaptic vesicle cycle
+path:sce04722	Neurotrophin signaling pathway
+path:sce04723	Retrograde endocannabinoid signaling
+path:sce04724	Glutamatergic synapse
+path:sce04725	Cholinergic synapse
+path:sce04726	Serotonergic synapse
+path:sce04727	GABAergic synapse
+path:sce04728	Dopaminergic synapse
+path:sce04730	Long-term depression
+path:sce04740	Olfactory transduction
+path:sce04742	Taste transduction
+path:sce04744	Phototransduction
+path:sce04745	Phototransduction - fly
+path:sce04750	Inflammatory mediator regulation of TRP channels
+path:sce04810	Regulation of actin cytoskeleton
+path:sce04910	Insulin signaling pathway
+path:sce04911	Insulin secretion
+path:sce04912	GnRH signaling pathway
+path:sce04913	Ovarian steroidogenesis
+path:sce04914	Progesterone-mediated oocyte maturation
+path:sce04915	Estrogen signaling pathway
+path:sce04916	Melanogenesis
+path:sce04917	Prolactin signaling pathway
+path:sce04918	Thyroid hormone synthesis
+path:sce04919	Thyroid hormone signaling pathway
+path:sce04920	Adipocytokine signaling pathway
+path:sce04921	Oxytocin signaling pathway
+path:sce04922	Glucagon signaling pathway
+path:sce04923	Regulation of lipolysis in adipocytes
+path:sce04924	Renin secretion
+path:sce04925	Aldosterone synthesis and secretion
+path:sce04926	Relaxin signaling pathway
+path:sce04930	Type II diabetes mellitus
+path:sce04931	Insulin resistance
+path:sce04932	Non-alcoholic fatty liver disease (NAFLD)
+path:sce04933	AGE-RAGE signaling pathway in diabetic complications
+path:sce04940	Type I diabetes mellitus
+path:sce04950	Maturity onset diabetes of the young
+path:sce04960	Aldosterone-regulated sodium reabsorption
+path:sce04961	Endocrine and other factor-regulated calcium reabsorption
+path:sce04962	Vasopressin-regulated water reabsorption
+path:sce04964	Proximal tubule bicarbonate reclamation
+path:sce04966	Collecting duct acid secretion
+path:sce04970	Salivary secretion
+path:sce04971	Gastric acid secretion
+path:sce04972	Pancreatic secretion
+path:sce04973	Carbohydrate digestion and absorption
+path:sce04974	Protein digestion and absorption
+path:sce04975	Fat digestion and absorption
+path:sce04976	Bile secretion
+path:sce04977	Vitamin digestion and absorption
+path:sce04978	Mineral absorption
+path:sce05010	Alzheimer's disease
+path:sce05012	Parkinson's disease
+path:sce05014	Amyotrophic lateral sclerosis (ALS)
+path:sce05016	Huntington's disease
+path:sce05020	Prion diseases
+path:sce05030	Cocaine addiction
+path:sce05031	Amphetamine addiction
+path:sce05032	Morphine addiction
+path:sce05033	Nicotine addiction
+path:sce05034	Alcoholism
+path:sce05100	Bacterial invasion of epithelial cells
+path:sce05110	Vibrio cholerae infection
+path:sce05111	Biofilm formation - Vibrio cholerae
+path:sce05120	Epithelial cell signaling in Helicobacter pylori infection
+path:sce05130	Pathogenic Escherichia coli infection
+path:sce05131	Shigellosis
+path:sce05132	Salmonella infection
+path:sce05133	Pertussis
+path:sce05134	Legionellosis
+path:sce05140	Leishmaniasis
+path:sce05142	Chagas disease (American trypanosomiasis)
+path:sce05143	African trypanosomiasis
+path:sce05144	Malaria
+path:sce05145	Toxoplasmosis
+path:sce05146	Amoebiasis
+path:sce05150	Staphylococcus aureus infection
+path:sce05152	Tuberculosis
+path:sce05160	Hepatitis C
+path:sce05161	Hepatitis B
+path:sce05162	Measles
+path:sce05164	Influenza A
+path:sce05165	Human papillomavirus infection
+path:sce05166	HTLV-I infection
+path:sce05167	Kaposi's sarcoma-associated herpesvirus infection
+path:sce05168	Herpes simplex infection
+path:sce05169	Epstein-Barr virus infection
+path:sce05200	Pathways in cancer
+path:sce05202	Transcriptional misregulation in cancer
+path:sce05203	Viral carcinogenesis
+path:sce05204	Chemical carcinogenesis
+path:sce05205	Proteoglycans in cancer
+path:sce05206	MicroRNAs in cancer
+path:sce05210	Colorectal cancer
+path:sce05211	Renal cell carcinoma
+path:sce05212	Pancreatic cancer
+path:sce05213	Endometrial cancer
+path:sce05214	Glioma
+path:sce05215	Prostate cancer
+path:sce05216	Thyroid cancer
+path:sce05217	Basal cell carcinoma
+path:sce05218	Melanoma
+path:sce05219	Bladder cancer
+path:sce05220	Chronic myeloid leukemia
+path:sce05221	Acute myeloid leukemia
+path:sce05222	Small cell lung cancer
+path:sce05223	Non-small cell lung cancer
+path:sce05224	Breast cancer
+path:sce05230	Central carbon metabolism in cancer
+path:sce05231	Choline metabolism in cancer
+path:sce05310	Asthma
+path:sce05320	Autoimmune thyroid disease
+path:sce05321	Inflammatory bowel disease (IBD)
+path:sce05322	Systemic lupus erythematosus
+path:sce05323	Rheumatoid arthritis
+path:sce05330	Allograft rejection
+path:sce05332	Graft-versus-host disease
+path:sce05340	Primary immunodeficiency
+path:sce05410	Hypertrophic cardiomyopathy (HCM)
+path:sce05412	Arrhythmogenic right ventricular cardiomyopathy (ARVC)
+path:sce05414	Dilated cardiomyopathy (DCM)
+path:sce05416	Viral myocarditis
+path:sce05418	Fluid shear stress and atherosclerosis
+path:sce07011	Penicillins
+path:sce07012	Cephalosporins - parenteral agents
+path:sce07013	Cephalosporins - oral agents
+path:sce07014	Quinolones
+path:sce07015	Local analgesics
+path:sce07016	Sulfonamide derivatives - sulfa drugs
+path:sce07017	Sulfonamide derivatives - diuretics
+path:sce07018	Sulfonamide derivatives - hypoglycemic agents
+path:sce07019	Tetracyclines
+path:sce07020	Macrolides and ketolides
+path:sce07021	Aminoglycosides
+path:sce07023	Rifamycins
+path:sce07024	HMG-CoA reductase inhibitors
+path:sce07025	Quinolines
+path:sce07026	Antifungal agents
+path:sce07027	Antidepressants
+path:sce07028	Antipsychotics
+path:sce07029	Antipsychotics - phenothiazines
+path:sce07030	Anxiolytics
+path:sce07031	Antipsychotics - butyrophenones
+path:sce07032	Hypnotics
+path:sce07033	Anticonvulsants
+path:sce07034	Eicosanoids
+path:sce07035	Prostaglandins
+path:sce07036	Calcium channel blocking drugs
+path:sce07037	Antiarrhythmic drugs
+path:sce07038	Antiulcer drugs
+path:sce07039	Opioid analgesics
+path:sce07040	Antineoplastics - alkylating agents
+path:sce07041	Antineoplastics - antimetabolic agents
+path:sce07042	Antineoplastics - agents from natural products
+path:sce07043	Antineoplastics - hormones
+path:sce07044	Antiviral agents
+path:sce07045	Antineoplastics - protein kinases inhibitors
+path:sce07046	Immunosuppressive agents
+path:sce07047	Osteoporosis drugs
+path:sce07048	Antimigraines
+path:sce07049	Antithrombosis agents
+path:sce07050	Antirheumatics - DMARDs and biological agents
+path:sce07051	Antidiabetics
+path:sce07052	Antidyslipidemic agents
+path:sce07053	Anti-HIV agents
+path:sce07054	Antiglaucoma agents
+path:sce07055	Sulfonamide derivatives - overview
+path:sce07056	Agents for Alzheimer-type dementia
+path:sce07057	Antiparkinsonian agents
+path:sce07110	Benzoic acid family
+path:sce07112	1,2-Diphenyl substitution family
+path:sce07114	Naphthalene family
+path:sce07117	Benzodiazepine family
+path:sce07211	Serotonin receptor agonists/antagonists
+path:sce07212	Histamine H1 receptor antagonists
+path:sce07213	Dopamine receptor agonists/antagonists
+path:sce07214	beta-Adrenergic receptor agonists/antagonists
+path:sce07215	alpha-Adrenergic receptor agonists/antagonists
+path:sce07216	Catecholamine transferase inhibitors
+path:sce07217	Renin-angiotensin system inhibitors
+path:sce07218	HIV protease inhibitors
+path:sce07219	Cyclooxygenase inhibitors
+path:sce07220	Cholinergic and anticholinergic drugs
+path:sce07221	Nicotinic cholinergic receptor antagonists
+path:sce07222	Peroxisome proliferator-activated receptor (PPAR) agonists
+path:sce07223	Retinoic acid receptor (RAR) and retinoid X receptor (RXR) agonists/antagonists
+path:sce07224	Opioid receptor agonists/antagonists
+path:sce07225	Glucocorticoid and mineralocorticoid receptor agonists/antagonists
+path:sce07226	Progesterone, androgen and estrogen receptor agonists/antagonists
+path:sce07227	Histamine H2/H3 receptor agonists/antagonists
+path:sce07228	Eicosanoid receptor agonists/antagonists
+path:sce07229	Angiotensin receptor and endothelin receptor antagonists
+path:sce07230	GABA-A receptor agonists/antagonists
+path:sce07231	Sodium channel blocking drugs
+path:sce07232	Potassium channel blocking and opening drugs
+path:sce07233	Ion transporter inhibitors
+path:sce07234	Neurotransmitter transporter inhibitors
+path:sce07235	N-Metyl-D-aspartic acid receptor antagonists

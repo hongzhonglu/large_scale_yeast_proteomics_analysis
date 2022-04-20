@@ -1,0 +1,134 @@
+import matplotlib.pyplot as plt
+import os
+
+
+# import self function
+from src.model_process import *
+from src.mainFunction import *
+from src.protein_process import *
+
+
+# Part 1 Collect all the data in the unit of mmol/gDW
+omics_tao1 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
+
+
+
+
+# input the Carl's data under max growth
+omics_carl = pd.read_excel("data/proteomics/data_PNAS_2021_scale.xlsx")
+omics_carl =omics_carl[['gene','mmol/gDW']]
+omics_carl.columns = ['gene', 'mmol/gDW_carl']
+
+
+# input the Francesca's data under max growth
+omics_francesca = pd.read_excel("data/proteomics/omics_Francesca_scale.xlsx")
+
+
+# input the johan's data under four conditons
+omics_johan = pd.read_excel("data/proteomics/omics_johan.xlsx")
+
+
+# input the Tyler's data
+omics_Tyler = pd.read_excel("data/proteomics/Proteome_ref.xlsx", sheet_name="Sce_0.1_Tyler")
+omics_Tyler = omics_Tyler[['GeneName_S288C', 'Standard(mmol/gDW)']]
+omics_Tyler.columns = ['gene', 'mmol/gDW_Tyler_D0.1']
+
+
+# TO-DO add new datasets
+# input data from other lab
+# this data is from Proteome overabundance enables respiration but limitation onsets carbon overflow
+# the unit is mmol/gDW
+omics_Rahul = pd.read_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx")
+
+
+
+
+
+
+
+
+
+# combine data from different source?
+# get all genes
+all_gene = set(omics_carl['gene'].tolist()) | set(omics_francesca['genes'].tolist()) | set(omics_tao1['gene'].tolist()) | set(omics_johan['gene'].tolist()) | set(omics_Tyler['gene'].tolist()) | set(omics_Rahul['gene'].tolist())
+all_gene = list(set(all_gene))
+new_df = pd.DataFrame({"all_gene": all_gene})
+
+
+
+df_combine = pd.merge(left=new_df, right=omics_francesca, left_on=['all_gene'], right_on=['genes'], how="left")
+
+df_combine = df_combine[['all_gene','Glucose_phase(mmol/gDW)', 'Diauxic_shift(mmol/gDW)', 'Ethanol_phase(mmol/gDW)']]
+
+df_combine1 = pd.merge(left=df_combine, right=omics_carl, left_on=['all_gene'], right_on=['gene'], how="left")
+
+df_combine1 = df_combine1[['all_gene','Glucose_phase(mmol/gDW)', 'Diauxic_shift(mmol/gDW)', 'Ethanol_phase(mmol/gDW)','mmol/gDW_carl']]
+
+df_combine2 = pd.merge(left=df_combine1, right=omics_tao1, left_on=['all_gene'], right_on=['gene'], how="left")
+df_combine3 = pd.merge(left=df_combine2, right=omics_Tyler, left_on=['all_gene'], right_on=['gene'], how="left")
+df_combine4 = pd.merge(left=df_combine3, right=omics_johan, left_on=['all_gene'], right_on=['gene'], how="left")
+df_combine5 = pd.merge(left=df_combine4, right=omics_Rahul, left_on=['all_gene'], right_on=['gene'], how="left")
+# get the new column
+all0 = df_combine5.columns
+new_columns00=[]
+for x in all0:
+    print(x)
+    if "D=" in x:
+        new_columns00.append(x)
+
+    elif "prot." in x:
+        new_columns00.append(x)
+
+    elif "mmol" in x:
+        new_columns00.append(x)
+    elif "all_gene" in x:
+        new_columns00.append(x)
+    else:
+        pass
+
+omics_combine = df_combine5[new_columns00]
+omics_combine.to_excel("data/proteomics/omics_measured_combine.xlsx", index=False)
+
+
+
+
+
+
+
+
+# Part 2 Collect all the data in the molecular/cell
+# Generally, there are three sources, SGD, cell system and another paper. The SGD data use the median value from cell system.
+# input data from SGD
+# pro_abundance = pd.read_csv("data/proteomics/sce_protein_abundance_sgd.tsv", sep='\t')
+
+# input data from cell system, 2018
+pro_abundance = pd.read_excel("data/proteomics/yeast_proteomics_example_cell_system_2018.xlsx")
+pro_abundance = pro_abundance[["Systematic Name","Mean molecules per cell","Median molecules per cell"]]
+pro_abundance.columns = ["gene", "Mean molecules per cell_cell_system_2018","Median molecules per cell_cell_system_2018"] # protein abundance per cell
+
+
+# input data from cell reports 2017
+# note this data is obtained under exponential growth phases
+pro_abundance2 = pd.read_excel("data/proteomics/protein_copy_cell_report_2017.xlsx")
+# filter out one sample with very few total protein copy number
+pro_abundance2 =pro_abundance2[[x for x in pro_abundance2.columns if x !="Chong et al. 2015 - Copy "]]
+
+
+# input data from paxdb
+# In the dataset, it assumes that total molecular is 80 million
+pro_abundance3 = pd.read_excel("data/proteomics/abundance_table_paxdb_scale.xlsx")
+
+
+# input data from Jianye
+pro_jianye = pd.read_excel("data/proteomics/abundance_jianye_corrected.xlsx")
+
+
+
+# combine data from different source?
+protein_copy = pd.merge(left=pro_abundance2, right=pro_abundance, left_on=['gene'], right_on=['gene'], how="left")
+protein_copy1 = pd.merge(left=pro_abundance3, right=protein_copy, left_on=['gene'], right_on=['gene'], how="outer")
+protein_copy2 = pd.merge(left=protein_copy1, right=pro_jianye, left_on=['gene'], right_on=['gene'], how="outer")
+
+protein_copy2.to_excel("data/proteomics/protein_copy_combine.xlsx",index=False)
+
+
