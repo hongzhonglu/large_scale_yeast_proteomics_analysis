@@ -119,3 +119,46 @@ rm *.pdb.gz
 # calculate the volume
 "java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb_SCHPO"
 
+
+
+
+# on the cluster
+# for the ECOLI
+"""
+mkdir /lustre/home/acct-clslhz/clslhz/pdb_file/UP000000625_83333_ECOLI_v2/
+tar -xvf /lustre/home/acct-clslhz/clslhz/pdb_file/UP000000625_83333_ECOLI_v2.tar -C /lustre/home/acct-clslhz/clslhz/pdb_file/UP000000625_83333_ECOLI_v2/
+"""
+
+# pdb dir
+dir00 = "/lustre/home/acct-clslhz/clslhz/pdb_file/"
+dir0 = dir00 + "UP000000625_83333_ECOLI_v2/"
+all_file = os.listdir(dir0)
+# make new dir
+os.mkdir(dir00 + "alphafold_pdb_ecoli")
+
+# copy files
+output = dir00 + "alphafold_pdb_ecoli"
+for x in all_file:
+    print(x)
+    if ".pdb.gz" in x:
+        try:
+            shutil.copy(dir0 + str(x), output)
+        except:
+            pass
+
+# uncompress the gz files
+
+"""
+dir00="/lustre/home/acct-clslhz/clslhz/pdb_file/"
+cd $dir00/alphafold_pdb_ecoli
+gunzip *.gz
+"""
+
+# further remove file in .gz format
+"""
+rm *.pdb.gz
+"""
+
+# calculate the volume
+"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb_ecoli"
+
