@@ -80,10 +80,6 @@ plt.ylim(0, 25)
 plt.show()
 
 
-
-
-
-
 # only take the datasets with NH4 as nitrogen under the N limitation
 # here we only explore the condition with only NH4 limitation
 combine_data2 = combine_data[combine_data["Nitrogen source"] =="NH4"]
@@ -167,8 +163,56 @@ for i, x in membrane_only.iterrows():
 
 membrane_only_ratio["dilution rate (/h)"] = combine_data2["dilution rate (/h)"]
 
+# plot the figure in ratio
+x0 = "dilution rate (/h)"
+for y0 in column_select10:
+    title0 = 'result/figure/rose_miu_ratio_' + y0 + '.pdf'
+    print(title0)
+
+    sns.lmplot(x=x0, y=y0, data=membrane_only_ratio, lowess=True, height=4, aspect=1)
+    plt.axvline(x=0.18, color='k', linestyle='--')
+    plt.xlabel(x0,fontsize=12)
+    plt.ylabel(y0 + " occupied ratio",fontsize=15)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.savefig(title0, bbox_inches='tight')
+
+# try to put all lines in one figure
+s2 = membrane_only_ratio["dilution rate (/h)"].tolist()
+colname0 = list(membrane_only_ratio.columns)
+colname0 = [x for x in colname0 if x !="dilution rate (/h)"]
+# change the data format
+membrane_only_ratio0 = membrane_only_ratio[colname0]
+for x in colname0:
+    membrane_only_ratio0[x] = pd.to_numeric(membrane_only_ratio0[x])
+
+membrane_only_ratio0["sample_ID"] = ["D=" + str(x) for x in s2]
+
+membrane_only_ratio01 = membrane_only_ratio0.groupby(['sample_ID']).mean()
+membrane_only_ratio02 = membrane_only_ratio01.transpose()
+
+def calculate_fold_change(data_t):
+    data_t0 = data_t.copy()
+    all_col = list(data_t0.columns)
+    ref = all_col[0]
+    for x in all_col:
+        print(x)
+        data_t0[x] = data_t[x] / data_t[ref]
+    return data_t0.iloc[:,0:]
+
+membrane_only_ratio03 = calculate_fold_change(membrane_only_ratio02)
+membrane_only_ratio04 = membrane_only_ratio03.transpose()
+membrane_only_ratio04["dilution rate (/h)"] = list(dict.fromkeys(s2)) # remove the duplicates while keeping the order
+
+sns.lineplot(x='dilution rate (/h)', y='value', hue='variable', style="variable",
+             data=pd.melt(membrane_only_ratio04, ['dilution rate (/h)']))
+plt.axhline(y=1.0, color='k', linestyle='--')
+plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
+plt.savefig('result/figure/rose_miu_membrane_ratio_for_all.pdf', bbox_inches='tight')
 
 
+
+"""
 # plot the figure in occupied area
 x0 = "dilution rate (/h)"
 for y0 in column_select10:
@@ -209,33 +253,7 @@ for y0 in column_select10:
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.savefig(title0, bbox_inches='tight')
-
-
-# plot the figure in ratio
-x0 = "dilution rate (/h)"
-for y0 in column_select10:
-    title0 = 'result/figure/rose_miu_ratio_' + y0 + '.pdf'
-    print(title0)
-
-    sns.lmplot(x=x0, y=y0, data=membrane_only_ratio, lowess=True, height=4, aspect=1)
-    plt.axvline(x=0.18, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied ratio",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-
-
-
-
-
-
-
-
-
-
-
+"""
 
 
 

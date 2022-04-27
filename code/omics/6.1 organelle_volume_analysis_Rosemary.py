@@ -80,7 +80,8 @@ combine_data = pd.merge(left=volume_size_rosemery_ratio1, right=physiology_rosem
 # here we only explore the condition with only NH4 limitation
 combine_data2 = combine_data[combine_data["Nitrogen source"] =="NH4"]
 combine_data2 = combine_data2[combine_data2["limiting nutrient"] =="N"]
-combine_data2.to_excel("data/proteomics/ratio_of_organelle_volume_to_total_protein_volume.xlsx")
+combine_data2.to_excel("data/proteomics/organell_protein_ratio_rosemary.xlsx")
+
 
 # first calculate correlation coefficient
 from scipy.stats import pearsonr

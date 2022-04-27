@@ -25,7 +25,7 @@ data_two_sample["abs1"] = (data_two_sample['Glucose_phase(mmol/gDW)'])
 data_two_sample["abs2"] = (data_two_sample['mmol/gDW_carl'])
 
 from scipy.stats import pearsonr
-corr1, _ = pearsonr(data_two_sample["abs1"], data_two_sample["abs2"])
+corr1 = pearsonr(data_two_sample["abs1"], data_two_sample["abs2"])
 
 
 
@@ -62,5 +62,3 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 from scipy.stats import pearsonr
 corr2, _ = pearsonr(data_two_sample["v1"], data_two_sample["v2"])
-
-

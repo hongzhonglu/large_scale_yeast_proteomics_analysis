@@ -116,3 +116,6 @@ result2.to_excel("data/proteomics/membrance_size_across_go_term_Rosemary.xlsx")
 
 
 
+
+
+

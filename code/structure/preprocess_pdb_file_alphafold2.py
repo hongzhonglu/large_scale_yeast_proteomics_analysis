@@ -122,7 +122,12 @@ rm *.pdb.gz
 
 
 
+
+
+##########################################################
 # on the cluster
+##########################################################
+
 # for the ECOLI
 """
 mkdir /lustre/home/acct-clslhz/clslhz/pdb_file/UP000000625_83333_ECOLI_v2/
@@ -159,6 +164,155 @@ gunzip *.gz
 rm *.pdb.gz
 """
 
-# calculate the volume
-"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb_ecoli"
+
+# split the file into 40 sub-folders
+import os
+import pandas as pd
+os.system("rm -r /lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_ecoli_split/sub_folder_*")
+dir01="/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_ecoli_split/sub_folder_"
+for x in range(0,40):
+    print(x)
+    os.mkdir(dir01 + str(x))
+# move the pdb file into each sub-folder
+all_file = os.listdir('/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_ecoli')
+
+
+
+# put the proprocess pdb file in the cycling...
+pdb_ok = pd.read_excel("/lustre/home/acct-clslhz/clslhz/pdb_file/ecoli_structure_size_part1.xlsx",engine='openpyxl')
+pdb_list = pdb_ok['Protein'].tolist()
+pdb_list = [x+ ".pdb" for x in pdb_list]
+all_file = list(set(all_file)-set(pdb_list)) # 2104 file remaining
+
+
+import numpy
+import shutil
+l = numpy.array_split(numpy.array(all_file), 40)
+file_name = [dir01 + str(i) for i in range(0,40)]
+
+
+dir02 = '/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_ecoli/'
+for row, out in zip(l,file_name):
+    print(row, out)
+    for x in row:
+        print(x)
+        shutil.copy(dir02 + str(x), out)
+
+# generate one sh file to process all datasets in parallel
+def generate_sh():
+    import os
+    # first update the main function
+    out_sh_file = '/lustre/home/acct-clslhz/clslhz/pdb_file/ecoli.sh'
+    parallel = 1
+    pdb_dir0 = "/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_ecoli_split/"
+    pdb_dir_all = os.listdir(pdb_dir0)
+    # write in the start file
+    start_part = "#!/bin/bash\n" \
+                 "#SBATCH --job-name=test\n" \
+                 "#SBATCH --partition=cpu\n" \
+                 "#SBATCH -n 80\n" \
+                 "#SBATCH --ntasks-per-node=40\n" \
+                 "#SBATCH --output=%j.out\n" \
+                 "#SBATCH --error=%j.err\n"\
+                 "#SBATCH --mail-type=end\n"\
+                 "#SBATCH --mail-user=hongzhonglu@sjtu.edu.cn\n"\
+                 "module load lammps/2020-cpu\n" \
+                 "ulimit -s unlimited\n" \
+                 "ulimit -l unlimited\n"
+    newfile = open(out_sh_file, "w")
+    newfile.writelines(start_part)
+    # template
+    volume_sh = "java -jar /lustre/home/acct-clslhz/clslhz/ProteinVolume_1.3/ProteinVolume_1.3.jar /lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_ecoli_split/sub_folder_1"
+    for i, x in enumerate(pdb_dir_all):
+        print(i, x)
+        volume_sh_update = volume_sh.replace("sub_folder_1", x)
+        if i % parallel == 0:
+            newfile.writelines(volume_sh_update)
+            newfile.write(" & " + "\n")
+            newfile.write("\n")
+        else:
+            newfile.write(volume_sh_update)
+    newfile.write("wait" + "\n")
+    newfile.close()
+
+generate_sh()
+
+
+
+
+
+# collect the dataset
+import glob
+import shutil
+ss = glob.glob("/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_ecoli_split/*/*.txt")
+for xx in ss:
+    print(xx)
+    shutil.copy(xx, "/lustre/home/acct-clslhz/clslhz/pdb_file/original_result/")
+
+# combine the initial result
+read_files = glob.glob("/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_ecoli_split/*/*.txt")
+with open("/lustre/home/acct-clslhz/clslhz/pdb_file/ecoli_result.txt", "wb") as outfile:
+    for f in read_files:
+        with open(f, "rb") as infile:
+            outfile.write(infile.read())
+
+
+# from here, all code run in mac
+# preprocess txt file
+ss = open("data/ecoli_result.txt",).readlines()
+with open("data/ecoli_result_new.txt", "w") as outfile:
+    for i,xx in enumerate(ss):
+        print(i)
+        if i <=7 and "Total Volume" in xx:
+            print(xx)
+            outfile.write(xx)
+        if i >=7 and "-F1-model_v2 " in xx:
+            outfile.write(xx)
+
+
+# second part
+# calculate the protein size based on its protein 3D structures
+import pandas as pd
+input_file = "data/ecoli_result_new.txt"
+with open(input_file) as file_in:
+    lines = []
+    for line in file_in:
+        lines.append(line)
+lines0 = [x for x in lines if "Reading hydrogens is turned on" not in x]
+lines1 = lines0[7:]
+p1 = []
+p2 = []
+p3 = []
+p4 = []
+p5 = []
+p6 = []
+for x in lines1:
+    print(x)
+    ss = x.split(" ")
+    ss0 = [x for x in ss if x is not '']
+    ss0 = [x.replace("\n", "") for x in ss0]
+    ss0 = [x.replace(",", ".") for x in ss0]
+    s1 = ss0[0]
+    s2 = float(ss0[1])
+    s3 = float(ss0[2])
+    s4 = float(ss0[3])
+    s5 = float(ss0[4])
+    s6 = float(ss0[5])
+    p1.append(s1)
+    p2.append(s2)
+    p3.append(s3)
+    p4.append(s4)
+    p5.append(s5)
+    p6.append(s6)
+# note the original unit for the volume is Å
+# 1Å = 0.1 nm; 1Å^3 = 0.001 nm^3
+volume_df = pd.DataFrame({"Protein":p1,"Total_Volume":p2,"Void_Volume":p3,"VDW_Volume":p4,"Packing Density":p5,"Time_Taken_ms":p6})
+
+# change the unit from Å to nm
+volume_df0 = volume_df.copy()
+volume_df0["Total_Volume"] = volume_df["Total_Volume"]/1000
+volume_df0["Void_Volume"] = volume_df["Void_Volume"]/1000
+volume_df0["VDW_Volume"] = volume_df["VDW_Volume"]/1000
+volume_df0.to_excel("data/ecoli_structure_size_part2.xlsx")
+
 

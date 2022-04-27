@@ -61,22 +61,6 @@ for i, x in membrane_only.iterrows():
 
 membrane_only_ratio["sample_ID"] = combine_data["sample_ID"]
 
-
-# plot the figure in occupied area
-x0 = 'sample_ID'
-for y0 in column_select10:
-    title0 = 'result/figure/tao2_' + y0 + '.pdf'
-    print(title0)
-    plt.figure()
-    sns.barplot(x=x0, y=y0, data=combine_data, capsize=.2)
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.xticks(rotation=90)
-    plt.savefig(title0, bbox_inches='tight')
-
-
 # plot the figure in ratio
 x0 = "sample_ID"
 for y0 in column_select10:

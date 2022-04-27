@@ -37,7 +37,7 @@ def setReferenceProCopy():
     return reference_copy, v_five_percent, v_ten_percent
 
 
-def getProAundance(genes_select0, pro_abundance0):
+def getProAundance_old_version(genes_select0, pro_abundance0):
     """
     Note: this function need double check!!!
 
@@ -50,8 +50,8 @@ def getProAundance(genes_select0, pro_abundance0):
 
     # should make sure no structure size data is nan
     combine_df = pd.DataFrame({"gene": genes_select0}) # change it as a dataframe
-    combine_df["molecular/cell"] = singleMapping(pro_abundance0["molecular/cell"], pro_abundance0['gene'],
-                                            combine_df["gene"])
+    combine_df["molecular/cell"] = singleMapping(pro_abundance0["molecular/cell"], pro_abundance0['gene'],combine_df["gene"])
+
     # for the protein without abundance, use the median value from this group.
     # calculate the abundance median value
     combine_df.fillna(value=pd.np.nan, inplace=True) # change none into nan in the dataframe
@@ -96,6 +96,74 @@ def getProAundance(genes_select0, pro_abundance0):
         combine_df["molecular/cell_global"] = abundance_update2
 
     return combine_df
+
+
+
+def getProAundance(genes_select0, pro_abundance0):
+    """
+    Note: this function need double check!!!
+
+    The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
+    It should be noted that the unit of pro_abundance is molecules per cell.
+    :param genes_select0:
+    :param pro_abundance0: the unite is moleculars per cell
+    :return:
+    """
+
+    # should make sure no structure size data is nan
+    combine_df = pd.DataFrame({"gene": genes_select0}) # change it as a dataframe
+    #combine_df["molecular/cell"] = singleMapping(pro_abundance0["molecular/cell"], pro_abundance0['gene'],combine_df["gene"])
+    combine_df = pd.merge(left=pro_abundance0, right=combine_df, left_on=['gene'], right_on=['gene'],how="right")
+
+
+    # for the protein without abundance, use the median value from this group.
+    # calculate the abundance median value
+    combine_df.fillna(value=pd.np.nan, inplace=True) # change none into nan in the dataframe
+    abundance0 = combine_df["molecular/cell"].tolist()
+    abundance1 = [x for x in abundance0 if np.isnan(x) == False]
+    if len(abundance1) < 1:
+        return "no_abundance"
+    else:
+
+        """
+        # use the first choice: for gene with no measured abundance, use the median value for the gene from the same compartment
+        abundance_median = statistics.median(abundance1)  # here for the protein without abundance, the median value from this group is used. But maybe not correct at some cases
+        abundance_update = []
+        for x in abundance0:
+            if np.isnan(x) == False:
+                x0 = x
+            else:
+                x0 = abundance_median
+            abundance_update.append(x0)
+        combine_df["molecular/cell_local"] = abundance_update
+
+
+        # use the second choice: for gene with no measured abundance, use the value from the reference conditions??
+        # load the reference molecular copies
+        ref_abundance, v_5, v_10 = setReferenceProCopy()
+        # set a dict
+        gene_abundance = {}
+        for i, x in ref_abundance.iterrows():
+            print(i)
+            gene_abundance[x['gene']] = x['molecular/cell']
+
+        abundance_update2 = []
+        for i, x in combine_df.iterrows():
+            print(i)
+            ss = x['molecular/cell']
+            if np.isnan(ss) == False:
+                x0 = ss
+            elif x['gene'] in ref_abundance['gene'].tolist():
+                x0 = gene_abundance[x['gene']]
+            else:
+                x0 = v_5
+            abundance_update2.append(x0)
+
+        combine_df["molecular/cell_global"] = abundance_update2
+
+    return combine_df"""
+        return combine_df
+
 
 
 

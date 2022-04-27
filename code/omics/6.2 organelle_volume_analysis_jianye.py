@@ -57,12 +57,8 @@ for x in column1:
         print(x)
         volume_size_jianye_ratio1[x] = volume_size_tr0[x] / volume_size_tr0["total_pro_volume"]
 
-
-
-
-
 volume_size_jianye_ratio1['sample_ID'] = list(volume_size_jianye_ratio1.index)
-volume_size_tr0.to_excel("data/jianye_ye_datasets.xlsx")
+volume_size_jianye_ratio1.to_excel("data/proteomics/organell_protein_ratio_jianye.xlsx")
 
 
 

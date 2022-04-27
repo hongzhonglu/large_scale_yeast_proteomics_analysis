@@ -65,7 +65,10 @@ column_select1 = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum'
 
 # note: The nucleolus is a region found within the cell nucleus that is concerned with producing and assembling the cell's ribosomes.
 # 'mitochondrial ribosome'
-combine_data2 = volume_size_tr0[column_select1]
+
+# combine_data2 = volume_size_tr0[column_select1]
+combine_data2 = volume_size_tr0
+
 combine_data2["sample_ID"] = [5,5,115,115,30,30,50,50]
 
 
@@ -75,28 +78,13 @@ combine_data2["sample"] = total_pro_volume["sampleID"].tolist()
 
 volume_size_ratio1 = combine_data2.copy()
 
-column1 = list(combine_data2.columns[0:13])
+column1 = list(combine_data2.columns[0:139])
 for x in column1:
     print(x)
     volume_size_ratio1[x] = combine_data2[x] / combine_data2["total_pro_volume"]
 
-
-# plot the figure in ratio
-x0 = "sample_ID"
-for y0 in column_select1:
-    title0 = 'result/figure/tao2_' + y0 + '.pdf'
-    print(title0)
-    plt.figure()
-    sns.barplot(x=x0, y=y0, data=combine_data2, capsize=.2)
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " protein volume",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.xticks(rotation=90)
-    plt.savefig(title0, bbox_inches='tight')
-
-
-
+# save ratio datasets
+volume_size_ratio1.to_excel("data/proteomics/organell_protein_ratio_tao2.xlsx")
 
 
 
