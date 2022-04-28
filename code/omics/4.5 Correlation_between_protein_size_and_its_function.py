@@ -77,16 +77,73 @@ def linearFit(df, x_name, y_name):
     y_max = max(y)
     plt.text(x_max/3, 2*y_max/3, "R2=" + str(R2), fontsize=18)
     plt.show()
+    return coef[0], coef[1]
+
 structure_quality_all = pd.read_excel("result/alphafold_quality_with_gene_ID.xlsx")
 pro_size00 = pro_size[pro_size["locus"].isin(structure_quality_all["gene"])]
-linearFit(df=pro_size00, x_name="MW", y_name="Total_Volume")
 
-pro_size00["calculated"] = pro_size00["MW"]*1.06e-03-1.10
+pro_size00["MW"] = pro_size00["MW"]/1000 # change the unit as kda
+a, b = linearFit(df=pro_size00, x_name="MW", y_name="Total_Volume")
+
+#pro_size00["calculated"] = pro_size00["MW"]*1.06e-03 - 1.10
+pro_size00["calculated"] = pro_size00["MW"]*a - b
+
 pro_size00["relative_change"] = (pro_size00["Total_Volume"] - pro_size00["calculated"])/pro_size00["calculated"]
+
+# filter by protein length to remove too short proteins
+# pro_size00 = pro_size00[pro_size00["pro_length"] >=200]
 pro_size00 = pro_size00.sort_values(by=['relative_change'], ascending=True)
 
-pro_size01 = pro_size00.iloc[0:150,:]
+
+pro_size01 = pro_size00.iloc[0:200,:]
 gene01= ",".join(pro_size01["locus"].to_list())
+print(gene01)
+
+# import Transcription factor
+TRN_sce = pd.read_excel("data/transcriptional_network/TRN_sce.xlsx")
+pro_size00["TF"] = None
+pro_size00["TF"][pro_size00["locus"].isin(TRN_sce["TF"])] = "Yes"
+pro_size00["TF"][~pro_size00["locus"].isin(TRN_sce["TF"])] = "No"
+
+
+
+pro_size00["volume_per_kda"] = pro_size00["Total_Volume"]/pro_size00["MW"]
+pro_g1 = pro_size00[pro_size00["TF"]=="Yes"]
+pro_g2 = pro_size00[pro_size00["TF"]=="No"]
+pro_g2 = pro_g2[pro_g2["pro_length"] >= min(pro_g1["pro_length"])]
+pro_g2 = pro_g2[pro_g2["pro_length"] <= max(pro_g1["pro_length"])]
+from scipy.stats import ttest_ind
+
+# combine two pandas
+pro_c = pd.concat([pro_g1, pro_g2], axis=0)
+sns.catplot(x="TF", y="volume_per_kda", order=["No", "Yes"], kind="box", data=pro_c)
+ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
+
+pro_size00 = pro_size00.sort_values(by=['volume_per_kda'], ascending=True)
+
+sns.displot(pro_size00, x="volume_per_kda", stat="density", common_norm=False)
+plt.xlim(0.75,1.25)
+pro_size01 = pro_size00.iloc[0:200,:]
+gene01= ",".join(pro_size01["locus"].to_list())
+print(gene01)
+
+
+
+
+# compare new and conserved gene
+"""
+gene_type = pd.read_excel("data/core_and_essential_gene_sce/panGene_for manual check.xlsx")
+pro_size00["gene_type"] = singleMapping(gene_type["gene_type"],gene_type["gene_simple"],pro_size00["locus"])
+pro_size00["volume_per_kda"] = pro_size00["Total_Volume"]/pro_size00["MW"]
+pro_size00 = pro_size00[~pro_size00["gene_type"].isna()]
+sns.catplot(x="gene_type", y="volume_per_kda", order=["core_gene", "Variable"], kind="box", data=pro_size00)
+pro_g1 = pro_size00[pro_size00["gene_type"]=="core_gene"]
+pro_g2 = pro_size00[pro_size00["gene_type"]=="Variable"]
+ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
+pro_g1['volume_per_kda'].describe()
+pro_g2['volume_per_kda'].describe()
+"""
+
 
 
 
