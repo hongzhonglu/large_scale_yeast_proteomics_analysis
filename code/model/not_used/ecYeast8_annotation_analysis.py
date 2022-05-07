@@ -5,7 +5,7 @@ import sys
 import pprint
 from cobra.io import load_matlab_model
 
-os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
+os.chdir('/code')
 #sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
 #pprint.pprint(sys.path)
 
@@ -30,13 +30,3 @@ gem_gene_nov = produceGeneList(ecYeast)
 gem_rxn_nov['subsystem'] = [None]*len(gem_rxn_nov['equation'])
 #obtain the transport reaction
 gem_rxn_nov['subsystem'] = transport(gem_rxn_nov['formula'].tolist(), gem_rxn_nov['subsystem'].tolist())
-
-
-
-
-
-
-
-
-
-
