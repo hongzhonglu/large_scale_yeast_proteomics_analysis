@@ -1,0 +1,178 @@
+Systematic ID	Gene name	Product description	UniProt ID
+SPBC16E9.01c	php4	CCAAT-binding factor complex repressor Php4	O14318
+SPBC725.11c	php2	CCAAT-binding factor complex subunit Php2	P24488
+SPAC23C11.08	php3	CCAAT-binding factor complex subunit Php3	P36611
+SPBC3B8.02	php5	CCAAT-binding factor complex subunit Php5	P79007
+SPCC1682.13	laf2	"Clr6 associated factor 2, Laf2"	O74443
+SPBC12C2.10c	pst1	Clr6 histone deacetylase complex subunit Pst1	Q09750
+SPAC23C11.15	pst2	Clr6 histone deacetylase complex subunit Pst2	O13919
+SPAC14C4.12c	laf1	Clr6 L associated factor 1 Laf1	O13719
+SPAC1142.08	fhl1	DNA-binding forkhead transcription factor Fhl1	O14270
+SPBC16G5.15c	fkh2	DNA-binding forkhead transcription factor Fkh2	O60129
+SPBC4C3.12	01-Sep	DNA-binding forkhead transcription factor Sep1	O43058
+SPBC32H8.11	mei4	"DNA-binding forkhead transcription factor, meiotic Mei4"	O13606
+SPBC530.05	prt1	DNA-binding transcription factor	O59741
+SPAPB24D3.01	toe3	DNA-binding transcription factor	Q9C0Z1
+SPAC105.03c		DNA-binding transcription factor	Q9P7H9
+SPAC25B8.11		DNA-binding transcription factor	Q9UTA7
+SPAC3C7.04		DNA-binding transcription factor	O14130
+SPAC3F10.12c		DNA-binding transcription factor	Q10186
+SPAC3H8.08c		DNA-binding transcription factor	Q10144
+SPBC1348.12		DNA-binding transcription factor	G2TRT1
+SPBC56F2.05c		DNA-binding transcription factor	O60056
+SPCC320.03		DNA-binding transcription factor	O59780
+SPCC417.09c		DNA-binding transcription factor	O94490
+SPCC757.04		DNA-binding transcription factor	O74915
+SPCC777.02		DNA-binding transcription factor	O74541
+SPCC965.10		DNA-binding transcription factor	O59830
+SPAC6G10.12c	ace2	DNA-binding transcription factor Ace2	O14258
+SPBC1289.10c	adn2	DNA-binding transcription factor Adn2	O94619
+SPCC1494.10	adn3	DNA-binding transcription factor Adn3	O74522
+SPAC22F3.02	atf31	DNA-binding transcription factor Atf31	Q09771
+SPBC1683.13c	cha4	DNA-binding transcription factor Cha4	Q9P6I9
+SPAC1B1.01	deb1	DNA-binding transcription factor Deb1/Rdp1	O13862
+SPAC56F8.16	esc1	DNA-binding transcription factor Esc1	Q04635
+SPCC1902.01	gaf1	DNA-binding transcription factor Gaf1	Q10280
+SPBPB8B6.04c	grt1	DNA-binding transcription factor Grt1	Q9C469
+SPAC2E12.02	hsf1	DNA-binding transcription factor Hsf1	Q02953
+SPAC3H1.11	hsr1	DNA-binding transcription factor Hsr1	Q10076
+SPAC821.07c	moc3	DNA-binding transcription factor Moc3	Q9UT46
+SPAC21E11.03c	pcr1	DNA-binding transcription factor Pcr1	Q09926
+SPBC27B12.11c	pho7	DNA-binding transcription factor Pho7	O13658
+SPAC6F12.02	rst2	DNA-binding transcription factor Rst2	P78871
+SPBC1105.14	rsv2	DNA-binding transcription factor Rsv2	Q9Y815
+SPAC3G9.14	sak1	DNA-binding transcription factor Sak1	P48383
+SPAC16.05c	sfp1	DNA-binding transcription factor Sfp1	Q9UTH8
+SPBC1652.01	stb3	DNA-binding transcription factor Stb3	Q9P7B0
+SPBC32C12.02	ste11	DNA-binding transcription factor Ste11	P36631
+SPAC13G7.10	teb1	DNA-binding transcription factor Teb1	Q10274
+SPAC1486.10	thi1	DNA-binding transcription factor Thi1	P36598
+SPBP8B7.30c	thi5	DNA-binding transcription factor Thi5	O94278
+SPAC25B8.19c	loz1	DNA-binding transcription factor zf-C2H2 type	Q9UTA1
+SPAC25G10.03	zip1	DNA-binding transcription factor Zip1	Q10424
+SPBC29B5.01	atf1	"DNA-binding transcription factor, Atf-CREB family Atf1"	P52890
+SPBC2F12.09c	atf21	"DNA-binding transcription factor, Atf-CREB family Atf21"	P78962
+SPAC4G8.13c	prz1	"DNA-binding transcription factor, calcineurin responsive Prz1"	Q09838
+SPCC736.08	cbf11	"DNA-binding transcription factor, CBF1/Su(H)/LAG-1 family Cbf11"	O74954
+SPCC1223.13	cbf12	"DNA-binding transcription factor, CBF1/Su(H)/LAG-1 family Cbf12"	O74412
+SPAC23E2.01	fep1	"DNA-binding transcription factor, iron-sensing Fep1"	Q10134
+SPAC11E3.06	map1	"DNA-binding transcription factor, MADS-box Map1"	P78926
+SPBC19G7.06	mbx1	"DNA-binding transcription factor, MADS-box Mbx1"	O42954
+SPBC317.01	mbx2	"DNA-binding transcription factor, MADS-box Pvg4"	Q9HGP0
+SPBC336.12c	cdc10	"DNA-binding transcription factor, MBF transcription factor complex subunit Cdc10"	P01129
+SPBC530.08		"DNA-binding transcription factor, membrane-tethered"	O59744
+SPBC354.05c	sre2	"DNA-binding transcription factor, membrane-tethered Sre2"	O43019
+SPCC584.02	cuf2	"DNA-binding transcription factor, middle-meiotic Cuf2"	O94588
+SPAC31A2.11c	cuf1	"DNA-binding transcription factor, nutritional copper sensing Cuf1"	Q09728
+SPAC1783.07c	pap1	"DNA-binding transcription factor, oxidative stress-responsive Pap1/Caf3"	Q01663
+SPAC32A11.03c	phx1	"DNA-binding transcription factor, stationary phase-specific Phx1"	Q10328
+SPBC19C2.09	sre1	"DNA-binding transcription factor, sterol regulatory element binding protein Sre1"	Q9UUD1
+SPAC1399.05c	toe1	"DNA-binding transcription factor, zf-fungal binuclear cluster type"	Q9HE16
+SPAC139.03	toe2	"DNA-binding transcription factor, zf-fungal binuclear cluster type"	Q9UTN0
+SPAC11D3.07c	toe4	"DNA-binding transcription factor, zf-fungal binuclear cluster type"	Q10086
+SPAC11D3.17		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	Q10096
+SPAC1327.01c		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	Q1MTM9
+SPAC1F7.11c		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	Q09922
+SPAC2H10.01		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	O94392
+SPBC16G5.16		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	O60130
+SPBC16G5.17		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	O60131
+SPBC1773.12		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	O94569
+SPBC1773.16c		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	O94573
+SPBC530.11c		"DNA-binding transcription factor, zf-fungal binuclear cluster type"	O59746
+SPBC15D4.02	gsf1	"DNA-binding transcription factor, zf-fungal binuclear cluster type Gsf1"	O74308
+SPAC1039.05c	klf1	"DNA-binding transcription factor, zf-fungal binuclear cluster type Klf1"	Q9US36
+SPAPB1A11.04c	mca1	"DNA-binding transcription factor, zf-fungal binuclear cluster type Mca1"	Q9HDX1
+SPCC1393.08	fil1	"DNA-binding transcription factor, zf-GATA type"	O94720
+SPCC290.04	ams2	"DNA-binding transcription factor, zf-GATA-type Ams2"	Q9URT4
+SPAC11D3.11c		"DNA-binding transcription factor, zn(2)-C6 fungal-type, truncated"	G2TRN9
+SPBP4H10.09	rsv1	DNA-binding transcription repressor Rsv1	Q9P7D9
+SPBC1D7.02c	scr1	DNA-binding transcription repressor Scr1	O14335
+SPBC21C3.16c	spt4	DSIF transcription elongation factor complex subunit Spt4	Q9P7K8
+SPAC23C4.19	spt5	DSIF transcription elongation factor complex subunit Spt5	O13936
+SPAC6G9.15c	ebp1	Ell binding protein Ebp1	Q92360
+SPBC1861.07	elc1	elongin C Elc1	Q9USX9
+SPBC29A3.08	pof4	"elongin-A, F-box protein Pof4"	O59671
+SPAC20H4.03c	tfs1	general transcription elongation factor TFIIS	P49373
+SPBC16E9.15		"heat shock factor binding protein, implicated in trancriptional response to stress"	O14330
+SPAC17G8.13c	mst2	histone acetyltransferase Mst2	Q10325
+SPAC3G9.07c	hos2	histone deacetylase (class I) Hos2	O13298
+SPBC16D10.07c	sir2	"histone deacetylase, Sirtuin family, NAD-dependent Sir2"	O94640
+SPAC22E12.11c	set3	histone lysine methyltransferase Set3	Q10362
+SPAC1A6.01c		"human thyroid receptor interacting protein homolog, transcription coactivator"	O13855
+SPAC29B12.11c		human WW domain binding protein-2 ortholog	O14032
+SPAC26H5.05	mga2	IPT/TIG ankyrin repeat gene-specific transcription coactivator Mga2	O13987
+SPAC637.12c	mst1	KAT5 family histone acetyltransferase Mst1	O94446
+SPBC30B4.03c	ldb1	"LIM domain binding protein, transcription coregulator"	O74364
+SPBC23G7.09	mat1-Mc	M-specific trancription factor Mc	P0CY17
+SPBC23G7.17c	mat1-Mi	M-specific trancription factor Mi	P0CY15
+SPBC16A3.07c	nrm1	MBF complex corepressor Nrm1	O42913
+SPBC21B10.13c	yox1	MBF complex corepressor Yox1	P40923
+SPBC2D10.06	rep1	MBF transcription factor activator Rep1	P40379
+SPBC2F12.11c	rep2	MBF transcription factor activator Rep2	Q09824
+SPBC725.16	res1	MBF transcription factor complex subunit Res1	P33520
+SPAC22F3.09c	res2	MBF transcription factor complex subunit Res2	P41412
+SPBC12D12.06	srb11	mediator complex cyclin subunit Srb11	O94503
+SPAC2F7.04	med1	mediator complex subunit Med1	Q09696
+SPBC31F10.09c	nut2	mediator complex subunit Med10	P87310
+SPAC644.10	med11	mediator complex subunit Med11	Q9P6Q0
+SPAC688.08	srb8	mediator complex subunit Med12	Q9P6L8
+SPAC589.02c	med13	mediator complex subunit Med13	Q9HE02
+SPBC1A4.10c	med14	mediator complex subunit Med14	Q9P7Y4
+SPBC146.01	med15	mediator complex subunit Med15	Q9Y808
+SPBC31F10.04c	srb4	mediator complex subunit Med17	P87306
+SPAC5D6.05	med18	mediator complex subunit Med18	O14198
+SPCC1450.05c	rox3	mediator complex subunit Med19	Q9Y7N2
+SPAC17G8.05	med20	mediator complex subunit Med20	Q10317
+SPBC1604.10	srb7	mediator complex subunit Med21	O94376
+SPAC29A4.07	srb6	mediator complex subunit Med22	O14010
+SPAC17C9.05c	pmc3	mediator complex subunit Med27	Q10477
+SPCP31B10.03c	med31	mediator complex subunit Med31	Q9USH1
+SPBC1105.06	pmc4	mediator complex subunit Med4	Q9Y821
+SPAC1002.15c	med6	mediator complex subunit Med6	Q9US45
+SPBC14F5.08	med7	mediator complex subunit Med7	O60104
+SPBC21.04	med8	mediator complex subunit Med8	O94646
+SPAC23H4.17c	srb10	"mediator complex, cyclin-dependent protein kinase subunit Srb10"	O13958
+SPBC83.17	mbf1	multiprotein bridging factor Mbf1	O94700
+SPAC23D3.06c	nup146	"nucleoporin, WD repeat Nup146"	Q09847
+SPBC29A10.12	oxs1	oxidative stress transcription coactivator/ribosome recycling protein Oxs1	O94389
+SPAC31G5.12c	maf1	repressor of RNA polymerase III Maf1	O14109
+SPBC1198.11c	reb1	RNA polymerase I transcription termination factor/ RNA polymerase II transcription factor Reb1	Q9P6H9
+SPCC1223.10c	eaf1	RNA polymerase II transcription elongation factor Eaf1	A0ZWU1
+SPBP23A10.14c	ell1	RNA polymerase II transcription elongation factor Ell1	Q9P7X2
+SPBC25H2.11c	spt7	SAGA complex bromodomain subunit Spt7	P87152
+SPAC57A10.14	sgf11	SAGA complex deubiquitinating submodule subunit Sgf11	Q5FC18
+SPCC126.04c	sgf73	SAGA complex deubiquitinating submodule subunit Sgf73	O94397
+SPBC6B1.12c	sus1	"SAGA complex deubiquitinating submodule subunit, TREX complex subunit Sus1"	Q7LL15
+SPCC24B10.08c	ada2	SAGA complex subunit Ada2	Q9P7J7
+SPBC887.18c	hfi1	SAGA complex subunit Hfi1/Ada1	O94301
+SPBC28F2.10c	ngg1	SAGA complex subunit Ngg1/Ada3	Q9USU8
+SPBC1921.07c	sgf29	SAGA complex subunit Sgf29	Q9USW9
+SPAC4D7.10c	spt20	SAGA complex subunit Spt20	O14174
+SPCC61.02	spt3	SAGA complex subunit Spt3	O14311
+SPBC14C8.17c	spt8	SAGA complex subunit Spt8	O60097
+SPBP16F5.03c	tra1	"SAGA complex/ASTRA complex, phosphatidylinositol pseudokinase Tra1"	Q9HFE8
+SPCC5E4.03c	taf5	SAGA complex/TATA-binding protein associated factor/transcription factor TFIID complex subunit Taf5	O13282
+SPCC16C4.18c	taf6	SAGA complex/transcription factor TFIID complex histone H4-like subunit Taf6	O74462
+SPAC15A10.02	taf12	SAGA complex/transcription factor TFIID complex subunit A Taf12	O13722
+SPBC21H7.02	taf10	SAGA complex/transcription factor TFIID complex subunit Taf10	O60171
+SPAC12G12.05c	taf9	SAGA complex/transcription factor TFIID complex subunit Taf9	Q09869
+SPBC800.02	whi5	"SBF complex transcription corepressor, Whi5"	Q9HGL9
+SPAC22E12.19	snt1	Set3 complex SANT/Myb domain subunit Snt1	Q10369
+SPCC1235.09	hif2	Set3 complex subunit Hif2	O74845
+SPCC18.03		shuttle craft like transcriptional repressor/ubiquitin-protein ligase E3	O74853
+SPMTR.01	mat2-Pc	silenced P-specific trancription factor Pc	P10841
+SPMTR.02	mat2-Pi	silenced P-specific trancription factor Pi	P10842
+SPBC1734.16c	pst3	SIN3 family co-repressor Pst3	O74755
+SPAC8C9.14	prr1	stress-responsive DNA-binding transcription factor Prr1	O14283
+SPAC9G1.13c	swc4	Swr1 complex subunit Swc4	O14308
+SPAC16A10.02	sub1	transcription coactivator PC4	P87294
+SPBC19G7.16	iws1	transcription elongation factor complex subunit Iws1	O42964
+SPAC1B3.02c		"transcription elongation factor, Elf1 family"	O13868
+SPCC645.13	bye1	"transcription elongation regulator, PHD finger Bye1"	Q9Y7V2
+SPAC1002.04c	taf11	transcription factor TFIID complex subunit Taf11	Q9US54
+SPAC17G8.03c	bur6	transcription regulator complex subunit Bur6	Q10315
+SPBC1198.04c	zas1	transcription regulator Zas1	Q9UTS5
+SPAC22H10.11c	crf1	transcriptional corepressor for ribosomal proteins via TOR signaling pathway Crf1	Q10304
+SPBC23E6.09	ssn6	transcriptional corepressor Ssn6	O60184
+SPAC18B11.10	tup11	transcriptional corepressor Tup11	Q09715
+SPAC630.14c	tup12	transcriptional corepressor Tup12	Q9UUG8

@@ -106,7 +106,9 @@ for y0 in column_select10:
     title0 = 'result/figure/jianye_miu_ratio_' + y0 + '.pdf'
     print(title0)
     if y0 != "mitochondrial inner membrane":
+        #plt.figure(figsize=(4, 4))
         sns.lmplot(x=x0, y=y0, data=membrane_only_ratio, lowess=True, height=4, aspect=1)
+        #sns.lineplot(x=x0, y=y0, data=membrane_only_ratio, marker="o")
         plt.axvline(x=0.284, color='k', linestyle='--')
         plt.xlabel(x0, fontsize=12)
         plt.ylabel(y0 + " occupied ratio", fontsize=15)
@@ -114,7 +116,7 @@ for y0 in column_select10:
         plt.yticks(fontsize=12)
         plt.savefig(title0, bbox_inches='tight')
     else:
-        plt.figure()
+        plt.figure(figsize=(4, 4))
         sns.lineplot(x=x0, y=y0, data=membrane_only_ratio,  marker="o")
         plt.axvline(x=0.284, color='k', linestyle='--')
         plt.xlabel(x0, fontsize=12)
@@ -122,6 +124,39 @@ for y0 in column_select10:
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
         plt.savefig(title0, bbox_inches='tight')
+
+
+# relative to the plasma's protein sectional area
+membrane_to_plasma = membrane_only_ratio.copy()
+for y0 in column_select10:
+    membrane_to_plasma[y0] = membrane_to_plasma[y0]/membrane_only_ratio["plasma membrane"]
+    membrane_to_plasma[y0] = pd.to_numeric(membrane_to_plasma[y0])
+
+
+x0 = "dilution rate (/h)"
+for y0 in column_select10:
+    title0 = 'result/figure/jianye_miu_ratio_membrane_to_plasma_' + y0 + '.pdf'
+    print(title0)
+    if y0 != "mitochondrial inner membrane":
+        #plt.figure(figsize=(4, 4))
+        sns.lmplot(x=x0, y=y0, data=membrane_to_plasma, lowess=True, height=4, aspect=1)
+        #sns.lineplot(x=x0, y=y0, data=membrane_only_ratio, marker="o")
+        plt.axvline(x=0.284, color='k', linestyle='--')
+        plt.xlabel(x0, fontsize=12)
+        plt.ylabel(y0 + " ratio per plasma", fontsize=15)
+        plt.xticks(fontsize=12)
+        plt.yticks(fontsize=12)
+        plt.savefig(title0, bbox_inches='tight')
+    else:
+        plt.figure(figsize=(4, 4))
+        sns.lineplot(x=x0, y=y0, data=membrane_to_plasma,  marker="o")
+        plt.axvline(x=0.284, color='k', linestyle='--')
+        plt.xlabel(x0, fontsize=12)
+        plt.ylabel(y0 + " ratio per plasma", fontsize=15)
+        plt.xticks(fontsize=12)
+        plt.yticks(fontsize=12)
+        plt.savefig(title0, bbox_inches='tight')
+
 
 
 # try to put all the result together

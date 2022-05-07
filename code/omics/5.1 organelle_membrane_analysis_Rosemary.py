@@ -169,13 +169,37 @@ for y0 in column_select10:
     title0 = 'result/figure/rose_miu_ratio_' + y0 + '.pdf'
     print(title0)
 
-    sns.lmplot(x=x0, y=y0, data=membrane_only_ratio, lowess=True, height=4, aspect=1)
+    #sns.lmplot(x=x0, y=y0, data=membrane_only_ratio, lowess=True, height=4, aspect=1)
+    plt.figure(figsize=(4, 4))
+    sns.lineplot(x=x0, y=y0, data=membrane_only_ratio, marker="o")
     plt.axvline(x=0.18, color='k', linestyle='--')
     plt.xlabel(x0,fontsize=12)
     plt.ylabel(y0 + " occupied ratio",fontsize=15)
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.savefig(title0, bbox_inches='tight')
+
+
+# relative to the plasma's protein sectional area
+membrane_to_plasma = membrane_only_ratio.copy()
+for y0 in column_select10:
+    membrane_to_plasma[y0] = membrane_to_plasma[y0]/membrane_only_ratio["plasma membrane"]
+    membrane_to_plasma[y0] = pd.to_numeric(membrane_to_plasma[y0])
+
+x0 = "dilution rate (/h)"
+for y0 in column_select10:
+    title0 = 'result/figure/rose_miu_ratio_membrane_to_plasma_' + y0 + '.pdf'
+    print(title0)
+    plt.figure(figsize=(4, 4))
+    sns.lineplot(x=x0, y=y0, data=membrane_to_plasma, marker="o")
+    plt.axvline(x=0.18, color='k', linestyle='--')
+    plt.xlabel(x0,fontsize=12)
+    plt.ylabel(y0 + " ratio per plasma",fontsize=15)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.savefig(title0, bbox_inches='tight')
+
+
 
 # try to put all lines in one figure
 s2 = membrane_only_ratio["dilution rate (/h)"].tolist()
@@ -204,6 +228,8 @@ membrane_only_ratio03 = calculate_fold_change(membrane_only_ratio02)
 membrane_only_ratio04 = membrane_only_ratio03.transpose()
 membrane_only_ratio04["dilution rate (/h)"] = list(dict.fromkeys(s2)) # remove the duplicates while keeping the order
 
+# plot
+plt.figure()
 sns.lineplot(x='dilution rate (/h)', y='value', hue='variable', style="variable",
              data=pd.melt(membrane_only_ratio04, ['dilution rate (/h)']))
 plt.axhline(y=1.0, color='k', linestyle='--')

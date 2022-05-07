@@ -1,5 +1,5 @@
 # ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000002311_559292_YEAST_v2.tar sce
-# ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000002485_284812_SCHPO_v2.tar Schizosaccharomyces pombe
+# ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000000559_237561_CANAL_v2.tar Schizosaccharomyces pombe
 # ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000005640_9606_HUMAN_v2.tar human
 # ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000000625_83333_ECOLI_v2.tar e.coli
 # volume calculation
@@ -88,7 +88,7 @@ rm *.pdb.gz
 ###############################################################
 # for the SCHPO
 # pdb dir
-dir0 = "/Users/xluhon/Documents/UP000002485_284812_SCHPO_v2/"
+dir0 = "/Users/xluhon/Documents/UP000000559_237561_CANAL_v2/"
 all_file = os.listdir(dir0)
 
 # make new dir
@@ -327,19 +327,20 @@ volume_df0.to_excel("data/ecoli_structure_size_part4.xlsx")
 ##########################################################
 # on the cluster
 ##########################################################
-# for the ECOLI
+# UP000000559_237561_CANAL_v2.tar
 """
-mkdir /lustre/home/acct-clslhz/clslhz/pdb_file/UP000002485_284812_SCHPO_v2/
-tar -xvf /lustre/home/acct-clslhz/clslhz/pdb_file/UP000002485_284812_SCHPO_v2.tar -C /lustre/home/acct-clslhz/clslhz/pdb_file/UP000002485_284812_SCHPO_v2/
+mkdir /lustre/home/acct-clslhz/clslhz/pdb_file/UP000000559_237561_CANAL_v2/
+tar -xvf /lustre/home/acct-clslhz/clslhz/pdb_file/UP000000559_237561_CANAL_v2.tar -C /lustre/home/acct-clslhz/clslhz/pdb_file/UP000000559_237561_CANAL_v2/
 """
 
 # pdb dir
 import os
 import shutil
 dir00 = "/lustre/home/acct-clslhz/clslhz/pdb_file/"
-dir0 = dir00 + "UP000002485_284812_SCHPO_v2/"
+dir0 = dir00 + "UP000000559_237561_CANAL_v2/"
 all_file = os.listdir(dir0)
 # make new dir
+os.system("rm -r " + dir00 + "alphafold_pdb" )
 os.mkdir(dir00 + "alphafold_pdb")
 
 # copy files
@@ -373,8 +374,7 @@ import os
 import numpy
 import shutil
 import pandas as pd
-
-sub_fold_num = 40
+sub_fold_num = 10
 os.mkdir('/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_split')
 os.system("rm -r /lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_split/sub_folder_*")
 dir01="/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb_split/sub_folder_"
@@ -384,8 +384,6 @@ for x in range(0, sub_fold_num):
 
 # move the pdb file into each sub-folder
 all_file = os.listdir('/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb')
-
-
 # put the proprocess pdb file in the cycling...
 pdb_ok = pd.read_excel("/lustre/home/acct-clslhz/clslhz/pdb_file/organism_structure_size_part1.xlsx",engine='openpyxl')
 pdb_list = pdb_ok['Protein'].tolist()
@@ -396,7 +394,6 @@ all_file = list(set(all_file)-set(pdb_list))
 l = numpy.array_split(numpy.array(all_file), sub_fold_num)
 file_name = [dir01 + str(i) for i in range(0, sub_fold_num)]
 dir02 = '/lustre/home/acct-clslhz/clslhz/pdb_file/alphafold_pdb/'
-
 for row, out in zip(l,file_name):
     print(row, out)
     for x in row:
@@ -489,7 +486,7 @@ with open(input_file) as file_in:
     for line in file_in:
         lines.append(line)
 lines0 = [x for x in lines if "Reading hydrogens is turned on" not in x]
-lines1 = lines0[7:]
+lines1 = lines0[1:]
 p1 = []
 p2 = []
 p3 = []
@@ -523,4 +520,7 @@ volume_df0 = volume_df.copy()
 volume_df0["Total_Volume"] = volume_df["Total_Volume"]/1000
 volume_df0["Void_Volume"] = volume_df["Void_Volume"]/1000
 volume_df0["VDW_Volume"] = volume_df["VDW_Volume"]/1000
-volume_df0.to_excel("data/organism_structure_size_part2.xlsx")
+volume_df0.to_excel("data/organism_structure_size_part1.xlsx")
+
+
+

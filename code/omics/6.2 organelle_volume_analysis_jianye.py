@@ -97,17 +97,17 @@ for y0 in column_select1:
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
         plt.xlim(0, 0.4)
-        plt.axvline(x=0.33, color='k', linestyle='--')
+        plt.axvline(x=0.284, color='k', linestyle='--')
         plt.savefig(title0,bbox_inches='tight')
     else:
-        plt.figure()
+        plt.figure(figsize=(4, 4))
         sns.lineplot(x=x0, y=y0, data=combine_data, marker="o")
         plt.xlabel(x0, fontsize=15)
         plt.ylabel(y0, fontsize=15)
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
         plt.xlim(0, 0.4)
-        plt.axvline(x=0.33, color='k', linestyle='--')
+        plt.axvline(x=0.284, color='k', linestyle='--')
         plt.savefig(title0,bbox_inches='tight')
 
 

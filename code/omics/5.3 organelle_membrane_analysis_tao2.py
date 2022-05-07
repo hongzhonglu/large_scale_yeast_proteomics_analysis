@@ -66,7 +66,7 @@ x0 = "sample_ID"
 for y0 in column_select10:
     title0 = 'result/figure/tao2_ratio_' + y0 + '.pdf'
     print(title0)
-    plt.figure()
+    plt.figure(figsize=(4,4))
     sns.barplot(x=x0, y=y0, data=membrane_only_ratio, capsize=.2)
     plt.xlabel(x0,fontsize=12)
     plt.ylabel(y0 + " occupied ratio",fontsize=15)
@@ -76,6 +76,37 @@ for y0 in column_select10:
     plt.savefig(title0, bbox_inches='tight')
 
 
+# relative to the plasma's protein sectional area
+membrane_to_plasma = membrane_only_ratio.copy()
+for y0 in column_select10:
+    membrane_to_plasma[y0] = membrane_to_plasma[y0]/membrane_only_ratio["plasma membrane"]
+    membrane_to_plasma[y0] = pd.to_numeric(membrane_to_plasma[y0])
+
+membrane_to_plasma1 = membrane_to_plasma.groupby(['sample_ID']).mean()
+membrane_to_plasma1["sample_ID"] = list(membrane_to_plasma1.index)
+
+x0 = "sample_ID"
+for y0 in column_select10:
+    title0 = 'result/figure/tao2_ratio_membrane_to_plasma_' + y0 + '.pdf'
+    print(title0)
+    plt.figure(figsize=(4,4))
+    sns.barplot(x=x0, y=y0, data=membrane_to_plasma, capsize=.2)
+    plt.xlabel(x0,fontsize=12)
+    plt.ylabel(y0 + " ratio per plasma",fontsize=15)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.xticks(rotation=90)
+    plt.savefig(title0, bbox_inches='tight')
+
+"""
+# put all the result together
+sns.set_style("darkgrid")
+plt.figure()
+sns.lineplot(x='sample_ID', y='value', hue='variable', style="variable",
+             data=pd.melt(membrane_to_plasma1, ['sample_ID']))
+plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
+plt.savefig('result/figure/tao_organelle_membrane_per_plasma.pdf', bbox_inches='tight')
+"""
 
 
 # analyze all membranes as a whole
@@ -90,16 +121,16 @@ g10 = g1.mean()
 g100 = pd.DataFrame(g10)
 g100.columns = ["C:N=5"]
 
-g2 = value_df[value_df["sample_ID"]==115]
+g2 = value_df[value_df["sample_ID"]==30]
 g2 = g2[column_select1]
 g20 = g2.mean()
 g200 = pd.DataFrame(g20)
-g200.columns = ["C:N=115"]
+g200.columns = ["C:N=30"]
 
 # combine
 pd_null = pd.concat([g100, g200], axis=1)
 pd_null["compartment"] = list(pd_null.index)
-pd_null["Relative change"] = 2*(pd_null["C:N=115"]-pd_null["C:N=5"])/(pd_null["C:N=5"]+pd_null["C:N=115"])*100
+pd_null["Relative change"] = 2*(pd_null["C:N=30"]-pd_null["C:N=5"])/(pd_null["C:N=5"]+pd_null["C:N=30"])*100
 #pd_null["fold_change"] = pd_null["C:N=50"] / pd_null["C:N=5"]
 pd_null = pd_null.sort_values(by=['Relative change'], ascending=False)
 
@@ -110,7 +141,7 @@ plt.figure()
 sns.set_style('darkgrid')
 sns.barplot(x=x0, y=y0, data=pd_null, capsize=.2)
 plt.xlabel(x0, fontsize=12)
-plt.ylabel(y0 + " in C:N=115 vs C:N=5 (%)", fontsize=15)
+plt.ylabel(y0 + " in C:N=30 vs C:N=5 (%)", fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.xticks(rotation=90)
