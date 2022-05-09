@@ -36,6 +36,16 @@ data_merge["id_update"] = data_merge["id"].str.replace("AF-", "").str.replace("-
 id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 data_merge["gene"] = multiMapping(description=id_mapping["GeneName"], item1=id_mapping["Entry"], item2=data_merge["id_update"])
 data_merge.to_excel("result/alphafold_quality_with_gene_ID.xlsx")
+ax = data_merge["score"].plot.hist(bins=12, alpha=0.5)
+ax.set_title("pLDDT average score")
+ax.set_xlabel("Average score")
+ax.set_ylabel("Density")
+score_list = data_merge["score"].tolist()
+score_high =[x for x in score_list if x >= 75] # 60.66% proteins are of high-quality
+
+
+
+
 
 
 # input model information
@@ -65,13 +75,6 @@ yeast_gem0.to_excel("result/yeast_gem_with_structure_id_and_score.xlsx")
 
 # find position of specific protein
 # data_merge["id_update"][data_merge["id_update"] == "P38427"].index[0]
-
-
-
-
-
-
-
 
 
 

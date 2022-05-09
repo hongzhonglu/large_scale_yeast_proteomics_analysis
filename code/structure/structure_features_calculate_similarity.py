@@ -1,4 +1,5 @@
-# similarity calculation
+# similarity calculation based on TM score
+
 import os
 import pandas as pd
 import shutil
