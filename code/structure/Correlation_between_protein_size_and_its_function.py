@@ -36,10 +36,6 @@ df2 = df.describe()
 pro_info = pd.read_csv("data/sce_protein_weight.tsv", sep="\t")
 pro_size["MW"] = singleMapping(pro_info["proteins_molecular_weight"], pro_info["locus"],pro_size["locus"])
 pro_size["pro_length"] = singleMapping(pro_info["protein_length"], pro_info["locus"],pro_size["locus"])
-plt.figure()
-plt.scatter(pro_size["MW"], pro_size["Total_Volume"], marker='.')
-plt.figure()
-plt.scatter(pro_size["pro_length"], pro_size["Total_Volume"], marker='.')
 
 
 def linearFit(df, x_name, y_name):
@@ -183,12 +179,19 @@ sce_pathway2 = sce_pathway[sce_pathway["group"]=="other"]
 sce_pathway2 = sce_pathway2.drop_duplicates('gene', keep='last')
 sce_pathway_update = pd.concat([sce_pathway1, sce_pathway2])
 # protein volume over 100nm^3
-sce_pathway0 = sce_pathway[sce_pathway["pro_volume"] >100]
-
-
+# sce_pathway0 = sce_pathway[sce_pathway["pro_volume"] >100]
+# further calculate volume_per_kda
+sce_pathway_update["volume_per_kda"] = 1000*sce_pathway_update["pro_volume"]/sce_pathway_update["MW"]
+sce_pathway_update.dropna()
 sns.displot(sce_pathway_update, x="pro_volume", hue="group", stat="density", common_norm=False)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
+
+sns.catplot(x="group", y="volume_per_kda", order=["core", "other"], kind="box", data=sce_pathway_update)
+pro_g1 = sce_pathway_update[sce_pathway_update["group"]=="core"]
+pro_g2 = sce_pathway_update[sce_pathway_update["group"]=="other"].dropna()
+ss = ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
+
 
 
 
@@ -202,4 +205,3 @@ pro_size["complex"][~pro_size["locus"].isin(complex_inf["subunit"])] = "not_comp
 sns.displot(pro_size, x="Total_Volume", hue="complex", stat="density", common_norm=False)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
-

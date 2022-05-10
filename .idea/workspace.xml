@@ -3,19 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/kcat_collect.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/kcat_collect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_MW_ecoli.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_MW_other_species.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_calculate_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_geometricus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/complex_info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/complex_info.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/data_combine_xia_dataset.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/data_combine_xia_dataset.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/crabtree_effect_simulation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/crabtree_effect_simulation.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/flux_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/flux_check.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/flux_check_xia_dataset.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/flux_check_xia_dataset.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_kegg_pathway.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_kegg_pathway.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_core_variable_type.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_core_variable_type.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
