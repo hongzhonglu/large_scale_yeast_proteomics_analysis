@@ -82,6 +82,3 @@ S_section = math.pi*(Dcell/2)**2
 Vcell = 4/3*math.pi*(Dcell/2)**3
 ratio_surface_to_volume2 = Scell/Vcell
 ratio_section_area_to_volume2 = S_section/Vcell
-
-
-

@@ -137,5 +137,3 @@ pro_g4["group"] = "EMP_SM"
 pro_c = pd.concat([pro_g2, pro_g3, pro_g4], axis=0)
 sns.catplot(x="group", y="TM-score", order=["EMP_TCA", "EMP_AA", "EMP_SM"], kind="box", data=pro_c)
 plt.ylim(0,0.2)
-
-

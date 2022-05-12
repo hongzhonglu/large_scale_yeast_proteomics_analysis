@@ -78,21 +78,3 @@ plt.scatter(reduced[indices4, 0],
             reduced[indices4, 1],
             label="g4", edgecolor="blue", linewidth=0.1, alpha=0.8)
 plt.legend()
-
-
-
-
-
-plt.figure()
-plt.scatter(reduced[indices1, 0],
-            reduced[indices1, 1],
-            label="g1", edgecolor="black", linewidth=0.1, alpha=0.8)
-plt.legend()
-
-
-plt.figure()
-plt.scatter(reduced[indices4, 0],
-            reduced[indices4, 1],
-            label="g4", edgecolor="black", linewidth=0.1, alpha=0.8)
-plt.legend()
-
