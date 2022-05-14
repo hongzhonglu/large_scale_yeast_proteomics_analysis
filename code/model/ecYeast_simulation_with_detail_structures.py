@@ -17,7 +17,6 @@ from src.model_process import *
 
 
 dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
-
 ecYeast = load_matlab_model(dir1)
 
 # reaction annotation
@@ -43,20 +42,11 @@ pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
 gene_prot["Volume"] = singleMapping(pro_size['Total_Volume'], pro_size['locus'], gene_prot['GPR'])
 gene_prot["section_area"] = singleMapping(pro_size['section_area_new'], pro_size['locus'], gene_prot['GPR'])
 
+
 # first analyze the proteins for specific rxn
 # now the model has no kinetic information for the glucose
 genes_select_glucose = getProteinForRxnGEM(rxnID=['r_1166'])
 gene_prot0 = gene_prot[gene_prot['GPR'].isin(genes_select_glucose)]
-
-
-
-
-
-
-
-
-
-
 
 
 

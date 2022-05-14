@@ -56,8 +56,3 @@ for (col_name, col_data) in data.iteritems():
     print(col_name + ": " + str(prot_fraction))
 
 data.to_csv("data/example_data/s05_proteomics_data_processed.csv")
-
-
-
-
-

@@ -16,11 +16,13 @@ dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ec
 
 # it shows if the ecYeastGEM from ecModels was used, there will be some wierd things. It may due to some kcat of specific enzymes was not optimized!
 # though this model has more gene numbers.
-dir3 = "/Users/xluhon/Documents/GitHub/ecModels/ecYeastGEM/model/ecYeastGEM_batch.mat" # can't calculate the maximal growth at 0.424??
-
+# dir3 = "/Users/xluhon/Documents/GitHub/ecModels/ecYeastGEM/model/ecYeastGEM_batch.mat" # can't calculate the maximal growth at 0.424??
 ecYeast = load_matlab_model(dir1)
 
+
+
 # reaction annotation
+# This physiology datasets are from Carl, PNAS, 2021.
 # r_2111 growth 0.424
 # r_1714_REV glucose uptake 18.79
 # r_1992_REV oxygen uptake 2.92
@@ -45,7 +47,7 @@ model.reactions.get_by_id("r_1634").upper_bound = 0 # assume acetate is not prod
 model.reactions.get_by_id("r_2033").upper_bound = 0 # assume pyruvate is not produced!
 model.reactions.get_by_id("r_1631").upper_bound = 0 # assume acetaldehyde is not produced!
 model.reactions.get_by_id("r_1549").upper_bound = 0 # assume (R,R)-2,3-butanediol is not produced!
-model.reactions.get_by_id("prot_pool_exchange").upper_bound = 0.10366*1.125  # assume (R,R)-2,3-butanediol is not produced!
+model.reactions.get_by_id("prot_pool_exchange").upper_bound = 0.10366*1.125
 
 
 
@@ -63,7 +65,7 @@ solution3.fluxes['prot_pool_exchange']
 
 
 # next using the chemostat simulation
-model.reactions.get_by_id("prot_pool_exchange").upper_bound = 0.10366*1.125  # assume (R,R)-2,3-butanediol is not produced!
+model.reactions.get_by_id("prot_pool_exchange").upper_bound = 0.10366*1.125
 i = 0.424
 solution = chemostatSimulation(model0=model, D0=i)
 solution.fluxes["r_1992_REV"]
@@ -136,12 +138,3 @@ result1 = result1[result1['pro_measured'] > 0]
 corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
-
-
-
-
-
-
-
-## TO DO
-# how to update the strain biomass in python?

@@ -3,9 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_for_cluster_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_for_cluster_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_how_distance_affect_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_protein_classification_by_pathway.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_max_growth.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_max_growth.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_size_all_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_size_all_datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_Only_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_Only_enzyme_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 protein_abundance_in_each_organelle_Only_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.5 protein_abundance_in_each_organelle_Only_Rosemary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/6.7 metabolic_enzyme_per_organelle_volume_analysis_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.7 metabolic_enzyme_per_organelle_volume_analysis_Rosemary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/not_used/expample_tutorial_to_process_ecoli.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/expample_tutorial_to_process_ecoli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/example_data/s05_proteomics_data_processed.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/example_data/s05_proteomics_data_raw.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/example_data/s23_cell_volume.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/predicted_and_measured_proteomics.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/predicted_and_measured_proteomics.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,21 +100,21 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/structure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/omics" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/data/proteomics" />
       <recent name="$PROJECT_DIR$/code/model" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/model/not_used" />
       <recent name="$PROJECT_DIR$/code/model" />
-      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/data/proteomics" />
     </key>
@@ -220,11 +231,6 @@
           <url>file://$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py</url>
           <line>4</line>
           <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/6.7 metabolic_enzyme_per_organelle_volume_analysis_Rosemary.py</url>
-          <line>28</line>
-          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

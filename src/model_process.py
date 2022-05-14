@@ -146,6 +146,7 @@ def simulationCompare(model_in, growth_in, objective):
         solution00 = model0.optimize()
         GR = solution00.fluxes["r_1714_REV"]  # get the glucose uptake rate
         model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
+        # then minimization protein usage
         model0.objective = {model0.reactions.prot_pool_exchange: -1}
         solution1 = model0.optimize()
 
@@ -162,7 +163,7 @@ def simulationCompare(model_in, growth_in, objective):
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
         model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
-        # minimization glucose uptake rate
+        # only minimization protein usage
         model0.reactions.get_by_id("r_1714_REV").bounds = (0, 10)  # open the glucose
         model0.objective = {model0.reactions.prot_pool_exchange: -1}
         solution3 = model0.optimize()
@@ -176,5 +177,3 @@ def simulationCompare(model_in, growth_in, objective):
         model0.objective = objective
         solution4 = model0.optimize()
     return solution1, solution2, solution3, solution4
-
-

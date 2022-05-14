@@ -16,7 +16,7 @@ pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 
 
 # compartment
-compartment = getCompartmentGeneList(filter="Yes") # based on the automatic way
+compartment = getCompartmentGeneList(filter="Yes")# based on the automatic way
 all_compartment = list(compartment.keys())
 
 
@@ -92,5 +92,3 @@ for col0 in Sample_ID_select:
 
 result1.to_excel("data/proteomics/volume_size_across_go_term.xlsx")
 result2.to_excel("data/proteomics/membrance_size_across_go_term.xlsx")
-
-

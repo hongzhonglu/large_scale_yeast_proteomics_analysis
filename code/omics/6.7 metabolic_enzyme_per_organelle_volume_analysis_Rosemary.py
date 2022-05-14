@@ -60,7 +60,7 @@ ratio_df01["dilution rate (/h)"] = list(dict.fromkeys(s2))
 
 
 
-# plot
+# plot the figure
 sns.set_style("darkgrid")
 plt.figure()
 sns.lineplot(x='dilution rate (/h)', y='value', hue='variable', style="variable",
@@ -68,9 +68,3 @@ sns.lineplot(x='dilution rate (/h)', y='value', hue='variable', style="variable"
 #plt.axvline(x=0.18, color='g', linestyle='--')
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 plt.savefig('result/figure/rose_miu_metabolic_enzyme_per_organelle.pdf', bbox_inches='tight')
-
-
-
-
-# plot the figure
-

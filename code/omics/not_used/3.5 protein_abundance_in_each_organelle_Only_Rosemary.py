@@ -1,5 +1,12 @@
+# This is old version!!!
+# In other condition, the protein copy/cell under different conditions are not calibrated based on the cell size datasets.
+
 # Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
 # Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
+# Revised by Hongzhong Lu
+# 2022-05-14
+
+
 
 import matplotlib.pyplot as plt
 import os
