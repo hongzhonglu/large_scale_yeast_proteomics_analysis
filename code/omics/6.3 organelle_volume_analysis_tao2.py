@@ -42,24 +42,7 @@ for x in sample_ID:
 # creat a new dataframe
 total_pro_volume = pd.DataFrame({"sampleID":sample_ID,"total_pro_volume":volume_list})
 
-
-
-
-
-
-
-
-
-
 # check other volume
-column_select = list(volume_size_tr0.columns)
-column_select1 = [x for x in column_select if "membrane" not in x]
-column_select1 = [x for x in column_select1 if "wall" not in x]
-column_select1 = [x for x in column_select1 if "site" not in x]
-column_select1 = [x for x in column_select1 if "tip" not in x]
-column_select1 = [x for x in column_select1 if "pore" not in x]
-column_select1 = [x for x in column_select1 if "catalytic" not in x]
-
 column_select1 = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet',
                   'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'cytosolic ribosome','mitochondrial ribosome','nucleolus']
 
@@ -109,18 +92,25 @@ for y0 in column_select1:
 #############################################################################
 # analyze the organelle volume as a whole
 #############################################################################
+data_test = volume_size_ratio1
+#data_test = combine_data2 # using the absolute protein volume from specific organelle
 
-g1 = volume_size_ratio1[volume_size_ratio1["sample_ID"]==5]
+column_select1 = [x for x in column_select1 if x != "endosome"]
+
+g1 = data_test[data_test["sample_ID"]==5]
 g1 = g1[column_select1]
 g10 = g1.mean()
 g100 = pd.DataFrame(g10)
 g100.columns = ["C:N=5"]
 
-g2 = volume_size_ratio1[volume_size_ratio1["sample_ID"]==30]
+g2 = data_test[data_test["sample_ID"]==30]
 g2 = g2[column_select1]
 g20 = g2.mean()
 g200 = pd.DataFrame(g20)
 g200.columns = ["C:N=30"]
+
+
+
 
 # combine
 pd_null = pd.concat([g100, g200], axis=1)
