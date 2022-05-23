@@ -3,27 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.9 omics_inferred_size_Cell_system.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.9 omics_inferred_size_Cell_system.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/4.1 total_protein_copy_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/4.1 total_protein_copy_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/4.6 only_protein_abundance_correlation_for_different_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/4.5 protein_abundance_or_volume_correlation_for_different_samples.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/6.3 organelle_volume_analysis_tao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.3 organelle_volume_analysis_tao2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/6.5 organelle_volume_analysis_cell_system_2017.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/6.6 mitochrondria_cytosol_for_crabtree_effect.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.5 mitochrondria_cytosol_for_crabtree_effect.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/organell_protein_volume_tao2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/organell_protein_volume_tao2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy all datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy all datasets.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from jianye.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from jianye.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary NH4 limitation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary NH4 limitation.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/organelle protein volume correlation analysis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/organelle protein volume correlation analysis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/organelle protein volume correlation analysis2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/organelle protein volume correlation analysis2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy all datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy all datasets.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy from jianye.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy from jianye.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy from rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy from rosemary.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/total_protein copy other datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total_protein copy other datasets.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/total_protein copy rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total_protein copy rosemary.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/~$predicted_and_measured_proteomics.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.8 omics_inferred_size_Only_Kate.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.8 omics_inferred_size_Only_Kate.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/5.5 organelle_membrane_analysis_cell_system_2017.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/5.5 organelle_membrane_analysis_cell_system_2017.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_core_variable_type.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_core_variable_type.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

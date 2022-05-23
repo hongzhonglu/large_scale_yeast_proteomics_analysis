@@ -109,6 +109,8 @@ pro_size00["id"] = singleMapping(structure_quality_all["id"],structure_quality_a
 pro_size00.to_excel("data/sce_protein_with_TF_classification.xlsx")
 pro_g1 = pro_size00[pro_size00["TF"]=="Yes"]
 pro_g2 = pro_size00[pro_size00["TF"]=="No"]
+# here just remove too long or too short amino acids?
+# if not using the filter, the tendency is the same
 pro_g2 = pro_g2[pro_g2["pro_length"] >= min(pro_g1["pro_length"])]
 pro_g2 = pro_g2[pro_g2["pro_length"] <= max(pro_g1["pro_length"])]
 # combine two pandas
@@ -118,6 +120,11 @@ ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
 
 
 
+
+
+
+
+# select the genes with smallest volume per kda to do enrichment analysis
 pro_size00 = pro_size00.sort_values(by=['volume_per_kda'], ascending=True)
 sns.displot(pro_size00, x="volume_per_kda", stat="density", common_norm=False)
 plt.xlim(0.75,1.25)
@@ -141,6 +148,78 @@ pro_g2 = pro_size00[pro_size00["gene_type"]=="Variable"]
 ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
 pro_g1['volume_per_kda'].describe()
 pro_g2['volume_per_kda'].describe()
+
+
+# further input the metabolic gene from yeast8
+from cobra.io import read_sbml_model
+# read the model
+GEM_yeast = read_sbml_model('/Users/xluhon/Documents/GitHub/yeast-GEM/model/yeast-GEM.xml')
+gene_GEM = getALLGEMgene()
+pro_size00["GEM_gene"] = None
+pro_size00["GEM_gene"][pro_size00["locus"].isin(gene_GEM)] = "Yes"
+pro_size00["GEM_gene"][~pro_size00["locus"].isin(gene_GEM)] = "No"
+sns.catplot(x="GEM_gene", y="volume_per_kda", order=["Yes", "No"], kind="box", data=pro_size00)
+pro_g1 = pro_size00[pro_size00["GEM_gene"]=="Yes"]
+pro_g2 = pro_size00[pro_size00["GEM_gene"]=="No"]
+ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
+sns.displot(pro_size00, x="volume_per_kda", hue="GEM_gene", stat="density", common_norm=False)
+plt.xlim(0.75, 1.25)
+
+
+
+# input the compartment annotation and then evaluate how the location affect the volume per kda
+# compartment
+compartment = getCompartmentGeneList(filter="Yes")# based on the automatic way
+all_compartment = list(compartment.keys())
+# select protein from nucleus
+# try to input the manual check result
+gene_nucleus = pd.read_excel("data/gene_belong_nucleus_annotations.xlsx")
+gene_nucleus = gene_nucleus["gene"].tolist()
+gene_mitochondrion = pd.read_excel("data/gene_belong_mitochondrion_annotations.xlsx")
+gene_mitochondrion = gene_mitochondrion["gene"].tolist()
+# here just remove the genes which belong nucleus and mitochondiron at the same time
+common_gene = list(set(gene_nucleus) & set(gene_mitochondrion))
+pro_size00["organelle_gene"] = "other"
+pro_size00["organelle_gene"][pro_size00["locus"].isin(gene_nucleus)] = "nucleus"
+pro_size00["organelle_gene"][pro_size00["locus"].isin(gene_mitochondrion)] = "mitochondrion"
+pro_size00["organelle_gene"][pro_size00["locus"].isin(common_gene)] = "m & n"
+sns.catplot(x="organelle_gene", y="volume_per_kda", order=["nucleus", "mitochondrion","m & n","other"], kind="box", data=pro_size00)
+plt.ylim(0.75,1.5)
+plt.xlabel("Main location",fontsize=15)
+plt.ylabel("Volume_per_kda",fontsize=15)
+plt.xticks(fontsize=15)
+plt.yticks(fontsize=15)
+pro_g1 = pro_size00[pro_size00["organelle_gene"]=="other"]
+pro_g2 = pro_size00[pro_size00["organelle_gene"]=="mitochondrion"]
+tt=ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
+
+
+
+
+# then compare the location from nucleus
+gene_nucleus = pd.read_excel("data/gene_belong_nucleus_annotations.xlsx")
+gene_nucleus = gene_nucleus["gene"].tolist()
+#gene_nucleus = compartment["nucleus"] # based on the automatic classification
+gene_nuclear_envelope = compartment["nuclear envelope"]
+gene_nuclear_membrane = compartment["nuclear membrane"]
+gene_nuclear_inner_membrane = compartment["nuclear inner membrane"]
+gene_nuclear_surface = gene_nuclear_envelope + gene_nuclear_membrane + gene_nuclear_inner_membrane
+gene_TF = TRN_sce["TF"].tolist()
+pro_size_n = pro_size00[pro_size00["locus"].isin(gene_nucleus)]
+pro_size_n["nuclear_loc"] = "other"
+pro_size_n["nuclear_loc"][pro_size_n["locus"].isin(gene_nuclear_surface)] = "surface"
+pro_size_n["nuclear_loc"][pro_size_n["locus"].isin(TRN_sce["TF"])] = "TF"
+sns.catplot(x="nuclear_loc", y="volume_per_kda", order=["TF","other", "surface"], kind="box", data=pro_size_n)
+plt.ylim(0.75,1.5)
+plt.xlabel("Nuclear_function",fontsize=15)
+plt.ylabel("Volume_per_kda",fontsize=15)
+plt.xticks(fontsize=15)
+plt.yticks(fontsize=15)
+pro_g1 = pro_size_n[pro_size_n["nuclear_loc"]=="TF"]
+pro_g2 = pro_size_n[pro_size_n["nuclear_loc"]=="other"]
+ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
+
+
 
 
 
@@ -205,3 +284,4 @@ pro_size["complex"][~pro_size["locus"].isin(complex_inf["subunit"])] = "not_comp
 sns.displot(pro_size, x="Total_Volume", hue="complex", stat="density", common_norm=False)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
+
