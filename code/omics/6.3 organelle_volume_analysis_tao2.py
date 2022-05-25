@@ -89,13 +89,20 @@ for y0 in column_select1:
     plt.savefig(title0, bbox_inches='tight')
 
 
+
+
+
+
+
+
+
 #############################################################################
 # analyze the organelle volume as a whole
 #############################################################################
 data_test = volume_size_ratio1
-#data_test = combine_data2 # using the absolute protein volume from specific organelle
+data_test = combine_data2 # using the absolute protein volume from specific organelle
 
-column_select1 = [x for x in column_select1 if x != "endosome"]
+#column_select1 = [x for x in column_select1 if x != "endosome"]
 
 g1 = data_test[data_test["sample_ID"]==5]
 g1 = g1[column_select1]
