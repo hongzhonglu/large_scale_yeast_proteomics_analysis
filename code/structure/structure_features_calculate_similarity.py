@@ -35,7 +35,7 @@ with open("data/organism_result_new.sh", "w") as outfile:
         outfile.write(file2)
 
 
-# 11:34
+
 
 # only focus on interesing subsystems
 sce_kegg_pathway = pd.read_excel("data/sce_kegg_pathway.xlsx")

@@ -57,7 +57,19 @@ all_rxn_with_subsystem.to_csv("data/subsystem/Rxn_unique_subsystem_v2.tsv", sep=
 GEM_yeast = read_sbml_model('/Users/xluhon/Documents/GitHub/yeast-GEM/model/yeast-GEM.xml')
 gene_GEM = getALLGEMgene()
 
+import re
+s = "Your help is much appreciated, this code could be done much better I think, much much better"
+re.findall(r'\b\w+\b', s.lower()).count('much')
 
+for rxn in GEM_yeast.reactions:
+    string = rxn.gene_reaction_rule
+    s = re.findall(r'\b\w+\b', string.lower()).count('or')
+    if s == 5:
+        print(rxn.id)
+        print(rxn.gene_reaction_rule)
+        print(rxn.name)
+
+#or_number 14: sorbose, mannose
 
 
 

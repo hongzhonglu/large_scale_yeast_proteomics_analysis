@@ -71,6 +71,3 @@ result2.to_excel("data/proteomics/membrane_size_across_compartment_tao2.xlsx")
 #ss = ss[ss["molecular/cell"]>=60000]
 # analyze the density
 #sns.displot(ss, x="molecular/cell")
-
-
-

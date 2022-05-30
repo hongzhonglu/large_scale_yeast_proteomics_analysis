@@ -178,7 +178,6 @@ pro_g1 = pro_size_n[pro_size_n["nuclear_loc"]=="TF"]
 pro_g2 = pro_size_n[pro_size_n["nuclear_loc"]=="other"]
 ttest_ind(pro_g1['volume_per_kda2'], pro_g2['volume_per_kda2'])
 
-
 """
 normalize the datasets in R
 library(readxl)

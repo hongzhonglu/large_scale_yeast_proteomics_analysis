@@ -71,3 +71,29 @@ pd_combine = pd_combine.dropna()
 pd_combine.to_excel("data/proteomics/organelle_ratio_combine.xlsx")
 
 
+
+"""
+# pheatmap in R
+library(pheatmap)
+library(readxl)
+organelle_ratio_combine <- read_excel("organelle_ratio_combine.xlsx")
+rownames(organelle_ratio_combine) <- organelle_ratio_combine$organelle
+organelle_ratio_combine0 <-  subset(organelle_ratio_combine, select = -c(organelle, C_N_30))
+rownames(organelle_ratio_combine0) <- organelle_ratio_combine$organelle
+dat <- cbind(matrix(rnorm(120), 30, 40), matrix(sample(15, 120, T), 30))
+my.breaks <- c(seq(-1.5, 0, by=0.1), seq(0.1, 1.5, by=0.1)) 
+my.colors <- c(colorRampPalette(colors = c("blue", "white"))(length(my.breaks)/2), colorRampPalette(colors = c("white", "orange", "red", "purple"))(length(my.breaks)/2))
+pheatmap(organelle_ratio_combine0,
+         method = c("pearson"),
+         clustering_method = "complete",
+         treeheight_row = 40,
+         treeheight_col = 40,
+         cluster_row = TRUE,
+         cluster_col = TRUE,
+         show_rownames = T,
+         show_colnames = T,
+         legend = T,
+         fontsize = 3,
+         color = my.colors,
+         breaks = my.breaks)
+"""

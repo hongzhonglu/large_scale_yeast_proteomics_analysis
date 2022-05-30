@@ -3,32 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/not_used/yeastGEM_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/yeastGEM_preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.7 omics_inferred_size_Only_Tao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.7 omics_inferred_size_Only_Tao2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/6.3 organelle_volume_analysis_tao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.3 organelle_volume_analysis_tao2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/6.6 organelle_pro_ratio_analysis_combine_for_crabtree_effect.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.6 organelle_pro_ratio_analysis_combine_for_crabtree_effect.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment_tao2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment_tao2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/organell_protein_ratio_tao2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/organell_protein_ratio_tao2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/organell_protein_volume_tao2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/organell_protein_volume_tao2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_tao2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_tao2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_core_variable_type.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_core_variable_type.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/~$all_component_analysis.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/~$gene_belong_fungal_type_vacuole_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/organelle protein volume correlation analysis.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/organelle protein volume correlation analysis.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/organelle protein volume correlation analysis2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/organelle protein volume correlation analysis2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_Golgi apparatus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_Golgi apparatus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_cytosol.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_cytosol.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_cytosolic ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_cytosolic ribosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_endoplasmic reticulum.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_endoplasmic reticulum.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_endosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_endosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_fungal-type vacuole.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_fungal-type vacuole.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_lipid droplet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_lipid droplet.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_mitochondrial ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_mitochondrial ribosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_mitochondrion.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_mitochondrion.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_nucleolus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_nucleolus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_nucleus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_nucleus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_peroxisome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_peroxisome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/tao2_ratio_ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/tao2_ratio_ribosome.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_protein_classification_by_pathway.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/structure_features_protein_classification_by_pathway.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/organelle_ratio_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/organelle_ratio_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/subsystem/Rxn_unique_subsystem_v2.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data/subsystem/Rxn_unique_subsystem_v2.tsv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -118,17 +101,17 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/omics" />
-      <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/data/proteomics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/structure/not_used" />
+      <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/model/not_used" />
-      <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/data/proteomics" />
     </key>
   </component>
   <component name="RunManager">
@@ -258,6 +241,16 @@
           <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
           <line>117</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py</url>
+          <line>18</line>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
