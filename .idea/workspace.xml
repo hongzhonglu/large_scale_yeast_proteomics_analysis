@@ -3,15 +3,20 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/yeastGEM_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/yeastGEM_preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.7 omics_inferred_size_Only_Tao2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.7 omics_inferred_size_Only_Tao2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/6.6 organelle_pro_ratio_analysis_combine_for_crabtree_effect.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.6 organelle_pro_ratio_analysis_combine_for_crabtree_effect.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_MW_other_species.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_MW_other_species.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_complexes_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/structure_features_calculate_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_for_cluster_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_for_cluster_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_protein_classification_by_pathway.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/structure_features_protein_classification_by_pathway.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/organelle_ratio_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/organelle_ratio_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/subsystem/Rxn_unique_subsystem_v2.tsv" beforeDir="false" afterPath="$PROJECT_DIR$/data/subsystem/Rxn_unique_subsystem_v2.tsv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/complex_info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/complex_info.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_family.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/sce_protein_size_3D_structure.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/sce_protein_size_3D_structure.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,6 +100,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -223,34 +229,19 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py</url>
-          <line>4</line>
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
-          <line>150</line>
+          <line>112</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
-          <line>170</line>
+          <line>132</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
-          <line>117</line>
+          <line>79</line>
           <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py</url>
-          <line>15</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py</url>
-          <line>18</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

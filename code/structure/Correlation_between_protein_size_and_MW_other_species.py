@@ -30,45 +30,6 @@ pro_size["pro_length"] = singleMapping(pro_info["Length"], pro_info["Entry"],pro
 
 pro_size["MW"] = pro_size["MW"].str.replace(",", "")
 pro_size.MW = pd.to_numeric(pro_size.MW, errors='coerce')
-
-
-def linearFit(df, x_name, y_name):
-    """
-    Linear fit for two colums in a dataframe
-    :param df:
-    :param x_name:
-    :param y_name:
-    :return:
-    """
-    from sklearn.metrics import r2_score
-    df = df[[x_name, y_name]]
-    df = df.dropna()
-    x = df[x_name]
-    y = df[y_name]
-    x_name = x_name.split("(")[0]
-    y_name = y_name.split("(")[0]
-    x_name = x_name.replace("/", "_per_")
-    y_name = y_name.replace("/", "_per_")
-    coef = np.polyfit(x, y, 1)
-    poly1d_fn = np.poly1d(coef)
-    predict = np.poly1d(coef)
-    R2 = r2_score(y, predict(x))
-    print(R2)
-    print(coef)
-    R2 = "{:.3f}".format(R2)
-    # poly1d_fn is now a function which takes in x and returns an estimate for y
-    plt.figure()
-    plt.plot(x, y, 'yo', x, poly1d_fn(x), '--k')  # '--k'=black dashed line, 'yo' = yellow circle marker
-    plt.xlabel(x_name, fontsize=18)
-    plt.ylabel(y_name, fontsize=18)
-    plt.xticks(fontsize=15)
-    plt.yticks(fontsize=15)
-    x_max = max(x)
-    y_max = max(y)
-    plt.text(x_max/3, 2*y_max/3, "R2=" + str(R2), fontsize=18)
-    plt.show()
-    return coef[0], coef[1]
-
 a, b = linearFit(df=pro_size, x_name="MW", y_name="Total_Volume")
 
 pro_size["calculated"] = pro_size["MW"]*a-b
@@ -81,6 +42,19 @@ pro_size01 = pro_size.iloc[0:200,:]
 gene01= ",".join(pro_size01["Protein"].to_list())
 print(gene01)
 
+# one interesting idea is used sce formula to calculate the protein volume in other species
+pro_size["calculated_volume"] = 1.06019171e-03*pro_size["MW"] - 1.10587455
+# compare the predicted and calculated for e.coli
+x0 = "MW"
+y0 = "Total_Volume"
+y1 = "calculated_volume"
+plt.figure(figsize=(4, 4))
+sns.lineplot(x=x0, y=y1, data=pro_size)
+sns.scatterplot(x=x0, y=y0, data=pro_size)
+plt.xlabel(x0, fontsize=15)
+plt.ylabel(y1, fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
 
 
 
@@ -110,45 +84,6 @@ pro_size["pro_length"] = singleMapping(pro_info["Length"], pro_info["Entry"],pro
 
 pro_size["MW"] = pro_size["MW"].str.replace(",", "")
 pro_size.MW = pd.to_numeric(pro_size.MW, errors='coerce')
-
-
-def linearFit(df, x_name, y_name):
-    """
-    Linear fit for two colums in a dataframe
-    :param df:
-    :param x_name:
-    :param y_name:
-    :return:
-    """
-    from sklearn.metrics import r2_score
-    df = df[[x_name, y_name]]
-    df = df.dropna()
-    x = df[x_name]
-    y = df[y_name]
-    x_name = x_name.split("(")[0]
-    y_name = y_name.split("(")[0]
-    x_name = x_name.replace("/", "_per_")
-    y_name = y_name.replace("/", "_per_")
-    coef = np.polyfit(x, y, 1)
-    poly1d_fn = np.poly1d(coef)
-    predict = np.poly1d(coef)
-    R2 = r2_score(y, predict(x))
-    print(R2)
-    print(coef)
-    R2 = "{:.3f}".format(R2)
-    # poly1d_fn is now a function which takes in x and returns an estimate for y
-    plt.figure()
-    plt.plot(x, y, 'yo', x, poly1d_fn(x), '--k')  # '--k'=black dashed line, 'yo' = yellow circle marker
-    plt.xlabel(x_name, fontsize=18)
-    plt.ylabel(y_name, fontsize=18)
-    plt.xticks(fontsize=15)
-    plt.yticks(fontsize=15)
-    x_max = max(x)
-    y_max = max(y)
-    plt.text(x_max/3, 2*y_max/3, "R2=" + str(R2), fontsize=18)
-    plt.show()
-    return coef[0], coef[1]
-
 a, b = linearFit(df=pro_size, x_name="MW", y_name="Total_Volume")
 
 pro_size["calculated"] = pro_size["MW"]*a-b
@@ -160,8 +95,29 @@ pro_size = pro_size.sort_values(by=['volume_per_kda'], ascending=True)
 pro_size01 = pro_size.iloc[0:200,:]
 gene01= ",".join(pro_size01["Protein"].to_list())
 print(gene01)
-
 sns.displot(pro_size, x="volume_per_kda", stat="density", common_norm=False)
+
+
+# one interesting idea is used sce formula to calculate the protein volume in other species
+pro_size["calculated_volume"] = 1.06019171e-03*pro_size["MW"] - 1.10587455
+# compare the predicted and calculated for e.coli
+x0 = "MW"
+y0 = "Total_Volume"
+y1 = "calculated_volume"
+plt.figure(figsize=(4, 4))
+sns.lineplot(x=x0, y=y1, data=pro_size)
+sns.scatterplot(x=x0, y=y0, data=pro_size)
+plt.xlabel(x0, fontsize=15)
+plt.ylabel(y1, fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+
+
+
+
+
+
+
 
 
 # import Transcription factor
@@ -179,7 +135,3 @@ pro_g2 = pro_g2[pro_g2["pro_length"] <= max(pro_g1["pro_length"])]
 pro_c = pd.concat([pro_g1, pro_g2], axis=0)
 sns.catplot(x="TF", y="volume_per_kda", order=["No", "Yes"], kind="box", data=pro_c)
 ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
-
-
-
-

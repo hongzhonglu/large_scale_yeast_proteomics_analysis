@@ -46,8 +46,6 @@ score_high =[x for x in score_list if x >= 75] # 60.66% proteins are of high-qua
 
 
 
-
-
 # input model information
 # remove column of "#"
 yeast_gem = pd.read_excel("/Users/xluhon/Documents/GitHub/yeast-GEM/model/yeast-GEM.xlsx", sheet_name="GENES")
@@ -75,6 +73,3 @@ yeast_gem0.to_excel("result/yeast_gem_with_structure_id_and_score.xlsx")
 
 # find position of specific protein
 # data_merge["id_update"][data_merge["id_update"] == "P38427"].index[0]
-
-
-

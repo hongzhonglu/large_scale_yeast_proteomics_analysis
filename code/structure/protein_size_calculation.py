@@ -3,6 +3,8 @@
 # 2021-10-14
 
 
+#TODO Using the fitting function to calculate the protein structures without alphaFold2!
+
 import os
 import numpy as np
 import pandas as pd
@@ -119,3 +121,4 @@ data_need_added.columns = ['DBID', 'locus','Total_Volume', 'section_area_new']
 # combine the dataset
 data_for_save = pd.concat([data_merge1, data_need_added], axis=0)
 data_for_save.to_excel("result/sce_protein_size_3D_structure.xlsx")
+
