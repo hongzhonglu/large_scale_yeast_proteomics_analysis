@@ -3,20 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_MW_other_species.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_MW_other_species.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_complexes_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_calculate_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/structure_features_calculate_similarity.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_for_cluster_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_for_cluster_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_for_cluster_analysis.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_for_cluster_analysis_V2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_for_classification.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/complex_info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/complex_info.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_protein_family.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_sgd_core_metabolic.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/sce_protein_size_3D_structure.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/sce_protein_size_3D_structure.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

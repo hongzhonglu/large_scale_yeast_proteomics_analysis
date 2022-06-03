@@ -63,7 +63,7 @@ print(f"Generated embeddings in {(time() - start_time):.2f} seconds")
 
 # data dimension reduction
 reducer = umap.UMAP(metric="cosine", n_components=2)
-reduced = reducer.fit_transform(kmer_embedder.embedding)
+#reduced = reducer.fit_transform(kmer_embedder.embedding)
 reduced = reducer.fit_transform(np.hstack((kmer_embedder.embedding, radius_embedder.embedding)))
 
 
@@ -73,6 +73,7 @@ class_names = ["test"]
 colors = ["red"]
 
 # plot
+# classification based on families
 indices = list(range(0,len(X_names)))
 indices1 = [i for i,x in enumerate(X_names) if x in g1_family]
 plt.figure()
@@ -89,8 +90,8 @@ plt.savefig("result/figure_cluster3_map_gene_family_info.pdf", bbox_inches='tigh
 
 
 
-
-# classification based on group
+# plot
+# classification based on subsystem definition
 indices1 = [i for i,x in enumerate(X_names) if x in g1]
 indices4 = [i for i,x in enumerate(X_names) if x in g4]
 plt.figure()
@@ -109,6 +110,7 @@ plt.savefig("result/figure_cluster3_map_classification.pdf", bbox_inches='tight'
 
 
 
+
 # data output
 data_analysis = pd.DataFrame(reduced)
 data_analysis["id"] = X_names
@@ -116,7 +118,9 @@ data_analysis.columns = ["x1", "x2", "id"]
 data_analysis.to_excel("result/feature_for_all_protein_structure.xlsx")
 
 
-# initial data analysis
+
+
+# initial data analysis for some clusters
 data_check = data_analysis[data_analysis["x2"] >=2]
 # input the detailed ID information
 structure_info = pd.read_excel("result/alphafold_quality_with_gene_ID.xlsx")

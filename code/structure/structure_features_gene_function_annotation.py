@@ -31,13 +31,14 @@ for i, key in enumerate(X_names):
     pdb_dir = "/Users/xluhon/Documents/alphafold_pdb/" + key
     if i >= 0 and i % 50 == 0:
         print(f"{i} proteins in {(time() - start_time):.2f} seconds")
-    invariants_kmer.append(MomentInvariants.from_pdb_file(pdb_dir, split_type=SplitType.KMER, split_size=16))
+    invariants_kmer.append(MomentInvariants.from_pdb_file(pdb_dir, split_type=SplitType.KMER, split_size=16)) # split size = 16
     invariants_radius.append(MomentInvariants.from_pdb_file(pdb_dir, split_type=SplitType.RADIUS, split_size=10))
 
 
 kmer_embedder = GeometricusEmbedding.from_invariants(invariants_kmer, resolution=4)
-radius_embedder = GeometricusEmbedding.from_invariants(invariants_radius, resolution=4)
+#radius_embedder = GeometricusEmbedding.from_invariants(invariants_radius, resolution=4)
 all = kmer_embedder.embedding
+#all = radius_embedder.embedding
 df = pd.DataFrame(all)
 samples = df.values
 
@@ -52,15 +53,15 @@ plt.title("Dendrograms")
 
 # PCA analysis
 pca_test = PCA(n_components=2)
-principalComponents_breast = pca_test.fit_transform(df)
-principal_breast_Df = pd.DataFrame(data=principalComponents_breast, columns=['x1', 'x2'])
-pd_null = principal_breast_Df
+principalComponents = pca_test.fit_transform(df)
+principal_Df = pd.DataFrame(data=principalComponents, columns=['x1', 'x2'])
+pd_null = principal_Df
 # plot
 x0='x1'
 y0='x2'
 plt.figure()
 sns.set_style('darkgrid')
-plt.scatter(principal_breast_Df["x1"], principal_breast_Df["x2"])
+plt.scatter(principal_Df["x1"], principal_Df["x2"])
 plt.xlabel('principal component 1', fontsize=15)
 plt.ylabel('principal component 2', fontsize=15)
 plt.xticks(fontsize=12)
@@ -77,4 +78,52 @@ for x, y, lab in zip(xs, ys, tlab):
                  ha='center',
                  fontsize=5)
 plt.show()
+
+
+
+
+
+
+
+# get the important features
+from sklearn.decomposition import PCA
+import pandas as pd
+import numpy as np
+np.random.seed(0)
+
+
+# PCA feature analysis
+pca_test = PCA(n_components=2)
+model = PCA(n_components=2).fit(all)
+X_pc = model.transform(all)
+
+# number of components
+n_pcs= model.components_.shape[0]
+
+# get the index of the most important feature on EACH component
+# LIST COMPREHENSION HERE
+most_important = [np.abs(model.components_[i]).argmax() for i in range(n_pcs)] # a function
+
+initial_feature_names = [i for i in range(0,model.components_.shape[1])]
+
+# get the names
+most_important_names = [initial_feature_names[most_important[i]] for i in range(n_pcs)]
+
+# LIST COMPREHENSION HERE AGAIN
+dic = {'PC{}'.format(i+1): most_important_names[i] for i in range(n_pcs)}
+
+# build the dataframe
+df = pd.DataFrame(dic.items())
+df.columns = ["component","index"]
+
+
+# mapping to the shapemer_keys
+index_detail = df["index"][df["component"]=="PC1"][0]
+shapemer = kmer_embedder.shapemer_keys[index_detail] #242 is the feature IDs
+residue_indices_train = kmer_embedder.map_shapemer_to_residues(shapemer)
+print("Shape-mer:", shapemer, "Number of proteins with shape-mer:", len(residue_indices_train))
+print()
+print("Residue indices per protein (for 10 proteins):")
+for i, key in enumerate(residue_indices_train):
+    print(key, residue_indices_train[key])
 
