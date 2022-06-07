@@ -41,7 +41,8 @@ ecYeast = load_matlab_model(dir1)
 # simulation based on the minimization of protein abundances
 # it should be noted that if the growth the over than 0.38, the model will not have right solution.
 model = ecYeast.copy()
-#gem_rxn_nov = produceRxnList(model)
+# gem_rxn_nov = produceRxnList(model)
+
 
 model.reactions.get_by_id("r_1634").upper_bound = 0 # assume acetate is not produced!
 model.reactions.get_by_id("r_2033").upper_bound = 0 # assume pyruvate is not produced!
@@ -50,32 +51,16 @@ model.reactions.get_by_id("r_1549").upper_bound = 0 # assume (R,R)-2,3-butanedio
 model.reactions.get_by_id("prot_pool_exchange").upper_bound = 0.10366*1.125
 
 
-
-# how to predict the max growth
-model.objective = {model.reactions.r_2111: 1}
-solution3 = model.optimize()
-
-solution3.fluxes["r_1992_REV"]
-solution3.fluxes["r_1672"]
-solution3.fluxes["r_1761"]
-solution3.fluxes["r_2111"]
-solution3.fluxes["r_1714_REV"]
-solution3.fluxes['prot_pool_exchange']
-
-
-
 # next using the chemostat simulation
 model.reactions.get_by_id("prot_pool_exchange").upper_bound = 0.10366*1.125
 i = 0.424
-solution = chemostatSimulation(model0=model, D0=i)
+solution = chemostatSimulation(model0=model, D0=i) # this function could be used for chemostat simulation.
 solution.fluxes["r_1992_REV"]
 solution.fluxes["r_1672"]
 solution.fluxes["r_1761"]
 solution.fluxes["r_2111"]
 solution.fluxes["r_1714_REV"]
 solution.fluxes['prot_pool_exchange']
-
-
 
 
 
@@ -138,3 +123,13 @@ result1 = result1[result1['pro_measured'] > 0]
 corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
+
+
+# it initially found isoenzyme can't be predicted well.
+# get rxn from gene
+getRxnByGene(model, gene0="YGR192C")
+getRxnByGene(model, gene0="YJR009C")
+getRxnByGene(model, gene0="YJL052W")
+
+
+

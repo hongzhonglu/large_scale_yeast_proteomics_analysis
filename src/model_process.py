@@ -114,9 +114,9 @@ def ecYeastMinimalMedia(model):
 def chemostatSimulation(model0, D0):
     """
     This funcion is used to simulate the chemostat growth of yeast
-    :param model0:
-    :param D0:
-    :return:
+    :param model0: a ecGEMs
+    :param D0: a growth rate
+    :return: solution of fluxes
     """
     growth = D0
     with model0:
@@ -177,3 +177,23 @@ def simulationCompare(model_in, growth_in, objective):
         model0.objective = objective
         solution4 = model0.optimize()
     return solution1, solution2, solution3, solution4
+
+
+def getRxnByGene(model, gene0):
+    """
+    :param model: A metabolic model
+    :param gene0: A gene
+    :return:
+
+    Example:
+    getRxnByGene(model, gene0="YGR192C")
+
+    """
+    rxn_list2 = []
+    for gene in model.genes:
+        if gene.id == gene0:
+            rxn_list = gene.reactions
+            for x in rxn_list:
+                rxn_list2.append(x.id)
+    return rxn_list2
+

@@ -233,7 +233,3 @@ r2_score(np.log10(new_df1['D=0.379_M']), np.log10(new_df1['D=0.379']), multioutp
 corr, ss = pearsonr(np.log10(new_df1['D=0.379_M']), np.log10(new_df1['D=0.379']))
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
-
-
-
-
