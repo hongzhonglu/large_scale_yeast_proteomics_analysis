@@ -1,5 +1,7 @@
-# Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
-# Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
+# Note: the protein abundance has so many unit, among which the copy/cell should consider the cell size.
+# however in most cases the cell size will change according to the conditions and genotypes
+# Thus it may be better to use the unit: mmol proteins/gDCW.
+
 
 import matplotlib.pyplot as plt
 import os
@@ -32,6 +34,3 @@ column20 = [x for x in column2 if x is not 'gene']
 column21 = ['gene'] + column20
 protein_copy_all1 = protein_copy_all[column21]
 protein_copy_all1.to_excel("data/proteomics/all_protein_copy.xlsx", index=False)
-
-
-

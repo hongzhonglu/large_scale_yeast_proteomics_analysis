@@ -50,9 +50,14 @@ omics_Rahul = pd.read_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx")
 
 # combine data from different source?
 # get all genes
-all_gene = set(omics_carl['gene'].tolist()) | set(omics_francesca['genes'].tolist()) | set(omics_tao1['gene'].tolist()) | set(omics_johan['gene'].tolist()) | set(omics_Tyler['gene'].tolist()) | set(omics_Rahul['gene'].tolist())
-all_gene = list(set(all_gene))
+sce_gene = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
+# all_gene = set(omics_carl['gene'].tolist()) | set(omics_francesca['genes'].tolist()) | set(omics_tao1['gene'].tolist()) | set(omics_johan['gene'].tolist()) | set(omics_Tyler['gene'].tolist()) | set(omics_Rahul['gene'].tolist())
+# all_gene = list(set(all_gene))
+all_gene = sce_gene["GeneName"].tolist()
 new_df = pd.DataFrame({"all_gene": all_gene})
+new_df = new_df.dropna()
+
+
 
 
 
@@ -88,6 +93,33 @@ for x in all0:
 
 omics_combine = df_combine5[new_columns00]
 omics_combine.to_excel("data/proteomics/omics_measured_combine.xlsx", index=False)
+#write a function to do the above steps
+
+# input the new absolute proteomics
+omics_cell_system_2017 = pd.read_excel("data/proteomics/omics_from_cell_systems_2017_scale.xlsx")
+omics_carbon_source = pd.read_excel("data/proteomics/omics_from_carbon_source_scale.xlsx")
+omics_carbon_source.pop('ref_glc_mm_rich_aerobic(mmol/gDW)_x')
+omics_jianye = pd.read_excel("data/proteomics/abundance_jianye.xlsx")
+omics_kate = pd.read_excel("data/proteomics/abundance_kate.xlsx")
+
+
+
+
+def combineAbosluteAbundance(omics_combine_base, omics_new, remove_column="gene"):
+    df_combine_auto = pd.merge(left=omics_combine_base, right=omics_new, left_on=['all_gene'], right_on=['gene'], how="left")
+    # remove the duplicated
+    df_combine_auto.pop(remove_column)
+    return df_combine_auto
+
+omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine, omics_new=omics_cell_system_2017, remove_column="gene")
+omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_carbon_source, remove_column="gene")
+omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_jianye, remove_column="gene")
+omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_kate, remove_column="gene")
+#TO-DO
+#omics_combine_auto will be as the reference to do absolute proteomics analysis
+
+
+
 
 
 
@@ -120,15 +152,13 @@ pro_abundance3 = pd.read_excel("data/proteomics/abundance_table_paxdb_scale.xlsx
 
 
 # input data from Jianye
-pro_jianye = pd.read_excel("data/proteomics/abundance_jianye_corrected.xlsx")
-
+pro_jianye = pd.read_excel("data/proteomics/protein_copy_jianye.xlsx")
 
 
 # combine data from different source?
 protein_copy = pd.merge(left=pro_abundance2, right=pro_abundance, left_on=['gene'], right_on=['gene'], how="left")
 protein_copy1 = pd.merge(left=pro_abundance3, right=protein_copy, left_on=['gene'], right_on=['gene'], how="outer")
 protein_copy2 = pd.merge(left=protein_copy1, right=pro_jianye, left_on=['gene'], right_on=['gene'], how="outer")
-
 protein_copy2.to_excel("data/proteomics/protein_copy_combine.xlsx",index=False)
 
 

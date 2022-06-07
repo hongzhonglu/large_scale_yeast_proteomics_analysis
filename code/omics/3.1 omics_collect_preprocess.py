@@ -198,7 +198,6 @@ abundance_jianye_corrected['gene'] = multiMapping(id_mapping['GeneName'], id_map
 column2 = ["gene"] + column1[1:]
 abundance_jianye_corrected = abundance_jianye_corrected[column2]
 
-
 # from multiMapping function, it could find one uniprot ID could have multiple locus gene ID
 column_jianye2 = list(abundance_jianye_corrected.columns)
 column_jianye2 = column_jianye2[1:10]
@@ -213,8 +212,6 @@ _, i = np.unique(pd_null.columns, return_index=True)
 omics_jianye_2 = pd_null.iloc[:, i]
 
 omics_jianye_2.to_excel("data/proteomics/protein_copy_jianye.xlsx", index=False)
-
-
 
 # change it as abundance, from protein copy/cell to mmol/gDW
 coefficient1 = 7.8298e9
@@ -421,7 +418,10 @@ carbon_source10 = carbon_source1[['gene'] + colname_s1]
 carbon_source20 = carbon_source2[['gene'] + colname_s2]
 carbon_source_combine = pd.merge(left=carbon_source10, right=carbon_source20, left_on=['gene'], right_on=['gene'], how="left")
 carbon_source_combine = carbon_source_combine.drop(columns="ref_glc_mm_rich_aerobic(mmol/gDW)_y")
+carbon_source_combine.pop('ref_glc_mm_rich_aerobic(mmol/gDW)_x')
+
 carbon_source_combine.to_excel("data/proteomics/omics_from_carbon_source_scale.xlsx", index=False)
+
 
 colnames0 = carbon_source_combine.columns
 # change the mmol/gDW as molecular/cell

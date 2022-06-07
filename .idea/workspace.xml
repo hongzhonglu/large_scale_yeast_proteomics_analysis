@@ -3,12 +3,19 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_Crabtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_max_growth.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_max_growth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/predicted_and_measured_proteomics.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/predicted_and_measured_proteomics.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/~$glucose_transportor_classification.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.3 omics_collect_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 omics_collect_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/abundance_jianye.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/abundance_jianye.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/abundance_jianye_corrected.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/abundance_table_paxdb_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/abundance_table_paxdb_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/data_PNAS_2021_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/data_PNAS_2021_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_Francesca_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_Francesca_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_jianye.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_jianye.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/proteomics_Rahul_2020_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/proteomics_Rahul_2020_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/uniprotGeneID_mapping.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/uniprotGeneID_mapping.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
