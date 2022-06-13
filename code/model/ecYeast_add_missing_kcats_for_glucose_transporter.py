@@ -128,12 +128,12 @@ model0.reactions.get_by_id("r_1166").bounds = (0, 0) # assume (R,R)-2,3-butanedi
 coefficient1 = 6.5789e9
 Sglucose_trans = 4.2 #4.2 # um^2 upper bound of sectional area occupied by glucose transporter
 glucose_transporter_area = 20.344 # nm^2 average of glucose transporters sectional area in yeast
-model0.reactions.get_by_id("draw_pseudo_glc_trans").upper_bound = 1e6*Sglucose_trans/(coefficient1*glucose_transporter_area)
+model0.reactions.get_by_id("draw_pseudo_glc_trans").upper_bound = 1e6*Sglucose_trans/(coefficient1*glucose_transporter_area) # THE unit is mmol glucose/gDW?
 
 
 
 
-# set growth
+# fix growth and then do the simulation
 growth = 0.35
 model0.reactions.get_by_id("r_2111").bounds = (growth, growth)
 # minimization glucose uptake rate
@@ -141,7 +141,7 @@ model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
 model0.objective = {model0.reactions.r_1714_REV: -1}
 solution2 = model0.optimize()
 solution2.fluxes['pseudo_glc_trans']
-solution2.fluxes['draw_pseudo_glc_trans']
+solution2.fluxes['draw_pseudo_glc_trans'] # this value is smaller than the upper bound of glucose transporter abundance!
 
 
 
@@ -152,4 +152,19 @@ solution3 = model0.optimize()
 solution3.fluxes['draw_pseudo_glc_trans']
 solution3.fluxes['prot_pool_exchange']
 solution3.fluxes["r_1761"]
+
+
+# TODO: add kinetic info for other important transporters
+# the above pipeline will be run in a single function to do the work for the remaining transporters
+# at least fill gaps in kcat missing for transporters from plasa membrane, mitochrodria membrane
+from src.mainFunction import *
+kcat_DP = pd.read_table('data/kcat_from_deep_learning/Saccharomyces_cerevisiae_PredictionResults.txt')
+gene_rxn = splitAndCombine(gene=kcat_DP['genes'], rxn=kcat_DP['# rxnID'], sep0=";")
+# check the unique genes
+all_gene = list(set(gene_rxn['V2'].to_list()))
+
+
+
+
+
 

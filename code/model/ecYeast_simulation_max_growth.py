@@ -73,8 +73,6 @@ result['rxnID'] = result['rxnID'].str.replace("draw_prot_", "")
 ID_map = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 result['geneID'] = singleMapping(ID_map['GeneName'], ID_map['Entry'], result['rxnID'])
 
-
-
 # input the proteomics under max growth rate
 abundance_ex = pd.read_excel("data/proteomics/data_PNAS_2021.xlsx")
 abundance_ex['g/gDW'] =(abundance_ex['replicate 1 (g gDW-1)']+ abundance_ex['replicate 2 (g gDW-1)']+ abundance_ex['replicate 3 (g gDW-1)'])/3
@@ -130,6 +128,3 @@ print("Correlation p_value:", ss)
 getRxnByGene(model, gene0="YGR192C")
 getRxnByGene(model, gene0="YJR009C")
 getRxnByGene(model, gene0="YJL052W")
-
-
-

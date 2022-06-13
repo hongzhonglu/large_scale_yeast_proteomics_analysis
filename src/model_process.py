@@ -114,6 +114,7 @@ def ecYeastMinimalMedia(model):
 def chemostatSimulation(model0, D0):
     """
     This funcion is used to simulate the chemostat growth of yeast
+    Actually this function is general to solve the ecGEMs
     :param model0: a ecGEMs
     :param D0: a growth rate
     :return: solution of fluxes
@@ -135,7 +136,15 @@ def chemostatSimulation(model0, D0):
 
 
 def simulationCompare(model_in, growth_in, objective):
+    """
+    This function is used to compare the result when different objective function is employed.
+    :param model_in:
+    :param growth_in:
+    :param objective: a kind of objective for ecModel_batch, which could minimize the total protein volume
+    :return:
+    """
 
+    # 1_minimize the glucose uptake and minimize protein pool
     with model_in:
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
@@ -150,6 +159,7 @@ def simulationCompare(model_in, growth_in, objective):
         model0.objective = {model0.reactions.prot_pool_exchange: -1}
         solution1 = model0.optimize()
 
+    # 2_minimize the glucose uptake
     with model_in:
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
@@ -158,7 +168,7 @@ def simulationCompare(model_in, growth_in, objective):
         model0.reactions.get_by_id("r_1714_REV").bounds = (0, 10)  # open the glucose
         model0.objective = {model0.reactions.r_1714_REV: -1}
         solution2 = model0.optimize()
-
+    # 3_minimize protein pool
     with model_in:
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
@@ -167,7 +177,7 @@ def simulationCompare(model_in, growth_in, objective):
         model0.reactions.get_by_id("r_1714_REV").bounds = (0, 10)  # open the glucose
         model0.objective = {model0.reactions.prot_pool_exchange: -1}
         solution3 = model0.optimize()
-
+    # 4_minimize protein volume
     with model_in:
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
@@ -196,4 +206,5 @@ def getRxnByGene(model, gene0):
             for x in rxn_list:
                 rxn_list2.append(x.id)
     return rxn_list2
+
 

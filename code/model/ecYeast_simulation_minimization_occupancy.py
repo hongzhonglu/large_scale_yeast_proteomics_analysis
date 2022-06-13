@@ -5,14 +5,9 @@
 from cobra.io import load_matlab_model
 import matplotlib.pyplot as plt
 import os
-import sys
-import pprint
 os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
-#sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
-#pprint.pprint(sys.path)
 
 # import self function
-from src.mainFunction import *
 from src.model_process import *
 
 
@@ -108,7 +103,7 @@ plt.plot(growth, glucose_uptake2, marker='.', label='Glucose')
 plt.plot(growth, glucose_uptake3, marker='.',label='Abundacne')
 plt.plot(growth, glucose_uptake4, marker='.',label='Volume')
 plt.xlabel('Growth rate (/h)')
-plt.ylabel('rate (mmol/gDW.h)')
+plt.ylabel('glucose uptake rate (mmol/gDW.h)')
 plt.legend(loc='upper left')
 plt.ylim(0, 25)
 plt.show()
@@ -123,3 +118,4 @@ plt.ylabel('protein pool (mmol/gDW)')
 plt.legend(loc='upper left')
 plt.ylim(0, 0.2)
 plt.show()
+
