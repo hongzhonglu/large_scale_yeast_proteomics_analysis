@@ -4,15 +4,11 @@
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats_for_glucose_transporter.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats_for_glucose_transporter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_Crabtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_max_growth.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_max_growth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_minimization_occupancy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_minimization_occupancy.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/kcat_collect.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/data_combine_xia_dataset.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/data_combine_xia_dataset.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/crabtree_effect_simulation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/crabtree_effect_simulation.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/flux_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/flux_check.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/GEMs/ecYeastGEM_carl.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/GEMs/emodel_Saccharomyces_cerevisiae_Posterior_mean.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/dn_ds_sce.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/kcat_from_deep_learning/Saccharomyces_cerevisiae_PredictionResults.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/test.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -98,16 +94,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/model" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/omics" />
-      <recent name="$PROJECT_DIR$/data/proteomics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/structure/not_used" />
@@ -239,6 +235,11 @@
           <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
           <line>79</line>
           <option name="timeStamp" value="8" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/5.1 organelle_membrane_analysis_Rosemary.py</url>
+          <line>235</line>
+          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

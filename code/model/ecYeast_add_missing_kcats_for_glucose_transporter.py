@@ -2,7 +2,7 @@
 # which model should be used?
 # first compare the model difference
 # version 1
-from cobra.io import load_matlab_model
+from cobra.io import load_matlab_model, read_sbml_model
 from cobra import Reaction, Metabolite
 
 import sys
@@ -26,7 +26,6 @@ gem_rxn_nov = produceRxnList(ecYeast)
 gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("draw_prot")]
 gene_prot_list = gene_prot["GPR"].to_list()
 gene_no_kinetic = list(set(gene_list)-set(gene_prot_list))
-
 
 
 

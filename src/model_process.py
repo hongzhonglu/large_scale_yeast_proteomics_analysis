@@ -208,3 +208,10 @@ def getRxnByGene(model, gene0):
     return rxn_list2
 
 
+def getRxnByReactionName(model, name):
+    for rxn in model.reactions:
+        if name in rxn.name:
+            print(rxn.id)
+            return rxn.id
+        else:
+            return None
