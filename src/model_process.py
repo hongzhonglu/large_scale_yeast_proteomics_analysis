@@ -215,3 +215,19 @@ def getRxnByReactionName(model, name):
             return rxn.id
         else:
             return None
+
+
+def getRxnByReactionName(model, name):
+    """
+    This function is used to extract the rxn id based on rxn name
+    :param model:
+    :param name:
+    :return:
+    """
+    s = []
+    for rxn in model.reactions:
+        if name == rxn.name:
+            #print(rxn.id)
+            s.append(rxn.id)
+    return s
+

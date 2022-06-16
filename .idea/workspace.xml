@@ -3,12 +3,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats_for_glucose_transporter.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats_for_glucose_transporter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/GEMs/ecYeastGEM_carl.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/GEMs/emodel_Saccharomyces_cerevisiae_Posterior_mean.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/dn_ds_sce.csv" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/kcat_from_deep_learning/Saccharomyces_cerevisiae_PredictionResults.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_test_from_deep_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_test_from_deep_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_Only_enzyme_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_Only_enzyme_set.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/GEM_membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/GEM_membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/GEM_volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/GEM_volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ecGEM_membrane_size_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ecGEM_membrane_size_across_compartment.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ecGEM_volume_size_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ecGEM_volume_size_across_compartment.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_metabolic_enzyme_per_organelle.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_metabolic_enzyme_per_organelle.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

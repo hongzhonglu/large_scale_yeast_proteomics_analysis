@@ -13,60 +13,7 @@ pprint.pprint(sys.path)
 # import self function
 from src.mainFunction import *
 from src.model_process import *
-
-# some test functions
-# Note: these following two functions are just for test analysis
-def ecYeastMinimalMedia_No_reverse(model):
-    """
-    This function is used to define a simple media for ecYeast
-    :param model:
-    :return: a model with the defined the minimal media
-    """
-    rxnID = []
-    rxnName = []
-    for i, x in enumerate(model.reactions):
-        rxnID.append(x.id)
-        rxnName.append(x.name)
-
-    exchange_rxn =[x for x, y in zip(rxnID, rxnName) if '_REV' in x and 'exchange' in y]
-    # first block any uptake
-    for i, x in enumerate(exchange_rxn):
-        rxn0 = exchange_rxn[i]
-        #print(rxn0)
-        model.reactions.get_by_id(rxn0).upper_bound = 0
-
-    #Allow uptake of essential components
-    model.reactions.get_by_id("r_1654").lower_bound = -10000 #ammonium exchange (reversible)
-    model.reactions.get_by_id("r_1861").lower_bound = -10000 #iron(2+) exchange (reversible)
-    model.reactions.get_by_id("r_2100").lower_bound = -10000 #water exchange (reversible)
-    model.reactions.get_by_id("r_1992").lower_bound = -10000 #oxygen exchange (reversible)
-    model.reactions.get_by_id("r_2005").lower_bound = -10000 #phosphate exchange (reversible)
-    model.reactions.get_by_id("r_2060").lower_bound = -10000 #sulphate exchange (reversible)
-    model.reactions.get_by_id("r_1832").lower_bound = -10000 #H+ exchange (reversible)
-    return model
-
-def chemostatSimulation_No_reverse(model0, D0):
-    """
-    This funcion is used to simulate the chemostat growth of yeast
-    Actually this function is general to solve the ecGEMs
-    :param model0: a ecGEMs
-    :param D0: a growth rate
-    :return: solution of fluxes
-    """
-    growth = D0
-    with model0:
-        model0 = ecYeastMinimalMedia_No_reverse(model0)
-        # set growth
-        model0.reactions.get_by_id("r_2111").bounds = (growth, growth)
-        # minimization glucose uptake rate
-        model0.reactions.get_by_id("r_1714").bounds = (-1000, 100)  # open the glucose
-        model0.objective = {model0.reactions.r_1714: -1}
-        solution2 = model0.optimize()
-        GR = solution2.fluxes["r_1714"]  # get the glucose uptake rate
-        model0.reactions.get_by_id("r_1714").bounds = (GR * 1.001, GR)
-        model0.objective = {model0.reactions.EX_protein_pool: -1}
-        solution3 = model0.optimize()
-    return solution3
+from src.protein_process import *
 
 
 # second ecYeast based om deep learning
@@ -77,7 +24,7 @@ ecYeast.reactions.get_by_id("r_4527").bounds = (0,0)  # ammonium exchange (rever
 ecYeast.reactions.get_by_id("r_4538").bounds = (0,0)  # ammonium exchange (reversible)
 ecYeast.reactions.get_by_id("r_4502").bounds = (0,0)  # ammonium exchange (reversible)
 ecYeast.reactions.get_by_id("r_4504").bounds = (0,0)  # ammonium exchange (reversible)
-ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)  # -230/0.55*0.4
+ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)  # -230/0.55*0.4, this is rescaled by maximal growth rate.
 
 # refer to bioRxiv
 ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
@@ -85,15 +32,6 @@ ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', '
            'oxygen exchange', 'EX_protein_pool']
 
 # find the related rxnID
-def getRxnByReactionName(model, name):
-    s = []
-    for rxn in model.reactions:
-        if name == rxn.name:
-            #print(rxn.id)
-            s.append(rxn.id)
-    return s
-
-
 idx = []
 for name0 in ex_mets:
     print(name0)
@@ -103,9 +41,8 @@ for name0 in ex_mets:
     elif len(s) == 1:
         idx.append(s[0])
 
-
+# for the loop
 dilutionrate = np.arange(0.05, 0.42, 0.05).tolist()
-
 result = dict()
 for k in range(len(dilutionrate)):
     print(k)
@@ -126,20 +63,143 @@ for k in range(len(dilutionrate)):
     fluxes = solution3.fluxes[idx]
     result[dilutionrate[k]] = list(fluxes)
 
+# summarize the result
 result_df = pd.DataFrame.from_dict(result)
-
 result_df1 = result_df.transpose()
 result_df1.columns = ex_mets
-
-
+result_df1["D-glucose exchange"] = result_df1["D-glucose exchange"]*(-1)
+result_df1["oxygen exchange"] = result_df1["oxygen exchange"]*(-1)
+result_df2 = result_df1.drop('EX_protein_pool', 1)
 
 # plot
 import matplotlib.pyplot as plt
 import seaborn as sns
 plt.figure()
 sns.lineplot(x='biomass pseudoreaction', y='value', hue='variable', style="variable",
-             data=pd.melt(result_df1, ['biomass pseudoreaction']))
+             data=pd.melt(result_df2, ['biomass pseudoreaction']))
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
+plt.savefig('result/figure/Cratree simulation based on ecModel_DLkcat.pdf', bbox_inches='tight')
+
+
+
+
+
+
+
+
+# rerun the above step using a function
+# for the loop
+ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27*0.42/0.4, 0)  # -230/0.55*0.4, this is rescaled by maximal growth rate.
+
+dilutionrate = 0.42
+model_tmp = ecYeast.copy()
+model_tmp.reactions.get_by_id("r_1714").lower_bound = 0
+model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000
+model_tmp.reactions.get_by_id(idx[0]).lower_bound = dilutionrate
+model_tmp.objective = {model_tmp.reactions.r_1714: 1} # minimize the uptake of glucose
+solution2 = model_tmp.optimize()
+solution2.fluxes["r_1714"]
+# then fix glucose uptake and minimize the protein pool
+model_tmp.reactions.get_by_id(idx[1]).lower_bound = solution2.objective_value * 1.00001
+model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000
+model_tmp.objective = {model_tmp.reactions.EX_protein_pool: 1} # minimize the usage of protein pools
+solution3 = model_tmp.optimize()
+solution3.fluxes["EX_protein_pool"]
+solution3.fluxes["r_1714"]
+
+
+# compare the predicted and measured protein abundances
+flux_max = solution3.fluxes
+result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
+result = result[result['rxnID'].str.contains("prot_")]
+result['geneID'] = result['rxnID'].str.replace("prot_", "")
+
+
+# input the proteomics under max growth rate
+abundance_ex = pd.read_excel("data/proteomics/data_PNAS_2021.xlsx")
+abundance_ex['g/gDW'] =(abundance_ex['replicate 1 (g gDW-1)']+ abundance_ex['replicate 2 (g gDW-1)']+ abundance_ex['replicate 3 (g gDW-1)'])/3
+abundance_ex=abundance_ex[['Symbol','g/gDW']]
+abundance_ex.columns = ['gene','g/gDW']
+abundance_ex1 = splitAbundance(pro_df=abundance_ex)
+# change the unit from g/gDW as mmol/gDW
+# input the molecular weight
+mw = pd.read_csv("data/sce_protein_weight.tsv", sep="\t")
+mw = mw[["locus","proteins_molecular_weight"]]
+mw.columns = ["gene name", "MW"]
+mw["MW_Kda"] = mw["MW"]/1000
+abundance_ex1["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abundance_ex1["gene"])
+abundance_ex_check = abundance_ex1[abundance_ex1["MW_Kda"].isna()]
+abundance_ex1=abundance_ex1[~abundance_ex1["MW_Kda"].isna()]
+abundance_ex1["mmol/gDW"] = abundance_ex1["g/gDW"]/abundance_ex1["MW_Kda"]# #mmol/g biomass
+
+result['pro_measured'] = singleMapping(abundance_ex1["mmol/gDW"],abundance_ex1["gene"],result['geneID'])
+result = result[~result["pro_measured"].isna()]
+result.to_excel("data/data_check.xlsx")
+
+
+# change the protein abundance unit from mmol/gDW into protein copy/cell
+coefficient1 = 7.8298e9
+result_unify = result.copy()
+result_unify["pro_measured"] = result['pro_measured']*coefficient1
+result_unify["flux"] = result['flux']*coefficient1
+
+
+
+
+# plot
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.stats import pearsonr
+
+# method1 absolute protein abundance mmol protein/gDW
+plt.figure()
+sns.regplot(x=np.log10(result['pro_measured']), y=np.log10(result['flux']), fit_reg=False)
+plt.xlim(-11, 0)
+plt.ylim(-11, 0)
+plt.xlabel("log10(Measured_protein_level)")
+plt.ylabel("log10(Predicted_protein_usage)")
+
+
+# method2 protein copy/cell
+plt.figure()
+sns.regplot(x=np.log10(result_unify['pro_measured']+1), y=np.log10(result_unify['flux']+1), fit_reg=False)
+plt.xlim(-0.5, 7)
+plt.ylim(-0.5, 7)
+plt.xlabel("log10(Measured_protein_copy/cell + 1)")
+plt.ylabel("log10(Predicted_protein_copy/cell +1)")
+
+plt.figure()
+sns.regplot(x=result_unify['pro_measured'], y=result_unify['flux'], fit_reg=False)
+plt.xlabel("Measured_protein_copy/cell")
+plt.ylabel("Predicted_protein_copy/cell")
+
+
+
+
+
+# calculate the correlation coefficients - method1
+# remove the proteins with zero
+result1 = result[result['flux'] > 0]
+result1 = result1[result1['pro_measured'] > 0]
+corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
+print("Correlation coefficient:", corr)
+print("Correlation p_value:", ss)
+
+
+
+
+# calculate the correlation coefficients - method2
+corr, ss = pearsonr(np.log10(result_unify['pro_measured']+1), np.log10(result_unify['flux']+1))
+print("Correlation coefficient:", corr)
+print("Correlation p_value:", ss)
+
+
+result_unify1 = result_unify[result_unify['flux'] > 0]
+result_unify1 = result_unify1[result_unify1['pro_measured'] > 0]
+corr, ss = pearsonr(np.log10(result_unify1['pro_measured']), np.log10(result_unify1['flux']))
+print("Correlation coefficient:", corr)
+print("Correlation p_value:", ss)
 
 
 
@@ -153,9 +213,13 @@ plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 
 
 
-# self script
-i = 0.35
-solution = chemostatSimulation_No_reverse(model0=ecYeast, D0=i)
+
+
+
+
+
+
+
 
 
 # check which protein has kcat and which protein has no kcat
@@ -167,14 +231,8 @@ gem_rxn_nov = produceRxnList(ecYeast)
 gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("prot_")]
 gene_prot_list = gene_prot["rxnID"].str.replace("prot_", "")
 gene_no_kinetic = list(set(gene_list)-set(gene_prot_list))
-
-
-# it means that all gene have kinetic information, so how to use the kineitc information and the models??
-gem_rxn_nov["fluxes"] = list(solution2.fluxes)
-gem_rxn_nov_exchange = gem_rxn_nov[gem_rxn_nov['name'].str.contains("exchange")]
-
-
-
+# it means that all genes have kinetic information, so how to use the kineitc information and the models??
+gem_rxn_nov["fluxes"] = list(solution3.fluxes)
 
 
 
