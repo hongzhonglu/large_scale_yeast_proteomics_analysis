@@ -1,49 +1,131 @@
-# this module is mainly for ecModel simulation
-# which model should be used?
-# first compare the model difference
-# version 1
-from cobra.io import load_matlab_model
-import matplotlib.pyplot as plt
-import os
-import sys
-import pprint
-#os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
-#sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code")
-#pprint.pprint(sys.path)
+# This module is mainly used to build a pipeline to integrate structure information with models.
+
 
 # import self function
 from src.mainFunction import *
 from src.model_process import *
+from src.protein_process import *
 
+# second ecYeast based om deep learning
+dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
+ecYeast = read_sbml_model(dir2)
+gem_rxn_nov = produceRxnList(ecYeast)
+gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("prot_")]
+gene_prot['geneID'] = gene_prot['rxnID'].str.replace("prot_", "")
 
-dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
-ecYeast = load_matlab_model(dir1)
-
-# reaction annotation
-# r_2111 growth
-# r_1714_REV glucose uptake
-# r_1992_REV oxygen uptake
-# r_1672 co2 production
-# r_1761 ethanol production
-# r_1634 acetate secretion
-
-
-
-#gem_rxn_nov = produceRxnList(ecYeast)
-#gem_rxn_nov.to_excel('data/gem_rxn_nov.xlsx')
-
-gem_rxn_nov = pd.read_excel('data/gem_rxn_nov.xlsx')
-gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("draw_prot")]
-test_rxn = gene_prot["name"].to_list()
 
 #then get the protein volume information
 #input the protein volume datasets
 pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
-gene_prot["Volume"] = singleMapping(pro_size['Total_Volume'], pro_size['locus'], gene_prot['GPR'])
-gene_prot["section_area"] = singleMapping(pro_size['section_area_new'], pro_size['locus'], gene_prot['GPR'])
+gene_prot["Volume"] = singleMapping(pro_size['Total_Volume'], pro_size['locus'], gene_prot['geneID'])
+gene_prot["section_area"] = singleMapping(pro_size['section_area_new'], pro_size['locus'], gene_prot['geneID'])
+
+# input the protein information in organelle level calculated from proteomics
+volume_size = pd.read_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx")
+membrane_size = pd.read_excel("data/proteomics/ecGEM_membrane_size_across_compartment.xlsx")
+
+
+
+# refine-remove some used organelle
+organelle_v = collectOrganelleTerm(type="volume")
+volume_size = volume_size[volume_size["compartment"].isin(organelle_v)]
+volume_size = volume_size.sort_values(by=['mmol/gDW_carl'], ascending=False)
+
+organelle_m = collectOrganelleTerm(type="m")
+membrane_size = membrane_size[membrane_size["compartment"].isin(organelle_m)]
+membrane_size = membrane_size.sort_values(by=['mmol/gDW_carl'], ascending=False)
+membrane_size = membrane_size.drop('Unnamed: 0', axis=1)
+membrane_size_t = membrane_size.transpose()
+membrane_size_t.columns = membrane_size_t.iloc[0]
+membrane_size_t = membrane_size_t.iloc[1:,:]
+membrane_size_t = membrane_size_t.apply(pd.to_numeric, errors='ignore')
+
+
+# classify gene based on the compartment
+def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organelle"):
+    """
+    This function is used to calculate the organelle protein volume or sectional area as a whole
+    :param protein_copy:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        all_compartment = list(compartment.keys())
+
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    all_compartment = compartment_list
+    result_df = dict()
+    for y in all_compartment:
+            print(y)
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if
+                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            else:
+                genes_select = compartment[y]
+            # here we need calculate the intersection
+            result_df[y] = list(set(genes_select) & set(gene_set))
+    return result_df
+
+# all metabolic genes from ecGEMs
+gene_metabolic = gene_prot["geneID"].tolist()
+compartment_in = ["plasma membrane"]
+plasma_m = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
+print(','.join(plasma_m['plasma membrane']))
+
+# try to put the plasma membrane constraint into the model?
+gene_select1 = plasma_m['plasma membrane']
+
+# get the structure based parameters
+gene_prot_select1 = gene_prot[gene_prot["geneID"].isin(gene_select1)]
+gene_prot_select1 = gene_prot_select1.sort_values(by=['section_area'], ascending=False)
+
+
+# plot some density graph
+import matplotlib.pyplot as plt
+import seaborn as sns
+sns.displot(membrane_size_t, x="plasma membrane")
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.xlabel("Plasma membrane's protein surface area (μm^2)", fontsize=15)
+
+
+sns.displot(gene_prot_select1, x="section_area")
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.xlabel("Sectional area of single protein (nm^2)", fontsize=15)
+
+# check the abundance for some outlier samples
+protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
+protein_copy_all_select = protein_copy_all1[protein_copy_all1["gene"].isin(gene_select1)]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # first analyze the proteins for specific rxn
 # now the model has no kinetic information for the glucose
 genes_select_glucose = getProteinForRxnGEM(rxnID=['r_1166'])
-gene_prot0 = gene_prot[gene_prot['GPR'].isin(genes_select_glucose)]
+gene_prot0 = gene_prot[gene_prot['geneID'].isin(genes_select_glucose)]
+
+

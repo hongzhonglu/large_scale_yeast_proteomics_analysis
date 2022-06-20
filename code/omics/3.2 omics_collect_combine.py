@@ -120,11 +120,22 @@ omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_a
 
 
 
-
-
-
-
-
+"""
+# histone analysis
+histone_list = ['YBL002W',
+'YBL003C',
+'YBR009C',
+'YBR010W',
+'YDR224C',
+'YDR225W',
+'YNL030W',
+'YNL031C']
+omics_histone = omics_combine_auto[omics_combine_auto["all_gene"].isin(histone_list)]
+ref_list = ['YBL050W', 'YOR224C',
+'YKL040C', 'YPL010W']
+omics_ref = omics_combine_auto[omics_combine_auto["all_gene"].isin(ref_list)]
+omics_ref.to_excel("data/proteomics/ref_protein_across_absolute_measurement.xlsx",index=False)
+"""
 
 
 
@@ -160,5 +171,4 @@ protein_copy = pd.merge(left=pro_abundance2, right=pro_abundance, left_on=['gene
 protein_copy1 = pd.merge(left=pro_abundance3, right=protein_copy, left_on=['gene'], right_on=['gene'], how="outer")
 protein_copy2 = pd.merge(left=protein_copy1, right=pro_jianye, left_on=['gene'], right_on=['gene'], how="outer")
 protein_copy2.to_excel("data/proteomics/protein_copy_combine.xlsx",index=False)
-
 

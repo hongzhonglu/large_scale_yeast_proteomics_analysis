@@ -1,8 +1,9 @@
-# this script is to transform the unit of proteomics datasets from mmol/gDW or g/gDW into molecular/cell
+# The script is to transform the unit of proteomics datasets from mmol/gDW or g/gDW into molecular/cell
+# based on the cellular volume and density
+# In general, it could assume that a cell volume is 32.6 fL (or a cell weigth is 13 pg).
 # 2021-11-16
 
 
-import matplotlib.pyplot as plt
 import pandas as pd
 
 
@@ -76,11 +77,9 @@ def calculateCurationCoefficent():
         print(x)
         s = [x] * 3
         cell_volume_all = cell_volume_all + s
-    curation_info_rosemary = pd.DataFrame({"ID":Sample_ID_select, "cell_size":cell_volume_all, "curation_coefficent": new_coefficent})
+    curation_info_rosemary = pd.DataFrame({"ID": Sample_ID_select, "cell_size": cell_volume_all, "curation_coefficent": new_coefficent})
 
     return curation_info_rosemary
 
 # test
 df_curated = calculateCurationCoefficent()
-
-

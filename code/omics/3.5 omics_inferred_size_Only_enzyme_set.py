@@ -113,3 +113,5 @@ s1, s2 = Pro3DCal(protein_copy_all_select)
 # for metabolic enzyme
 s1.to_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx")
 s2.to_excel("data/proteomics/ecGEM_membrane_size_across_compartment.xlsx")
+
+

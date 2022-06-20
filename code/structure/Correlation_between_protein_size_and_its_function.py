@@ -1,7 +1,4 @@
 # Explore how the protein structure evoluted based on their function
-
-
-
 import matplotlib.pyplot as plt
 import seaborn as sns
 

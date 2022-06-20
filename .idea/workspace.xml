@@ -3,15 +3,21 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/ecYeast_test_from_deep_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_test_from_deep_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.3 proteomics_abundance_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.3 proteomics_abundance_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_Only_enzyme_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_Only_enzyme_set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/GEM_membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/GEM_membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/GEM_volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/GEM_volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ecGEM_membrane_size_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ecGEM_membrane_size_across_compartment.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ecGEM_volume_size_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ecGEM_volume_size_across_compartment.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_metabolic_enzyme_per_organelle.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_metabolic_enzyme_per_organelle.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/rosemary_data_analysis.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/rosemary_data_analysis.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/yeast cell size.xls" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/yeast cell size.xls" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$ecGEM_volume_size_across_compartment.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/~$data_check.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/~$flux_check.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/~$gem_rxn_nov.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,16 +102,16 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/omics" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/data" />
       <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
-      <recent name="$PROJECT_DIR$/code/omics" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/structure/not_used" />
@@ -225,23 +231,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
-          <line>112</line>
+          <line>109</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
-          <line>132</line>
+          <line>129</line>
           <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="8" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/5.1 organelle_membrane_analysis_Rosemary.py</url>
-          <line>235</line>
-          <option name="timeStamp" value="9" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

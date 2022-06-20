@@ -165,8 +165,6 @@ def getProAundance(genes_select0, pro_abundance0):
         return combine_df
 
 
-
-
 def getStructureSize(pro_size0, abundance0, need_check="No"):
     """
     The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
@@ -562,3 +560,29 @@ def linearFit(df, x_name, y_name):
     plt.text(x_max/3, 2*y_max/3, "R2=" + str(R2), fontsize=18)
     plt.show()
     return coef[0], coef[1]
+
+
+def collectOrganelleTerm(type="volume"):
+    """
+    Some compartment need manual check.
+    The function is just to get the important organelle list for volume or membrane size calculation.
+    :param type:
+    :return:
+
+    usage:
+    organelle_v = collectOrganelleTerm(type="volume")
+    organelle_m = collectOrganelleTerm(type="m")
+
+    """
+    volume_list = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum', 'endosome', 'lipid droplet',
+                   'fungal-type vacuole', 'peroxisome', 'ribosome', 'Golgi apparatus', 'cytosolic ribosome',
+                   'mitochondrial ribosome', 'nucleolus']
+    membrane_list = ['fungal-type vacuole membrane', 'plasma membrane', 'mitochondrial outer membrane',
+                     'prospore membrane', 'endoplasmic reticulum membrane', 'mitochondrial inner membrane',
+                     'Golgi membrane', 'cellular bud membrane',
+                     'late endosome membrane', 'peroxisomal membrane', 'nuclear membrane', 'endosome membrane',
+                     'nuclear inner membrane']
+    if type == "volume":
+        return volume_list
+    else:
+        return membrane_list

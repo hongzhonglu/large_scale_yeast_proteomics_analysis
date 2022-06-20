@@ -1,7 +1,5 @@
 # this module is mainly for ecModel simulation
-# which model should be used?
-# first compare the model difference
-# version 1
+
 from cobra.io import load_matlab_model, read_sbml_model
 from cobra import Reaction, Metabolite
 
@@ -89,8 +87,7 @@ plt.savefig('result/figure/Cratree simulation based on ecModel_DLkcat.pdf', bbox
 
 # rerun the above step using a function
 # for the loop
-ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27*0.42/0.4, 0)  # -230/0.55*0.4, this is rescaled by maximal growth rate.
-
+ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27*0.42/0.4, 0)  # this value is further rescaled by maximal growth rate at 0.42.
 dilutionrate = 0.42
 model_tmp = ecYeast.copy()
 model_tmp.reactions.get_by_id("r_1714").lower_bound = 0
