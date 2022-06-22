@@ -103,8 +103,6 @@ omics_jianye = pd.read_excel("data/proteomics/abundance_jianye.xlsx")
 omics_kate = pd.read_excel("data/proteomics/abundance_kate.xlsx")
 
 
-
-
 def combineAbosluteAbundance(omics_combine_base, omics_new, remove_column="gene"):
     df_combine_auto = pd.merge(left=omics_combine_base, right=omics_new, left_on=['all_gene'], right_on=['gene'], how="left")
     # remove the duplicated

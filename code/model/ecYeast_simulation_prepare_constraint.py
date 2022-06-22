@@ -5,6 +5,9 @@
 from src.mainFunction import *
 from src.model_process import *
 from src.protein_process import *
+import matplotlib.pyplot as plt
+import seaborn as sns
+
 
 # second ecYeast based om deep learning
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
@@ -30,6 +33,21 @@ membrane_size = pd.read_excel("data/proteomics/ecGEM_membrane_size_across_compar
 organelle_v = collectOrganelleTerm(type="volume")
 volume_size = volume_size[volume_size["compartment"].isin(organelle_v)]
 volume_size = volume_size.sort_values(by=['mmol/gDW_carl'], ascending=False)
+volume_size = volume_size.drop('Unnamed: 0', axis=1)
+volume_size_t = volume_size.transpose()
+volume_size_t.columns = volume_size_t.iloc[0]
+volume_size_t = volume_size_t.iloc[1:,:]
+volume_size_t = volume_size_t.apply(pd.to_numeric, errors='ignore')
+# plot some density graph
+organelle_v0 = ['mitochondrion', 'nucleus', 'cytosol',
+ 'endoplasmic reticulum', 'lipid droplet', 'fungal-type vacuole',
+ 'peroxisome', 'Golgi apparatus']
+for xx in organelle_v0: # loop the organelle name
+    sns.displot(volume_size_t, x=xx)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.xlabel(xx + " protein volume (μm^3)", fontsize=15)
+
 
 organelle_m = collectOrganelleTerm(type="m")
 membrane_size = membrane_size[membrane_size["compartment"].isin(organelle_m)]
@@ -41,7 +59,57 @@ membrane_size_t = membrane_size_t.iloc[1:,:]
 membrane_size_t = membrane_size_t.apply(pd.to_numeric, errors='ignore')
 
 
-# classify gene based on the compartment
+# plot some density graph
+organelle_m0 = ['fungal-type vacuole membrane',
+ 'plasma membrane',
+ 'mitochondrial outer membrane',
+ 'endoplasmic reticulum membrane',
+ 'mitochondrial inner membrane',
+ 'Golgi membrane',
+ 'peroxisomal membrane',
+ 'nuclear membrane',
+ 'nuclear inner membrane']
+
+for xx in organelle_m0: # loop the organelle name
+    sns.displot(membrane_size_t, x=xx)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.xlabel(xx + " protein surface area (μm^2)", fontsize=15)
+
+
+# further input the absolute protein abundance from each organelle
+absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx")
+
+absolute_abundance_organelle = absolute_abundance_organelle[absolute_abundance_organelle["compartment"].isin(organelle_m)]
+absolute_abundance_organelle = absolute_abundance_organelle.sort_values(by=['mmol/gDW_carl'], ascending=False)
+absolute_abundance_organelle_t = absolute_abundance_organelle.transpose()
+absolute_abundance_organelle_t.columns = absolute_abundance_organelle_t.iloc[0]
+absolute_abundance_organelle_t = absolute_abundance_organelle_t.iloc[1:,:]
+absolute_abundance_organelle_t = absolute_abundance_organelle_t.apply(pd.to_numeric, errors='ignore')
+ss1 = absolute_abundance_organelle_t.describe()
+
+
+# density plot
+for xx in organelle_m0: # loop the organelle name
+    sns.displot(absolute_abundance_organelle_t, x=xx)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.xlabel(xx + " abs_pro abundance (mmol/gDW)", fontsize=15)
+
+# box plot
+for xx in organelle_m0: # loop the organelle name
+    plt.figure(figsize=[4, 4])
+    sns.set(style="darkgrid")
+    sns.boxplot(y=absolute_abundance_organelle_t[xx])
+    plt.xlabel(xx, fontsize=15)
+    plt.ylabel("abs_pro abundance (mmol/gDW)", fontsize=15)
+    plt.show()
+    plt.savefig("result/figure/" + xx + "_abs_pro.pdf", bbox_inches='tight')
+
+
+
+# find gene based with compartment as input to compare
+# the protein size, abundance within this compartment
 def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organelle"):
     """
     This function is used to calculate the organelle protein volume or sectional area as a whole
@@ -52,7 +120,7 @@ def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organell
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
-        all_compartment = list(compartment.keys())
+        # all_compartment = list(compartment.keys())
 
     # use some manually checked gene compartment definion
     gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
@@ -76,56 +144,33 @@ def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organell
 
 # all metabolic genes from ecGEMs
 gene_metabolic = gene_prot["geneID"].tolist()
-compartment_in = ["plasma membrane"]
-plasma_m = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
-print(','.join(plasma_m['plasma membrane']))
+compartment_in = organelle_v + organelle_m
+m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
+print(','.join(m_gene_in_organelle['plasma membrane']))
+print(','.join(m_gene_in_organelle['nucleolus']))
+for x in m_gene_in_organelle.keys():
+    if len(m_gene_in_organelle[x]) <= 3:
+        print(x)
+
 
 # try to put the plasma membrane constraint into the model?
-gene_select1 = plasma_m['plasma membrane']
-
+gene_select1 = m_gene_in_organelle['plasma membrane']
 # get the structure based parameters
 gene_prot_select1 = gene_prot[gene_prot["geneID"].isin(gene_select1)]
 gene_prot_select1 = gene_prot_select1.sort_values(by=['section_area'], ascending=False)
+# check the abundance for some outlier samples
+protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
+protein_copy_all_select = protein_copy_all1[protein_copy_all1["gene"].isin(gene_select1)]
 
 
 # plot some density graph
-import matplotlib.pyplot as plt
-import seaborn as sns
-sns.displot(membrane_size_t, x="plasma membrane")
+sns.displot(gene_prot_select1, x="Volume")
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
-plt.xlabel("Plasma membrane's protein surface area (μm^2)", fontsize=15)
+plt.xlabel("Volume of single protein (nm^3)", fontsize=15)
 
 
 sns.displot(gene_prot_select1, x="section_area")
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.xlabel("Sectional area of single protein (nm^2)", fontsize=15)
-
-# check the abundance for some outlier samples
-protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
-protein_copy_all_select = protein_copy_all1[protein_copy_all1["gene"].isin(gene_select1)]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# first analyze the proteins for specific rxn
-# now the model has no kinetic information for the glucose
-genes_select_glucose = getProteinForRxnGEM(rxnID=['r_1166'])
-gene_prot0 = gene_prot[gene_prot['geneID'].isin(genes_select_glucose)]
-
-
