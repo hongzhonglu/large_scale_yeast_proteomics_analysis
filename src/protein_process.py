@@ -586,3 +586,37 @@ def collectOrganelleTerm(type="volume"):
         return volume_list
     else:
         return membrane_list
+
+
+def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organelle"):
+    """
+    This function is used to calculate the organelle protein volume or sectional area as a whole
+    :param protein_copy:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        # all_compartment = list(compartment.keys())
+
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    all_compartment = compartment_list
+    result_df = dict()
+    for y in all_compartment:
+            print(y)
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if
+                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            else:
+                genes_select = compartment[y]
+            # here we need calculate the intersection
+            result_df[y] = list(set(genes_select) & set(gene_set))
+    return result_df
+

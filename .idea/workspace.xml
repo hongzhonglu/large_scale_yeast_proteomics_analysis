@@ -3,14 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_with_detail_structures.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_prepare_constraint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_Only_enzyme_set.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_Only_enzyme_set.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/not_used/3.5 protein_abundance_in_each_organelle_Only_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.8 protein_aboslute_abundance_in_each_organelle_Only_Rosemary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_check.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$ref_protein_across_absolute_measurement.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_simulate_under_organell_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_simulate_under_organell_constraint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
