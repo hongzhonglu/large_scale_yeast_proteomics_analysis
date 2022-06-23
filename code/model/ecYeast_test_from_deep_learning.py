@@ -2,11 +2,9 @@
 
 from cobra.io import load_matlab_model, read_sbml_model
 from cobra import Reaction, Metabolite
-
 import sys
-import pprint
-
-pprint.pprint(sys.path)
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 # import self function
 from src.mainFunction import *
@@ -14,21 +12,63 @@ from src.model_process import *
 from src.protein_process import *
 
 
+
+# rerun the above step using a function
+def DLecModelSimulate(model, dilution_rate):
+   """
+   This function is used to do simulation with ecModels using kcat value from deep learning.
+   :param model: a ecModel
+   :param dilution_rate: a dilution rate 0-0.42 /h
+
+   :return: solution_f: fluxes datasets
+
+   """
+
+   dilutionrate = dilution_rate
+   ecYeast = model
+   if dilutionrate >= 0.4:
+       ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27 * dilutionrate / 0.4, 0)  # this value is further rescaled by maximal growth rate at 0.42.
+   else:
+       ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)  # -230/0.55*0.4, this is rescaled by maximal growth rate.
+
+   # refer to bioRxiv
+   ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
+              'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange',
+              'oxygen exchange', 'EX_protein_pool']
+   # find the related rxnID
+   idx = []
+   for name0 in ex_mets:
+       print(name0)
+       s = getRxnByReactionName(model=ecYeast, name=name0)
+       if len(s) > 1:
+           print("need check")
+       elif len(s) == 1:
+           idx.append(s[0])
+
+   model_tmp = ecYeast.copy()
+   model_tmp.reactions.get_by_id("r_1714").lower_bound = 0
+   model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000
+   model_tmp.reactions.get_by_id(idx[0]).lower_bound = dilutionrate
+   model_tmp.objective = {model_tmp.reactions.r_1714: 1}  # minimize the uptake of glucose
+   solution2 = model_tmp.optimize()
+   # then fix glucose uptake and minimize the protein pool
+   model_tmp.reactions.get_by_id(idx[1]).lower_bound = solution2.objective_value * 1.00001
+   model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000
+   model_tmp.objective = {model_tmp.reactions.EX_protein_pool: 1}  # minimize the usage of protein pools
+   solution_f = model_tmp.optimize()
+   solution_f.fluxes["EX_protein_pool"]
+   solution_f.fluxes["r_1714"]
+   return solution_f
+
+
+
 # second ecYeast based om deep learning
+# simulate the Crabtree effect
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
 ecYeast = read_sbml_model(dir2)
-# some initial constraints adjustment
-ecYeast.reactions.get_by_id("r_4527").bounds = (0,0)  # ammonium exchange (reversible)
-ecYeast.reactions.get_by_id("r_4538").bounds = (0,0)  # ammonium exchange (reversible)
-ecYeast.reactions.get_by_id("r_4502").bounds = (0,0)  # ammonium exchange (reversible)
-ecYeast.reactions.get_by_id("r_4504").bounds = (0,0)  # ammonium exchange (reversible)
-ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)  # -230/0.55*0.4, this is rescaled by maximal growth rate.
-
 # refer to bioRxiv
 ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
-           'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange',
-           'oxygen exchange', 'EX_protein_pool']
-
+           'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange', 'oxygen exchange', 'EX_protein_pool']
 # find the related rxnID
 idx = []
 for name0 in ex_mets:
@@ -45,21 +85,10 @@ result = dict()
 for k in range(len(dilutionrate)):
     print(k)
     model_tmp = ecYeast.copy()
-    model_tmp.reactions.get_by_id("r_1714").lower_bound = 0
-    model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000
-    model_tmp.reactions.get_by_id(idx[0]).lower_bound = dilutionrate[k]
-    model_tmp.objective = {model_tmp.reactions.r_1714: 1}
-    solution2 = model_tmp.optimize()
-    solution2.fluxes["r_1714"]
-    # then fix glucose uptake and minimize the protein pool
-    model_tmp.reactions.get_by_id(idx[1]).lower_bound = solution2.objective_value*1.00001
-    model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000
-    model_tmp.objective = {model_tmp.reactions.EX_protein_pool: 1}
-    solution3 = model_tmp.optimize()
-    solution3.fluxes["EX_protein_pool"]
-    solution3.fluxes["r_1714"]
+    solution3 = DLecModelSimulate(model=ecYeast, dilution_rate=dilutionrate[k])
     fluxes = solution3.fluxes[idx]
     result[dilutionrate[k]] = list(fluxes)
+
 
 # summarize the result
 result_df = pd.DataFrame.from_dict(result)
@@ -68,10 +97,7 @@ result_df1.columns = ex_mets
 result_df1["D-glucose exchange"] = result_df1["D-glucose exchange"]*(-1)
 result_df1["oxygen exchange"] = result_df1["oxygen exchange"]*(-1)
 result_df2 = result_df1.drop('EX_protein_pool', 1)
-
 # plot
-import matplotlib.pyplot as plt
-import seaborn as sns
 plt.figure()
 sns.lineplot(x='biomass pseudoreaction', y='value', hue='variable', style="variable",
              data=pd.melt(result_df2, ['biomass pseudoreaction']))
@@ -85,27 +111,20 @@ plt.savefig('result/figure/Cratree simulation based on ecModel_DLkcat.pdf', bbox
 
 
 
-# rerun the above step using a function
-# for the loop
-ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27*0.42/0.4, 0)  # this value is further rescaled by maximal growth rate at 0.42.
-dilutionrate = 0.42
-model_tmp = ecYeast.copy()
-model_tmp.reactions.get_by_id("r_1714").lower_bound = 0
-model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000
-model_tmp.reactions.get_by_id(idx[0]).lower_bound = dilutionrate
-model_tmp.objective = {model_tmp.reactions.r_1714: 1} # minimize the uptake of glucose
-solution2 = model_tmp.optimize()
-solution2.fluxes["r_1714"]
-# then fix glucose uptake and minimize the protein pool
-model_tmp.reactions.get_by_id(idx[1]).lower_bound = solution2.objective_value * 1.00001
-model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000
-model_tmp.objective = {model_tmp.reactions.EX_protein_pool: 1} # minimize the usage of protein pools
-solution3 = model_tmp.optimize()
-solution3.fluxes["EX_protein_pool"]
-solution3.fluxes["r_1714"]
+
+
+
+
+
+
+
+
 
 
 # compare the predicted and measured protein abundances
+dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
+ecYeast = read_sbml_model(dir2)
+solution3 = DLecModelSimulate(model=ecYeast, dilution_rate=0.42)
 flux_max = solution3.fluxes
 result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result = result[result['rxnID'].str.contains("prot_")]
@@ -139,6 +158,10 @@ coefficient1 = 7.8298e9
 result_unify = result.copy()
 result_unify["pro_measured"] = result['pro_measured']*coefficient1
 result_unify["flux"] = result['flux']*coefficient1
+
+
+
+
 
 
 
@@ -197,43 +220,3 @@ result_unify1 = result_unify1[result_unify1['pro_measured'] > 0]
 corr, ss = pearsonr(np.log10(result_unify1['pro_measured']), np.log10(result_unify1['flux']))
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# check which protein has kcat and which protein has no kcat
-gene_list = []
-for x in ecYeast.genes:
-    gene_list.append(x.id)
-
-gem_rxn_nov = produceRxnList(ecYeast)
-gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("prot_")]
-gene_prot_list = gene_prot["rxnID"].str.replace("prot_", "")
-gene_no_kinetic = list(set(gene_list)-set(gene_prot_list))
-# it means that all genes have kinetic information, so how to use the kineitc information and the models??
-gem_rxn_nov["fluxes"] = list(solution3.fluxes)
-
-
-
-
-
-
-

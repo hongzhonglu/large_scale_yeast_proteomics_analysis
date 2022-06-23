@@ -79,7 +79,6 @@ def exchange_ecYeast(s1, subystem):
             subystem[i] = subystem[i]
     return subystem
 
-
 # function copy from strain_design repo
 def ecYeastMinimalMedia(model):
     """
@@ -231,3 +230,49 @@ def getRxnByReactionName(model, name):
             s.append(rxn.id)
     return s
 
+
+def DLecModelSimulate(model, dilution_rate):
+   """
+   This function is used to do simulation with ecModels using kcat value from deep learning.
+   :param model: a ecModel
+   :param dilution_rate: a dilution rate 0-0.42 /h
+
+   :return: solution_f: fluxes datasets
+
+   """
+
+   dilutionrate = dilution_rate
+   ecYeast = model
+   if dilutionrate >= 0.4:
+       ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27 * dilutionrate / 0.4, 0)  # this value is further rescaled by maximal growth rate at 0.42.
+   else:
+       ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)  # -230/0.55*0.4, this is rescaled by maximal growth rate.
+
+   # refer to bioRxiv
+   ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
+              'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange',
+              'oxygen exchange', 'EX_protein_pool']
+   # find the related rxnID
+   idx = []
+   for name0 in ex_mets:
+       print(name0)
+       s = getRxnByReactionName(model=ecYeast, name=name0)
+       if len(s) > 1:
+           print("need check")
+       elif len(s) == 1:
+           idx.append(s[0])
+
+   model_tmp = ecYeast.copy()
+   model_tmp.reactions.get_by_id("r_1714").lower_bound = 0
+   model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000
+   model_tmp.reactions.get_by_id(idx[0]).lower_bound = dilutionrate
+   model_tmp.objective = {model_tmp.reactions.r_1714: 1}  # minimize the uptake of glucose
+   solution2 = model_tmp.optimize()
+   # then fix glucose uptake and minimize the protein pool
+   model_tmp.reactions.get_by_id(idx[1]).lower_bound = solution2.objective_value * 1.00001
+   model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000
+   model_tmp.objective = {model_tmp.reactions.EX_protein_pool: 1}  # minimize the usage of protein pools
+   solution_f = model_tmp.optimize()
+   solution_f.fluxes["EX_protein_pool"]
+   solution_f.fluxes["r_1714"]
+   return solution_f
