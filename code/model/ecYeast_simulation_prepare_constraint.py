@@ -78,10 +78,6 @@ for xx in organelle_m0: # loop the organelle name
 
 
 
-
-
-
-
 # further input the absolute protein abundance from each organelle
 absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx")
 absolute_abundance_organelle = absolute_abundance_organelle[absolute_abundance_organelle["compartment"].isin(organelle_m0 + organelle_v0)]
@@ -90,8 +86,30 @@ absolute_abundance_organelle_t = absolute_abundance_organelle.transpose()
 absolute_abundance_organelle_t.columns = absolute_abundance_organelle_t.iloc[0]
 absolute_abundance_organelle_t = absolute_abundance_organelle_t.iloc[1:,:]
 absolute_abundance_organelle_t = absolute_abundance_organelle_t.apply(pd.to_numeric, errors='ignore')
+
+
+# statistical analysis of protein abundance in organelle levels
 organelle_pro_range = absolute_abundance_organelle_t.describe()
 organelle_pro_range.to_excel("result/organelle_protein_abundance_range.xlsx")
+absolute_abundance_organelle_t.to_excel("result/organelle_protein_abundance_ecGEMs.xlsx")
+
+
+
+# firstly only use Rosemary datasets under N limitation
+# integrate the growth phenotype datasets
+Sample_ID_select = ['prot.1','prot.2', 'prot.3','prot.7','prot.8','prot.9','prot.10','prot.11','prot.12','prot.13','prot.14','prot.15','prot.16','prot.17','prot.18','prot.19','prot.20','prot.21']
+absolute_abundance_organelle_Rosemary = absolute_abundance_organelle_t[absolute_abundance_organelle_t.index.isin(Sample_ID_select)]
+absolute_abundance_organelle_Rosemary['sampleID'] = list(absolute_abundance_organelle_Rosemary.index)
+# input the physiology
+# input the physiological datasets from Rosemerry
+physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
+absolute_abundance_organelle_Rosemary['growth'] = singleMapping(physiology_data['dilution rate (/h)'],physiology_data['kinetic'],absolute_abundance_organelle_Rosemary['sampleID'] )
+absolute_abundance_organelle_Rosemary['total_protein (g/gDW)'] = singleMapping(physiology_data['total protein content (g/gDW)'], physiology_data['kinetic'], absolute_abundance_organelle_Rosemary['sampleID'])
+absolute_abundance_organelle_Rosemary = absolute_abundance_organelle_Rosemary.sort_values(by=['growth'], ascending=True)
+pro_Rosemary = absolute_abundance_organelle_Rosemary.describe()
+pro_Rosemary.to_excel("result/organelle_protein_abundance_range_rosemary.xlsx")
+absolute_abundance_organelle_Rosemary.to_excel("result/organelle_protein_abundance_ecGEMs_rosemary.xlsx")
+
 
 
 
@@ -102,8 +120,6 @@ for xx in organelle_m0: # loop the organelle name
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.xlabel(xx + " abs_pro abundance (mmol/gDW)", fontsize=15)
-
-
 # box plot
 for xx in organelle_m0 + organelle_v0: # loop the organelle name
     plt.figure(figsize=[4, 4])
@@ -113,6 +129,10 @@ for xx in organelle_m0 + organelle_v0: # loop the organelle name
     plt.ylabel("abs_pro abundance (mmol/gDW)", fontsize=15)
     plt.show()
     #plt.savefig("result/figure/" + xx + "_abs_pro.pdf", bbox_inches='tight')
+
+
+
+
 
 
 
@@ -157,3 +177,6 @@ sns.displot(gene_prot_select1, x="section_area")
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.xlabel("Sectional area of single protein (nm^2)", fontsize=15)
+
+
+

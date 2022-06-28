@@ -170,8 +170,14 @@ s1.to_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx")
 s2.to_excel("data/proteomics/ecGEM_membrane_size_across_compartment.xlsx")
 
 
+
+
+
+
 ## input the absolute protein abundance
-protein_copy_all1 = pd.read_excel("data/proteomics/omics_measured_combine.xlsx")
+# protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine.xlsx")
+protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx")
+
 # based on all 1150 genes
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
 ecYeast = read_sbml_model(dir2)
@@ -179,7 +185,7 @@ gene_list = []
 for gene in ecYeast.genes:
     print(gene.id)
     gene_list.append(gene.id)
-protein_copy_all_select = protein_copy_all1[protein_copy_all1["all_gene"].isin(gene_list)]
-protein_copy_all_select = protein_copy_all_select.rename(columns={'all_gene': 'gene'})
-p1 = ProAbsoluteCal(protein_copy_all_select)
+protein_abundance_all_select = protein_abundance[protein_abundance["all_gene"].isin(gene_list)]
+protein_abundance_all_select = protein_abundance_all_select.rename(columns={'all_gene': 'gene'})
+p1 = ProAbsoluteCal(protein_abundance_all_select)
 p1.to_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx", index=False)

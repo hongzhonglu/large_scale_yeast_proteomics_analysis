@@ -115,6 +115,13 @@ omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_a
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_kate, remove_column="gene")
 #TO-DO
 #omics_combine_auto will be as the reference to do absolute proteomics analysis
+omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx", index=False)
+#write a function to do the above steps
+
+
+
+
+
 
 
 

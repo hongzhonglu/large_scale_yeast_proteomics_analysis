@@ -1,5 +1,4 @@
-# This module is mainly used to build a pipeline to integrate structure information with models.
-
+# This pipeline could be used to evaluate the absolute protein abundance from each organelle affect the growth rate
 
 # import self function
 from src.mainFunction import *
@@ -24,9 +23,6 @@ for rxn in ecYeast.reactions:
 
 
 
-
-
-
 # generate the general formula as the constraint
 # all metabolic genes from ecGEMs
 organelle_v = collectOrganelleTerm(type="volume")
@@ -36,11 +32,10 @@ compartment_in = organelle_v + organelle_m
 m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
 
 
-
-
-
 # find rxnid based on gene
-organelle_target = 'plasma membrane'
+# constraint_organelle = 'plasma membrane'
+constraint_organelle = 'nucleus'
+organelle_target = constraint_organelle
 gene_target = m_gene_in_organelle[organelle_target]
 rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
 rxn_select = [x.replace("-A", "_A") for x in rxn_select]
@@ -48,105 +43,90 @@ formula_list = ["model_tmp.reactions." + x + ".flux_expression" for x in rxn_sel
 formula_one = " + ".join(formula_list)
 
 
+def SimulateOrganelleProAbundance(min_pro_abs, max_pro_abs, flux_expression, ecModel):
+    # simulation in loop procedure
+    # in vivo saturation of all, saturation_cof=0.44 for CENPK strains
+    saturation_cof = 0.44
+    lower = min_pro_abs * saturation_cof
+    upper = max_pro_abs * saturation_cof
+    step = (upper - lower) / 10
+    organelle_abundance = []
+    growth_rate = []
+    predicted_usage = []
+    ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)  # this is like the total protein pools in model, this constraint will affect growth prediction greatly.
+    for upper_v in np.arange(lower, upper, step).tolist():
+        model_tmp = ecModel.copy()
+        same_flux = model_tmp.problem.Constraint(eval(flux_expression), lb=lower, ub=upper_v, name='same_flux')
+        model_tmp.add_cons_vars(same_flux)
+        # model_tmp = ecYeast # the model can't be used in the assignment
+        # maximization
+        objective = model_tmp.problem.Objective(
+            model_tmp.reactions.r_4041.flux_expression,
+            direction='max')  # biomass
+        model_tmp.objective = objective
+        solution2 = model_tmp.optimize()
+        print("Max growth:" + str(solution2.objective_value))
+        fluxes_select = solution2.fluxes[rxn_select]
+        abundance_select0 = sum(list(fluxes_select))
+        print("Total abundance:" + str(abundance_select0))
+        organelle_abundance.append(upper_v)
+        growth_rate.append(solution2.objective_value)
+        predicted_usage.append(abundance_select0)
 
-# check the abundance for some outlier samples
-protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
-protein_copy_all_select = protein_copy_all1[protein_copy_all1["gene"].isin(gene_target)]
+    # plot
+    result_df = pd.DataFrame(
+        {"growth": growth_rate, constraint_organelle: organelle_abundance, "predicted_usage": predicted_usage})
+    plt.figure(figsize=(4, 4))
+    sns.lineplot(x=constraint_organelle, y="growth", data=result_df, marker="o")
+    plt.ylim(0, 0.5)
+    plt.figure(figsize=(4, 4))
+    sns.lineplot(x=constraint_organelle, y="predicted_usage", data=result_df, marker="o")
 
+    # calculate the correlation coefficients
+    from scipy.stats import pearsonr
+    corr1, ss1 = pearsonr(organelle_abundance, growth_rate)
+    corr2, ss2 = pearsonr(organelle_abundance, predicted_usage)
+    return corr1, corr2, result_df
 
-
-
-
-
-
-
-
-
-
-
-
-# the following two seems consistent with each other
-"""
-same_flux = ecYeast.problem.Constraint(ecYeast.reactions.prot_YLR342W.flux_expression + ecYeast.reactions.prot_YPR159W.flux_expression + ecYeast.reactions.prot_YJL005W.flux_expression + ecYeast.reactions.prot_YCR024C_A.flux_expression + ecYeast.reactions.prot_YGL008C.flux_expression + ecYeast.reactions.prot_YPL036W.flux_expression + ecYeast.reactions.prot_YGR060W.flux_expression + ecYeast.reactions.prot_YNL192W.flux_expression + ecYeast.reactions.prot_YOR171C.flux_expression + ecYeast.reactions.prot_YOR317W.flux_expression + ecYeast.reactions.prot_YMR246W.flux_expression + ecYeast.reactions.prot_YJL100W.flux_expression + ecYeast.reactions.prot_YLR305C.flux_expression + ecYeast.reactions.prot_YDR208W.flux_expression + ecYeast.reactions.prot_YMR008C.flux_expression + ecYeast.reactions.prot_YLR020C.flux_expression + ecYeast.reactions.prot_YOR348C.flux_expression + ecYeast.reactions.prot_YCR010C.flux_expression + ecYeast.reactions.prot_YER056C.flux_expression + ecYeast.reactions.prot_YER060W.flux_expression + ecYeast.reactions.prot_YER060W_A.flux_expression + ecYeast.reactions.prot_YGL186C.flux_expression + ecYeast.reactions.prot_YJR152W.flux_expression + ecYeast.reactions.prot_YDR384C.flux_expression + ecYeast.reactions.prot_YGR121C.flux_expression + ecYeast.reactions.prot_YNL142W.flux_expression + ecYeast.reactions.prot_YGR065C.flux_expression + ecYeast.reactions.prot_YDR536W.flux_expression + ecYeast.reactions.prot_YLR081W.flux_expression + ecYeast.reactions.prot_YKL217W.flux_expression + ecYeast.reactions.prot_YDR342C.flux_expression + ecYeast.reactions.prot_YDR345C.flux_expression + ecYeast.reactions.prot_YHR092C.flux_expression + ecYeast.reactions.prot_YHR094C.flux_expression + ecYeast.reactions.prot_YMR011W.flux_expression + ecYeast.reactions.prot_YOR011W.flux_expression + ecYeast.reactions.prot_YCR098C.flux_expression + ecYeast.reactions.prot_YGL084C.flux_expression + ecYeast.reactions.prot_YLL043W.flux_expression + ecYeast.reactions.prot_YCL025C.flux_expression + ecYeast.reactions.prot_YKR039W.flux_expression + ecYeast.reactions.prot_YOL020W.flux_expression + ecYeast.reactions.prot_YDR497C.flux_expression + ecYeast.reactions.prot_YOL103W.flux_expression + ecYeast.reactions.prot_YMR319C.flux_expression + ecYeast.reactions.prot_YMR058W.flux_expression + ecYeast.reactions.prot_YBR068C.flux_expression + ecYeast.reactions.prot_YEL063C.flux_expression + ecYeast.reactions.prot_YBR069C.flux_expression + ecYeast.reactions.prot_YCR075C.flux_expression + ecYeast.reactions.prot_YGR191W.flux_expression + ecYeast.reactions.prot_YGR055W.flux_expression + ecYeast.reactions.prot_YCR028C.flux_expression + ecYeast.reactions.prot_YBR296C.flux_expression + ecYeast.reactions.prot_YCR037C.flux_expression + ecYeast.reactions.prot_YJL198W.flux_expression + ecYeast.reactions.prot_YJL129C.flux_expression + ecYeast.reactions.prot_YLL028W.flux_expression + ecYeast.reactions.prot_YOR273C.flux_expression + ecYeast.reactions.prot_YPL274W.flux_expression + ecYeast.reactions.prot_YLL061W.flux_expression + ecYeast.reactions.prot_YLR138W.flux_expression + ecYeast.reactions.prot_YHL016C.flux_expression + ecYeast.reactions.prot_YGR138C.flux_expression + ecYeast.reactions.prot_YPR156C.flux_expression + ecYeast.reactions.prot_YBR294W.flux_expression + ecYeast.reactions.prot_YLR092W.flux_expression + ecYeast.reactions.prot_YPL092W.flux_expression + ecYeast.reactions.prot_YLR237W.flux_expression + ecYeast.reactions.prot_YOR071C.flux_expression + ecYeast.reactions.prot_YBR021W.flux_expression + ecYeast.reactions.prot_YBL042C.flux_expression + ecYeast.reactions.prot_YLL052C.flux_expression + ecYeast.reactions.prot_YPR192W.flux_expression + ecYeast.reactions.prot_YNL065W.flux_expression + ecYeast.reactions.prot_YOR306C.flux_expression + ecYeast.reactions.prot_YMR162C.flux_expression + ecYeast.reactions.prot_YBR295W.flux_expression + ecYeast.reactions.prot_YML125C.flux_expression + ecYeast.reactions.prot_YDR038C.flux_expression + ecYeast.reactions.prot_YDR039C.flux_expression + ecYeast.reactions.prot_YDR040C.flux_expression + ecYeast.reactions.prot_YJR040W.flux_expression + ecYeast.reactions.prot_YKL220C.flux_expression + ecYeast.reactions.prot_YLR214W.flux_expression + ecYeast.reactions.prot_YNR060W.flux_expression + ecYeast.reactions.prot_YOL152W.flux_expression + ecYeast.reactions.prot_YOR381W.flux_expression + ecYeast.reactions.prot_YKR093W.flux_expression + ecYeast.reactions.prot_YDR093W.flux_expression + ecYeast.reactions.prot_YOL122C.flux_expression + ecYeast.reactions.prot_YNL275W.flux_expression + ecYeast.reactions.prot_YLR130C.flux_expression + ecYeast.reactions.prot_YOL130W.flux_expression,
-    lb=0.00002,
-    ub=0.00006)
-ecYeast.add_cons_vars(same_flux)"""
-
-
-
-
-
-
-plasma_abundance = []
-growth_rate = []
-predicted_usage = []
-ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27*1, 0)  # this is like the total protein pools in model, this constraint will affect growth prediction greatly.
-for xx in np.arange(0.00001, 0.00006, 0.000005).tolist():
-    model_tmp = ecYeast.copy()
-    lower = 0.00001
-    upper = 0.00001
-    same_flux = model_tmp.problem.Constraint(
-        eval(formula_one),
-        lb=lower,
-        ub=xx, name='same_flux')
-    model_tmp.add_cons_vars(same_flux)
-
-    """
-    # test: add a simple constraint
-    con1 = model_tmp.problem.Constraint(model_tmp.reactions.prot_YGR060W.flux_expression,
-        lb=0.00002,
-        ub=0.00002,  name='con1')
-    model_tmp.add_cons_vars(con1)
-    #model_tmp.constraints.append(con1)
-    #model_tmp.solver.update()
-    """
-
-    # model_tmp = ecYeast # the model can't be used in the assignment
-    # maximization
-    objective = model_tmp.problem.Objective(
-        model_tmp.reactions.r_4041.flux_expression,
-        direction='max')  # biomass
-    model_tmp.objective = objective
-    solution2 = model_tmp.optimize()
-    print("Max growth:" + str(solution2.objective_value))
-    fluxes_select = solution2.fluxes[rxn_select]
-    abundance_select0 = sum(list(fluxes_select))
-    print("Total abundance:" + str(abundance_select0))
-    plasma_abundance.append(xx)
-    growth_rate.append(solution2.objective_value)
-    predicted_usage.append(abundance_select0)
-
-result_df = pd.DataFrame({"growth":growth_rate, "plasma_constraint":plasma_abundance,"predicted_usage":predicted_usage})
-plt.figure(figsize=(4, 4))
-sns.lineplot(x="plasma_constraint", y="growth", data=result_df, marker="o")
-
-plt.figure(figsize=(4, 4))
-sns.lineplot(x="plasma_constraint", y="predicted_usage", data=result_df, marker="o")
+# test
+SimulateOrganelleProAbundance(min_pro_abs=0.000547014625181137, max_pro_abs=0.00117705130719705, flux_expression=formula_one, ecModel=ecYeast)
 
 
+# loop for different organelle
+# input the dataset information
+organelle_pro_range = pd.read_excel("result/organelle_protein_abundance_range_rosemary.xlsx")
+organelle_v0 = ['mitochondrion', 'nucleus', 'cytosol',
+ 'endoplasmic reticulum', 'lipid droplet', 'fungal-type vacuole',
+ 'peroxisome', 'Golgi apparatus']
+organelle_m0 = ['fungal-type vacuole membrane',
+ 'plasma membrane',
+ 'mitochondrial outer membrane',
+ 'endoplasmic reticulum membrane',
+ 'mitochondrial inner membrane',
+ 'Golgi membrane',
+ 'peroxisomal membrane',
+ 'nuclear membrane']
+compartment_in0 = organelle_v0 + organelle_m0
 
-
-
-
-
-
-
-
-
-"""
-# minimization
-objective = model_tmp.problem.Objective(
-    model_tmp.reactions.r_4041.flux_expression,
-    direction='min') # biomass
-model_tmp.objective = objective
-solution1 = model_tmp.optimize()
-"""
-
-
-
-
-
-# simulation based on a function
-solution = DLecModelSimulate(model=ecYeast, dilution_rate=0.42)
+correlation1 = []
+correlation2 = []
+for org in compartment_in0:
+    print(org)
+    org = 'mitochondrial inner membrane'
+    compartment_info = organelle_pro_range[org].tolist()
+    min_value = compartment_info[3]
+    max_value = compartment_info[7]
+    constraint_organelle = org
+    organelle_target = constraint_organelle
+    gene_target = m_gene_in_organelle[organelle_target]
+    rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
+    rxn_select = [x.replace("-A", "_A") for x in rxn_select]
+    formula_list = ["model_tmp.reactions." + x + ".flux_expression" for x in rxn_select]
+    formula_one = " + ".join(formula_list)
+    c1, c2, c3 = SimulateOrganelleProAbundance(min_pro_abs=min_value, max_pro_abs=max_value, flux_expression=formula_one, ecModel=ecYeast)
+    correlation1.append(c1)
+    correlation2.append(c2)
+result_df = pd.DataFrame({"compartment_in0":compartment_in0,"abundance_growth_cor":correlation1, "abundance_cor":correlation2})
+result_df.to_excel("result/correlation_analysis.xlsx")
 
 
