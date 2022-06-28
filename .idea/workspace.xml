@@ -3,11 +3,25 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_add_missing_kcats_for_glucose_transporter.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/not_used/ecYeast_add_missing_kcats_for_glucose_transporter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_minimization_occupancy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_minimization_occupancy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_prepare_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_prepare_constraint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_simulate_under_organell_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_simulation_simulate_under_organell_constraint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/ecYeast_test_from_deep_learning.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_test_from_deep_learning.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_update_biomass_and_protein_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/ecYeast_update_biomass_and_protein_limitation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_check.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/Golgi membrane_abs_pro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/endoplasmic reticulum membrane_abs_pro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/fungal-type vacuole membrane_abs_pro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/mitochondrial inner membrane_abs_pro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/mitochondrial outer membrane_abs_pro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/nuclear inner membrane_abs_pro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/nuclear membrane_abs_pro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/peroxisomal membrane_abs_pro.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/plasma membrane_abs_pro.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,11 +118,11 @@
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/model/not_used" />
       <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code/structure/not_used" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
-      <recent name="$PROJECT_DIR$/code/model/not_used" />
     </key>
   </component>
   <component name="RunManager">
@@ -228,6 +242,11 @@
           <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
           <line>129</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/model_process.py</url>
+          <line>233</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

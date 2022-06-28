@@ -235,7 +235,7 @@ def DLecModelSimulate(model, dilution_rate):
    """
    This function is used to do simulation with ecModels using kcat value from deep learning.
    :param model: a ecModel
-   :param dilution_rate: a dilution rate 0-0.42 /h
+   :param dilution_rate: a dilution rate in range of 0-0.42 /h
 
    :return: solution_f: fluxes datasets
 
@@ -263,14 +263,13 @@ def DLecModelSimulate(model, dilution_rate):
            idx.append(s[0])
 
    model_tmp = ecYeast.copy()
-   model_tmp.reactions.get_by_id("r_1714").lower_bound = 0
-   model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000
+   model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000  # glucose uptake
    model_tmp.reactions.get_by_id(idx[0]).lower_bound = dilutionrate
    model_tmp.objective = {model_tmp.reactions.r_1714: 1}  # minimize the uptake of glucose
    solution2 = model_tmp.optimize()
    # then fix glucose uptake and minimize the protein pool
    model_tmp.reactions.get_by_id(idx[1]).lower_bound = solution2.objective_value * 1.00001
-   model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000
+   model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000 # protein pool
    model_tmp.objective = {model_tmp.reactions.EX_protein_pool: 1}  # minimize the usage of protein pools
    solution_f = model_tmp.optimize()
    solution_f.fluxes["EX_protein_pool"]

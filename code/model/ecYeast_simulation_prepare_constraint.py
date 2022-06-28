@@ -23,13 +23,14 @@ pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
 gene_prot["Volume"] = singleMapping(pro_size['Total_Volume'], pro_size['locus'], gene_prot['geneID'])
 gene_prot["section_area"] = singleMapping(pro_size['section_area_new'], pro_size['locus'], gene_prot['geneID'])
 
+
+
+
+
 # input the protein information in organelle level calculated from proteomics
 volume_size = pd.read_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx")
 membrane_size = pd.read_excel("data/proteomics/ecGEM_membrane_size_across_compartment.xlsx")
-
-
-
-# refine-remove some used organelle
+# refine-remove some used organelles
 organelle_v = collectOrganelleTerm(type="volume")
 volume_size = volume_size[volume_size["compartment"].isin(organelle_v)]
 volume_size = volume_size.sort_values(by=['mmol/gDW_carl'], ascending=False)
@@ -67,8 +68,7 @@ organelle_m0 = ['fungal-type vacuole membrane',
  'mitochondrial inner membrane',
  'Golgi membrane',
  'peroxisomal membrane',
- 'nuclear membrane',
- 'nuclear inner membrane']
+ 'nuclear membrane']
 
 for xx in organelle_m0: # loop the organelle name
     sns.displot(membrane_size_t, x=xx)
@@ -77,16 +77,23 @@ for xx in organelle_m0: # loop the organelle name
     plt.xlabel(xx + " protein surface area (μm^2)", fontsize=15)
 
 
+
+
+
+
+
 # further input the absolute protein abundance from each organelle
 absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx")
-
-absolute_abundance_organelle = absolute_abundance_organelle[absolute_abundance_organelle["compartment"].isin(organelle_m)]
+absolute_abundance_organelle = absolute_abundance_organelle[absolute_abundance_organelle["compartment"].isin(organelle_m0 + organelle_v0)]
 absolute_abundance_organelle = absolute_abundance_organelle.sort_values(by=['mmol/gDW_carl'], ascending=False)
 absolute_abundance_organelle_t = absolute_abundance_organelle.transpose()
 absolute_abundance_organelle_t.columns = absolute_abundance_organelle_t.iloc[0]
 absolute_abundance_organelle_t = absolute_abundance_organelle_t.iloc[1:,:]
 absolute_abundance_organelle_t = absolute_abundance_organelle_t.apply(pd.to_numeric, errors='ignore')
-ss1 = absolute_abundance_organelle_t.describe()
+organelle_pro_range = absolute_abundance_organelle_t.describe()
+organelle_pro_range.to_excel("result/organelle_protein_abundance_range.xlsx")
+
+
 
 
 # density plot
@@ -96,52 +103,29 @@ for xx in organelle_m0: # loop the organelle name
     plt.yticks(fontsize=12)
     plt.xlabel(xx + " abs_pro abundance (mmol/gDW)", fontsize=15)
 
+
 # box plot
-for xx in organelle_m0: # loop the organelle name
+for xx in organelle_m0 + organelle_v0: # loop the organelle name
     plt.figure(figsize=[4, 4])
     sns.set(style="darkgrid")
     sns.boxplot(y=absolute_abundance_organelle_t[xx])
     plt.xlabel(xx, fontsize=15)
     plt.ylabel("abs_pro abundance (mmol/gDW)", fontsize=15)
     plt.show()
-    plt.savefig("result/figure/" + xx + "_abs_pro.pdf", bbox_inches='tight')
+    #plt.savefig("result/figure/" + xx + "_abs_pro.pdf", bbox_inches='tight')
 
 
 
+
+
+
+
+
+
+
+# Note: the following scripts were mainly used for the quality check!
 # find gene based with compartment as input to compare
 # the protein size, abundance within this compartment
-def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organelle"):
-    """
-    This function is used to calculate the organelle protein volume or sectional area as a whole
-    :param protein_copy:
-    :param compartment_type:
-    :return:
-    """
-    if compartment_type == "organelle":
-        # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
-        # all_compartment = list(compartment.keys())
-
-    # use some manually checked gene compartment definion
-    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
-    # all_compartment = ['fungal-type vacuole membrane']
-    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
-    all_compartment = compartment_list
-    result_df = dict()
-    for y in all_compartment:
-            print(y)
-            if y == "plasma membrane":
-                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
-            elif y == "fungal-type vacuole membrane":
-                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
-                genes_select = [x for x in genes_select if
-                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
-            else:
-                genes_select = compartment[y]
-            # here we need calculate the intersection
-            result_df[y] = list(set(genes_select) & set(gene_set))
-    return result_df
-
 # all metabolic genes from ecGEMs
 gene_metabolic = gene_prot["geneID"].tolist()
 compartment_in = organelle_v + organelle_m
@@ -151,7 +135,6 @@ print(','.join(m_gene_in_organelle['nucleolus']))
 for x in m_gene_in_organelle.keys():
     if len(m_gene_in_organelle[x]) <= 3:
         print(x)
-
 
 # try to put the plasma membrane constraint into the model?
 gene_select1 = m_gene_in_organelle['plasma membrane']

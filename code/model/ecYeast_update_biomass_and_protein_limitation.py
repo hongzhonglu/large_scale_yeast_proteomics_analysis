@@ -1,6 +1,6 @@
+# Note: this script will be not used??
 # this module is mainly for ecModel simulation
-# which model should be used?
-# first compare the model difference
+
 # version 1
 from cobra.io import load_matlab_model
 from cobra import Reaction, Metabolite
@@ -8,11 +8,7 @@ from cobra import Reaction, Metabolite
 import sys
 import pprint
 
-pprint.pprint(sys.path)
 
-# import self function
-from src.mainFunction import *
-from src.model_process import *
 dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
 
 ecYeast = load_matlab_model(dir1)

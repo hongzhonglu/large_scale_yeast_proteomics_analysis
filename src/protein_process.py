@@ -98,7 +98,6 @@ def getProAundance_old_version(genes_select0, pro_abundance0):
     return combine_df
 
 
-
 def getProAundance(genes_select0, pro_abundance0):
     """
     Note: this function need double check!!!
@@ -487,6 +486,7 @@ def calculateCoefficient(cell_volume0):
     coefficent20 = 1 / coefficent10  # from mmol/gDW into molecular/cell
     return coefficent20
 
+
 def calculateCurationCoefficent():
     # curation of rosemary datasets based on the fitted cell volume under different growth rates
     # fitting formula to calculate the coefficients
@@ -562,7 +562,7 @@ def linearFit(df, x_name, y_name):
     return coef[0], coef[1]
 
 
-def collectOrganelleTerm(type="volume"):
+def collectOrganelleTerm(type):
     """
     Some compartment need manual check.
     The function is just to get the important organelle list for volume or membrane size calculation.
@@ -619,4 +619,114 @@ def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organell
             # here we need calculate the intersection
             result_df[y] = list(set(genes_select) & set(gene_set))
     return result_df
+
+
+def Pro3DCal(protein_copy, compartment_type="organelle"):
+    """
+    This function is used to calculate the organelle protein volume or sectional area as a whole
+    :param protein_copy:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        all_compartment = list(compartment.keys())
+
+    # input the protein structure information
+    pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
+    pro_size = pro_size[['DBID', 'locus', 'Total_Volume', 'section_area_new']]
+    # sample ID information
+    Sample_ID_select = list(protein_copy.columns)
+    Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
+
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+
+    # creat two dataframe to save the result
+    result1 = pd.DataFrame({"compartment": all_compartment})
+    result2 = pd.DataFrame({"compartment": all_compartment})
+
+    # run the cycle
+    for col0 in Sample_ID_select:
+        print(col0)
+        value1 = []
+        value2 = []
+        for y in all_compartment:
+            print(y)
+            pro_abundance = protein_copy[['gene', col0]]
+            pro_abundance.columns = ['gene', 'molecular/cell']
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if
+                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            else:
+                genes_select = compartment[y]
+            pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+            if pro_abundance1 is "no_abundance":
+                value1.append(None)
+                value2.append(None)
+            else:
+                x, S = getStructureSize_MeasuredAbundances(pro_size0=pro_size, abundance0=pro_abundance1)
+                value1.append(x)
+                value2.append(S)
+        result1[col0] = value1
+        result2[col0] = value2
+    return result1, result2
+
+
+def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
+    """
+    This function is used to calculate the organelle protein aboslute abundance as a whole
+    :param protein_copy:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        all_compartment = list(compartment.keys())
+
+    # input the protein structure information
+    pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
+    pro_size = pro_size[['DBID', 'locus', 'Total_Volume', 'section_area_new']]
+    # sample ID information
+    Sample_ID_select = list(protein_copy.columns)
+    Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
+
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    # creat a dataframe to save the result
+    result1 = pd.DataFrame({"compartment": all_compartment})
+    # run the cycle
+    for col0 in Sample_ID_select:
+        print(col0)
+        value1 = []
+        for y in all_compartment:
+            print(y)
+            pro_abundance = protein_copy[['gene', col0]]
+            pro_abundance.columns = ['gene', 'molecular/cell']
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if
+                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            else:
+                genes_select = compartment[y]
+            pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+            if pro_abundance1 is "no_abundance":
+                value1.append(None)
+            else:
+                pro_abundance1 = pro_abundance1.dropna()
+                x = sum(pro_abundance1['molecular/cell'])
+                value1.append(x)
+        result1[col0] = value1
+    return result1
 

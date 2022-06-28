@@ -23,6 +23,7 @@ ecYeast = load_matlab_model(dir1)
 # r_1761 ethanol production
 # r_1634 acetate secretion
 
+solution = ecYeast.optimize()
 
 
 gem_rxn_nov = produceRxnList(ecYeast)
