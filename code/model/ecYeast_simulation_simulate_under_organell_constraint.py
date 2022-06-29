@@ -32,21 +32,9 @@ compartment_in = organelle_v + organelle_m
 m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
 
 
-# find rxnid based on gene
-# constraint_organelle = 'plasma membrane'
-constraint_organelle = 'nucleus'
-organelle_target = constraint_organelle
-gene_target = m_gene_in_organelle[organelle_target]
-rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
-rxn_select = [x.replace("-A", "_A") for x in rxn_select]
-formula_list = ["model_tmp.reactions." + x + ".flux_expression" for x in rxn_select]
-formula_one = " + ".join(formula_list)
-
-
-def SimulateOrganelleProAbundance(min_pro_abs, max_pro_abs, flux_expression, ecModel):
+def SimulateOrganelleProAbundance(constraint_organelle, min_pro_abs, max_pro_abs, flux_expression, ecModel, saturation_cof = 0.44):
     # simulation in loop procedure
-    # in vivo saturation of all, saturation_cof=0.44 for CENPK strains
-    saturation_cof = 0.44
+    # in vivo saturation of all, saturation_cof=0.44 for CENPK.113-7D strain
     lower = min_pro_abs * saturation_cof
     upper = max_pro_abs * saturation_cof
     step = (upper - lower) / 10
@@ -88,9 +76,6 @@ def SimulateOrganelleProAbundance(min_pro_abs, max_pro_abs, flux_expression, ecM
     corr2, ss2 = pearsonr(organelle_abundance, predicted_usage)
     return corr1, corr2, result_df
 
-# test
-SimulateOrganelleProAbundance(min_pro_abs=0.000547014625181137, max_pro_abs=0.00117705130719705, flux_expression=formula_one, ecModel=ecYeast)
-
 
 # loop for different organelle
 # input the dataset information
@@ -107,26 +92,62 @@ organelle_m0 = ['fungal-type vacuole membrane',
  'peroxisomal membrane',
  'nuclear membrane']
 compartment_in0 = organelle_v0 + organelle_m0
-
 correlation1 = []
 correlation2 = []
 for org in compartment_in0:
     print(org)
-    org = 'mitochondrial inner membrane'
+    org = 'endoplasmic reticulum'
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3]
     max_value = compartment_info[7]
-    constraint_organelle = org
-    organelle_target = constraint_organelle
+    organelle_target = org
     gene_target = m_gene_in_organelle[organelle_target]
     rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
     rxn_select = [x.replace("-A", "_A") for x in rxn_select]
     formula_list = ["model_tmp.reactions." + x + ".flux_expression" for x in rxn_select]
     formula_one = " + ".join(formula_list)
-    c1, c2, c3 = SimulateOrganelleProAbundance(min_pro_abs=min_value, max_pro_abs=max_value, flux_expression=formula_one, ecModel=ecYeast)
+    c1, c2, df = SimulateOrganelleProAbundance(constraint_organelle=organelle_target, min_pro_abs=min_value, max_pro_abs=max_value, flux_expression=formula_one, ecModel=ecYeast)
     correlation1.append(c1)
     correlation2.append(c2)
-result_df = pd.DataFrame({"compartment_in0":compartment_in0,"abundance_growth_cor":correlation1, "abundance_cor":correlation2})
+
+result_df = pd.DataFrame({"compartment_in0": compartment_in0, "abundance_growth_cor": correlation1, "abundance_cor": correlation2})
 result_df.to_excel("result/correlation_analysis.xlsx")
+
+
+# check how saturation factor affect the model prediction
+saturation_growth = {}
+for saturation_cof0 in np.arange(0.2, 0.8, 0.1).tolist():
+    org = 'endoplasmic reticulum'
+    compartment_info = organelle_pro_range[org].tolist()
+    min_value = compartment_info[3]
+    max_value = compartment_info[7]
+    organelle_target = org
+    gene_target = m_gene_in_organelle[organelle_target]
+    rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
+    rxn_select = [x.replace("-A", "_A") for x in rxn_select]
+    formula_list = ["model_tmp.reactions." + x + ".flux_expression" for x in rxn_select]
+    formula_one = " + ".join(formula_list)
+    c1, c2, df = SimulateOrganelleProAbundance(constraint_organelle=organelle_target, min_pro_abs=min_value,
+                                               max_pro_abs=max_value, flux_expression=formula_one, ecModel=ecYeast,
+                                               saturation_cof=saturation_cof0)
+    saturation_growth[saturation_cof0] = df['growth']
+
+
+# analyze the result
+df_saturation = pd.DataFrame(saturation_growth)
+df_saturation.columns = ["ratio:" + str(round(x,2)) for x in np.arange(0.2, 0.8, 0.1)]
+df_saturation['endoplasmic reticulum'] = df['endoplasmic reticulum']
+# plot
+# plot
+plt.figure()
+sns.lineplot(x='endoplasmic reticulum', y='value', hue='variable', style="variable",
+             data=pd.melt(df_saturation, ['endoplasmic reticulum']))
+plt.xlabel("endoplasmic reticulum's protein abundance (mmol/gDW)")
+plt.ylabel("growth (/h)")
+
+
+
+
+
 
 
