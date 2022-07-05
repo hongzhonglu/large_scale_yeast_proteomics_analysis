@@ -96,7 +96,8 @@ correlation1 = []
 correlation2 = []
 for org in compartment_in0:
     print(org)
-    org = 'endoplasmic reticulum'
+
+    org = 'lipid droplet' # just for the test
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3]
     max_value = compartment_info[7]
@@ -106,12 +107,17 @@ for org in compartment_in0:
     rxn_select = [x.replace("-A", "_A") for x in rxn_select]
     formula_list = ["model_tmp.reactions." + x + ".flux_expression" for x in rxn_select]
     formula_one = " + ".join(formula_list)
-    c1, c2, df = SimulateOrganelleProAbundance(constraint_organelle=organelle_target, min_pro_abs=min_value, max_pro_abs=max_value, flux_expression=formula_one, ecModel=ecYeast)
+    c1, c2, detailed_info = SimulateOrganelleProAbundance(constraint_organelle=organelle_target, min_pro_abs=min_value, max_pro_abs=max_value, flux_expression=formula_one, ecModel=ecYeast)
+
     correlation1.append(c1)
     correlation2.append(c2)
 
 result_df = pd.DataFrame({"compartment_in0": compartment_in0, "abundance_growth_cor": correlation1, "abundance_cor": correlation2})
 result_df.to_excel("result/correlation_analysis.xlsx")
+
+
+
+
 
 
 # check how saturation factor affect the model prediction
