@@ -97,7 +97,7 @@ correlation2 = []
 for org in compartment_in0:
     print(org)
 
-    org = 'lipid droplet' # just for the test
+    org = 'plasma membrane' # just for the test
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3]
     max_value = compartment_info[7]
@@ -108,6 +108,7 @@ for org in compartment_in0:
     formula_list = ["model_tmp.reactions." + x + ".flux_expression" for x in rxn_select]
     formula_one = " + ".join(formula_list)
     c1, c2, detailed_info = SimulateOrganelleProAbundance(constraint_organelle=organelle_target, min_pro_abs=min_value, max_pro_abs=max_value, flux_expression=formula_one, ecModel=ecYeast)
+    print(",".join(gene_target))
 
     correlation1.append(c1)
     correlation2.append(c2)

@@ -1,5 +1,5 @@
-# Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
-# Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
+#TO-DO: will refine the script here!
+
 
 import matplotlib.pyplot as plt
 import os
@@ -13,7 +13,6 @@ import seaborn as sns
 # input the physiological datasets from Rosemerry
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
 # input the membrane size data
-# membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation.xlsx") # not curated
 membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx") # curated based on cell size under different growth rate
 membrane_size_tr = membrane_size.transpose()
 membrane_size_tr0 = membrane_size_tr.rename(columns=membrane_size_tr.iloc[1])
@@ -238,50 +237,6 @@ plt.savefig('result/figure/rose_miu_membrane_ratio_for_all.pdf', bbox_inches='ti
 
 
 
-"""
-# plot the figure in occupied area
-x0 = "dilution rate (/h)"
-for y0 in column_select10:
-    title0 = 'result/figure/rose_miu_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=0.18, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-x0 = 'qO2 (mmol/gDW h)'
-for y0 in column_select10:
-    title0 = 'result/figure/rose_qo2_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=5.4, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-
-x0 = 'total protein content (g/gDW)'
-for y0 in column_select10:
-    title0 = 'result/figure/rose_total_protein_content_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=0.286, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-"""
-
-
 
 # further explore the correlation between inner membrane and outer membrane
 membrane_size_tr0 = membrane_size_tr0.iloc[2:]
@@ -320,11 +275,8 @@ fig = plt.figure(figsize=(4,6))
 sns.regplot(xs, ys, ci=95)
 plt.xlabel('mitochondrial outer membrane')
 plt.ylabel('mitochondrial inner membrane')
-
-
 ax = sns.regplot(xs, ys, ci=95)
 ax.set(yscale='log')
-
 # fit a nonparametric regression using a lowess smoother.
 sns.lmplot(x="mitochondrial outer membrane", y="mitochondrial inner membrane", data=membrane_size_sysbio,
            lowess=True)
@@ -335,12 +287,14 @@ sns.lmplot(x="mitochondrial outer membrane", y="mitochondrial inner membrane", d
 membrane_per_cell_surface = membrane_only.copy()
 df_curated = calculateCurationCoefficent()
 # calculate the surface area
-
-
 total_volume = df_curated["cell_size"].tolist()
 all_radius =[(3*x/(4*math.pi))**(1/3) for x in total_volume]
 cell_surface_area = [4*math.pi*x**2 for x in all_radius]
 df_curated["cell_surface_area"] = cell_surface_area
+
+
+
+
 
 for y0 in column_select10:
     print(y0)
@@ -373,22 +327,6 @@ for y0 in column_select10:
 
 
 
-x0 = 'qO2 (mmol/gDW h)'
-for y0 in column_select10:
-    title0 = 'result/figure/rose_qo2_' + y0 + '_per_cell_surface.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=membrane_per_cell_surface, lowess=True, height=4, aspect=1)
-    plt.axvline(x=5.4, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " per cell surface",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-
-
-
 # plot the figure
 x0 = "cell_surface_area"
 for y0 in column_select10:
@@ -401,5 +339,3 @@ for y0 in column_select10:
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.savefig(title0, bbox_inches='tight')
-
-
