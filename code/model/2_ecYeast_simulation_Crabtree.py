@@ -15,25 +15,6 @@ import pprint
 from src.model_process import *
 from src.mainFunction import *
 
-dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
-
-#dir3 = "/Users/xluhon/Documents/GitHub/ecModels/ecYeastGEM/model/ecYeastGEM_batch.mat" # can't calculate the maximal growth at 0.424??
-
-ecYeast = load_matlab_model(dir1)
-
-# reaction annotation
-# r_2111 growth
-# r_1714_REV glucose uptake
-# r_1992_REV oxygen uptake
-# r_1672 co2 production
-# r_1761 ethanol production
-# r_1634 acetate secretion
-
-
-# simulation based on the minimization of protein abundances
-# it should be noted that if the growth the over than 0.38, the model will not have right solution.
-model = ecYeast.copy()
-growth0 = [0.01, 0.02, 0.04, 0.06, 0.08, 0.1, 0.2, 0.3, 0.31, 0.32, 0.33, 0.34, 0.35, 0.379]
 def Crabtree_Simulate(ecModel_batch, growth_list):
     model = ecModel_batch.copy()
     growth = growth_list
@@ -92,17 +73,50 @@ def Crabtree_Simulate(ecModel_batch, growth_list):
     plt.show()
     return gem_rxn_nov
 
+dir1 = "/Users/xluhon/Documents/GitHub/GECKO2_simulations/ecModels/ecYeastGEM/ecYeastGEM_batch.mat"
+#dir3 = "/Users/xluhon/Documents/GitHub/ecModels/ecYeastGEM/model/ecYeastGEM_batch.mat" # can't calculate the maximal growth at 0.424??
+ecYeast = load_matlab_model(dir1)
+# reaction annotation
+# r_2111 growth
+# r_1714_REV glucose uptake
+# r_1992_REV oxygen uptake
+# r_1672 co2 production
+# r_1761 ethanol production
+# r_1634 acetate secretion
+
+# simulation based on the minimization of protein abundances
+# it should be noted that if the growth the over than 0.38, the model will not have right solution.
+model = ecYeast.copy()
+growth0 = [0.01, 0.02, 0.04, 0.06, 0.08, 0.1, 0.2, 0.3, 0.31, 0.32, 0.33, 0.34, 0.35, 0.379]
 fluxes = Crabtree_Simulate(ecModel_batch=model, growth_list=growth0)
-
-
-
-
 
 # crabtree simulation for Jianye datasets
 growth2 = [0.027, 0.044, 0.102, 0.152, 0.214, 0.254, 0.284, 0.334, 0.379]
 fluxes = Crabtree_Simulate(ecModel_batch=model, growth_list=growth2)
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# other scripts
 # combine the predicted proteomics and measured
 all_dilution = ["D=" + str(i) for i in growth2]
 omcis_jianye = pd.read_csv("data/proteomics/Omics_from_Jianye.csv")
@@ -124,10 +138,6 @@ result0 = result[['GPR', 'rxnID'] + all_dilution]
 # combine the predicted and measured omics
 df_combine = pd.merge(left=result0, right=omcis_jianye1, left_on=['rxnID'], right_on = ['Accession'], how="left")
 df_combine.to_excel("result/data_combine_xia_dataset.xlsx")
-
-
-
-
 
 
 # plot

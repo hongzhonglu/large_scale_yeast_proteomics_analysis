@@ -2,6 +2,8 @@ from cobra.io import read_sbml_model
 import pandas as pd
 from src.mainFunction import *
 
+
+
 def getALLGEMgene():
     """
     The function is used to get the metabolic gene list.
@@ -13,6 +15,7 @@ def getALLGEMgene():
         print(x.id)
         gene_yeast.append(x.id)
     return gene_yeast
+
 
 
 def getTransporterCellMembraneGEM():
@@ -36,6 +39,7 @@ def getTransporterCellMembraneGEM():
     return m_gene_plasma_membrane
 
 
+
 def getProteinForRxnGEM(rxnID):
     """
     Get the proteins based on reaction IDs
@@ -48,6 +52,7 @@ def getProteinForRxnGEM(rxnID):
     df = rxn_gene[rxn_gene['rxnID'].isin(rxnID)]
     pro_list = list(set((df['gene'])))
     return pro_list
+
 
 
 def exchange_ecYeast(s1, subystem):
@@ -78,6 +83,8 @@ def exchange_ecYeast(s1, subystem):
         else:
             subystem[i] = subystem[i]
     return subystem
+
+
 
 # function copy from strain_design repo
 def ecYeastMinimalMedia(model):
@@ -110,6 +117,7 @@ def ecYeastMinimalMedia(model):
     return model
 
 
+
 def chemostatSimulation(model0, D0):
     """
     This funcion is used to simulate the chemostat growth of yeast
@@ -132,6 +140,7 @@ def chemostatSimulation(model0, D0):
         model0.objective = {model0.reactions.prot_pool_exchange: -1}
         solution3 = model0.optimize()
     return solution3
+
 
 
 def simulationCompare(model_in, growth_in, objective):
@@ -188,6 +197,7 @@ def simulationCompare(model_in, growth_in, objective):
     return solution1, solution2, solution3, solution4
 
 
+
 def getRxnByGene(model, gene0):
     """
     :param model: A metabolic model
@@ -207,6 +217,8 @@ def getRxnByGene(model, gene0):
     return rxn_list2
 
 
+
+"""
 def getRxnByReactionName(model, name):
     for rxn in model.reactions:
         if name in rxn.name:
@@ -214,11 +226,15 @@ def getRxnByReactionName(model, name):
             return rxn.id
         else:
             return None
+"""
+
 
 
 def getRxnByReactionName(model, name):
     """
     This function is used to extract the rxn id based on rxn name
+    It is suitable for ecGEMs as multiple reations could use the same name
+
     :param model:
     :param name:
     :return:
@@ -229,6 +245,7 @@ def getRxnByReactionName(model, name):
             #print(rxn.id)
             s.append(rxn.id)
     return s
+
 
 
 def DLecModelSimulate(model, dilution_rate):

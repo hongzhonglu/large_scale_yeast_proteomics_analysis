@@ -43,6 +43,8 @@ def SimulateOrganelleProAbundance(constraint_organelle, min_pro_abs, max_pro_abs
     predicted_usage = []
     ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)  # this is like the total protein pools in model, this constraint will affect growth prediction greatly.
     for upper_v in np.arange(lower, upper, step).tolist():
+        # test
+        # upper_v = lower
         model_tmp = ecModel.copy()
         same_flux = model_tmp.problem.Constraint(eval(flux_expression), lb=lower, ub=upper_v, name='same_flux')
         model_tmp.add_cons_vars(same_flux)
@@ -54,6 +56,7 @@ def SimulateOrganelleProAbundance(constraint_organelle, min_pro_abs, max_pro_abs
         model_tmp.objective = objective
         solution2 = model_tmp.optimize()
         print("Max growth:" + str(solution2.objective_value))
+
         fluxes_select = solution2.fluxes[rxn_select]
         abundance_select0 = sum(list(fluxes_select))
         print("Total abundance:" + str(abundance_select0))
@@ -76,6 +79,10 @@ def SimulateOrganelleProAbundance(constraint_organelle, min_pro_abs, max_pro_abs
     corr2, ss2 = pearsonr(organelle_abundance, predicted_usage)
     return corr1, corr2, result_df
 
+# test1 fluxes analysis
+# gem_rxn_nov["fluxes"] = list(solution2.fluxes)
+# gem_rxn_nov.to_excel("result/fluxes_analysis_test.xlsx")
+
 
 # loop for different organelle
 # input the dataset information
@@ -94,20 +101,23 @@ organelle_m0 = ['fungal-type vacuole membrane',
 compartment_in0 = organelle_v0 + organelle_m0
 correlation1 = []
 correlation2 = []
+
+
 for org in compartment_in0:
     print(org)
 
-    org = 'plasma membrane' # just for the test
+    org = 'mitochondrial inner membrane' # just for the test
     compartment_info = organelle_pro_range[org].tolist()
-    min_value = compartment_info[3]
-    max_value = compartment_info[7]
+    min_value = compartment_info[3] # minimum  value
+    max_value = compartment_info[6] # 75% percentage
     organelle_target = org
     gene_target = m_gene_in_organelle[organelle_target]
     rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
     rxn_select = [x.replace("-A", "_A") for x in rxn_select]
     formula_list = ["model_tmp.reactions." + x + ".flux_expression" for x in rxn_select]
     formula_one = " + ".join(formula_list)
-    c1, c2, detailed_info = SimulateOrganelleProAbundance(constraint_organelle=organelle_target, min_pro_abs=min_value, max_pro_abs=max_value, flux_expression=formula_one, ecModel=ecYeast)
+    c1, c2, detailed_info = SimulateOrganelleProAbundance(constraint_organelle=organelle_target, min_pro_abs=min_value, max_pro_abs=max_value,
+                                                          flux_expression=formula_one, ecModel=ecYeast, saturation_cof = 0.44)
     print(",".join(gene_target))
 
     correlation1.append(c1)
