@@ -73,3 +73,5 @@ yeast_gem0.to_excel("result/yeast_gem_with_structure_id_and_score.xlsx")
 
 # find position of specific protein
 # data_merge["id_update"][data_merge["id_update"] == "P38427"].index[0]
+
+

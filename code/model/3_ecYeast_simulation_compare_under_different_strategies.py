@@ -35,12 +35,6 @@ pro_size = pd.read_excel("../result/sce_protein_size_3D_structure.xlsx")
 gene_prot["pro_volume"] = singleMapping(pro_size['Total_Volume'], pro_size['locus'], gene_prot['GPR'])
 pro_volume = gene_prot["pro_volume"].to_list()
 
-
-
-
-
-
-
 # prepare model and new objective funcion
 model = ecYeast.copy()
 # define the new objective function and this will be added into the model
@@ -70,6 +64,47 @@ model.reactions.get_by_id("r_1549").upper_bound = 0 # assume (R,R)-2,3-butanedio
 
 
 
+
+
+# single data point test
+i = 0.1
+s1, s2, s3, s4, s5 = simulationCompare(model_in=model, growth_in=i, objective=new_objective)
+# get the abundance
+flux_max = s3.fluxes
+result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
+result = result[result['rxnID'].str.contains("draw_prot")]
+result['rxnID'] = result['rxnID'].str.replace("draw_prot_", "")
+
+
+flux_max = s4.fluxes
+result1 = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
+result1 = result1[result1['rxnID'].str.contains("draw_prot")]
+result1['rxnID'] = result1['rxnID'].str.replace("draw_prot_", "")
+
+
+# plot
+import seaborn as sns
+import matplotlib.pyplot as plt
+import numpy as np
+from scipy.stats import pearsonr
+sns.regplot(x=result['flux'], y=result1['flux'], fit_reg=False)
+plt.xlabel("Protein pool minimization")
+plt.ylabel("Volume minimization")
+
+corr, ss = pearsonr(result['flux'], result1['flux'])
+print("Correlation coefficient:", corr)
+print("Correlation p_value:", ss)
+
+
+
+
+
+
+
+
+
+
+
 # part2 simulation under the same framework
 growth = [0.01, 0.02, 0.03,0.04,0.05, 0.06,0.07, 0.08, 0.09, 0.1, 0.12,0.14,0.16,0.18, 0.2,0.22,0.24,0.26,0.28, 0.3, 0.31, 0.32, 0.33, 0.34, 0.35]
 
@@ -85,7 +120,7 @@ pro_pool4 = []
 
 for i in growth:
     print(i)
-    s1,s2,s3,s4=simulationCompare(model_in=model, growth_in=i, objective=new_objective)
+    s1,s2,s3,s4,s5=simulationCompare(model_in=model, growth_in=i, objective=new_objective)
     g1,g2,g3,g4=s1.fluxes['r_1714_REV'],s2.fluxes['r_1714_REV'],s3.fluxes['r_1714_REV'],s4.fluxes['r_1714_REV']
     p1, p2, p3,p4 = s1.fluxes['prot_pool_exchange'], s2.fluxes['prot_pool_exchange'], s3.fluxes['prot_pool_exchange'], s4.fluxes['prot_pool_exchange']
     glucose_uptake1.append(g1)

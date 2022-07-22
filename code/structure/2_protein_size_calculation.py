@@ -14,7 +14,7 @@ from src.mainFunction import *
 # Input the datasets
 data_merge = pd.read_csv("data/sce_protein_weight.tsv",sep='\t')
 
-# calculate the size of proteins
+# calculate the size of proteins based on the molecular weight
 radius_list = []
 volume_list = []
 section_area_list = []

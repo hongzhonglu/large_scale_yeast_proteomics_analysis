@@ -167,4 +167,36 @@ plt.ylabel("growth (/h)")
 
 
 
+# this function need to be refined further
+def simulationWithStructure(model_in, growth_in, objective2):
+    """
+    This function is used to compare the result when different objective function is employed.
+    :param model_in:
+    :param growth_in:
+    :param objective2: a kind of objective for ecModel_batch, which could minimize the total protein volume
+    :return:
+    """
+    # 1_minimize protein volume and minimize the protein sectional area from plasma membrane
+    with model_in:
+        model0 = ecYeastMinimalMedia(model_in)
+        # set growth
+        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
+        # minimization glucose uptake rate
+        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 10)  # open the glucose
+        model0.objective = objective2
+        solution4 = model0.optimize()
 
+    # 2_minimize the glucose uptake and protein volume
+    with model_in:
+        model0 = ecYeastMinimalMedia(model_in)
+        # set growth
+        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
+        # minimization glucose uptake rate
+        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
+        model0.objective = {model0.reactions.r_1714_REV: -1}
+        solution00 = model0.optimize()
+        GR = solution00.fluxes["r_1714_REV"]  # get the glucose uptake rate
+        model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
+        model0.objective = objective2
+        solution5 = model0.optimize()
+    return solution4, solution5

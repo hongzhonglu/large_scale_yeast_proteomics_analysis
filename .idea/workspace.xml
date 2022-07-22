@@ -3,20 +3,24 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulate_connect_cell_size_with_proteome.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_Crabtree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_max_growth.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_minimization_occupancy.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_prepare_constraint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_simulation_simulate_under_organell_constraint.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_test_from_deep_learning.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/ecYeast_update_biomass_and_protein_limitation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/yeastGEM_preprocess.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/1_ecYeast_from_deep_learning_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1_ecYeast_from_deep_learning_pro_abundance_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/3_ecYeast_simulation_compare_under_different_strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/3_ecYeast_simulation_compare_under_different_strategies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/4_ecYeast_simulation_simulate_under_organell_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4_ecYeast_simulation_simulate_under_organell_constraint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_MW_other_species.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_ITASSER.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/1_preprocess_pdb_file_ITASSER.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_alphafold2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/1_preprocess_pdb_file_alphafold2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_complexes_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_for_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.2_structure_features_gene_function_annotation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_geometricus.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.1_structure_features_geometricus.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_check.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/combine_organelle_size_with_proteome_calculation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/combine_organelle_size_with_proteome_calculation.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/crabtree_effect_simulation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/crabtree_effect_simulation.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs_rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/~$combine_organelle_size_with_proteome_calculation.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/~$fluxes_analysis_test.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -230,18 +234,18 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py</url>
           <line>109</line>
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py</url>
           <line>129</line>
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/model_process.py</url>
-          <line>250</line>
+          <line>251</line>
           <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>

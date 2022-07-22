@@ -83,6 +83,40 @@ plt.figure()
 sns.regplot(x=result_unify['pro_measured'], y=result_unify['flux'], fit_reg=False)
 plt.xlabel("Measured_protein_copy/cell")
 plt.ylabel("Predicted_protein_copy/cell")
+# reanalyze the result based on gene locations?
+# generate the general formula as the constraint
+# all metabolic genes from ecGEMs
+
+# second ecYeast based om deep learning
+dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
+ecYeast = read_sbml_model(dir2)
+gem_rxn_nov = produceRxnList(ecYeast)
+gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("prot_")]
+gene_prot['geneID'] = gene_prot['rxnID'].str.replace("prot_", "")
+ss = gene_prot[gene_prot['geneID'].str.contains("-")]
+organelle_v = collectOrganelleTerm(type="volume")
+organelle_m = collectOrganelleTerm(type="m")
+gene_metabolic = gene_prot["geneID"].tolist()
+compartment_in = organelle_v + organelle_m
+m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
+
+
+organelle_target = 'endoplasmic reticulum'
+gene_target = m_gene_in_organelle[organelle_target]
+result_unify_c = result_unify[result_unify["geneID"].isin(gene_target)]
+plt.figure()
+sns.regplot(x=np.log10(result_unify_c['pro_measured']+1), y=np.log10(result_unify_c['flux']+1), fit_reg=False)
+plt.xlim(-0.5, 7)
+plt.ylim(-0.5, 7)
+plt.xlabel("log10(Measured_protein_copy/cell + 1)")
+plt.ylabel("log10(Predicted_protein_copy/cell +1)")
+
+(sum(result_unify_c['flux'])-449824)/(sum(result_unify_c['pro_measured'])-84034)
+getRxnByGene(ecYeast, "YJL167W")
+
+#result_unify["predict_per_measure"] = result_unify['flux']/result_unify['pro_measured']
+#result_unify = result_unify.sort_values(by=['predict_per_measure'], ascending=False)
+
 
 
 
