@@ -22,7 +22,6 @@ for rxn in ecYeast.reactions:
         ecYeast.reactions.get_by_id(rxn.id).id = rxn.id.replace("-A", "_A")
 
 
-
 # generate the general formula as the constraint
 # all metabolic genes from ecGEMs
 organelle_v = collectOrganelleTerm(type="volume")
@@ -169,6 +168,11 @@ result1 = result1[result1['pro_measured'] > 0]
 corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
+
+
+
+
+
 
 
 

@@ -205,7 +205,6 @@ for organelle_target in compartment_in0:
     print("Correlation p_value:", ss)
 
 
-
 # Note: It also shows that the predicted abundance of YJL167W is much higher than the measured one!
 # 'endoplasmic reticulum' contains YJL167W
 getRxnByGene(ecYeast, "YJL167W")
@@ -213,17 +212,6 @@ getRxnByGene(ecYeast, "YJL167W")
 (sum(result_unify_c['flux']))/(sum(result_unify_c['pro_measured']))
 
 # Note: endoplasmic reticulum membrane, predicted protein abundance for YNR016C and YGR060W is much higher than measured
-#
-
-
-
-
-
-
-
-
-
-
 
 
 

@@ -7,9 +7,7 @@
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/4.1_ecYeast_simulation_effects_of_organell_constraint_on_growth.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.1_ecYeast_simulation_effects_of_organell_constraint_on_growth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_check.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_under_organell_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_under_organell_constraint.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
