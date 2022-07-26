@@ -14,6 +14,68 @@ from src.protein_process import *
 # compare the predicted and measured protein abundances
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
 ecYeast = read_sbml_model(dir2)
+
+
+
+
+# update the model
+# for gene connect with only one reaction
+rxnID = getRxnByGene(model=ecYeast, gene0='YNR016C')
+# the following script will be in a function
+# note: gene, rxn and kcat should be mapped before run the function
+target_gene0 = 'YNR016C'
+rxnID0 = 'r_0109'
+kcat_m0 = 8.5*3600 # unit is /h
+
+
+def updateEcGEMkcat(ecGEM, target_gene, rxnID, kcat_m):
+    ecModel = ecGEM.copy()
+    coef = 1 / kcat_m
+    ss = ecModel.reactions.get_by_id(rxnID).reaction
+    # split as coefficient
+    ss1 = ss.split(" + ")
+    ss2 = []
+    for xx in ss1:
+        if target_gene + '[' in xx:
+            xx1 = xx.split(' ')[1]
+            xx2 = str(coef) + ' ' + xx1
+            print('old coefficient', xx)
+            print('old kcat', 1 / float(xx.split(' ')[0]))
+            print('new coefficient', xx2)
+            print('new kcat', kcat_m)
+            ss2.append(xx2)
+        else:
+            ss2.append(xx)
+    rxn_update = " + ".join(ss2)
+    print('old rxn:', ss)
+    print('new rxn:', rxn_update)
+    ecModel.reactions.get_by_id(rxnID).reaction = rxn_update
+    return ecModel
+
+
+ecYeast = updateEcGEMkcat(ecGEM=ecYeast, target_gene=target_gene0, rxnID=rxnID0, kcat_m=kcat_m0)
+ecYeast.reactions.get_by_id('r_0109').reaction
+
+
+
+
+rxnID = getRxnByGene(model=ecYeast, gene0='YGR060W')
+for rxnID0 in rxnID:
+    ss = ecYeast.reactions.get_by_id(rxnID0).reaction
+    print(rxnID0)
+    print(ss)
+
+# using a loop
+for rxn0 in rxnID:
+    target_gene0 = 'YGR060W'
+    kcat_m0 = 1/6.11002831284031e-05
+    ecYeast = updateEcGEMkcat(ecGEM=ecYeast, target_gene=target_gene0, rxnID=rxn0, kcat_m=kcat_m0)
+
+
+
+
+
+# solve the model
 solution3 = DLecModelSimulate(model=ecYeast, dilution_rate=0.42)
 flux_max = solution3.fluxes
 result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
@@ -127,6 +189,7 @@ compartment_in0 = organelle_v0 + organelle_m0
 for organelle_target in compartment_in0:
     print(organelle_target)
     #test
+    organelle_target = 'endoplasmic reticulum membrane'
     gene_target = m_gene_in_organelle[organelle_target]
     result_unify_c = result_unify[result_unify["geneID"].isin(gene_target)]
     plt.figure()
@@ -143,10 +206,35 @@ for organelle_target in compartment_in0:
 
 
 
-
 # Note: It also shows that the predicted abundance of YJL167W is much higher than the measured one!
 # 'endoplasmic reticulum' contains YJL167W
 getRxnByGene(ecYeast, "YJL167W")
 (sum(result_unify_c['flux'])-449824)/(sum(result_unify_c['pro_measured'])-84034)
 (sum(result_unify_c['flux']))/(sum(result_unify_c['pro_measured']))
 
+# Note: endoplasmic reticulum membrane, predicted protein abundance for YNR016C and YGR060W is much higher than measured
+#
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#TODO
+# for gene connect with multiple reactions???
+rxnID = getRxnByGene(model=ecYeast, gene0='YGR060W')
+for rxnID0 in rxnID:
+    ss = ecYeast.reactions.get_by_id(rxnID0).reaction
+    print(rxnID0)
+    print(ss)
+
+flux_max[rxnID]

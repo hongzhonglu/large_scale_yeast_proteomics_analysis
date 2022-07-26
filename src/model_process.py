@@ -287,7 +287,7 @@ def DLecModelSimulate(model, dilution_rate):
    # find the related rxnID
    idx = []
    for name0 in ex_mets:
-       print(name0)
+       #print(name0)
        s = getRxnByReactionName(model=ecYeast, name=name0)
        if len(s) > 1:
            print("need check")
@@ -301,9 +301,13 @@ def DLecModelSimulate(model, dilution_rate):
    solution2 = model_tmp.optimize()
    # then fix glucose uptake and minimize the protein pool
    model_tmp.reactions.get_by_id(idx[1]).lower_bound = solution2.objective_value * 1.00001
+   print('Glucose uptake rate: ',solution2.objective_value)
    model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000 # protein pool
    model_tmp.objective = {model_tmp.reactions.EX_protein_pool: 1}  # minimize the usage of protein pools
    solution_f = model_tmp.optimize()
    solution_f.fluxes["EX_protein_pool"]
    solution_f.fluxes["r_1714"]
    return solution_f
+
+
+

@@ -111,7 +111,7 @@ correlation2 = []
 
 for org in compartment_in0:
     print(org)
-    #org = 'mitochondrial inner membrane' # just for the test
+    org = 'endoplasmic reticulum membrane' # just for the test
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3] # minimum  value
     max_value = compartment_info[6] # 75% percentage
