@@ -59,9 +59,10 @@ organelle_m0 = ['fungal-type vacuole membrane',
  'endoplasmic reticulum membrane',
  'mitochondrial inner membrane',
  'Golgi membrane',
- 'peroxisomal membrane',
- 'nuclear membrane']
+ 'peroxisomal membrane', #only with one metabolic gene from ecYeast
+ 'nuclear membrane'] #only with one metabolic gene from ecYeast
 compartment_in0 = organelle_v0 + organelle_m0
+
 
 for org in compartment_in0:
     print(org)
@@ -78,6 +79,11 @@ for org in compartment_in0:
     constraint_name = org + '_constraint'
     constraint_name = constraint_name.replace(' ','_')
     ecYeast = AddOrgConstraint(ecModel=ecYeast, flux_expression=formula_one, min_pro_abs=min_value, max_pro_abs=max_value, constraint_name=constraint_name, saturation_cof = 0.44)
+# check the growth
+objective = ecYeast.problem.Objective(ecYeast.reactions.r_4041.flux_expression, direction='max') # biomass
+ecYeast.objective = objective
+solution2 = ecYeast.optimize()
+print("Max growth:", solution2.objective_value)
 
 
 # reset the constraints????
@@ -90,10 +96,18 @@ for org in compartment_in0:
     max_value = compartment_info[7] # max value
     ecYeast.constraints[constraint_name].ub = max_value
     ecYeast.constraints[constraint_name].lb = min_value
+# check the growth
+objective = ecYeast.problem.Objective(ecYeast.reactions.r_4041.flux_expression, direction='max') # biomass
+ecYeast.objective = objective
+solution2 = ecYeast.optimize()
+print("Max growth:", solution2.objective_value)
 
 
 
 
+
+
+# it found that if using the above constraint, the growth is very small. Some organelle protein total abundance is too strict.
 # check the effect of constraints
 org0 = 'endoplasmic reticulum membrane'
 ecYeast2 = ecYeast.copy() # copy model, each time only parameter is changed!
@@ -115,10 +129,14 @@ print(constraint_name0)
 compartment_info = organelle_pro_range[org0].tolist()
 max_value = compartment_info[7]*9 # max value
 ecYeast2.constraints[constraint_name0].ub = max_value
-objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression,                                       direction='max')  # biomass
+objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max')  # biomass
 ecYeast2.objective = objective
 solution2 = ecYeast2.optimize()
 print(solution2.objective_value)
+
+
+
+
 
 
 # just initial compare the predicted protein abundance and the total abundances
@@ -126,7 +144,6 @@ flux_max = solution2.fluxes
 result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result = result[result['rxnID'].str.contains("prot_")]
 result['geneID'] = result['rxnID'].str.replace("prot_", "")
-
 
 # input the measured protein abundances
 omics_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
@@ -146,7 +163,6 @@ plt.ylim(-11, 0)
 plt.xlabel("log10(Measured_protein_level)")
 plt.ylabel("log10(Predicted_protein_usage)")
 
-
 from scipy.stats import pearsonr
 result1 = result[result['flux'] > 0]
 result1 = result1[result1['pro_measured'] > 0]
@@ -160,16 +176,6 @@ print("Correlation p_value:", ss)
 
 
 
-
-
-
-
-# save the model
-# however the constraints newly added can't be saved and reused!!
-# import cobra
-# cobra.io.write_sbml_model(ecYeast, "data/ecYeastWithOrgConstraint.xml")
-# ecYeast = cobra.io.read_sbml_model("data/ecYeastWithOrgConstraint.xml")
-
 # loops to find which constraint affect the model output
 max_growth = []
 for org in compartment_in0:
@@ -181,8 +187,7 @@ for org in compartment_in0:
     max_value = compartment_info[7]*2 # max value
     ecYeast2.constraints[constraint_name].ub = max_value
     # check which constraint affect the simulation??
-    objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression,
-                                          direction='max')  # biomass
+    objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max')  # biomass
     ecYeast2.objective = objective
     solution2 = ecYeast2.optimize()
     max_growth.append(solution2.objective_value)
@@ -190,5 +195,9 @@ for org in compartment_in0:
 for x, y in zip(compartment_in0, max_growth):
     print(x, y)
 
-
+# save the model
+# however the constraints newly added can't be saved and reused!!
+# import cobra
+# cobra.io.write_sbml_model(ecYeast, "data/ecYeastWithOrgConstraint.xml")
+# ecYeast = cobra.io.read_sbml_model("data/ecYeastWithOrgConstraint.xml")
 
