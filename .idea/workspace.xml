@@ -1,27 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1_ecYeast_from_deep_learning_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1_ecYeast_from_deep_learning_pro_abundance_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/3_ecYeast_simulation_compare_under_different_strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/3_ecYeast_simulation_compare_under_different_strategies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/4_ecYeast_simulation_simulate_under_organell_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4_ecYeast_simulation_simulate_under_organell_constraint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_MW_other_species.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_ITASSER.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/1_preprocess_pdb_file_ITASSER.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/preprocess_pdb_file_alphafold2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/1_preprocess_pdb_file_alphafold2.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_complexes_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_for_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_gene_function_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.2_structure_features_gene_function_annotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/structure_features_geometricus.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.1_structure_features_geometricus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/1_ecYeast_from_GECKO_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_GECKO_pro_abundance_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/1_ecYeast_from_deep_learning_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/2_ecYeast_from_deep_learning_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/2.2_ecYeast_from_DL_simulation_Crabtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/2_ecYeast_simulation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/2.1_ecYeast_simulation_Crabtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/3_ecYeast_simulation_compare_under_different_strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/3.1_ecYeast_simulation_compare_under_different_strategies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/4_ecYeast_simulation_simulate_under_organell_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_under_organell_constraint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/data_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_check.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/combine_organelle_size_with_proteome_calculation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/combine_organelle_size_with_proteome_calculation.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs_rosemary.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/~$combine_organelle_size_with_proteome_calculation.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/~$fluxes_analysis_test.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/Omics_from_tao_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/Omics_from_tao_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/predicted_and_measured_proteomics.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/predicted_and_measured_proteomics.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

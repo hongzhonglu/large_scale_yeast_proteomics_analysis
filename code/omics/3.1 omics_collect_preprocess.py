@@ -289,7 +289,7 @@ omics_tao1 = omics_tao0[['Accession','Gene']]
 for x in columns0:
     if "prot" in x:
         print(x)
-        ss1 = omics_tao0[x]*1e-09
+        ss1 = omics_tao0[x]*1e-09    # change the unit as mmol/gDW!
         omics_tao1[x] = list(ss1)
 # id mapping
 id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")

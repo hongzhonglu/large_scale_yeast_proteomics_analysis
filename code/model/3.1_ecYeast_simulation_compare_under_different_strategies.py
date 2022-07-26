@@ -1,7 +1,8 @@
-# this module is mainly for ecModel simulation
-# which model should be used?
-# first compare the model difference
-# version 1
+# The script is used to test different optimization principles
+# For example, how minimization of total protein volume affect the model output?
+
+
+
 from cobra.io import load_matlab_model
 import matplotlib.pyplot as plt
 import os
@@ -94,12 +95,6 @@ plt.ylabel("Volume minimization")
 corr, ss = pearsonr(result['flux'], result1['flux'])
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
-
-
-
-
-
-
 
 
 

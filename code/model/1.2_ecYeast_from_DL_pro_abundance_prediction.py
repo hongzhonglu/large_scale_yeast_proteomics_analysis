@@ -42,18 +42,11 @@ result['pro_measured'] = singleMapping(abundance_ex1["mmol/gDW"],abundance_ex1["
 result = result[~result["pro_measured"].isna()]
 result.to_excel("data/data_check.xlsx")
 
-
 # change the protein abundance unit from mmol/gDW into protein copy/cell
 coefficient1 = 7.8298e9
 result_unify = result.copy()
 result_unify["pro_measured"] = result['pro_measured']*coefficient1
 result_unify["flux"] = result['flux']*coefficient1
-
-
-
-
-
-
 
 
 # plot
@@ -69,6 +62,13 @@ plt.xlim(-11, 0)
 plt.ylim(-11, 0)
 plt.xlabel("log10(Measured_protein_level)")
 plt.ylabel("log10(Predicted_protein_usage)")
+
+from scipy.stats import pearsonr
+result1 = result[result['flux'] > 0]
+result1 = result1[result1['pro_measured'] > 0]
+corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
+print("Correlation coefficient:", corr)
+print("Correlation p_value:", ss)
 
 
 # method2 protein copy/cell
@@ -87,7 +87,15 @@ plt.ylabel("Predicted_protein_copy/cell")
 # generate the general formula as the constraint
 # all metabolic genes from ecGEMs
 
-# second ecYeast based om deep learning
+
+
+
+
+
+
+# part 2
+# classify metabolic genes based on organelles
+# then check the correlation in each organelles
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
 ecYeast = read_sbml_model(dir2)
 gem_rxn_nov = produceRxnList(ecYeast)
@@ -101,44 +109,44 @@ compartment_in = organelle_v + organelle_m
 m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
 
 
-organelle_target = 'endoplasmic reticulum'
-gene_target = m_gene_in_organelle[organelle_target]
-result_unify_c = result_unify[result_unify["geneID"].isin(gene_target)]
-plt.figure()
-sns.regplot(x=np.log10(result_unify_c['pro_measured']+1), y=np.log10(result_unify_c['flux']+1), fit_reg=False)
-plt.xlim(-0.5, 7)
-plt.ylim(-0.5, 7)
-plt.xlabel("log10(Measured_protein_copy/cell + 1)")
-plt.ylabel("log10(Predicted_protein_copy/cell +1)")
+# loop
+organelle_v0 = ['mitochondrion', 'nucleus', 'cytosol',
+ 'endoplasmic reticulum', 'lipid droplet', 'fungal-type vacuole',
+ 'peroxisome', 'Golgi apparatus']
+organelle_m0 = ['fungal-type vacuole membrane',
+ 'plasma membrane',
+ 'mitochondrial outer membrane',
+ 'endoplasmic reticulum membrane',
+ 'mitochondrial inner membrane',
+ 'Golgi membrane']
+compartment_in0 = organelle_v0 + organelle_m0
 
-(sum(result_unify_c['flux'])-449824)/(sum(result_unify_c['pro_measured'])-84034)
+# Note: it shows that four genes from 'Golgi membrane' were not related to the core metabolic functions from the model, so the predicted protein abudance is zero.
+
+
+for organelle_target in compartment_in0:
+    print(organelle_target)
+    #test
+    gene_target = m_gene_in_organelle[organelle_target]
+    result_unify_c = result_unify[result_unify["geneID"].isin(gene_target)]
+    plt.figure()
+    sns.regplot(x=np.log10(result_unify_c['pro_measured'] + 1), y=np.log10(result_unify_c['flux'] + 1), fit_reg=False)
+    plt.xlim(-0.5, 7)
+    plt.ylim(-0.5, 7)
+    plt.xlabel("log10(Measured_protein_copy/cell + 1)")
+    plt.ylabel("log10(Predicted_protein_copy/cell +1)")
+    plt.suptitle(organelle_target)
+    # calculate the correlation coefficients - method2
+    corr, ss = pearsonr(np.log10(result_unify_c['pro_measured'] + 1), np.log10(result_unify_c['flux'] + 1))
+    print("Correlation coefficient:", corr)
+    print("Correlation p_value:", ss)
+
+
+
+
+# Note: It also shows that the predicted abundance of YJL167W is much higher than the measured one!
+# 'endoplasmic reticulum' contains YJL167W
 getRxnByGene(ecYeast, "YJL167W")
+(sum(result_unify_c['flux'])-449824)/(sum(result_unify_c['pro_measured'])-84034)
+(sum(result_unify_c['flux']))/(sum(result_unify_c['pro_measured']))
 
-#result_unify["predict_per_measure"] = result_unify['flux']/result_unify['pro_measured']
-#result_unify = result_unify.sort_values(by=['predict_per_measure'], ascending=False)
-
-
-
-
-
-
-# calculate the correlation coefficients - method1
-# remove the proteins with zero
-result1 = result[result['flux'] > 0]
-result1 = result1[result1['pro_measured'] > 0]
-corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
-print("Correlation coefficient:", corr)
-print("Correlation p_value:", ss)
-
-
-# calculate the correlation coefficients - method2
-corr, ss = pearsonr(np.log10(result_unify['pro_measured']+1), np.log10(result_unify['flux']+1))
-print("Correlation coefficient:", corr)
-print("Correlation p_value:", ss)
-
-
-result_unify1 = result_unify[result_unify['flux'] > 0]
-result_unify1 = result_unify1[result_unify1['pro_measured'] > 0]
-corr, ss = pearsonr(np.log10(result_unify1['pro_measured']), np.log10(result_unify1['flux']))
-print("Correlation coefficient:", corr)
-print("Correlation p_value:", ss)

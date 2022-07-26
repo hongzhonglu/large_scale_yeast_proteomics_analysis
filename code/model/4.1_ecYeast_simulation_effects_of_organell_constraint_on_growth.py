@@ -32,7 +32,14 @@ compartment_in = organelle_v + organelle_m
 m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
 
 
+
+
+# The following script is mainly used to check the organelle total abundance affect the cellular growth rate
+# it is found some organlle protein total abudance have no affect while others have?
 def SimulateOrganelleProAbundance(constraint_organelle, min_pro_abs, max_pro_abs, flux_expression, ecModel, saturation_cof = 0.44):
+
+    # this function is just used to evaluate how protein total abundance for the main organelle affect the
+    # the cellular phenotype?
     # simulation in loop procedure
     # in vivo saturation of all, saturation_cof=0.44 for CENPK.113-7D strain
     lower = min_pro_abs * saturation_cof
@@ -102,11 +109,9 @@ compartment_in0 = organelle_v0 + organelle_m0
 correlation1 = []
 correlation2 = []
 
-
 for org in compartment_in0:
     print(org)
-
-    org = 'mitochondrial inner membrane' # just for the test
+    #org = 'mitochondrial inner membrane' # just for the test
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3] # minimum  value
     max_value = compartment_info[6] # 75% percentage
@@ -119,7 +124,6 @@ for org in compartment_in0:
     c1, c2, detailed_info = SimulateOrganelleProAbundance(constraint_organelle=organelle_target, min_pro_abs=min_value, max_pro_abs=max_value,
                                                           flux_expression=formula_one, ecModel=ecYeast, saturation_cof = 0.44)
     print(",".join(gene_target))
-
     correlation1.append(c1)
     correlation2.append(c2)
 
@@ -164,39 +168,3 @@ plt.ylabel("growth (/h)")
 
 
 
-
-
-
-# this function need to be refined further
-def simulationWithStructure(model_in, growth_in, objective2):
-    """
-    This function is used to compare the result when different objective function is employed.
-    :param model_in:
-    :param growth_in:
-    :param objective2: a kind of objective for ecModel_batch, which could minimize the total protein volume
-    :return:
-    """
-    # 1_minimize protein volume and minimize the protein sectional area from plasma membrane
-    with model_in:
-        model0 = ecYeastMinimalMedia(model_in)
-        # set growth
-        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
-        # minimization glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 10)  # open the glucose
-        model0.objective = objective2
-        solution4 = model0.optimize()
-
-    # 2_minimize the glucose uptake and protein volume
-    with model_in:
-        model0 = ecYeastMinimalMedia(model_in)
-        # set growth
-        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
-        # minimization glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
-        model0.objective = {model0.reactions.r_1714_REV: -1}
-        solution00 = model0.optimize()
-        GR = solution00.fluxes["r_1714_REV"]  # get the glucose uptake rate
-        model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
-        model0.objective = objective2
-        solution5 = model0.optimize()
-    return solution4, solution5
