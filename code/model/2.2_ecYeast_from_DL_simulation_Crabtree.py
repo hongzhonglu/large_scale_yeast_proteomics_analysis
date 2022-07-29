@@ -3,7 +3,6 @@
 
 
 
-
 from cobra.io import load_matlab_model, read_sbml_model
 from cobra import Reaction, Metabolite
 import sys
@@ -20,6 +19,15 @@ from src.protein_process import *
 # simulate the Crabtree effect
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
 ecYeast = read_sbml_model(dir2)
+
+
+# using the manual curated ecYeast from deep learning
+# in this version of model, we curate the kcat for some enzymes
+ecYeast = read_sbml_model("data/ecYeast_DL_update_some_kcat.xml")
+
+
+
+
 # refer to bioRxiv
 ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
            'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange', 'oxygen exchange', 'EX_protein_pool']
@@ -57,4 +65,3 @@ sns.lineplot(x='biomass pseudoreaction', y='value', hue='variable', style="varia
              data=pd.melt(result_df2, ['biomass pseudoreaction']))
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 plt.savefig('result/figure/Cratree simulation based on ecModel_DLkcat.pdf', bbox_inches='tight')
-

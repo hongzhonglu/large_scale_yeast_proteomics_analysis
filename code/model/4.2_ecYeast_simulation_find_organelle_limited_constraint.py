@@ -22,6 +22,17 @@ for rxn in ecYeast.reactions:
         ecYeast.reactions.get_by_id(rxn.id).id = rxn.id.replace("-A", "_A")
 
 
+# using the manual curated ecYeast from deep learning
+# in this version of model, we curate the kcat for some enzymes
+ecYeast = read_sbml_model("data/ecYeast_DL_update_some_kcat.xml")
+
+for rxn in ecYeast.reactions:
+    if "-A" in rxn.id:
+        print(rxn.id)
+        ecYeast.reactions.get_by_id(rxn.id).id = rxn.id.replace("-A", "_A")
+
+
+
 # generate the general formula as the constraint
 # all metabolic genes from ecGEMs
 organelle_v = collectOrganelleTerm(type="volume")
@@ -29,7 +40,6 @@ organelle_m = collectOrganelleTerm(type="m")
 gene_metabolic = gene_prot["geneID"].tolist()
 compartment_in = organelle_v + organelle_m
 m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment_list=compartment_in, compartment_type="organelle")
-
 
 
 
@@ -68,7 +78,7 @@ for org in compartment_in0:
     #org = 'mitochondrial inner membrane' # just for the test
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[7] # max value
+    max_value = compartment_info[6] # 75%
     organelle_target = org
     gene_target = m_gene_in_organelle[organelle_target]
     rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
@@ -85,6 +95,8 @@ solution2 = ecYeast.optimize()
 print("Max growth:", solution2.objective_value)
 
 
+
+
 # reset the constraints????
 for org in compartment_in0:
     constraint_name = org + '_constraint'
@@ -92,7 +104,7 @@ for org in compartment_in0:
     print(constraint_name)
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[7] # max value
+    max_value = compartment_info[7] # 75%
     ecYeast.constraints[constraint_name].ub = max_value
     ecYeast.constraints[constraint_name].lb = min_value
 # check the growth
@@ -108,9 +120,7 @@ print("Max growth:", solution2.objective_value)
 
 # it found that if using the above constraint, the growth is very small. Some organelle protein total abundance is too strict.
 # check the effect of constraints
-org0 = 'endoplasmic reticulum membrane'
 ecYeast2 = ecYeast.copy() # copy model, each time only parameter is changed!
-
 # reset the constraints???? Very strange that the constraint bounds changed when coping the models
 for org in compartment_in0:
     constraint_name = org + '_constraint'
@@ -118,90 +128,40 @@ for org in compartment_in0:
     print(constraint_name)
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[7] # max value
+    max_value = compartment_info[7] # 75%
     ecYeast2.constraints[constraint_name].ub = max_value
     ecYeast2.constraints[constraint_name].lb = min_value
 
+
+org0 = 'endoplasmic reticulum membrane'
 constraint_name0 = org0 + '_constraint'
 constraint_name0 = constraint_name0.replace(' ','_')
 print(constraint_name0)
 compartment_info = organelle_pro_range[org0].tolist()
-max_value = compartment_info[7]*9 # max value
+max_value = compartment_info[7]*4.5 # 9 for origninal ecYeast from DL
 ecYeast2.constraints[constraint_name0].ub = max_value
 objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max')  # biomass
 ecYeast2.objective = objective
 solution2 = ecYeast2.optimize()
-print(solution2.objective_value)
-
-
-
-
-
-
-# just initial compare the predicted protein abundance and the total abundances
 flux_max = solution2.fluxes
-result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
-result = result[result['rxnID'].str.contains("prot_")]
-result['geneID'] = result['rxnID'].str.replace("prot_", "")
-
-# input the measured protein abundances
-omics_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
-condition = ['gene','prot.19', 'prot.20', 'prot.21']
-omics_select = omics_tao2[condition]
-omics_select['average'] = omics_select.drop('gene', axis=1).apply(lambda x: x.mean(), axis=1)
-
-# compare the predict with measured
-result['pro_measured'] = singleMapping(omics_select["average"], omics_select["gene"], result['geneID'])
-result = result[~result["pro_measured"].isna()]
-
-# method1 absolute protein abundance mmol protein/gDW
-plt.figure()
-sns.regplot(x=np.log10(result['pro_measured']), y=np.log10(result['flux']), fit_reg=False)
-plt.xlim(-11, 0)
-plt.ylim(-11, 0)
-plt.xlabel("log10(Measured_protein_level)")
-plt.ylabel("log10(Predicted_protein_usage)")
-
-from scipy.stats import pearsonr
-result1 = result[result['flux'] > 0]
-result1 = result1[result1['pro_measured'] > 0]
-corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
-print("Correlation coefficient:", corr)
-print("Correlation p_value:", ss)
-
-
-
-
-
-
-
-
-
-
+print(solution2.objective_value)
 
 
 # loops to find which constraint affect the model output
 max_growth = []
 for org in compartment_in0:
-    ecYeast2 = ecYeast.copy() # copy model, each time only parameter is changed!
-    constraint_name = org + '_constraint'
-    constraint_name = constraint_name.replace(' ','_')
-    print(constraint_name)
-    compartment_info = organelle_pro_range[org].tolist()
-    max_value = compartment_info[7]*2 # max value
-    ecYeast2.constraints[constraint_name].ub = max_value
-    # check which constraint affect the simulation??
-    objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max')  # biomass
-    ecYeast2.objective = objective
-    solution2 = ecYeast2.optimize()
-    max_growth.append(solution2.objective_value)
+    with ecYeast2:
+        constraint_name = org + '_constraint'
+        constraint_name = constraint_name.replace(' ', '_')
+        print(constraint_name)
+        compartment_info = organelle_pro_range[org].tolist()
+        max_value = compartment_info[6] * 2  # max value
+        ecYeast2.constraints[constraint_name].ub = max_value
+        # check which constraint affect the simulation??
+        objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max')  # biomass
+        ecYeast2.objective = objective
+        solution2 = ecYeast2.optimize()
+        max_growth.append(solution2.objective_value)
 
 for x, y in zip(compartment_in0, max_growth):
     print(x, y)
-
-# save the model
-# however the constraints newly added can't be saved and reused!!
-# import cobra
-# cobra.io.write_sbml_model(ecYeast, "data/ecYeastWithOrgConstraint.xml")
-# ecYeast = cobra.io.read_sbml_model("data/ecYeastWithOrgConstraint.xml")
-

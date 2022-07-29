@@ -262,7 +262,6 @@ def getRxnByReactionName(model, name):
     return s
 
 
-
 def DLecModelSimulate(model, dilution_rate):
    """
    This function is used to do simulation with ecModels using kcat value from deep learning.
@@ -294,7 +293,7 @@ def DLecModelSimulate(model, dilution_rate):
        elif len(s) == 1:
            idx.append(s[0])
 
-   model_tmp = ecYeast.copy()
+   model_tmp = ecYeast #.copy() # this is adjusted for the newly added constraints from organelle
    model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000  # glucose uptake
    model_tmp.reactions.get_by_id(idx[0]).lower_bound = dilutionrate
    model_tmp.objective = {model_tmp.reactions.r_1714: 1}  # minimize the uptake of glucose
@@ -310,4 +309,39 @@ def DLecModelSimulate(model, dilution_rate):
    return solution_f
 
 
+def updateEcGEMkcat(ecGEM, target_gene, rxnID, kcat_m):
+    """
+    The function is used to update the kcat of enzyme in specific reaction from ecModel
+    Generally, an enzyme and the related reaction determine the corresponding kcat value.
+
+    :param ecGEM: the enzyme constrainted model
+    :param target_gene: the gene id of the enzyme
+    :param rxnID: the reaction id contains the enzyme
+    :param kcat_m: the new value of kcat
+    :return:
+    ecModel
+
+    """
+    ecModel = ecGEM.copy()
+    coef = 1 / kcat_m
+    ss = ecModel.reactions.get_by_id(rxnID).reaction
+    # split as coefficient
+    ss1 = ss.split(" + ")
+    ss2 = []
+    for xx in ss1:
+        if target_gene + '[' in xx:
+            xx1 = xx.split(' ')[1]
+            xx2 = str(coef) + ' ' + xx1
+            print('old coefficient', xx)
+            print('old kcat', 1 / float(xx.split(' ')[0]))
+            print('new coefficient', xx2)
+            print('new kcat', kcat_m)
+            ss2.append(xx2)
+        else:
+            ss2.append(xx)
+    rxn_update = " + ".join(ss2)
+    print('old rxn:', ss)
+    print('new rxn:', rxn_update)
+    ecModel.reactions.get_by_id(rxnID).reaction = rxn_update
+    return ecModel
 

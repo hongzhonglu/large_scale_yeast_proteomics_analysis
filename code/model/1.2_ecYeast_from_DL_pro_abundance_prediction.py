@@ -5,11 +5,12 @@ from cobra import Reaction, Metabolite
 import sys
 import matplotlib.pyplot as plt
 import seaborn as sns
+import cobra
 
 # import self function
 from src.mainFunction import *
-from src.model_process import *
 from src.protein_process import *
+from src.model_process import *
 
 # compare the predicted and measured protein abundances
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
@@ -19,57 +20,23 @@ ecYeast = read_sbml_model(dir2)
 
 
 # update the model
-# for gene connect with only one reaction
-rxnID = getRxnByGene(model=ecYeast, gene0='YNR016C')
-# the following script will be in a function
-# note: gene, rxn and kcat should be mapped before run the function
+# manual curation 1
+# rxnID = getRxnByGene(model=ecYeast, gene0='YNR016C')
 target_gene0 = 'YNR016C'
 rxnID0 = 'r_0109'
 kcat_m0 = 8.5*3600 # unit is /h
-
-
-def updateEcGEMkcat(ecGEM, target_gene, rxnID, kcat_m):
-    ecModel = ecGEM.copy()
-    coef = 1 / kcat_m
-    ss = ecModel.reactions.get_by_id(rxnID).reaction
-    # split as coefficient
-    ss1 = ss.split(" + ")
-    ss2 = []
-    for xx in ss1:
-        if target_gene + '[' in xx:
-            xx1 = xx.split(' ')[1]
-            xx2 = str(coef) + ' ' + xx1
-            print('old coefficient', xx)
-            print('old kcat', 1 / float(xx.split(' ')[0]))
-            print('new coefficient', xx2)
-            print('new kcat', kcat_m)
-            ss2.append(xx2)
-        else:
-            ss2.append(xx)
-    rxn_update = " + ".join(ss2)
-    print('old rxn:', ss)
-    print('new rxn:', rxn_update)
-    ecModel.reactions.get_by_id(rxnID).reaction = rxn_update
-    return ecModel
-
-
 ecYeast = updateEcGEMkcat(ecGEM=ecYeast, target_gene=target_gene0, rxnID=rxnID0, kcat_m=kcat_m0)
-ecYeast.reactions.get_by_id('r_0109').reaction
 
-
-
-
+# manual curation 2
 rxnID = getRxnByGene(model=ecYeast, gene0='YGR060W')
-for rxnID0 in rxnID:
-    ss = ecYeast.reactions.get_by_id(rxnID0).reaction
-    print(rxnID0)
-    print(ss)
-
 # using a loop
 for rxn0 in rxnID:
     target_gene0 = 'YGR060W'
     kcat_m0 = 1/6.11002831284031e-05
     ecYeast = updateEcGEMkcat(ecGEM=ecYeast, target_gene=target_gene0, rxnID=rxn0, kcat_m=kcat_m0)
+
+# save the model
+cobra.io.write_sbml_model(ecYeast, "data/ecYeast_DL_update_some_kcat.xml")
 
 
 
@@ -81,7 +48,6 @@ flux_max = solution3.fluxes
 result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result = result[result['rxnID'].str.contains("prot_")]
 result['geneID'] = result['rxnID'].str.replace("prot_", "")
-
 
 # input the proteomics under max growth rate
 abundance_ex = pd.read_excel("data/proteomics/data_PNAS_2021.xlsx")
@@ -145,9 +111,6 @@ plt.figure()
 sns.regplot(x=result_unify['pro_measured'], y=result_unify['flux'], fit_reg=False)
 plt.xlabel("Measured_protein_copy/cell")
 plt.ylabel("Predicted_protein_copy/cell")
-# reanalyze the result based on gene locations?
-# generate the general formula as the constraint
-# all metabolic genes from ecGEMs
 
 
 
@@ -212,17 +175,3 @@ getRxnByGene(ecYeast, "YJL167W")
 (sum(result_unify_c['flux']))/(sum(result_unify_c['pro_measured']))
 
 # Note: endoplasmic reticulum membrane, predicted protein abundance for YNR016C and YGR060W is much higher than measured
-
-
-
-
-
-#TODO
-# for gene connect with multiple reactions???
-rxnID = getRxnByGene(model=ecYeast, gene0='YGR060W')
-for rxnID0 in rxnID:
-    ss = ecYeast.reactions.get_by_id(rxnID0).reaction
-    print(rxnID0)
-    print(ss)
-
-flux_max[rxnID]
