@@ -41,7 +41,8 @@ ecYeast = load_matlab_model(dir1)
 # simulation based on the minimization of protein abundances
 # it should be noted that if the growth the over than 0.38, the model will not have right solution.
 model = ecYeast.copy()
-# gem_rxn_nov = produceRxnList(model)
+#ecYeast = produceRxnList(model)
+#ecYeast.to_excel("result/ecYeast_GECKO.xlsx")
 
 
 model.reactions.get_by_id("r_1634").upper_bound = 0 # assume acetate is not produced!

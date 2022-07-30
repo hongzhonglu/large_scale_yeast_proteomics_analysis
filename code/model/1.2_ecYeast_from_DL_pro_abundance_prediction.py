@@ -15,6 +15,8 @@ from src.model_process import *
 # compare the predicted and measured protein abundances
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
 ecYeast = read_sbml_model(dir2)
+#ecYeast_DL = produceRxnList(ecYeast)
+#ecYeast_DL.to_excel("result/ecYeast_DL.xlsx")
 
 
 
@@ -175,3 +177,5 @@ getRxnByGene(ecYeast, "YJL167W")
 (sum(result_unify_c['flux']))/(sum(result_unify_c['pro_measured']))
 
 # Note: endoplasmic reticulum membrane, predicted protein abundance for YNR016C and YGR060W is much higher than measured
+
+

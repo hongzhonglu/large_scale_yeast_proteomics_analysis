@@ -115,6 +115,9 @@ print("Max growth:", solution2.objective_value)
 
 
 
+
+
+
 # it found that if using the above constraint, the growth is very small. Some organelle protein total abundance is too strict.
 # check the effect of constraints
 ecYeast2 = ecYeast.copy() # copy model, each time only parameter is changed!
@@ -124,11 +127,12 @@ for org in compartment_in0:
     constraint_name = constraint_name.replace(' ','_')
     print(constraint_name)
     compartment_info = organelle_pro_range[org].tolist()
-    min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[6] # 75%
-    ecYeast2.constraints[constraint_name].ub = max_value
-    ecYeast2.constraints[constraint_name].lb = min_value
 
+    min_value = compartment_info[3]  # minimum  value
+    max_value = compartment_info[6]  # 75% value
+
+    ecYeast2.constraints[constraint_name].lb = min_value
+    ecYeast2.constraints[constraint_name].ub = max_value
 
 org0 = 'endoplasmic reticulum membrane'
 constraint_name0 = org0 + '_constraint'
@@ -145,39 +149,42 @@ print(solution2.objective_value)
 
 
 
-## based on the above model with organelle constraint,
-## next we use the general function to solve the model
-# solve the model
-solution3 = DLecModelSimulate(model=ecYeast2, dilution_rate=0.35)
-flux_max = solution3.fluxes
-# just initial compare the predicted protein abundance and the total abundances
-result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
-result = result[result['rxnID'].str.contains("prot_")]
-result['geneID'] = result['rxnID'].str.replace("prot_", "")
+# simulate crabtree effect!
+# refer to bioRxiv
+ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
+           'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange', 'oxygen exchange', 'EX_protein_pool']
+# find the related rxnID
+idx = []
+for name0 in ex_mets:
+    print(name0)
+    s = getRxnByReactionName(model=ecYeast2, name=name0)
+    if len(s) > 1:
+        print("need check")
+    elif len(s) == 1:
+        idx.append(s[0])
 
-
-
-# input the measured protein abundances
-omics_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
-condition = ['gene','prot.19', 'prot.20', 'prot.21']
-omics_select = omics_tao2[condition]
-omics_select['average'] = omics_select.drop('gene', axis=1).apply(lambda x: x.mean(), axis=1)
-
-# compare the predict with measured
-result['pro_measured'] = singleMapping(omics_select["average"], omics_select["gene"], result['geneID'])
-result = result[~result["pro_measured"].isna()]
-
-# method1 absolute protein abundance mmol protein/gDW
+# for the loop
+dilutionrate = np.arange(0.05, 0.4, 0.05).tolist()
+result = dict()
+for k in range(len(dilutionrate)):
+    print(k)
+    model_tmp = ecYeast2
+    solution3 = DLecModelSimulate(model=ecYeast2, dilution_rate=dilutionrate[k])
+    fluxes = solution3.fluxes[idx]
+    result[dilutionrate[k]] = list(fluxes)
+# summarize the result
+result_df = pd.DataFrame.from_dict(result)
+result_df1 = result_df.transpose()
+result_df1.columns = ex_mets
+result_df1["D-glucose exchange"] = result_df1["D-glucose exchange"]*(-1)
+result_df1["oxygen exchange"] = result_df1["oxygen exchange"]*(-1)
+result_df2 = result_df1.drop('EX_protein_pool', 1)
+# plot
 plt.figure()
-sns.regplot(x=np.log10(result['pro_measured']), y=np.log10(result['flux']), fit_reg=False)
-plt.xlim(-11, 0)
-plt.ylim(-11, 0)
-plt.xlabel("log10(Measured_protein_level)")
-plt.ylabel("log10(Predicted_protein_usage)")
+sns.lineplot(x='biomass pseudoreaction', y='value', hue='variable', style="variable",
+             data=pd.melt(result_df2, ['biomass pseudoreaction']))
+plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
+plt.savefig('result/figure/Cratree simulation based on ecModel_DLkcat.pdf', bbox_inches='tight')
 
-from scipy.stats import pearsonr
-result1 = result[result['flux'] > 0]
-result1 = result1[result1['pro_measured'] > 0]
-corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
-print("Correlation coefficient:", corr)
-print("Correlation p_value:", ss)
+
+

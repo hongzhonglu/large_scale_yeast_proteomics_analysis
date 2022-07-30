@@ -42,7 +42,8 @@ cobra.io.write_sbml_model(ecYeast, "data/ecYeast_DL_update_some_kcat.xml")
 
 
 # solve the model
-solution3 = DLecModelSimulate(model=ecYeast, dilution_rate=0.42)
+solution3 = DLecModelSimulate(model=ecYeast, dilution_rate=0.35)
+
 flux_max = solution3.fluxes
 result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result = result[result['rxnID'].str.contains("prot_")]

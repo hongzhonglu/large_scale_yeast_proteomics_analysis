@@ -28,6 +28,9 @@ ecYeast = read_sbml_model("data/ecYeast_DL_update_some_kcat.xml")
 
 
 
+
+
+# simulate crabtree effect!
 # refer to bioRxiv
 ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
            'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange', 'oxygen exchange', 'EX_protein_pool']
