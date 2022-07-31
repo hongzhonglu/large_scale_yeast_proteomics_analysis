@@ -88,6 +88,7 @@ for org in compartment_in0:
     constraint_name = org + '_constraint'
     constraint_name = constraint_name.replace(' ','_')
     ecYeast = AddOrgConstraint(ecModel=ecYeast, flux_expression=formula_one, min_pro_abs=min_value, max_pro_abs=max_value, constraint_name=constraint_name, saturation_cof = 0.44)
+
 # check the growth
 objective = ecYeast.problem.Objective(ecYeast.reactions.r_4041.flux_expression, direction='max') # biomass
 ecYeast.objective = objective
@@ -95,82 +96,52 @@ solution2 = ecYeast.optimize()
 print("Max growth:", solution2.objective_value)
 
 
+
+
+
 # reset the constraints????
+ecYeast2 = ecYeast.copy()
 for org in compartment_in0:
     constraint_name = org + '_constraint'
     constraint_name = constraint_name.replace(' ','_')
     print(constraint_name)
     compartment_info = organelle_pro_range[org].tolist()
-    ecYeast.constraints[constraint_name].ub = 1000
-    min_value = compartment_info[3]*0.44 # minimum  value
-    max_value = compartment_info[7]*0.44 # max value
-    ecYeast.constraints[constraint_name].lb = min_value
-    ecYeast.constraints[constraint_name].ub = max_value
-# check the growth
-objective = ecYeast.problem.Objective(ecYeast.reactions.r_4041.flux_expression, direction='max') # biomass
-ecYeast.objective = objective
-solution2 = ecYeast.optimize()
-print("Max growth:", solution2.objective_value)
+    ecYeast2.constraints[constraint_name].ub = 1000
+    ecYeast2.constraints[constraint_name].lb = 0
+    if org == 'endoplasmic reticulum':
+        max_value = compartment_info[6] #* 0.44 * 2.5
+        ecYeast2.constraints[constraint_name].ub = max_value
+        min_value = compartment_info[3]  # minimum  value
+    elif org=='endoplasmic reticulum membrane':
+        max_value = compartment_info[7] * 2.5  # 9 for origninal ecYeast2 from DL
+
+        ecYeast2.constraints[constraint_name].ub = max_value
+    else:
+        min_value = compartment_info[3]  # minimum  value
+        max_value = compartment_info[6]  # max value
+        ecYeast2.constraints[constraint_name].lb = min_value
+        ecYeast2.constraints[constraint_name].ub = max_value
 
 
-
-
-# it found that if using the above constraint, the growth is very small. Some organelle protein total abundance is too strict.
-# check the effect of constraints
-ecYeast2 = ecYeast
-org0 = 'endoplasmic reticulum membrane'
-constraint_name0 = org0 + '_constraint'
-constraint_name0 = constraint_name0.replace(' ','_')
-print(constraint_name0)
-compartment_info = organelle_pro_range[org0].tolist()
-max_value = compartment_info[7]*2.5 # 9 for origninal ecYeast from DL
-ecYeast2.constraints[constraint_name0].ub = max_value
-
-
-org0 = 'endoplasmic reticulum'
-constraint_name0 = org0 + '_constraint'
-constraint_name0 = constraint_name0.replace(' ','_')
-print(constraint_name0)
-compartment_info = organelle_pro_range[org0].tolist()
-max_value = compartment_info[7]*0.44*2 # 9 for origninal ecYeast from DL
-ecYeast2.constraints[constraint_name0].ub = max_value
-
-
-objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max')  # biomass
+# check the max growth
+objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max') # biomass
 ecYeast2.objective = objective
 solution2 = ecYeast2.optimize()
-flux_max = solution2.fluxes
-print(solution2.objective_value)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+print("Max growth:", solution2.objective_value)
 ## based on the above model with organelle constraint,
 ## next we use the general function to solve the model
 # solve the model
 solution3 = DLecModelSimulate(model=ecYeast2, dilution_rate=0.35)
 #solution3 = DLecModelSimulate(model=ecYeast2, dilution_rate=0.1)
-flux_max = solution3.fluxes
+
 
 
 
 # just initial compare the predicted protein abundance and the total abundances
+flux_max = solution3.fluxes
 result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result = result[result['rxnID'].str.contains("prot_")]
 result['geneID'] = result['rxnID'].str.replace("prot_", "")
-
-
 
 # input the measured protein abundances
 omics_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
@@ -191,13 +162,23 @@ plt.ylim(-11, 0)
 plt.xlabel("log10(Measured_protein_level)")
 plt.ylabel("log10(Predicted_protein_usage)")
 
+
+
+# check the correlation and RMSE
+# Correlation
 from scipy.stats import pearsonr
 result1 = result[result['flux'] > 0]
 result1 = result1[result1['pro_measured'] > 0]
 corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
-
-
-
+# RMSE
+from sklearn.metrics import mean_squared_error
+import math
+y_actual = np.log10(result1['pro_measured'])
+y_predicted = np.log10(result1['flux'])
+MSE = mean_squared_error(y_actual, y_predicted)
+RMSE = math.sqrt(MSE)
+print("Root Mean Square Error:\n")
+print(RMSE)
 

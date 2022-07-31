@@ -82,9 +82,8 @@ print("Correlation p_value:", ss)
 # method2 calculate the RMSE
 from sklearn.metrics import mean_squared_error
 import math
-
-y_actual = [1, 2, 3, 4, 5]
-y_predicted = [1.6, 2.5, 2.9, 3, 4.1]
+y_actual = np.log10(result1['pro_measured'])
+y_predicted = np.log10(result1['flux'])
 MSE = mean_squared_error(y_actual, y_predicted)
 RMSE = math.sqrt(MSE)
 print("Root Mean Square Error:\n")
