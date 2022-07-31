@@ -117,29 +117,30 @@ print("Max growth:", solution2.objective_value)
 
 
 
-
 # it found that if using the above constraint, the growth is very small. Some organelle protein total abundance is too strict.
 # check the effect of constraints
-ecYeast2 = ecYeast.copy() # copy model, each time only parameter is changed!
+# then tune the constraint from endoplasmic reticulum membrane, the above issue is solved.
+ecYeast2 = ecYeast.copy()  # copy model, each time only parameter is changed!
 # reset the constraints???? Very strange that the constraint bounds changed when coping the models
 for org in compartment_in0:
     constraint_name = org + '_constraint'
-    constraint_name = constraint_name.replace(' ','_')
+    constraint_name = constraint_name.replace(' ', '_')
     print(constraint_name)
     compartment_info = organelle_pro_range[org].tolist()
 
     min_value = compartment_info[3]  # minimum  value
     max_value = compartment_info[6]  # 75% value
-
+    ecYeast2.constraints[constraint_name].ub = 1000  # first set a unlimited value to avoid such an error: Cannot set a lower bound that is greater than the upper bound.
     ecYeast2.constraints[constraint_name].lb = min_value
     ecYeast2.constraints[constraint_name].ub = max_value
 
+
 org0 = 'endoplasmic reticulum membrane'
 constraint_name0 = org0 + '_constraint'
-constraint_name0 = constraint_name0.replace(' ','_')
+constraint_name0 = constraint_name0.replace(' ', '_')
 print(constraint_name0)
 compartment_info = organelle_pro_range[org0].tolist()
-max_value = compartment_info[7]*2.5 # 9 for origninal ecYeast from DL
+max_value = compartment_info[7] * 2.5  # 9 for origninal ecYeast from DL
 ecYeast2.constraints[constraint_name0].ub = max_value
 objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max')  # biomass
 ecYeast2.objective = objective
@@ -149,10 +150,23 @@ print(solution2.objective_value)
 
 
 
+
+
+# check which organelle affect the crabtree?
+# it shows that mitochondrion is main organelle to affect the output
+org1 = "mitochondrion"
+constraint_name0 = org1 + '_constraint'
+constraint_name0 = constraint_name0.replace(' ', '_')
+print(constraint_name0)
+compartment_info = organelle_pro_range[org1].tolist()
+max_value = compartment_info[6]  # adjust the upper bound
+ecYeast2.constraints[constraint_name0].ub = max_value
+
 # simulate crabtree effect!
 # refer to bioRxiv
 ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
-           'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange', 'oxygen exchange', 'EX_protein_pool']
+           'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange',
+           'oxygen exchange', 'EX_protein_pool']
 # find the related rxnID
 idx = []
 for name0 in ex_mets:
@@ -176,8 +190,8 @@ for k in range(len(dilutionrate)):
 result_df = pd.DataFrame.from_dict(result)
 result_df1 = result_df.transpose()
 result_df1.columns = ex_mets
-result_df1["D-glucose exchange"] = result_df1["D-glucose exchange"]*(-1)
-result_df1["oxygen exchange"] = result_df1["oxygen exchange"]*(-1)
+result_df1["D-glucose exchange"] = result_df1["D-glucose exchange"] * (-1)
+result_df1["oxygen exchange"] = result_df1["oxygen exchange"] * (-1)
 result_df2 = result_df1.drop('EX_protein_pool', 1)
 # plot
 plt.figure()
@@ -185,6 +199,9 @@ sns.lineplot(x='biomass pseudoreaction', y='value', hue='variable', style="varia
              data=pd.melt(result_df2, ['biomass pseudoreaction']))
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 plt.savefig('result/figure/Cratree simulation based on ecModel_DLkcat.pdf', bbox_inches='tight')
+
+
+
 
 
 

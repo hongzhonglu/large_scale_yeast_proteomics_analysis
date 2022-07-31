@@ -78,3 +78,14 @@ print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
 
 
+
+# method2 calculate the RMSE
+from sklearn.metrics import mean_squared_error
+import math
+
+y_actual = [1, 2, 3, 4, 5]
+y_predicted = [1.6, 2.5, 2.9, 3, 4.1]
+MSE = mean_squared_error(y_actual, y_predicted)
+RMSE = math.sqrt(MSE)
+print("Root Mean Square Error:\n")
+print(RMSE)

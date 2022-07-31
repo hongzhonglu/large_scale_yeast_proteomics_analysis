@@ -68,3 +68,4 @@ sns.lineplot(x='biomass pseudoreaction', y='value', hue='variable', style="varia
              data=pd.melt(result_df2, ['biomass pseudoreaction']))
 plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
 plt.savefig('result/figure/Cratree simulation based on ecModel_DLkcat.pdf', bbox_inches='tight')
+

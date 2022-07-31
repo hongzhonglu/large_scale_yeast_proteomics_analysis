@@ -6,13 +6,15 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_GECKO_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_GECKO_pro_abundance_prediction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/2.2_ecYeast_from_DL_simulation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/2.2_ecYeast_from_DL_simulation_Crabtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/3.1_ecYeast_simulation_compare_under_different_strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/3.1_ecYeast_simulation_compare_under_different_strategies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_organelle_limited_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_organelle_limited_constraint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/data_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_check.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/~$flux_check.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -109,8 +111,8 @@
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/model/not_used" />
+      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code/structure/not_used" />
       <recent name="$PROJECT_DIR$/code/model" />

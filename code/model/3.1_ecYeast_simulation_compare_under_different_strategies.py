@@ -139,6 +139,7 @@ plt.legend(loc='upper left')
 plt.ylim(0, 25)
 plt.show()
 
+
 plt.figure()
 plt.plot(growth, pro_pool1, marker='.', label='two_step')
 plt.plot(growth, pro_pool2, marker='.', label='Glucose')
@@ -149,4 +150,3 @@ plt.ylabel('protein pool (mmol/gDW)')
 plt.legend(loc='upper left')
 plt.ylim(0, 0.2)
 plt.show()
-

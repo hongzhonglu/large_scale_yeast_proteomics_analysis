@@ -78,7 +78,7 @@ for org in compartment_in0:
     #org = 'mitochondrial inner membrane' # just for the test
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[6] # 75%
+    max_value = compartment_info[7] # max value
     organelle_target = org
     gene_target = m_gene_in_organelle[organelle_target]
     rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
@@ -95,18 +95,17 @@ solution2 = ecYeast.optimize()
 print("Max growth:", solution2.objective_value)
 
 
-
-
 # reset the constraints????
 for org in compartment_in0:
     constraint_name = org + '_constraint'
     constraint_name = constraint_name.replace(' ','_')
     print(constraint_name)
     compartment_info = organelle_pro_range[org].tolist()
-    min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[6] # 75%
-    ecYeast.constraints[constraint_name].ub = max_value
+    ecYeast.constraints[constraint_name].ub = 1000
+    min_value = compartment_info[3]*0.44 # minimum  value
+    max_value = compartment_info[7]*0.44 # max value
     ecYeast.constraints[constraint_name].lb = min_value
+    ecYeast.constraints[constraint_name].ub = max_value
 # check the growth
 objective = ecYeast.problem.Objective(ecYeast.reactions.r_4041.flux_expression, direction='max') # biomass
 ecYeast.objective = objective
@@ -115,21 +114,10 @@ print("Max growth:", solution2.objective_value)
 
 
 
+
 # it found that if using the above constraint, the growth is very small. Some organelle protein total abundance is too strict.
 # check the effect of constraints
-ecYeast2 = ecYeast.copy() # copy model, each time only parameter is changed!
-# reset the constraints???? Very strange that the constraint bounds changed when coping the models
-for org in compartment_in0:
-    constraint_name = org + '_constraint'
-    constraint_name = constraint_name.replace(' ','_')
-    print(constraint_name)
-    compartment_info = organelle_pro_range[org].tolist()
-    min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[6] # 75%
-    ecYeast2.constraints[constraint_name].ub = max_value
-    ecYeast2.constraints[constraint_name].lb = min_value
-
-
+ecYeast2 = ecYeast
 org0 = 'endoplasmic reticulum membrane'
 constraint_name0 = org0 + '_constraint'
 constraint_name0 = constraint_name0.replace(' ','_')
@@ -137,6 +125,17 @@ print(constraint_name0)
 compartment_info = organelle_pro_range[org0].tolist()
 max_value = compartment_info[7]*2.5 # 9 for origninal ecYeast from DL
 ecYeast2.constraints[constraint_name0].ub = max_value
+
+
+org0 = 'endoplasmic reticulum'
+constraint_name0 = org0 + '_constraint'
+constraint_name0 = constraint_name0.replace(' ','_')
+print(constraint_name0)
+compartment_info = organelle_pro_range[org0].tolist()
+max_value = compartment_info[7]*0.44*2 # 9 for origninal ecYeast from DL
+ecYeast2.constraints[constraint_name0].ub = max_value
+
+
 objective = ecYeast2.problem.Objective(ecYeast2.reactions.r_4041.flux_expression, direction='max')  # biomass
 ecYeast2.objective = objective
 solution2 = ecYeast2.optimize()
@@ -145,11 +144,27 @@ print(solution2.objective_value)
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 ## based on the above model with organelle constraint,
 ## next we use the general function to solve the model
 # solve the model
 solution3 = DLecModelSimulate(model=ecYeast2, dilution_rate=0.35)
+#solution3 = DLecModelSimulate(model=ecYeast2, dilution_rate=0.1)
 flux_max = solution3.fluxes
+
+
+
 # just initial compare the predicted protein abundance and the total abundances
 result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result = result[result['rxnID'].str.contains("prot_")]
@@ -159,7 +174,8 @@ result['geneID'] = result['rxnID'].str.replace("prot_", "")
 
 # input the measured protein abundances
 omics_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
-condition = ['gene','prot.19', 'prot.20', 'prot.21']
+condition = ['gene','prot.19', 'prot.20', 'prot.21'] # growth rate 0.35/h
+#condition = ['gene','prot.7', 'prot.8', 'prot.9'] # growth rate 0.10/h
 omics_select = omics_tao2[condition]
 omics_select['average'] = omics_select.drop('gene', axis=1).apply(lambda x: x.mean(), axis=1)
 
@@ -181,3 +197,7 @@ result1 = result1[result1['pro_measured'] > 0]
 corr, ss = pearsonr(np.log10(result1['pro_measured']), np.log10(result1['flux']))
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
+
+
+
+

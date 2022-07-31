@@ -104,7 +104,7 @@ for org in compartment_in0:
     print(constraint_name)
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[7] # 75%
+    max_value = compartment_info[6] # 75%
     ecYeast.constraints[constraint_name].ub = max_value
     ecYeast.constraints[constraint_name].lb = min_value
 # check the growth
@@ -128,7 +128,7 @@ for org in compartment_in0:
     print(constraint_name)
     compartment_info = organelle_pro_range[org].tolist()
     min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[7] # 75%
+    max_value = compartment_info[6] # 75%
     ecYeast2.constraints[constraint_name].ub = max_value
     ecYeast2.constraints[constraint_name].lb = min_value
 

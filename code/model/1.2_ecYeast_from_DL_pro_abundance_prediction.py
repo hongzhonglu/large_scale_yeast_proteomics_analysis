@@ -153,8 +153,6 @@ compartment_in0 = organelle_v0 + organelle_m0
 
 for organelle_target in compartment_in0:
     print(organelle_target)
-    #test
-    organelle_target = 'endoplasmic reticulum membrane'
     gene_target = m_gene_in_organelle[organelle_target]
     result_unify_c = result_unify[result_unify["geneID"].isin(gene_target)]
     plt.figure()
@@ -168,6 +166,9 @@ for organelle_target in compartment_in0:
     corr, ss = pearsonr(np.log10(result_unify_c['pro_measured'] + 1), np.log10(result_unify_c['flux'] + 1))
     print("Correlation coefficient:", corr)
     print("Correlation p_value:", ss)
+    plt.savefig('result/figure/' + organelle_target + '_simulation_VS_measured.pdf', bbox_inches='tight')
+
+
 
 
 # Note: It also shows that the predicted abundance of YJL167W is much higher than the measured one!
