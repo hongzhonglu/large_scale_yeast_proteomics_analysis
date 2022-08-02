@@ -45,12 +45,12 @@ m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment
 
 # The following script is mainly used to check the organelle total abundance affect the cellular growth rate
 # it is found some organlle protein total abudance have no affect while others have?
-def AddOrgConstraint(ecModel, flux_expression, min_pro_abs, max_pro_abs, constraint_name, saturation_cof = 0.44):
+def AddOrgConstraint(ecModel, flux_expression):
     model_tmp = ecModel.copy()
-    lower = min_pro_abs * saturation_cof
-    upper = max_pro_abs * saturation_cof
+    lower = 0
+    upper = 1000
     model_tmp.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)
-    same_flux = model_tmp .problem.Constraint(eval(flux_expression), lb=lower, ub=upper, name=constraint_name)
+    same_flux = model_tmp.problem.Constraint(eval(flux_expression), lb=lower, ub=upper, name=constraint_name)
     model_tmp.add_cons_vars(same_flux)
     return model_tmp
 
@@ -75,10 +75,6 @@ compartment_in0 = organelle_v0 + organelle_m0
 
 for org in compartment_in0:
     print(org)
-    #org = 'mitochondrial inner membrane' # just for the test
-    compartment_info = organelle_pro_range[org].tolist()
-    min_value = compartment_info[3] # minimum  value
-    max_value = compartment_info[7] # max value
     organelle_target = org
     gene_target = m_gene_in_organelle[organelle_target]
     rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
@@ -87,7 +83,7 @@ for org in compartment_in0:
     formula_one = " + ".join(formula_list)
     constraint_name = org + '_constraint'
     constraint_name = constraint_name.replace(' ','_')
-    ecYeast = AddOrgConstraint(ecModel=ecYeast, flux_expression=formula_one, min_pro_abs=min_value, max_pro_abs=max_value, constraint_name=constraint_name, saturation_cof = 0.44)
+    ecYeast = AddOrgConstraint(ecModel=ecYeast, flux_expression=formula_one)
 
 # check the growth
 objective = ecYeast.problem.Objective(ecYeast.reactions.r_4041.flux_expression, direction='max') # biomass
