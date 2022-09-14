@@ -6,7 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/1_preprocess_pdb_file_alphafold2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/1_preprocess_pdb_file_alphafold2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/1_preprocess_pdb_file_alphafold2_new_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/5.0_preprocess_pdb_file_alphafold2_new_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/2_protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/2_protein_complexes_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecoli_structure_size_part2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/ecoli_structure_size_part3.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/organism_result_new.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data/organism_result_new.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/organism_result_two_strains.sh" beforeDir="false" afterPath="$PROJECT_DIR$/data/organism_result_two_strains.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/other_species/ecoli.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/other_species/ecoli.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,23 +101,23 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/model" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/structure" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/structure" />
+      <recent name="$PROJECT_DIR$/code/structure/not_used" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/data" />
-      <recent name="$PROJECT_DIR$/code/structure" />
-      <recent name="$PROJECT_DIR$/code/omics/not_used" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/structure/not_used" />
+      <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/code/model/not_used" />
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/omics" />
-      <recent name="$PROJECT_DIR$/code/structure/not_used" />
-      <recent name="$PROJECT_DIR$/code/model" />
     </key>
   </component>
   <component name="RunManager">
@@ -219,19 +229,14 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py</url>
-          <line>109</line>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py</url>
-          <line>129</line>
-          <option name="timeStamp" value="5" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/model_process.py</url>
           <line>251</line>
           <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py</url>
+          <line>121</line>
+          <option name="timeStamp" value="7" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

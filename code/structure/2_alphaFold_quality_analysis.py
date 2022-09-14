@@ -2,36 +2,67 @@
 # http://rasbt.github.io/biopandas/tutorials/Working_with_PDB_Structures_in_DataFrames/
 
 
-from Bio.PDB import *
-import os    ##for directory
 import numpy as np
-import pandas as pd
-from Bio.PDB.PDBParser import PDBParser
-from biopandas.pdb import PandasPdb
 from src.mainFunction import *
 
+
+import os
+import pandas as pd
+from biopandas.pdb import PandasPdb
 pdbfile = "/Users/xluhon/Documents/alphafold_pdb/"
 all_pdb = os.listdir(pdbfile)
 ppdb = PandasPdb()
 PITT_score = []
 for i in all_pdb:
     print(i)
-    pdb_in = pdbfile + i
-    ppdb.read_pdb(pdb_in)
-    ss = ppdb.df['ATOM']
-    mainchain = ss[(ss['atom_name'] == 'CA')]
-    bfact_mc_avg = mainchain['b_factor'].mean()
-    PITT_score.append(bfact_mc_avg)
-
+    if '.pdb' in i:
+        pdb_in = pdbfile + i
+        ppdb.read_pdb(pdb_in)
+        ss = ppdb.df['ATOM']
+        mainchain = ss[(ss['atom_name'] == 'CA')]
+        bfact_mc_avg = mainchain['b_factor'].mean()
+        PITT_score.append(bfact_mc_avg)
 data_merge = pd.DataFrame({"id":all_pdb, "score":PITT_score})
-data_merge_low_quality = data_merge[data_merge["score"] < 75]
-data_merge_high_quality = data_merge[data_merge["score"] >= 75]
+data_merge["id_update"] = data_merge["id"].str.replace("AF-", "").str.replace("-F1-model_v1.pdb","")
+#data_merge_low_quality = data_merge[data_merge["score"] < 75]
+#data_merge_high_quality = data_merge[data_merge["score"] >= 75]
+data_merge.to_excel("result/alphafold_quality.xlsx")
+
+
+
+# change above code as function
+def calculateQualityScore(pdb_dir="/Users/xluhon/Documents/alphafold_pdb/"):
+    import os
+    import pandas as pd
+    from biopandas.pdb import PandasPdb
+    pdbfile = pdb_dir
+    all_pdb = os.listdir(pdbfile)
+    ppdb = PandasPdb()
+    PITT_score = []
+    for i in all_pdb:
+        print(i)
+        if '.pdb' in i:
+            pdb_in = pdbfile + i
+            ppdb.read_pdb(pdb_in)
+            ss = ppdb.df['ATOM']
+            mainchain = ss[(ss['atom_name'] == 'CA')]
+            bfact_mc_avg = mainchain['b_factor'].mean()
+            PITT_score.append(bfact_mc_avg)
+    data_merge = pd.DataFrame({"id": all_pdb, "score": PITT_score})
+    data_merge["id_update"] = data_merge["id"].str.replace("AF-", "").str.replace("-F1-model_v1.pdb", "")
+    return data_merge
+
+
+
+
+
+
+
 
 
 
 # based on quality, estimate which enzyme from Yeast8 need re-modelling
 data_merge = pd.read_excel("result/alphafold_quality.xlsx")
-data_merge["id_update"] = data_merge["id"].str.replace("AF-", "").str.replace("-F1-model_v1.pdb","")
 # get the gene id based on uniprot id
 id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 data_merge["gene"] = multiMapping(description=id_mapping["GeneName"], item1=id_mapping["Entry"], item2=data_merge["id_update"])

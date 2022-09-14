@@ -55,10 +55,10 @@ dir0 = "/Users/xluhon/Documents/UP000000625_83333_ECOLI_v2/"
 all_file = os.listdir(dir0)
 
 # make new dir
-os.mkdir("/Users/xluhon/Documents/" + "alphafold_pdb")
+os.mkdir("/Users/xluhon/Documents/" + "alphafold_pdb_ECOLI_v2")
 
 # copy files
-output = "/Users/xluhon/Documents/" + "alphafold_pdb"
+output = "/Users/xluhon/Documents/" + "alphafold_pdb_ECOLI_v2"
 for x in all_file:
     print(x)
     if ".pdb.gz" in x:
@@ -70,7 +70,7 @@ for x in all_file:
 # uncompress the gz files
 
 """
-cd /Users/xluhon/Documents/alphafold_pdb
+cd /Users/xluhon/Documents/alphafold_pdb_ECOLI_v2
 gunzip -k *.gz
 """
 
@@ -80,7 +80,7 @@ rm *.pdb.gz
 """
 
 # calculate the volume
-"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb"
+"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb_ECOLI_v2"
 
 
 
@@ -89,14 +89,14 @@ rm *.pdb.gz
 ###############################################################
 # for the SCHPO
 # pdb dir
-dir0 = "/Users/xluhon/Documents/UP000000559_237561_CANAL_v2/"
+dir0 = "/Users/xluhon/Documents/UP000002485_284812_SCHPO_v2/"
 all_file = os.listdir(dir0)
 
 # make new dir
-os.mkdir("/Users/xluhon/Documents/" + "alphafold_pdb_SCHPO")
+os.mkdir("/Users/xluhon/Documents/" + "alphafold_pdb_SCHPO_v2")
 
 # copy files
-output = "/Users/xluhon/Documents/" + "alphafold_pdb_SCHPO"
+output = "/Users/xluhon/Documents/" + "alphafold_pdb_SCHPO_v2"
 for x in all_file:
     print(x)
     if ".pdb.gz" in x:
@@ -108,7 +108,7 @@ for x in all_file:
 # uncompress the gz files
 
 """
-cd /Users/xluhon/Documents/alphafold_pdb_SCHPO
+cd /Users/xluhon/Documents/alphafold_pdb_SCHPO_v2
 gunzip -k *.gz
 """
 
@@ -118,7 +118,7 @@ rm *.pdb.gz
 """
 
 # calculate the volume
-"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb_SCHPO"
+"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb_SCHPO_v2"
 
 
 

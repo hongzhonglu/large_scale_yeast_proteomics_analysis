@@ -159,3 +159,12 @@ plot(sce_TF$score,sce_TF$volume_per_kda2,cex=0.1,xlab="score",ylab="volume_per_k
 lines(sce_TF$score,predictions2,col="red")
 write.table(sce_TF,"sce_protein_with_TF_classification2.txt")
 """
+
+
+
+
+
+
+
+
+

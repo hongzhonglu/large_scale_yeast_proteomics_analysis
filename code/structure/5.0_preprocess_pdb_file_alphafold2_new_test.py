@@ -1,16 +1,6 @@
-# ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000002311_559292_YEAST_v2.tar sce
-# ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000000559_237561_CANAL_v2.tar Schizosaccharomyces pombe
-# ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000005640_9606_HUMAN_v2.tar human
-# ftp://ftp.ebi.ac.uk/pub/databases/alphafold/v2/UP000000625_83333_ECOLI_v2.tar e.coli
-# volume calculation
-"java -jar /Users/xluhon/Documents/ProteinVolume_1.3/ProteinVolume_1.3.jar /Users/xluhon/Documents/alphafold_pdb"
-
-
-
-
+# The script is used to prepare sh file for the us-align calculation
 
 import os
-import pandas as pd
 import shutil
 
 
@@ -90,36 +80,23 @@ ortholog_relation0 = ortholog_relation.dropna()
 
 #process:
 with open("data/organism_result_two_strains.sh", "w") as outfile:
-for i, x in ortholog_relation0.iterrows():
-    print(i, x)
-    y1 = x[1].split(', ')
-    y2 = x[2].split(', ')
+    for i, x in ortholog_relation0.iterrows():
+        print(i, x)
+        y1 = x[1].split(', ')
+        y2 = x[2].split(', ')
 
-    # check the name as the protein stucture ID
-    y1 = [x.split('|')[1] for x in y1]
-    y2 = [x.split('|')[1] for x in y2]
+        # check the name as the protein stucture ID
+        y1 = [x.split('|')[1] for x in y1]
+        y2 = [x.split('|')[1] for x in y2]
 
-    y1 = ['AF-' + x + '-F1-model_v3.pdb' for x in y1]
-    y2 = ['AF-' + x + '-F1-model_v3.pdb' for x in y2]
+        y1 = ['AF-' + x + '-F1-model_v3.pdb' for x in y1]
+        y2 = ['AF-' + x + '-F1-model_v3.pdb' for x in y2]
 
-    # try to save the file
-    for i in y1:
-        for j in y2:
-            s_out = i + '@@' + j
-            commond_line = './USalign ' + '/home/yeast/data_for_structure_align/alphafold_pdb_v3_canal/' + i + ' ' + '/home/yeast/data_for_structure_align/alphafold_pdb_v3_yeast/' + j + \
-                           ' >> ' + '/home/yeast/Documents/tm_out_two_strains/' + s_out + '.txt' + '\n'
-            print(commond_line)
-            outfile.write(commond_line)
-
-
-
-
-
-
-
-
-
-
-
-
-
+        # try to save the file
+        for i in y1:
+            for j in y2:
+                s_out = i + '@@' + j
+                commond_line = './USalign ' + '/home/yeast/data_for_structure_align/alphafold_pdb_v3_canal/' + i + ' ' + '/home/yeast/data_for_structure_align/alphafold_pdb_v3_yeast/' + j + \
+                               ' >> ' + '/home/yeast/Documents/tm_out_two_strains/' + s_out + '.txt' + '\n'
+                print(commond_line)
+                outfile.write(commond_line)
