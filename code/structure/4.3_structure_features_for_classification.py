@@ -6,6 +6,7 @@ import matplotlib.pyplot as plt
 from geometricus import GeometricusEmbedding
 from geometricus import MomentInvariants, SplitType
 from src.protein_process import *
+import seaborn as sns
 
 # only focus on interesting subsystems
 sce_kegg_pathway = pd.read_excel("data/sce_kegg_pathway.xlsx")
@@ -86,6 +87,46 @@ plt.scatter(reduced[indices1, 0],
 plt.xlabel('Principal component 1', fontsize=15)
 plt.ylabel('Principal component 2', fontsize=15)
 plt.savefig("result/figure_cluster3_map_gene_family_info.pdf", bbox_inches='tight')
+
+
+
+# plot
+# based on proteins with or without function annotation
+s1 = open('/Users/xluhon/Documents/data_for_structure_align/protein_seq_for_alphafold/UP000002311_559292.fasta').readlines()
+s2 = [x for x in s1 if '>' in x]
+
+# uncharacterized protein
+s2_c = [x for x in s2 if 'Uncharacterized' in x]
+s2_other = list(set(s2)-set(s2_c))
+
+# remove the detailed function annotation
+s2_c = [x.split(' ')[0] for x in s2_c]
+s2_other = [x.split(' ')[0] for x in s2_other]
+
+# check the name as the protein stucture ID
+s2_c = [x.split('|')[1] for x in s2_c]
+s2_other = [x.split('|')[1] for x in s2_other]
+
+s2_c = ['AF-' + x + '-F1-model_v1.pdb' for x in s2_c]
+s2_other = ['AF-' + x + '-F1-model_v1.pdb' for x in s2_other]
+
+
+
+indices = list(range(0,len(X_names)))
+indices1 = [i for i,x in enumerate(X_names) if x in s2_c]
+plt.figure()
+sns.set_style("white")
+plt.scatter(reduced[indices, 0],
+            reduced[indices, 1],
+            label=class_names[0], facecolors='none', edgecolor="black", linewidth=0.1, alpha=1)
+plt.scatter(reduced[indices1, 0],
+            reduced[indices1, 1],
+            label="g1", edgecolor="red", linewidth=0.1, alpha=0.8)
+plt.xlabel('Principal component 1', fontsize=15)
+plt.ylabel('Principal component 2', fontsize=15)
+plt.savefig("result/figure_cluster3_map_uncharacteried_protein.pdf", bbox_inches='tight')
+
+
 
 
 

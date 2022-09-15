@@ -57,7 +57,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from geometricus import GeometricusEmbedding
 
-start_time = time()
+
 kmer_embedder = GeometricusEmbedding.from_invariants(invariants_kmer, resolution=4)
 radius_embedder = GeometricusEmbedding.from_invariants(invariants_radius, resolution=4)
 print(f"Generated embeddings in {(time() - start_time):.2f} seconds")
@@ -173,17 +173,6 @@ X_train1.to_numpy()
 X_test1.to_numpy()
 
 
-"""
-# svc too small accuracy
-from sklearn.svm import SVC
-from sklearn.metrics import classification_report
-clf = SVC(class_weight='balanced', probability=True)
-clf.fit(X_train1, y_train)
-y_pred = clf.predict(X_test1)
-class_names = ["core_gene","Variable"]
-print(classification_report(y_test, y_pred, class_names))
-"""
-
 
 # random forest
 from sklearn.ensemble import RandomForestClassifier
@@ -206,56 +195,3 @@ class_names = ["core_gene","Variable"]
 print(classification_report(y_test, y_pred, class_names))
 
 
-
-
-"""
-# TF prediction
-pro_type = pd.read_excel("data/sce_protein_with_TF_classification.xlsx")
-pro_type = pro_type[["id", "TF", "volume_per_kda"]]
-pro_type.columns = ["id", "gene_type", "volume_per_kda"]
-
-
-from sklearn.model_selection import train_test_split
-from src.protein_process import *
-
-X_names = pro_type["id"].tolist()
-y = pro_type["gene_type"].tolist()
-X_train_names, X_test_names, y_train, y_test = train_test_split(X_names, y, test_size=0.30)
-
-df.index = df.iloc[:,0]
-
-# add new information
-df["volume_per_kda"] = singleMapping(pro_type["volume_per_kda"],pro_type["id"],df.iloc[:,0])
-df0 = df.iloc[:,1:]
-
-
-X_train = df0[df0.index.isin(X_train_names)]
-X_test = df0[df0.index.isin(X_test_names)]
-
-# get the columns with all elements equal to zero in X_train
-all_columns = list(X_train.columns)
-all_columns = [x for x in all_columns if x !="volume_per_kda"]
-columns_used = []
-for x in all_columns:
-    s0 = X_train[x].tolist()
-    s1 = sum(s0)
-    if s1 >= 1:
-        columns_used.append(x)
-
-X_train1 = X_train[columns_used + ["volume_per_kda"]]
-X_test1 = X_test[columns_used + ["volume_per_kda"]]
-
-
-X_train1.to_numpy()
-X_test1.to_numpy()
-
-
-# decision tree
-from sklearn.tree import DecisionTreeClassifier
-from sklearn.metrics import classification_report
-clf = DecisionTreeClassifier(random_state=42, max_depth=3) # 42, 3
-clf.fit(X_train1, y_train)
-y_pred = clf.predict(X_test1)
-class_names = ["No","Yes"]
-print(classification_report(y_test, y_pred, class_names))
-"""

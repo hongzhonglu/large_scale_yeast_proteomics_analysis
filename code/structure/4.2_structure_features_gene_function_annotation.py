@@ -11,6 +11,7 @@ from scipy.cluster.hierarchy import linkage, dendrogram
 
 
 # a small test
+# check whether the structure feature could help to characterize the functions of protein homologs
 glucose = "YDL245C or YDL247W or YDR342C or YDR343C or YDR345C or YDR536W or YEL069C or YFL011W or YHR092C or YHR094C or YHR096C or YJL214W or YJL219W or YJR158W or YJR160C or YLR081W or YMR011W or YNR072W or YOL156W or YDR387C"
 glucose_list = glucose.split(" or ")
 structure_quality_all = pd.read_excel("result/alphafold_quality_with_gene_ID.xlsx")
@@ -85,6 +86,9 @@ plt.show()
 
 
 
+
+
+
 # get the important features
 from sklearn.decomposition import PCA
 import pandas as pd
@@ -119,7 +123,7 @@ df.columns = ["component","index"]
 
 # mapping to the shapemer_keys
 index_detail = df["index"][df["component"]=="PC1"][0]
-shapemer = kmer_embedder.shapemer_keys[index_detail] #242 is the feature IDs
+shapemer = kmer_embedder.shapemer_keys[index_detail] # 242 is the feature IDs
 residue_indices_train = kmer_embedder.map_shapemer_to_residues(shapemer)
 print("Shape-mer:", shapemer, "Number of proteins with shape-mer:", len(residue_indices_train))
 print()
