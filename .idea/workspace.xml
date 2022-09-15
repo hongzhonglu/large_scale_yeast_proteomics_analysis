@@ -6,12 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/4.1_structure_features_geometricus.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.1_structure_features_geometricus.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/4.2_structure_features_gene_function_annotation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.2_structure_features_gene_function_annotation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_classification.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure_cluster3_map_classification.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_gene_family_info.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure_cluster3_map_gene_family_info.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/tm_score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/tm_score.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

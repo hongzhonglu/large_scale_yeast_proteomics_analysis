@@ -122,6 +122,8 @@ result_df["pident2"] = singleMapping(yeast_canda["pident"],yeast_canda["combine"
 
 
 result_df.to_excel('result/tm_score.xlsx')
+g1 = result_df[result_df['tm_score'] < 0.50]
+g2 = result_df[result_df['tm_score'] >= 0.50]
 
 
 
@@ -145,35 +147,10 @@ res
 
 
 
-
-result_df_filter1 = result_df[result_df['average_pidentity'] <=30]
-sns.displot(result_df_filter1, x="tm_score")
-plt.xlabel('tm_score', fontsize=15)
-plt.ylabel('Count', fontsize=15)
-plt.xticks(fontsize=12)
-plt.yticks(fontsize=12)
-# calculate the person coefficient
-from scipy import stats
-res = stats.pearsonr(result_df_filter1['average_pidentity'], result_df_filter1['tm_score'])
-res
-
-
-
-result_df_filter2 = result_df[result_df['average_pidentity'] >=70]
-sns.displot(result_df_filter2, x="tm_score")
-plt.xlabel('tm_score', fontsize=15)
-plt.ylabel('Count', fontsize=15)
-plt.xticks(fontsize=12)
-plt.yticks(fontsize=12)
-res = stats.pearsonr(result_df_filter2['average_pidentity'].tolist(), result_df_filter2['tm_score'].tolist())
-res
-
-
-
-
-
 # scatter plot
 from scipy.stats import gaussian_kde
+from scipy import stats
+
 
 x = result_df['average_pidentity'].tolist()
 y = result_df['tm_score'].tolist()
@@ -190,3 +167,27 @@ plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.show()
 
+
+# check the effect of pidentity
+result_df_filter1 = result_df[result_df['average_pidentity'] <=30]
+result_df_filter1['Pidentity'] = "≤30%"
+
+# calculate the person coefficient
+res = stats.pearsonr(result_df_filter1['average_pidentity'], result_df_filter1['tm_score'])
+res
+
+
+result_df_filter2 = result_df[result_df['average_pidentity'] >=70]
+result_df_filter2['Pidentity'] = "≥70%"
+res = stats.pearsonr(result_df_filter2['average_pidentity'].tolist(), result_df_filter2['tm_score'].tolist())
+res
+
+
+# combine the above two figures
+frames = [result_df_filter1, result_df_filter2]
+result = pd.concat(frames)
+sns.displot(data=result, x='tm_score', hue='Pidentity', fill=True, palette=sns.color_palette('bright')[:2], height=5, aspect=1, alpha=0.25,kde=True)
+plt.xlabel('tm_score', fontsize=15)
+plt.ylabel('Count', fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
