@@ -103,15 +103,21 @@ data_merge1=data_merge1[~(data_merge1["locus"]=="YMR231W")]
 
 
 
-# plot the density graph
-ax = data_merge1.plot.scatter(x='volume', y='Total_Volume')
-ax.set_title("")
-ax.set_xlabel("Rough estimated volume(nm^3)")
-ax.set_ylabel("Structure_based volume(nm^3)")
-ax.set_xlim(0,350)
-ax.set_ylim(0,350)
+# plot
+import matplotlib.pyplot as plt
+import seaborn as sns
+plt.figure(figsize=(6, 6))
+sns.scatterplot(x='volume', y='Total_Volume', data=data_merge1)
+plt.xlabel('Roughly estimated volume(nm^3)', fontsize=20)
+plt.ylabel('Structure_based volume(nm^3)', fontsize=20)
+plt.xlim(0, 360)
+plt.ylim(0, 360)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.savefig('result/volume comparison from two procedures.pdf', bbox_inches='tight')
 
-# however some proteins did not have protein 3D structures, then we still need the data from the molecualr weight
+
+# however some proteins did not have protein 3D structures, then we still need the data from the molecular weight
 data_merge1 = data_merge1[['DBID', 'locus','Total_Volume', 'section_area_new']]
 gene_no_structure = list(set(data_merge["locus"])-set(data_merge1["locus"]))
 data_need_added = data_merge[data_merge["locus"].isin(gene_no_structure)]
