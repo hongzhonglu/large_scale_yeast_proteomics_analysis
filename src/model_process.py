@@ -2,6 +2,8 @@ from cobra.io import read_sbml_model
 import pandas as pd
 from src.mainFunction import *
 
+
+
 def getALLGEMgene():
     """
     The function is used to get the metabolic gene list.
@@ -13,6 +15,7 @@ def getALLGEMgene():
         print(x.id)
         gene_yeast.append(x.id)
     return gene_yeast
+
 
 
 def getTransporterCellMembraneGEM():
@@ -36,6 +39,7 @@ def getTransporterCellMembraneGEM():
     return m_gene_plasma_membrane
 
 
+
 def getProteinForRxnGEM(rxnID):
     """
     Get the proteins based on reaction IDs
@@ -48,6 +52,7 @@ def getProteinForRxnGEM(rxnID):
     df = rxn_gene[rxn_gene['rxnID'].isin(rxnID)]
     pro_list = list(set((df['gene'])))
     return pro_list
+
 
 
 def exchange_ecYeast(s1, subystem):
@@ -78,6 +83,7 @@ def exchange_ecYeast(s1, subystem):
         else:
             subystem[i] = subystem[i]
     return subystem
+
 
 
 # function copy from strain_design repo
@@ -111,12 +117,14 @@ def ecYeastMinimalMedia(model):
     return model
 
 
+
 def chemostatSimulation(model0, D0):
     """
     This funcion is used to simulate the chemostat growth of yeast
-    :param model0:
-    :param D0:
-    :return:
+    Actually this function is general to solve the ecGEMs
+    :param model0: a ecGEMs
+    :param D0: a growth rate
+    :return: solution of fluxes
     """
     growth = D0
     with model0:
@@ -134,8 +142,17 @@ def chemostatSimulation(model0, D0):
     return solution3
 
 
-def simulationCompare(model_in, growth_in, objective):
 
+def simulationCompare(model_in, growth_in, objective):
+    """
+    This function is used to compare the result when different objective function is employed.
+    :param model_in:
+    :param growth_in:
+    :param objective: a kind of objective for ecModel_batch, which could minimize the total protein volume
+    :return:
+    """
+
+    # 1_minimize the glucose uptake and minimize protein pool
     with model_in:
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
@@ -146,9 +163,11 @@ def simulationCompare(model_in, growth_in, objective):
         solution00 = model0.optimize()
         GR = solution00.fluxes["r_1714_REV"]  # get the glucose uptake rate
         model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
+        # then minimization protein usage
         model0.objective = {model0.reactions.prot_pool_exchange: -1}
         solution1 = model0.optimize()
 
+    # 2_minimize the glucose uptake
     with model_in:
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
@@ -157,16 +176,16 @@ def simulationCompare(model_in, growth_in, objective):
         model0.reactions.get_by_id("r_1714_REV").bounds = (0, 10)  # open the glucose
         model0.objective = {model0.reactions.r_1714_REV: -1}
         solution2 = model0.optimize()
-
+    # 3_minimize protein pool
     with model_in:
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
         model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
-        # minimization glucose uptake rate
+        # only minimization protein usage
         model0.reactions.get_by_id("r_1714_REV").bounds = (0, 10)  # open the glucose
         model0.objective = {model0.reactions.prot_pool_exchange: -1}
         solution3 = model0.optimize()
-
+    # 4_minimize protein volume
     with model_in:
         model0 = ecYeastMinimalMedia(model_in)
         # set growth
@@ -175,6 +194,154 @@ def simulationCompare(model_in, growth_in, objective):
         model0.reactions.get_by_id("r_1714_REV").bounds = (0, 10)  # open the glucose
         model0.objective = objective
         solution4 = model0.optimize()
-    return solution1, solution2, solution3, solution4
 
+    # 5_minimize the glucose uptake and protein volume
+    with model_in:
+        model0 = ecYeastMinimalMedia(model_in)
+        # set growth
+        model0.reactions.get_by_id("r_2111").bounds = (growth_in, growth_in)
+        # minimization glucose uptake rate
+        model0.reactions.get_by_id("r_1714_REV").bounds = (0, 1000)  # open the glucose
+        model0.objective = {model0.reactions.r_1714_REV: -1}
+        solution00 = model0.optimize()
+        GR = solution00.fluxes["r_1714_REV"]  # get the glucose uptake rate
+        model0.reactions.get_by_id("r_1714_REV").bounds = (GR, GR * 1.001)
+        model0.objective = objective
+        solution5 = model0.optimize()
+    return solution1, solution2, solution3, solution4, solution5
+
+
+
+
+def getRxnByGene(model, gene0):
+    """
+    :param model: A metabolic model
+    :param gene0: A gene
+    :return:
+
+    Example:
+    getRxnByGene(model, gene0="YGR192C")
+
+    """
+    rxn_list2 = []
+    for gene in model.genes:
+        if gene.id == gene0:
+            rxn_list = gene.reactions
+            for x in rxn_list:
+                rxn_list2.append(x.id)
+    return rxn_list2
+
+
+
+"""
+def getRxnByReactionName(model, name):
+    for rxn in model.reactions:
+        if name in rxn.name:
+            print(rxn.id)
+            return rxn.id
+        else:
+            return None
+"""
+
+
+
+def getRxnByReactionName(model, name):
+    """
+    This function is used to extract the rxn id based on rxn name
+    It is suitable for ecGEMs as multiple reations could use the same name
+
+    :param model:
+    :param name:
+    :return:
+    """
+    s = []
+    for rxn in model.reactions:
+        if name == rxn.name:
+            #print(rxn.id)
+            s.append(rxn.id)
+    return s
+
+
+def DLecModelSimulate(model, dilution_rate):
+   """
+   This function is used to do simulation with ecModels using kcat value from deep learning.
+   :param model: a ecModel
+   :param dilution_rate: a dilution rate in range of 0-0.42 /h
+
+   :return: solution_f: fluxes datasets
+
+   """
+
+   dilutionrate = dilution_rate
+   ecYeast = model
+   if dilutionrate >= 0.4:
+       ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27 * dilutionrate / 0.4, 0)  # this value is further rescaled by maximal growth rate at 0.42.
+   else:
+       ecYeast.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)  # -230/0.55*0.4, this is rescaled by maximal growth rate.
+
+   # refer to bioRxiv
+   ex_mets = ['biomass pseudoreaction', 'D-glucose exchange', 'acetate exchange', 'ethanol exchange',
+              'glycerol exchange', 'pyruvate exchange', 'ethyl acetate exchange', 'carbon dioxide exchange',
+              'oxygen exchange', 'EX_protein_pool']
+   # find the related rxnID
+   idx = []
+   for name0 in ex_mets:
+       #print(name0)
+       s = getRxnByReactionName(model=ecYeast, name=name0)
+       if len(s) > 1:
+           print("need check")
+       elif len(s) == 1:
+           idx.append(s[0])
+
+   model_tmp = ecYeast #.copy() # this is adjusted for the newly added constraints from organelle
+   model_tmp.reactions.get_by_id(idx[1]).lower_bound = -1000  # glucose uptake
+   model_tmp.reactions.get_by_id(idx[0]).lower_bound = dilutionrate
+   model_tmp.objective = {model_tmp.reactions.r_1714: 1}  # minimize the uptake of glucose
+   solution2 = model_tmp.optimize()
+   # then fix glucose uptake and minimize the protein pool
+   model_tmp.reactions.get_by_id(idx[1]).lower_bound = solution2.objective_value * 1.00001
+   print('Glucose uptake rate: ',solution2.objective_value)
+   model_tmp.reactions.get_by_id(idx[9]).lower_bound = -1000 # protein pool
+   model_tmp.objective = {model_tmp.reactions.EX_protein_pool: 1}  # minimize the usage of protein pools
+   solution_f = model_tmp.optimize()
+   solution_f.fluxes["EX_protein_pool"]
+   solution_f.fluxes["r_1714"]
+   return solution_f
+
+
+def updateEcGEMkcat(ecGEM, target_gene, rxnID, kcat_m):
+    """
+    The function is used to update the kcat of enzyme in specific reaction from ecModel
+    Generally, an enzyme and the related reaction determine the corresponding kcat value.
+
+    :param ecGEM: the enzyme constrainted model
+    :param target_gene: the gene id of the enzyme
+    :param rxnID: the reaction id contains the enzyme
+    :param kcat_m: the new value of kcat
+    :return:
+    ecModel
+
+    """
+    ecModel = ecGEM.copy()
+    coef = 1 / kcat_m
+    ss = ecModel.reactions.get_by_id(rxnID).reaction
+    # split as coefficient
+    ss1 = ss.split(" + ")
+    ss2 = []
+    for xx in ss1:
+        if target_gene + '[' in xx:
+            xx1 = xx.split(' ')[1]
+            xx2 = str(coef) + ' ' + xx1
+            print('old coefficient', xx)
+            print('old kcat', 1 / float(xx.split(' ')[0]))
+            print('new coefficient', xx2)
+            print('new kcat', kcat_m)
+            ss2.append(xx2)
+        else:
+            ss2.append(xx)
+    rxn_update = " + ".join(ss2)
+    print('old rxn:', ss)
+    print('new rxn:', rxn_update)
+    ecModel.reactions.get_by_id(rxnID).reaction = rxn_update
+    return ecModel
 

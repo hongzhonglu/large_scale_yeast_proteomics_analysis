@@ -46,6 +46,9 @@ for col0 in Sample_ID_select:
         elif y == "fungal-type vacuole membrane":
             genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
             genes_select = [x for x in genes_select if x not in ["YAL005C","YLL024C"]] # remove two genes for fungal type vacuole membrane
+        elif y == "endosome":
+            genes_select = compartment[y]
+            genes_select = [x for x in genes_select if x not in ["YKR039W"]] # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
         else:
             genes_select = compartment[y]
         pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
@@ -61,7 +64,6 @@ for col0 in Sample_ID_select:
 result1.to_excel("data/proteomics/volume_size_across_compartment_tao2.xlsx")
 result2.to_excel("data/proteomics/membrane_size_across_compartment_tao2.xlsx")
 
-
 # fungal-type vacuole
 #import seaborn as sns
 #ss = pro_abundance1
@@ -69,6 +71,3 @@ result2.to_excel("data/proteomics/membrane_size_across_compartment_tao2.xlsx")
 #ss = ss[ss["molecular/cell"]>=60000]
 # analyze the density
 #sns.displot(ss, x="molecular/cell")
-
-
-

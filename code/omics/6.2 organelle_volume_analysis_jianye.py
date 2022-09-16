@@ -57,12 +57,8 @@ for x in column1:
         print(x)
         volume_size_jianye_ratio1[x] = volume_size_tr0[x] / volume_size_tr0["total_pro_volume"]
 
-
-
-
-
 volume_size_jianye_ratio1['sample_ID'] = list(volume_size_jianye_ratio1.index)
-volume_size_tr0.to_excel("data/jianye_ye_datasets.xlsx")
+volume_size_jianye_ratio1.to_excel("data/proteomics/organell_protein_ratio_jianye.xlsx")
 
 
 
@@ -101,17 +97,17 @@ for y0 in column_select1:
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
         plt.xlim(0, 0.4)
-        plt.axvline(x=0.33, color='k', linestyle='--')
+        plt.axvline(x=0.284, color='k', linestyle='--')
         plt.savefig(title0,bbox_inches='tight')
     else:
-        plt.figure()
+        plt.figure(figsize=(4, 4))
         sns.lineplot(x=x0, y=y0, data=combine_data, marker="o")
         plt.xlabel(x0, fontsize=15)
         plt.ylabel(y0, fontsize=15)
         plt.xticks(fontsize=12)
         plt.yticks(fontsize=12)
         plt.xlim(0, 0.4)
-        plt.axvline(x=0.33, color='k', linestyle='--')
+        plt.axvline(x=0.284, color='k', linestyle='--')
         plt.savefig(title0,bbox_inches='tight')
 
 

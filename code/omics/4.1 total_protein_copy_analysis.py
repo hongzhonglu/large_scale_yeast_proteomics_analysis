@@ -33,6 +33,8 @@ result_Jianye = result_df0[result_df0.index.str.contains("_M")]
 result_rosemary = result_df0[result_df0.index.str.contains("prot.")]
 result_rosemary_NH4_limitation = result_rosemary[result_rosemary["Nitrogen source"]=="NH4"]
 result_rosemary_NH4_limitation = result_rosemary_NH4_limitation [result_rosemary_NH4_limitation ["limiting nutrient"]=="N"]
+
+
 result_not_rosemary = result_df0[~result_df0.index.str.contains("prot.")]
 
 # plot the bar plot

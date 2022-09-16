@@ -1,5 +1,5 @@
-# Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
-# Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
+#TO-DO: will refine the script here!
+
 
 import matplotlib.pyplot as plt
 import os
@@ -13,7 +13,6 @@ import seaborn as sns
 # input the physiological datasets from Rosemerry
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
 # input the membrane size data
-# membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation.xlsx") # not curated
 membrane_size = pd.read_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx") # curated based on cell size under different growth rate
 membrane_size_tr = membrane_size.transpose()
 membrane_size_tr0 = membrane_size_tr.rename(columns=membrane_size_tr.iloc[1])
@@ -78,10 +77,6 @@ plt.ylabel('rate (mmol/gDW.h)')
 plt.legend(loc='upper left')
 plt.ylim(0, 25)
 plt.show()
-
-
-
-
 
 
 # only take the datasets with NH4 as nitrogen under the N limitation
@@ -167,57 +162,15 @@ for i, x in membrane_only.iterrows():
 
 membrane_only_ratio["dilution rate (/h)"] = combine_data2["dilution rate (/h)"]
 
-
-
-# plot the figure in occupied area
-x0 = "dilution rate (/h)"
-for y0 in column_select10:
-    title0 = 'result/figure/rose_miu_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=0.18, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-x0 = 'qO2 (mmol/gDW h)'
-for y0 in column_select10:
-    title0 = 'result/figure/rose_qo2_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=5.4, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-
-x0 = 'total protein content (g/gDW)'
-for y0 in column_select10:
-    title0 = 'result/figure/rose_total_protein_content_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2, lowess=True, height=4, aspect=1)
-    plt.axvline(x=0.286, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " occupied area",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-
 # plot the figure in ratio
 x0 = "dilution rate (/h)"
 for y0 in column_select10:
     title0 = 'result/figure/rose_miu_ratio_' + y0 + '.pdf'
     print(title0)
 
-    sns.lmplot(x=x0, y=y0, data=membrane_only_ratio, lowess=True, height=4, aspect=1)
+    #sns.lmplot(x=x0, y=y0, data=membrane_only_ratio, lowess=True, height=4, aspect=1)
+    plt.figure(figsize=(4, 4))
+    sns.lineplot(x=x0, y=y0, data=membrane_only_ratio, marker="o")
     plt.axvline(x=0.18, color='k', linestyle='--')
     plt.xlabel(x0,fontsize=12)
     plt.ylabel(y0 + " occupied ratio",fontsize=15)
@@ -226,15 +179,61 @@ for y0 in column_select10:
     plt.savefig(title0, bbox_inches='tight')
 
 
+# relative to the plasma's protein sectional area
+membrane_to_plasma = membrane_only_ratio.copy()
+for y0 in column_select10:
+    membrane_to_plasma[y0] = membrane_to_plasma[y0]/membrane_only_ratio["plasma membrane"]
+    membrane_to_plasma[y0] = pd.to_numeric(membrane_to_plasma[y0])
+
+x0 = "dilution rate (/h)"
+for y0 in column_select10:
+    title0 = 'result/figure/rose_miu_ratio_membrane_to_plasma_' + y0 + '.pdf'
+    print(title0)
+    plt.figure(figsize=(4, 4))
+    sns.lineplot(x=x0, y=y0, data=membrane_to_plasma, marker="o")
+    plt.axvline(x=0.18, color='k', linestyle='--')
+    plt.xlabel(x0,fontsize=12)
+    plt.ylabel(y0 + " ratio per plasma",fontsize=15)
+    plt.xticks(fontsize=12)
+    plt.yticks(fontsize=12)
+    plt.savefig(title0, bbox_inches='tight')
 
 
 
+# try to put all lines in one figure
+s2 = membrane_only_ratio["dilution rate (/h)"].tolist()
+colname0 = list(membrane_only_ratio.columns)
+colname0 = [x for x in colname0 if x !="dilution rate (/h)"]
+# change the data format
+membrane_only_ratio0 = membrane_only_ratio[colname0]
+for x in colname0:
+    membrane_only_ratio0[x] = pd.to_numeric(membrane_only_ratio0[x])
 
+membrane_only_ratio0["sample_ID"] = ["D=" + str(x) for x in s2]
 
+membrane_only_ratio01 = membrane_only_ratio0.groupby(['sample_ID']).mean()
+membrane_only_ratio02 = membrane_only_ratio01.transpose()
 
+def calculate_fold_change(data_t):
+    data_t0 = data_t.copy()
+    all_col = list(data_t0.columns)
+    ref = all_col[0]
+    for x in all_col:
+        print(x)
+        data_t0[x] = data_t[x] / data_t[ref]
+    return data_t0.iloc[:,0:]
 
+membrane_only_ratio03 = calculate_fold_change(membrane_only_ratio02)
+membrane_only_ratio04 = membrane_only_ratio03.transpose()
+membrane_only_ratio04["dilution rate (/h)"] = list(dict.fromkeys(s2)) # remove the duplicates while keeping the order
 
-
+# plot
+plt.figure()
+sns.lineplot(x='dilution rate (/h)', y='value', hue='variable', style="variable",
+             data=pd.melt(membrane_only_ratio04, ['dilution rate (/h)']))
+plt.axhline(y=1.0, color='k', linestyle='--')
+plt.legend(bbox_to_anchor=(1.02, 1), loc='upper left', borderaxespad=0)
+plt.savefig('result/figure/rose_miu_membrane_ratio_for_all.pdf', bbox_inches='tight')
 
 
 
@@ -276,11 +275,8 @@ fig = plt.figure(figsize=(4,6))
 sns.regplot(xs, ys, ci=95)
 plt.xlabel('mitochondrial outer membrane')
 plt.ylabel('mitochondrial inner membrane')
-
-
 ax = sns.regplot(xs, ys, ci=95)
 ax.set(yscale='log')
-
 # fit a nonparametric regression using a lowess smoother.
 sns.lmplot(x="mitochondrial outer membrane", y="mitochondrial inner membrane", data=membrane_size_sysbio,
            lowess=True)
@@ -291,12 +287,14 @@ sns.lmplot(x="mitochondrial outer membrane", y="mitochondrial inner membrane", d
 membrane_per_cell_surface = membrane_only.copy()
 df_curated = calculateCurationCoefficent()
 # calculate the surface area
-
-
 total_volume = df_curated["cell_size"].tolist()
 all_radius =[(3*x/(4*math.pi))**(1/3) for x in total_volume]
 cell_surface_area = [4*math.pi*x**2 for x in all_radius]
 df_curated["cell_surface_area"] = cell_surface_area
+
+
+
+
 
 for y0 in column_select10:
     print(y0)
@@ -329,22 +327,6 @@ for y0 in column_select10:
 
 
 
-x0 = 'qO2 (mmol/gDW h)'
-for y0 in column_select10:
-    title0 = 'result/figure/rose_qo2_' + y0 + '_per_cell_surface.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=membrane_per_cell_surface, lowess=True, height=4, aspect=1)
-    plt.axvline(x=5.4, color='k', linestyle='--')
-    plt.xlabel(x0,fontsize=12)
-    plt.ylabel(y0 + " per cell surface",fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.savefig(title0, bbox_inches='tight')
-
-
-
-
 # plot the figure
 x0 = "cell_surface_area"
 for y0 in column_select10:
@@ -357,5 +339,3 @@ for y0 in column_select10:
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.savefig(title0, bbox_inches='tight')
-
-

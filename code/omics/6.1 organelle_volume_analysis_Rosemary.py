@@ -80,7 +80,8 @@ combine_data = pd.merge(left=volume_size_rosemery_ratio1, right=physiology_rosem
 # here we only explore the condition with only NH4 limitation
 combine_data2 = combine_data[combine_data["Nitrogen source"] =="NH4"]
 combine_data2 = combine_data2[combine_data2["limiting nutrient"] =="N"]
-combine_data2.to_excel("data/proteomics/ratio_of_organelle_volume_to_total_protein_volume.xlsx")
+combine_data2.to_excel("data/proteomics/organell_protein_ratio_rosemary.xlsx")
+
 
 # first calculate correlation coefficient
 from scipy.stats import pearsonr
@@ -98,7 +99,7 @@ pd_null1 = pd_null[pd_null["coefficient_abs"] >= 0.85]
 x0='organelle'
 y0='coefficient'
 plt.figure(figsize=(8, 6))
-sns.set_style('darkgrid')
+#sns.set_style('darkgrid')
 sns.barplot(x=x0, y=y0, data=pd_null1, capsize=.2)
 plt.xlabel(x0, fontsize=15)
 plt.ylabel(y0, fontsize=15)
@@ -135,17 +136,19 @@ column_select1 = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum'
 
 x0 = "dilution rate (/h)"
 for y0 in column_select1:
-    title0 = 'result/figure/rose_miu_' + y0 + '.pdf'
+    title0 = 'result/figure/rose_miu_ratio_' + y0 + '.pdf'
     print(title0)
     #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2,
-               lowess=True,height=4, aspect=1)
+    #sns.lmplot(x=x0, y=y0, data=combine_data2,
+    #           lowess=True,height=4, aspect=1)
+    plt.figure(figsize=(4, 4))
+    sns.lineplot(x=x0, y=y0, data=combine_data2, marker="o")
     plt.xlabel(x0, fontsize=15)
     plt.ylabel(y0, fontsize=15)
     plt.xticks(fontsize=12)
     plt.yticks(fontsize=12)
     plt.axvline(x=0.18, color='k', linestyle='--')
-    plt.savefig(title0)
+    plt.savefig(title0,  bbox_inches='tight')
 
 # Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
 # Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
