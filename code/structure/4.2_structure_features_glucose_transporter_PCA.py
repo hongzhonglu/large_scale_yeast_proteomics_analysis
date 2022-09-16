@@ -61,7 +61,7 @@ pd_null = principal_Df
 x0='x1'
 y0='x2'
 plt.figure()
-sns.set_style('darkgrid')
+sns.set_style('white')
 plt.scatter(principal_Df["x1"], principal_Df["x2"])
 plt.xlabel('principal component 1', fontsize=15)
 plt.ylabel('principal component 2', fontsize=15)
@@ -79,8 +79,6 @@ for x, y, lab in zip(xs, ys, tlab):
                  ha='center',
                  fontsize=5)
 plt.show()
-
-
 
 
 
