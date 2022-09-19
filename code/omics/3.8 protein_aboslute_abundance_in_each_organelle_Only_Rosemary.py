@@ -125,9 +125,3 @@ for col0 in Sample_ID_select:
 
 result1.to_excel("data/proteomics/total_protein_abundance_across_go_term_Rosemary.xlsx")
 #result2.to_excel("data/proteomics/membrance_size_across_go_term_Rosemary.xlsx")
-
-
-
-
-
-

@@ -37,6 +37,10 @@ result_rosemary_NH4_limitation = result_rosemary_NH4_limitation [result_rosemary
 
 result_not_rosemary = result_df0[~result_df0.index.str.contains("prot.")]
 
+
+
+
+
 # plot the bar plot
 # Set Seaborn style
 sns.set_style('darkgrid')

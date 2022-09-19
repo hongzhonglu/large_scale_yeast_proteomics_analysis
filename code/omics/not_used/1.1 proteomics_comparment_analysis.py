@@ -1,5 +1,7 @@
 # this script is to process compartment datasets
+# This is old version
 # 2021-11-16
+# Reviewed by Hongzhong 2022-9-19
 
 # here the compartment annotation is mainly from SGD and MitoMiner
 
@@ -113,3 +115,4 @@ gene_g1_others = gene_g1[~(gene_g1["compartment"]=="mitochondrion/mitochondrial 
 genes_mitochondrion = getGeneListFromLocation(gene_g1_m, 'mitochondrion')
 genes_mito_om = getGeneListFromLocation(gene_g1_m, 'mitochondrial outer membrane')
 genes_mito_im = getGeneListFromLocation(gene_g1_m, 'mitochondrial inner membrane')
+

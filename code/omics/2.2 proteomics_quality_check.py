@@ -1,4 +1,4 @@
-# this script is to calculate the protein ratio in dry cell weight. This ratio should be in 0.4-0.5.
+# this script is to calculate the protein ratio in dry cell weight based on the protein copy. This ratio should be in 0.4-0.5.
 # Hongzhong Lu
 # 2021-11-20
 
@@ -103,7 +103,7 @@ print(proMassRatioFromBenMethod(protein_copy=pro_abundance))
 print(proMassRatioAtCell(protein_copy=pro_abundance, yeast_cell_weight=13)) # from this calculation, it shown that a dry yeast cell should weight at about 13 pg. The reported yeast cell weight at about 47.65 should contain the water!
 
 
-# test the protein copy under exponetional phase
+# test the protein copy under exponential phase
 protein_copy = pd.read_excel("data/proteomics/protein_copy_combine.xlsx")
 
 sample_name = ['Mean Copy number - Glucose','Mean Copy number - Galactose','Mean Copy number - Glycerol']

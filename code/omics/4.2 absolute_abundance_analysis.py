@@ -34,3 +34,4 @@ for col0 in Sample_ID_select:
     result1[col0] = value1
 
 result1.to_excel("data/proteomics/protein_abundance_across_compartment.xlsx")
+
