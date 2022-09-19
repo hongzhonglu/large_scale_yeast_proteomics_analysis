@@ -25,6 +25,20 @@ gene_prot["section_area"] = singleMapping(pro_size['section_area_new'], pro_size
 
 
 
+# plot some density graph
+sns.displot(gene_prot, x="Volume")
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.xlabel("Volume of single protein (nm^3)", fontsize=15)
+
+
+sns.displot(gene_prot, x="section_area")
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.xlabel("Sectional area of single protein (nm^2)", fontsize=15)
+
+
+
 
 
 # input the protein information in organelle level calculated from proteomics
@@ -78,6 +92,9 @@ for xx in organelle_m0: # loop the organelle name
 
 
 
+
+
+
 # further input the absolute protein abundance from each organelle
 absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx")
 absolute_abundance_organelle = absolute_abundance_organelle[absolute_abundance_organelle["compartment"].isin(organelle_m0 + organelle_v0)]
@@ -128,7 +145,10 @@ for xx in organelle_m0 + organelle_v0: # loop the organelle name
     plt.xlabel(xx, fontsize=15)
     plt.ylabel("abs_pro abundance (mmol/gDW)", fontsize=15)
     plt.show()
-    #plt.savefig("result/figure/" + xx + "_abs_pro.pdf", bbox_inches='tight')
+
+
+
+
 
 
 
@@ -156,14 +176,16 @@ for x in m_gene_in_organelle.keys():
     if len(m_gene_in_organelle[x]) <= 3:
         print(x)
 
+
 # try to put the plasma membrane constraint into the model?
 gene_select1 = m_gene_in_organelle['plasma membrane']
 # get the structure based parameters
 gene_prot_select1 = gene_prot[gene_prot["geneID"].isin(gene_select1)]
 gene_prot_select1 = gene_prot_select1.sort_values(by=['section_area'], ascending=False)
 # check the abundance for some outlier samples
-protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
-protein_copy_all_select = protein_copy_all1[protein_copy_all1["gene"].isin(gene_select1)]
+#protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
+#protein_copy_all_select = protein_copy_all1[protein_copy_all1["gene"].isin(gene_select1)]
+
 
 
 # plot some density graph
@@ -177,6 +199,5 @@ sns.displot(gene_prot_select1, x="section_area")
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.xlabel("Sectional area of single protein (nm^2)", fontsize=15)
-
 
 

@@ -2,11 +2,8 @@
 
 
 # import self function
-from src.mainFunction import *
-from src.model_process import *
 from src.protein_process import *
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 
 
 # for Rosemary N limitation experiments

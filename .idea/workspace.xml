@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/2_protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/0_connect_cell_size_with_proteome.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/0_connect_cell_size_with_proteome.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/0_yeastGEM_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/not_used/0_yeastGEM_preprocess.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/combine_organelle_size_with_proteome_calculation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/combine_organelle_size_with_proteome_calculation.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs_rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_range.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_range.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_range_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_range_rosemary.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,9 +110,9 @@
       <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/model/not_used" />
       <recent name="$PROJECT_DIR$/code/structure/not_used" />
       <recent name="$PROJECT_DIR$/code/structure" />
-      <recent name="$PROJECT_DIR$/code/model/not_used" />
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/omics" />
     </key>
