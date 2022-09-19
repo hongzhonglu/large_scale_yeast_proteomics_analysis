@@ -1,10 +1,9 @@
 # this script is to transform the unit of proteomics datasets from mmol/gDW or g/gDW into molecular/cell
-# based on the existing absolute protein copy per cell due to fact that some protein copy may be higher conserved across samples
+# based on the common existing absolute protein copy per cell due to fact that some protein copy may be higher conserved across samples
 # which may be used a ruler to calibrate the protein abundance.
 # 2021-11-16
 
 
-import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
 import statistics

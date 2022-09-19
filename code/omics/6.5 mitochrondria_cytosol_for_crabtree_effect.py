@@ -65,10 +65,6 @@ plt.savefig(title0, bbox_inches='tight')
 
 
 
-
-
-
-
 data_tao2 = data_tao2[["sample_ID", "c_to_m"]]
 data_tao2.sample_ID = data_tao2.sample_ID.str.replace("C_N_", "")
 data_tao2.sample_ID = pd.to_numeric(data_tao2.sample_ID, errors='coerce')
