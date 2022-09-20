@@ -1,4 +1,3 @@
-# This is old version!!!
 # In other condition, the protein copy/cell under different conditions are not calibrated based on the cell size datasets.
 
 # Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
@@ -125,3 +124,6 @@ for col0 in Sample_ID_select:
 
 result1.to_excel("data/proteomics/total_protein_abundance_across_go_term_Rosemary.xlsx")
 #result2.to_excel("data/proteomics/membrance_size_across_go_term_Rosemary.xlsx")
+
+
+

@@ -1,7 +1,8 @@
-# Calcualte the absolute protein abundance from each organelle
+# This is the old version. No calibration about the size of yeast cell.
+
+# Calculate the absolute protein abundance from each organelle
 # 2022-03-14
 
-import matplotlib.pyplot as plt
 from src.protein_process import *
 
 # read the protein abundance files
@@ -29,7 +30,10 @@ for col0 in Sample_ID_select:
         if pro_abundance1 is "no_abundance":
             value1.append(None)
         else:
-            x = getOrganelleAbundance(abundance0=pro_abundance1)
+            #x = getOrganelleAbundance(abundance0=pro_abundance1)
+            #value1.append(x)
+            pro_abundance1 = pro_abundance1.dropna()
+            x = sum(pro_abundance1['molecular/cell'])
             value1.append(x)
     result1[col0] = value1
 

@@ -164,6 +164,7 @@ def getProAundance(genes_select0, pro_abundance0):
         return combine_df
 
 
+
 def getStructureSize(pro_size0, abundance0, need_check="No"):
     """
     The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
@@ -199,6 +200,7 @@ def getStructureSize(pro_size0, abundance0, need_check="No"):
         combine_df["total_area"] = combine_df["molecular/cell_global"] * combine_df["section_area"]
         combine_df = combine_df.sort_values(by=['total_area'], ascending=False)
         return total_volume_um, total_area_um, combine_df
+
 
 
 def getStructureSize_MeasuredAbundances(pro_size0, abundance0, need_check="No"):
@@ -240,26 +242,29 @@ def getStructureSize_MeasuredAbundances(pro_size0, abundance0, need_check="No"):
         return total_volume_um, total_area_um, combine_df
 
 
-def getOrganelleAbundance(abundance0, need_check="No"):
-    """
-    The function is used to calculate the total protein abundance for a group of genes from specific location.
-    It should be noted that the unit of pro_abundance is molecules per cell.
-    :param pro_abundance0: the unite is moleculars per cell
-    :param need_check:
-    :return:
-    """
 
-    # should make sure no structure size data is nan
-    combine_df = abundance0
-    #combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
-    # calculate the size of all proteins for the selected gene list
-    # 1 纳米(nm)=0.001 微米(um)
-    total_abundance = sum(combine_df["molecular/cell_global"])
 
-    if need_check=="No":
-        return total_abundance
-    else:
-        return combine_df
+#def getOrganelleAbundance(abundance0, need_check="No"):
+#    """
+#    The function is used to calculate the total protein abundance for a group of genes from specific location.
+#    It should be noted that the unit of pro_abundance is molecules per cell.
+#    :param pro_abundance0: the unite is moleculars per cell
+#    :param need_check:
+#    :return:
+#    """
+#
+#    # should make sure no structure size data is nan
+#    combine_df = abundance0
+#   #combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
+#    # calculate the size of all proteins for the selected gene list
+#    # 1 纳米(nm)=0.001 微米(um)
+#    total_abundance = sum(combine_df["molecular/cell"])
+#
+#    if need_check=="No":
+#        return total_abundance
+#    else:
+#        return combine_df
+
 
 
 

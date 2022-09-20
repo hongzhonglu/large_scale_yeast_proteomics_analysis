@@ -3,12 +3,7 @@
 # 2. GO-term level volume across different samples
 
 import matplotlib.pyplot as plt
-import os
-from src.model_process import *
-from src.mainFunction import *
 from src.protein_process import *
-import seaborn as sns
-from scipy.stats import pearsonr
 from sklearn.metrics import r2_score
 
 # plot function
@@ -94,6 +89,5 @@ volume_size2 = pd.read_excel("data/proteomics/volume_size_across_go_term.xlsx")
 linearFit(df=volume_size2, x_name="Min_ave_aerobic(mmol/gDW)", y_name='Min_ave_anaerobic(mmol/gDW)', type="GO-term")
 linearFit(df=volume_size2, x_name="Glucose_phase(mmol/gDW)", y_name='Ethanol_phase(mmol/gDW)', type="GO-term")
 linearFit(df=volume_size2, x_name="Glucose_phase(mmol/gDW)", y_name='mmol/gDW_carl', type="GO-term")
-
 
 

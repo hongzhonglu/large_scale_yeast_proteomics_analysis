@@ -4,7 +4,7 @@
 import matplotlib.pyplot as plt
 import os
 import sys
-sys.path.append(r"/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/src")
+sys.path.append(r"/src")
 
 # import self function
 from src.model_process import *

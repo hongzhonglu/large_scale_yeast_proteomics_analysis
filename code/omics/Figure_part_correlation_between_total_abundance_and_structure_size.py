@@ -115,7 +115,7 @@ plt.savefig("result/figure/correlation_analysis_membrane.pdf", bbox_inches='tigh
 
 
 # check the correlation between protein abundance and sectional surface size
-abundance_organelle = pd.read_excel("data/proteomics/protein_abundance_across_compartment.xlsx")
+abundance_organelle = pd.read_excel("data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
 
 Sample_ID_select = ['prot.1','prot.2', 'prot.3','prot.7','prot.8','prot.9','prot.10','prot.11','prot.12','prot.13','prot.14','prot.15','prot.16','prot.17','prot.18','prot.19','prot.20','prot.21']
 abundance_organelle = abundance_organelle[Sample_ID_select +["compartment"]]
