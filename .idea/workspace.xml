@@ -6,32 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_GECKO_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/not_used/1.1_ecYeast_from_GECKO_pro_abundance_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_DL_update_kcat.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_DL_update_kcat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/Figure_part_ecYeast_from_DL_pro_abundance_prediction.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/2.1_ecYeast_simulation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/not_used/2.1_ecYeast_simulation_Crabtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/2.2_ecYeast_from_DL_simulation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/0_ecYeast_from_DL_simulation_Crabtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/3.1_ecYeast_simulation_compare_under_different_strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/not_used/3.1_ecYeast_simulation_compare_under_different_strategies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/3.2_ecYeast_from_DL_simulation_find_optimize_principle.py" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/4.1_ecYeast_simulation_effects_of_organell_constraint_on_growth.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.1_ecYeast_simulation_effects_of_organell_constraint_on_growth.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_organelle_limited_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_organelle_limited_constraint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/data_check.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/data_check.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/Golgi apparatus_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/Golgi membrane_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/cytosol_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/endoplasmic reticulum membrane_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/endoplasmic reticulum_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/fungal-type vacuole membrane_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/fungal-type vacuole_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/lipid droplet_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/mitochondrial inner membrane_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/mitochondrial outer membrane_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/mitochondrion_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/nucleus_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/peroxisome_simulation_VS_measured.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/plasma membrane_simulation_VS_measured.pdf" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

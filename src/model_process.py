@@ -233,6 +233,7 @@ def getRxnByGene(model, gene0):
 
 
 
+
 """
 def getRxnByReactionName(model, name):
     for rxn in model.reactions:
@@ -309,6 +310,7 @@ def DLecModelSimulate(model, dilution_rate):
    return solution_f
 
 
+
 def updateEcGEMkcat(ecGEM, target_gene, rxnID, kcat_m):
     """
     The function is used to update the kcat of enzyme in specific reaction from ecModel
@@ -346,6 +348,7 @@ def updateEcGEMkcat(ecGEM, target_gene, rxnID, kcat_m):
     return ecModel
 
 
+
 def CompartmentInGEMs():
     organelle_v0 = ['mitochondrion', 'nucleus', 'cytosol',
                     'endoplasmic reticulum', 'lipid droplet', 'fungal-type vacuole',
@@ -356,7 +359,32 @@ def CompartmentInGEMs():
                     'endoplasmic reticulum membrane',
                     'mitochondrial inner membrane',
                     'Golgi membrane']
+    #  'peroxisomal membrane', #only with one metabolic gene from ecYeast
+    #  'nuclear membrane' #only with one metabolic gene from ecYeast
     compartment_in = organelle_v0 + organelle_m0
     return compartment_in
+
+
+
+def AddOrgConstraint(ecModel, flux_expression, min_pro_abs, max_pro_abs, constraint_name, saturation_cof = 0.44):
+    """
+    The function is used to add constraint from each organelle based on the absolute protein abundance.
+    :param ecModel:
+    :param flux_expression:
+    :param min_pro_abs:
+    :param max_pro_abs:
+    :param constraint_name:
+    :param saturation_cof:
+    :return:
+    """
+    model_tmp = ecModel.copy() # remove this next time ? can't remove such a constraint
+    #model_tmp = ecModel
+    lower = min_pro_abs * saturation_cof
+    upper = max_pro_abs * saturation_cof
+    model_tmp.reactions.get_by_id("EX_protein_pool").bounds = (-167.27, 0)
+    same_flux = model_tmp.problem.Constraint(eval(flux_expression), lb=lower, ub=upper, name=constraint_name)
+    model_tmp.add_cons_vars(same_flux)
+    return model_tmp
+
 
 

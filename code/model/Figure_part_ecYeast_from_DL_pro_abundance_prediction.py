@@ -101,7 +101,7 @@ m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment
 
 
 # loop
-compartment_in0 = CompartmentInGEMs()
+compartment_in0 = CompartmentInGEMs() #get the main compartment in GEMs
 
 # Note: it shows that four genes from 'Golgi membrane' were not related to the core metabolic functions from the model, so the predicted protein abudance is zero.
 result_unify = result_unify[result_unify['flux'] > 0]
@@ -153,5 +153,8 @@ plt.show()
 #(sum(result_unify_c['flux'])-449824)/(sum(result_unify_c['pro_measured'])-84034)
 #(sum(result_unify_c['flux']))/(sum(result_unify_c['pro_measured']))
 # Note: endoplasmic reticulum membrane, predicted protein abundance for YNR016C and YGR060W is much higher than measured
+
+
+
 
 

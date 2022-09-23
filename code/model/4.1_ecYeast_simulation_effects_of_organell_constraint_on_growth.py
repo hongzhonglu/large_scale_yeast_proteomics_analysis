@@ -11,18 +11,15 @@ import seaborn as sns
 # using the manual curated ecYeast from deep learning
 # in this version of model, we curate the kcat for some enzymes
 ecYeast = read_sbml_model("data/ecYeast_DL_update_some_kcat.xml")
-
+for rxn in ecYeast.reactions:
+    if "-A" in rxn.id:
+        print(rxn.id)
+        ecYeast.reactions.get_by_id(rxn.id).id = rxn.id.replace("-A", "_A")
 
 
 gem_rxn_nov = produceRxnList(ecYeast)
 gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("prot_")]
 gene_prot['geneID'] = gene_prot['rxnID'].str.replace("prot_", "")
-ss = gene_prot[gene_prot['geneID'].str.contains("-")]
-
-for rxn in ecYeast.reactions:
-    if "-A" in rxn.id:
-        print(rxn.id)
-        ecYeast.reactions.get_by_id(rxn.id).id = rxn.id.replace("-A", "_A")
 
 
 
@@ -41,11 +38,9 @@ m_gene_in_organelle = FingGenesForOrganelle(gene_set=gene_metabolic, compartment
 
 
 
-# The following script is mainly used to check the organelle total abundance affect the cellular growth rate
-# it is found some organlle protein total abudance have no affect while others have?
-
+# The following script is mainly used to check how each organelle total abundance affect the cellular growth rate
+# it is found some organelle protein total abundance have no affect while others have?
 def SimulateOrganelleProAbundance(constraint_organelle, min_pro_abs, max_pro_abs, flux_expression, ecModel, saturation_cof = 0.44):
-
     # this function is just used to evaluate how protein total abundance for the main organelle affect the
     # the cellular phenotype?
     # simulation in loop procedure
@@ -94,29 +89,15 @@ def SimulateOrganelleProAbundance(constraint_organelle, min_pro_abs, max_pro_abs
     corr2, ss2 = pearsonr(organelle_abundance, predicted_usage)
     return corr1, corr2, result_df
 
-# test1 fluxes analysis
-# gem_rxn_nov["fluxes"] = list(solution2.fluxes)
-# gem_rxn_nov.to_excel("result/fluxes_analysis_test.xlsx")
-
 
 # loop for different organelle
 # input the dataset information
 organelle_pro_range = pd.read_excel("result/organelle_protein_abundance_range_rosemary.xlsx")
-organelle_v0 = ['mitochondrion', 'nucleus', 'cytosol',
- 'endoplasmic reticulum', 'lipid droplet', 'fungal-type vacuole',
- 'peroxisome', 'Golgi apparatus']
-organelle_m0 = ['fungal-type vacuole membrane',
- 'plasma membrane',
- 'mitochondrial outer membrane',
- 'endoplasmic reticulum membrane',
- 'mitochondrial inner membrane',
- 'Golgi membrane',
- 'peroxisomal membrane',
- 'nuclear membrane']
-compartment_in0 = organelle_v0 + organelle_m0
+compartment_in0 = CompartmentInGEMs() #get the main compartment in GEMs
+
+
 correlation1 = []
 correlation2 = []
-
 for org in compartment_in0:
     print(org)
     #org = 'endoplasmic reticulum membrane' # just for the test
@@ -173,5 +154,3 @@ sns.lineplot(x='endoplasmic reticulum', y='value', hue='variable', style="variab
              data=pd.melt(df_saturation, ['endoplasmic reticulum']))
 plt.xlabel("endoplasmic reticulum's protein abundance (mmol/gDW)")
 plt.ylabel("growth (/h)")
-
-

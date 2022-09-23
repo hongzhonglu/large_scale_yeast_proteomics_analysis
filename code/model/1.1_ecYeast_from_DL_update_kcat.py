@@ -31,3 +31,10 @@ for rxn0 in rxnID:
 # save the model
 cobra.io.write_sbml_model(ecYeast, "data/ecYeast_DL_update_some_kcat.xml")
 
+
+
+
+
+
+
+
