@@ -154,3 +154,5 @@ sns.lineplot(x='endoplasmic reticulum', y='value', hue='variable', style="variab
              data=pd.melt(df_saturation, ['endoplasmic reticulum']))
 plt.xlabel("endoplasmic reticulum's protein abundance (mmol/gDW)")
 plt.ylabel("growth (/h)")
+
+

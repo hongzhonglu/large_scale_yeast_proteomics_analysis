@@ -1,13 +1,12 @@
-# This pipeline could be used to evaluate the absolute protein abundance from each organelle affect the growth rate
+# This pipeline could be used to find the limited organelle constraint
+
 
 # import self function
-from src.mainFunction import *
+
 from src.model_process import *
 from src.protein_process import *
-import matplotlib.pyplot as plt
-import seaborn as sns
-# using the manual curated ecYeast from deep learning
-# in this version of model, we curate the kcat for some enzymes
+
+
 ecYeast = read_sbml_model("data/ecYeast_DL_update_some_kcat.xml")
 
 for rxn in ecYeast.reactions:
@@ -110,6 +109,7 @@ flux_max = solution2.fluxes
 print(solution2.objective_value)
 
 
+
 # loops to find which constraint affect the model output
 max_growth = []
 for org in compartment_in0:
@@ -125,8 +125,5 @@ for org in compartment_in0:
         ecYeast2.objective = objective
         solution2 = ecYeast2.optimize()
         max_growth.append(solution2.objective_value)
-
 for x, y in zip(compartment_in0, max_growth):
     print(x, y)
-
-

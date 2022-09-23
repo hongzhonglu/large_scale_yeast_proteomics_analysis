@@ -6,11 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_DL_update_kcat.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_DL_update_kcat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1.2_ecYeast_from_DL_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/Figure_part_ecYeast_from_DL_pro_abundance_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/4.1_ecYeast_simulation_effects_of_organell_constraint_on_growth.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.1_ecYeast_simulation_effects_of_organell_constraint_on_growth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_organelle_limited_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_organelle_limited_constraint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_organelle_limited_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_limited_organelle_constraint.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
