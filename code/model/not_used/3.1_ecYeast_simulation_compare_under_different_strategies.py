@@ -6,7 +6,7 @@
 from cobra.io import load_matlab_model
 import matplotlib.pyplot as plt
 import os
-os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
+os.chdir('/code')
 
 # import self function
 from src.model_process import *

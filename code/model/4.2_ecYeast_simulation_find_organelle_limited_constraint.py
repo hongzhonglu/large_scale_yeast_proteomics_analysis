@@ -165,3 +165,5 @@ for org in compartment_in0:
 
 for x, y in zip(compartment_in0, max_growth):
     print(x, y)
+
+

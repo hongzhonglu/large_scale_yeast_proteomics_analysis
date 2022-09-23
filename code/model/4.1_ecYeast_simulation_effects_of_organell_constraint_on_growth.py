@@ -8,11 +8,6 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 
 
-# second ecYeast based om deep learning
-dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
-ecYeast = read_sbml_model(dir2)
-
-
 # using the manual curated ecYeast from deep learning
 # in this version of model, we curate the kcat for some enzymes
 ecYeast = read_sbml_model("data/ecYeast_DL_update_some_kcat.xml")

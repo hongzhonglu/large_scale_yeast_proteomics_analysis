@@ -345,3 +345,18 @@ def updateEcGEMkcat(ecGEM, target_gene, rxnID, kcat_m):
     ecModel.reactions.get_by_id(rxnID).reaction = rxn_update
     return ecModel
 
+
+def CompartmentInGEMs():
+    organelle_v0 = ['mitochondrion', 'nucleus', 'cytosol',
+                    'endoplasmic reticulum', 'lipid droplet', 'fungal-type vacuole',
+                    'peroxisome', 'Golgi apparatus']
+    organelle_m0 = ['fungal-type vacuole membrane',
+                    'plasma membrane',
+                    'mitochondrial outer membrane',
+                    'endoplasmic reticulum membrane',
+                    'mitochondrial inner membrane',
+                    'Golgi membrane']
+    compartment_in = organelle_v0 + organelle_m0
+    return compartment_in
+
+

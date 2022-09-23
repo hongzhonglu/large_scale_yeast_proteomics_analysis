@@ -1,7 +1,6 @@
 # This pipeline could be used to evaluate the absolute protein abundance from each organelle affect the growth rate
 
 # import self function
-from src.mainFunction import *
 from src.model_process import *
 from src.protein_process import *
 import matplotlib.pyplot as plt
