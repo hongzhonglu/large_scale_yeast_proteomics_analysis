@@ -6,11 +6,10 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/4.1_ecYeast_simulation_effects_of_organell_constraint_on_growth.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.1_ecYeast_simulation_effects_of_organell_constraint_on_growth.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_organelle_limited_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.2_ecYeast_simulation_find_limited_organelle_constraint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.3_ecYeast_simulation_under_organelle_constraint_N_limitation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/other_species/ecoli_structure_info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/other_species/ecoli_structure_info.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -223,9 +222,9 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py</url>
-          <line>121</line>
-          <option name="timeStamp" value="7" />
+          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py</url>
+          <line>77</line>
+          <option name="timeStamp" value="8" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

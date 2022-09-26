@@ -78,7 +78,7 @@ ax.set_title("pLDDT average score")
 ax.set_xlabel("Average score")
 ax.set_ylabel("Density")
 score_list = quality_ecoli["score"].tolist()
-score_high =[x for x in score_list if x >= 75] # 60.66% proteins are of high-quality
+score_high =[x for x in score_list if x >= 75]
 print(len(score_high)/len(score_list))
 
 
@@ -122,6 +122,10 @@ sns.catplot(x="TF", y="volume_per_kda", order=["No", "Yes"], kind="box", data=pr
 sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=pro_c)
 ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
 pro_c.to_excel('data/other_species/ecoli_structure_info.xlsx')
+# compare the TF in the molecular weithght
+sns.catplot(x="TF", y="MW", order=["No", "Yes"], kind="box", data=pro_c)
+ttest_ind(pro_g1['MW'], pro_g2['MW'])
+
 
 
 # re-do the above analysis using the calibrated datasets

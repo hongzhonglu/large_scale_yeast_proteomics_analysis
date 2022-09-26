@@ -78,6 +78,10 @@ ttest_ind(pro_g1['volume_per_kda2'], pro_g2['volume_per_kda2'])
 sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=pro_c)
 SUM1 = pro_g1.describe()
 SUM2 = pro_g2.describe()
+# compare the TF in the molecular weithght
+pro_c['MW_original'] = pro_c['MW']*1000
+sns.catplot(x="TF", y="MW_original", order=["No", "Yes"], kind="box", data=pro_c)
+ttest_ind(pro_g1['MW']*1000, pro_g2['MW']*1000)
 
 
 # select the genes with smallest volume per kda to do enrichment analysis
