@@ -84,6 +84,7 @@ sns.catplot(x="TF", y="MW_original", order=["No", "Yes"], kind="box", data=pro_c
 ttest_ind(pro_g1['MW']*1000, pro_g2['MW']*1000)
 
 
+
 # select the genes with smallest volume per kda to do enrichment analysis
 pro_size00 = pro_size00.sort_values(by=['volume_per_kda'], ascending=True)
 sns.displot(pro_size00, x="volume_per_kda", stat="density", common_norm=False)
@@ -91,6 +92,11 @@ plt.xlim(0.75,1.25)
 pro_size01 = pro_size00.iloc[0:200,:]
 gene01= ",".join(pro_size01["locus"].to_list())
 print(gene01)
+
+# select the genes with largest volume per kda to do function enrichment analysis
+pro_size02 = pro_size00.iloc[5741:5941,:]
+gene02= ",".join(pro_size02["locus"].to_list())
+print(gene02)
 
 
 
