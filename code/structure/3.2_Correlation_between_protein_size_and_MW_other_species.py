@@ -61,7 +61,6 @@ a, b = linearFit(df=pro_size, x_name="MW", y_name="Total_Volume")
 
 pro_size["calculated"] = pro_size["MW"]*a-b
 pro_size["relative_change"] = (pro_size["Total_Volume"] - pro_size["calculated"])/pro_size["calculated"]
-# filter by protein length to remove too short proteins
 pro_size["volume_per_kda"] = 1000*pro_size["Total_Volume"]/pro_size["MW"]
 
 
@@ -176,10 +175,21 @@ ttest_ind(pro_g1['score'], pro_g2['score'])
 
 
 #note：when did the enrichment analysis, it seems that the TF structure in ecoli is different from yeast.
+sns.displot(pro_size, x="volume_per_kda", stat="density", common_norm=False)
+plt.xlim(0.75,1.25)
+
 pro_size = pro_size.sort_values(by=['volume_per_kda'], ascending=True)
 pro_size01 = pro_size.iloc[0:200,:]
 gene01= ",".join(pro_size01["Protein"].to_list())
 print(gene01)
+
+pro_size02 = pro_size.iloc[4163:4363,:]
+gene02= ",".join(pro_size02["Protein"].to_list())
+print(gene02)
+
+
+
+
 
 
 # one interesting idea is used sce formula to calculate the protein volume in other species
@@ -250,25 +260,25 @@ score_list = quality_spo["score"].tolist()
 score_high =[x for x in score_list if x >= 75] # 60.66% proteins are of high-quality
 print(len(score_high)/len(score_list))
 
-
-
-
-
-
-
-
 a, b = linearFit(df=pro_size, x_name="MW", y_name="Total_Volume")
 
 pro_size["calculated"] = pro_size["MW"]*a-b
 pro_size["relative_change"] = (pro_size["Total_Volume"] - pro_size["calculated"])/pro_size["calculated"]
-# filter by protein length to remove too short proteins
-
 pro_size["volume_per_kda"] = 1000*pro_size["Total_Volume"]/pro_size["MW"]
+sns.displot(pro_size, x="volume_per_kda", stat="density", common_norm=False)
+
+# enrichment analysis
+pro_size = pro_size.dropna()
 pro_size = pro_size.sort_values(by=['volume_per_kda'], ascending=True)
 pro_size01 = pro_size.iloc[0:200,:]
 gene01= ",".join(pro_size01["Protein"].to_list())
 print(gene01)
-sns.displot(pro_size, x="volume_per_kda", stat="density", common_norm=False)
+
+pro_size02 = pro_size.iloc[4912:5112,:]
+gene02= ",".join(pro_size02["Protein"].to_list())
+print(gene02)
+
+
 
 
 # one interesting idea is used sce formula to calculate the protein volume in other species
@@ -332,6 +342,3 @@ sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=spo_calibra
 pro_g1 = spo_calibrated2[spo_calibrated2["TF"]=="Yes"]
 pro_g2 = spo_calibrated2[spo_calibrated2["TF"]=="No"]
 ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
-
-
-
