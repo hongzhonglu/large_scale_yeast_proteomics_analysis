@@ -6,8 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/other_species/ecoli_structure_info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/other_species/ecoli_structure_info.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/other_species/spo_structure_info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/other_species/spo_structure_info.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/cluster_analysis.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/cluster_analysis.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/feature_for_all_protein_structure.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/feature_for_all_protein_structure.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_classification.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure_cluster3_map_classification.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_gene_family_info.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure_cluster3_map_gene_family_info.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_uncharacteried_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure_cluster3_map_uncharacteried_protein.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/tm_score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/tm_score.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -151,3 +151,4 @@ plt.yticks(fontsize=12)
 plt.show()
 res = stats.pearsonr(df_all_filter['identity_us_align'].tolist(), df_all_filter['tm_score'].tolist())
 res
+
