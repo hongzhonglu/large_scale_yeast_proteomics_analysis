@@ -85,10 +85,13 @@ sns.boxplot(data=result, x="group", y="tm_score")
 
 
 ## part2
+"""
+# this script is running on the linux as it takes a lot of time in calculation.
 group_name = 'pro_with_unknown_function'
 us_align_dir0 = '/home/yeast/Documents/tm_out/'
 df = getAlltmScore(data_dir=us_align_dir0, group=group_name)
 df.to_csv("/home/yeast/Documents/tm_score_for_pro_with_unknown_function.csv")
+"""
 
 
 # filter
@@ -116,11 +119,6 @@ plt.ylabel('Count', fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 
-sns.displot(df_all_filter, x="tm_score")
-plt.xlabel('tm_score', fontsize=15)
-plt.ylabel('Count', fontsize=15)
-plt.xticks(fontsize=12)
-plt.yticks(fontsize=12)
 
 sns.displot(df_all_filter, x="identity_us_align")
 plt.xlabel('identity_us_align', fontsize=15)
@@ -151,4 +149,15 @@ plt.yticks(fontsize=12)
 plt.show()
 res = stats.pearsonr(df_all_filter['identity_us_align'].tolist(), df_all_filter['tm_score'].tolist())
 res
+
+
+
+# in-depth analysis of these proteins with tm-score larger than 0.5
+# pro1: uncharacterized function
+# pro2: characterized function
+# Uncharacterized protein, Putative uncharacterized protein
+# Q04516 · AIM33_YEAST
+df_all_filter = df_all_filter.sort_values('tm_score', ascending=False)
+
+
 

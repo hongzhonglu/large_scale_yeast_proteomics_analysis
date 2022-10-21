@@ -97,6 +97,9 @@ s2 = [x for x in s1 if '>' in x]
 
 # uncharacterized protein
 s2_c = [x for x in s2 if 'Uncharacterized' in x]
+s2_c2 = [x for x in s2 if 'Putative uncharacterized' in x] # should be careful about this!!
+s2_c = s2_c + s2_c2
+
 s2_other = list(set(s2)-set(s2_c))
 
 # remove the detailed function annotation
@@ -109,7 +112,6 @@ s2_other = [x.split('|')[1] for x in s2_other]
 
 s2_c = ['AF-' + x + '-F1-model_v1.pdb' for x in s2_c]
 s2_other = ['AF-' + x + '-F1-model_v1.pdb' for x in s2_other]
-
 
 
 indices = list(range(0,len(X_names)))

@@ -41,8 +41,12 @@ rm *.pdb.gz
 s1 = open('/Users/xluhon/Documents/data_for_structure_align/protein_seq_for_alphafold/UP000002311_559292.fasta').readlines()
 s2 = [x for x in s1 if '>' in x]
 
+
 # uncharacterized protein
 s2_c = [x for x in s2 if 'Uncharacterized' in x]
+s2_c2 = [x for x in s2 if 'Putative uncharacterized' in x]
+s2_c = s2_c + s2_c2
+
 s2_other = list(set(s2)-set(s2_c))
 
 # remove the detailed function annotation
@@ -52,6 +56,7 @@ s2_other = [x.split(' ')[0] for x in s2_other]
 # check the name as the protein stucture ID
 s2_c = [x.split('|')[1] for x in s2_c]
 s2_other = [x.split('|')[1] for x in s2_other]
+
 
 s2_c = ['AF-' + x + '-F1-model_v3.pdb' for x in s2_c]
 s2_other = ['AF-' + x + '-F1-model_v3.pdb' for x in s2_other]
