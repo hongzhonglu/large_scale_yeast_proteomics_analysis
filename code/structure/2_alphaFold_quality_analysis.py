@@ -4,11 +4,13 @@
 
 import numpy as np
 from src.mainFunction import *
-
-
 import os
 import pandas as pd
 from biopandas.pdb import PandasPdb
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+# calculate the quality
 pdbfile = "/Users/xluhon/Documents/alphafold_pdb/"
 all_pdb = os.listdir(pdbfile)
 ppdb = PandasPdb()
@@ -63,6 +65,7 @@ def calculateQualityScore(pdb_dir="/Users/xluhon/Documents/alphafold_pdb/"):
 
 # based on quality, estimate which enzyme from Yeast8 need re-modelling
 data_merge = pd.read_excel("result/alphafold_quality.xlsx")
+data_merge["id_update"] = data_merge["id"].str.replace("AF-", "").str.replace("-F1-model_v1.pdb", "")
 # get the gene id based on uniprot id
 id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 data_merge["gene"] = multiMapping(description=id_mapping["GeneName"], item1=id_mapping["Entry"], item2=data_merge["id_update"])
@@ -73,6 +76,18 @@ ax.set_xlabel("Average score")
 ax.set_ylabel("Density")
 score_list = data_merge["score"].tolist()
 score_high =[x for x in score_list if x >= 75] # 60.66% proteins are of high-quality
+
+# replot the graph using SNS
+
+# density plot
+sns.displot(data_merge, bins=14, x="score",alpha=.4, height=3, aspect=1.2)
+plt.xlabel('pLDDT average score', fontsize=15)
+plt.ylabel('Count', fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.savefig('result/structure_quality_sce.pdf', bbox_inches='tight')
+
+
 
 
 

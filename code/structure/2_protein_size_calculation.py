@@ -106,7 +106,7 @@ data_merge1=data_merge1[~(data_merge1["locus"]=="YMR231W")]
 # plot
 import matplotlib.pyplot as plt
 import seaborn as sns
-plt.figure(figsize=(6, 6))
+plt.figure(figsize=(3.6, 3))
 sns.scatterplot(x='volume', y='Total_Volume', data=data_merge1)
 plt.xlabel('Roughly estimated volume(nm^3)', fontsize=20)
 plt.ylabel('Structure_based volume(nm^3)', fontsize=20)
@@ -127,4 +127,3 @@ data_need_added.columns = ['DBID', 'locus','Total_Volume', 'section_area_new']
 # combine the dataset
 data_for_save = pd.concat([data_merge1, data_need_added], axis=0)
 data_for_save.to_excel("result/sce_protein_size_3D_structure.xlsx")
-

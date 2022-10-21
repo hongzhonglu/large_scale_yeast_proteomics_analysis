@@ -17,11 +17,24 @@ pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 
 
 # for all the proteins
-sns.displot(pro_size, x="Total_Volume")
+#sns.displot(pro_size, x="Total_Volume")
+#plt.xticks(fontsize=12)
+#plt.yticks(fontsize=12)
+#df = pro_size[["Total_Volume"]]
+#df1 = df.describe()
+
+# density plot
+sns.displot(pro_size, x="Total_Volume",alpha=.4, height=3, aspect=1.2)
+plt.xlabel('Protein volume', fontsize=15)
+plt.ylabel('Count', fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
-df = pro_size[["Total_Volume"]]
-df1 = df.describe()
+plt.xlim(0,300)
+plt.savefig('result/structure_volume_sce.pdf', bbox_inches='tight')
+
+
+
+
 
 sns.displot(pro_size, x="section_area_new")
 plt.xticks(fontsize=12)
