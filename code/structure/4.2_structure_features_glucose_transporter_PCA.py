@@ -57,11 +57,13 @@ pca_test = PCA(n_components=2)
 principalComponents = pca_test.fit_transform(df)
 principal_Df = pd.DataFrame(data=principalComponents, columns=['x1', 'x2'])
 pd_null = principal_Df
+
 # plot
 x0='x1'
 y0='x2'
-plt.figure()
-sns.set_style('white')
+plt.figure(figsize=(3.6, 3))
+#plt.figure()
+#sns.set_style('white')
 plt.scatter(principal_Df["x1"], principal_Df["x2"])
 plt.xlabel('principal component 1', fontsize=15)
 plt.ylabel('principal component 2', fontsize=15)
@@ -75,12 +77,11 @@ for x, y, lab in zip(xs, ys, tlab):
     plt.annotate(lab,  # this is the text (put lab here to use tlab as string)
                  (x, y),  # this is the point to label
                  textcoords="offset points",  # how to position the text
-                 xytext=(0, 10),  # distance from text to points (x,y)
+                 xytext=(0, 12),  # distance from text to points (x,y)
                  ha='center',
                  fontsize=5)
 plt.show()
-
-
+plt.savefig("result/cluster_analysis_glucose_transporters_fix_figure_size.pdf", bbox_inches='tight')
 
 
 

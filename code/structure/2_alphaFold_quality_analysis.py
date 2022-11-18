@@ -70,26 +70,17 @@ data_merge["id_update"] = data_merge["id"].str.replace("AF-", "").str.replace("-
 id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 data_merge["gene"] = multiMapping(description=id_mapping["GeneName"], item1=id_mapping["Entry"], item2=data_merge["id_update"])
 data_merge.to_excel("result/alphafold_quality_with_gene_ID.xlsx")
-ax = data_merge["score"].plot.hist(bins=12, alpha=0.5)
-ax.set_title("pLDDT average score")
-ax.set_xlabel("Average score")
-ax.set_ylabel("Density")
 score_list = data_merge["score"].tolist()
 score_high =[x for x in score_list if x >= 75] # 60.66% proteins are of high-quality
 
-# replot the graph using SNS
-
 # density plot
-sns.displot(data_merge, bins=14, x="score",alpha=.4, height=3, aspect=1.2)
+sns.displot(data_merge, bins=20, x="score", alpha=.2, height=3, aspect=1.2)
 plt.xlabel('pLDDT average score', fontsize=15)
 plt.ylabel('Count', fontsize=15)
+plt.axvline(x=75)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.savefig('result/structure_quality_sce.pdf', bbox_inches='tight')
-
-
-
-
 
 
 # input model information

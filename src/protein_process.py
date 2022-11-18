@@ -563,6 +563,7 @@ def linearFit(df, x_name, y_name):
     x_max = max(x)
     y_max = max(y)
     plt.text(x_max/3, 2*y_max/3, "R2=" + str(R2), fontsize=18)
+    plt.savefig('result/' + x_name + '_' + y_name + '.pdf', bbox_inches='tight')
     plt.show()
     return coef[0], coef[1]
 

@@ -9,7 +9,8 @@ from scipy.stats import ttest_ind
 from src.model_process import *
 from src.mainFunction import *
 from src.protein_process import *
-
+from scipy.stats import gaussian_kde
+from scipy import stats
 
 def calculateQualityScore(pdb_dir="/Users/xluhon/Documents/alphafold_pdb/"):
     import os
@@ -77,12 +78,15 @@ score_list = quality_ecoli["score"].tolist()
 score_high =[x for x in score_list if x >= 75]
 print(len(score_high)/len(score_list))
 
-sns.displot(quality_ecoli, bins=14, x="score",alpha=.4, height=3, aspect=1.2)
+
+sns.displot(quality_ecoli, bins=20, x="score", alpha=.2, height=3, aspect=1.2)
 plt.xlabel('pLDDT average score', fontsize=15)
 plt.ylabel('Count', fontsize=15)
+plt.axvline(x=75)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.savefig('result/structure_quality_ecoli.pdf', bbox_inches='tight')
+
 
 
 
@@ -120,7 +124,20 @@ pro_g2 = pro_g2[pro_g2["pro_length"] >= min(pro_g1["pro_length"])]
 pro_g2 = pro_g2[pro_g2["pro_length"] <= max(pro_g1["pro_length"])]
 # combine two pandas
 pro_c = pd.concat([pro_g1, pro_g2], axis=0)
+
+
+#plot
 sns.catplot(x="TF", y="volume_per_kda", order=["No", "Yes"], kind="box", data=pro_c)
+plt.xlabel("TF", fontsize=15)
+plt.ylabel("volume_per_kda", fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.savefig('result/TF_ecoli.pdf', bbox_inches='tight')
+
+
+
+
+
 sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=pro_c)
 ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
 pro_c.to_excel('data/other_species/ecoli_structure_info.xlsx')
@@ -134,11 +151,14 @@ ttest_ind(pro_g1['MW'], pro_g2['MW'])
 ecoli_calibrated = pd.read_excel('data/other_species/ecoli_structure_info2.xlsx')
 sns.catplot(x="TF", y="volume_per_kda", order=["No", "Yes"], kind="box", data=ecoli_calibrated)
 sns.catplot(x="TF", y="volume_per_kda2", order=["No", "Yes"], kind="box", data=ecoli_calibrated)
-plt.xlabel("TF",fontsize=15)
+plt.xlabel("TF proteins?",fontsize=15)
 plt.ylabel("Volume_per_kda",fontsize=15)
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
-sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=ecoli_calibrated)
+plt.savefig('result/Volume_per_kda_of_TF_ecoli_after_calibration.pdf', bbox_inches='tight')
+
+
+#sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=ecoli_calibrated)
 
 pro_g1 = ecoli_calibrated[ecoli_calibrated["TF"]=="Yes"]
 pro_g2 = ecoli_calibrated[ecoli_calibrated["TF"]=="No"]
@@ -180,6 +200,16 @@ ttest_ind(pro_g1['score'], pro_g2['score'])
 #note：when did the enrichment analysis, it seems that the TF structure in ecoli is different from yeast.
 sns.displot(pro_size, x="volume_per_kda", stat="density", common_norm=False)
 plt.xlim(0.75,1.25)
+plt.xlabel("Volume_per_kda", fontsize=15)
+plt.ylabel("Density", fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.savefig('result/Volume_per_kda_ecoli.pdf', bbox_inches='tight')
+
+
+
+
+
 
 pro_size = pro_size.sort_values(by=['volume_per_kda'], ascending=True)
 pro_size01 = pro_size.iloc[0:200,:]
@@ -198,13 +228,20 @@ pro_size["calculated_volume"] = 1.06019171e-03*pro_size["MW"] - 1.10587455
 x0 = "MW"
 y0 = "Total_Volume"
 y1 = "calculated_volume"
-plt.figure(figsize=(3, 3.6))
-sns.lineplot(x=x0, y=y1, data=pro_size)
-sns.scatterplot(x=x0, y=y0, data=pro_size)
+pro_size = pro_size.dropna()
+x = pro_size[x0].tolist()
+y = pro_size[y0].tolist()
+# Calculate the point density
+xy = np.vstack([x,y])
+z = gaussian_kde(xy)(xy)
+fig, ax = plt.subplots(1,1,figsize=(3, 3.6))
+ax.scatter(x, y, c=z, s=20)
+sns.lineplot(x=x0, y=y1, data=pro_size, color='orange', linewidth=2.5,linestyle='--')
 plt.xlabel(x0, fontsize=15)
-plt.ylabel(y1, fontsize=15)
+plt.ylabel(y0, fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
+plt.show()
 plt.savefig('result/fitted_structure_volume_ecoli.pdf', bbox_inches='tight')
 
 

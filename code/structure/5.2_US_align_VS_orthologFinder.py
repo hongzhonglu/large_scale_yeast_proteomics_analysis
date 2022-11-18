@@ -132,15 +132,19 @@ g2 = result_df[result_df['tm_score'] >= 0.50]
 result_df['average_pidentity'] = result_df[['pident1', 'pident2']].mean(axis=1)
 # drop na
 result_df = result_df.dropna(subset=['average_pidentity'])
-
 # density plot
 import matplotlib.pyplot as plt
 import seaborn as sns
-sns.displot(result_df, x="tm_score")
+sns.displot(result_df, x="tm_score", height=3, aspect=1.2, alpha=0.25)
 plt.xlabel('tm_score', fontsize=15)
 plt.ylabel('Count', fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
+plt.savefig('result/tm_score_distribution_for_two_yeasts.pdf', bbox_inches='tight')
+
+
+
+
 from scipy import stats
 res = stats.pearsonr(result_df['average_pidentity'], result_df['tm_score'])
 res
@@ -151,14 +155,13 @@ res
 from scipy.stats import gaussian_kde
 from scipy import stats
 
-
 x = result_df['average_pidentity'].tolist()
 y = result_df['tm_score'].tolist()
 
 # Calculate the point density
 xy = np.vstack([x,y])
 z = gaussian_kde(xy)(xy)
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(1,1,figsize=(3.6, 3))
 ax.scatter(x, y, c=z, s=20)
 
 plt.xlabel('Pidentity', fontsize=15)
@@ -166,11 +169,16 @@ plt.ylabel('tm_score', fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.show()
+plt.savefig('result/tm_score_&_pidentity_relations_for_two_yeasts.pdf', bbox_inches='tight')
+
+
+
 
 
 # check the effect of pidentity
 result_df_filter1 = result_df[result_df['average_pidentity'] <=30]
 result_df_filter1['Pidentity'] = "≤30%"
+
 
 # calculate the person coefficient
 res = stats.pearsonr(result_df_filter1['average_pidentity'], result_df_filter1['tm_score'])
@@ -186,8 +194,11 @@ res
 # combine the above two figures
 frames = [result_df_filter1, result_df_filter2]
 result = pd.concat(frames)
-sns.displot(data=result, x='tm_score', hue='Pidentity', fill=True, palette=sns.color_palette('bright')[:2], height=5, aspect=1, alpha=0.25,kde=True)
+sns.displot(data=result, x='tm_score', hue='Pidentity', fill=True, palette=sns.color_palette('bright')[:2], height=3, aspect=1.2, alpha=0.25,kde=True)
 plt.xlabel('tm_score', fontsize=15)
 plt.ylabel('Count', fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
+plt.savefig('result/tm_score_&_pidentity_relations_for_two_yeasts_filter.pdf', bbox_inches='tight')
+
+

@@ -10,6 +10,9 @@ import numpy as np
 import pandas as pd
 import math
 from src.mainFunction import *
+from scipy.stats import gaussian_kde
+from scipy import stats
+
 
 # Input the datasets
 data_merge = pd.read_csv("data/sce_protein_weight.tsv",sep='\t')
@@ -32,6 +35,12 @@ for i, x in data_merge.iterrows():
 data_merge["radius"] = radius_list
 data_merge["volume"] = volume_list
 data_merge["section_area"] = section_area_list
+
+
+
+
+
+
 
 # second part
 # calculate the protein size based on its protein 3D structures
@@ -85,6 +94,11 @@ volume_df0["radius"] = all_radius
 volume_df0["section_area"] = all_sectional_area
 
 
+
+
+
+
+
 # read id map file and merge the protein volume calculated by different methods
 id_mapping = pd.read_excel("result/alphafold_quality_with_gene_ID.xlsx")
 id_mapping["id"] = id_mapping["id"].str.replace(".pdb","")
@@ -106,15 +120,40 @@ data_merge1=data_merge1[~(data_merge1["locus"]=="YMR231W")]
 # plot
 import matplotlib.pyplot as plt
 import seaborn as sns
-plt.figure(figsize=(3.6, 3))
-sns.scatterplot(x='volume', y='Total_Volume', data=data_merge1)
-plt.xlabel('Roughly estimated volume(nm^3)', fontsize=20)
-plt.ylabel('Structure_based volume(nm^3)', fontsize=20)
+x0 = "volume"
+y0 = "Total_Volume"
+pro_size = data_merge1.dropna()
+x = pro_size[x0].tolist()
+y = pro_size[y0].tolist()
+# Calculate the point density
+xy = np.vstack([x,y])
+z = gaussian_kde(xy)(xy)
+fig, ax = plt.subplots(1,1,figsize=(6, 6))
+ax.scatter(x, y, c=z, s=20)
+plt.xlabel('Roughly estimated volume(nm^3)', fontsize=15)
+plt.ylabel('Structure_based volume(nm^3)', fontsize=15)
 plt.xlim(0, 360)
 plt.ylim(0, 360)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
-plt.savefig('result/volume comparison from two procedures.pdf', bbox_inches='tight')
+ax = plt.gca()
+ax.set_aspect('equal', adjustable='box')
+plt.show()
+plt.savefig('result/structure_compare.pdf', bbox_inches='tight')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # however some proteins did not have protein 3D structures, then we still need the data from the molecular weight

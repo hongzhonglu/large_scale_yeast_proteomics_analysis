@@ -9,6 +9,10 @@ from scipy.stats import ttest_ind
 from src.model_process import *
 from src.mainFunction import *
 from src.protein_process import *
+from scipy.stats import gaussian_kde
+from scipy import stats
+
+
 
 
 def calculateQualityScore(pdb_dir="/Users/xluhon/Documents/alphafold_pdb/"):
@@ -55,6 +59,7 @@ pro_size["MW"] = singleMapping(pro_info["Mass"], pro_info["Entry"],pro_size["Pro
 pro_size["pro_length"] = singleMapping(pro_info["Length"], pro_info["Entry"],pro_size["Protein"])
 pro_size["MW"] = pro_size["MW"].str.replace(",", "")
 pro_size.MW = pd.to_numeric(pro_size.MW, errors='coerce')
+
 quality_spo = calculateQualityScore(pdb_dir='/Users/xluhon/Documents/alphafold_pdb_SCHPO_v2/')
 
 quality_spo['id_update'] = quality_spo['id_update'].str.replace('-F1-model_v2.pdb','')
@@ -69,17 +74,13 @@ score_high =[x for x in score_list if x >= 75] # 60.66% proteins are of high-qua
 print(len(score_high)/len(score_list))
 
 
-sns.displot(quality_spo, bins=14, x="score",alpha=.4, height=3, aspect=1.2)
+sns.displot(quality_spo, bins=20, x="score",alpha=.2, height=3, aspect=1.2)
 plt.xlabel('pLDDT average score', fontsize=15)
 plt.ylabel('Count', fontsize=15)
+plt.axvline(x=75)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.savefig('result/structure_quality_spo.pdf', bbox_inches='tight')
-
-
-
-
-
 
 
 
@@ -88,7 +89,19 @@ a, b = linearFit(df=pro_size, x_name="MW", y_name="Total_Volume")
 pro_size["calculated"] = pro_size["MW"]*a-b
 pro_size["relative_change"] = (pro_size["Total_Volume"] - pro_size["calculated"])/pro_size["calculated"]
 pro_size["volume_per_kda"] = 1000*pro_size["Total_Volume"]/pro_size["MW"]
+
+
+# plot
 sns.displot(pro_size, x="volume_per_kda", stat="density", common_norm=False)
+plt.xlabel("Volume_per_kda", fontsize=15)
+plt.ylabel("Density", fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.savefig('result/Volume_per_kda_spo.pdf', bbox_inches='tight')
+
+
+
+
 
 # enrichment analysis
 pro_size = pro_size.dropna()
@@ -110,18 +123,21 @@ pro_size["calculated_volume"] = 1.06019171e-03*pro_size["MW"] - 1.10587455
 x0 = "MW"
 y0 = "Total_Volume"
 y1 = "calculated_volume"
-plt.figure(figsize=(3, 3.6))
-sns.lineplot(x=x0, y=y1, data=pro_size)
-sns.scatterplot(x=x0, y=y0, data=pro_size)
+pro_size = pro_size.dropna()
+x = pro_size[x0].tolist()
+y = pro_size[y0].tolist()
+# Calculate the point density
+xy = np.vstack([x,y])
+z = gaussian_kde(xy)(xy)
+fig, ax = plt.subplots(1,1,figsize=(3, 3.6))
+ax.scatter(x, y, c=z, s=20)
+sns.lineplot(x=x0, y=y1, data=pro_size, color='orange', linewidth=2.5,linestyle='--')
 plt.xlabel(x0, fontsize=15)
-plt.ylabel(y1, fontsize=15)
+plt.ylabel(y0, fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
+plt.show()
 plt.savefig('result/fitted_structure_volume_spo.pdf', bbox_inches='tight')
-
-
-
-
 
 
 
@@ -137,9 +153,15 @@ pro_g2 = pro_g2[pro_g2["pro_length"] >= min(pro_g1["pro_length"])]
 pro_g2 = pro_g2[pro_g2["pro_length"] <= max(pro_g1["pro_length"])]
 # combine two pandas
 pro_c = pd.concat([pro_g1, pro_g2], axis=0)
-
-sns.catplot(x="TF", y="volume_per_kda", order=["No", "Yes"], kind="box", data=pro_c)
 ttest_ind(pro_g1['volume_per_kda'], pro_g2['volume_per_kda'])
+
+# plot
+sns.catplot(x="TF", y="volume_per_kda", order=["No", "Yes"], kind="box", data=pro_c)
+plt.xlabel("TF", fontsize=15)
+plt.ylabel("volume_per_kda", fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.savefig('result/TF_spo.pdf', bbox_inches='tight')
 sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=pro_c)
 
 
@@ -151,14 +173,15 @@ pro_c.to_excel('data/other_species/spo_structure_info.xlsx')
 # re-do the above analysis using the calibrated datasets
 spo_calibrated = pd.read_excel('data/other_species/spo_structure_info2.xlsx')
 sns.catplot(x="TF", y="volume_per_kda", order=["No", "Yes"], kind="box", data=spo_calibrated)
-
 sns.catplot(x="TF", y="volume_per_kda2", order=["No", "Yes"], kind="box", data=spo_calibrated)
-plt.xlabel("TF",fontsize=15)
+plt.xlabel("TF proteins?",fontsize=15)
 plt.ylabel("Volume_per_kda",fontsize=15)
 plt.xticks(fontsize=15)
 plt.yticks(fontsize=15)
+plt.savefig('result/Volume_per_kda_of_TF_spo_after_calibration.pdf', bbox_inches='tight')
 
-sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=spo_calibrated)
+
+#sns.catplot(x="TF", y="score", order=["No", "Yes"], kind="box", data=spo_calibrated)
 pro_g1 = spo_calibrated[spo_calibrated["TF"]=="Yes"]
 pro_g2 = spo_calibrated[spo_calibrated["TF"]=="No"]
 ttest_ind(pro_g1['volume_per_kda2'], pro_g2['volume_per_kda2'])

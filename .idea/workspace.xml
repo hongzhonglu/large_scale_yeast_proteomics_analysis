@@ -8,11 +8,35 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/structure/2_protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_other_species.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/4.2_structure_features_glucose_transporter_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.2_structure_features_glucose_transporter_PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/other_species/ecoli_structure_info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/other_species/ecoli_structure_info.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group1.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/feature_for_all_protein_structure.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/feature_for_all_protein_structure.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_classification.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_gene_family_info.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_uncharacteried_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure_cluster3_map_uncharacteried_protein.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_sgd_metabolic.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/fitted_structure_volume_ecoli.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/fitted_structure_volume_ecoli.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/fitted_structure_volume_spo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/fitted_structure_volume_spo.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/structure_quality_ecoli.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_quality_ecoli.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/structure_quality_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_quality_sce.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/structure_quality_spo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_quality_spo.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/structure_volume_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_volume_sce.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/tm_score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/tm_score.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/tm_score_for_pro_with_unknown_function.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/tm_score_for_pro_with_unknown_function.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/volume comparison from two procedures.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/volume comparison from two procedures.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -225,9 +249,119 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py</url>
+          <line>158</line>
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="15" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
+          <line>129</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
+          <line>227</line>
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>90</line>
-          <option name="timeStamp" value="8" />
+          <line>23</line>
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py</url>
+          <line>76</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
+          <line>117</line>
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/2_protein_size_calculation.py</url>
+          <line>122</line>
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py</url>
+          <line>138</line>
+          <option name="timeStamp" value="24" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py</url>
+          <line>111</line>
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py</url>
+          <line>120</line>
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py</url>
+          <line>154</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py</url>
+          <line>194</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py</url>
+          <line>135</line>
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py</url>
+          <line>103</line>
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/4.2_structure_features_glucose_transporter_PCA.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py</url>
+          <line>146</line>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
+          <line>143</line>
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
+          <line>200</line>
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="37" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
+          <line>199</line>
+          <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

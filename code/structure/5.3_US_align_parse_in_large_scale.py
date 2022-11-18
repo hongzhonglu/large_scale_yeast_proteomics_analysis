@@ -1,7 +1,8 @@
 # orthlogFinder process
 import pandas as pd
 import os
-
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 def getAlltmScore(data_dir, group):
     all_file = os.listdir(data_dir)
@@ -69,12 +70,10 @@ df_emp_vs_op = getAlltmScore(data_dir=us_align_dir0, group=group_name)
 # merge two dataframe
 frames = [df_emp_vs_emp, df_emp_vs_tca, df_emp_vs_ppp, df_emp_vs_op]
 result = pd.concat(frames)
-
 result = result[result['tm_score'] <= 0.6]
 
 # boxplot
-import matplotlib.pyplot as plt
-import seaborn as sns
+
 sns.boxplot(data=result, x="group", y="tm_score")
 
 
@@ -90,14 +89,17 @@ sns.boxplot(data=result, x="group", y="tm_score")
 group_name = 'pro_with_unknown_function'
 us_align_dir0 = '/home/yeast/Documents/tm_out/'
 df = getAlltmScore(data_dir=us_align_dir0, group=group_name)
-df.to_csv("/home/yeast/Documents/tm_score_for_pro_with_unknown_function.csv")
+df.to_csv("/home/yeast/Documents/tm_score_for_pro_with_unknown_function_v2.csv")
 """
 
 
 # filter
-df_all = pd.read_csv("/Users/xluhon/Documents/data_for_structure_align/tm_score_for_pro_with_unknown_function.csv")
+# df_all = pd.read_csv("/Users/xluhon/Documents/data_for_structure_align/tm_score_for_pro_with_unknown_function.csv")
+
+df_all = pd.read_csv("/Users/xluhon/Documents/data_for_structure_align/tm_score_for_pro_with_unknown_function_v2.csv")
 df_all_filter = df_all[df_all["tm_score"] >=0.5]
-df_all_filter.to_csv("result/tm_score_for_pro_with_unknown_function.csv")
+df_all_filter.to_csv("result/tm_score_for_pro_with_unknown_function_v2.csv")
+df_all_filter["identity_us_align"].describe()
 
 df_all_filter_other = df_all[df_all["tm_score"] < 0.5]
 # compare proteins with tm_score larger or lower than 0.5
@@ -107,17 +109,22 @@ n2 = len(set(df_all_filter_other['pro1'].tolist())-set(df_all_filter['pro1'].tol
 
 
 # plot
-sns.displot(df_all_filter, x="tm_score")
+sns.displot(df_all_filter, x="tm_score",height=3, aspect=1.2)
 plt.xlabel('tm_score', fontsize=15)
 plt.ylabel('Count', fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
+plt.savefig('result/tm_score_uncharacterized_protein_all.pdf', bbox_inches='tight')
 
-sns.displot(df_all, x="tm_score")
+
+
+sns.displot(df_all, x="tm_score",height=3, aspect=1.2)
 plt.xlabel('tm_score', fontsize=15)
 plt.ylabel('Count', fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
+plt.savefig('result/tm_score_uncharacterized_protein_filter.pdf', bbox_inches='tight')
+
 
 
 sns.displot(df_all_filter, x="identity_us_align")
@@ -139,7 +146,7 @@ y = df_all_filter['tm_score'].tolist()
 # Calculate the point density
 xy = np.vstack([x,y])
 z = gaussian_kde(xy)(xy)
-fig, ax = plt.subplots()
+fig, ax = plt.subplots(1,1,figsize=(3.6, 3))
 ax.scatter(x, y, c=z, s=20)
 
 plt.xlabel('identity_us_align', fontsize=15)
@@ -147,8 +154,11 @@ plt.ylabel('tm_score', fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.show()
+plt.savefig('result/relation_between_tm_score_&_identity_us_align.pdf', bbox_inches='tight')
+
+
 res = stats.pearsonr(df_all_filter['identity_us_align'].tolist(), df_all_filter['tm_score'].tolist())
-res
+
 
 
 
@@ -158,6 +168,8 @@ res
 # Uncharacterized protein, Putative uncharacterized protein
 # Q04516 · AIM33_YEAST
 df_all_filter = df_all_filter.sort_values('tm_score', ascending=False)
+df_all_filter2 = df_all_filter[df_all_filter["tm_score"] >= 0.75]
+df_all_filter2.to_csv("result/tm_score_for_pro_with_unknown_function_v2_tm_score>=0.75.csv")
 
 
 

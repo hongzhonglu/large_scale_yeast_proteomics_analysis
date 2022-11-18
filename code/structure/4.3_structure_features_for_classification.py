@@ -35,12 +35,18 @@ X_names = os.listdir("/Users/xluhon/Documents/alphafold_pdb/")
 X_names = [x for x in X_names if x !=".DS_Store"]
 X_names = [x for x in X_names if "model" in x]
 
+
+
+
 # remove outlier datapoints
 outlier1 = pd.read_excel("result/cluster_analysis_all_proteins_outlier_group1.xlsx")
 outlier2 = pd.read_excel("result/cluster_analysis_all_proteins_outlier_group2.xlsx")
 gene_remove = outlier1["id"].tolist() + outlier2["id"].tolist()
-
 X_names = [x for x in X_names if x not in gene_remove]
+
+
+
+
 
 # score >= 70
 structure_info = structure_info[structure_info["score"] >= 70]
@@ -68,11 +74,11 @@ reducer = umap.UMAP(metric="cosine", n_components=2)
 reduced = reducer.fit_transform(np.hstack((kmer_embedder.embedding, radius_embedder.embedding)))
 
 
-
-# plot as a whole
 class_names = ["test"]
-colors = ["red"]
 
+"""
+# plot as a whole
+colors = ["red"]
 # plot
 # classification based on families
 indices = list(range(0,len(X_names)))
@@ -87,6 +93,9 @@ plt.scatter(reduced[indices1, 0],
 plt.xlabel('Principal component 1', fontsize=15)
 plt.ylabel('Principal component 2', fontsize=15)
 plt.savefig("result/figure_cluster3_map_gene_family_info.pdf", bbox_inches='tight')
+"""
+
+
 
 
 
@@ -116,14 +125,14 @@ s2_other = ['AF-' + x + '-F1-model_v1.pdb' for x in s2_other]
 
 indices = list(range(0,len(X_names)))
 indices1 = [i for i,x in enumerate(X_names) if x in s2_c]
-plt.figure()
-sns.set_style("white")
+plt.figure(figsize=(3.6, 3))
+#sns.set_style("white")
 plt.scatter(reduced[indices, 0],
             reduced[indices, 1],
-            label=class_names[0], facecolors='none', edgecolor="black", linewidth=0.1, alpha=1)
+            label=class_names[0], facecolors='none', edgecolor="grey", linewidth=0.1, alpha=1,s=20)
 plt.scatter(reduced[indices1, 0],
             reduced[indices1, 1],
-            label="g1", edgecolor="red", linewidth=0.1, alpha=0.8)
+            label="g1", edgecolor="white", linewidth=0.1, alpha=0.8, s=20)
 plt.xlabel('Principal component 1', fontsize=15)
 plt.ylabel('Principal component 2', fontsize=15)
 plt.savefig("result/figure_cluster3_map_uncharacteried_protein.pdf", bbox_inches='tight')
@@ -137,19 +146,40 @@ plt.savefig("result/figure_cluster3_map_uncharacteried_protein.pdf", bbox_inches
 # classification based on subsystem definition
 indices1 = [i for i,x in enumerate(X_names) if x in g1]
 indices4 = [i for i,x in enumerate(X_names) if x in g4]
-plt.figure()
+plt.figure(figsize=(3.6, 3))
 plt.scatter(reduced[indices, 0],
             reduced[indices, 1],
-            label=class_names[0], facecolors='none', edgecolor="black", linewidth=0.1, alpha=1)
+            label=class_names[0], facecolors='none', edgecolor="grey", linewidth=0.1, alpha=1,s=10)
 plt.scatter(reduced[indices1, 0],
             reduced[indices1, 1],
-            label="g1", edgecolor="red", linewidth=0.1, alpha=0.8)
+            label="g1", edgecolor="white", linewidth=0.1, alpha=0.8,s=10)
 plt.scatter(reduced[indices4, 0],
             reduced[indices4, 1],
-            label="g4", edgecolor="blue", linewidth=0.1, alpha=0.8)
+            label="g4", edgecolor="white", linewidth=0.1, alpha=0.8, s=10)
 plt.xlabel('Principal component 1', fontsize=15)
 plt.ylabel('Principal component 2', fontsize=15)
-plt.savefig("result/figure_cluster3_map_classification.pdf", bbox_inches='tight')
+plt.savefig("result/figure_cluster3_map_subsystems.pdf", bbox_inches='tight')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -159,10 +189,6 @@ data_analysis = pd.DataFrame(reduced)
 data_analysis["id"] = X_names
 data_analysis.columns = ["x1", "x2", "id"]
 data_analysis.to_excel("result/feature_for_all_protein_structure.xlsx")
-
-
-
-
 # initial data analysis for some clusters
 data_check = data_analysis[data_analysis["x2"] >=2]
 # input the detailed ID information
@@ -172,7 +198,6 @@ data_check["gene"] = singleMapping(structure_info["gene"],structure_info["id"],d
 gene01= ",".join(data_check["gene"].to_list())
 print(gene01)
 data_check.to_excel("result/cluster_analysis_all_proteins_outlier_group1.xlsx")
-
 
 data_check = data_analysis[data_analysis["x1"] >=10]
 # input the detailed ID information
@@ -184,14 +209,33 @@ print(gene01)
 data_check.to_excel("result/cluster_analysis_all_proteins_outlier_group2.xlsx")
 
 
-data_check = data_analysis[data_analysis["x1"] >= 7]
-data_check = data_check[data_check["x1"] <= 8]
-data_check = data_check[data_check["x2"] >= 7]
 
 # input the detailed ID information
+data_check = data_analysis[data_analysis["x1"] >= 7]
+data_check = data_check[data_check["x1"] <= 8]
+data_check = data_check[data_check["x2"] >= 6]
 structure_info = pd.read_excel("result/alphafold_quality_with_gene_ID.xlsx")
 data_check["score"] = singleMapping(structure_info["score"],structure_info["id"],data_check["id"])
 data_check["gene"] = singleMapping(structure_info["gene"],structure_info["id"],data_check["id"])
 gene01= ",".join(data_check["gene"].to_list())
 print(gene01)
-data_check.to_excel("result/cluster_analysis.xlsx")
+
+
+data_check = data_analysis[data_analysis["x1"] <= 0]
+data_check = data_check[data_check["x2"] >= 4]
+structure_info = pd.read_excel("result/alphafold_quality_with_gene_ID.xlsx")
+data_check["score"] = singleMapping(structure_info["score"],structure_info["id"],data_check["id"])
+data_check["gene"] = singleMapping(structure_info["gene"],structure_info["id"],data_check["id"])
+gene01= ",".join(data_check["gene"].to_list())
+print(gene01)
+
+
+data_check = data_analysis[data_analysis["x1"] <= 5]
+data_check = data_check[data_check["x1"] >= 4]
+data_check = data_check[data_check["x2"] <= 2]
+data_check = data_check[data_check["x2"] >= 1.5]
+structure_info = pd.read_excel("result/alphafold_quality_with_gene_ID.xlsx")
+data_check["score"] = singleMapping(structure_info["score"],structure_info["id"],data_check["id"])
+data_check["gene"] = singleMapping(structure_info["gene"],structure_info["id"],data_check["id"])
+gene01= ",".join(data_check["gene"].to_list())
+print(gene01)
