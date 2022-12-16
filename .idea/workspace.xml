@@ -6,36 +6,39 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/1.1 proteomics_comparment_annotation_automatic_way.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/1.1 proteomics_comparment_annotation_automatic_way.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.3 omics_collect_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 omics_collect_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size_in_batch.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/structure/2_protein_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_size_calculation.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/4.2_structure_features_glucose_transporter_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.2_structure_features_glucose_transporter_PCA.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/other_species/ecoli_structure_info.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/other_species/ecoli_structure_info.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compare_compartment_anotation_with_and_without_filter.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compare_compartment_anotation_with_and_without_filter.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrance_size_across_go_term_Rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrance_size_across_go_term_Rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine_with_more_samples.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine_with_more_samples.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_go_term_Rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_go_term_Rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$physiology_collection.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/alphafold_quality_with_gene_ID.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group1.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group1.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/cluster_analysis_all_proteins_outlier_group2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/feature_for_all_protein_structure.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/feature_for_all_protein_structure.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure_cluster3.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_classification.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_gene_family_info.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_map_uncharacteried_protein.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure_cluster3_map_uncharacteried_protein.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure_cluster3_sgd_metabolic.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/fitted_structure_volume_ecoli.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/fitted_structure_volume_ecoli.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/fitted_structure_volume_spo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/fitted_structure_volume_spo.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/glucose_transportor_classification.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/structure_quality_ecoli.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_quality_ecoli.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/structure_quality_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_quality_sce.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/structure_quality_spo.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_quality_spo.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/MW_Total_Volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/MW_Total_Volume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/TF_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/TF_sce.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/Volume_per_kda_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/Volume_per_kda_sce.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/Relation_between_yeast_cell_mass_and_growth_rate_1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Relation_between_yeast_cell_mass_and_growth_rate_1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/Relation_between_yeast_cell_mass_and_growth_rate_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Relation_between_yeast_cell_mass_and_growth_rate_2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/Relation_between_yeast_cell_size_and_growth_rate_1.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Relation_between_yeast_cell_size_and_growth_rate_1.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/Relation_between_yeast_cell_size_and_growth_rate_2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Relation_between_yeast_cell_size_and_growth_rate_2.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/fitted_structure_volume_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/fitted_structure_volume_sce.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/relation_between_tm_score_&amp;_identity_us_align.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/relation_between_tm_score_&amp;_identity_us_align.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/score_volume_per_kda.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/score_volume_per_kda.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/structure_compare.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_compare.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/result/structure_volume_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_volume_sce.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/tm_score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/tm_score.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/tm_score_for_pro_with_unknown_function.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/tm_score_for_pro_with_unknown_function.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/volume comparison from two procedures.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/volume comparison from two procedures.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/tm_score_uncharacterized_protein_all.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/tm_score_uncharacterized_protein_all.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/tm_score_uncharacterized_protein_filter.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/tm_score_uncharacterized_protein_filter.pdf" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -121,15 +124,15 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/structure" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/omics" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/structure/not_used" />
-      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -360,7 +363,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>199</line>
+          <line>207</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
       </breakpoints>

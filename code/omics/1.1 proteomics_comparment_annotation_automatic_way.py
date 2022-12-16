@@ -8,7 +8,7 @@ from matplotlib import pyplot as plt
 
 # test the function
 compartment_dict_all0 = getCompartmentGeneList(filter="No")
-compartment_dict20 = getCompartmentGeneList(filter="Yes")
+compartment_dict20 = getCompartmentGeneList(filter="Yes") # Remove some compartmental annotation only with computational evidence (keep experimental evidence)
 
 
 # compare the difference
@@ -43,3 +43,4 @@ plt.xlabel('Compartment', fontsize=15)
 plt.ylabel('Count', fontsize=15)
 plt.xticks(rotation=90)
 plt.show()
+

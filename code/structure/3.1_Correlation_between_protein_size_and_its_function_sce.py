@@ -151,6 +151,14 @@ plt.yticks(fontsize=12)
 plt.savefig('result/Volume_per_kda_sce.pdf', bbox_inches='tight')
 
 
+pro_size00 = pro_size00.sort_values(by=['volume_per_kda'], ascending=True)
+sns.displot(pro_size00, x="volume_per_kda", common_norm=False)
+plt.xlim(0.75,1.25)
+plt.xlabel("Volume_per_kda", fontsize=15)
+plt.ylabel("Count", fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.savefig('result/Volume_per_kda_sce_v2.pdf', bbox_inches='tight')
 
 
 
@@ -283,7 +291,7 @@ predictions1<- predict (gcCount.loess, sce_TF$score)
 plot(sce_TF$score,sce_TF$volume_per_kda,cex=0.1,xlab="score",ylab="volume_per_kda")
 lines(sce_TF$score, predictions1,col = "red")
 
-#sustract the influence of GC
+#sustract the influence of quality score
 resi <- sce_TF$volume_per_kda-predictions1
 sce_TF$volume_per_kda2 <- resi
 gcCount.loess <- loess(volume_per_kda2~score,data=sce_TF,control = loess.control(surface = "direct"),degree=2)

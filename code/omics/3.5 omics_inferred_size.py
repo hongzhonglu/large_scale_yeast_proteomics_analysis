@@ -1,7 +1,5 @@
-# Note: once we have the proteomics data under different condition, then we can infer the the protein size from different sources.
-# Such as we can calculate the size of complexes, the size of proteins for transporting glucose, the size of proteins from each organelle
-# In other condition, the protein copy/cell under different conditions are calibrated based on the cell size datasets.
-
+# Note:
+# all these analysis is based on the protein copy?
 
 # import self function
 from src.model_process import *
@@ -67,6 +65,7 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
         result2[col0] = value2
     return result1, result2
 
+# GO-term level calculation
 def Pro3DCalForGOterm(protein_copy):
     """
     This function is used to calculate the organelle protein volume or sectional area as a whole
@@ -104,6 +103,7 @@ def Pro3DCalForGOterm(protein_copy):
         result2[col0] = value2
     return result1, result2
 
+# absolute protein abundance for each organelle
 def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
     """
     This function is used to calculate the organelle protein aboslute abundance as a whole
@@ -115,10 +115,6 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
         all_compartment = list(compartment.keys())
-
-    # input the protein structure information
-    pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
-    pro_size = pro_size[['DBID', 'locus', 'Total_Volume', 'section_area_new']]
     # sample ID information
     Sample_ID_select = list(protein_copy.columns)
     Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
@@ -158,6 +154,46 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
         result1[col0] = value1
     return result1
 
+def ProAbsoluteCal2(protein_copy, compartment_type="go_term"):
+    """
+    This function is used to calculate the organelle protein aboslute abundance as a whole
+    :param protein_copy:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "go_term":
+        # go term
+        go_term = getGoTermGeneList(input1="data/pnas.1921890117.sd01_GO_term.xlsx", input2="data/sce_protein_weight.tsv")
+        all_go_term = list(go_term.keys())
+        # sample ID information
+        Sample_ID_select = list(protein_copy.columns)
+        Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
+        out = pd.DataFrame({"go_term": all_go_term})
+        # result2 = pd.DataFrame({"go_term": all_go_term})
+        for col0 in Sample_ID_select:
+            print(col0)
+            value1 = []
+            # value2=[]
+            for y in all_go_term:
+                print(y)
+                # location0 = y
+                pro_abundance = protein_copy[['gene', col0]]
+                pro_abundance.columns = ['gene', 'molecular/cell']
+                genes_select = go_term[y]
+                pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+                if pro_abundance1 is "no_abundance":
+                    value1.append(None)
+                    # value2.append(None)
+                else:
+                    pro_abundance1 = pro_abundance1.dropna()
+                    x = sum(pro_abundance1['molecular/cell'])
+                    value1.append(x)
+                    # value2.append(S)
+            out[col0] = value1
+        return out
+
+
+
 
 # input the protein abundance data
 protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
@@ -185,6 +221,15 @@ s2.to_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limit
 s1, s2 = Pro3DCalForGOterm(protein_copy_all_rosemary)
 s1.to_excel("data/proteomics/volume_size_across_go_term_Rosemary.xlsx")
 s2.to_excel("data/proteomics/membrance_size_across_go_term_Rosemary.xlsx")
+
+# absolute protein abundance for each organelle or go-term
+result1 = ProAbsoluteCal(protein_copy_all_rosemary,compartment_type="organelle")
+result1.to_excel("data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
+
+result2 = ProAbsoluteCal2(protein_copy=protein_copy_all_rosemary, compartment_type="go_term")
+result2.to_excel("data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
+
+
 
 
 
@@ -234,27 +279,5 @@ s1, s2 = Pro3DCal(protein_copy_all_select)
 # for metabolic enzyme
 s1.to_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx")
 s2.to_excel("data/proteomics/ecGEM_membrane_size_across_compartment.xlsx")
-
-
-
-
-
-
-## input the absolute protein abundance
-# protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine.xlsx")
-protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx")
-
-# based on all 1150 genes
-dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
-ecYeast = read_sbml_model(dir2)
-gene_list = []
-for gene in ecYeast.genes:
-    print(gene.id)
-    gene_list.append(gene.id)
-protein_abundance_all_select = protein_abundance[protein_abundance["all_gene"].isin(gene_list)]
-protein_abundance_all_select = protein_abundance_all_select.rename(columns={'all_gene': 'gene'})
-p1 = ProAbsoluteCal(protein_abundance_all_select)
-p1.to_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx", index=False)
-
 
 

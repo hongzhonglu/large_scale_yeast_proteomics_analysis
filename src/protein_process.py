@@ -428,7 +428,7 @@ def getCompartmentGeneList(filter="Yes"):
             compartment_dict_all0[key] = value
         else:
             pass
-
+    # for compartment annotation removing some computation evidences
     compartment_dict2 = {}
     for i, x in compartment_combine.iterrows():
         print(i, x)

@@ -141,11 +141,11 @@ ax.set_aspect('equal', adjustable='box')
 plt.show()
 plt.savefig('result/structure_compare.pdf', bbox_inches='tight')
 
-
-
-
-
-
+# calculate the R2
+from sklearn.metrics import r2_score
+from scipy.stats import ttest_ind
+R2 = r2_score(x, y)
+ttest_ind(x, y)
 
 
 

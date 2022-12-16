@@ -113,10 +113,9 @@ omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine, 
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_carbon_source, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_jianye, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_kate, remove_column="gene")
-#TO-DO
-#omics_combine_auto will be as the reference to do absolute proteomics analysis
-omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx", index=False)
-#write a function to do the above steps
+# Save
+omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx", index=False) # the unit the mmol/gDW
+
 
 
 
@@ -176,4 +175,3 @@ protein_copy = pd.merge(left=pro_abundance2, right=pro_abundance, left_on=['gene
 protein_copy1 = pd.merge(left=pro_abundance3, right=protein_copy, left_on=['gene'], right_on=['gene'], how="outer")
 protein_copy2 = pd.merge(left=protein_copy1, right=pro_jianye, left_on=['gene'], right_on=['gene'], how="outer")
 protein_copy2.to_excel("data/proteomics/protein_copy_combine.xlsx",index=False)
-

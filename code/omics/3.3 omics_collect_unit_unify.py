@@ -34,3 +34,5 @@ column20 = [x for x in column2 if x is not 'gene']
 column21 = ['gene'] + column20
 protein_copy_all1 = protein_copy_all[column21]
 protein_copy_all1.to_excel("data/proteomics/all_protein_copy.xlsx", index=False)
+
+
