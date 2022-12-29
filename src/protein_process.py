@@ -164,7 +164,6 @@ def getProAundance(genes_select0, pro_abundance0):
         return combine_df
 
 
-
 def getStructureSize(pro_size0, abundance0, need_check="No"):
     """
     The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
