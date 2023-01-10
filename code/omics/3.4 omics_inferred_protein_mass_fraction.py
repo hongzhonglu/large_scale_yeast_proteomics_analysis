@@ -96,3 +96,45 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
 out = ProMassRatio_Organelle(protein_abundance=omics_combine_input2, compartment_type="organelle")
 
 
+
+
+
+
+
+
+
+# interest compartment
+volume_select = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet',
+                  'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'cytosolic ribosome','mitochondrial ribosome','nucleolus']
+
+
+
+membrane_select = ['fungal-type vacuole membrane',
+ 'plasma membrane',
+ 'mitochondrial outer membrane',
+ 'prospore membrane',
+ 'endoplasmic reticulum membrane',
+ 'mitochondrial inner membrane',
+ 'Golgi membrane',
+ 'cellular bud membrane',
+ 'late endosome membrane',
+ 'peroxisomal membrane',
+ 'nuclear membrane',
+ 'endosome membrane',
+ 'nuclear inner membrane']
+
+
+organell_select = volume_select + membrane_select
+out_select = out[out['compartment'].isin(organell_select)]
+out_select.index = out_select['compartment']
+out_select = out_select.drop('compartment', axis=1)
+out_select_t = out_select.transpose()
+out_select_t['sample_id'] = out_select_t.index
+
+# add physiological datasets
+# input the physiological datasets from Rosemerry
+physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
+out_select_t['growth'] = singleMapping(physiology_data['dilution rate (/h)'],physiology_data['kinetic'],out_select_t['sample_id'])
+out_select_t.to_excel("data/organelle_protein_mass_fraction_filter.xlsx")
+
+
