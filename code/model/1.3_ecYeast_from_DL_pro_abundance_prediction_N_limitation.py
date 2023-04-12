@@ -37,6 +37,10 @@ omics_select['average'] = omics_select.drop('gene', axis=1).apply(lambda x: x.me
 result['pro_measured'] = singleMapping(omics_select["average"], omics_select["gene"], result['geneID'])
 result = result[~result["pro_measured"].isna()]
 
+# output the result
+result.to_excel("result/predicted_vs_measured using ecModels from DLkcat.xlsx")
+
+
 # method1 absolute protein abundance mmol protein/gDW
 plt.figure()
 sns.regplot(x=np.log10(result['pro_measured']), y=np.log10(result['flux']), fit_reg=False)

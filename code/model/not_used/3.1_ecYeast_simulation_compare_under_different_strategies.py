@@ -6,7 +6,8 @@
 from cobra.io import load_matlab_model
 import matplotlib.pyplot as plt
 import os
-os.chdir('/code')
+dir0 = '/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code'
+os.chdir(dir0)
 
 # import self function
 from src.model_process import *
@@ -23,11 +24,12 @@ ecYeast = load_matlab_model(dir1)
 # r_1672 co2 production
 # r_1761 ethanol production
 # r_1634 acetate secretion
-
 solution = ecYeast.optimize()
-
-
 gem_rxn_nov = produceRxnList(ecYeast)
+
+
+
+
 gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("draw_prot")]
 test_rxn = gene_prot["name"].to_list()
 #then get the protein volume information

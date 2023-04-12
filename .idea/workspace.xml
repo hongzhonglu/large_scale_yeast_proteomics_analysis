@@ -6,10 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/test.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/~$omics_combine_input2.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/not_used/3.1_ecYeast_simulation_compare_under_different_strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/not_used/3.1_ecYeast_simulation_compare_under_different_strategies.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/mainFunction.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/mainFunction.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -218,7 +217,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/mainFunction.py</url>
-          <line>633</line>
+          <line>649</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
