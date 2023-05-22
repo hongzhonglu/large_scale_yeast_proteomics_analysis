@@ -194,7 +194,6 @@ def ProAbsoluteCal2(protein_copy, compartment_type="go_term"):
 
 
 
-
 # input the protein abundance data
 protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
 
@@ -228,6 +227,11 @@ result1.to_excel("data/proteomics/total_protein_abundance_across_compartment_Ros
 
 result2 = ProAbsoluteCal2(protein_copy=protein_copy_all_rosemary, compartment_type="go_term")
 result2.to_excel("data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
+
+
+
+
+
 
 
 

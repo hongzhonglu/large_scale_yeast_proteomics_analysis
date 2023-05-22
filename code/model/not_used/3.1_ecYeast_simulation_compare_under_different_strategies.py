@@ -26,7 +26,7 @@ ecYeast = load_matlab_model(dir1)
 # r_1634 acetate secretion
 solution = ecYeast.optimize()
 gem_rxn_nov = produceRxnList(ecYeast)
-
+gem_rxn_nov.to_excel("../result/ecYeastGEM.xlsx")
 
 
 
