@@ -6,6 +6,16 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/not_used/3.5 omics_inferred_size_Only_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.5 omics_inferred_size_Only_Rosemary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrance_size_across_go_term_Rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrance_size_across_go_term_Rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_abundance_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_abundance_across_compartment.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_go_term_Rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_go_term_Rosemary.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -339,8 +349,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py</url>
-          <line>98</line>
-          <option name="timeStamp" value="42" />
+          <line>44</line>
+          <option name="timeStamp" value="43" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.5 omics_inferred_size.py</url>
+          <line>307</line>
+          <option name="timeStamp" value="44" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

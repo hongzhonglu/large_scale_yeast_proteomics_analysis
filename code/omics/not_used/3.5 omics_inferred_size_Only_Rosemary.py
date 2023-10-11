@@ -126,3 +126,53 @@ for col0 in Sample_ID_select:
 
 result1.to_excel("data/proteomics/volume_size_across_go_term_Rosemary.xlsx")
 result2.to_excel("data/proteomics/membrance_size_across_go_term_Rosemary.xlsx")
+
+
+
+
+
+
+# read the model
+GEM_yeast = read_sbml_model('/Users/xluhon/Documents/GitHub/yeast-GEM/model/yeast-GEM.xml')
+gene_GEM = getALLGEMgene()
+protein_copy_all_rosemary = protein_copy_all_rosemary[protein_copy_all_rosemary["gene"].isin(gene_GEM)]
+
+
+# recalculation based on the curated protein abundances
+gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+# all_compartment = ['fungal-type vacuole membrane']
+gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+result1 = pd.DataFrame({"compartment": all_compartment})
+result2 = pd.DataFrame({"compartment": all_compartment})
+for col0 in Sample_ID_select:
+    print(col0)
+    value1=[]
+    value2=[]
+    for y in all_compartment:
+        print(y)
+        location0 = y
+        pro_abundance = protein_copy_all_rosemary[['gene',col0]]
+        pro_abundance.columns = ['gene','molecular/cell']
+        if y == "plasma membrane":
+            genes_select = gene_plasma_membrane["gene"].tolist()# for the test
+        elif y == "fungal-type vacuole membrane":
+            genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+            genes_select = [x for x in genes_select if x not in ["YAL005C","YLL024C"]] # remove two genes for fungal type vacuole membrane
+        else:
+            genes_select = compartment[y]
+        pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+        if pro_abundance1 is "no_abundance":
+            value1.append(None)
+            value2.append(None)
+        else:
+            x, S = getStructureSize_MeasuredAbundances(pro_size0=pro_size, abundance0=pro_abundance1)
+            value1.append(x)
+            value2.append(S)
+    result1[col0] = value1
+    result2[col0] = value2
+
+
+# for metabolic enzyme
+result1.to_excel("data/proteomics/GEM_volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
+result2.to_excel("data/proteomics/GEM_membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx")
+

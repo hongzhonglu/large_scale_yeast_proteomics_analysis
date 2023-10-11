@@ -285,3 +285,34 @@ s1.to_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx")
 s2.to_excel("data/proteomics/ecGEM_membrane_size_across_compartment.xlsx")
 
 
+
+
+
+# calculate protein abundance for each organelle in unit of mmol/gDCW
+# input the protein abundance data in the unit of mmol/g DCW
+omics_combine_auto = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx") # the unit the g/gDW
+# test
+omics_combine_auto.columns = omics_combine_auto.columns.str.replace('all_gene', 'gene')
+
+# based on all 1150 genes
+dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
+ecYeast = read_sbml_model(dir2)
+gene_list = []
+for gene in ecYeast.genes:
+    print(gene.id)
+    gene_list.append(gene.id)
+omics_combine_auto_select = omics_combine_auto[omics_combine_auto["gene"].isin(gene_list)]
+
+s111 = ProAbsoluteCal(omics_combine_auto_select)
+# for metabolic enzyme
+s111.to_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx")
+
+
+
+
+
+
+
+
+
+

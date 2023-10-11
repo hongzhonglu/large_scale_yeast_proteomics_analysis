@@ -42,7 +42,7 @@ plt.xlabel("Sectional area of single protein (nm^2)", fontsize=15)
 
 
 # input the protein information in organelle level calculated from proteomics
-volume_size = pd.read_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx")
+volume_size = pd.read_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx") # this is volume unit
 membrane_size = pd.read_excel("data/proteomics/ecGEM_membrane_size_across_compartment.xlsx")
 # refine-remove some used organelles
 organelle_v = collectOrganelleTerm(type="volume")
@@ -94,9 +94,8 @@ for xx in organelle_m0: # loop the organelle name
 
 
 
-
 # further input the absolute protein abundance from each organelle
-absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx") # what is unit？
+absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx") # what is unit? mmol/gDW
 absolute_abundance_organelle = absolute_abundance_organelle[absolute_abundance_organelle["compartment"].isin(organelle_m0 + organelle_v0)]
 absolute_abundance_organelle = absolute_abundance_organelle.sort_values(by=['mmol/gDW_carl'], ascending=False)
 absolute_abundance_organelle_t = absolute_abundance_organelle.transpose()
