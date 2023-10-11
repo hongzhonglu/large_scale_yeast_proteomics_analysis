@@ -6,45 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/3.1_ecYeast_simulation_compare_under_different_strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/not_used/3.1_ecYeast_simulation_compare_under_different_strategies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 omics_inferred_size.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/6.1 organelle_volume_analysis_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/6.1 organelle_volume_analysis_Rosemary.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrance_size_across_go_term_Rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrance_size_across_go_term_Rosemary.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/organell_protein_ratio_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/organell_protein_ratio_rosemary.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ratio_of_organelle_volume_to_total_protein_volume.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ratio_of_organelle_volume_to_total_protein_volume.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/total_protein_abundance_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_across_go_term_Rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_across_go_term_Rosemary.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/transcriptional_network/TRN_sce.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/transcriptional_network/TRN_sce.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/organelle protein volume correlation with growth.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/organelle protein volume correlation with growth.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_Golgi apparatus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_Golgi apparatus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_cytosol.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_cytosol.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_cytosolic ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_cytosolic ribosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_endoplasmic reticulum.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_endoplasmic reticulum.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_endosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_endosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_fungal-type vacuole.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_fungal-type vacuole.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_lipid droplet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_lipid droplet.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrial ribosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrion.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_mitochondrion.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_nucleolus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_nucleolus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_nucleus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_nucleus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_peroxisome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_peroxisome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_Golgi apparatus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_Golgi apparatus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_cytosol.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_cytosol.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_cytosolic ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_cytosolic ribosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_endoplasmic reticulum.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_endoplasmic reticulum.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_endosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_endosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_fungal-type vacuole.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_fungal-type vacuole.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_lipid droplet.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_lipid droplet.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrial ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrial ribosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrion.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_mitochondrion.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_nucleolus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_nucleolus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_nucleus.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_nucleus.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_peroxisome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_peroxisome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ratio_ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ratio_ribosome.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_ribosome.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_ribosome.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_DL_update_kcat.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_DL_update_kcat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/predicted_vs_measured using ecModels from DLkcat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/predicted_vs_measured using ecModels from DLkcat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

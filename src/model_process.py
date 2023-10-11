@@ -1,5 +1,6 @@
 from cobra.io import read_sbml_model
 import pandas as pd
+from src.protein_process import *
 from src.mainFunction import *
 
 
@@ -388,7 +389,7 @@ def AddOrgConstraint(ecModel, flux_expression, min_pro_abs, max_pro_abs, constra
 
 
 
-def getOrganelleConstraintGEM():
+def getOrganelleConstraintGEM(saturation_cof0=0.44):
     ecYeast = read_sbml_model("data/ecYeast_DL_update_some_kcat.xml")
     for rxn in ecYeast.reactions:
         if "-A" in rxn.id:
@@ -416,7 +417,7 @@ def getOrganelleConstraintGEM():
         # org = 'mitochondrial inner membrane' # just for the test
         compartment_info = organelle_pro_range[org].tolist()
         min_value = compartment_info[3]  # minimum  value
-        max_value = compartment_info[6]  # 75%
+        max_value = compartment_info[7]  # max value
         organelle_target = org
         gene_target = m_gene_in_organelle[organelle_target]
         rxn_select = gene_prot[gene_prot["geneID"].isin(gene_target)]["rxnID"].tolist()
@@ -426,7 +427,7 @@ def getOrganelleConstraintGEM():
         constraint_name = org + '_constraint'
         constraint_name = constraint_name.replace(' ', '_')
         ecYeast = AddOrgConstraint(ecModel=ecYeast, flux_expression=formula_one, min_pro_abs=min_value,
-                                   max_pro_abs=max_value, constraint_name=constraint_name, saturation_cof=0.44)
+                                   max_pro_abs=max_value, constraint_name=constraint_name, saturation_cof=saturation_cof0)
 
     # check the growth
     objective = ecYeast.problem.Objective(ecYeast.reactions.r_4041.flux_expression, direction='max')  # biomass

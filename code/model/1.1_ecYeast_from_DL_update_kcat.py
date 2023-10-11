@@ -11,6 +11,8 @@ from src.model_process import *
 # compare the predicted and measured protein abundances
 dir2 = "data/ecGEMs_and_predicted_kcat/emodel_Saccharomyces_cerevisiae_Posterior_mean.xml"
 ecYeast = read_sbml_model(dir2)
+m= ecYeast.optimize()
+
 
 # update the model
 # manual curation 1
