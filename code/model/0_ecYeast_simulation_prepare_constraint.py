@@ -96,7 +96,7 @@ for xx in organelle_m0: # loop the organelle name
 
 
 # further input the absolute protein abundance from each organelle
-absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx")
+absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx") # what is unit？
 absolute_abundance_organelle = absolute_abundance_organelle[absolute_abundance_organelle["compartment"].isin(organelle_m0 + organelle_v0)]
 absolute_abundance_organelle = absolute_abundance_organelle.sort_values(by=['mmol/gDW_carl'], ascending=False)
 absolute_abundance_organelle_t = absolute_abundance_organelle.transpose()
@@ -110,8 +110,6 @@ organelle_pro_range = absolute_abundance_organelle_t.describe()
 organelle_pro_range.to_excel("result/organelle_protein_abundance_range.xlsx")
 absolute_abundance_organelle_t.to_excel("result/organelle_protein_abundance_ecGEMs.xlsx")
 
-
-
 # firstly only use Rosemary datasets under N limitation
 # integrate the growth phenotype datasets
 Sample_ID_select = ['prot.1','prot.2', 'prot.3','prot.7','prot.8','prot.9','prot.10','prot.11','prot.12','prot.13','prot.14','prot.15','prot.16','prot.17','prot.18','prot.19','prot.20','prot.21']
@@ -123,10 +121,9 @@ physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
 absolute_abundance_organelle_Rosemary['growth'] = singleMapping(physiology_data['dilution rate (/h)'],physiology_data['kinetic'],absolute_abundance_organelle_Rosemary['sampleID'] )
 absolute_abundance_organelle_Rosemary['total_protein (g/gDW)'] = singleMapping(physiology_data['total protein content (g/gDW)'], physiology_data['kinetic'], absolute_abundance_organelle_Rosemary['sampleID'])
 absolute_abundance_organelle_Rosemary = absolute_abundance_organelle_Rosemary.sort_values(by=['growth'], ascending=True)
+absolute_abundance_organelle_Rosemary.to_excel("result/organelle_protein_abundance_ecGEMs_rosemary.xlsx")
 pro_Rosemary = absolute_abundance_organelle_Rosemary.describe()
 pro_Rosemary.to_excel("result/organelle_protein_abundance_range_rosemary.xlsx")
-absolute_abundance_organelle_Rosemary.to_excel("result/organelle_protein_abundance_ecGEMs_rosemary.xlsx")
-
 
 
 
@@ -145,14 +142,6 @@ for xx in organelle_m0 + organelle_v0: # loop the organelle name
     plt.xlabel(xx, fontsize=15)
     plt.ylabel("abs_pro abundance (mmol/gDW)", fontsize=15)
     plt.show()
-
-
-
-
-
-
-
-
 
 
 

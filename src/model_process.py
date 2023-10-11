@@ -442,7 +442,7 @@ def getOrganelleConstraintGEM(saturation_cof0=0.44):
         print(constraint_name)
         compartment_info = organelle_pro_range[org].tolist()
         min_value = compartment_info[3]  # minimum  value
-        max_value = compartment_info[6]  # 75%
+        max_value = compartment_info[7]  # max value
         ecYeast.constraints[constraint_name].ub = max_value
         ecYeast.constraints[constraint_name].lb = min_value
 
@@ -463,7 +463,7 @@ def getOrganelleConstraintGEM(saturation_cof0=0.44):
         print(constraint_name)
         compartment_info = organelle_pro_range[org].tolist()
         min_value = compartment_info[3]  # minimum  value
-        max_value = compartment_info[6]  # 75% value
+        max_value = compartment_info[7]  # max value
         ecYeast2.constraints[
             constraint_name].ub = 1000  # first set a unlimited value to avoid such an error: Cannot set a lower bound that is greater than the upper bound.
         ecYeast2.constraints[constraint_name].lb = min_value

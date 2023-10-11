@@ -16,7 +16,9 @@ constraint_name0 = org1 + '_constraint'
 constraint_name0 = constraint_name0.replace(' ', '_')
 print(constraint_name0)
 compartment_info = organelle_pro_range[org1].tolist()
-max_value = compartment_info[6]  # adjust the upper bound
+
+
+max_value = compartment_info[6] # adjust the upper bound
 ecYeast2.constraints[constraint_name0].ub = max_value
 
 # simulate crabtree effect!

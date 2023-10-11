@@ -6,8 +6,977 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_DL_update_kcat.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/1.1_ecYeast_from_DL_update_kcat.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/predicted_vs_measured using ecModels from DLkcat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/predicted_vs_measured using ecModels from DLkcat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YCL040W_GLK1_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YCR036W_RBK1_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YCR073W-A_SOL2_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YDL021W_GPM2_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YDR322C-A_TIM11_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YER141W_COX15_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YGL008C_PMA1_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YKL181W_PRS1_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YLR164W_SHH4_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YMR278W_PRM15_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YNR034W-A_EGO4_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YNR034W_SOL1_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YOL056W_GPM3_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YPL036W_PMA2_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YPL132W_COX11_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YPL172C_COX10_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YPR001W_CIT3_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/S288C_YPR020W_ATP20_protein.fsa" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_CF_1dgkN_BS04_ADP.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_TM_1bg3A_BS04_G6P.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_TM_3fguA_BS02_ANP.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_TM_3goiA_BS01_GLC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_TM_3vevA_BS02_0H4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_1bdgA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_1dgkN.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_1hkg_.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_1ig8A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_3b8aX.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_3f9mA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_3hm8A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_3o08A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_4qs7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model1_5zqtA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCL040W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_CF_4xckC_BS03_CS.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_TM_2ddoB_BS01_PO4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_TM_3otxA_BS01_AP5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_TM_3qaiA_BS01_XNN.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_TM_4o1lA_BS02_HO4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_1bx4A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_1lnjA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_1rkaA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_1vm7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_2a9zA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_2fv7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_4x8fA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_5zwyA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_6cw5A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model1_6ilrA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR036W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_FN_1Y89A00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_FN_2WU1A00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_TM_1horA_BS01_AGP.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_TM_2bkvB_BS01_PGA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_TM_3eb9B_BS02_FLC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_1ne7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_1y89B.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_2wu1A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_3ch7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_3e15A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_3e7fB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_3hn6A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_3icoC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_3oc6A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model1_3tx2A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YCR073W-A/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_TM_1bifA_BS02_PO4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_TM_1qhfA_BS01_3PG.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_TM_2axnA_BS01_F6P.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_TM_2h52A_BS01_3PG.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_TM_3fdzA_BS01_DG2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_1e58A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_1ljdA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_1qhfB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_1riiA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_1xq9A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_2h4zB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_3gp5A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_4embA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_4eo9A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model1_5vveA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDL021W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/CH_TM_1dv3L_BS08_BPH.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/CH_TM_2ao2C_BS01_TRP.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/CH_TM_2cn6A_BS03_ZN.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/CH_TM_5c65A_BS04_37X.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_3dl8A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_3j08A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_3juxA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_3ljbA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_3snhA2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_3szrA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_3zvrA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_4whjA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_5j0lA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model1_5owvA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YDR322C-A/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/CH_CF_2dysN_BS11_PSC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/CH_CF_2dysN_BS12_DCW.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/CH_CF_2dysN_BS13_DMU.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/CH_TM_4d6tP_BS01_HEM.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_1qleA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_2yevA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_2zxwN.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_3dtuA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_4iglA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_5doqA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_5twvB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_5w1hA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_6a2jA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model1_6hwhV.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/seq.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YER141W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_CF_2agvA_BS03_BHQ.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_CF_5aw4A_BS08_RB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_FN_1IWOA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_FN_1T5SA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_FN_3A3YA01.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_1mhsB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_1t5tA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_3a3yA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_3b8eC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_3ixzA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_3j08A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_5ksdA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_6a69A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_6hraB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/model1_6rohA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YGL008C/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_CF_3dahC_BS02_AMP.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_FN_1DKUA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_FN_1IBSA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_FN_1U9ZA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_TM_1dkuA_BS01_AP2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_1dkrB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_2c4kA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_2hcrB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_2ji4A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_3dahC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_3mbiA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_4s2uA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_4twbA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_5mp7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model1_5t3oA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YKL181W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_CF_2h88D_BS02_UNL.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_FN_2WDQC01.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_TM_3vr8D_BS02_RQX.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_TM_3vraD_BS01_HEM.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_TM_3vraD_BS02_EPH.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_1zp0D.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_2h89D.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_2qvwA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_3j5pB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_4ysxD.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_5do7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_6bo4A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_6fijA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_6idxA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model1_6mu1A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YLR164W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_FN_1P5DA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_TM_1c47A_BS01_G16.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_TM_1c4gA_BS02_VG1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_TM_2fkmX_BS01_G16.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_TM_3na5B_BS01_MG.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_1c47B.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_1k2yX.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_1kfqA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_1lllA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_1wqaD.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_2f7lA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_2z0fB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_3na5A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_3uw2A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model1_4qg5A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YMR278W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_CF_3c8cA_BS01_ALA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_CF_3fg8C_BS01_3PB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_CF_4i38A_BS01_HC4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_TM_2qscL_BS03_ZN.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_TM_4h10B_BS01_NUC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_2grgA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_2w27B.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_3pr6A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_3s7pA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_3t4jA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_4o01A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_4wkkA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_5gjvF2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_6fhtA1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/model1_6g1yA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W-A/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_FN_2GNPA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_FN_2WU1A00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_TM_1horA_BS01_AGP.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_TM_2bkvB_BS01_PGA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_TM_3eb9B_BS02_FLC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_1ne7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_1y89B.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_2wu1A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_3ch7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_3e15A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_3e7fB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_3hn6A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_3icoC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_3oc6A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model1_3tx2A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YNR034W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_TM_1c80A_BS01_GTP.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_TM_1qhfA_BS01_3PG.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_TM_2h4zA_BS01_DG2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_TM_2h52A_BS01_3PG.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_TM_3qpuA_BS03_POP.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_1e58A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_1ljdA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_1qhfB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_1riiA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_1xq9A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_2h4zB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_3d8hB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_3gp5A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_4embA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model1_5vveA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YOL056W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_CF_2agvA_BS01_NA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_CF_2agvA_BS03_BHQ.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_FN_1T5SA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_FN_2BY4A00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_FN_3B9RA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_1mhsB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_1t5tA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_3a3yA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_3b8eC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_3ixzA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_3j08A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_5ksdA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_6a69A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_6hraB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model1_6rohA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL036W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_CF_1tg7A_BS10_NAG.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_CF_1vfzA_BS01_VO4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_CF_3wf3B_BS01_NAG.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_TM_4xccL_BS01_GOL.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_TM_5cnqA_BS04_MN.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_1bxrA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_1so9A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_1vfzA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_1xc6A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_3og2A2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_4bxsV.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_4cvuA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_5lm8A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_5yfbA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model1_6b9oA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL132W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/CH_CF_3fyeA_BS06_DMU.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/CH_TM_1ocrA_BS03_HEA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/CH_TM_3aygA_BS01_HEM.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_1ehkA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_1qleA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_2yevA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_3aygA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_3dtuA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_3mk7A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_3o0rB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_4xydA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_6elhA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model1_6hwhV.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPL172C/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_CF_3msuB_BS02_OAA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_FN_2C6XA00.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_TM_1a59A_BS02_CIT.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_TM_1al6A_BS02_HAX.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_TM_1iomA_BS01_CO3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_complex2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/CH_complex5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_1a59A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_1aj8A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_1o7xC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_1owcA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_2h12E.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_2ibpA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_2ifcC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_3msuA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_5uqoB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model1_6cscA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR001W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/BFP.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/Bsites.clr" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/Bsites.inf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/CH_CF_3jcmI_BS01_NUC.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/CH_TM_2w2uB_BS01_III.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/CH_TM_4ev6E_BS03_MG.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/CH_complex1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/CH_complex3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/CH_complex4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/RSQ_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/RSQ_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/RSQ_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/RSQ_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/RSQ_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/cscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/lscore.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/lscore.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_1bg1A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_1hf8A.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_2jqqA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_2pfdD.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_3m1iC2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_4fgvA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_5cwmA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_5cwqA.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_5oenB.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model1_5z2cA2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model2.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model3.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model4.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model5.gif" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/model5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/prob.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading10.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading2.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading3.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading4.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading5.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading6.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading7.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading8.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Simulation using ITASSER/YPR020W/threading9.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/4.4_ecYeast_simulation_under_organelle_constraint_simulate_N_limitation_Crabtree.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/3.1_Correlation_between_protein_size_and_its_function_sce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/3.2_Correlation_between_protein_size_and_MW_ecoli.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/3.3_Correlation_between_protein_size_and_MW_spo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/4.1_structure_features_geometricus.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/4.1_structure_features_geometricus.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/4.2_structure_features_glucose_transporter_PCA.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/4.2_structure_features_glucose_transporter_PCA.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/4.3_structure_features_for_classification.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/5.0_US_align_preprocess_pdb_file.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/5.0_US_align_preprocess_pdb_file.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/5.1_US_align_structure_features_calculate_similarity.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/5.1_US_align_structure_features_calculate_similarity.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/5.2_US_align_VS_orthologFinder.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/not_used/5.3_US_align_parse_in_large_scale.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/not_used/2_protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_complexes_size_calculation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YCL040W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YCR036W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YCR073W-A@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YDL021W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YDR322C-A@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YER141W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YGL008C@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YKL181W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YLR164W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YMR278W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YNR034W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YOL056W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YPL036W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YPL132W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YPL172C@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pdb_itasser_structure_mapping/YPR020W@model1.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/Cratree simulation based on ecModel_DLkcat.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_ecGEMs_rosemary.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_range.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_range.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/organelle_protein_abundance_range_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/organelle_protein_abundance_range_rosemary.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/model_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/model_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -93,22 +1062,22 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data" />
+      <recent name="$PROJECT_DIR$/src" />
       <recent name="$PROJECT_DIR$/code/omics" />
-      <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/code/model" />
-      <recent name="$PROJECT_DIR$/code/structure/not_used" />
+      <recent name="$PROJECT_DIR$/code/structure" />
+      <recent name="$PROJECT_DIR$/data" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/code/model/not_used" />
-      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/structure/not_used" />
       <recent name="$PROJECT_DIR$/code/structure" />
+      <recent name="$PROJECT_DIR$/code/model/not_used" />
+      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/omics" />
     </key>
   </component>
@@ -221,37 +1190,37 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.3_Correlation_between_protein_size_and_MW_spo.py</url>
           <line>76</line>
           <option name="timeStamp" value="9" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.3_Correlation_between_protein_size_and_MW_spo.py</url>
           <line>120</line>
           <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.3_Correlation_between_protein_size_and_MW_spo.py</url>
           <line>158</line>
           <option name="timeStamp" value="11" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
           <line>81</line>
           <option name="timeStamp" value="15" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
           <line>129</line>
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
           <line>227</line>
           <option name="timeStamp" value="17" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
           <line>23</line>
           <option name="timeStamp" value="18" />
         </line-breakpoint>
@@ -261,7 +1230,7 @@
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
           <line>117</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
@@ -271,67 +1240,67 @@
           <option name="timeStamp" value="23" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/5.3_US_align_parse_in_large_scale.py</url>
           <line>138</line>
           <option name="timeStamp" value="24" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/5.3_US_align_parse_in_large_scale.py</url>
           <line>111</line>
           <option name="timeStamp" value="25" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/5.3_US_align_parse_in_large_scale.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/5.3_US_align_parse_in_large_scale.py</url>
           <line>120</line>
           <option name="timeStamp" value="26" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/5.2_US_align_VS_orthologFinder.py</url>
           <line>154</line>
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/5.2_US_align_VS_orthologFinder.py</url>
           <line>194</line>
           <option name="timeStamp" value="30" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/5.2_US_align_VS_orthologFinder.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/5.2_US_align_VS_orthologFinder.py</url>
           <line>135</line>
           <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/4.3_structure_features_for_classification.py</url>
           <line>103</line>
           <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/4.2_structure_features_glucose_transporter_PCA.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/4.2_structure_features_glucose_transporter_PCA.py</url>
           <line>55</line>
           <option name="timeStamp" value="33" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/4.3_structure_features_for_classification.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/4.3_structure_features_for_classification.py</url>
           <line>146</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
           <line>143</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
           <line>200</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_spo.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.3_Correlation_between_protein_size_and_MW_spo.py</url>
           <line>94</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
+          <url>file://$PROJECT_DIR$/code/structure/not_used/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
           <line>207</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
@@ -339,6 +1308,11 @@
           <url>file://$PROJECT_DIR$/code/omics/6.4 specific_organelle_protein_analysis_Rosemary.py</url>
           <line>19</line>
           <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py</url>
+          <line>109</line>
+          <option name="timeStamp" value="41" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
