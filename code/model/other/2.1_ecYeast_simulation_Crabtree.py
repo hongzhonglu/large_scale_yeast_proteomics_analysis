@@ -1,5 +1,4 @@
-# this module is mainly for ecModel simulation
-# which model should be used?
+# this module is mainly for crabtree simulation using ecModel from GECKO
 # first compare the model difference
 # version 1
 from cobra.io import load_matlab_model
