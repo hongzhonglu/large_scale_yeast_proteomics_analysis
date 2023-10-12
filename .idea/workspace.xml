@@ -6,37 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/1.3_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/2.1_ecYeast_from_DL_pro_abundance_prediction_N_limitation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/0_ecYeast_update_biomass_and_protein_limitation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/other/0_ecYeast_update_biomass_and_protein_limitation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/0_yeastGEM_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/other/0_yeastGEM_preprocess.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/1.1_ecYeast_from_GECKO_pro_abundance_prediction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/other/1.1_ecYeast_from_GECKO_pro_abundance_prediction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/2.1_ecYeast_simulation_Crabtree.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/other/2.1_ecYeast_simulation_Crabtree.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/3.1_ecYeast_simulation_compare_under_different_strategies.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/3.1_ecYeast_simulation_compare_under_different_strategies.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/add_reaction_reversibility.m" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/other/add_reaction_reversibility.m" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/ecYeast8_annotation_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/other/ecYeast8_annotation_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/ecYeast_add_missing_kcats_for_glucose_transporter.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/other/ecYeast_add_missing_kcats_for_glucose_transporter.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/yeastGEM_and_proYeastDB.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/other/yeastGEM_and_proYeastDB.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/not_used/yeastGEM_subsystem_curation.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/2_protein_complexes_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/2_protein_complexes_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/not_used/3.1_Correlation_between_protein_size_and_its_function_sce.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/not_used/3.2_Correlation_between_protein_size_and_MW_ecoli.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/not_used/3.3_Correlation_between_protein_size_and_MW_spo.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.3_Correlation_between_protein_size_and_MW_spo.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/structure/not_used/organell_size_calculation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/4_organelle_size_calculation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_with_TF_classification.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/MW_Total_Volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/MW_Total_Volume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/TF_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/TF_sce.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/Volume_per_kda_of_TF_sce_after_calibration.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/Volume_per_kda_of_TF_sce_after_calibration.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/Volume_per_kda_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/Volume_per_kda_sce.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/Volume_per_kda_sce_v2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/Volume_per_kda_sce_v2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/ecYeastGEM.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/ecYeastGEM.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/fitted_structure_volume_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/fitted_structure_volume_sce.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/predicted_vs_measured using ecModels from DLkcat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/predicted_vs_measured using ecModels from DLkcat.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/score_MW.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/score_MW.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/score_Total_Volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/score_Total_Volume.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/score_pro_length.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/score_pro_length.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/score_volume_per_kda.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/score_volume_per_kda.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/score_volume_per_kda2.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/score_volume_per_kda2.pdf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/structure_volume_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_volume_sce.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/5.1 organelle_membrane_analysis_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/5.1 organelle_membrane_analysis_Rosemary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/Figure_part_total_protein_copy_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/Figure_part_total_protein_copy_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/not_used/5.4 organelle_membrane_analysis_Kate.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/not_used/5.5 organelle_membrane_analysis_cell_system_2017.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy all datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy all datasets.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from jianye.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from jianye.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary NH4 limitation.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary NH4 limitation.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/dilution rate-total_copy from rosemary.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy all datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy all datasets.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy from jianye.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy from jianye.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total protein content-total_copy from rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total protein content-total_copy from rosemary.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total_protein copy other datasets.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total_protein copy other datasets.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/total_protein copy rosemary.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/total_protein copy rosemary.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -377,6 +361,11 @@
           <url>file://$PROJECT_DIR$/code/omics/3.5 omics_inferred_size.py</url>
           <line>307</line>
           <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/Figure_part_total_protein_copy_analysis.py</url>
+          <line>24</line>
+          <option name="timeStamp" value="45" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

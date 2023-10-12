@@ -22,11 +22,11 @@ result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
 
 # add the physiology datasets
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
-result_df0["sampleID"] = physiology_data['kinetic'].tolist()
-result_df0["dilution rate (/h)"] = physiology_data['dilution rate (/h)'].tolist()
-result_df0["total protein content (g/gDW)"] = physiology_data['total protein content (g/gDW)'].tolist()
-result_df0["Nitrogen source"] = physiology_data['Nitrogen source'].tolist()
-result_df0["limiting nutrient"] = physiology_data['limiting nutrient'].tolist()
+result_df0["sampleID"] = physiology_data['kinetic'].tolist()[0:76]
+result_df0["dilution rate (/h)"] = physiology_data['dilution rate (/h)'].tolist()[0:76]
+result_df0["total protein content (g/gDW)"] = physiology_data['total protein content (g/gDW)'].tolist()[0:76]
+result_df0["Nitrogen source"] = physiology_data['Nitrogen source'].tolist()[0:76]
+result_df0["limiting nutrient"] = physiology_data['limiting nutrient'].tolist()[0:76]
 
 # check Jianye datasets
 result_Jianye = result_df0[result_df0.index.str.contains("_M")]
