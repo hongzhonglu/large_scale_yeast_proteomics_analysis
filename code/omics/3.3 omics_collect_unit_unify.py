@@ -3,18 +3,13 @@
 # Thus it may be better to use the unit: mmol proteins/gDCW.
 
 
-import matplotlib.pyplot as plt
-import os
-
-
 # import self function
-from src.model_process import *
-from src.mainFunction import *
 from src.protein_process import *
 
 
 # protein abundance combine and analysis
-protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine.xlsx") # unit is mmol/gDW
+# protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine.xlsx") # unit is mmol/gDW
+protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx") # unit is mmol/gDW
 protein_copy = pd.read_excel("data/proteomics/protein_copy_combine.xlsx") # unit is molecular/cell
 # change the mmol/gDW as molecular/cell
 coefficient1 = 7.8298e9 # here it has some risks using a single coefficient
@@ -33,6 +28,5 @@ column2 = protein_copy_all.columns
 column20 = [x for x in column2 if x is not 'gene']
 column21 = ['gene'] + column20
 protein_copy_all1 = protein_copy_all[column21]
-protein_copy_all1.to_excel("data/proteomics/all_protein_copy.xlsx", index=False)
-
-
+#protein_copy_all1.to_excel("data/proteomics/all_protein_copy.xlsx", index=False)
+protein_copy_all1.to_excel("data/proteomics/all_protein_copy_with_more_sample_v2.xlsx", index=False)

@@ -10,7 +10,8 @@ from src.protein_process import *
 
 # data preprocess
 # input the protein abundance data in the unit of mmol/g DCW
-omics_combine_auto = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx") # the unit the g/gDW
+omics_combine_auto = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx") # the unit the g/gDW???? should be wrong
+
 # test
 omics_combine_auto.columns = omics_combine_auto.columns.str.replace('all_gene', 'gene')
 # change the unit from mmol/gDCW into g/gDCW
@@ -94,8 +95,7 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
 
 # test the above code
 out = ProMassRatio_Organelle(protein_abundance=omics_combine_input2, compartment_type="organelle")
-
-
+out.to_excel("data/proteomics/ProMassRatio_across_compartment.xlsx")
 
 
 
