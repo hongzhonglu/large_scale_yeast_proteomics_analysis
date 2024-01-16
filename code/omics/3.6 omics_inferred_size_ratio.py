@@ -121,6 +121,7 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
 protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
 
 
+
 # all datasets
 s1, s2 = Pro3DCal(protein_copy_all1)
 s1.to_excel("data/proteomics/volume_size_across_compartment.xlsx")
@@ -128,22 +129,12 @@ s2.to_excel("data/proteomics/membrane_size_across_compartment.xlsx")
 
 
 
-
-
-
-# input the physiological datasets from Rosemerry
-physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
-
-# input the membrane size data
-volume_size = s1
-volume_size_tr = volume_size.transpose()
-volume_size_tr0 = volume_size_tr.rename(columns=volume_size_tr.iloc[1])
-
+s1 = pd.read_excel("data/proteomics/volume_size_across_compartment.xlsx")
+s2 = pd.read_excel("data/proteomics/membrane_size_across_compartment.xlsx")
 
 
 
 # calculate the total volume of proteins
-# protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy_rosemary.xlsx")
 # input the pro structure size data
 pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
 pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
@@ -151,9 +142,9 @@ pro_size = pro_size[['DBID', 'locus','Total_Volume', 'section_area_new']]
 protein_copy_all1["pro_volume"] = singleMapping(pro_size['Total_Volume'],pro_size['locus'],protein_copy_all1['gene'])
 sample_ID = list(protein_copy_all1.columns)
 sample_ID = sample_ID[1:77]
-
 volume_list = []
 for x in sample_ID:
+    print(x)
     ss1 = protein_copy_all1[[x,"pro_volume"]]
     ss1["value"] = ss1[x]*ss1["pro_volume"]
     ss1 = ss1[~ss1["value"].isna()]
@@ -164,37 +155,15 @@ for x in sample_ID:
 # creat a new dataframe
 total_pro_volume = pd.DataFrame({"sampleID":sample_ID,"total_pro_volume":volume_list})
 
+# calculate the fraction of organell protein volume per total volume
 
+s1_matrix = s1.iloc[:,1:77]
 
+s1_matrix_new = s1_matrix
+for i in range(0,76,1):
+    print(i)
+    s1_matrix_new.iloc[:, i] = s1_matrix.iloc[:, i]/volume_list[i]
 
+s1_matrix_new['compartment'] = s1['compartment']
 
-
-
-# only take rosemery physiology dataset
-physiology = physiology_data
-# only take rosemery proteomics
-volume_size = volume_size_tr0
-volume_size["sample_ID"] = list(volume_size.index)
-volume_size["total_pro_volume"] = singleMapping(total_pro_volume['total_pro_volume'], total_pro_volume['sampleID'], volume_size["sample_ID"])
-
-column0 = list(volume_size.columns)[0:139] + ["total_pro_volume"]
-volume_size_ratio = volume_size[column0]
-volume_size_ratio1 = volume_size_ratio.copy()
-
-column1 = list(volume_size.columns)[0:139]
-for x in column1:
-    print(x)
-    volume_size_ratio1[x] = volume_size_ratio[x] / volume_size_ratio["total_pro_volume"]
-
-
-
-
-
-volume_size_ratio1['sample_ID'] = list(volume_size_ratio1.index)
-
-
-
-
-# combine the physiological datasets and proteomics datasets
-combine_data = pd.merge(left=volume_size_ratio1, right=physiology, left_on=['sample_ID'], right_on=['kinetic'], how="left")
-# further filter based on Nitrogen limitation or carbon limitation
+s1_matrix_new.to_excel("data/proteomics/compartment_volume_fraction.xlsx")
