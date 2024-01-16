@@ -101,6 +101,8 @@ omics_carbon_source = pd.read_excel("data/proteomics/omics_from_carbon_source_sc
 omics_carbon_source.pop('ref_glc_mm_rich_aerobic(mmol/gDW)_x')
 omics_jianye = pd.read_excel("data/proteomics/abundance_jianye.xlsx")
 omics_kate = pd.read_excel("data/proteomics/abundance_kate.xlsx")
+omics_nc_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_nc_scale.xlsx")
+
 
 
 def combineAbosluteAbundance(omics_combine_base, omics_new, remove_column="gene"):
@@ -113,6 +115,8 @@ omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine, 
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_carbon_source, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_jianye, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_kate, remove_column="gene")
+omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_nc_tao2, remove_column="gene")
+
 # Save
 omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx", index=False) # the unit the mmol/gDW
 

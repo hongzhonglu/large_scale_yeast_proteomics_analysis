@@ -11,6 +11,7 @@ from src.protein_process import *
 # protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine.xlsx") # unit is mmol/gDW
 protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx") # unit is mmol/gDW
 protein_copy = pd.read_excel("data/proteomics/protein_copy_combine.xlsx") # unit is molecular/cell
+
 # change the mmol/gDW as molecular/cell
 coefficient1 = 7.8298e9 # here it has some risks using a single coefficient
 column0 = protein_abundance.columns

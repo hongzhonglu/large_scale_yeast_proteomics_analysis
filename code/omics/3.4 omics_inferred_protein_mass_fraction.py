@@ -6,8 +6,6 @@
 from src.model_process import *
 from src.protein_process import *
 
-
-
 # data preprocess
 # input the protein abundance data in the unit of mmol/g DCW
 omics_combine_auto = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx") # the unit the g/gDW???? should be wrong
@@ -37,9 +35,6 @@ for x in all_colum2:
     omics_combine_input2[x] = omics_combine_input[x]*omics_combine_input["MW_Kda"]
 
 omics_combine_input2['gene'] = omics_combine_input['gene']
-
-
-
 
 
 # calculate mass ratio of protein from each organelle per total protein mass
@@ -98,43 +93,7 @@ out = ProMassRatio_Organelle(protein_abundance=omics_combine_input2, compartment
 out.to_excel("data/proteomics/ProMassRatio_across_compartment.xlsx")
 
 
-
-
-
-
-
-# interest compartment
-volume_select = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet',
-                  'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'cytosolic ribosome','mitochondrial ribosome','nucleolus']
-
-
-
-membrane_select = ['fungal-type vacuole membrane',
- 'plasma membrane',
- 'mitochondrial outer membrane',
- 'prospore membrane',
- 'endoplasmic reticulum membrane',
- 'mitochondrial inner membrane',
- 'Golgi membrane',
- 'cellular bud membrane',
- 'late endosome membrane',
- 'peroxisomal membrane',
- 'nuclear membrane',
- 'endosome membrane',
- 'nuclear inner membrane']
-
-
-organell_select = volume_select + membrane_select
-out_select = out[out['compartment'].isin(organell_select)]
-out_select.index = out_select['compartment']
-out_select = out_select.drop('compartment', axis=1)
-out_select_t = out_select.transpose()
-out_select_t['sample_id'] = out_select_t.index
-
-# add physiological datasets
 # input the physiological datasets from Rosemerry
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
-out_select_t['growth'] = singleMapping(physiology_data['dilution rate (/h)'],physiology_data['kinetic'],out_select_t['sample_id'])
-out_select_t.to_excel("data/organelle_protein_mass_fraction_filter.xlsx")
 
 
