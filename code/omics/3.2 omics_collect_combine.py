@@ -128,22 +128,6 @@ omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_sa
 
 
 
-"""
-# histone analysis
-histone_list = ['YBL002W',
-'YBL003C',
-'YBR009C',
-'YBR010W',
-'YDR224C',
-'YDR225W',
-'YNL030W',
-'YNL031C']
-omics_histone = omics_combine_auto[omics_combine_auto["all_gene"].isin(histone_list)]
-ref_list = ['YBL050W', 'YOR224C',
-'YKL040C', 'YPL010W']
-omics_ref = omics_combine_auto[omics_combine_auto["all_gene"].isin(ref_list)]
-omics_ref.to_excel("data/proteomics/ref_protein_across_absolute_measurement.xlsx",index=False)
-"""
 
 
 
@@ -172,7 +156,6 @@ pro_abundance3 = pd.read_excel("data/proteomics/abundance_table_paxdb_scale.xlsx
 
 # input data from Jianye
 pro_jianye = pd.read_excel("data/proteomics/protein_copy_jianye.xlsx")
-
 
 # combine data from different source?
 protein_copy = pd.merge(left=pro_abundance2, right=pro_abundance, left_on=['gene'], right_on=['gene'], how="left")
