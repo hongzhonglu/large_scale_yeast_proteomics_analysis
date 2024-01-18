@@ -6,9 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine_with_more_samples.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine_with_more_samples.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

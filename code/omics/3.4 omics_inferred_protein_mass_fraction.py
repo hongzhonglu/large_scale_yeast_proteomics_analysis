@@ -97,3 +97,13 @@ out.to_excel("data/proteomics/ProMassRatio_across_compartment.xlsx")
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
 
 
+
+# calcualte the mass fraction of enzyme under different conditions
+gene_list_in_ETFL = pd.read_excel("data/proteomics/gene_list_in_ETFL.xlsx")
+omics_combine_input2_for_ETFL = omics_combine_input2[omics_combine_input2['gene'].isin(gene_list_in_ETFL['geneID'])]
+total_enzyme = omics_combine_input2_for_ETFL.sum(numeric_only=True, axis=0)
+total_proteome = omics_combine_input2.sum(numeric_only=True, axis=0)
+total_enzyme.to_excel("data/proteomics/enzyme_mass_fraction_under_each_condition.xlsx")
+total_proteome.to_excel("data/proteomics/proteome_mass_faction_under_each_condition.xlsx")
+
+
