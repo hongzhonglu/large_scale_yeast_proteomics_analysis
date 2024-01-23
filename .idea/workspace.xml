@@ -7,8 +7,10 @@
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_Manual.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_Manual.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$Omics_from_tao_nc_scale.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$ProMassRatio_across_compartment_Manual.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$protein_copy_tao_nc.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -93,14 +95,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/omics" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>

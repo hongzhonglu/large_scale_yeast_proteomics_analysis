@@ -106,4 +106,21 @@ total_proteome = omics_combine_input2.sum(numeric_only=True, axis=0)
 total_enzyme.to_excel("data/proteomics/enzyme_mass_fraction_under_each_condition.xlsx")
 total_proteome.to_excel("data/proteomics/proteome_mass_faction_under_each_condition.xlsx")
 
+# analyze the protein resouce allocation at stoichiometric level
+protein_complex = pd.read_excel("data/complex_info.xlsx")
+protein_complex["subunit"] = protein_complex["subunit"].str.replace("-MONOMER","")
+
+# combine this with the protein abundance information
+
+result = pd.merge(protein_complex, omics_combine_auto, left_on='subunit', right_on='gene', how='left')
+result.to_excel("data/proteomics/protein_complex_subunit_with_abundance.xlsx")
+
+
+
+
+
+
+
+
+
 
