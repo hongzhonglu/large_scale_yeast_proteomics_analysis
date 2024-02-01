@@ -7,7 +7,6 @@ from src.model_process import *
 from src.protein_process import *
 import matplotlib.pyplot as plt
 import seaborn as sns
-import scipy
 
 def find_outlier(df, column):
     # Find first and third quartile
@@ -39,6 +38,7 @@ protein_complex["subunit"] = protein_complex["subunit"].str.replace("-MONOMER","
 
 # combine this with the protein abundance information
 result = pd.merge(protein_complex, omics_combine_auto, left_on='subunit', right_on='all_gene', how='left')
+result.to_excel("data/proteomics/protein_complex_subunit_with_abundance.xlsx")
 
 # use a function to run the above task
 def complex_subunit_analysis(complexid, min_num=10):

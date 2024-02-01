@@ -92,12 +92,6 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
 out = ProMassRatio_Organelle(protein_abundance=omics_combine_input2, compartment_type="organelle")
 out.to_excel("data/proteomics/ProMassRatio_across_compartment.xlsx")
 
-
-# input the physiological datasets from Rosemerry
-physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
-
-
-
 # calcualte the mass fraction of enzyme under different conditions
 gene_list_in_ETFL = pd.read_excel("data/proteomics/gene_list_in_ETFL.xlsx")
 omics_combine_input2_for_ETFL = omics_combine_input2[omics_combine_input2['gene'].isin(gene_list_in_ETFL['geneID'])]
@@ -105,22 +99,3 @@ total_enzyme = omics_combine_input2_for_ETFL.sum(numeric_only=True, axis=0)
 total_proteome = omics_combine_input2.sum(numeric_only=True, axis=0)
 total_enzyme.to_excel("data/proteomics/enzyme_mass_fraction_under_each_condition.xlsx")
 total_proteome.to_excel("data/proteomics/proteome_mass_faction_under_each_condition.xlsx")
-
-# analyze the protein resouce allocation at stoichiometric level
-protein_complex = pd.read_excel("data/complex_info.xlsx")
-protein_complex["subunit"] = protein_complex["subunit"].str.replace("-MONOMER","")
-
-# combine this with the protein abundance information
-
-result = pd.merge(protein_complex, omics_combine_auto, left_on='subunit', right_on='gene', how='left')
-result.to_excel("data/proteomics/protein_complex_subunit_with_abundance.xlsx")
-
-
-
-
-
-
-
-
-
-
