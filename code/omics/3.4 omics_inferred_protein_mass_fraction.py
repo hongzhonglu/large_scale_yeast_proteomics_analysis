@@ -165,3 +165,65 @@ out = enzyme_per_protein_organelle(protein_abundance=omics_combine_input2, enzym
 out.to_excel("data/proteomics/enzyme_per_protein_across_compartment.xlsx")
 
 
+# calculate mass ratio of enzyme per total protein within cell
+def enzyme_per_protein_organelle2(protein_abundance, enzyme_list=gene_list_in_ETFL, compartment_type="organelle"):
+    """
+    This function is used to calculate the mass fraction of enzyme per total protein for each organelle
+    :param protein_abundance (the unit is g/gDW):
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        all_compartment = list(compartment.keys())
+
+    # sample ID information
+    Sample_ID_select = list(protein_abundance.columns)
+    Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    # creat a dataframe to save the result
+    result1 = pd.DataFrame({"compartment": all_compartment})
+    # run the cycle
+    for col0 in Sample_ID_select:
+        print(col0)
+        value1 = []
+        for y in all_compartment:
+            print(y)
+            # test
+            # y = "cytosol"
+            pro_abundance = protein_abundance[['gene', col0]]
+            pro_abundance.columns = ['gene', 'g/gDW']
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if
+                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            elif y == "endosome":
+                genes_select = compartment[y]
+                genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
+            else:
+                genes_select = compartment[y]
+            # get the sum
+            pro_abundance.fillna(0, axis=1, inplace=True)
+            pro_select = pro_abundance[pro_abundance['gene'].isin(genes_select)]
+            pro_select_enzyme = pro_select[pro_select['gene'].isin(enzyme_list["geneID"])]
+            sum_all = sum(pro_abundance['g/gDW'])  # sum of all proteins
+            sum_select = sum(pro_select['g/gDW'])  # sum of proteins from specific compartment
+            sum_enzyme = sum(pro_select_enzyme['g/gDW']) # sum of proteins belong to enzymes from specific comparment
+            ratio = sum_enzyme/sum_all
+            value1.append(ratio)
+        result1[col0] = value1
+    return result1
+# test the above code
+out = enzyme_per_protein_organelle2(protein_abundance=omics_combine_input2, enzyme_list=gene_list_in_ETFL, compartment_type="organelle")
+out.to_excel("data/proteomics/enzyme_fraction_based_on_total_protein_across_compartment.xlsx")
+
+
+
+
+
