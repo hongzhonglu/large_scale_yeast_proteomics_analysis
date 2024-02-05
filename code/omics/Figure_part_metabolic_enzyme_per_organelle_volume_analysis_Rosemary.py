@@ -15,21 +15,25 @@ volume_size = pd.read_excel("data/proteomics/volume_size_across_compartment_Rose
 
 
 volume_size_tr = volume_size.transpose()
-volume_size_tr0 = volume_size_tr.rename(columns=volume_size_tr.iloc[1])
+volume_size_tr = volume_size_tr.iloc[1:, :]
+volume_size_tr0 = volume_size_tr.rename(columns=volume_size_tr.iloc[0])
+
+
 
 column_select1 = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet',
                   'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'cytosolic ribosome','mitochondrial ribosome','nucleolus']
 column_select1 = [x for x in column_select1 if "ribosome" not in x]
 
-volume_size_tr0 = volume_size_tr0.iloc[2:, :]
+volume_size_tr0 = volume_size_tr0.iloc[1:, :]
 volume_size_tr0 = volume_size_tr0[column_select1]
 
 
 # enzyme
 enzyme_size = pd.read_excel("data/proteomics/GEM_volume_size_across_compartment_Rosemary_NH4_limitation_v2.xlsx") # curated based on cell size under different growth rate
 enzyme_size_tr = enzyme_size.transpose()
-enzyme_size_tr0 = enzyme_size_tr.rename(columns=enzyme_size_tr.iloc[1])
-enzyme_size_tr0 = enzyme_size_tr0.iloc[2:, :]
+
+enzyme_size_tr0 = enzyme_size_tr.rename(columns=enzyme_size_tr.iloc[0])
+enzyme_size_tr0 = enzyme_size_tr0.iloc[1:, :]
 enzyme_size_tr0 = enzyme_size_tr0[column_select1]
 
 # calculate the ratio

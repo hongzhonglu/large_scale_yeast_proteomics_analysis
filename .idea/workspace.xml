@@ -7,9 +7,12 @@
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.7 protein_complex_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.7 protein_complex_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/Figure_part_metabolic_enzyme_per_organelle_volume_analysis_Rosemary.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/Figure_part_metabolic_enzyme_per_organelle_volume_analysis_Rosemary.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/enzyme_mass_fraction_under_each_condition.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/enzyme_mass_fraction_under_each_condition.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/proteome_mass_faction_under_each_condition.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/proteome_mass_faction_under_each_condition.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$enzyme_mass_fraction_under_each_condition.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/figure/rose_miu_metabolic_enzyme_per_organelle.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/figure/rose_miu_metabolic_enzyme_per_organelle.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -360,6 +363,11 @@
           <url>file://$PROJECT_DIR$/code/omics/3.2 omics_collect_combine.py</url>
           <line>103</line>
           <option name="timeStamp" value="46" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/Figure_part_metabolic_enzyme_per_organelle_volume_analysis_Rosemary.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="48" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
