@@ -101,6 +101,8 @@ omics_carbon_source = pd.read_excel("data/proteomics/omics_from_carbon_source_sc
 omics_carbon_source.pop('ref_glc_mm_rich_aerobic(mmol/gDW)_x')
 omics_jianye = pd.read_excel("data/proteomics/abundance_jianye.xlsx")
 omics_kate = pd.read_excel("data/proteomics/abundance_kate.xlsx")
+omics_nc_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_nc_scale.xlsx")
+
 
 
 def combineAbosluteAbundance(omics_combine_base, omics_new, remove_column="gene"):
@@ -113,10 +115,10 @@ omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine, 
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_carbon_source, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_jianye, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_kate, remove_column="gene")
-#TO-DO
-#omics_combine_auto will be as the reference to do absolute proteomics analysis
-omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx", index=False)
-#write a function to do the above steps
+omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_nc_tao2, remove_column="gene")
+
+# Save
+omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx", index=False) # the unit the mmol/gDW
 
 
 
@@ -125,22 +127,7 @@ omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_sa
 
 
 
-"""
-# histone analysis
-histone_list = ['YBL002W',
-'YBL003C',
-'YBR009C',
-'YBR010W',
-'YDR224C',
-'YDR225W',
-'YNL030W',
-'YNL031C']
-omics_histone = omics_combine_auto[omics_combine_auto["all_gene"].isin(histone_list)]
-ref_list = ['YBL050W', 'YOR224C',
-'YKL040C', 'YPL010W']
-omics_ref = omics_combine_auto[omics_combine_auto["all_gene"].isin(ref_list)]
-omics_ref.to_excel("data/proteomics/ref_protein_across_absolute_measurement.xlsx",index=False)
-"""
+
 
 
 
@@ -170,10 +157,8 @@ pro_abundance3 = pd.read_excel("data/proteomics/abundance_table_paxdb_scale.xlsx
 # input data from Jianye
 pro_jianye = pd.read_excel("data/proteomics/protein_copy_jianye.xlsx")
 
-
 # combine data from different source?
 protein_copy = pd.merge(left=pro_abundance2, right=pro_abundance, left_on=['gene'], right_on=['gene'], how="left")
 protein_copy1 = pd.merge(left=pro_abundance3, right=protein_copy, left_on=['gene'], right_on=['gene'], how="outer")
 protein_copy2 = pd.merge(left=protein_copy1, right=pro_jianye, left_on=['gene'], right_on=['gene'], how="outer")
 protein_copy2.to_excel("data/proteomics/protein_copy_combine.xlsx",index=False)
-

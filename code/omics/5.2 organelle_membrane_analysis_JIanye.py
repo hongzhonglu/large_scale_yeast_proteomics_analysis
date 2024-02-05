@@ -219,6 +219,3 @@ plt.axhline(y=0, color='k', linestyle='-')
 plt.show()
 plt.savefig("result/figure/organelle membrane relative change for " + y0 + " vs " + x0 + ".pdf", bbox_inches='tight')
 
-
-
-

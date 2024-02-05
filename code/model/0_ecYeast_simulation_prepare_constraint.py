@@ -25,10 +25,24 @@ gene_prot["section_area"] = singleMapping(pro_size['section_area_new'], pro_size
 
 
 
+# plot some density graph
+sns.displot(gene_prot, x="Volume")
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.xlabel("Volume of single protein (nm^3)", fontsize=15)
+
+
+sns.displot(gene_prot, x="section_area")
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.xlabel("Sectional area of single protein (nm^2)", fontsize=15)
+
+
+
 
 
 # input the protein information in organelle level calculated from proteomics
-volume_size = pd.read_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx")
+volume_size = pd.read_excel("data/proteomics/ecGEM_volume_size_across_compartment.xlsx") # this is volume unit
 membrane_size = pd.read_excel("data/proteomics/ecGEM_membrane_size_across_compartment.xlsx")
 # refine-remove some used organelles
 organelle_v = collectOrganelleTerm(type="volume")
@@ -78,8 +92,10 @@ for xx in organelle_m0: # loop the organelle name
 
 
 
+
+
 # further input the absolute protein abundance from each organelle
-absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx")
+absolute_abundance_organelle = pd.read_excel("data/proteomics/ecGEM_absolute_pro_across_compartment.xlsx") # what is unit? mmol/gDW
 absolute_abundance_organelle = absolute_abundance_organelle[absolute_abundance_organelle["compartment"].isin(organelle_m0 + organelle_v0)]
 absolute_abundance_organelle = absolute_abundance_organelle.sort_values(by=['mmol/gDW_carl'], ascending=False)
 absolute_abundance_organelle_t = absolute_abundance_organelle.transpose()
@@ -93,8 +109,6 @@ organelle_pro_range = absolute_abundance_organelle_t.describe()
 organelle_pro_range.to_excel("result/organelle_protein_abundance_range.xlsx")
 absolute_abundance_organelle_t.to_excel("result/organelle_protein_abundance_ecGEMs.xlsx")
 
-
-
 # firstly only use Rosemary datasets under N limitation
 # integrate the growth phenotype datasets
 Sample_ID_select = ['prot.1','prot.2', 'prot.3','prot.7','prot.8','prot.9','prot.10','prot.11','prot.12','prot.13','prot.14','prot.15','prot.16','prot.17','prot.18','prot.19','prot.20','prot.21']
@@ -106,10 +120,9 @@ physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
 absolute_abundance_organelle_Rosemary['growth'] = singleMapping(physiology_data['dilution rate (/h)'],physiology_data['kinetic'],absolute_abundance_organelle_Rosemary['sampleID'] )
 absolute_abundance_organelle_Rosemary['total_protein (g/gDW)'] = singleMapping(physiology_data['total protein content (g/gDW)'], physiology_data['kinetic'], absolute_abundance_organelle_Rosemary['sampleID'])
 absolute_abundance_organelle_Rosemary = absolute_abundance_organelle_Rosemary.sort_values(by=['growth'], ascending=True)
+absolute_abundance_organelle_Rosemary.to_excel("result/organelle_protein_abundance_ecGEMs_rosemary.xlsx")
 pro_Rosemary = absolute_abundance_organelle_Rosemary.describe()
 pro_Rosemary.to_excel("result/organelle_protein_abundance_range_rosemary.xlsx")
-absolute_abundance_organelle_Rosemary.to_excel("result/organelle_protein_abundance_ecGEMs_rosemary.xlsx")
-
 
 
 
@@ -128,11 +141,6 @@ for xx in organelle_m0 + organelle_v0: # loop the organelle name
     plt.xlabel(xx, fontsize=15)
     plt.ylabel("abs_pro abundance (mmol/gDW)", fontsize=15)
     plt.show()
-    #plt.savefig("result/figure/" + xx + "_abs_pro.pdf", bbox_inches='tight')
-
-
-
-
 
 
 
@@ -156,14 +164,16 @@ for x in m_gene_in_organelle.keys():
     if len(m_gene_in_organelle[x]) <= 3:
         print(x)
 
+
 # try to put the plasma membrane constraint into the model?
 gene_select1 = m_gene_in_organelle['plasma membrane']
 # get the structure based parameters
 gene_prot_select1 = gene_prot[gene_prot["geneID"].isin(gene_select1)]
 gene_prot_select1 = gene_prot_select1.sort_values(by=['section_area'], ascending=False)
 # check the abundance for some outlier samples
-protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
-protein_copy_all_select = protein_copy_all1[protein_copy_all1["gene"].isin(gene_select1)]
+#protein_copy_all1 = pd.read_excel("data/proteomics/all_protein_copy.xlsx")
+#protein_copy_all_select = protein_copy_all1[protein_copy_all1["gene"].isin(gene_select1)]
+
 
 
 # plot some density graph
@@ -177,6 +187,5 @@ sns.displot(gene_prot_select1, x="section_area")
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.xlabel("Sectional area of single protein (nm^2)", fontsize=15)
-
 
 

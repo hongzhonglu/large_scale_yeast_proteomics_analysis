@@ -6,7 +6,8 @@
 from cobra.io import load_matlab_model
 import matplotlib.pyplot as plt
 import os
-os.chdir('/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code')
+dir0 = '/Users/xluhon/Documents/GitHub/De-nevo-protein-3D-structure-yeast/code'
+os.chdir(dir0)
 
 # import self function
 from src.model_process import *
@@ -23,11 +24,12 @@ ecYeast = load_matlab_model(dir1)
 # r_1672 co2 production
 # r_1761 ethanol production
 # r_1634 acetate secretion
-
 solution = ecYeast.optimize()
-
-
 gem_rxn_nov = produceRxnList(ecYeast)
+gem_rxn_nov.to_excel("../result/ecYeastGEM.xlsx")
+
+
+
 gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("draw_prot")]
 test_rxn = gene_prot["name"].to_list()
 #then get the protein volume information
@@ -67,8 +69,10 @@ model.reactions.get_by_id("r_1549").upper_bound = 0 # assume (R,R)-2,3-butanedio
 
 
 
+
+
 # single data point test
-i = 0.1
+i = 0.2
 s1, s2, s3, s4, s5 = simulationCompare(model_in=model, growth_in=i, objective=new_objective)
 # get the abundance
 flux_max = s3.fluxes
@@ -76,25 +80,30 @@ result = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result = result[result['rxnID'].str.contains("draw_prot")]
 result['rxnID'] = result['rxnID'].str.replace("draw_prot_", "")
 
-
 flux_max = s4.fluxes
 result1 = pd.DataFrame({'rxnID':flux_max.index, 'flux':flux_max.values})
 result1 = result1[result1['rxnID'].str.contains("draw_prot")]
 result1['rxnID'] = result1['rxnID'].str.replace("draw_prot_", "")
-
 
 # plot
 import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.stats import pearsonr
+plt.figure()
 sns.regplot(x=result['flux'], y=result1['flux'], fit_reg=False)
 plt.xlabel("Protein pool minimization")
 plt.ylabel("Volume minimization")
-
+plt.show()
 corr, ss = pearsonr(result['flux'], result1['flux'])
 print("Correlation coefficient:", corr)
 print("Correlation p_value:", ss)
+
+
+
+
+
+
 
 
 
@@ -107,32 +116,37 @@ glucose_uptake1 = []
 glucose_uptake2 = []
 glucose_uptake3 = []
 glucose_uptake4 = []
+glucose_uptake5 = []
 
 pro_pool1 = []
 pro_pool2 = []
 pro_pool3 = []
 pro_pool4 = []
+pro_pool5 = []
 
 for i in growth:
     print(i)
     s1,s2,s3,s4,s5=simulationCompare(model_in=model, growth_in=i, objective=new_objective)
-    g1,g2,g3,g4=s1.fluxes['r_1714_REV'],s2.fluxes['r_1714_REV'],s3.fluxes['r_1714_REV'],s4.fluxes['r_1714_REV']
-    p1, p2, p3,p4 = s1.fluxes['prot_pool_exchange'], s2.fluxes['prot_pool_exchange'], s3.fluxes['prot_pool_exchange'], s4.fluxes['prot_pool_exchange']
+    g1,g2,g3,g4,g5=s1.fluxes['r_1714_REV'],s2.fluxes['r_1714_REV'],s3.fluxes['r_1714_REV'],s4.fluxes['r_1714_REV'],s5.fluxes['r_1714_REV']
+    p1, p2, p3,p4,p5 = s1.fluxes['prot_pool_exchange'], s2.fluxes['prot_pool_exchange'], s3.fluxes['prot_pool_exchange'], s4.fluxes['prot_pool_exchange'],s5.fluxes['prot_pool_exchange']
     glucose_uptake1.append(g1)
     glucose_uptake2.append(g2)
     glucose_uptake3.append(g3)
     glucose_uptake4.append(g4)
+    glucose_uptake5.append(g5)
     pro_pool1.append(p1)
     pro_pool2.append(p2)
     pro_pool3.append(p3)
     pro_pool4.append(p4)
+    pro_pool5.append(p5)
 
 
 plt.figure()
-plt.plot(growth, glucose_uptake1, marker='.', label='two_step')
-plt.plot(growth, glucose_uptake2, marker='.', label='Glucose')
-plt.plot(growth, glucose_uptake3, marker='.',label='Abundacne')
-plt.plot(growth, glucose_uptake4, marker='.',label='Volume')
+plt.plot(growth, glucose_uptake1, marker='.', label='minimize the glucose uptake and minimize protein pool')
+plt.plot(growth, glucose_uptake2, marker='.', label='minimize the glucose uptake')
+plt.plot(growth, glucose_uptake3, marker='.', label='minimize protein pool')
+plt.plot(growth, glucose_uptake4, marker='.', label='minimize protein volume')
+plt.plot(growth, glucose_uptake5, marker='.', label='minimize the glucose uptake and protein volume')
 plt.xlabel('Growth rate (/h)')
 plt.ylabel('glucose uptake rate (mmol/gDW.h)')
 plt.legend(loc='upper left')
@@ -141,12 +155,37 @@ plt.show()
 
 
 plt.figure()
-plt.plot(growth, pro_pool1, marker='.', label='two_step')
-plt.plot(growth, pro_pool2, marker='.', label='Glucose')
-plt.plot(growth, pro_pool3, marker='.',label='Abundacne')
-plt.plot(growth, pro_pool4, marker='.',label='Volume')
+plt.plot(growth, pro_pool1, marker='.', label='minimize the glucose uptake and minimize protein pool')
+plt.plot(growth, pro_pool2, marker='.', label='minimize the glucose uptake')
+plt.plot(growth, pro_pool3, marker='.', label='minimize protein pool')
+plt.plot(growth, pro_pool4, marker='.', label='minimize protein volume')
+plt.plot(growth, pro_pool5, marker='.', label='minimize the glucose uptake and protein volume')
+
+
 plt.xlabel('Growth rate (/h)')
 plt.ylabel('protein pool (mmol/gDW)')
 plt.legend(loc='upper left')
 plt.ylim(0, 0.2)
 plt.show()
+
+
+
+
+
+# new combinations for the graph
+plt.figure()
+plt.plot(growth, glucose_uptake2, marker='.', label='minimize the glucose uptake')
+plt.plot(growth, glucose_uptake3, marker='.', label='minimize protein pool')
+plt.plot(growth, glucose_uptake4, marker='.', label='minimize protein volume')
+plt.plot(growth, glucose_uptake5, marker='.', label='minimize the glucose uptake and protein volume')
+plt.xlabel('Growth rate (/h)')
+plt.ylabel('glucose uptake rate (mmol/gDW.h)')
+plt.legend(loc='upper left')
+plt.ylim(0, 25)
+plt.show()
+
+
+
+
+
+

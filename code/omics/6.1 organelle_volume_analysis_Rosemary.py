@@ -115,18 +115,7 @@ plt.savefig("result/figure/organelle protein volume correlation with growth.pdf"
 
 
 
-
-
-
-
 column_select = list(combine_data2.columns)
-column_select1 = [x for x in column_select if "membrane" not in x]
-column_select1 = [x for x in column_select1 if "wall" not in x]
-column_select1 = [x for x in column_select1 if "site" not in x]
-column_select1 = [x for x in column_select1 if "tip" not in x]
-column_select1 = [x for x in column_select1 if "pore" not in x]
-column_select1 = [x for x in column_select1 if "catalytic" not in x]
-
 column_select1 = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet',
                   'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'cytosolic ribosome','mitochondrial ribosome','nucleolus']
 
@@ -266,18 +255,7 @@ plt.savefig("result/figure/organelle protein volume correlation with growth.pdf"
 
 
 
-
-
-
-
 column_select = list(combine_data2.columns)
-column_select1 = [x for x in column_select if "membrane" not in x]
-column_select1 = [x for x in column_select1 if "wall" not in x]
-column_select1 = [x for x in column_select1 if "site" not in x]
-column_select1 = [x for x in column_select1 if "tip" not in x]
-column_select1 = [x for x in column_select1 if "pore" not in x]
-column_select1 = [x for x in column_select1 if "catalytic" not in x]
-
 column_select1 = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet',
                   'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'cytosolic ribosome','mitochondrial ribosome','nucleolus']
 
@@ -300,6 +278,23 @@ for y0 in column_select1:
     plt.savefig(title0)
 
 
+# add the yeast cell size data
+# check the correlation between organelle proteins volume with cell size
+df_curated = calculateCurationCoefficent()
+df_curated["total_pro_volume"] = total_pro_volume["total_pro_volume"]
+df_curated["total_pro_volume/cell_size"] = df_curated["total_pro_volume"]/df_curated["cell_size"]
+# plot
+x0="growth_rate"
+y0="total_pro_volume/cell_size"
+sns.lmplot(x=x0, y=y0, data=df_curated, lowess=True, height=4, aspect=1)
+plt.xlabel(x0, fontsize=15)
+plt.ylabel(y0, fontsize=15)
+plt.xticks(fontsize=12)
+plt.yticks(fontsize=12)
+plt.axvline(x=0.18, color='k', linestyle='--')
+
+
+
 """
 x0 = 'qGlucose (mmol/gDW h)'
 for y0 in column_select1:
@@ -316,36 +311,6 @@ for y0 in column_select1:
     plt.savefig(title0)
 """
 
-# add the yeast cell size data
-# check the correlation between organelle proteins volume with cell size
-df_curated = calculateCurationCoefficent()
-df_curated["total_pro_volume"] = total_pro_volume["total_pro_volume"]
-df_curated["total_pro_volume/cell_size"] = df_curated["total_pro_volume"]/df_curated["cell_size"]
-# plot
-x0="growth_rate"
-y0="total_pro_volume/cell_size"
-sns.lmplot(x=x0, y=y0, data=df_curated, lowess=True, height=4, aspect=1)
-plt.xlabel(x0, fontsize=15)
-plt.ylabel(y0, fontsize=15)
-plt.xticks(fontsize=12)
-plt.yticks(fontsize=12)
-plt.axvline(x=0.18, color='k', linestyle='--')
-
-x0 = 'qGlucose (mmol/gDW h)'
-for y0 in column_select1:
-    title0 = 'result/figure/rose_qs_' + y0 + '.pdf'
-    print(title0)
-    #plt.figure()
-    sns.lmplot(x=x0, y=y0, data=combine_data2,
-               lowess=True, height=4, aspect=1)
-    plt.xlabel(x0, fontsize=15)
-    plt.ylabel(y0, fontsize=15)
-    plt.xticks(fontsize=12)
-    plt.yticks(fontsize=12)
-    plt.axvline(x=3.2, color='k', linestyle='--')
-    plt.savefig(title0)
-
-
 
 
 
@@ -363,3 +328,5 @@ plt.ylabel(y0, fontsize=15)
 plt.xticks(fontsize=12)
 plt.yticks(fontsize=12)
 plt.axvline(x=0.18, color='k', linestyle='--')
+
+

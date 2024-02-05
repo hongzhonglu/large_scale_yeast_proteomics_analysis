@@ -1,4 +1,8 @@
 #TO-DO: will refine the script here!
+# Note: here we added membrane from different organelle, but one protein may distributed in different organelles.
+# So it is better to put all membrane protein together. It should be the same to the calculation of organelle protein volume percentage per total protein volume as a whole.
+# All the calculation should be calculated based on fraction, thus the cell size will not affect the calculation.
+
 
 
 import matplotlib.pyplot as plt
