@@ -104,7 +104,7 @@ total_proteome.to_excel("data/proteomics/proteome_mass_faction_under_each_condit
 
 
 # calculate mass ratio of enzyme per total protein from each organelle
-def enzyme_per_protein_organelle(protein_abundance, enzyme_list=gene_list_in_ETFL, compartment_type="organelle"):
+def enzyme_per_protein_from_organelle(protein_abundance, enzyme_list=gene_list_in_ETFL, compartment_type="organelle"):
     """
     This function is used to calculate the mass fraction of enzyme per total protein for each organelle
     :param protein_abundance (the unit is g/gDW):
@@ -161,12 +161,15 @@ def enzyme_per_protein_organelle(protein_abundance, enzyme_list=gene_list_in_ETF
         result1[col0] = value1
     return result1
 # test the above code
-out = enzyme_per_protein_organelle(protein_abundance=omics_combine_input2, enzyme_list=gene_list_in_ETFL, compartment_type="organelle")
+out = enzyme_per_protein_from_organelle(protein_abundance=omics_combine_input2, enzyme_list=gene_list_in_ETFL, compartment_type="organelle")
 out.to_excel("data/proteomics/enzyme_per_protein_across_compartment.xlsx")
 
 
+
+
+
 # calculate mass ratio of enzyme per total protein within cell
-def enzyme_per_protein_organelle2(protein_abundance, enzyme_list=gene_list_in_ETFL, compartment_type="organelle"):
+def enzyme_per_total_protein_across_organelle(protein_abundance, enzyme_list=gene_list_in_ETFL, compartment_type="organelle"):
     """
     This function is used to calculate the mass fraction of enzyme per total protein for each organelle
     :param protein_abundance (the unit is g/gDW):
@@ -220,10 +223,5 @@ def enzyme_per_protein_organelle2(protein_abundance, enzyme_list=gene_list_in_ET
         result1[col0] = value1
     return result1
 # test the above code
-out = enzyme_per_protein_organelle2(protein_abundance=omics_combine_input2, enzyme_list=gene_list_in_ETFL, compartment_type="organelle")
+out = enzyme_per_total_protein_across_organelle(protein_abundance=omics_combine_input2, enzyme_list=gene_list_in_ETFL, compartment_type="organelle")
 out.to_excel("data/proteomics/enzyme_fraction_based_on_total_protein_across_compartment.xlsx")
-
-
-
-
-
