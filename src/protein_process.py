@@ -241,6 +241,49 @@ def getStructureSize_MeasuredAbundances(pro_size0, abundance0, need_check="No"):
         return total_volume_um, total_area_um, combine_df
 
 
+def get_total_membrane_area(pro_size0, abundance0, need_check="No"):
+    """
+    The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
+    It should be noted that the unit of pro_abundance is molecules per cell.
+    :param pro_size0: the unit is nm^3 (volume) or nm^2 (area)
+    :param pro_abundance0: the unite is moleculars per cell
+    :param need_check:
+    :return:
+    """
+
+    # should make sure no structure size data is nan
+    combine_df = abundance0
+    combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
+    combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
+    #combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
+    # it shows that some genes have no locus
+    combine_df = combine_df[~combine_df["section_area"].isna()]
+    combine_df = combine_df[~combine_df["molecular/cell"].isna()] # newly added for this new function
+
+
+    # calculate the size of all proteins for the selected gene list
+    # 1 纳米(nm)=0.001 微米(um)
+    total_volume = sum(combine_df["molecular/cell"] * combine_df["Volume"])
+    # change nm^3 into um^3
+    total_volume_um = total_volume / 1e9
+
+    # 1 纳米(nm)=0.001 微米(um)
+    total_area = sum(combine_df["molecular/cell"] * combine_df["section_area"])
+    # change nm^2 into um^2
+    total_area_um = total_area / 1e6
+    if need_check=="No":
+        return total_area_um
+    else:
+        combine_df["total_volume"] = combine_df["molecular/cell"] * combine_df["Volume"]
+        combine_df["total_area"] = combine_df["molecular/cell"] * combine_df["section_area"]
+        combine_df = combine_df.sort_values(by=['total_area'], ascending=False)
+        return total_area_um, combine_df
+
+
+
+
+
+
 
 
 #def getOrganelleAbundance(abundance0, need_check="No"):
