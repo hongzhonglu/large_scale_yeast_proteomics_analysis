@@ -6,15 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/etfl_output/etfl_predicted_enzyme_usage.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/etfl_output/etfl_predicted_enzyme_usage.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/membrane_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_protein_copy_rosemary.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_across_compartment.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine_with_more_samples.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine_with_more_samples.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/all_correlation_between_measured_protein_abundance_and_predicted.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/all_correlation_between_measured_protein_abundance_and_predicted.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/result/~$all_correlation_between_measured_protein_abundance_and_predicted.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
