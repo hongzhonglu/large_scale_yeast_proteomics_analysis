@@ -6,7 +6,7 @@ from src.protein_process import *
 
 # data preprocess
 # input the protein abundance data in the unit of mmol/g DCW
-omics_combine_auto = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx") # the unit the g/gDW???? should be wrong
+omics_combine_auto = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx")
 
 # test
 omics_combine_auto.columns = omics_combine_auto.columns.str.replace('all_gene', 'gene')
