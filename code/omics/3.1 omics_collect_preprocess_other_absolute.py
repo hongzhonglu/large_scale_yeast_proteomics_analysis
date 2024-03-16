@@ -41,13 +41,6 @@ omics_Tyler.columns = ['gene', 'mmol/gDW_Tyler_D0.1']
 omics_Rahul = pd.read_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx")
 
 
-
-
-
-
-
-
-
 # combine data from different source?
 # get all genes
 sce_gene = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
@@ -56,8 +49,6 @@ sce_gene = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 all_gene = sce_gene["GeneName"].tolist()
 new_df = pd.DataFrame({"all_gene": all_gene})
 new_df = new_df.dropna()
-
-
 
 
 
@@ -119,4 +110,5 @@ omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_a
 
 # Save
 omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx", index=False) # the unit the mmol/gDW
+
 

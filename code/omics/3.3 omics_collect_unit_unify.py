@@ -1,3 +1,5 @@
+# the following code will be not used any more!
+
 # Note: the protein abundance has so many unit, among which the copy/cell should consider the cell size.
 # however in most cases the cell size will change according to the conditions and genotypes
 # Thus it may be better to use the unit: mmol proteins/gDCW.
