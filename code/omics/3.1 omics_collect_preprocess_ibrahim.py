@@ -50,6 +50,7 @@ chemostat_inhibit_ExperimentalData0 = chemostat_inhibit_ExperimentalData.iloc[1:
 mass_fraction_ibrahim = pd.merge(left=batch_ExperimentalData0, right=translation_inhibit_ExperimentalData0, left_on=['gene'], right_on=['gene'], how="outer")
 mass_fraction_ibrahim = pd.merge(left=mass_fraction_ibrahim, right=chemostat_inhibit_ExperimentalData0, left_on=['gene'], right_on=['gene'], how="outer")
 mass_fraction_final = mass_fraction_ibrahim.copy()
+mass_fraction_final.to_excel("data/proteomics/mass_fraction_ibrahim.xlsx")
 
 
 

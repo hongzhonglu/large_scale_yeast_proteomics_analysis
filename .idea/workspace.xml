@@ -5,10 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_NCB_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_NCB_datasets.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_ibrahim.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_ibrahim.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_inferred_ratio_pipeline_example.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_inferred_ratio_pipeline_example.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mass_fraction_NCB.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/mass_fraction_NCB.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/mass_fraction_NCB2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/mass_fraction_NCB2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_NCB.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_NCB.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_ibrahim.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_ibrahim.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_jibrahim.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_jibrahim.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

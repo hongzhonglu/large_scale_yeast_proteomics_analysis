@@ -10,13 +10,8 @@ from src.protein_process import *
 # input the protein abundance data
 omics_combine_auto = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx")
 # test
-omics_combine_auto = omics_combine_auto[['all_gene'] + [x for x in omics_combine_auto.columns if "_M" in x]]
 omics_combine_auto.columns = omics_combine_auto.columns.str.replace('all_gene', 'gene')
 protein_copy1 = omics_combine_auto.copy()
-
-
-
-
 
 # change the data as mass fraction for each protein per gram of total protein mass
 # Get the molecular weight data using the data from SGD with more genes
@@ -39,6 +34,7 @@ for x in all_colum2:
 omics_combine_input_mass_fraction["gene"] = protein_copy1["gene"]
 new_column = ["gene"] + all_colum2
 mass_fraction_final = omics_combine_input_mass_fraction[new_column]
+mass_fraction_final.to_excel("data/proteomics/mass_fraction_others.xlsx")
 
 
 # how to further calculation the protein volume ratio and protein area ratio of main organelle
@@ -55,17 +51,20 @@ protein_in_mol["gene"] = mass_fraction["gene"]
 new_column = ["gene"] + all_colum2
 protein_in_mol = protein_in_mol[new_column]
 
+
+
 # # calculate the mass ratio
-out = ProMassRatio_Organelle(mass_fraction_final, compartment_type="organelle")
+jianye_list = ['gene'] + [x for x in mass_fraction_final.columns if "_M" in x]
+
+out = ProMassRatio_Organelle(mass_fraction_final[jianye_list], compartment_type="organelle")
 out.to_excel("data/proteomics/ProMassRatio_across_compartment_jianye_test2.xlsx")
 
 
 # calculate the volume ratio
-s2 =Pro_3D_Volume_Ratio_Cal(protein_in_mol, compartment_type="organelle") # from part 3.9
+s2 =Pro_3D_Volume_Ratio_Cal(protein_in_mol[jianye_list], compartment_type="organelle") # from part 3.9
 s2.to_excel("data/proteomics/volume_size_ratio_across_compartment_jianye_test2.xlsx")
 
 
 # calculate the membrane ratio
-s2 = Pro_Membrance_Ratio_Cal(protein_in_mol)
+s2 = Pro_Membrance_Ratio_Cal(protein_in_mol[jianye_list])
 s2.to_excel("data/proteomics/membrane_size_ratio_across_compartment_jianye_test2.xlsx")
-

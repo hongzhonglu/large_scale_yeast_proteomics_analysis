@@ -66,6 +66,7 @@ for x in all_colum2:
 omics_combine_input_mass_fraction["gene"] = protein_copy1["gene"]
 new_column = ["gene"] + all_colum2
 mass_fraction_final = omics_combine_input_mass_fraction[new_column]
+mass_fraction_final.to_excel("data/proteomics/mass_fraction_cell_system_2018.xlsx")
 
 
 
