@@ -8,37 +8,38 @@
 from src.model_process import *
 from src.protein_process import *
 
+def getMembraneProList():
+    # as the first step: define the membrane or transporter protein
+    protein_transporter = open(
+        "/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/tcdb.txt").readlines()
+    protein_transporter = [x for x in protein_transporter if ">" in x]
+    protein_transporter = [x for x in protein_transporter if "S288c" in x]
+    protein_ID = []
+    for xx in protein_transporter:
+        ss0 = xx.split("|")[2]
+        protein_ID.append(ss0)
+    # get the transporter gene id in sce
+    uniprotGeneID_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
+    transporter_tf = uniprotGeneID_mapping[uniprotGeneID_mapping["Entry"].isin(protein_ID)]
+    transporter_pro_list = transporter_tf["GeneName"].tolist()
 
-# as the first step: define the membrane or transporter protein
-protein_transporter = open("/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/tcdb.txt").readlines()
-protein_transporter = [x for x in protein_transporter if ">" in x]
-protein_transporter = [x for x in protein_transporter if "S288c" in x]
-protein_ID = []
-for xx in protein_transporter:
-    ss0 = xx.split("|")[2]
-    protein_ID.append(ss0)
-# get the transporter gene id in sce
-uniprotGeneID_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
-transporter_tf = uniprotGeneID_mapping[uniprotGeneID_mapping["Entry"].isin(protein_ID)]
-transporter_pro_list = transporter_tf["GeneName"].tolist()
+    # get the membrane annotation from SGD
+    membrane_pro = pd.read_excel("data/membrane_annotations.xlsx")
+    membrane_pro_list = list(set(membrane_pro['Systematic Name/Complex Accession'].tolist()))
 
-# get the membrane annotation from SGD
-membrane_pro = pd.read_excel("data/membrane_annotations.xlsx")
-membrane_pro_list = list(set(membrane_pro['Systematic Name/Complex Accession'].tolist()))
-
-# Input the datasets from paxDB
-compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
-# extract compartment
-compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
-                       'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
-compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
-compartment1_membrane_filter = compartment1[compartment1["GO_Name"].str.contains("membrane")]
-membrane_pro_list_database = list(set(compartment1_membrane_filter["Systematic_name"].tolist()))
-
-
-# check the relation between the annotation from the above procedures
-membrane_pro_final_merge = list(set(membrane_pro_list) & set(membrane_pro_list_database))
-
+    # Input the datasets from paxDB
+    compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
+    # extract compartment
+    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
+                           'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+    compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
+    compartment1_membrane_filter = compartment1[compartment1["GO_Name"].str.contains("membrane")]
+    membrane_pro_list_database = list(set(compartment1_membrane_filter["Systematic_name"].tolist()))
+    # check the relation between the annotation from the above procedures
+    membrane_pro_final_merge = list(set(membrane_pro_list) & set(membrane_pro_list_database))
+    # plus transporter proteins
+    membrane_pro_final_merge11 = list(set(transporter_pro_list) - set(membrane_pro_final_merge)) + membrane_pro_final_merge
+    return membrane_pro_final_merge11
 
 # update this function
 def ProMembraneCal(protein_copy, compartment_type="organelle"):
@@ -68,6 +69,7 @@ def ProMembraneCal(protein_copy, compartment_type="organelle"):
     # creat two dataframe to save the result
     all_compartment = [x for x in all_compartment if "membrane" in x]
     result2 = pd.DataFrame({"compartment": all_compartment})
+    membrane_pro_final_merge = getMembraneProList()
     # run the cycle
     for col0 in Sample_ID_select:
         print(col0)
