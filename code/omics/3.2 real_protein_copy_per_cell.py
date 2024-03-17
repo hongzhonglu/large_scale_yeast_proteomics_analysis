@@ -1,16 +1,13 @@
-# the following code will be not used any more!
-
 # Note: the protein abundance has so many unit, among which the copy/cell should consider the cell size.
 # however in most cases the cell size will change according to the conditions and genotypes
 # Thus it may be better to use the unit: mmol proteins/gDCW.
 
 
+
 # import self function
 from src.protein_process import *
 
-
 # protein abundance combine and analysis
-# protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine.xlsx") # unit is mmol/gDW
 protein_abundance = pd.read_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx") # unit is mmol/gDW
 protein_copy = pd.read_excel("data/proteomics/protein_copy_combine.xlsx") # unit is molecular/cell
 
@@ -33,3 +30,12 @@ column21 = ['gene'] + column20
 protein_copy_all1 = protein_copy_all[column21]
 #protein_copy_all1.to_excel("data/proteomics/all_protein_copy.xlsx", index=False)
 protein_copy_all1.to_excel("data/proteomics/all_protein_copy_with_more_sample_v2.xlsx", index=False)
+# only analyze the rosemary datasets under NH4 limitation?
+Sample_ID_select = ['prot.1','prot.2', 'prot.3','prot.7','prot.8','prot.9','prot.10','prot.11','prot.12','prot.13','prot.14','prot.15','prot.16','prot.17','prot.18','prot.19','prot.20','prot.21']
+protein_copy_all_rosemary = protein_copy_all1[Sample_ID_select+["gene"]]
+# curate the protein copies based on newly calculated size
+df_curated = calculateCurationCoefficent()
+curation_coefficent = df_curated["curation_coefficent"].to_list()
+for i, sid in enumerate(Sample_ID_select):
+    print(i, sid, curation_coefficent[i])
+    protein_copy_all_rosemary[sid] = protein_copy_all_rosemary[sid]*curation_coefficent[i]

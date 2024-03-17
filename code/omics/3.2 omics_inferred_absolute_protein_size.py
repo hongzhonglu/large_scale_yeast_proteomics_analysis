@@ -40,13 +40,6 @@ result2.to_excel("data/proteomics/total_protein_abundance_across_compartment_Ros
 
 
 
-
-
-
-
-
-
-
 # jianye datasets
 all_columns = list(protein_copy_all1.columns)
 Sample_ID_select = [x for x in all_columns if "_M" in x]
