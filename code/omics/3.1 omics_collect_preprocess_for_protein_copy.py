@@ -193,6 +193,7 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
         pro_abundance = protein_copy[['gene', col0]]
         pro_abundance.columns = ['gene', 'molecular/cell']
         total_volume = get_total_protein_volume(pro_size0=pro_size, abundance0=pro_abundance, need_check="No")
+
         for y in all_compartment:
             print(y)
             # test

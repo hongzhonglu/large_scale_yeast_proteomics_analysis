@@ -176,8 +176,14 @@ def getStructureSize(pro_size0, abundance0, need_check="No"):
 
     # should make sure no structure size data is nan
     combine_df = abundance0
-    combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
-    combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
+    #combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
+    #combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
+
+    # the following three lines were used to update the upper one
+    combine_df = pd.merge(combine_df, pro_size0, left_on="gene", right_on="locus", how="left")
+    combine_df.columns = ['gene', 'molecular/cell', 'DBID', 'locus', 'Volume', 'section_area']
+    combine_df = combine_df[['gene', 'molecular/cell', 'Volume', 'section_area']]
+
     #combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
     # it shows that some genes have no locus
     combine_df = combine_df[~combine_df["section_area"].isna()]
@@ -200,8 +206,6 @@ def getStructureSize(pro_size0, abundance0, need_check="No"):
         combine_df = combine_df.sort_values(by=['total_area'], ascending=False)
         return total_volume_um, total_area_um, combine_df
 
-
-
 def getStructureSize_MeasuredAbundances(pro_size0, abundance0, need_check="No"):
     """
     The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
@@ -214,8 +218,15 @@ def getStructureSize_MeasuredAbundances(pro_size0, abundance0, need_check="No"):
 
     # should make sure no structure size data is nan
     combine_df = abundance0
-    combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
-    combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
+
+    #combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
+    #combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
+
+    # the following three lines were used to update the upper two
+    combine_df = pd.merge(combine_df, pro_size0, left_on="gene", right_on="locus", how="left")
+    combine_df.columns = ['gene', 'molecular/cell', 'DBID', 'locus', 'Volume', 'section_area']
+    combine_df = combine_df[['gene', 'molecular/cell', 'Volume', 'section_area']]
+
     #combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
     # it shows that some genes have no locus
     combine_df = combine_df[~combine_df["section_area"].isna()]
@@ -251,10 +262,14 @@ def get_total_protein_volume(pro_size0, abundance0, need_check="No"):
     """
     # should make sure no structure size data is nan
     combine_df = abundance0
-    combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
+    #combine_df["Volume"] = singleMapping(pro_size0['Total_Volume'], pro_size0['locus'], combine_df["gene"])
+
+    # the following three lines were used to update the upper one
+    combine_df = pd.merge(combine_df,pro_size0, left_on="gene", right_on="locus", how="left")
+    combine_df.columns = ['gene', 'molecular/cell', 'DBID', 'locus', 'Volume','section_area']
+    combine_df = combine_df[['gene', 'molecular/cell', 'Volume','section_area']]
+
     combine_df = combine_df[~combine_df["molecular/cell"].isna()] # newly added for this new function
-
-
     # calculate the size of all proteins for the selected gene list
     # 1 纳米(nm)=0.001 微米(um)
     total_volume = sum(combine_df["molecular/cell"] * combine_df["Volume"])
@@ -280,7 +295,14 @@ def get_total_membrane_area(pro_size0, abundance0, need_check="No"):
 
     # should make sure no structure size data is nan
     combine_df = abundance0
-    combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
+
+    # combine_df["section_area"] = singleMapping(pro_size0['section_area_new'], pro_size0['locus'], combine_df["gene"])
+
+    # the following three lines were used to update the upper one
+    combine_df = pd.merge(combine_df, pro_size0, left_on="gene", right_on="locus", how="left")
+    combine_df.columns = ['gene', 'molecular/cell', 'DBID', 'locus', 'Volume', 'section_area']
+    combine_df = combine_df[['gene', 'molecular/cell', 'Volume', 'section_area']]
+
     # it shows that some genes have no locus
     combine_df = combine_df[~combine_df["section_area"].isna()]
     combine_df = combine_df[~combine_df["molecular/cell"].isna()] # newly added for this new function
