@@ -80,12 +80,6 @@ new_column = ["gene"] + all_colum2
 mass_fraction_cell_system_2018 = omics_combine_input_mass_fraction[new_column]
 
 
-# test the above code
-out = ProMassRatio_Organelle(protein_abundance=mass_fraction_cell_system_2018, compartment_type="organelle")
-out.to_excel("data/proteomics/ProMassRatio_across_compartment_cell_system_2018.xlsx")
-
-
-
 # how to further calculation the protein volume ratio and protein area ratio of main organelle
 # change the unit from g/g into mol/g?
 mass_fraction_cell_system_2018["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], mass_fraction_cell_system_2018["gene"])
@@ -103,15 +97,18 @@ new_column = ["gene"] + all_colum2
 
 protein_in_mol = protein_in_mol[new_column]
 
+# test the above code
+out = ProMassRatio_Organelle(protein_abundance=mass_fraction_cell_system_2018, compartment_type="organelle")
+out.to_excel("data/proteomics/ProMassRatio_across_compartment_cell_system_2018.xlsx")
 
+
+
+# calculate the membrane ratio
 s2 =Pro_3D_Volume_Ratio_Cal(protein_copy=protein_in_mol, compartment_type="organelle") # from part 3.9
 s2.to_excel("data/proteomics/volume_size_ratio_across_compartment_cell_system_2018.xlsx")
 
 
 # calculate the membrane ratio
-# all datasets
-s2 =ProMembraneCal(protein_in_mol) # from part 3.9
+s2 = Pro_Membrance_Ratio_Cal(protein_in_mol)
 s2.to_excel("data/proteomics/membrane_size_ratio_across_compartment_cell_system_2018.xlsx")
-
-
 

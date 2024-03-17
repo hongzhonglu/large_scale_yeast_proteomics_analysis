@@ -23,7 +23,7 @@ for i, sid in enumerate(Sample_ID_select):
 
 protein_copy_all_rosemary.to_excel("data/proteomics/all_protein_copy_rosemary.xlsx")
 
-s2 = ProMembraneCal(protein_copy_all_rosemary)
+s2 = Pro_Membrance_Ratio_Cal(protein_copy_all_rosemary)
 s2.to_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limitation_v3.xlsx")
 
 
@@ -31,12 +31,12 @@ s2.to_excel("data/proteomics/membrane_size_across_compartment_Rosemary_NH4_limit
 all_columns = list(protein_copy_all1.columns)
 Sample_ID_select = [x for x in all_columns if "_M" in x]
 protein_copy_jianye = protein_copy_all1[Sample_ID_select+["gene"]]
-s2 = ProMembraneCal(protein_copy_jianye)
+s2 = Pro_Membrance_Ratio_Cal(protein_copy_jianye)
 s2.to_excel("data/proteomics/membrane_size_across_compartment_jianye_C_limitation.xlsx")
 
 
 # all datasets
-s2 =ProMembraneCal(protein_copy_all1)
+s2 = Pro_Membrance_Ratio_Cal(protein_copy_all1)
 s2.to_excel("data/proteomics/membrane_size_across_compartment.xlsx")
 
 

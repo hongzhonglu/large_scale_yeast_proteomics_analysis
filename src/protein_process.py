@@ -464,7 +464,7 @@ def getMembraneProList():
     return membrane_pro_final_merge11
 
 # # calculate the membrane ratio
-def ProMembraneCal(protein_copy, compartment_type="organelle"):
+def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
     """
     This function is used to calculate the organelle protein volume or sectional area as a whole
     :param protein_copy:

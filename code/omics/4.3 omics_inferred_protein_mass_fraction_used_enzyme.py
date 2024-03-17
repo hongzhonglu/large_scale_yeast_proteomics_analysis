@@ -130,6 +130,7 @@ def used_enzyme_per_protein_from_organelle(protein_abundance, enzyme_list=used_e
                 value1.append(None)
         result1[col0] = value1
     return result1
+
 # test the above code
 out = used_enzyme_per_protein_from_organelle(protein_abundance=omics_combine_input2, enzyme_list=used_enzyme_dict, compartment_type="organelle")
 out.to_excel("data/proteomics/used_enzyme_per_protein_across_compartment.xlsx")

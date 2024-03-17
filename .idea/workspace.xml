@@ -6,11 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_absolute_protein_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_absolute_protein_size.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_NCB_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_NCB_datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_ibrahim.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_ibrahim.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute2.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_membrane_protein_ratio.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_membrane_protein_ratio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_protein_mass_fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_protein_mass_fraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_protein_volume_ratio.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_protein_volume_ratio.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$volume_size_ratio_across_compartment_cell_system_2018.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/4.3 omics_inferred_protein_mass_fraction_used_enzyme.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/4.3 omics_inferred_protein_mass_fraction_used_enzyme.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -381,7 +383,7 @@
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute.py</url>
+          <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute2.py</url>
           <line>94</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
@@ -409,11 +411,6 @@
           <url>file://$PROJECT_DIR$/code/omics/3.9 omics_inferred_membrane_protein_distribution.py</url>
           <line>43</line>
           <option name="timeStamp" value="52" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py</url>
-          <line>79</line>
-          <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/mainFunction.py</url>
