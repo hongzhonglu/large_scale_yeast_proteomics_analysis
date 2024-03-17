@@ -318,6 +318,218 @@ def get_total_membrane_area(pro_size0, abundance0, need_check="No"):
         combine_df = combine_df.sort_values(by=['total_area'], ascending=False)
         return total_area_um, combine_df
 
+# calculate the mass ratio
+def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
+    """
+    This function is used to calculate the organelle protein aboslute abundance as a whole
+    :param protein_abundance:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        all_compartment = list(compartment.keys())
+
+    # sample ID information
+    Sample_ID_select = list(protein_abundance.columns)
+    Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    # creat a dataframe to save the result
+    result1 = pd.DataFrame({"compartment": all_compartment})
+    # run the cycle
+    for col0 in Sample_ID_select:
+        print(col0)
+        value1 = []
+        for y in all_compartment:
+            print(y)
+            pro_abundance = protein_abundance[['gene', col0]]
+            pro_abundance.columns = ['gene', 'g/gDW']
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if
+                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            elif y == "endosome":
+                genes_select = compartment[y]
+                genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
+            else:
+                genes_select = compartment[y]
+            # get the sum
+            pro_abundance.fillna(0, axis=1, inplace=True)
+            pro_select = pro_abundance[pro_abundance['gene'].isin(genes_select)]
+            sum_all = sum(pro_abundance['g/gDW'])
+            sum_select = sum(pro_select['g/gDW'])
+            ratio = sum_select/sum_all
+            value1.append(ratio)
+        result1[col0] = value1
+    return result1
+
+# calculate the volume ratio
+def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
+    """
+    This function is used to calculate the organelle protein volume or sectional area as a whole
+    :param protein_copy:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        all_compartment = list(compartment.keys())
+
+    # input the protein structure information
+    pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
+    pro_size = pro_size[['DBID', 'locus', 'Total_Volume', 'section_area_new']]
+    # sample ID information
+    Sample_ID_select = list(protein_copy.columns)
+    Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
+
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+
+    # creat two dataframe to save the result
+    result1 = pd.DataFrame({"compartment": all_compartment})
+    #result2 = pd.DataFrame({"compartment": all_compartment})
+
+    # run the cycle
+    for col0 in Sample_ID_select:
+        print(col0)
+        value1 = []
+        pro_abundance = protein_copy[['gene', col0]]
+        pro_abundance.columns = ['gene', 'molecular/cell']
+        total_volume = get_total_protein_volume(pro_size0=pro_size, abundance0=pro_abundance, need_check="No")
+
+        for y in all_compartment:
+            print(y)
+            # test
+            # y = "cytosol"
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            elif y == "endosome":
+                genes_select = compartment[y]
+                genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
+            else:
+                genes_select = compartment[y]
+            pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+            if pro_abundance1 is "no_abundance":
+                value1.append(None)
+            else:
+                x, S = getStructureSize_MeasuredAbundances(pro_size0=pro_size, abundance0=pro_abundance1)
+                value1.append(x/total_volume)
+                #value2.append(S)
+        result1[col0] = value1
+    return result1
+
+
+def getMembraneProList():
+    # as the first step: define the membrane or transporter protein
+    protein_transporter = open(
+        "/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/tcdb.txt").readlines()
+    protein_transporter = [x for x in protein_transporter if ">" in x]
+    protein_transporter = [x for x in protein_transporter if "S288c" in x]
+    protein_ID = []
+    for xx in protein_transporter:
+        ss0 = xx.split("|")[2]
+        protein_ID.append(ss0)
+    # get the transporter gene id in sce
+    uniprotGeneID_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
+    transporter_tf = uniprotGeneID_mapping[uniprotGeneID_mapping["Entry"].isin(protein_ID)]
+    transporter_pro_list = transporter_tf["GeneName"].tolist()
+
+    # get the membrane annotation from SGD
+    membrane_pro = pd.read_excel("data/membrane_annotations.xlsx")
+    membrane_pro_list = list(set(membrane_pro['Systematic Name/Complex Accession'].tolist()))
+
+    # Input the datasets from paxDB
+    compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
+    # extract compartment
+    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
+                           'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+    compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
+    compartment1_membrane_filter = compartment1[compartment1["GO_Name"].str.contains("membrane")]
+    membrane_pro_list_database = list(set(compartment1_membrane_filter["Systematic_name"].tolist()))
+    # check the relation between the annotation from the above procedures
+    membrane_pro_final_merge = list(set(membrane_pro_list) & set(membrane_pro_list_database))
+    # plus transporter proteins
+    membrane_pro_final_merge11 = list(set(transporter_pro_list) - set(membrane_pro_final_merge)) + membrane_pro_final_merge
+    return membrane_pro_final_merge11
+
+# # calculate the membrane ratio
+def ProMembraneCal(protein_copy, compartment_type="organelle"):
+    """
+    This function is used to calculate the organelle protein volume or sectional area as a whole
+    :param protein_copy:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        all_compartment = list(compartment.keys())
+
+    # input the protein structure information
+    pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
+    pro_size = pro_size[['DBID', 'locus', 'Total_Volume', 'section_area_new']]
+    # sample ID information
+    Sample_ID_select = list(protein_copy.columns)
+    Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
+
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+
+    # creat two dataframe to save the result
+    all_compartment = [x for x in all_compartment if "membrane" in x]
+    result2 = pd.DataFrame({"compartment": all_compartment})
+    membrane_pro_final_merge = getMembraneProList()
+    # run the cycle
+    for col0 in Sample_ID_select:
+        print(col0)
+        value1 = []
+        value2 = []
+        # for the total membrane
+        pro_abundance = protein_copy[['gene', col0]]
+        pro_abundance.columns = ['gene', 'molecular/cell']
+        all_membrane_abundance1 = getProAundance(genes_select0=membrane_pro_final_merge, pro_abundance0=pro_abundance)
+        S_total = get_total_membrane_area(pro_size0=pro_size, abundance0=all_membrane_abundance1)
+
+        for y in all_compartment:
+            print(y)
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            elif y == "endosome":
+                genes_select = compartment[y]
+                genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
+            else:
+                genes_select = compartment[y]
+            genes_select = list(set(genes_select) & set(membrane_pro_final_merge))
+            pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+
+            if pro_abundance1 is "no_abundance":
+                value1.append(None)
+                value2.append(None)
+            else:
+                x, S = getStructureSize_MeasuredAbundances(pro_size0=pro_size, abundance0=pro_abundance1)
+                value2.append(S/S_total)
+        result2[col0] = value2
+    return result2
+
+
+
 
 
 #def getOrganelleAbundance(abundance0, need_check="No"):

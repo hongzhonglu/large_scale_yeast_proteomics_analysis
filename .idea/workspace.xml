@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.3 omics_collect_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.3 omics_collect_unit_unify.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 omics_inferred_protein_mass_fraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.4 omics_inferred_protein_mass_fraction_used_enzyme.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/4.3 omics_inferred_protein_mass_fraction_used_enzyme.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.9 omics_inferred_membrane_protein_ratio.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_membrane_protein_ratio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_cell_system_2018.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_cell_system_2018.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_cell_system_2018.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_cell_system_2018.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_cell_system_2018.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_cell_system_2018.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,14 +112,14 @@
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/structure" />
       <recent name="$PROJECT_DIR$/code/structure/not_used" />
       <recent name="$PROJECT_DIR$/code/model/not_used" />
-      <recent name="$PROJECT_DIR$/code/omics/not_used" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.3.1 omics_collect_preprocess_for_protein_copy">
+  <component name="RunManager" selected="Python.3.1 omics_collect_preprocess_for_cell_system_2018">
     <configuration name="2.3 proteomics_abundance_unit_unify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="De-nevo-protein-3D-structure-yeast" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -132,7 +141,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3.1 omics_collect_preprocess_for_protein_copy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="3.1 omics_collect_preprocess_for_cell_system_2018" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="De-nevo-protein-3D-structure-yeast" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -144,7 +153,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -155,7 +164,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.3.1 omics_collect_preprocess_for_protein_copy" />
+        <item itemvalue="Python.3.1 omics_collect_preprocess_for_cell_system_2018" />
         <item itemvalue="Python.2.3 proteomics_abundance_unit_unify" />
       </list>
     </recent_temporary>
@@ -406,14 +415,19 @@
           <option name="timeStamp" value="52" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py</url>
-          <line>81</line>
+          <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py</url>
+          <line>79</line>
           <option name="timeStamp" value="53" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py</url>
-          <line>214</line>
-          <option name="timeStamp" value="54" />
+          <url>file://$PROJECT_DIR$/src/mainFunction.py</url>
+          <line>35</line>
+          <option name="timeStamp" value="55" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/protein_process.py</url>
+          <line>166</line>
+          <option name="timeStamp" value="56" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
