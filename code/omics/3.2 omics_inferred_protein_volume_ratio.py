@@ -158,7 +158,7 @@ total_pro_volume = pd.DataFrame({"sampleID":sample_ID,"total_pro_volume":volume_
 
 # calculate the fraction of organell protein volume per total volume
 
-s1_matrix = s1.iloc[:,1:77]
+s1_matrix = s1.iloc[:,2:78]
 
 s1_matrix_new = s1_matrix
 for i in range(0,76,1):
@@ -167,4 +167,10 @@ for i in range(0,76,1):
 
 s1_matrix_new['compartment'] = s1['compartment']
 
-s1_matrix_new.to_excel("data/proteomics/compartment_volume_fraction.xlsx")
+s1_matrix_new.to_excel("data/proteomics/compartment_volume_fraction_test.xlsx")
+
+s2 =Pro_3D_Volume_Ratio_Cal(protein_copy=protein_copy_all1, compartment_type="organelle") # from part 3.9
+s2.to_excel("data/proteomics/volume_size_ratio_across_compartment_cell_system_test.xlsx")
+
+
+
