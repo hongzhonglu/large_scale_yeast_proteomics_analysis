@@ -69,16 +69,19 @@ all_colum2 = [x for x in all_colum1 if x !='gene']
 omics_combine_input2 = protein_copy1[all_colum2]
 
 
-# change mmol/gDW into g/gDW:
+# change copy/cell into g/g total protein:
 for x in all_colum2:
     omics_combine_input2[x] = protein_copy1[x]*protein_copy1["MW_Kda"]
 omics_combine_input_mass_fraction = omics_combine_input2
+
 for x in all_colum2:
     omics_combine_input_mass_fraction[x] = omics_combine_input2[x]/omics_combine_input2[x].sum()
 
 omics_combine_input_mass_fraction["gene"] = protein_copy1["gene"]
 new_column = ["gene"] + all_colum2
 mass_fraction_cell_system_2018 = omics_combine_input_mass_fraction[new_column]
+
+
 
 def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
     """
@@ -130,12 +133,97 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
         result1[col0] = value1
     return result1
 
+
 # test the above code
 out = ProMassRatio_Organelle(protein_abundance=mass_fraction_cell_system_2018, compartment_type="organelle")
 out.to_excel("data/proteomics/ProMassRatio_across_compartment_cell_system_2018.xlsx")
 
 
 
+# how to further calculation the protein volume ratio and protein area ratio of main organelle
+# change the unit from g/g into mol/g?
+mass_fraction_cell_system_2018["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], mass_fraction_cell_system_2018["gene"])
+
+all_colum = mass_fraction_cell_system_2018.columns
+all_colum1 = [x for x in all_colum if x !='MW_Kda']
+all_colum2 = [x for x in all_colum1 if x !='gene']
+protein_in_mol = mass_fraction_cell_system_2018[all_colum2]
+# change copy/cell into g/g total protein:
+for x in all_colum2:
+    protein_in_mol[x] = 1000 * protein_in_mol[x] / mass_fraction_cell_system_2018["MW_Kda"]
+
+protein_in_mol["gene"] = mass_fraction_cell_system_2018["gene"]
+new_column = ["gene"] + all_colum2
+
+protein_in_mol = protein_in_mol[new_column]
+
+# calculate the volume ratio
+def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
+    """
+    This function is used to calculate the organelle protein volume or sectional area as a whole
+    :param protein_copy:
+    :param compartment_type:
+    :return:
+    """
+    if compartment_type == "organelle":
+        # compartment info
+        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        all_compartment = list(compartment.keys())
+
+    # input the protein structure information
+    pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
+    pro_size = pro_size[['DBID', 'locus', 'Total_Volume', 'section_area_new']]
+    # sample ID information
+    Sample_ID_select = list(protein_copy.columns)
+    Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
+
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+
+    # creat two dataframe to save the result
+    result1 = pd.DataFrame({"compartment": all_compartment})
+    #result2 = pd.DataFrame({"compartment": all_compartment})
+
+    # run the cycle
+    for col0 in Sample_ID_select:
+        print(col0)
+        value1 = []
+        pro_abundance = protein_copy[['gene', col0]]
+        pro_abundance.columns = ['gene', 'molecular/cell']
+        total_volume = get_total_protein_volume(pro_size0=pro_size, abundance0=pro_abundance, need_check="No")
+        for y in all_compartment:
+            print(y)
+            # test
+            # y = "cytosol"
+            if y == "plasma membrane":
+                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+            elif y == "fungal-type vacuole membrane":
+                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+                genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            elif y == "endosome":
+                genes_select = compartment[y]
+                genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
+            else:
+                genes_select = compartment[y]
+            pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
+            if pro_abundance1 is "no_abundance":
+                value1.append(None)
+            else:
+                x, S = getStructureSize_MeasuredAbundances(pro_size0=pro_size, abundance0=pro_abundance1)
+                value1.append(x/total_volume)
+                #value2.append(S)
+        result1[col0] = value1
+    return result1
+
+s2 =Pro_3D_Volume_Ratio_Cal(protein_copy=protein_in_mol, compartment_type="organelle") # from part 3.9
+s2.to_excel("data/proteomics/volume_size_ratio_across_compartment_cell_system_2018.xlsx")
 
 
+
+# calculate the membrane ratio
+# all datasets
+s2 =ProMembraneCal(protein_in_mol) # from part 3.9
+s2.to_excel("data/proteomics/membrane_size_ratio_across_compartment_cell_system_2018.xlsx")
 

@@ -65,6 +65,7 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
         result2[col0] = value2
     return result1, result2
 
+
 # absolute protein abundance for each organelle
 def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
     """

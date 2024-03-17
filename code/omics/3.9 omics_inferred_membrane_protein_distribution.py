@@ -40,8 +40,6 @@ membrane_pro_list_database = list(set(compartment1_membrane_filter["Systematic_n
 membrane_pro_final_merge = list(set(membrane_pro_list) & set(membrane_pro_list_database))
 
 
-
-
 # update this function
 def ProMembraneCal(protein_copy, compartment_type="organelle"):
     """
@@ -75,10 +73,14 @@ def ProMembraneCal(protein_copy, compartment_type="organelle"):
         print(col0)
         value1 = []
         value2 = []
+        # for the total membrane
+        pro_abundance = protein_copy[['gene', col0]]
+        pro_abundance.columns = ['gene', 'molecular/cell']
+        all_membrane_abundance1 = getProAundance(genes_select0=membrane_pro_final_merge, pro_abundance0=pro_abundance)
+        S_total = get_total_membrane_area(pro_size0=pro_size, abundance0=all_membrane_abundance1)
+
         for y in all_compartment:
             print(y)
-            pro_abundance = protein_copy[['gene', col0]]
-            pro_abundance.columns = ['gene', 'molecular/cell']
             if y == "plasma membrane":
                 genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
             elif y == "fungal-type vacuole membrane":
@@ -91,14 +93,12 @@ def ProMembraneCal(protein_copy, compartment_type="organelle"):
                 genes_select = compartment[y]
             genes_select = list(set(genes_select) & set(membrane_pro_final_merge))
             pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
-            all_membrane_abundance1 = getProAundance(genes_select0=membrane_pro_final_merge, pro_abundance0=pro_abundance)
 
             if pro_abundance1 is "no_abundance":
                 value1.append(None)
                 value2.append(None)
             else:
                 x, S = getStructureSize_MeasuredAbundances(pro_size0=pro_size, abundance0=pro_abundance1)
-                S_total= get_total_membrane_area(pro_size0=pro_size, abundance0=all_membrane_abundance1)
                 value2.append(S/S_total)
         result2[col0] = value2
     return result2

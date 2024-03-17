@@ -5,10 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.3 omics_collect_unit_unify.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 omics_collect_unit_unify.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_measured_combine_with_more_samples.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_measured_combine_with_more_samples.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.6 omics_inferred_size_ratio.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.6 omics_inferred_size_ratio.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.9 omics_inferred_membrane_protein_distribution.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.9 omics_inferred_membrane_protein_distribution.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -404,8 +406,18 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/3.9 omics_inferred_membrane_protein_distribution.py</url>
-          <line>45</line>
+          <line>43</line>
           <option name="timeStamp" value="52" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py</url>
+          <line>81</line>
+          <option name="timeStamp" value="53" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py</url>
+          <line>213</line>
+          <option name="timeStamp" value="54" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
