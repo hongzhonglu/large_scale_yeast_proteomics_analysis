@@ -74,6 +74,7 @@ mass_fraction_final = omics_combine_input_mass_fraction[new_column]
 mass_fraction = mass_fraction_final.copy()
 mass_fraction["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], mass_fraction["gene"])
 all_colum = mass_fraction.columns
+all_colum1 = [x for x in all_colum if x !='MW_Kda']
 all_colum2 = [x for x in all_colum1 if x !='gene']
 protein_in_mol = mass_fraction[all_colum2]
 for x in all_colum2:
