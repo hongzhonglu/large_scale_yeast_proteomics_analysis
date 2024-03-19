@@ -6,9 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$ProMassRatio_across_compartment_jianye_test2.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$compartment_volume_fraction_test.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$volume_size_ratio_across_compartment_cell_system_2018.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_other_yeast.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_other_yeast.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -419,12 +417,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_other_yeast.py</url>
-          <line>141</line>
+          <line>142</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_other_yeast.py</url>
-          <line>184</line>
+          <line>183</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

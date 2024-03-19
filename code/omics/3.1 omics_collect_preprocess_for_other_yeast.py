@@ -31,6 +31,10 @@ cc_annotation = IO_gene_with_location00["compartment"].tolist()
 cc_annotation = [x.split("[")[0] for x in cc_annotation]
 IO_gene_with_location00["compartment"] = cc_annotation
 IO_gene_with_location00["compartment"] = IO_gene_with_location00["compartment"].str.strip()
+IO_gene_with_location00["source"] = "uniprot"
+
+
+
 
 
 
@@ -57,7 +61,6 @@ ss = IO_gene_no_location_g2["location_from_sce"].tolist()
 ii0 = [x for x, y in zip(ii,ss) if len(y.split(",")) <= 2]
 ii1 = [x for x, y in zip(ii,ss) if len(y.split(",")) > 2]
 
-
 # get gene with sce ortholog genes (no more than two)
 IO_gene_with_sce_ortholog = IO_gene_no_location_g2[IO_gene_no_location_g2["Entry"].isin(ii0)]
 IO_gene_with_sce_ortholog = IO_gene_with_sce_ortholog[["Entry","location_from_sce"]]
@@ -66,13 +69,15 @@ IO_gene_with_sce_ortholog0.columns = ["gene_IO","gene_sce"]
 IO_gene_with_sce_ortholog0["gene_sce"] = IO_gene_with_sce_ortholog0["gene_sce"].str.strip()
 
 
+
+
+
+
+
+
+
 # get gene without location from above way
 gene_with_no_location = ii1 + IO_gene_no_location_g1["Entry"].tolist()
-
-
-
-
-
 
 # then for these 1046 genes, we can annotate them based on deep learning
 from Bio import SeqIO
@@ -94,10 +99,6 @@ SeqIO.write(select_sequences[400:600], "data/nature_chemical_biology_datatset_20
 SeqIO.write(select_sequences[600:800], "data/nature_chemical_biology_datatset_2024/IO_select_seq_for_location_annotation4.fasta", "fasta")
 SeqIO.write(select_sequences[800:1000], "data/nature_chemical_biology_datatset_2024/IO_select_seq_for_location_annotation5.fasta", "fasta")
 SeqIO.write(select_sequences[1000:], "data/nature_chemical_biology_datatset_2024/IO_select_seq_for_location_annotation6.fasta", "fasta")
-
-
-
-
 
 # summarize the new compartment annotation
 all_file = os.listdir("data/nature_chemical_biology_datatset_2024/compartment_annotation")
@@ -140,7 +141,7 @@ out4 = getCompartmentFromDL(all_file[4])
 out5 = getCompartmentFromDL(all_file[5])
 
 new_compartment = pd.concat([out0, out1, out2, out3, out4, out5])
-
+new_compartment["source"] = "MULocDeep"
 
 
 
@@ -176,14 +177,49 @@ for x, y in compartment_dict20_update.items():
     sce_gene_list = sce_gene_list + yy
 sce_gene_compartment_corrected = pd.DataFrame({"gene":sce_gene_list})
 sce_gene_compartment_corrected[['gene', 'comparment']] = sce_gene_compartment_corrected['gene'].str.split('@', n=1, expand=True)
-
-
-
+# transfer sce gene annotation to IO gene
 IO_gene_with_sce_ortholog00 = pd.merge(IO_gene_with_sce_ortholog0,sce_gene_compartment_corrected,left_on="gene_sce",right_on="gene",how="outer")
 IO_gene_with_sce_ortholog00 = IO_gene_with_sce_ortholog00[["gene_IO","comparment"]]
 IO_gene_with_sce_ortholog01 = IO_gene_with_sce_ortholog00.drop_duplicates(keep='first')
 IO_gene_with_sce_ortholog02 = IO_gene_with_sce_ortholog01.dropna()
+IO_gene_with_sce_ortholog02["source"] = "ortholog_transfer"
+IO_gene_with_sce_ortholog02.columns = ["gene","compartment","source"]
 
 
 
 
+
+
+
+# combine all the compartment data together
+IO_compartment = pd.concat([IO_gene_with_location00,new_compartment,IO_gene_with_sce_ortholog02])
+# unify the name
+IO_compartment["compartment"] = IO_compartment["compartment"].str.lower()
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("peroxisome membrane","peroxisomal membrane")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("mitochondrion outer membrane","mitochondrial outer membrane")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("mitochondrion inner membrane","mitochondrial inner membrane")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("mitochondrion matrix","mitochondrial matrix")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("golgi_apparatus","golgi apparatus")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("golgi apparatus membrane","golgi membrane")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("extracellular space","extracellular region")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("cell membrane","plasma membrane")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("nucleus membrane","nuclear membrane")
+IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("nucleus speckle","nuclear speckle")
+
+one_more = IO_compartment["compartment"].tolist()
+one_more0 = []
+for xx in one_more:
+    if xx == 'endoplasmic':
+        xx1 = 'endoplasmic reticulum'
+        one_more0.append(xx1)
+    else:
+        one_more0.append(xx)
+
+IO_compartment["compartment"] = one_more0
+
+# double check
+IO_compartment1 = IO_compartment[IO_compartment["source"] !="MULocDeep"]
+IO_compartment2 = IO_compartment[IO_compartment["source"].str.contains("MULocDeep")]
+list(set(IO_compartment2["compartment"])-set(IO_compartment1["compartment"]))
+
+IO_compartment.to_excel("data/nature_chemical_biology_datatset_2024/IO_gene_compartment.xlsx")
