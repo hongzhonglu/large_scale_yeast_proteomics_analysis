@@ -720,29 +720,6 @@ def ProAbsoluteCal2(protein_copy, compartment_type="go_term"):
         return out
 
 
-#def getOrganelleAbundance(abundance0, need_check="No"):
-#    """
-#    The function is used to calculate the total protein abundance for a group of genes from specific location.
-#    It should be noted that the unit of pro_abundance is molecules per cell.
-#    :param pro_abundance0: the unite is moleculars per cell
-#    :param need_check:
-#    :return:
-#    """
-#
-#    # should make sure no structure size data is nan
-#    combine_df = abundance0
-#   #combine_df["molecular/cell"] = singleMapping(abundance0["molecular/cell"], abundance0['gene'], combine_df["gene"])
-#    # calculate the size of all proteins for the selected gene list
-#    # 1 纳米(nm)=0.001 微米(um)
-#    total_abundance = sum(combine_df["molecular/cell"])
-#
-#    if need_check=="No":
-#        return total_abundance
-#    else:
-#        return combine_df
-
-
-
 
 def splitAbundance(pro_df):
     """
@@ -851,7 +828,7 @@ def getGeneListFromLocation(gene_location_annotation, location):
     return gene_list
 
 
-
+# get the compartments of all genes
 def getCompartmentGeneList(filter="Yes"):
     """
     This function to build a compartment dict, with which we can get the gene list from the compartment name
@@ -925,6 +902,37 @@ def getCompartmentGeneList(filter="Yes"):
         return compartment_dict20
     else:
         return compartment_dict_all0
+
+
+# calibrate the cmpartments of some genes based on manual experiment
+def gene_location_curation_sce():
+    organelle0 = getCompartmentGeneList(filter="Yes")
+    # use some manually checked gene compartment definion
+    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # all_compartment = ['fungal-type vacuole membrane']
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    gene_nucleolus = pd.read_excel("data/nucleolus_annotations.xlsx")
+    organelle0_update = {}
+    for y in organelle0.keys():
+        print(y)
+        if y == "plasma membrane":
+            genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+        elif y == "fungal-type vacuole membrane":
+            genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+            genes_select = [x for x in genes_select if
+                            x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+        elif y == "endosome":
+            genes_select = organelle0[y]
+            genes_select = [x for x in genes_select if x not in [
+                "YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
+        elif y == "nucleolus":
+            genes_select = gene_nucleolus["gene"].tolist()  # for the test
+
+        else:
+            genes_select = organelle0[y]
+        organelle0_update[y] = genes_select
+        return organelle0_update
+
 
 
 

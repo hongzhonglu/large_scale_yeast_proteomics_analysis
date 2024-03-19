@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_other_yeast.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_other_yeast.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_NCB_datasets.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_NCB_datasets.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nature_chemical_biology_datatset_2024/41589_2024_1571_MOESM3_ESM_only_IO.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/nature_chemical_biology_datatset_2024/41589_2024_1571_MOESM3_ESM_only_IO.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -429,6 +431,11 @@
           <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_other_yeast.py</url>
           <line>32</line>
           <option name="timeStamp" value="66" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/src/protein_process.py</url>
+          <line>938</line>
+          <option name="timeStamp" value="67" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

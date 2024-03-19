@@ -125,4 +125,3 @@ s2.to_excel("data/proteomics/membrane_size_ratio_across_compartment_NCB.xlsx")
 
 
 
-
