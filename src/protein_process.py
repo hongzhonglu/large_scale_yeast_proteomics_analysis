@@ -384,6 +384,7 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
     # input the protein structure information
@@ -394,9 +395,9 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
     Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
 
     # use some manually checked gene compartment definion
-    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    #gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
     # all_compartment = ['fungal-type vacuole membrane']
-    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    #gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
 
     # creat two dataframe to save the result
     result1 = pd.DataFrame({"compartment": all_compartment})
@@ -414,6 +415,8 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
             print(y)
             # test
             # y = "cytosol"
+            
+            '''
             if y == "plasma membrane":
                 genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
             elif y == "fungal-type vacuole membrane":
@@ -423,7 +426,10 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
                 genes_select = compartment[y]
                 genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
             else:
-                genes_select = compartment[y]
+                genes_select = compartment[y]'''
+            genes_select = compartment[y]
+
+
             pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
             if pro_abundance1 is "no_abundance":
                 value1.append(None)
@@ -478,6 +484,7 @@ def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
     # input the protein structure information
@@ -488,9 +495,9 @@ def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
     Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
 
     # use some manually checked gene compartment definion
-    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    #gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
     # all_compartment = ['fungal-type vacuole membrane']
-    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    #gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
 
     # creat two dataframe to save the result
     all_compartment = [x for x in all_compartment if "membrane" in x]
@@ -509,6 +516,7 @@ def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
 
         for y in all_compartment:
             print(y)
+            '''
             if y == "plasma membrane":
                 genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
             elif y == "fungal-type vacuole membrane":
@@ -518,7 +526,10 @@ def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
                 genes_select = compartment[y]
                 genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
             else:
-                genes_select = compartment[y]
+                genes_select = compartment[y]'''
+            genes_select = compartment[y]
+
+
             genes_select = list(set(genes_select) & set(membrane_pro_final_merge))
             pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
 
@@ -543,6 +554,7 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
     # input the protein structure information
@@ -553,9 +565,9 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
     Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
 
     # use some manually checked gene compartment definion
-    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    #gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
     # all_compartment = ['fungal-type vacuole membrane']
-    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    #gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
 
     # creat two dataframe to save the result
     result1 = pd.DataFrame({"compartment": all_compartment})
@@ -570,6 +582,7 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
             print(y)
             pro_abundance = protein_copy[['gene', col0]]
             pro_abundance.columns = ['gene', 'molecular/cell']
+            '''
             if y == "plasma membrane":
                 genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
             elif y == "fungal-type vacuole membrane":
@@ -579,7 +592,9 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
                 genes_select = compartment[y]
                 genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
             else:
-                genes_select = compartment[y]
+                genes_select = compartment[y]'''
+            genes_select = compartment[y]
+
             pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
             if pro_abundance1 is "no_abundance":
                 value1.append(None)
@@ -644,15 +659,16 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
     # sample ID information
     Sample_ID_select = list(protein_copy.columns)
     Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
 
     # use some manually checked gene compartment definion
-    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    #gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
     # all_compartment = ['fungal-type vacuole membrane']
-    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    #gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
     # creat a dataframe to save the result
     result1 = pd.DataFrame({"compartment": all_compartment})
     # run the cycle
@@ -663,6 +679,7 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
             print(y)
             pro_abundance = protein_copy[['gene', col0]]
             pro_abundance.columns = ['gene', 'molecular/cell']
+            '''
             if y == "plasma membrane":
                 genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
             elif y == "fungal-type vacuole membrane":
@@ -673,7 +690,9 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
                 genes_select = compartment[y]
                 genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
             else:
-                genes_select = compartment[y]
+                genes_select = compartment[y]'''
+            genes_select = compartment[y]
+
             pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
             if pro_abundance1 is "no_abundance":
                 value1.append(None)
@@ -724,7 +743,6 @@ def ProAbsoluteCal2(protein_copy, compartment_type="go_term"):
         return out
 
 
-
 def splitAbundance(pro_df):
     """
     The function is used to quality check of protein abundance in molecular/cell or other unit before entering next step.
@@ -757,7 +775,6 @@ def splitAbundance(pro_df):
         print('Complete the quality check!')
 
     return pro_df
-
 
 
 def getGoTermGeneList(input1, input2):
@@ -1033,47 +1050,6 @@ def calculateCurationCoefficent():
     return curation_info_rosemary
 
 
-def linearFit(df, x_name, y_name):
-    """
-    This function is used to fitting a linear relation between two variables
-    Linear fit for two colums in a dataframe
-    :param df:
-    :param x_name:
-    :param y_name:
-    :return:
-    """
-    from sklearn.metrics import r2_score
-    import matplotlib.pyplot as plt
-    df = df[[x_name, y_name]]
-    df = df.dropna()
-    x = df[x_name]
-    y = df[y_name]
-    x_name = x_name.split("(")[0]
-    y_name = y_name.split("(")[0]
-    x_name = x_name.replace("/", "_per_")
-    y_name = y_name.replace("/", "_per_")
-    coef = np.polyfit(x, y, 1)
-    poly1d_fn = np.poly1d(coef)
-    predict = np.poly1d(coef)
-    R2 = r2_score(y, predict(x))
-    print(R2)
-    print(coef)
-    R2 = "{:.3f}".format(R2)
-    # poly1d_fn is now a function which takes in x and returns an estimate for y
-    plt.figure()
-    plt.plot(x, y, 'yo', x, poly1d_fn(x), '--k')  # '--k'=black dashed line, 'yo' = yellow circle marker
-    plt.xlabel(x_name, fontsize=18)
-    plt.ylabel(y_name, fontsize=18)
-    plt.xticks(fontsize=15)
-    plt.yticks(fontsize=15)
-    x_max = max(x)
-    y_max = max(y)
-    plt.text(x_max/3, 2*y_max/3, "R2=" + str(R2), fontsize=18)
-    plt.savefig('result/' + x_name + '_' + y_name + '.pdf', bbox_inches='tight')
-    plt.show()
-    return coef[0], coef[1]
-
-
 def collectOrganelleTerm(type):
     """
     Some compartment need manual check.
@@ -1132,7 +1108,7 @@ def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organell
             result_df[y] = list(set(genes_select) & set(gene_set))
     return result_df
 
-
+'''
 def Pro3DCal(protein_copy, compartment_type="organelle"):
     """
     This function is used to calculate the organelle protein volume or sectional area as a whole
@@ -1188,9 +1164,9 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
                 value2.append(S)
         result1[col0] = value1
         result2[col0] = value2
-    return result1, result2
+    return result1, result2'''
 
-
+'''
 def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
     """
     This function is used to calculate the organelle protein aboslute abundance as a whole
@@ -1240,5 +1216,5 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
                 x = sum(pro_abundance1['molecular/cell'])
                 value1.append(x)
         result1[col0] = value1
-    return result1
+    return result1'''
 
