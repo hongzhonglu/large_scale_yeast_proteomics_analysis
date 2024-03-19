@@ -465,13 +465,14 @@ def getMembraneProList():
     compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
                            'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
     compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
-    compartment1_membrane_filter = compartment1[compartment1["GO_Name"].str.contains("membrane")]
+    compartment1_membrane_filter = compartment1[compartment1["GO_Name"].str.contains("membrane")][compartment1["GO_Name"] !="mitochondrial intermembrane space"]
     membrane_pro_list_database = list(set(compartment1_membrane_filter["Systematic_name"].tolist()))
     # check the relation between the annotation from the above procedures
     membrane_pro_final_merge = list(set(membrane_pro_list) & set(membrane_pro_list_database))
     # plus transporter proteins
     membrane_pro_final_merge11 = list(set(transporter_pro_list) - set(membrane_pro_final_merge)) + membrane_pro_final_merge
     return membrane_pro_final_merge11
+
 
 # # calculate the membrane ratio
 def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
@@ -501,6 +502,7 @@ def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
 
     # creat two dataframe to save the result
     all_compartment = [x for x in all_compartment if "membrane" in x]
+    all_compartment = [x for x in all_compartment if x != "mitochondrial intermembrane space"]
     result2 = pd.DataFrame({"compartment": all_compartment})
     membrane_pro_final_merge = getMembraneProList()
     # run the cycle
@@ -929,10 +931,11 @@ def getCompartmentGeneList(filter="Yes"):
 def gene_location_curation_sce(organelle0):
     # organelle0 = getCompartmentGeneList(filter="Yes")
     # use some manually checked gene compartment definion
+    # if the manual curated gene number for one compartment is larger, nealy equal to computational, then use the manual curation
+    # otherwise using the computation prediction???
     # test
     #organelle0 = compartment
-    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
-    # all_compartment = ['fungal-type vacuole membrane']
+    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations.xlsx")
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
     gene_nucleolus = pd.read_excel("data/nucleolus_annotations.xlsx")
     gene_cytoplasm = pd.read_excel("data/cytoplasm_annotations.xlsx")
