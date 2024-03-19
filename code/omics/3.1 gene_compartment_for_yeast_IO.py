@@ -148,27 +148,7 @@ new_compartment["source"] = "MULocDeep"
 
 #get sce gene annotation
 compartment_dict20 = getCompartmentGeneList(filter="Yes") # Remove some compartmental annotation only with computational evidence (keep experimental evidence)
-all_compartment = list(compartment_dict20.keys())
-# use some manually checked gene compartment definion
-gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
-# all_compartment = ['fungal-type vacuole membrane']
-gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
-compartment_dict20_update = dict()
-for y in all_compartment:
-    print(y)
-    if y == "plasma membrane":
-        genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
-    elif y == "fungal-type vacuole membrane":
-        genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
-        genes_select = [x for x in genes_select if
-                        x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
-    elif y == "endosome":
-        genes_select = compartment_dict20[y]
-        genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
-    else:
-        genes_select = compartment_dict20[y]
-    compartment_dict20_update[y] = genes_select
-
+compartment_dict20_update =gene_location_curation_sce(compartment_dict20)
 # change it as a list
 sce_gene_list = []
 for x, y in compartment_dict20_update.items():
@@ -223,3 +203,6 @@ IO_compartment2 = IO_compartment[IO_compartment["source"].str.contains("MULocDee
 list(set(IO_compartment2["compartment"])-set(IO_compartment1["compartment"]))
 
 IO_compartment.to_excel("data/nature_chemical_biology_datatset_2024/IO_gene_compartment.xlsx")
+
+
+

@@ -329,15 +329,16 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
     # sample ID information
     Sample_ID_select = list(protein_abundance.columns)
     Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
     # use some manually checked gene compartment definion
-    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
+    # gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
     # all_compartment = ['fungal-type vacuole membrane']
-    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    # gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
     # creat a dataframe to save the result
     result1 = pd.DataFrame({"compartment": all_compartment})
     # run the cycle
@@ -348,7 +349,8 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
             print(y)
             pro_abundance = protein_abundance[['gene', col0]]
             pro_abundance.columns = ['gene', 'g/gDW']
-            if y == "plasma membrane":
+
+            '''if y == "plasma membrane":
                 genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
             elif y == "fungal-type vacuole membrane":
                 genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
@@ -358,7 +360,9 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
                 genes_select = compartment[y]
                 genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
             else:
-                genes_select = compartment[y]
+                genes_select = compartment[y]'''
+            genes_select = compartment[y]
+
             # get the sum
             pro_abundance.fillna(0, axis=1, inplace=True)
             pro_select = pro_abundance[pro_abundance['gene'].isin(genes_select)]
@@ -906,12 +910,21 @@ def getCompartmentGeneList(filter="Yes"):
 
 # calibrate the cmpartments of some genes based on manual experiment
 def gene_location_curation_sce(organelle0):
-    #organelle0 = getCompartmentGeneList(filter="Yes")
+    # organelle0 = getCompartmentGeneList(filter="Yes")
     # use some manually checked gene compartment definion
+    # test
+    #organelle0 = compartment
     gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
     # all_compartment = ['fungal-type vacuole membrane']
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
     gene_nucleolus = pd.read_excel("data/nucleolus_annotations.xlsx")
+    gene_cytoplasm = pd.read_excel("data/cytoplasm_annotations.xlsx")
+    gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrial_suborganelle.xlsx")
+    gene_m_Outer_membrane = gene_mitochondrion[gene_mitochondrion['Outer membrane']=="X"]
+    gene_m_Inner_membrane = gene_mitochondrion[gene_mitochondrion['Inner membrane'] == "X"]
+    gene_m_OI_space = gene_mitochondrion[gene_mitochondrion['Inter-membrane space'] == "X"]
+    gene_m_matrix = gene_mitochondrion[gene_mitochondrion['Matrix'] == "X"]
+    gene_nucleus = pd.read_excel("data/sce_compartment_curation/nucleus_annotations.xlsx")
     organelle0_update = {}
     for y in organelle0.keys():
         print(y)
@@ -925,13 +938,24 @@ def gene_location_curation_sce(organelle0):
             genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
         elif y == "nucleolus":
             genes_select = gene_nucleolus["gene"].tolist()  # for the test
-
+        elif y == "cytoplasm":
+            genes_select = gene_cytoplasm["gene"].tolist()  # for the test
+        elif y == "mitochondrion":
+            genes_select = gene_mitochondrion["gene"].tolist()  # for the test
+        elif y == "mitochondrial outer membrane":
+            genes_select = gene_m_Outer_membrane["gene"].tolist()  # for the test
+        elif y == "mitochondrial inner membrane":
+            genes_select = gene_m_Inner_membrane["gene"].tolist()  # for the test
+        elif y == "mitochondrial intermembrane space":
+            genes_select = gene_m_OI_space["gene"].tolist()  # for the test
+        elif y == "mitochondrial matrix":
+            genes_select = gene_m_matrix["gene"].tolist()  # for the test
+        elif y == "nucleus":
+            genes_select = gene_nucleus["gene"].tolist()  # for the test
         else:
             genes_select = organelle0[y]
-        organelle0_update[y] = genes_select
-        return organelle0_update
-
-
+        organelle0_update[y] = list(filter(lambda x: str(x) != 'nan', genes_select))
+    return organelle0_update
 
 
 def AllProteomicsAnalysis(pro_df):
