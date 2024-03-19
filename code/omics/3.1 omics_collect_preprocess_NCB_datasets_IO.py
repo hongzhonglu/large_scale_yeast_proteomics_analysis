@@ -168,11 +168,7 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
     # sample ID information
     Sample_ID_select = list(protein_abundance.columns)
     Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
-    # use some manually checked gene compartment definion
-    gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
-    # all_compartment = ['fungal-type vacuole membrane']
-    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
-    # creat a dataframe to save the result
+  # creat a dataframe to save the result
     result1 = pd.DataFrame({"compartment": all_compartment})
     # run the cycle
     for col0 in Sample_ID_select:

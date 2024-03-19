@@ -1,6 +1,9 @@
-import matplotlib.pyplot as plt
-import os
+# first, get the compartment annotation from uniprot
+# if no, then find the ortholog from sce. transfer sce annotation to IO.
+# lastly, for the remaining protein, using Deep learning to predict the compartment
 
+
+import os
 
 # import self function
 from src.protein_process import *

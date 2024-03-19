@@ -6,13 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.1 gene_compartment_for_yeast_IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/gene_belong_plasma_membrane_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_NCB_datasets_IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_NCB_datasets_IO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nature_chemical_biology_datatset_2024/IO_gene_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/nature_chemical_biology_datatset_2024/IO_gene_compartment.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_NCB_yeast_IO.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_NCB_yeast_IO.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_NCB_for_yeast_IO.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_NCB_for_yeast_IO.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -423,17 +421,17 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py</url>
-          <line>142</line>
+          <line>145</line>
           <option name="timeStamp" value="63" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py</url>
-          <line>163</line>
+          <line>166</line>
           <option name="timeStamp" value="64" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py</url>
-          <line>32</line>
+          <line>35</line>
           <option name="timeStamp" value="66" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
