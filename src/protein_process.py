@@ -905,8 +905,8 @@ def getCompartmentGeneList(filter="Yes"):
 
 
 # calibrate the cmpartments of some genes based on manual experiment
-def gene_location_curation_sce():
-    organelle0 = getCompartmentGeneList(filter="Yes")
+def gene_location_curation_sce(organelle0):
+    #organelle0 = getCompartmentGeneList(filter="Yes")
     # use some manually checked gene compartment definion
     gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
     # all_compartment = ['fungal-type vacuole membrane']
@@ -919,12 +919,10 @@ def gene_location_curation_sce():
             genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
         elif y == "fungal-type vacuole membrane":
             genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
-            genes_select = [x for x in genes_select if
-                            x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+            genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
         elif y == "endosome":
             genes_select = organelle0[y]
-            genes_select = [x for x in genes_select if x not in [
-                "YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
+            genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
         elif y == "nucleolus":
             genes_select = gene_nucleolus["gene"].tolist()  # for the test
 
