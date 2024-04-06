@@ -7,6 +7,13 @@ from src.model_process import *
 from src.mainFunction import *
 from src.protein_process import *
 
+# a functiion to combine the different proteomics
+def combineAbosluteAbundance(omics_combine_base, omics_new, remove_column="gene"):
+    df_combine_auto = pd.merge(left=omics_combine_base, right=omics_new, left_on=['all_gene'], right_on=['gene'], how="left")
+    # remove the duplicated
+    df_combine_auto.pop(remove_column)
+    return df_combine_auto
+
 
 # Part 1 Collect all the data in the unit of mmol/gDW
 omics_tao1 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
@@ -51,19 +58,26 @@ new_df = pd.DataFrame({"all_gene": all_gene})
 new_df = new_df.dropna()
 
 
+#df_combine = pd.merge(left=new_df, right=omics_francesca, left_on=['all_gene'], right_on=['gene'], how="left")
+#df_combine = df_combine[['all_gene','Glucose_phase(mmol/gDW)', 'Diauxic_shift(mmol/gDW)', 'Ethanol_phase(mmol/gDW)']]
 
-df_combine = pd.merge(left=new_df, right=omics_francesca, left_on=['all_gene'], right_on=['genes'], how="left")
+df_combine = combineAbosluteAbundance(new_df, omics_francesca, remove_column="gene")
 
-df_combine = df_combine[['all_gene','Glucose_phase(mmol/gDW)', 'Diauxic_shift(mmol/gDW)', 'Ethanol_phase(mmol/gDW)']]
 
-df_combine1 = pd.merge(left=df_combine, right=omics_carl, left_on=['all_gene'], right_on=['gene'], how="left")
+#df_combine1 = pd.merge(left=df_combine, right=omics_carl, left_on=['all_gene'], right_on=['gene'], how="left")
+#df_combine1 = df_combine1[['all_gene','Glucose_phase(mmol/gDW)', 'Diauxic_shift(mmol/gDW)', 'Ethanol_phase(mmol/gDW)','mmol/gDW_carl']]
 
-df_combine1 = df_combine1[['all_gene','Glucose_phase(mmol/gDW)', 'Diauxic_shift(mmol/gDW)', 'Ethanol_phase(mmol/gDW)','mmol/gDW_carl']]
+df_combine1 = combineAbosluteAbundance(df_combine, omics_carl, remove_column="gene")
 
-df_combine2 = pd.merge(left=df_combine1, right=omics_tao1, left_on=['all_gene'], right_on=['gene'], how="left")
-df_combine3 = pd.merge(left=df_combine2, right=omics_Tyler, left_on=['all_gene'], right_on=['gene'], how="left")
-df_combine4 = pd.merge(left=df_combine3, right=omics_johan, left_on=['all_gene'], right_on=['gene'], how="left")
-df_combine5 = pd.merge(left=df_combine4, right=omics_Rahul, left_on=['all_gene'], right_on=['gene'], how="left")
+
+df_combine2 = combineAbosluteAbundance(df_combine1, omics_tao1, remove_column="gene")
+df_combine3 = combineAbosluteAbundance(df_combine2, omics_Tyler, remove_column="gene")
+df_combine4 = combineAbosluteAbundance(df_combine3, omics_johan, remove_column="gene")
+df_combine5 = combineAbosluteAbundance(df_combine4, omics_Rahul, remove_column="gene")
+
+df_combine5 = df_combine5.drop('Unnamed: 0', axis=1)
+
+"""
 # get the new column
 all0 = df_combine5.columns
 new_columns00=[]
@@ -82,27 +96,21 @@ for x in all0:
     else:
         pass
 
-omics_combine = df_combine5[new_columns00]
-omics_combine.to_excel("data/proteomics/omics_measured_combine.xlsx", index=False)
-#write a function to do the above steps
+omics_combine = df_combine5[new_columns00]"""
+df_combine5.to_excel("data/proteomics/omics_measured_combine.xlsx", index=False)
+df_combine5.to_csv("data/proteomics/omics_measured_combine.csv", sep='\t')
 
 # input the new absolute proteomics
 omics_cell_system_2017 = pd.read_excel("data/proteomics/omics_from_cell_systems_2017_scale.xlsx")
 omics_carbon_source = pd.read_excel("data/proteomics/omics_from_carbon_source_scale.xlsx")
-omics_carbon_source.pop('ref_glc_mm_rich_aerobic(mmol/gDW)_x')
+#omics_carbon_source.pop('ref_glc_mm_rich_aerobic(mmol/gDW)_x')
 omics_jianye = pd.read_excel("data/proteomics/abundance_jianye.xlsx")
 omics_kate = pd.read_excel("data/proteomics/abundance_kate.xlsx")
 omics_nc_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_nc_scale.xlsx")
 
 
 
-def combineAbosluteAbundance(omics_combine_base, omics_new, remove_column="gene"):
-    df_combine_auto = pd.merge(left=omics_combine_base, right=omics_new, left_on=['all_gene'], right_on=['gene'], how="left")
-    # remove the duplicated
-    df_combine_auto.pop(remove_column)
-    return df_combine_auto
-
-omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine, omics_new=omics_cell_system_2017, remove_column="gene")
+omics_combine_auto = combineAbosluteAbundance(omics_combine_base=df_combine5, omics_new=omics_cell_system_2017, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_carbon_source, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_jianye, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_kate, remove_column="gene")
@@ -110,5 +118,6 @@ omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_a
 
 # Save
 omics_combine_auto.to_excel("data/proteomics/omics_measured_combine_with_more_samples.xlsx", index=False) # the unit the mmol/gDW
+omics_combine_auto.to_csv("data/proteomics/omics_measured_combine_with_more_samples.csv", index=False) # the unit the mmol/gDW
 
 

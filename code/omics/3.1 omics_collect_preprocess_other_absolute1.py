@@ -28,10 +28,10 @@ id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 # Note: the full dataset is used
 abundance_ex = pd.read_excel("data/proteomics/omics_Francesca.xlsx")
 # remove one outlier data point
-# abundance_ex['Glucose_phase_rep1(g/gDW)'][abundance_ex["genes"]=="YMR142C"] = None
-abundance_ex = abundance_ex[abundance_ex["genes"] != "YMR142C"]
+# abundance_ex['Glucose_phase_rep1(g/gDW)'][abundance_ex["gene"]=="YMR142C"] = None
+abundance_ex = abundance_ex[abundance_ex["gene"] != "YMR142C"]
 
-abundance_ex["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abundance_ex["genes"])
+abundance_ex["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abundance_ex["gene"])
 # Some species process. It could find that some rows with two proteins. Here assume the two proteins are identical in abundance，taking half of total protein abundance.
 abudance_ex_1 = abundance_ex[~abundance_ex["MW_Kda"].isna()]
 abudance_ex_check = abundance_ex[abundance_ex["MW_Kda"].isna()]
@@ -41,7 +41,7 @@ column0 = abudance_ex_check.columns
 abudance_ex_check11 = abudance_ex_check.copy()
 gene0=[]
 for x in column0:
-    if "genes" in x:
+    if "gene" in x:
         ss = abudance_ex_check[x].tolist()
         for v in ss:
             v1 = v.split("; ")
@@ -49,7 +49,7 @@ for x in column0:
     else:
         pass
 
-abudance_ex2 = pd.DataFrame({"genes": gene0})
+abudance_ex2 = pd.DataFrame({"gene": gene0})
 
 
 for x in column0:
@@ -65,7 +65,7 @@ for x in column0:
         pass
 
 
-abudance_ex2["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abudance_ex2["genes"])
+abudance_ex2["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abudance_ex2["gene"])
 # combine the above two datasets
 abundance_ex_corrected = pd.concat([abudance_ex_1, abudance_ex2], axis=0)
 # change the unit from g/g into mmol/g
@@ -78,9 +78,9 @@ column_ss = list(abundance_ex.columns)[1:10]
 for xx in column_ss:
     abundance_ex_corrected[xx] = abundance_ex_corrected[xx] / abundance_ex_corrected["MW_Kda"]  # #mmol/g biomass
 
-new_columns = ['genes'] + column_ss
+new_columns = ['gene'] + column_ss
 abundance_ex_corrected1 = abundance_ex_corrected[new_columns]
-#one_strange = abundance_ex_corrected[abundance_ex_corrected['genes']=='YMR142C']
+#one_strange = abundance_ex_corrected[abundance_ex_corrected['gene']=='YMR142C']
 abundance_ex_corrected1.to_excel("data/proteomics/omics_Francesca_scale.xlsx")
 
 
