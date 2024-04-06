@@ -138,11 +138,12 @@ protein_abundance3.to_excel("data/proteomics/proteomics_Rahul_2020_scale.xlsx", 
 
 
 
+
 ############## datasets preprocess ###################################
 # input the Jianye's data
-# Rosemary dataset is not reasonable, so only the following datasets is used!
 # in the original Jianye datasets, the unit is protein copies/cell, so no additional unit conversion is needed!
 # Note: in the current calculation by Jianye, the assume cell mass is 13 pg.
+# Note: the part of data has been updated
 omics_jianye_original = pd.read_excel("data/proteomics/proteomics_Jianye_original.xlsx")
 # first update isoform of proteins and change it as a single protein
 ID_new = []
@@ -184,7 +185,8 @@ abudance_jianye2 = pd.DataFrame({"Majority protein IDs": gene0})
 
 
 for x in column0:
-    if "D=" in x:
+    if "S" in x:
+        print(x)
         ss = abudance_jianye_check[x].tolist()
         abudance0 = []
         for v,n in zip(ss,num0):
@@ -207,7 +209,7 @@ abundance_jianye_corrected = abundance_jianye_corrected[column2]
 
 # from multiMapping function, it could find one uniprot ID could have multiple locus gene ID
 column_jianye2 = list(abundance_jianye_corrected.columns)
-column_jianye2 = column_jianye2[1:10]
+column_jianye2 = column_jianye2[1:28]
 pd_null = pd.DataFrame()
 for x in column_jianye2:
     select0 = ["gene", x]
@@ -229,11 +231,8 @@ for x in column_jianye2:
         abundance_jianye3[x] = omics_jianye_2[x]/coefficient1
     else:
         continue
-
+abundance_jianye3 = abundance_jianye3[["gene"]+column_jianye2]
 abundance_jianye3.to_excel("data/proteomics/abundance_jianye.xlsx", index=False)
-
-
-
 
 
 
