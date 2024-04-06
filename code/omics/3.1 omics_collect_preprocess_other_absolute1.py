@@ -462,7 +462,3 @@ carbon_source_combine2.to_excel("data/proteomics/protein_copy_from_carbon_source
 result_df = AllProteomicsAnalysis(pro_df=carbon_source_combine2)
 result_df0 = result_df.transpose()
 result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
-
-
-
-
