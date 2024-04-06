@@ -330,6 +330,7 @@ for x in column_tao2:
 
 _, i = np.unique(pd_null.columns, return_index=True)
 omics_tao2 = pd_null.iloc[:, i]
+omics_tao2 = omics_tao2[["gene"]+column_tao2]
 omics_tao2.to_excel("data/proteomics/Omics_from_tao_scale.xlsx", index=False)
 
 
