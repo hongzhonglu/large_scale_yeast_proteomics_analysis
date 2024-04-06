@@ -23,7 +23,9 @@ omics_francesca = pd.read_excel("data/proteomics/omics_Francesca_scale.xlsx")
 
 
 # input the johan's data under four conditons
-omics_johan = pd.read_excel("data/proteomics/omics_johan.xlsx")
+# Note: this abundance is from Nature catalysis, 2022.
+# omics_johan = pd.read_excel("data/proteomics/omics_johan.xlsx")
+omics_johan = pd.read_excel("data/proteomics/omics_johan_all_covered.xlsx")
 
 
 # input the Tyler's data

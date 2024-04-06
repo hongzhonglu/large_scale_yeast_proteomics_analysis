@@ -234,7 +234,23 @@ for x in column_jianye2:
 abundance_jianye3 = abundance_jianye3[["gene"]+column_jianye2]
 abundance_jianye3.to_excel("data/proteomics/abundance_jianye.xlsx", index=False)
 
+############## datasets preprocess ###################################
+# this is dataset from johan
+# assume the 0.48 g protein per gram of biomass
+# the original unit is (g protein/g proteome), change it as mmol protein/gDW
+# In the last version, the proteomics is from johan
+abundance_johan = pd.read_excel("data/proteomics/proteomics_johan_original.xlsx")
+abundance_johan["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abundance_johan["gene"])
+column_johan = list(abundance_johan.columns)[2:12]
+for x in column_johan:
+    print(x)
+    if x != "gene":
+        abundance_johan[x] = abundance_johan[x]/abundance_johan["MW_Kda"]*0.48
+    else:
+        continue
 
+abundance_johan = abundance_johan[["gene"]+column_johan]
+abundance_johan.to_excel("data/proteomics/omics_johan_all_covered.xlsx", index=False)
 
 
 ############## datasets preprocess ###################################
