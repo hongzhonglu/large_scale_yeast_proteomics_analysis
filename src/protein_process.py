@@ -440,6 +440,7 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
         result1[col0] = value1
     return result1
 
+# check in the following two functions, whether the cell wall proteins are covered!
 def getMembraneProList():
     # as the first step: define the membrane or transporter protein
     protein_transporter = open(
@@ -472,7 +473,6 @@ def getMembraneProList():
     # plus transporter proteins
     membrane_pro_final_merge11 = list(set(transporter_pro_list) - set(membrane_pro_final_merge)) + membrane_pro_final_merge
     return membrane_pro_final_merge11
-
 
 # # calculate the membrane ratio
 def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
@@ -543,6 +543,7 @@ def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
                 value2.append(S/S_total)
         result2[col0] = value2
     return result2
+
 
 # absolute protein structure volume and area for each organelle
 # TO-DO: the function will be further optimized so that it could be used other analysis
@@ -934,8 +935,10 @@ def gene_location_curation_sce(organelle0):
     # if the manual curated gene number for one compartment is larger, nealy equal to computational, then use the manual curation
     # otherwise using the computation prediction???
     # test
-    #organelle0 = compartment
+    # organelle0 = compartment_dict20
     gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations.xlsx")
+    gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations.xlsx")
+
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
     gene_nucleolus = pd.read_excel("data/nucleolus_annotations.xlsx")
     gene_cytoplasm = pd.read_excel("data/cytoplasm_annotations.xlsx")
@@ -950,6 +953,8 @@ def gene_location_curation_sce(organelle0):
         print(y)
         if y == "plasma membrane":
             genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+        elif y == "fungal-type cell wall":
+            genes_select = gene_cell_wall["gene"].tolist()
         elif y == "fungal-type vacuole membrane":
             genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
             genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
