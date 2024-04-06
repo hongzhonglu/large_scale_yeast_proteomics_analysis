@@ -12,8 +12,6 @@ from src.protein_process import *
 omics_tao1 = pd.read_excel("data/proteomics/Omics_from_tao_scale.xlsx")
 
 
-
-
 # input the Carl's data under max growth
 omics_carl = pd.read_excel("data/proteomics/data_PNAS_2021_scale.xlsx")
 omics_carl =omics_carl[['gene','mmol/gDW']]

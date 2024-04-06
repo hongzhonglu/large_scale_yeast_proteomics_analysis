@@ -6,6 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute1.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute1.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute2.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_Francesca.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_Francesca.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/omics_Francesca_scale.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/omics_Francesca_scale.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -376,7 +381,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute2.py</url>
-          <line>94</line>
+          <line>92</line>
           <option name="timeStamp" value="46" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

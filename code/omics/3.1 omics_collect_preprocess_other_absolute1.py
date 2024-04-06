@@ -23,12 +23,13 @@ id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
 
 
 
-
 ############## datasets preprocess ###################################
 # This original dataset is from www.pnas.org/cgi/doi/10.1073/pnas.1918216117
+# Note: the full dataset is used
 abundance_ex = pd.read_excel("data/proteomics/omics_Francesca.xlsx")
 # remove one outlier data point
-abundance_ex['Glucose_phase(g/gDW)'][abundance_ex["genes"]=="YMR142C"] = None
+# abundance_ex['Glucose_phase_rep1(g/gDW)'][abundance_ex["genes"]=="YMR142C"] = None
+abundance_ex = abundance_ex[abundance_ex["genes"] != "YMR142C"]
 
 abundance_ex["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abundance_ex["genes"])
 # Some species process. It could find that some rows with two proteins. Here assume the two proteins are identical in abundance，taking half of total protein abundance.
@@ -68,14 +69,20 @@ abudance_ex2["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], abudance_e
 # combine the above two datasets
 abundance_ex_corrected = pd.concat([abudance_ex_1, abudance_ex2], axis=0)
 # change the unit from g/g into mmol/g
-
+"""
 abundance_ex_corrected["Glucose_phase(mmol/gDW)"] = abundance_ex_corrected["Glucose_phase(g/gDW)"]/abundance_ex_corrected["MW_Kda"]# #mmol/g biomass
 abundance_ex_corrected["Diauxic_shift(mmol/gDW)"] = abundance_ex_corrected["Diauxic_shift(g/gDW)"]/abundance_ex_corrected["MW_Kda"]# #mmol/g biomass
 abundance_ex_corrected["Ethanol_phase(mmol/gDW)"] = abundance_ex_corrected["Ethanol_phase(g/gDW)"]/abundance_ex_corrected["MW_Kda"]# #mmol/g biomass
-new_columns = ['genes',"Glucose_phase(mmol/gDW)","Diauxic_shift(mmol/gDW)","Ethanol_phase(mmol/gDW)"]
+"""
+column_ss = list(abundance_ex.columns)[1:10]
+for xx in column_ss:
+    abundance_ex_corrected[xx] = abundance_ex_corrected[xx] / abundance_ex_corrected["MW_Kda"]  # #mmol/g biomass
+
+new_columns = ['genes'] + column_ss
 abundance_ex_corrected1 = abundance_ex_corrected[new_columns]
 #one_strange = abundance_ex_corrected[abundance_ex_corrected['genes']=='YMR142C']
 abundance_ex_corrected1.to_excel("data/proteomics/omics_Francesca_scale.xlsx")
+
 
 
 
