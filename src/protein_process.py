@@ -398,6 +398,7 @@ def getCompartment_manual_curation():
 gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
 gene_anotation = pd.read_excel("data/sce_gene_annotation_SGD.xlsx")
 gene_anotation_for_cell_wall = gene_anotation[gene_anotation['ID'].isin(gene_cell_wall['gene'])]
+# here 9 enzyme genes belong to cell wall were removed.
 #gene_anotation_for_cell_wall.to_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
 
 def gene_location_curation_sce(organelle0):
