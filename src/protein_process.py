@@ -393,13 +393,14 @@ def getCompartment_manual_curation():
         except:
             pass
 
-
 # when running the following function, please firstly run function - getCompartment_manual_curation
 gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
 gene_anotation = pd.read_excel("data/sce_gene_annotation_SGD.xlsx")
 gene_anotation_for_cell_wall = gene_anotation[gene_anotation['ID'].isin(gene_cell_wall['gene'])]
 # here 9 enzyme genes belong to cell wall were removed.
 #gene_anotation_for_cell_wall.to_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
+# getCompartment_manual_curation() # run the compartment curation preprocess. If update the compartment information, need to run this function
+
 
 
 def gene_location_curation_sce(organelle0):
@@ -408,13 +409,13 @@ def gene_location_curation_sce(organelle0):
     # otherwise using the computation prediction???
     # input the annotation from sgd
     organelle0 = getCompartmentGeneList(filter="Yes")
-    # getCompartment_manual_curation() # run the compartment curation preprocess. If update the compartment information, need to run this function
     #gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
     gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/gene_belong_plasma_membrane_annotations_old_version.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx")
     gene_nucleolus = pd.read_excel("data/sce_compartment_curation/nucleolus_annotations_v2.xlsx")
     gene_cytoplasm = pd.read_excel("data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx")
+    gene_cytosol = pd.read_excel("data/sce_compartment_curation/cytosol_annotations_v2.xlsx")
     gene_nucleus = pd.read_excel("data/sce_compartment_curation/nucleus_annotations_v2.xlsx")
     # mitochondrion specific
     gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrial_suborganelle.xlsx")
@@ -440,6 +441,8 @@ def gene_location_curation_sce(organelle0):
             genes_select = gene_nucleolus["gene"].tolist()  # for the test
         elif y == "cytoplasm":
             genes_select = gene_cytoplasm["gene"].tolist()  # for the test
+        elif y == "cytosol":
+            genes_select = gene_cytosol["gene"].tolist()  # for the test
         elif y == "mitochondrion":
             genes_select = gene_mitochondrion["gene"].tolist()  # for the test
         elif y == "mitochondrial outer membrane":

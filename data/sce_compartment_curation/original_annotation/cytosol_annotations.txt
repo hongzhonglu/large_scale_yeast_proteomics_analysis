@@ -1,0 +1,875 @@
+!
+!Date: 04/07/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+Importin complex, KAP60-KAP95	CPX-1068	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	ComplexPortal	2017-12-12	Enenkel C, et al. (1995) PMID:7622450
+UBP3-BRE5 ubiquitin hydrolase complex	CPX-1412	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	ComplexPortal	2018-02-14	Müller M, et al. (2015) PMID:25704822
+ATG12-ATG5 complex	CPX-1848	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	ComplexPortal	2016-02-16	Kuma A, et al. (2002) PMID:11897782
+GET4-GET5 transmembrane domain recognition complex	CPX-1861	located in	GO:0005829	cytosol	cellular component		BSR	manually curated	ComplexPortal	2018-01-05	Wang F, et al. (2010) PMID:20850366
+CFD1-NBP35 Fe-S cluster assembly complex	CPX-385	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	ComplexPortal	2016-04-11	Netz DJ, et al. (2007) PMID:17401378
+TAH18-DRE2 complex	CPX-386	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	ComplexPortal	2016-04-11	Vernis L, et al. (2009) PMID:19194512
+SSA1	YAL005C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FUN12	YAL035W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ACS1	YAL054C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-09-20	de Jong-Gubbels P, et al. (1998) PMID:9711835
+NUP60	YAR002W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+RFA1	YAR007C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ECM15	YBL001C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ACH1	YBL015W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-11-25	de Nobel H, et al. (2001) PMID:11746603
+POP8	YBL018C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+PRE7	YBL041W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEC17	YBL050W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-05-06	Lupashin VV, et al. (1996) PMID:8636207
+SHP1	YBL058W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+KTI11	YBL071W-A	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2022-02-18	Zhang Y, et al. (2021) PMID:34154323
+SSA3	YBL075C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2006-05-11	Satyanarayana C, et al. (2000) PMID:10745074
+ILS1	YBL076C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-01-17	Harris CL and Kolanko CJ (1995) PMID:7619074
+ATG8	YBL078C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SCS22	YBL091C-A	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ECM21	YBL101C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+KAP104	YBR017C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-01-25	Aitchison JD, et al. (1996) PMID:8849456
+GAL10	YBR019C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-09	Majumdar S, et al. (2004) PMID:14764091
+RKM3	YBR030W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+MRX18	YBR056W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TIP1	YBR067C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEC18	YBR080C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RXT2	YBR095C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+FES1	YBR101C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-03-21	Kabani M, et al. (2002) PMID:12052876
+VID24	YBR105C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CCZ1	YBR131W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ARA1	YBR149W	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2023-02-03	Kim ST, et al. (1998) PMID:9920381
+ARA1	YBR149W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-09-12	Kim ST, et al. (1998) PMID:9920381
+APD1	YBR151W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2021-11-09	Stegmaier K, et al. (2019) PMID:30879301
+SPP381	YBR152W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ARL1	YBR164C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ARL1	YBR164C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-19	Liu YW, et al. (2005) PMID:15975906
+SMY2	YBR172C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SDS24	YBR214W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG12	YBR217W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PYC2	YBR218C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-06-08	Haarasilta S and Taskinen L (1977) PMID:196563
+PYC2	YBR218C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-02-01	van Urk H, et al. (1989) PMID:2665820
+SWC5	YBR231C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ABD1	YBR236C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TAE1	YBR261C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-09-16	Webb KJ, et al. (2010) PMID:20481588
+HSM3	YBR272C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-06-04	Saeki Y, et al. (2009) PMID:19446323
+SNF5	YBR289W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YCL002C	YCL002C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+STP22	YCL008C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GBP2	YCL011C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+LEU2	YCL018W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-10	Ryan ED, et al. (1973) PMID:4355481
+RNQ1	YCL028W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-10-09	Derkatch IL, et al. (2001) PMID:11511345
+LSB5	YCL034W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GLK1	YCL040W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SPS22	YCL048W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+KAR4	YCL055W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FYV5	YCL058C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RVS161	YCR009C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PET18	YCR020C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-03-12	Mojzita D and Hohmann S (2006) PMID:16850348
+RHB1	YCR027C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+BPH1	YCR032W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-13	Shiflett SL, et al. (2004) PMID:15296494
+SNT1	YCR033W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YCR043C	YCR043C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SOL2	YCR073W-A	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-01-21	Stanford DR, et al. (2004) PMID:15454531
+MED2	YDL005C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YDL009C	YDL009C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YDL022C-A	YDL022C-A	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GPD1	YDL022W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-02-10	Valadi A, et al. (2004) PMID:15210723
+PEX19	YDL065C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEX19	YDL065C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Götte K, et al. (1998) PMID:9418908
+LUC7	YDL087C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+GET3	YDL100C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PHO2	YDL106C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+KIN28	YDL108W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+CDC48	YDL126C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CDC48	YDL126C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-08-08	Nita-Lazar M and Lennarz WJ (2005) PMID:15910746
+RDI1	YDL135C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RDI1	YDL135C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Johnson DI (1999) PMID:10066831
+ARF2	YDL137W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ARF1	YDL192W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GDH2	YDL215C	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2022-01-06	Schwencke J, et al. (1983) PMID:6343120
+GCS1	YDL226C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GYP7	YDL234C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG31	YDR022C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+HEM13	YDR044W	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2023-12-13	Camadro JM, et al. (1986) PMID:3516695
+HEM13	YDR044W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-03-17	Camadro JM, et al. (1986) PMID:3516695
+HEM12	YDR047W	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2023-12-13	Felix F and Brouillet N (1990) PMID:2180703
+VMS1	YDR049W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-02-15	Heo JM, et al. (2010) PMID:21070972
+DOA4	YDR069C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SNF11	YDR073W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TFB5	YDR079C-A	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+GIS1	YDR096W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+GRX3	YDR098C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-04-04	Kumánovics A, et al. (2008) PMID:18281282
+TRS85	YDR108W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+DOP1	YDR141C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEX7	YDR142C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-06-21	Nair DM, et al. (2004) PMID:15545321
+PEX7	YDR142C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-06-21	Marzioch M, et al. (1994) PMID:7957058
+TRM82	YDR165W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SEC7	YDR170C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Franzusoff A, et al. (1991) PMID:1986005
+SUP35	YDR172W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+HMO1	YDR174W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+UBC1	YDR177W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SCC2	YDR180W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SLY1	YDR189W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+REF2	YDR195W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+CAB5	YDR196C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GCD6	YDR211W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ADR1	YDR216W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SPR28	YDR218C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PCF11	YDR228C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+PEX5	YDR244W	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	UniProt	2022-08-24	Platta HW, et al. (2004) PMID:15283676
+PEX5	YDR244W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Elgersma Y, et al. (1996) PMID:8858166
+RMD5	YDR255C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-07-08	Regelmann J, et al. (2003) PMID:12686616
+CIA1	YDR267C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-10-07	Balk J, et al. (2005) PMID:16314508
+HDA2	YDR295C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TFB1	YDR311W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SWA2	YDR320C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SWR1	YDR334W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TRR1	YDR353W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-09-04	Kang HJ, et al. (2008) PMID:18406344
+GGA1	YDR358W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEM1	YDR363W-A	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-12-16	Jäntti J, et al. (1999) PMID:9927667
+VPS74	YDR372C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-04-22	Schmitz KR, et al. (2008) PMID:18410729
+FRQ1	YDR373W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ARO10	YDR380W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RVS167	YDR388W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SPT3	YDR392W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+DIT1	YDR403W	located in	GO:0005829	cytosol	cellular component	part of ascospore-type prospore	IDA	manually curated	SGD	2020-06-29	Basiony M, et al. (2020) PMID:32503197
+SYF1	YDR416W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SIP1	YDR422C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2019-09-10	Hedbacker K, et al. (2004) PMID:14966266
+RPN9	YDR427W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+PPN1	YDR452W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2015-03-10	Andreeva NA, et al. (2006) PMID:17009950
+SPP41	YDR464W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TRS31	YDR472W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS52	YDR484W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RIB3	YDR487C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-05-05	Jin C, et al. (2003) PMID:12595523
+PKH1	YDR490C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-10-08	Roelants FM, et al. (2002) PMID:12221112
+GRX2	YDR513W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-02-21	Pedrajas JR, et al. (2002) PMID:11958675
+GRH1	YDR517W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VAC8	YEL013W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+EAF5	YEL018W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+URA3	YEL021W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-04-30	Metzger MB, et al. (2008) PMID:18812321
+GEA2	YEL022W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GLY1	YEL046C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-05-06	van Maris AJ, et al. (2003) PMID:12676688
+FRD1	YEL047C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2004-08-12	Muratsubaki H and Enomoto K (1998) PMID:9587404
+TCA17	YEL048C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TMA20	YER007C-A	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2013-05-24	Aksnes H, et al. (2013) PMID:23613772
+GPA2	YER020W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YAT2	YER024W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-09-03	Franken J, et al. (2008) PMID:18427809
+GCD11	YER025W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GLN3	YER040W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-12-02	Cox KH, et al. (2002) PMID:12140287
+SPO73	YER046W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-01-27	Coluccio A, et al. (2004) PMID:15590821
+CAJ1	YER048C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2020-09-03	Dobriyal N, et al. (2020) PMID:32777224
+HMF1	YER057C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-09-26	Oxelmark E, et al. (2000) PMID:11003673
+TSC11	YER093C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RPL23B	YER117W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+RSP5	YER125W	is active in	GO:0005829	cytosol	cellular component		IMP	manually curated	SGD	2018-02-21	Fang NN, et al. (2014) PMID:25344756
+SAK1	YER129W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+UBP3	YER151C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SPT2	YER161C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+RAD4	YER162C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-02-17	Li Y, et al. (2010) PMID:19889839
+TMT1	YER175C	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2020-10-23	Cai H, et al. (2001) PMID:11695919
+TMT1	YER175C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-10-10	Cai H, et al. (2001) PMID:11695919
+IES1	YFL013C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+HSP12	YFL014W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-02-14	Welker S, et al. (2010) PMID:20797624
+AGX1	YFL030W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEC53	YFL045C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-10-01	Bernstein M, et al. (1985) PMID:3905826
+SWP82	YFL049W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YFL068W	YFL068W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RPN11	YFR004W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-10-07	Hofmann L, et al. (2009) PMID:19773362
+FAR7	YFR008W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG18	YFR021W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-11-19	Barth H, et al. (2001) PMID:11707261
+ROG3	YFR022W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CDC26	YFR036W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+HXK1	YFR053C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RPN14	YGL004C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-06-04	Saeki Y, et al. (2009) PMID:19446323
+COG7	YGL005C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PMA1	YGL008C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+LEU1	YGL009C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-10	Ryan ED, et al. (1973) PMID:4355481
+PDR1	YGL013C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+BIL2	YGL015C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2021-03-11	Rands TJ and Goode BL (2021) PMID:33634134
+RIM8	YGL045W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ALG13	YGL047W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ALG13	YGL047W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-11-09	Bickel T, et al. (2005) PMID:16100113
+PYC1	YGL062W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-05-12	Haarasilta S and Taskinen L (1977) PMID:196563
+PYC1	YGL062W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-02-01	van Urk H, et al. (1989) PMID:2665820
+SGF73	YGL066W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+NPY1	YGL067W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SCY1	YGL083W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS45	YGL095C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-02-27	Gerhardt B, et al. (1998) PMID:9624182
+LSG1	YGL099W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YGL108C	YGL108C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TAF6	YGL112C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SNF4	YGL115W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MON1	YGL124C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-03-31	Meiling-Wesse K, et al. (2002) PMID:12387888
+HUL5	YGL141W	is active in	GO:0005829	cytosol	cellular component		IMP	manually curated	SGD	2018-02-21	Fang NN, et al. (2014) PMID:25344756
+TIP20	YGL145W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SUA5	YGL169W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG1	YGL180W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG1	YGL180W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Straub M, et al. (1997) PMID:9190802
+GCN1	YGL195W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-08-02	Marton MJ, et al. (1997) PMID:9234705
+NCS6	YGL211W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-07-28	Nakai Y, et al. (2008) PMID:18664566
+BOL2	YGL220W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-04-04	Kumánovics A, et al. (2008) PMID:18281282
+RAI1	YGL246C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+HXK2	YGL253W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-06-09	Rodríguez A, et al. (2001) PMID:11311123
+HXK2	YGL253W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-06-09	Randez-Gil F, et al. (1998) PMID:9563516
+VEL1	YGL258W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-11	Terashima H, et al. (2002) PMID:11935221
+SEC9	YGR009C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+UGA1	YGR019W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2013-06-11	Cao J, et al. (2013) PMID:23740823
+POP6	YGR030C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ACB1	YGR037C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+UFD1	YGR048W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+LST7	YGR057C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEF1	YGR058W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-16	Yoshibori M, et al. (2012) PMID:22792405
+SPR3	YGR059W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ART5	YGR068C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SMD1	YGR074W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+GCD2	YGR083C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+DRN1	YGR093W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+COG2	YGR120C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SYF2	YGR129W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+CAF130	YGR134W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+BTN2	YGR142W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-02-06	Chattopadhyay S, et al. (2000) PMID:11053386
+BTN2	YGR142W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-12-03	Malinovska L, et al. (2012) PMID:22718905
+THI4	YGR144W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2004-12-12	Faou P and Tropschug M (2004) PMID:15544818
+THI4	YGR144W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-03-12	Mojzita D and Hohmann S (2006) PMID:16850348
+PTI1	YGR156W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TDH3	YGR192C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TDH3	YGR192C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2017-03-17	Delgado ML, et al. (2001) PMID:11158358
+TDH3	YGR192C	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2021-12-16	Delgado ML, et al. (2001) PMID:11158358
+YPP1	YGR198W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YPP1	YGR198W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-06-27	Flower TR, et al. (2007) PMID:17576801
+MVB12	YGR206W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MVB12	YGR206W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-03-05	Chu T, et al. (2006) PMID:17145965
+TRX2	YGR209C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Xu Z and Wickner W (1996) PMID:8603912
+NAS6	YGR232W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-06-04	Saeki Y, et al. (2009) PMID:19446323
+PHO81	YGR233C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YHB1	YGR234W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-02-21	Cassanova N, et al. (2005) PMID:15611069
+PEX21	YGR239C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Purdue PE, et al. (1998) PMID:9864360
+YAP1802	YGR241C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SOL4	YGR248W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-01-21	Stanford DR, et al. (2004) PMID:15454531
+GCN5	YGR252W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ENO1	YGR254W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+APL6	YGR261C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YTA7	YGR270W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TAF1	YGR274C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SNF6	YHL025W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ECM34	YHL043W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+OSH7	YHR001W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GPA1	YHR005C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GPA1	YHR005C	is active in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2022-10-28	Yofe I, et al. (2016) PMID:26928762
+YSC84	YHR016C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ARG4	YHR018C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Jauniaux JC, et al. (1978) PMID:205532
+DED81	YHR019C	located in	GO:0005829	cytosol	cellular component		IC with asparagine-tRNA ligase activity	manually curated	SGD	2012-06-01	Landrieu I, et al. (1998) PMID:9605503
+DED81	YHR019C	located in	GO:0005829	cytosol	cellular component		IC with asparaginyl-tRNA aminoacylation	manually curated	SGD	2012-06-01	Landrieu I, et al. (1998) PMID:9605503
+SLT2	YHR030C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+NEL1	YHR035W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2014-07-11	Kodera C, et al. (2014) PMID:24947508
+CUP1-1	YHR053C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CUP1-1	YHR053C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-07-22	Wright CF, et al. (1987) PMID:3308865
+CUP1-2	YHR055C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CUP1-2	YHR055C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-07-22	Wright CF, et al. (1987) PMID:3308865
+RPP1	YHR062C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+OSH3	YHR073W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+IPI1	YHR085W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YNG2	YHR090C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+CTM1	YHR109W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Polevoda B, et al. (2000) PMID:10791961
+YHR131C	YHR131C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+NSG1	YHR133C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+PEX28	YHR150W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+LAM1	YHR155W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEX18	YHR160C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Purdue PE, et al. (1998) PMID:9864360
+NMD3	YHR170W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Ho JH and Johnson AW (1999) PMID:10022925
+ATG7	YHR171W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG7	YHR171W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-10-17	Tanida I, et al. (1999) PMID:10233150
+ENO2	YHR174W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FMO1	YHR176W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RIX1	YHR197W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SMN1	YHR202W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-13	Terashima H, et al. (2002) PMID:11935221
+SKN7	YHR206W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+NAS2	YIL007C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-06-04	Saeki Y, et al. (2009) PMID:19446323
+EST3	YIL009C-A	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+IRR1	YIL026C	located in	GO:0005829	cytosol	cellular component	existence overlaps cellular response to hypoxia	IDA	manually curated	SGD	2021-09-30	Dastidar RG, et al. (2012) PMID:22932476
+CST6	YIL036W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+GVP36	YIL041W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AGE2	YIL044C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YRB2	YIL063C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SDS3	YIL084C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SHQ1	YIL104C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+RHO3	YIL118W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-06-07	Robinson NG, et al. (1999) PMID:10207081
+FKH1	YIL131C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SSL2	YIL143C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+DJP1	YIR004W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-09-27	Hettema EH, et al. (1998) PMID:9679141
+EGH1	YIR007W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2015-07-09	Watanabe T, et al. (2015) PMID:26116408
+SQT1	YIR012W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Eisinger DP, et al. (1997) PMID:9271392
+DAL7	YIR031C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+HYR1	YIR037W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CYR1	YJL005W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CTK2	YJL006C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+RPC17	YJL011C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+VPS53	YJL029C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+BET4	YJL031C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SNX4	YJL036W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SNX4	YJL036W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-05-30	Nice DC, et al. (2002) PMID:12048214
+LOH1	YJL038C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GYP6	YJL044C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TDH1	YJL052W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TDH1	YJL052W	located in	GO:0005829	cytosol	cellular component	exists during G1 to G0 transition	IDA	manually curated	SGD	2017-03-17	Delgado ML, et al. (2001) PMID:11158358
+NUP82	YJL061W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YJL068C	YJL068C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-11-26	Degrassi G, et al. (1999) PMID:10427036
+ALY2	YJL084C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ARG3	YJL088W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Jauniaux JC, et al. (1978) PMID:205532
+CHS6	YJL099W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MEF2	YJL102W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ASF1	YJL115W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+RPE1	YJL121C	located in	GO:0005829	cytosol	cellular component		TAS	manually curated	SGD	2002-11-01	Maaheimo H, et al. (2001) PMID:11298766
+SFH5	YJL145W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-10-01	Schnabl M, et al. (2003) PMID:12869188
+SFH5	YJL145W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-09-12	Yakir-Tamang L and Gerst JE (2009) PMID:19477927
+HSP150	YJL159W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SET2	YJL168C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SWI3	YJL176C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+NCE101	YJL205C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+NUC1	YJL208C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2019-08-20	Gao J, et al. (2019) PMID:31266891
+POL31	YJR006W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TDH2	YJR009C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TDH2	YJR009C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2017-03-17	Delgado ML, et al. (2001) PMID:11158358
+CPR7	YJR032W	located in	GO:0005829	cytosol	cellular component		IPI with CPR6	manually curated	SGD	2018-06-07	Mayr C, et al. (2000) PMID:10942767
+NPA3	YJR072C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS25	YJR102C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SOD1	YJR104C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-10-01	Sturtz LA, et al. (2001) PMID:11500508
+SOD1	YJR104C	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2023-01-19	Switzer CH, et al. (2023) PMID:36630448
+IPA1	YJR141W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2018-04-20	Lutz AP, et al. (2018) PMID:29519818
+CDC16	YKL022C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+GPX1	YKL026C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS24	YKL041W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TMA19	YKL056C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-01-03	Rinnerthaler M, et al. (2006) PMID:16806052
+MPE1	YKL059C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+FBA1	YKL060C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-01-04	Rinnerthaler M, et al. (2006) PMID:16806052
+MSN4	YKL062W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-10-19	Jacquet M, et al. (2003) PMID:12732613
+MSN4	YKL062W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-10-19	Görner W, et al. (1998) PMID:9472026
+YNK1	YKL067W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-03-24	Amutha B and Pain D (2003) PMID:12472466
+YKL069W	YKL069W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AAN1	YKL075C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2022-05-23	Sing CN, et al. (2022) PMID:35577788
+CWP2	YKL096W-A	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RAD27	YKL113C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YPK1	YKL126W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-10-07	Sun Y, et al. (2000) PMID:10825204
+YPK1	YKL126W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-03-19	Roelants FM, et al. (2002) PMID:12221112
+SHE2	YKL130C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+APL2	YKL135C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GPM1	YKL152C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-06-06	Bataillé N, et al. (1987) PMID:3332961
+LST4	YKL176C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FAS1	YKL182W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-08-03	Klein HP, et al. (1967) PMID:6025308
+YKT6	YKL196C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEX1	YKL197C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ADD66	YKL206C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-10-24	Scott CM, et al. (2007) PMID:17634286
+VPS1	YKR001C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MEH1	YKR007W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS51	YKR020W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ALY1	YKR021W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GCN3	YKR026C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+BET3	YKR068C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+DRE2	YKR071C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-07-23	Zhang Y, et al. (2008) PMID:18625724
+MTD1	YKR080W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-11-04	West MG, et al. (1996) PMID:8608153
+NUP133	YKR082W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+HBS1	YKR084C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PCK1	YKR097W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-06-08	Haarasilta S and Taskinen L (1977) PMID:196563
+DNM1	YLL001W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2016-11-17	Naylor K, et al. (2006) PMID:16272155
+COX17	YLL009C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Beers J, et al. (1997) PMID:9407107
+PSR1	YLL010C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+COX19	YLL018C-A	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-04-15	Nobrega MP, et al. (2002) PMID:12171940
+SSA2	YLL024C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-01-04	Rinnerthaler M, et al. (2006) PMID:16806052
+FRA1	YLL029W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-04-04	Kumánovics A, et al. (2008) PMID:18281282
+PRP19	YLL036C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ENT4	YLL038C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AQY2	YLL052C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+LOT6	YLR011W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-02-20	Sollner S, et al. (2007) PMID:17298444
+PSR2	YLR019W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AAT2	YLR027C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-01-21	Verleur N, et al. (1997) PMID:9288922
+ADE16	YLR028C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-06-26	Tibbetts AS and Appling DR (2000) PMID:10877846
+RIC1	YLR039C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TRX1	YLR043C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TRX1	YLR043C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Xu Z and Wickner W (1996) PMID:8603912
+TRX1	YLR043C	located in	GO:0005829	cytosol	cellular component		IPI with PBI2	manually curated	SGD	2019-07-18	Slusarewicz P, et al. (1997) PMID:9159115
+PDC1	YLR044C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-02-01	van Urk H, et al. (1989) PMID:2665820
+MEF1	YLR069C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AHP1	YLR109W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MSL5	YLR116W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ACE2	YLR131C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-10-12	Dohrmann PR, et al. (1992) PMID:1730413
+ACE2	YLR131C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-10-12	Archambault V, et al. (2004) PMID:15200949
+PCD1	YLR151C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ACS2	YLR153C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2006-11-07	Takahashi H, et al. (2006) PMID:16857587
+ACS2	YLR153C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-09-20	de Jong-Gubbels P, et al. (1998) PMID:9711835
+IDP2	YLR174W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-07-08	Contreras-Shannon V and McAlister-Henn L (2004) PMID:15001388
+IDP2	YLR174W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2014-05-14	Lu Q and McAlister-Henn L (2010) PMID:19854152
+NMT1	YLR195C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-05-28	Knoll LJ, et al. (1992) PMID:1544917
+VPS34	YLR240W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+LCB5	YLR260W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YPT6	YLR262C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2016-01-09	Kawamura S, et al. (2014) PMID:24924636
+GCD7	YLR291C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GSP1	YLR293C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+HRI1	YLR301W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ACO1	YLR304C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-04-18	Regev-Rudzki N, et al. (2005) PMID:15975908
+IMH1	YLR309C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-09-26	Tsukada M, et al. (1999) PMID:9880327
+CDC25	YLR310C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-04-01	Tisi R, et al. (2008) PMID:18930081
+CHS5	YLR330W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PSY3	YLR376C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FBP1	YLR377C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-08-13	Regelmann J, et al. (2003) PMID:12686616
+FBP1	YLR377C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-06-08	Haarasilta S and Taskinen L (1977) PMID:196563
+CSR1	YLR380W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CSR1	YLR380W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-10-01	Schnabl M, et al. (2003) PMID:12869188
+VPS33	YLR396C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-08-27	Gerhardt B, et al. (1998) PMID:9624182
+CAR2	YLR438W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-07-15	Jauniaux JC, et al. (1978) PMID:205532
+PDP3	YLR455W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TSA1	YML028W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-04-02	Trotter EW, et al. (2008) PMID:18271751
+COG8	YML071C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS9	YML097C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS9	YML097C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2013-05-20	Paulsel AL, et al. (2013) PMID:23612966
+VPS9	YML097C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-08-27	Burd CG, et al. (1996) PMID:8628304
+CAC2	YML102W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+DAT1	YML113W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YML131W	YML131W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SOK2	YMR016C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+PEX9	YMR018W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2017-05-11	Effelsberg D, et al. (2016) PMID:27678487
+MSS1	YMR023C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TAP42	YMR028W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-14	Yan G, et al. (2006) PMID:16874307
+FAR8	YMR029C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MSN2	YMR037C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-01-30	Mayordomo I, et al. (2002) PMID:12093809
+MSN2	YMR037C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-10-19	Jacquet M, et al. (2003) PMID:12732613
+MSN2	YMR037C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2011-10-19	Görner W, et al. (1998) PMID:9472026
+CCS1	YMR038C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-09-19	Culotta VC, et al. (1997) PMID:9295278
+MCM1	YMR043W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+RNA14	YMR061W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+AVO2	YMR068W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MOT3	YMR070W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+PDS5	YMR076C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+VPS20	YMR077C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEC14	YMR079W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEC14	YMR079W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-09-12	Schnabl M, et al. (2003) PMID:12869188
+SEC14	YMR079W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-08-06	Bankaitis VA, et al. (1989) PMID:2466847
+ADE17	YMR120C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-06-26	Tibbetts AS and Appling DR (2000) PMID:10877846
+ATG16	YMR159C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PAH1	YMR165C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PAH1	YMR165C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-15	Han GS, et al. (2006) PMID:16467296
+DDR48	YMR173W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RGM1	YMR182C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ERG12	YMR208W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RNA1	YMR235C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-07-31	Hopper AK, et al. (1990) PMID:2116418
+RNA1	YMR235C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-10-21	Traglia HM, et al. (1996) PMID:8755533
+FCP1	YMR277W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+UBP15	YMR304W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2015-04-27	Debelyy MO, et al. (2011) PMID:21665945
+TRN1	YNCA0002W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+TGA1	YNCA0004W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP56	YNCA0005W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCA0006C	YNCA0006C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0001W	YNCB0001W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0002W	YNCB0002W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0004W	YNCB0004W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0005C	YNCB0005C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0006W	YNCB0006W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0007W	YNCB0007W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0011C	YNCB0011C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0012W	YNCB0012W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0013W	YNCB0013W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0015W	YNCB0015W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0016W	YNCB0016W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0017C	YNCB0017C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCB0018W	YNCB0018W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCC0001C	YNCC0001C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP53	YNCC0002W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF2	YNCC0004C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCC0005W	YNCC0005W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF16	YNCC0007C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCC0008W	YNCC0008W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCC0009C	YNCC0009C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCC0010C	YNCC0010C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+SUP61	YNCC0013W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCC0014W	YNCC0014W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0001W	YNCD0001W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0003W	YNCD0003W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0004W	YNCD0004W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0005C	YNCD0005C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0006W	YNCD0006W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0007C	YNCD0007C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0008W	YNCD0008W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0009W	YNCD0009W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+YNCD0011W	YNCD0011W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0012W	YNCD0012W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0013C	YNCD0013C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0014C	YNCD0014C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+YNCD0015C	YNCD0015C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0016C	YNCD0016C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+YNCD0017W	YNCD0017W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP2	YNCD0018W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0019C	YNCD0019C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0020W	YNCD0020W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0021C	YNCD0021C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0022C	YNCD0022C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0023C	YNCD0023C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0024C	YNCD0024C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+EMT1	YNCD0025W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0026W	YNCD0026W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+SUF3	YNCD0027C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0028W	YNCD0028W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCD0029C	YNCD0029C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCD0031C	YNCD0031C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0004C	YNCE0004C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0005W	YNCE0005W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+IMT4	YNCE0006W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0008C	YNCE0008C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+YNCE0009C	YNCE0009C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCE0010W	YNCE0010W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0012W	YNCE0012W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0013W	YNCE0013W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0014W	YNCE0014W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+SUP19	YNCE0015C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0016C	YNCE0016C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0018W	YNCE0018W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0021C	YNCE0021C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0022C	YNCE0022C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCE0023W	YNCE0023W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0025C	YNCE0025C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0026W	YNCE0026W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0027C	YNCE0027C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0028C	YNCE0028C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCE0029C	YNCE0029C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF9	YNCF0002W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCF0004C	YNCF0004C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCF0005C	YNCF0005C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF20	YNCF0006W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP11	YNCF0007W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCF0008C	YNCF0008C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCF0009C	YNCF0009C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCF0011C	YNCF0011C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP6	YNCF0012C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCF0014C	YNCF0014C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCG0002C	YNCG0002C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0003C	YNCG0003C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0004W	YNCG0004W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0005W	YNCG0005W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCG0007C	YNCG0007C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCG0008W	YNCG0008W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0009C	YNCG0009C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0011W	YNCG0011W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SOE1	YNCG0012W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0016C	YNCG0016C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0017W	YNCG0017W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0018C	YNCG0018C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP54	YNCG0019W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0020C	YNCG0020C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0021W	YNCG0021W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0022W	YNCG0022W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0023C	YNCG0023C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0025C	YNCG0025C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0027W	YNCG0027W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0028W	YNCG0028W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0029C	YNCG0029C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0030C	YNCG0030C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0031W	YNCG0031W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0032W	YNCG0032W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0033W	YNCG0033W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0034W	YNCG0034W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF4	YNCG0035W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0036W	YNCG0036W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0037W	YNCG0037W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0038C	YNCG0038C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0039W	YNCG0039W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0040C	YNCG0040C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0041W	YNCG0041W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCG0042C	YNCG0042C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0043C	YNCG0043C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCG0046W	YNCG0046W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0001W	YNCH0001W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0002C	YNCH0002C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0003C	YNCH0003C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0004C	YNCH0004C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0005W	YNCH0005W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+YNCH0006C	YNCH0006C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0009C	YNCH0009C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0010C	YNCH0010C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF8	YNCH0013C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0015W	YNCH0015W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCH0016C	YNCH0016C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCI0002W	YNCI0002W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCI0003C	YNCI0003C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCI0004W	YNCI0004W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCI0005W	YNCI0005W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP17	YNCI0006W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCI0007C	YNCI0007C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCI0008C	YNCI0008C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCI0009W	YNCI0009W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCI0010C	YNCI0010C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCI0011W	YNCI0011W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0001C	YNCJ0001C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0002C	YNCJ0002C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0005C	YNCJ0005C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0006W	YNCJ0006W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0008W	YNCJ0008W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP7	YNCJ0010W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0011W	YNCJ0011W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0012W	YNCJ0012W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0013C	YNCJ0013C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0014C	YNCJ0014C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0015W	YNCJ0015W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+EMT5	YNCJ0016C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0017C	YNCJ0017C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0018W	YNCJ0018W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCJ0019C	YNCJ0019C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+EMT3	YNCJ0020W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP51	YNCJ0021C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+IMT3	YNCJ0022C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0023C	YNCJ0023C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF23	YNCJ0024W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+HSX1	YNCJ0025W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0026W	YNCJ0026W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP4	YNCJ0027C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCJ0029W	YNCJ0029W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+TRT2	YNCK0002C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0003W	YNCK0003W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0004W	YNCK0004W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0005C	YNCK0005C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0006C	YNCK0006C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0007W	YNCK0007W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCK0008W	YNCK0008W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0010W	YNCK0010W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0011C	YNCK0011C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0012C	YNCK0012C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0014W	YNCK0014W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0016W	YNCK0016W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0017W	YNCK0017W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0018C	YNCK0018C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0019W	YNCK0019W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCK0021W	YNCK0021W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0001W	YNCL0001W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0002C	YNCL0002C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0004C	YNCL0004C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0007W	YNCL0007W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0008W	YNCL0008W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0009C	YNCL0009C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+YNCL0032C	YNCL0032C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0033C	YNCL0033C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0034W	YNCL0034W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0035C	YNCL0035C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0036C	YNCL0036C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0037W	YNCL0037W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0038W	YNCL0038W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0039W	YNCL0039W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0040W	YNCL0040W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0044W	YNCL0044W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+TRR4	YNCL0045W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0047W	YNCL0047W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0049C	YNCL0049C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0050C	YNCL0050C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCL0051C	YNCL0051C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0004C	YNCM0004C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP5	YNCM0006W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0007C	YNCM0007C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF7	YNCM0008C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0009C	YNCM0009C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0010W	YNCM0010W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0018C	YNCM0018C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0019W	YNCM0019W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0020W	YNCM0020W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0021C	YNCM0021C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0022C	YNCM0022C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0023C	YNCM0023C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0024W	YNCM0024W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0025C	YNCM0025C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCM0027W	YNCM0027W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+EMT4	YNCM0028C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0029C	YNCM0029C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0033C	YNCM0033C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCM0035C	YNCM0035C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+CDC65	YNCM0036C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+SUP8	YNCM0037W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF6	YNCN0002C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0003W	YNCN0003W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0004W	YNCN0004W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0006W	YNCN0006W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0007W	YNCN0007W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0008C	YNCN0008C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0009W	YNCN0009W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0010C	YNCN0010C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0011W	YNCN0011W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0012C	YNCN0012C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0015W	YNCN0015W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF10	YNCN0016C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0017W	YNCN0017W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCN0020C	YNCN0020C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF1	YNCO0001C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0002W	YNCO0002W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0004C	YNCO0004C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0005W	YNCO0005W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0008W	YNCO0008W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF17	YNCO0009W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP3	YNCO0010W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0011W	YNCO0011W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0012C	YNCO0012C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0013C	YNCO0013C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0016W	YNCO0016W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF11	YNCO0017W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0018W	YNCO0018W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0019W	YNCO0019W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+SUF5	YNCO0020C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0021C	YNCO0021C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+IMT1	YNCO0023W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0029C	YNCO0029C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+EMT2	YNCO0030W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCO0031W	YNCO0031W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0001C	YNCP0001C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0004C	YNCP0004C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+IMT2	YNCP0006C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0007C	YNCP0007C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0008C	YNCP0008C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0009W	YNCP0009W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0010W	YNCP0010W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-03-01	Tarassov IA and Martin RP (1996) PMID:8915539
+YNCP0011C	YNCP0011C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+SUP16	YNCP0012W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0016W	YNCP0016W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0017C	YNCP0017C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2015-07-30	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0018C	YNCP0018C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0019W	YNCP0019W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0020W	YNCP0020W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0022W	YNCP0022W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0023W	YNCP0023W	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+YNCP0024C	YNCP0024C	located in	GO:0005829	cytosol	cellular component		IC with triplet codon-amino acid adaptor activity	manually curated	SGD	2003-05-07	Lowe TM and Eddy SR (1997) PMID:9023104
+LST8	YNL006W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SIS1	YNL007C	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2021-01-22	Klaips CL, et al. (2020) PMID:33293525
+PBI2	YNL015W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PBI2	YNL015W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2019-07-18	Slusarewicz P, et al. (1997) PMID:9159115
+SIW14	YNL032W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YNL035C	YNL035C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+COG5	YNL051W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YDJ1	YNL064C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YDJ1	YNL064C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2006-11-30	Caplan AJ and Douglas MG (1991) PMID:1869583
+YDJ1	YNL064C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-08-06	Cyr DM and Douglas MG (1994) PMID:8144572
+FKH2	YNL068C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+MLF3	YNL074C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PLS1	YNL097C-B	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+MLS1	YNL117W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MLS1	YNL117W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2013-03-19	Kunze M, et al. (2002) PMID:11846793
+FAR11	YNL127W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RIA1	YNL163C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SKO1	YNL167C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-01-27	Pascual-Ahuir A, et al. (2001) PMID:11500510
+NPR1	YNL183C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RIO2	YNL207W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-03-25	Vanrobays E, et al. (2003) PMID:12612080
+RAP1	YNL216W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+JJJ1	YNL227C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+JJJ1	YNL227C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-01-31	Meyer AE, et al. (2007) PMID:17242366
+PDR16	YNL231C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+NAR1	YNL240C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2004-12-08	Balk J, et al. (2004) PMID:15103330
+ATG2	YNL242W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS75	YNL246W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+CRS1	YNL247W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2019-08-12	Nishimura A, et al. (2019) PMID:31350340
+DSL1	YNL258C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATX1	YNL259C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-06-07	Lin SJ, et al. (1997) PMID:9083054
+PDR17	YNL264C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PDR17	YNL264C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-09-12	Schnabl M, et al. (2003) PMID:12869188
+SEC2	YNL272C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-07-29	Ortiz D, et al. (2002) PMID:12045183
+TOF1	YNL273W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+POP3	YNL282W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+RFC3	YNL290W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+MSB3	YNL293W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2013-03-06	Lachmann J, et al. (2012) PMID:22593206
+TOS6	YNL300W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEX6	YNL329C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-06-29	Birschmann I, et al. (2003) PMID:12808025
+ATG3	YNR007C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CSE2	YNR010W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ACC1	YNR016C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SNF12	YNR023W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+MPP6	YNR024W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SSK2	YNR031C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-02-14	Yuzyuk T, et al. (2002) PMID:12181352
+EGO4	YNR034W-A	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2015-08-04	Powis K, et al. (2015) PMID:26206314
+ARC35	YNR035C	located in	GO:0005829	cytosol	cellular component		IPI	manually curated	SGD	2004-10-31	Schaerer-Brodbeck C and Riezman H (2003) PMID:14554195
+MSO1	YNR049C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+BRE5	YNR051C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PDR18	YNR070W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AIM39	YOL053W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+THI20	YOL055C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-03-12	Mojzita D and Hohmann S (2006) PMID:16850348
+ARG1	YOL058W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Jauniaux JC, et al. (1978) PMID:205532
+GPD2	YOL059W	located in	GO:0005829	cytosol	cellular component		TAS	manually curated	SGD	2002-09-30	Overkamp KM, et al. (2000) PMID:10781551
+APM4	YOL062C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+IRA2	YOL081W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG19	YOL082W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG34	YOL083W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RFC4	YOL094C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+PAP2	YOL115W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+MDH2	YOL126C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2008-09-11	Minard KI and McAlister-Henn L (1991) PMID:1986231
+RTC1	YOL138C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ROD1	YOR018W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+HIR2	YOR038C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+SGT1	YOR057W	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2022-04-08	Eisele F, et al. (2021) PMID:34192536
+VPS5	YOR069W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-07-12	Nothwehr SF and Hindes AE (1997) PMID:9175702
+SKI7	YOR076C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CMR2	YOR093C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ARF3	YOR094W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AZF1	YOR113W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+TRS33	YOR115C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RIO1	YOR119C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2021-11-22	Iacovella MG, et al. (2018) PMID:30011030
+PFY1	YOR122C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-06-17	Ostrander DB, et al. (1995) PMID:7592954
+EFT1	YOR133W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PUP1	YOR157C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GLN4	YOR168W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-10-18	Rinehart J, et al. (2005) PMID:15706032
+MCA1	YOR197W	located in	GO:0005829	cytosol	cellular component	exists during response to heat	IDA	manually curated	SGD	2020-10-20	Hill SM, et al. (2014) PMID:24855027
+WTM2	YOR229W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+GCD1	YOR260W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MOD5	YOR274W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-09-03	Tolerico LH, et al. (1999) PMID:9872948
+YOR302W	YOR302W	located in	GO:0005829	cytosol	cellular component		IC with translation regulator activity	manually curated	SGD	2003-02-12	Wang Z, et al. (1999) PMID:10608810
+LDB19	YOR322C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-02-24	MacGurn JA, et al. (2011) PMID:22118465
+LDB19	YOR322C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SNX3	YOR357C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-06-17	Voos W and Stevens TH (1998) PMID:9456318
+VTS1	YOR359W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-10-18	Dilcher M, et al. (2001) PMID:11445562
+MRS6	YOR370C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FDH1	YOR388C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-01-29	Overkamp KM, et al. (2002) PMID:11921099
+PAU21	YOR394W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ARL3	YPL051W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ALD6	YPL061W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-01-04	Rinnerthaler M, et al. (2006) PMID:16806052
+ALD6	YPL061W	located in	GO:0005829	cytosol	cellular component		IMP	manually curated	SGD	2009-08-21	Meaden PG, et al. (1997) PMID:9392076
+VPS28	YPL065W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MUK1	YPL070W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MUK1	YPL070W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2013-05-20	Paulsel AL, et al. (2013) PMID:23612966
+BRO1	YPL084W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YPL088W	YPL088W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2020-06-30	Garapati HS, et al. (2020) PMID:31945465
+GLR1	YPL091W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2013-05-24	Aksnes H, et al. (2013) PMID:23613772
+PNG1	YPL096W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2001-01-18	Suzuki T, et al. (2000) PMID:10831608
+PNG1	YPL096W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2005-08-08	Nita-Lazar M and Lennarz WJ (2005) PMID:15910746
+ATG21	YPL100W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-08-14	Barth H, et al. (2002) PMID:11852075
+CAR1	YPL111W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2010-07-15	Jauniaux JC, et al. (1978) PMID:205532
+IDI1	YPL117C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS30	YPL120W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RNY1	YPL123C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RNY1	YPL123C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2009-04-08	Thompson DM and Parker R (2009) PMID:19332891
+SPP1	YPL138C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+MKK2	YPL140C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+KES1	YPL145C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG5	YPL149W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG5	YPL149W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2003-04-10	Kuma A, et al. (2002) PMID:11897782
+RAD53	YPL153C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+ATG29	YPL166W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SPT14	YPL175W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YIG1	YPL201C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2006-01-11	Granath K, et al. (2005) PMID:16358322
+TPK2	YPL203W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+HRR25	YPL204W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+THI6	YPL214C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-03-12	Mojzita D and Hohmann S (2006) PMID:16850348
+FAS2	YPL231W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FAS2	YPL231W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2007-08-03	Klein HP, et al. (1967) PMID:6025308
+GYP5	YPL249C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GYP5	YPL249C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-12-10	De Antoni A, et al. (2002) PMID:12189143
+FUM1	YPL262W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-12-02	Sass E, et al. (2001) PMID:11585823
+FDH2	YPL275W	located in	GO:0005829	cytosol	cellular component		ISS with FDH1	manually curated	SGD	2013-02-08	Overkamp KM, et al. (2002) PMID:11921099
+YPL276W	YPL276W	located in	GO:0005829	cytosol	cellular component		ISS with FDH1	manually curated	SGD	2013-02-08	Overkamp KM, et al. (2002) PMID:11921099
+MIN8	YPR010C-A	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+DSS4	YPR017C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+DSS4	YPR017C	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2012-08-14	Collins RN, et al. (1997) PMID:9218467
+CSR2	YPR030W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SRO7	YPR032W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SRO7	YPR032W	located in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2002-07-08	Lehman K, et al. (1999) PMID:10402465
+TEF1	YPR080W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PRE2	YPR103W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+COG4	YPR105C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YTH1	YPR107C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+NOC4	YPR144C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+YPR159C-A	YPR159C-A	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+BET2	YPR176C	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+HDA3	YPR179C	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2017-04-17	Dastidar RG, et al. (2012) PMID:22932476
+AOS1	YPR180W	located in	GO:0005829	cytosol	cellular component	exists during cellular response to hypoxia	IDA	manually curated	SGD	2015-01-21	Dastidar RG, et al. (2012) PMID:22932476
+ATG13	YPR185W	located in	GO:0005829	cytosol	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MPR1	YSC0029	is active in	GO:0005829	cytosol	cellular component		IDA	manually curated	SGD	2021-09-20	Nishimura A, et al. (2010) PMID:20550582
