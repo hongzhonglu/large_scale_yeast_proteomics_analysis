@@ -395,6 +395,11 @@ def getCompartment_manual_curation():
 
 
 # when running the following function, please firstly run function - getCompartment_manual_curation
+gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
+gene_anotation = pd.read_excel("data/sce_gene_annotation_SGD.xlsx")
+gene_anotation_for_cell_wall = gene_anotation[gene_anotation['ID'].isin(gene_cell_wall['gene'])]
+#gene_anotation_for_cell_wall.to_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
+
 def gene_location_curation_sce(organelle0):
     # use some manually checked gene compartment definion
     # if the manual curated gene number for one compartment is larger, nealy equal to computational, then use the manual curation
@@ -403,8 +408,8 @@ def gene_location_curation_sce(organelle0):
     organelle0 = getCompartmentGeneList(filter="Yes")
     getCompartment_manual_curation() # run the compartment curation preprocess.
     #gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
-    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations.xlsx")
-    gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
+    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/gene_belong_plasma_membrane_annotations_old_version.xlsx")
+    gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx")
     gene_nucleolus = pd.read_excel("data/sce_compartment_curation/nucleolus_annotations_v2.xlsx")
     gene_cytoplasm = pd.read_excel("data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx")

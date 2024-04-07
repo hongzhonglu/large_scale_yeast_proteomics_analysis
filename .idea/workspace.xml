@@ -11,6 +11,8 @@
       <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$ProMassRatio_across_compartment_combine S. cerevisiae.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" afterDir="false" />
@@ -18,6 +20,8 @@
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_envelope_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_envelope_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_membrane_annotations_computational_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" afterDir="false" />
@@ -444,12 +448,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>616</line>
+          <line>621</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>656</line>
+          <line>661</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
