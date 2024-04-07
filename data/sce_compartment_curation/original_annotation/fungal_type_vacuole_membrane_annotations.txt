@@ -1,0 +1,370 @@
+!
+!Date: 04/07/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+Vacuolar proton translocating ATPase complex, vacuole variant	CPX-1193	located in	GO:0000329	fungal-type vacuole membrane	cellular component		BSR	manually curated	ComplexPortal	2021-10-18	Vasanthakumar T, et al. (2019) PMID:30910982
+MYO2-VAC17-VAC8 transport complex	CPX-1304	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	ComplexPortal	2018-03-27	Tang F, et al. (2003) PMID:12594460
+EGO complex	CPX-3172	located in	GO:0000329	fungal-type vacuole membrane	cellular component		BSR	manually curated	ComplexPortal	2020-08-08	Powis K, et al. (2015) PMID:26206314
+Vacuolar SNARE complex SSO1-SEC9-NYV1	CPX-5521	located in	GO:0000329	fungal-type vacuole membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Wen W, et al. (2006) PMID:16855025
+FET5-FTH1 high affinity iron exporter complex	CPX-869	located in	GO:0000329	fungal-type vacuole membrane	cellular component		BSR	manually curated	ComplexPortal	2017-01-31	Urbanowski JL and Piper RC (1999) PMID:10608875
+SSA1	YAL005C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-03-06	Satyanarayana C, et al. (2000) PMID:10745074
+FUN26	YAL022C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FUN26	YAL022C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+FUN26	YAL022C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-03-21	Lu SP and Lin SJ (2011) PMID:21349851
+UIP3	YAR027W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+KTD1	YAR028W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+KTD1	YAR028W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEC17	YBL050W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEC17	YBL050W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+ATG8	YBL078C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IPI with NYV1	manually curated	SGD	2011-03-31	Legesse-Miller A, et al. (2000) PMID:10837468
+ATG8	YBL078C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-03-31	Legesse-Miller A, et al. (2000) PMID:10837468
+FAT1	YBR041W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PFF1	YBR074W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+PFF1	YBR074W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PFF1	YBR074W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-05-29	Hecht KA, et al. (2013) PMID:23679341
+SLM4	YBR077C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SLM4	YBR077C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SLM4	YBR077C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-07-18	Dubouloz F, et al. (2005) PMID:15989961
+SLM4	YBR077C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-06-25	Matsumoto R, et al. (2013) PMID:23708375
+VPS15	YBR097W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA2	YBR127C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA2	YBR127C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+VMA2	YBR127C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2008-09-26	Makrantoni V, et al. (2007) PMID:18048916
+ATG14	YBR128C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2008-05-20	Obara K, et al. (2006) PMID:16421251
+AGP2	YBR132C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-03-31	van Roermund CW, et al. (1999) PMID:10545096
+RTC2	YBR147W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2012-11-25	Jézégou A, et al. (2012) PMID:23169667
+GDT1	YBR187W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+KTR3	YBR205W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+FTH1	YBR207W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+FTH1	YBR207W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+FTH1	YBR207W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-04-07	Urbanowski JL and Piper RC (1999) PMID:10608875
+VHC1	YBR235W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+VHC1	YBR235W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VVS1	YBR241C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VVS1	YBR241C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+VVS1	YBR241C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-06-25	Matsumoto R, et al. (2013) PMID:23708375
+YPT10	YBR264C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+BSD2	YBR290W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-07-15	Hettema EH, et al. (2004) PMID:14988731
+VBA2	YBR293W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-01-19	Shimazu M, et al. (2005) PMID:15572352
+VMA9	YCL005W-A	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2004-04-27	Sambade M and Kane PM (2004) PMID:14970230
+ATG22	YCL038C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-08-12	Yang Z, et al. (2006) PMID:17021250
+VAC17	YCL063W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-03-07	Tang F, et al. (2003) PMID:12594460
+VBA3	YCL069W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-01-19	Shimazu M, et al. (2005) PMID:15572352
+ADP1	YCR011C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+YCR023C	YCR023C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2008-02-20	Albertsen M, et al. (2003) PMID:12562762
+FEN2	YCR028C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+BPH1	YCR032W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PER1	YCR044C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-02-18	Paidhungat M and Garrett S (1998) PMID:9560393
+EGO2	YCR075W-A	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-08-04	Powis K, et al. (2015) PMID:26206314
+RMD1	YDL001W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MCH1	YDL054C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MCH1	YDL054C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+MCH1	YDL054C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-06-25	Matsumoto R, et al. (2013) PMID:23708375
+VAM6	YDL077C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VAM6	YDL077C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-05-16	Binda M, et al. (2009) PMID:19748353
+VAM6	YDL077C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2009-09-22	Nakamura N, et al. (1997) PMID:9111041
+SNA4	YDL123W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SNA4	YDL123W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2010-11-18	Pokrzywa W, et al. (2009) PMID:19168755
+SNA4	YDL123W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-10-18	Reggiori F and Pelham HR (2001) PMID:11566881
+VCX1	YDL128W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VCX1	YDL128W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-01-04	Cagnac O, et al. (2010) PMID:20709757
+AIT1	YDL180W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AIT1	YDL180W	is active in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2022-09-15	Wallace RL, et al. (2022) PMID:36047762
+VMA1	YDL185W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA1	YDL185W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-02-25	Supeková L, et al. (1995) PMID:7775427
+YDL199C	YDL199C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YCX1	YDL206W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+UGA4	YDL210W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+UGA4	YDL210W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-03-29	Uemura T, et al. (2004) PMID:14985124
+RCR2	YDR003W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS41	YDR080W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS41	YDR080W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2009-09-22	Nakamura N, et al. (1997) PMID:9111041
+VTC5	YDR089W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+VTC5	YDR089W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2016-10-21	Desfougères Y, et al. (2016) PMID:27587415
+UBC13	YDR092W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-04-13	Renz C, et al. (2020) PMID:32265276
+TMS1	YDR105C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+TMS1	YDR105C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TMS1	YDR105C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+TMN2	YDR107C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-08-10	Hegelund JN, et al. (2010) PMID:20681974
+VBA4	YDR119W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VBA4	YDR119W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MTC5	YDR128W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Tkach JM, et al. (2012) PMID:22842922
+MTC5	YDR128W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+YCF1	YDR135C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YCF1	YDR135C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+YCF1	YDR135C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-05-15	Sasser TL, et al. (2013) PMID:23658021
+YCF1	YDR135C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Tommasini R, et al. (1996) PMID:8692889
+IVY1	YDR229W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+IVY1	YDR229W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+IVY1	YDR229W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-02-13	Lazar T, et al. (2002) PMID:12553664
+DPP1	YDR284C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+DPP1	YDR284C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-04-04	Han GS, et al. (2001) PMID:11139591
+DPP1	YDR284C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+PIB1	YDR313C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-08-22	Shin ME, et al. (2001) PMID:11526110
+YPQ2	YDR352W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+YPQ2	YDR352W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2012-11-25	Jézégou A, et al. (2012) PMID:23169667
+CIN10	YDR387C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PPN1	YDR452W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2001-11-05	Reggiori F and Pelham HR (2001) PMID:11566881
+PPN1	YDR452W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2001-11-05	Reggiori F and Pelham HR (2001) PMID:11566881
+NHX1	YDR456W	is active in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2021-07-27	Qiu QS and Fratti RA (2010) PMID:20826459
+NHX1	YDR456W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-12-13	Qiu QS and Fratti RA (2010) PMID:20826459
+PHO8	YDR481C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PHO8	YDR481C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2006-11-02	Klionsky DJ and Emr SD (1989) PMID:2676517
+KRE2	YDR483W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS60	YDR486C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+VPS60	YDR486C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-06-25	Matsumoto R, et al. (2013) PMID:23708375
+ITR1	YDR497C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+SNA2	YDR525W-A	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SNA2	YDR525W-A	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-04-29	Renard HF, et al. (2010) PMID:20406419
+VAC8	YEL013W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VAC8	YEL013W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-10-10	Hou H, et al. (2005) PMID:16301533
+VAC8	YEL013W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-01-25	Wang YX, et al. (1998) PMID:9490720
+VAC8	YEL013W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-01-25	Pan X and Goldfarb DS (1998) PMID:9664035
+VAC8	YEL013W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-01-25	Fleckenstein D, et al. (1998) PMID:9739084
+PMP2	YEL017C-A	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA8	YEL051W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA8	YEL051W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+FCY2	YER056C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+VTC1	YER072W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AVT6	YER119C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AVT6	YER119C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-02-08	Chahomchuen T, et al. (2009) PMID:20118605
+YCK3	YER123W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+YCK3	YER123W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YCK3	YER123W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-12-02	Sun B, et al. (2004) PMID:14668479
+VTC2	YFL004W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VTC2	YFL004W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-07-15	Müller O, et al. (2002) PMID:11823419
+FET5	YFL041W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+FET5	YFL041W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+FET5	YFL041W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-04-07	Urbanowski JL and Piper RC (1999) PMID:10608875
+EMP47	YFL048C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+COS4	YFL062W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+FAB1	YFR019W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2008-06-09	Bonangelino CJ, et al. (2002) PMID:11889142
+FAB1	YFR019W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-02-26	Gary JD, et al. (1998) PMID:9763421
+ATG18	YFR021W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-05-11	Dove SK, et al. (2004) PMID:15103325
+ATG18	YFR021W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG18	YFR021W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+PMC1	YGL006W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PMC1	YGL006W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
+PMC1	YGL006W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-09-19	Cunningham KW and Fink GR (1994) PMID:7507493
+PIB2	YGL023C	is active in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2021-01-25	Ukai H, et al. (2018) PMID:29698392
+MMS2	YGL087C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-04-13	Renz C, et al. (2020) PMID:32265276
+VPS73	YGL104C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YGL114W	YGL114W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+MON1	YGL124C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-02-26	Wang CW, et al. (2002) PMID:12364329
+AMS1	YGL156W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-03-31	Yoshihisa T, et al. (1988) PMID:3281936
+CDC55	YGL190C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2014-11-07	Gentry MS and Hallberg RL (2002) PMID:12388751
+VAM7	YGL212W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VAM7	YGL212W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-09-17	Cheever ML, et al. (2001) PMID:11433291
+VAM7	YGL212W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2009-02-18	Lee SA, et al. (2006) PMID:16984909
+VAM7	YGL212W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2009-02-18	Lee SA, et al. (2006) PMID:16984909
+VAM7	YGL212W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2017-10-13	Mattie S, et al. (2017) PMID:27881666
+MNT2	YGL257C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA7	YGR020C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VOA1	YGR106C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+VOA1	YGR106C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VSB1	YGR125W	is active in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2022-09-29	Kawano-Kawada M, et al. (2021) PMID:33704406
+VSB1	YGR125W	is active in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2022-09-29	Cools M, et al. (2020) PMID:32776922
+TPO2	YGR138C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2011-03-31	Tomitori H, et al. (2001) PMID:11171066
+VPS62	YGR141W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+GTR2	YGR163W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GTR2	YGR163W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+GTR2	YGR163W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-07-18	Dubouloz F, et al. (2005) PMID:15989961
+HSV2	YGR223C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMR1	YHL035C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-01-25	Wawrzycka D, et al. (2010) PMID:20846144
+VMR1	YHL035C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-05-15	Sasser TL, et al. (2013) PMID:23658021
+DAP2	YHR028C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+DAP2	YHR028C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-07-11	Roberts CJ, et al. (1989) PMID:2647766
+VMA10	YHR039C-A	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA10	YHR039C-A	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+CTR2	YHR175W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-09-19	Portnoy ME, et al. (2001) PMID:11523804
+KOG1	YHR186C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+KOG1	YHR186C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+KOG1	YHR186C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2006-01-18	Araki T, et al. (2005) PMID:16394584
+KOG1	YHR186C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-09-06	Urban J, et al. (2007) PMID:17560372
+SCH9	YHR205W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+SCH9	YHR205W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-10-28	Jorgensen P, et al. (2004) PMID:15466158
+SCH9	YHR205W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-09-06	Urban J, et al. (2007) PMID:17560372
+SCH9	YHR205W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-05-16	Binda M, et al. (2009) PMID:19748353
+SYG1	YIL047C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SEC24	YIL109C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+EGH1	YIR007W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VTC4	YJL012C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEP8	YJL053W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+SCP160	YJL080C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PHS1	YJL097W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+LSB6	YJL100W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+LSB6	YJL100W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2008-06-09	Han GS, et al. (2002) PMID:12361950
+LSB6	YJL100W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-04-21	Shelton SN, et al. (2003) PMID:12523934
+SFH5	YJL145W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPS35	YJL154C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2014-01-18	Liu TT, et al. (2012) PMID:22593205
+YJL163C	YJL163C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AVT1	YJR001W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AVT1	YJR001W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2006-07-21	Russnak R, et al. (2001) PMID:11274162
+TOR1	YJR066W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TOR1	YJR066W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-05-07	Chen EJ and Kaiser CA (2003) PMID:12719473
+TOR1	YJR066W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-05-15	Sturgill TW, et al. (2008) PMID:18723607
+TOR1	YJR066W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-05-16	Binda M, et al. (2009) PMID:19748353
+TOR1	YJR066W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-05-19	Kira S, et al. (2014) PMID:25046117
+YJR124C	YJR124C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YJR124C	YJR124C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+IML1	YJR138W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MNR2	YKL064W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+MNR2	YKL064W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MNR2	YKL064W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2009-09-11	Pisat NP, et al. (2009) PMID:19720860
+VMA5	YKL080W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AVT3	YKL146W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+AVT3	YKL146W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2006-07-24	Russnak R, et al. (2001) PMID:11274162
+ZRT3	YKL175W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2001-01-18	MacDiarmid CW, et al. (2000) PMID:10856230
+TOR2	YKL203C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Cardenas ME and Heitman J (1995) PMID:8846782
+VPS1	YKR001C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2012-08-10	Peters C, et al. (2004) PMID:15550248
+MEH1	YKR007W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MEH1	YKR007W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-06-30	Gao XD, et al. (2005) PMID:15885099
+MEH1	YKR007W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-02-12	Dubouloz F, et al. (2005) PMID:15989961
+MEH1	YKR007W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-10-10	Hou H, et al. (2005) PMID:16301533
+MEH1	YKR007W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-05-16	Binda M, et al. (2009) PMID:19748353
+YPT52	YKR014C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+NFT1	YKR103W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-05-15	Sasser TL, et al. (2013) PMID:23658021
+BPT1	YLL015W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-01-15	Sharma KG, et al. (2002) PMID:12455987
+BPT1	YLL015W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-05-15	Sasser TL, et al. (2013) PMID:23658021
+SSA2	YLL024C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2003-03-06	Satyanarayana C, et al. (2000) PMID:10745074
+TPO1	YLL028W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2011-03-31	Tomitori H, et al. (2001) PMID:11171066
+YBT1	YLL048C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+FRE6	YLL051C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-03-31	Rees EM and Thiele DJ (2007) PMID:17553781
+FRE6	YLL051C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-03-31	Singh A, et al. (2007) PMID:17681937
+YLR001C	YLR001C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SMF3	YLR034C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+SMF3	YLR034C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-07-08	Portnoy ME, et al. (2000) PMID:11027260
+FRE8	YLR047C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+EMP70	YLR083C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-08-10	Hegelund JN, et al. (2010) PMID:20681974
+NYV1	YLR093C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+NYV1	YLR093C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2009-03-19	Wen W, et al. (2006) PMID:16855025
+PEP3	YLR148W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-08-27	Seals DF, et al. (2000) PMID:10944212
+TAG1	YLR173W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+TAG1	YLR173W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TAG1	YLR173W	is active in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2021-02-25	Kira S, et al. (2021) PMID:33536246
+TFS1	YLR178C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-03-01	Fukada H, et al. (2007) PMID:17317927
+CCC1	YLR220W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CCC1	YLR220W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+CCC1	YLR220W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-09-12	Li L, et al. (2001) PMID:11390404
+CDC42	YLR229C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+CDC42	YLR229C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2018-02-15	Eitzen G, et al. (2001) PMID:11598008
+CDC42	YLR229C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2012-08-13	Richman TJ, et al. (2002) PMID:12455994
+VPS34	YLR240W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+VPS34	YLR240W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2008-06-09	Obara K, et al. (2006) PMID:16421251
+CSC1	YLR241W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+YLR297W	YLR297W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+VPS38	YLR360W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+VAC14	YLR386W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-04-30	Bonangelino CJ, et al. (2002) PMID:11889142
+VAC14	YLR386W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-10-04	Rudge SA, et al. (2004) PMID:14528018
+VAC14	YLR386W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-06-25	Matsumoto R, et al. (2013) PMID:23708375
+VPS33	YLR396C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IPI with VAM6	manually curated	SGD	2010-05-14	Seals DF, et al. (2000) PMID:10944212
+VPS33	YLR396C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IPI with VPS41	manually curated	SGD	2010-05-14	Seals DF, et al. (2000) PMID:10944212
+VPS33	YLR396C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-08-27	Gerhardt B, et al. (1998) PMID:9624182
+VMA6	YLR447C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA6	YLR447C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Bauerle C, et al. (1993) PMID:8509410
+YPT7	YML001W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YPT7	YML001W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2012-09-26	Liu TT, et al. (2012) PMID:22593205
+YML018C	YML018C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Tkach JM, et al. (2012) PMID:22842922
+YML018C	YML018C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YML018C	YML018C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SMA2	YML066C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GTR1	YML121W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+GTR1	YML121W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-07-19	Gao XD, et al. (2005) PMID:15885099
+GTR1	YML121W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-05-16	Binda M, et al. (2009) PMID:19748353
+VBA1	YMR088C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VBA1	YMR088C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-01-19	Shimazu M, et al. (2005) PMID:15572352
+CVM1	YMR160W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Tkach JM, et al. (2012) PMID:22842922
+CVM1	YMR160W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ICY1	YMR195W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+VTI1	YMR197C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+FMP42	YMR221C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEP5	YMR231W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-08-27	Seals DF, et al. (2000) PMID:10944212
+ZRC1	YMR243C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+ZRC1	YMR243C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RSN1	YMR266W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+VAC7	YNL054W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VAC7	YNL054W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2008-06-17	Bonangelino CJ, et al. (1997) PMID:9372916
+AVT4	YNL101W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2006-07-24	Russnak R, et al. (2001) PMID:11274162
+YNL115C	YNL115C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+RHO5	YNL180C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2012-08-14	Singh K, et al. (2008) PMID:18216266
+PPN2	YNL217W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YNL234W	YNL234W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+MSB3	YNL293W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-03-06	Lachmann J, et al. (2012) PMID:22593206
+VNX1	YNL321W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VNX1	YNL321W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-01-04	Cagnac O, et al. (2010) PMID:20709757
+FIG4	YNL325C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-10-04	Rudge SA, et al. (2004) PMID:14528018
+PFA3	YNL326C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-10-17	Smotrys JE, et al. (2005) PMID:16186255
+COS1	YNL336W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+PHO91	YNR013C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-09-28	Hürlimann HC, et al. (2007) PMID:17804816
+YNR061C	YNR061C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+MAM3	YOL060C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+INP54	YOL065C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YOL075C	YOL075C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-05-15	Sasser TL, et al. (2013) PMID:23658021
+YPQ1	YOL092W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+YPQ1	YOL092W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Tkach JM, et al. (2012) PMID:22842922
+YPQ1	YOL092W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2012-11-25	Jézégou A, et al. (2012) PMID:23169667
+MCH4	YOL119C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-09-18	Makuc J, et al. (2001) PMID:11536335
+VPS68	YOL129W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+VPS68	YOL129W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-06-25	Matsumoto R, et al. (2013) PMID:23708375
+AKR2	YOR034C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+PEP12	YOR036W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VAM10	YOR068C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IC with vacuole fusion, non-autophagic	manually curated	SGD	2003-08-08	Kato M and Wickner W (2003) PMID:12748377
+YVC1	YOR087W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+YVC1	YOR087W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2010-01-04	Chang Y, et al. (2010) PMID:20035756
+KTR1	YOR099W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+KTR1	YOR099W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+PIN2	YOR104W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VAM3	YOR106W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VAM3	YOR106W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2011-03-31	Wada Y, et al. (1997) PMID:9202390
+HES1	YOR237W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VPH1	YOR270C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+VPH1	YOR270C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+VPH1	YOR270C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2008-09-26	Makrantoni V, et al. (2007) PMID:18048916
+VPH1	YOR270C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2017-10-13	Mattie S, et al. (2017) PMID:27881666
+TPO4	YOR273C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2011-03-31	Tomitori H, et al. (2001) PMID:11171066
+YPK9	YOR291W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+YPK9	YOR291W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2009-02-09	Gitler AD, et al. (2009) PMID:19182805
+COT1	YOR316C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+COT1	YOR316C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+COT1	YOR316C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2017-10-13	Mattie S, et al. (2017) PMID:27881666
+MYO2	YOR326W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2019-01-15	Hill KL, et al. (1996) PMID:8978821
+VMA4	YOR332W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2020-08-21	Toulmay A and Prinz WA (2013) PMID:23836928
+VMA4	YOR332W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA4	YOR332W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-06-25	Matsumoto R, et al. (2013) PMID:23708375
+SNX3	YOR357C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+NCR1	YPL006W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+NCR1	YPL006W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2005-11-18	Berger AC, et al. (2005) PMID:16138904
+VTC3	YPL019C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VTC3	YPL019C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-07-15	Ogawa N, et al. (2000) PMID:11102525
+VTC3	YPL019C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-07-15	Müller O, et al. (2002) PMID:11823419
+VPS16	YPL045W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-08-27	Seals DF, et al. (2000) PMID:10944212
+VPS16	YPL045W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2009-09-22	Rieder SE and Emr SD (1997) PMID:9362071
+SUR1	YPL057C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+YDC1	YPL087W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+ATG21	YPL100W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ATG21	YPL100W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2002-08-14	Barth H, et al. (2002) PMID:11852075
+ATG21	YPL100W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2004-12-22	Meiling-Wesse K, et al. (2004) PMID:15194695
+VPS30	YPL120W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Wiederhold E, et al. (2009) PMID:19001347
+YPL162C	YPL162C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+TCO89	YPL180W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+TCO89	YPL180W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2007-09-06	Urban J, et al. (2007) PMID:17560372
+TCO89	YPL180W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+TCO89	YPL180W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-05-16	Binda M, et al. (2009) PMID:19748353
+OXR1	YPL196W	is active in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2022-01-07	Khan MM, et al. (2022) PMID:34918374
+SSO1	YPL232W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2009-06-22	Mendonsa R and Engebrecht J (2009) PMID:19502581
+VMA11	YPL234C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+ENV7	YPL236C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ENV7	YPL236C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+DIP5	YPL265W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+VMA13	YPR036W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+VMA13	YPR036W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2013-06-25	Matsumoto R, et al. (2013) PMID:23708375
+ERV2	YPR037C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+OPY2	YPR075C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+TEF1	YPR080W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2015-01-23	Bodman JAR, et al. (2015) PMID:25561732
+TPO3	YPR156C	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IMP	manually curated	SGD	2011-03-31	Tomitori H, et al. (2001) PMID:11171066
+RHO1	YPR165W	located in	GO:0000329	fungal-type vacuole membrane	cellular component		IDA	manually curated	SGD	2018-02-15	Eitzen G, et al. (2001) PMID:11598008

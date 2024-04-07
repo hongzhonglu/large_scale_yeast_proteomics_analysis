@@ -3,6 +3,7 @@ import numpy as np
 import statistics
 import pandas as pd
 from src.mainFunction import *
+import os
 
 def getSurfaceRatio(volume_ratio = 0.005/100, Vcell = 82, Scell=91.27):
     """
@@ -282,6 +283,168 @@ def get_total_protein_volume(pro_size0, abundance0, need_check="No"):
         combine_df["total_volume"] = combine_df["molecular/cell"] * combine_df["Volume"]
         return total_volume_um, combine_df
 
+
+# get the compartments of all genes
+def getCompartmentGeneList(filter="Yes"):
+    """
+    This function to build a compartment dict, with which we can get the gene list from the compartment name
+
+    :param filter:
+    :return:
+    """
+
+    # Input the datasets from paxDB
+    compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
+
+    # extract compartment
+    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
+                           'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+    compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
+
+    # filter out compartment with "complex" or "subunit"
+    compartment2 = compartment1[~compartment1["GO_Name"].str.contains("complex")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("subunit")]
+    # firstly remove some general cellular component
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("snRNP")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("spindle")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("actin")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("cellular_component")]
+
+    # analyze the annotation type
+    annotation_type = compartment2["Annot_Type"].tolist()
+    annotation_type = list(set(annotation_type))
+    # here if we remove "computational"
+    compartment_with_evidence = compartment2[compartment2["Annot_Type"] != 'computational']
+    compartment_with_computation = compartment2[compartment2["Annot_Type"] == 'computational']
+    # in one procedure, if a protein has no compartment annotation from manual and high-throughput, then the computational is used!
+    compartment_addition = compartment_with_computation[~compartment_with_computation["Systematic_name"].isin(compartment_with_evidence["Systematic_name"])]
+    compartment_combine = pd.concat([compartment_with_evidence, compartment_addition])
+
+    # build the dict
+    compartment_dict_all = {}
+    for i, x in compartment2.iterrows():
+        print(i, x)
+        if x['GO_Name'] in compartment_dict_all.keys():
+            compartment_dict_all[x['GO_Name']] = list(set(compartment_dict_all[x['GO_Name']] + [x["Systematic_name"]]))
+        else:
+            compartment_dict_all[x['GO_Name']] = list(set([x["Systematic_name"]]))
+    # filter
+    compartment_dict_all0 = {}
+    for key in compartment_dict_all.keys():
+        print(key)
+        value = compartment_dict_all[key]
+        if len(value) >= 6:
+            compartment_dict_all0[key] = value
+        else:
+            pass
+    # for compartment annotation removing some computation evidences
+    compartment_dict2 = {}
+    for i, x in compartment_combine.iterrows():
+        print(i, x)
+        if x['GO_Name'] in compartment_dict2.keys():
+            compartment_dict2[x['GO_Name']] = list(set(compartment_dict2[x['GO_Name']] + [x["Systematic_name"]]))
+        else:
+            compartment_dict2[x['GO_Name']] = list(set([x["Systematic_name"]]))
+    # filter
+    compartment_dict20 = {}
+    for key in compartment_dict2.keys():
+        print(key)
+        value = compartment_dict2[key]
+        if len(value) >= 6:
+            compartment_dict20[key] = value
+        else:
+            pass
+    if filter == "Yes":
+        return compartment_dict20
+    else:
+        return compartment_dict_all0
+
+def getCompartment_manual_curation():
+    # design a function to process the original compartment annotation from SGD
+    data_dir = "/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/sce_compartment_curation/original_annotation/"
+    protein_complex = pd.read_excel("data/complex_info.xlsx")
+    protein_complex["subunit"] = protein_complex["subunit"].str.replace("-MONOMER", "")
+    all_file0 = os.listdir(data_dir)
+    for xx in all_file0:
+        print(xx)
+        try:
+            ss0 = open(data_dir + xx).readlines()
+            index0 = [i for i, x in enumerate(ss0) if "Gene/Complex" in x]
+            ss0_update = ss0[index0[0] + 1:]
+            # get the gene list
+            gene_list = [x.split("\t")[1] for x in ss0_update]
+            # classify it as two types
+            list1 = [x for x in gene_list if "CPX-" in x]
+            list2 = list(set([x for x in gene_list if "CPX-" not in x]))
+            # get the ID from the complex
+            complex_select = protein_complex[protein_complex['complex'].isin(list1)]
+            if complex_select.shape[0] > 1:
+                gene_belong_complex = complex_select['subunit'].tolist()
+                list_new = list(set(list2 + gene_belong_complex))
+            else:
+                list_new = list2
+
+            new_df = pd.DataFrame({"gene": list_new})
+            new_df.to_excel(
+                "/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/sce_compartment_curation/" + xx.replace(
+                    ".txt", "_v2.xlsx"))
+        except:
+            pass
+
+# calibrate the cmpartments of some genes based on manual experiment
+# when running the following function, please firstly run function - getCompartment_manual_curation
+def gene_location_curation_sce(organelle0):
+    # use some manually checked gene compartment definion
+    # if the manual curated gene number for one compartment is larger, nealy equal to computational, then use the manual curation
+    # otherwise using the computation prediction???
+    # input the annotation from sgd
+    organelle0 = getCompartmentGeneList(filter="Yes")
+    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
+    gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
+    gene_fungal_type_vacuole_membrane = pd.read_excel("data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx")
+    gene_nucleolus = pd.read_excel("data/sce_compartment_curation/nucleolus_annotations_v2.xlsx")
+    gene_cytoplasm = pd.read_excel("data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx")
+    gene_nucleus = pd.read_excel("data/sce_compartment_curation/nucleus_annotations_v2.xlsx")
+    # mitochondrion specific
+    gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrial_suborganelle.xlsx")
+    gene_m_Outer_membrane = gene_mitochondrion[gene_mitochondrion['Outer membrane']=="X"]
+    gene_m_Inner_membrane = gene_mitochondrion[gene_mitochondrion['Inner membrane'] == "X"]
+    gene_m_OI_space = gene_mitochondrion[gene_mitochondrion['Inter-membrane space'] == "X"]
+    gene_m_matrix = gene_mitochondrion[gene_mitochondrion['Matrix'] == "X"]
+
+    organelle0_update = {}
+    for y in organelle0.keys():
+        print(y)
+        if y == "plasma membrane":
+            genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
+        elif y == "fungal-type cell wall":
+            genes_select = gene_cell_wall["gene"].tolist()
+        elif y == "fungal-type vacuole membrane":
+            genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
+            genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+        elif y == "endosome":
+            genes_select = organelle0[y]
+            genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
+        elif y == "nucleolus":
+            genes_select = gene_nucleolus["gene"].tolist()  # for the test
+        elif y == "cytoplasm":
+            genes_select = gene_cytoplasm["gene"].tolist()  # for the test
+        elif y == "mitochondrion":
+            genes_select = gene_mitochondrion["gene"].tolist()  # for the test
+        elif y == "mitochondrial outer membrane":
+            genes_select = gene_m_Outer_membrane["gene"].tolist()  # for the test
+        elif y == "mitochondrial inner membrane":
+            genes_select = gene_m_Inner_membrane["gene"].tolist()  # for the test
+        elif y == "mitochondrial intermembrane space":
+            genes_select = gene_m_OI_space["gene"].tolist()  # for the test
+        elif y == "mitochondrial matrix":
+            genes_select = gene_m_matrix["gene"].tolist()  # for the test
+        elif y == "nucleus":
+            genes_select = gene_nucleus["gene"].tolist()  # for the test
+        else:
+            genes_select = organelle0[y]
+        organelle0_update[y] = list(filter(lambda x: str(x) != 'nan', genes_select))
+    return organelle0_update
 
 def get_total_membrane_area(pro_size0, abundance0, need_check="No"):
     """
@@ -852,135 +1015,6 @@ def getGeneListFromLocation(gene_location_annotation, location):
     return gene_list
 
 
-# get the compartments of all genes
-def getCompartmentGeneList(filter="Yes"):
-    """
-    This function to build a compartment dict, with which we can get the gene list from the compartment name
-
-    :param filter:
-    :return:
-    """
-
-    # Input the datasets from paxDB
-    compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
-
-    # extract compartment
-    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
-                           'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
-    compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
-
-    # filter out compartment with "complex" or "subunit"
-    compartment2 = compartment1[~compartment1["GO_Name"].str.contains("complex")]
-    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("subunit")]
-    # firstly remove some general cellular component
-    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("snRNP")]
-    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("spindle")]
-    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("actin")]
-    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("cellular_component")]
-
-    # analyze the annotation type
-    annotation_type = compartment2["Annot_Type"].tolist()
-    annotation_type = list(set(annotation_type))
-    # here if we remove "computational"
-    compartment_with_evidence = compartment2[compartment2["Annot_Type"] != 'computational']
-    compartment_with_computation = compartment2[compartment2["Annot_Type"] == 'computational']
-    # in one procedure, if a protein has no compartment annotation from manual and high-throughput, then the computational is used!
-    compartment_addition = compartment_with_computation[~compartment_with_computation["Systematic_name"].isin(compartment_with_evidence["Systematic_name"])]
-    compartment_combine = pd.concat([compartment_with_evidence, compartment_addition])
-
-    # build the dict
-    compartment_dict_all = {}
-    for i, x in compartment2.iterrows():
-        print(i, x)
-        if x['GO_Name'] in compartment_dict_all.keys():
-            compartment_dict_all[x['GO_Name']] = list(set(compartment_dict_all[x['GO_Name']] + [x["Systematic_name"]]))
-        else:
-            compartment_dict_all[x['GO_Name']] = list(set([x["Systematic_name"]]))
-    # filter
-    compartment_dict_all0 = {}
-    for key in compartment_dict_all.keys():
-        print(key)
-        value = compartment_dict_all[key]
-        if len(value) >= 6:
-            compartment_dict_all0[key] = value
-        else:
-            pass
-    # for compartment annotation removing some computation evidences
-    compartment_dict2 = {}
-    for i, x in compartment_combine.iterrows():
-        print(i, x)
-        if x['GO_Name'] in compartment_dict2.keys():
-            compartment_dict2[x['GO_Name']] = list(set(compartment_dict2[x['GO_Name']] + [x["Systematic_name"]]))
-        else:
-            compartment_dict2[x['GO_Name']] = list(set([x["Systematic_name"]]))
-    # filter
-    compartment_dict20 = {}
-    for key in compartment_dict2.keys():
-        print(key)
-        value = compartment_dict2[key]
-        if len(value) >= 6:
-            compartment_dict20[key] = value
-        else:
-            pass
-    if filter == "Yes":
-        return compartment_dict20
-    else:
-        return compartment_dict_all0
-
-
-# calibrate the cmpartments of some genes based on manual experiment
-def gene_location_curation_sce(organelle0):
-    # organelle0 = getCompartmentGeneList(filter="Yes")
-    # use some manually checked gene compartment definion
-    # if the manual curated gene number for one compartment is larger, nealy equal to computational, then use the manual curation
-    # otherwise using the computation prediction???
-    # test
-    # organelle0 = compartment_dict20
-    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations.xlsx")
-    gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations.xlsx")
-
-    gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
-    gene_nucleolus = pd.read_excel("data/nucleolus_annotations.xlsx")
-    gene_cytoplasm = pd.read_excel("data/cytoplasm_annotations.xlsx")
-    gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrial_suborganelle.xlsx")
-    gene_m_Outer_membrane = gene_mitochondrion[gene_mitochondrion['Outer membrane']=="X"]
-    gene_m_Inner_membrane = gene_mitochondrion[gene_mitochondrion['Inner membrane'] == "X"]
-    gene_m_OI_space = gene_mitochondrion[gene_mitochondrion['Inter-membrane space'] == "X"]
-    gene_m_matrix = gene_mitochondrion[gene_mitochondrion['Matrix'] == "X"]
-    gene_nucleus = pd.read_excel("data/sce_compartment_curation/nucleus_annotations.xlsx")
-    organelle0_update = {}
-    for y in organelle0.keys():
-        print(y)
-        if y == "plasma membrane":
-            genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
-        elif y == "fungal-type cell wall":
-            genes_select = gene_cell_wall["gene"].tolist()
-        elif y == "fungal-type vacuole membrane":
-            genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
-            genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
-        elif y == "endosome":
-            genes_select = organelle0[y]
-            genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
-        elif y == "nucleolus":
-            genes_select = gene_nucleolus["gene"].tolist()  # for the test
-        elif y == "cytoplasm":
-            genes_select = gene_cytoplasm["gene"].tolist()  # for the test
-        elif y == "mitochondrion":
-            genes_select = gene_mitochondrion["gene"].tolist()  # for the test
-        elif y == "mitochondrial outer membrane":
-            genes_select = gene_m_Outer_membrane["gene"].tolist()  # for the test
-        elif y == "mitochondrial inner membrane":
-            genes_select = gene_m_Inner_membrane["gene"].tolist()  # for the test
-        elif y == "mitochondrial intermembrane space":
-            genes_select = gene_m_OI_space["gene"].tolist()  # for the test
-        elif y == "mitochondrial matrix":
-            genes_select = gene_m_matrix["gene"].tolist()  # for the test
-        elif y == "nucleus":
-            genes_select = gene_nucleus["gene"].tolist()  # for the test
-        else:
-            genes_select = organelle0[y]
-        organelle0_update[y] = list(filter(lambda x: str(x) != 'nan', genes_select))
-    return organelle0_update
 
 
 def AllProteomicsAnalysis(pro_df):

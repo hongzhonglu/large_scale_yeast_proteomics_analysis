@@ -6,6 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/cytoplasm_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gene_belong_fungal_type_vacuole_annotations.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gene_belong_mitochondrion_annotations.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gene_belong_nucleus_annotations.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/gene_from_nucleolus_annotations.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/nucleolus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,11 +110,11 @@
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/data/sce_compartment_curation" />
       <recent name="$PROJECT_DIR$/code/omics" />
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/structure" />
-      <recent name="$PROJECT_DIR$/code/structure/not_used" />
     </key>
   </component>
   <component name="RunManager" selected="Python.3.1 omics_collect_preprocess_for_cell_system_2018">
@@ -407,7 +414,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>166</line>
+          <line>167</line>
           <option name="timeStamp" value="56" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -427,23 +434,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>985</line>
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>855</line>
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>443</line>
+          <line>606</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>477</line>
-          <option name="timeStamp" value="71" />
+          <line>640</line>
+          <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
