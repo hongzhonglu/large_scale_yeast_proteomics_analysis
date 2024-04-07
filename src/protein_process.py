@@ -402,7 +402,8 @@ def gene_location_curation_sce(organelle0):
     # input the annotation from sgd
     organelle0 = getCompartmentGeneList(filter="Yes")
     getCompartment_manual_curation() # run the compartment curation preprocess.
-    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
+    #gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
+    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx")
     gene_nucleolus = pd.read_excel("data/sce_compartment_curation/nucleolus_annotations_v2.xlsx")
@@ -492,6 +493,9 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
     :param compartment_type:
     :return:
     """
+    # test
+    # protein_abundance = mass_fraction_final
+
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
@@ -513,6 +517,9 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
         value1 = []
         for y in all_compartment:
             print(y)
+            # test
+            # y = "plasma membrane"
+            # col0 = "Glucose_phase_rep1(g/gDW)"
             pro_abundance = protein_abundance[['gene', col0]]
             pro_abundance.columns = ['gene', 'g/gDW']
 

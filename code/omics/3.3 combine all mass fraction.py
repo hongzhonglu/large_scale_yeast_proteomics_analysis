@@ -57,6 +57,7 @@ protein_in_mol = protein_in_mol[new_column]
 out = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment_type="organelle")
 out.to_excel("data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
 
+
 # calculate the volume ratio
 s2 =Pro_3D_Volume_Ratio_Cal(protein_in_mol, compartment_type="organelle") # from part 3.9
 s2.to_excel("data/proteomics/volume_size_ratio_across_compartment_combine.xlsx")
