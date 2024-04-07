@@ -401,13 +401,14 @@ gene_anotation_for_cell_wall = gene_anotation[gene_anotation['ID'].isin(gene_cel
 # here 9 enzyme genes belong to cell wall were removed.
 #gene_anotation_for_cell_wall.to_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
 
+
 def gene_location_curation_sce(organelle0):
     # use some manually checked gene compartment definion
     # if the manual curated gene number for one compartment is larger, nealy equal to computational, then use the manual curation
     # otherwise using the computation prediction???
     # input the annotation from sgd
     organelle0 = getCompartmentGeneList(filter="Yes")
-    getCompartment_manual_curation() # run the compartment curation preprocess.
+    # getCompartment_manual_curation() # run the compartment curation preprocess. If update the compartment information, need to run this function
     #gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
     gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/gene_belong_plasma_membrane_annotations_old_version.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")

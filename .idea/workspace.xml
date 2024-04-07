@@ -5,7 +5,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_envelope_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_envelope_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_membrane_annotations_computational_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/ribosome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/ribosome_annotations_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -427,12 +443,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>622</line>
+          <line>623</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>662</line>
+          <line>663</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
