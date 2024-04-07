@@ -6,22 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_cell_system_2018.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_cell_system_2018.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_cell_system_2018.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_envelope_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_envelope_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_membrane_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/ribosome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/ribosome_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_cell_system_2018.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/~$plasma_membrane_annotations_v2.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -126,7 +122,7 @@
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.3.1 omics_collect_preprocess_for_cell_system_2018">
+  <component name="RunManager" selected="Python.3.1 omics_collect_preprocess_for_protein_copy">
     <configuration name="2.3 proteomics_abundance_unit_unify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="De-nevo-protein-3D-structure-yeast" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -148,7 +144,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="3.1 omics_collect_preprocess_for_cell_system_2018" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="3.1 omics_collect_preprocess_for_protein_copy" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="De-nevo-protein-3D-structure-yeast" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -160,7 +156,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_cell_system_2018.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_for_protein_copy.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -171,7 +167,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.3.1 omics_collect_preprocess_for_cell_system_2018" />
+        <item itemvalue="Python.3.1 omics_collect_preprocess_for_protein_copy" />
         <item itemvalue="Python.2.3 proteomics_abundance_unit_unify" />
       </list>
     </recent_temporary>
@@ -443,12 +439,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>626</line>
+          <line>629</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>666</line>
+          <line>669</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>

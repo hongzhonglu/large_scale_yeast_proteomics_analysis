@@ -458,7 +458,10 @@ def gene_location_curation_sce(organelle0):
         else:
             genes_select = organelle0[y]
         organelle0_update[y] = list(filter(lambda x: str(x) != 'nan', genes_select))
-    return organelle0_update
+        # remove cytoplasm
+        organelle0_update00 = {x:y for x, y in organelle0_update.items() if "cytoplasm" not in x}
+    return organelle0_update00
+
 
 def get_total_membrane_area(pro_size0, abundance0, need_check="No"):
     """

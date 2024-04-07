@@ -14,15 +14,15 @@ mass_fraction_NCB = mass_fraction_NCB.iloc[:,1:]
 mass_fraction_ibrahim = pd.read_excel("data/proteomics/mass_fraction_ibrahim.xlsx")
 mass_fraction_ibrahim = mass_fraction_ibrahim.iloc[:,1:]
 
-mass_fraction_cell_system_2018 = pd.read_excel("data/proteomics/mass_fraction_cell_system_2018.xlsx")
-mass_fraction_cell_system_2018 = mass_fraction_cell_system_2018.iloc[:,1:]
+mass_fraction_from_protein_copy = pd.read_excel("data/proteomics/mass_fraction_from_protein_copy.xlsx")
+mass_fraction_from_protein_copy = mass_fraction_from_protein_copy.iloc[:,1:]
 
 mass_fraction_others = pd.read_excel("data/proteomics/mass_fraction_others.xlsx")
 mass_fraction_others = mass_fraction_others.iloc[:,1:]
 
 mass_fraction_all = pd.merge(left=mass_fraction_others, right=mass_fraction_ibrahim, left_on=['gene'], right_on=['gene'], how="outer")
 mass_fraction_all = pd.merge(left=mass_fraction_all, right=mass_fraction_NCB, left_on=['gene'], right_on=['gene'], how="outer")
-mass_fraction_all = pd.merge(left=mass_fraction_all, right=mass_fraction_cell_system_2018, left_on=['gene'], right_on=['gene'], how="outer")
+mass_fraction_all = pd.merge(left=mass_fraction_all, right=mass_fraction_from_protein_copy, left_on=['gene'], right_on=['gene'], how="outer")
 mass_fraction_final = mass_fraction_all.copy()
 
 # Save
