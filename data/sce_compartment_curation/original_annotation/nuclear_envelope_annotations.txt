@@ -1,0 +1,86 @@
+!
+!Date: 04/07/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+Importin complex, KAP60-KAP95	CPX-1068	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	ComplexPortal	2017-12-12	Enenkel C, et al. (1995) PMID:7622450
+MPS2-BBP1 spindle pole body anchor complex	CPX-1287	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	ComplexPortal	2018-02-14	Kupke T, et al. (2017) PMID:28356353
+Nuclear pore complex	CPX-824	located in	GO:0005635	nuclear envelope	cellular component		BSR	manually curated	ComplexPortal	2019-10-03	Kim SJ, et al. (2018) PMID:29539637
+UIP3	YAR027W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2005-04-22	Takahashi Y, et al. (2000) PMID:11056382
+SWH1	YAR042W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2006-10-16	Loewen CJ, et al. (2003) PMID:12727870
+POL12	YBL035C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2004-10-08	Sundin BA, et al. (2004) PMID:15282802
+CNM1	YBR063C	is active in	GO:0005635	nuclear envelope	cellular component	part of mitochondrial outer membrane	IDA	manually curated	SGD	2022-04-08	Eisenberg-Bord M, et al. (2021) PMID:34694322
+UBX7	YBR273C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2005-03-31	Decottignies A, et al. (2004) PMID:14755638
+RRT12	YCR045C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2009-11-05	Suda Y, et al. (2009) PMID:19779569
+CSM1	YCR086W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2003-05-12	Drees BL, et al. (2001) PMID:11489916
+OSH2	YDL019C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2015-01-23	Weber-Boyvat M, et al. (2015) PMID:25420878
+NUS1	YDL193W	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+TRM1	YDR120C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2005-05-27	Rose AM, et al. (1995) PMID:7599275
+CAB5	YDR196C	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+GPI19	YDR437W	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+HEH2	YDR458C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2007-10-02	King MC, et al. (2006) PMID:16929305
+WBP1	YEL002C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-09-28	te Heesen S, et al. (1991) PMID:1724755
+MMS21	YEL019C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2005-03-21	Zhao X and Blobel G (2005) PMID:15738391
+NTF2	YER009W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-03-07	Corbett AH and Silver PA (1996) PMID:8702493
+SCS2	YER120W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2007-04-11	Loewen CJ, et al. (2003) PMID:12727870
+SCS2	YER120W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2015-01-23	Weber-Boyvat M, et al. (2015) PMID:25420878
+DCV1	YFR012W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2020-10-16	Zhu J, et al. (2020) PMID:33002606
+MPS2	YGL075C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2001-01-18	Muñoz-Centeno MC, et al. (1999) PMID:10397772
+NUP49	YGL172W	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+CSE1	YGL238W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-08-07	Hood JK and Silver PA (1998) PMID:9857050
+BRR6	YGL247W	is active in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2021-11-23	de Bruyn Kops A and Guthrie C (2001) PMID:11483521
+BRR6	YGL247W	is active in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2021-11-23	Lone MA, et al. (2015) PMID:26432634
+BRR6	YGL247W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-08-01	de Bruyn Kops A and Guthrie C (2001) PMID:11483521
+BRR6	YGL247W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2016-02-03	Lone MA, et al. (2015) PMID:26432634
+NSR1	YGR159C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2015-06-30	Lee WC, et al. (1991) PMID:1706724
+PCT1	YGR202C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-11-25	Howe AG, et al. (2002) PMID:12200438
+OPI1	YHL020C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2007-05-04	Loewen CJ, et al. (2004) PMID:15192221
+COS8	YHL048W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-09-20	Spode I, et al. (2002) PMID:12051917
+BRL1	YHR036W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2005-08-10	Saitoh YH, et al. (2005) PMID:15882446
+BRL1	YHR036W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2016-02-03	Lone MA, et al. (2015) PMID:26432634
+PTC7	YHR076W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2009-07-06	Juneau K, et al. (2009) PMID:19564484
+WSS1	YHR134W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2010-12-02	van Heusden GP and Steensma HY (2008) PMID:18336552
+NVJ1	YHR195W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-09-27	Pan X, et al. (2000) PMID:10888680
+SNL1	YIL016W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-05-22	Ho AK, et al. (1998) PMID:9450961
+SSM4	YIL030C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2005-05-08	Swanson R, et al. (2001) PMID:11641273
+APQ12	YIL040W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2004-10-05	Baker KE, et al. (2004) PMID:15273328
+APQ12	YIL040W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2016-02-03	Lone MA, et al. (2015) PMID:26432634
+MLP2	YIL149C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2001-01-18	Strambio-de-Castillia C, et al. (1999) PMID:10085285
+MPS3	YJL019W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2008-08-01	Conrad MN, et al. (2007) PMID:17495028
+PRY1	YJL079C	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+PRI2	YKL045W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2004-10-08	Sundin BA, et al. (2004) PMID:15282802
+UIP5	YKR044W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2005-04-22	Takahashi Y, et al. (2000) PMID:11056382
+MLP1	YKR095W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2001-01-18	Strambio-de-Castillia C, et al. (1999) PMID:10085285
+POM33	YLL023C	is active in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2021-10-29	Chadrin A, et al. (2010) PMID:20498018
+PER33	YLR064W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2019-04-26	Chadrin A, et al. (2010) PMID:20498018
+ASP3-1	YLR155C	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+CDC42	YLR229C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2021-06-10	Lu MS and Drubin DG (2020) PMID:32556066
+CTS1	YLR286C	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+SEC39	YLR440C	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+SEC39	YLR440C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2007-12-04	Ishikawa T, et al. (2005) PMID:15942868
+HMG2	YLR450W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2010-06-17	Koning AJ, et al. (1996) PMID:8744950
+NDC1	YML031W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2019-04-26	Chadrin A, et al. (2010) PMID:20498018
+SRC1	YML034W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2007-10-02	King MC, et al. (2006) PMID:16929305
+HMG1	YML075C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2001-01-18	Koning AJ, et al. (1996) PMID:8744950
+ERG29	YMR134W	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+YKU70	YMR284W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-10-25	Galy V, et al. (2000) PMID:10638763
+HAS1	YMR290C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2002-06-20	Rout MP, et al. (2000) PMID:10684247
+LIP1	YMR298W	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+PGA2	YNL149C	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+PGA1	YNL158W	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+PBR1	YNL181W	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+GCR2	YNL199C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2009-03-31	Menon BB, et al. (2005) PMID:15817685
+COS10	YNR075W	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+THP1	YOL072W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2009-07-27	Teixeira MT, et al. (2002) PMID:12206772
+SLD7	YOR060C	located in	GO:0005635	nuclear envelope	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+ULP1	YPL020C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2011-01-03	Sydorskyy Y, et al. (2010) PMID:20647537
+ULP1	YPL020C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2001-01-18	Li SJ and Hochstrasser M (2000) PMID:10713161
+GCR1	YPL075W	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2009-03-31	Menon BB, et al. (2005) PMID:15817685
+UIP4	YPL186C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2005-04-22	Takahashi Y, et al. (2000) PMID:11056382
+PRM3	YPL192C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2003-05-08	Beilharz T, et al. (2003) PMID:12514182
+PRM3	YPL192C	located in	GO:0005635	nuclear envelope	cellular component		IMP	manually curated	SGD	2003-05-08	Beilharz T, et al. (2003) PMID:12514182
+CSA1	YPR174C	located in	GO:0005635	nuclear envelope	cellular component		IDA	manually curated	SGD	2004-10-08	Sundin BA, et al. (2004) PMID:15282802

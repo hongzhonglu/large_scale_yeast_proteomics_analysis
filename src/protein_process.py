@@ -359,6 +359,8 @@ def getCompartmentGeneList(filter="Yes"):
     else:
         return compartment_dict_all0
 
+
+# calibrate the cmpartments of some genes based on manual experiment
 def getCompartment_manual_curation():
     # design a function to process the original compartment annotation from SGD
     data_dir = "/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/sce_compartment_curation/original_annotation/"
@@ -391,7 +393,7 @@ def getCompartment_manual_curation():
         except:
             pass
 
-# calibrate the cmpartments of some genes based on manual experiment
+
 # when running the following function, please firstly run function - getCompartment_manual_curation
 def gene_location_curation_sce(organelle0):
     # use some manually checked gene compartment definion
@@ -399,6 +401,7 @@ def gene_location_curation_sce(organelle0):
     # otherwise using the computation prediction???
     # input the annotation from sgd
     organelle0 = getCompartmentGeneList(filter="Yes")
+    getCompartment_manual_curation() # run the compartment curation preprocess.
     gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx")
@@ -605,9 +608,9 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
 
 # check in the following two functions, whether the cell wall proteins are covered!
 def getMembraneProList():
+    # be careful about this part of analysis. There are so many membrane proteins without manual curation!!
     # as the first step: define the membrane or transporter protein
-    protein_transporter = open(
-        "/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/tcdb.txt").readlines()
+    protein_transporter = open("/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/tcdb.txt").readlines()
     protein_transporter = [x for x in protein_transporter if ">" in x]
     protein_transporter = [x for x in protein_transporter if "S288c" in x]
     protein_ID = []
@@ -620,8 +623,8 @@ def getMembraneProList():
     transporter_pro_list = transporter_tf["GeneName"].tolist()
 
     # get the membrane annotation from SGD
-    membrane_pro = pd.read_excel("data/membrane_annotations.xlsx")
-    membrane_pro_list = list(set(membrane_pro['Systematic Name/Complex Accession'].tolist()))
+    membrane_pro = pd.read_excel("data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx")
+    membrane_pro_list = list(set(membrane_pro['gene'].tolist()))
 
     # Input the datasets from paxDB
     compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
@@ -633,9 +636,15 @@ def getMembraneProList():
     membrane_pro_list_database = list(set(compartment1_membrane_filter["Systematic_name"].tolist()))
     # check the relation between the annotation from the above procedures
     membrane_pro_final_merge = list(set(membrane_pro_list) & set(membrane_pro_list_database))
-    # plus transporter proteins
-    membrane_pro_final_merge11 = list(set(transporter_pro_list) - set(membrane_pro_final_merge)) + membrane_pro_final_merge
-    return membrane_pro_final_merge11
+    cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
+    cell_wall_gene = cell_wall['gene'].tolist()
+    # plus transporter proteins and cell wall proteins
+    # but the total membrane proteins are too many!!???
+    # membrane_pro_final_merge11 = list(set(transporter_pro_list) - set(membrane_pro_final_merge)) + membrane_pro_final_merge + list(set(cell_wall_gene) - set(membrane_pro_final_merge))
+    membrane_pro_final_merge11 = membrane_pro_final_merge + list(set(cell_wall_gene) - set(membrane_pro_final_merge))
+
+    return list(set(membrane_pro_final_merge11))
+
 
 # # calculate the membrane ratio
 def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
@@ -665,7 +674,7 @@ def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
 
     # creat two dataframe to save the result
     all_compartment = [x for x in all_compartment if "membrane" in x]
-    all_compartment = [x for x in all_compartment if x != "mitochondrial intermembrane space"]
+    all_compartment = [x for x in all_compartment if x != "mitochondrial intermembrane space"] + ['fungal-type cell wall']
     result2 = pd.DataFrame({"compartment": all_compartment})
     membrane_pro_final_merge = getMembraneProList()
     # run the cycle

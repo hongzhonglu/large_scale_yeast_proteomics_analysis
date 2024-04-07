@@ -6,13 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/cytoplasm_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/gene_belong_fungal_type_vacuole_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/gene_belong_mitochondrion_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/gene_belong_nucleus_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/gene_from_nucleolus_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/nucleolus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/ribosome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/ribosome_annotations_v2.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -434,12 +438,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>606</line>
+          <line>609</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>640</line>
+          <line>649</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
       </breakpoints>
