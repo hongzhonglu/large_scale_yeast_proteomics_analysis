@@ -77,7 +77,7 @@ mass_fraction_NCB = mass_fraction_NCB.rename(columns={'IO_SD108_batch_miu=0.52_x
 mass_fraction_final = mass_fraction_NCB.copy()
 mass_fraction_final.to_excel("data/proteomics/mass_fraction_NCB_for_yeast_IO.xlsx")
 
-def getCompartmentGeneList(filter="Yes"):
+def getCompartmentGeneList_IO(filter="Yes"):
     """
     This function to build a compartment dict, with which we can get the gene list from the compartment name
 
@@ -153,7 +153,7 @@ def getCompartmentGeneList(filter="Yes"):
     else:
         return compartment_dict_all0
 
-def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
+def ProMassRatio_Organelle_IO(protein_abundance, compartment_type="organelle"):
     """
     This function is used to calculate the organelle protein aboslute abundance as a whole
     :param protein_abundance:
@@ -162,7 +162,7 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
     """
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList_IO(filter="Yes")  # based on the automatic way
         all_compartment = list(compartment.keys())
 
     # sample ID information
@@ -203,9 +203,8 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
     return result1
 
 
-
 # test the above code
-out = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment_type="organelle")
+out = ProMassRatio_Organelle_IO(protein_abundance=mass_fraction_final, compartment_type="organelle")
 out.to_excel("data/proteomics/ProMassRatio_across_compartment_NCB_yeast_IO.xlsx")
 
 

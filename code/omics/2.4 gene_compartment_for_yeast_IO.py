@@ -81,7 +81,6 @@ IO_gene_with_sce_ortholog0["gene_sce"] = IO_gene_with_sce_ortholog0["gene_sce"].
 
 # get gene without location from above way
 gene_with_no_location = ii1 + IO_gene_no_location_g1["Entry"].tolist()
-
 # then for these 1046 genes, we can annotate them based on deep learning
 from Bio import SeqIO
 infile3 = 'data/nature_chemical_biology_datatset_2024/uniprotkb_proteome_UP000029867_2024_03_18.fasta'
@@ -93,7 +92,6 @@ for record in SeqIO.parse(infile3, "fasta"):
     if ss1 in gene_with_no_location:
         record.id = ss1
         select_sequences.append(record)
-
 SeqIO.write(select_sequences, "data/nature_chemical_biology_datatset_2024/IO_select_seq_for_location_annotation.fasta", "fasta")
 # then split the seq into 6
 SeqIO.write(select_sequences[0:200], "data/nature_chemical_biology_datatset_2024/IO_select_seq_for_location_annotation1.fasta", "fasta")
@@ -102,6 +100,12 @@ SeqIO.write(select_sequences[400:600], "data/nature_chemical_biology_datatset_20
 SeqIO.write(select_sequences[600:800], "data/nature_chemical_biology_datatset_2024/IO_select_seq_for_location_annotation4.fasta", "fasta")
 SeqIO.write(select_sequences[800:1000], "data/nature_chemical_biology_datatset_2024/IO_select_seq_for_location_annotation5.fasta", "fasta")
 SeqIO.write(select_sequences[1000:], "data/nature_chemical_biology_datatset_2024/IO_select_seq_for_location_annotation6.fasta", "fasta")
+
+
+
+
+
+
 
 # summarize the new compartment annotation
 all_file = os.listdir("data/nature_chemical_biology_datatset_2024/compartment_annotation")
@@ -205,6 +209,9 @@ IO_compartment1 = IO_compartment[IO_compartment["source"] !="MULocDeep"]
 IO_compartment2 = IO_compartment[IO_compartment["source"].str.contains("MULocDeep")]
 list(set(IO_compartment2["compartment"])-set(IO_compartment1["compartment"]))
 
+# remove cytoplasm
+# note: the protein compartment annotation from sce could affect the result of IO in compartment annotation
+IO_compartment = IO_compartment[IO_compartment["compartment"]!="cytoplasm"]
 IO_compartment.to_excel("data/nature_chemical_biology_datatset_2024/IO_gene_compartment.xlsx")
 
 
