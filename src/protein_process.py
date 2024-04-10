@@ -402,13 +402,12 @@ gene_anotation_for_cell_wall = gene_anotation[gene_anotation['ID'].isin(gene_cel
 # getCompartment_manual_curation() # run the compartment curation preprocess. If update the compartment information, need to run this function
 
 
-
 def gene_location_curation_sce(organelle0):
     # use some manually checked gene compartment definion
     # if the manual curated gene number for one compartment is larger, nealy equal to computational, then use the manual curation
     # otherwise using the computation prediction???
     # input the annotation from sgd
-    organelle0 = getCompartmentGeneList(filter="Yes")
+    # organelle0 = getCompartmentGeneList(filter="Yes") # this is just for the test
     #gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
     gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/gene_belong_plasma_membrane_annotations_old_version.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
@@ -417,12 +416,16 @@ def gene_location_curation_sce(organelle0):
     gene_cytoplasm = pd.read_excel("data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx")
     gene_cytosol = pd.read_excel("data/sce_compartment_curation/cytosol_annotations_v2.xlsx")
     gene_nucleus = pd.read_excel("data/sce_compartment_curation/nucleus_annotations_v2.xlsx")
+
     # mitochondrion specific
     gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrial_suborganelle.xlsx")
+    gene_mitochondrion = gene_mitochondrion.iloc[0:987:]
     gene_m_Outer_membrane = gene_mitochondrion[gene_mitochondrion['Outer membrane']=="X"]
     gene_m_Inner_membrane = gene_mitochondrion[gene_mitochondrion['Inner membrane'] == "X"]
     gene_m_OI_space = gene_mitochondrion[gene_mitochondrion['Inter-membrane space'] == "X"]
     gene_m_matrix = gene_mitochondrion[gene_mitochondrion['Matrix'] == "X"]
+    # evaluate the mitochondrion gene
+    # gene_unassigned_m = set(gene_mitochondrion['gene'].tolist())-set(gene_m_Inner_membrane['gene'].tolist())-set(gene_m_Outer_membrane['gene'].tolist())-set(gene_m_matrix['gene'].tolist())
 
     organelle0_update = {}
     for y in organelle0.keys():
@@ -443,16 +446,16 @@ def gene_location_curation_sce(organelle0):
             genes_select = gene_cytoplasm["gene"].tolist()  # for the test
         elif y == "cytosol":
             genes_select = gene_cytosol["gene"].tolist()  # for the test
-        elif y == "mitochondrion":
-            genes_select = gene_mitochondrion["gene"].tolist()  # for the test
-        elif y == "mitochondrial outer membrane":
-            genes_select = gene_m_Outer_membrane["gene"].tolist()  # for the test
-        elif y == "mitochondrial inner membrane":
-            genes_select = gene_m_Inner_membrane["gene"].tolist()  # for the test
-        elif y == "mitochondrial intermembrane space":
-            genes_select = gene_m_OI_space["gene"].tolist()  # for the test
-        elif y == "mitochondrial matrix":
-            genes_select = gene_m_matrix["gene"].tolist()  # for the test
+            #elif y == "mitochondrion":
+            #genes_select = gene_mitochondrion["gene"].tolist()  # for the test
+            #elif y == "mitochondrial outer membrane":
+            #genes_select = gene_m_Outer_membrane["gene"].tolist()  # for the test
+            #elif y == "mitochondrial inner membrane":
+            #genes_select = gene_m_Inner_membrane["gene"].tolist()  # for the test
+            #elif y == "mitochondrial intermembrane space":
+            #genes_select = gene_m_OI_space["gene"].tolist()  # for the test
+            #elif y == "mitochondrial matrix":
+            #genes_select = gene_m_matrix["gene"].tolist()  # for the test
         elif y == "nucleus":
             genes_select = gene_nucleus["gene"].tolist()  # for the test
         else:
@@ -461,7 +464,6 @@ def gene_location_curation_sce(organelle0):
         # remove cytoplasm
         organelle0_update00 = {x:y for x, y in organelle0_update.items() if "cytoplasm" not in x}
     return organelle0_update00
-
 
 def get_total_membrane_area(pro_size0, abundance0, need_check="No"):
     """
