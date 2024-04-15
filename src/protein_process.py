@@ -284,7 +284,10 @@ def get_total_protein_volume(pro_size0, abundance0, need_check="No"):
         return total_volume_um, combine_df
 
 
+
+
 # get the compartments of all genes
+# now we have the updated version of the compartment
 def getCompartmentGeneList(filter="Yes"):
     """
     This function to build a compartment dict, with which we can get the gene list from the compartment name
@@ -294,11 +297,20 @@ def getCompartmentGeneList(filter="Yes"):
     """
 
     # Input the datasets from paxDB
-    compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
+    #compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
+    # extract compartment
+    #compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier', 'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+
+
+    # using the updated version in 2024
+    # Input the datasets from paxDB
+    compartment = pd.read_csv("data/yeastmine_results_2024-04-15T10-39-56.tsv", sep='\t')
 
     # extract compartment
-    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
-                           'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'Ontology_Description', 'GO_Namespace', 'GO_Name',
+                           'GO_Identifier', 'Annot_Type', 'GO_Qualifier']
+
+
     compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
 
     # filter out compartment with "complex" or "subunit"
@@ -312,10 +324,17 @@ def getCompartmentGeneList(filter="Yes"):
 
     # analyze the annotation type
     annotation_type = compartment2["Annot_Type"].tolist()
-    annotation_type = list(set(annotation_type))
+    print("Annotation type:")
+    print(list(set(annotation_type)))
+
+
     # here if we remove "computational"
     compartment_with_evidence = compartment2[compartment2["Annot_Type"] != 'computational']
     compartment_with_computation = compartment2[compartment2["Annot_Type"] == 'computational']
+
+    len(set(compartment_with_evidence["Systematic_name"].tolist()))
+    len(set(compartment_with_computation["Systematic_name"].tolist()))
+
     # in one procedure, if a protein has no compartment annotation from manual and high-throughput, then the computational is used!
     compartment_addition = compartment_with_computation[~compartment_with_computation["Systematic_name"].isin(compartment_with_evidence["Systematic_name"])]
     compartment_combine = pd.concat([compartment_with_evidence, compartment_addition])
@@ -359,8 +378,8 @@ def getCompartmentGeneList(filter="Yes"):
     else:
         return compartment_dict_all0
 
-
-# calibrate the cmpartments of some genes based on manual experiment
+# calibrate the compartments of some genes based on manual experiment
+# however this step can be omitted.
 def getCompartment_manual_curation():
     # design a function to process the original compartment annotation from SGD
     data_dir = "/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/sce_compartment_curation/original_annotation/"
@@ -400,7 +419,6 @@ gene_anotation_for_cell_wall = gene_anotation[gene_anotation['ID'].isin(gene_cel
 # here 9 enzyme genes belong to cell wall were removed.
 #gene_anotation_for_cell_wall.to_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
 # getCompartment_manual_curation() # run the compartment curation preprocess. If update the compartment information, need to run this function
-
 
 def gene_location_curation_sce(organelle0):
     # use some manually checked gene compartment definion
@@ -465,6 +483,7 @@ def gene_location_curation_sce(organelle0):
         organelle0_update00 = {x:y for x, y in organelle0_update.items() if "cytoplasm" not in x}
     return organelle0_update00
 
+
 def get_total_membrane_area(pro_size0, abundance0, need_check="No"):
     """
     The function is used to calculate the total protein size and sectional area for a group of genes from specific location.
@@ -514,7 +533,7 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
-        compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
+        #compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
     # sample ID information
