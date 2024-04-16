@@ -1,0 +1,105 @@
+!
+!Date: 04/10/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+N-acetylglutamate synthase NAGS/NAGK complex	CPX-1151	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	ComplexPortal	2018-05-04	Jauniaux JC, et al. (1978) PMID:205532
+GRX5 iron-sulfur cluster assembly homodimer complex	CPX-6957	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	ComplexPortal	2021-10-13	Rodríguez-Manzaneque MT, et al. (2002) PMID:11950925
+BOL1	YAL044W-A	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2016-09-13	Uzarska MA, et al. (2016) PMID:27532772
+BOL3	YAL046C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2016-09-13	Uzarska MA, et al. (2016) PMID:27532772
+PIM1	YBL022C	located in	GO:0005759	mitochondrial matrix	cellular component		IMP	manually curated	SGD	2001-01-18	Van Dyck L, et al. (1994) PMID:8276800
+PIM1	YBL022C	located in	GO:0005759	mitochondrial matrix	cellular component		IMP	manually curated	SGD	2009-02-18	Suzuki CK, et al. (1994) PMID:8146662
+MCX1	YBR227C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	van Dyck L, et al. (1998) PMID:9827555
+SDH8	YBR269C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2014-08-05	Van Vranken JG, et al. (2014) PMID:24954416
+PTC6	YCR079W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-03-21	Gey U, et al. (2008) PMID:18180296
+RAD59	YDL059C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2019-05-30	Stein A, et al. (2015) PMID:26540255
+MSS2	YDL107W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-01-30	Broadley SA, et al. (2001) PMID:11604502
+YFH1	YDL120W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2004-01-06	Branda SS, et al. (1999) PMID:10428860
+DLD2	YDL178W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-05-10	Chelstowska A, et al. (1999) PMID:10509019
+MSS116	YDR194C	located in	GO:0005759	mitochondrial matrix	cellular component		IMP	manually curated	SGD	2001-01-18	Séraphin B, et al. (1989) PMID:2535893
+HEM1	YDR232W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-09-26	Keng T, et al. (1986) PMID:3023841
+CTA1	YDR256C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-06-10	Petrova VY, et al. (2004) PMID:14998369
+HSP78	YDR258C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Leonhardt SA, et al. (1993) PMID:8413229
+IRC3	YDR332W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2014-12-02	Sedman T, et al. (2014) PMID:25389272
+MZM1	YDR493W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2010-06-11	Atkinson A, et al. (2010) PMID:20404342
+ISD11	YER048W-A	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-12-09	Wiedemann N, et al. (2006) PMID:16341089
+ISD11	YER048W-A	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2006-01-19	Adam AC, et al. (2006) PMID:16341090
+ARG56	YER069W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Boonchird C, et al. (1991) PMID:1851947
+RAD51	YER095W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2019-05-30	Stein A, et al. (2015) PMID:26540255
+CCA1	YER168C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-12-02	Chen JY, et al. (1992) PMID:1634528
+CCA1	YER168C	is active in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2013-10-07	Chen JY, et al. (1992) PMID:1634528
+ADK2	YER170W	is active in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2019-11-06	Schricker R, et al. (1995) PMID:8537371
+ADK2	YER170W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2013-10-08	Schricker R, et al. (1995) PMID:8537371
+MDJ1	YFL016C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-06-03	Burri L, et al. (2004) PMID:15383543
+RPO41	YFL036W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Kelly JL, et al. (1986) PMID:2426263
+RPO41	YFL036W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Greenleaf AL, et al. (1986) PMID:3517858
+JAC1	YGL018C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2019-06-21	Voisine C, et al. (2001) PMID:11171977
+JAC1	YGL018C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2019-06-21	Lutz T, et al. (2001) PMID:11273703
+MRH4	YGL064C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2014-03-17	De Silva D, et al. (2013) PMID:24206665
+SCY1	YGL083W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2024-01-10	McNamara JT, et al. (2023) PMID:38126114
+COQ8	YGL119W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-09-30	Tauche A, et al. (2008) PMID:18801050
+TAM41	YGR046W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2006-09-11	Gallas MR, et al. (2006) PMID:16790493
+TAM41	YGR046W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2006-09-12	Tamura Y, et al. (2006) PMID:16943180
+PET54	YGR222W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2003-02-10	McMullin TW and Fox TD (1993) PMID:8389363
+YHB1	YGR234W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2005-02-21	Cassanova N, et al. (2005) PMID:15611069
+SOD2	YHR008C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-10-01	Ravindranath SD and Fridovich I (1975) PMID:238997
+PUT2	YHR037W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2010-05-27	Brandriss MC and Krzywicki KA (1986) PMID:3025596
+TRM5	YHR070W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2007-08-03	Lee C, et al. (2007) PMID:17652090
+GEP4	YHR100C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2010-09-01	Osman C, et al. (2010) PMID:20485265
+BAT1	YHR208W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-09-26	Kispal G, et al. (1996) PMID:8798704
+MMF1	YIL051C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-09-26	Oxelmark E, et al. (2000) PMID:11003673
+MAM33	YIL070C	is active in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2021-04-22	Muta T, et al. (1997) PMID:9305894
+MAM33	YIL070C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-06-05	Muta T, et al. (1997) PMID:9305894
+FMC1	YIL098C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2009-07-21	Lefebvre-Legendre L, et al. (2001) PMID:11096112
+ARG2	YJL071W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Jauniaux JC, et al. (1978) PMID:205532
+IBA57	YJR122W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-01-03	Gelling C, et al. (2008) PMID:18086897
+NFU1	YKL040C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Schilke B, et al. (1999) PMID:10468587
+MDH1	YKL085W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-08-25	Dubaquié Y, et al. (1998) PMID:9774331
+OCT1	YKL134C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2014-04-02	Isaya G, et al. (1994) PMID:8035833
+ISA1	YLL027W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Jensen LT and Culotta VC (2000) PMID:10805735
+GUF1	YLR289W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-09-03	Bauerschmitt H, et al. (2008) PMID:18442968
+ACO1	YLR304C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2011-04-18	Chen XJ, et al. (2005) PMID:15692048
+SSQ1	YLR369W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Schilke B, et al. (1996) PMID:8707841
+STE23	YLR389C	is active in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2021-04-29	Taskin AA, et al. (2017) PMID:28228553
+AIM32	YML050W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2021-11-09	Stegmaier K, et al. (2019) PMID:30879301
+AIM32	YML050W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2021-11-09	Zhang D, et al. (2021) PMID:34461091
+RPM2	YML091C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2012-01-20	Kassenbrock CK, et al. (1995) PMID:7544434
+COQ5	YML110C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2006-09-08	Dibrov E, et al. (1997) PMID:9083048
+NDI1	YML120C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2006-03-02	Marres CA, et al. (1991) PMID:1900238
+NDI1	YML120C	located in	GO:0005759	mitochondrial matrix	cellular component		IMP	manually curated	SGD	2006-03-02	Marres CA, et al. (1991) PMID:1900238
+COX14	YML129C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2005-03-01	Barrientos A, et al. (2004) PMID:15306853
+ARG7	YMR062C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2006-09-07	Jauniaux JC, et al. (1978) PMID:205532
+ADH3	YMR083W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-09-20	Pilgrim D and Young ET (1987) PMID:3550419
+PSO2	YMR137C	is active in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2022-05-05	Somashekara SC and Muniyappa K (2022) PMID:35482533
+MTF1	YMR228W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-01-30	Biswas TK and Getz GS (2002) PMID:12270918
+IDH1	YNL037C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-12-02	Zhao WN and McAlister-Henn L (1996) PMID:8626605
+MRX6	YNL295W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2020-05-05	Göke A, et al. (2020) PMID:31532710
+ZIM17	YNL310C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2005-01-03	Burri L, et al. (2004) PMID:15383543
+ZIM17	YNL310C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2005-11-18	Sanjuán Szklarz LK, et al. (2005) PMID:15992824
+SDH5	YOL071W	is active in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2021-12-13	Hao HX, et al. (2009) PMID:19628817
+HMI1	YOL095C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-09-21	Lee CM, et al. (1999) PMID:10409639
+ARG8	YOL140W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2006-09-07	Jauniaux JC, et al. (1978) PMID:205532
+HSP10	YOR020C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Rospert S, et al. (1993) PMID:7903252
+DDL1	YOR022C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2016-12-08	Urafuji K and Arioka M (2016) PMID:27746179
+GLO4	YOR040W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Bito A, et al. (1997) PMID:9261170
+CIM1	YOR114W	is active in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2023-10-26	Schrott S and Osman C (2023) PMID:37850632
+ISU2	YOR226C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Schilke B, et al. (1999) PMID:10468587
+ISU2	YOR226C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2005-04-22	Gerber J, et al. (2004) PMID:15143178
+MGE1	YOR232W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Laloraya S, et al. (1994) PMID:8022808
+MNE1	YOR350C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2011-02-09	Watts T, et al. (2011) PMID:21257754
+MSC6	YOR354C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2016-01-29	Moda BS, et al. (2016) PMID:26780366
+GRX5	YPL059W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2016-09-13	Rodríguez-Manzaneque MT, et al. (2002) PMID:11950925
+GRX5	YPL059W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2005-01-26	Molina MM, et al. (2004) PMID:15456753
+ISU1	YPL135W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2001-01-18	Schilke B, et al. (1999) PMID:10468587
+ISU1	YPL135W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2005-04-22	Gerber J, et al. (2004) PMID:15143178
+POS5	YPL188W	is active in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2020-11-18	Outten CE and Culotta VC (2003) PMID:12727869
+POS5	YPL188W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2003-05-12	Outten CE and Culotta VC (2003) PMID:12727869
+COA2	YPL189C-A	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2008-06-17	Pierrel F, et al. (2008) PMID:18541668
+YAH1	YPL252C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-09-03	Barros MH and Nobrega FG (1999) PMID:10375636
+FUM1	YPL262W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-12-02	Sass E, et al. (2001) PMID:11585823
+ICL2	YPR006C	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2002-09-21	Luttik MA, et al. (2000) PMID:11092862
+ISA2	YPR067W	located in	GO:0005759	mitochondrial matrix	cellular component		IDA	manually curated	SGD	2014-10-18	Pelzer W, et al. (2000) PMID:10913600

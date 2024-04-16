@@ -305,12 +305,8 @@ def getCompartmentGeneList(filter="Yes"):
     # using the updated version in 2024
     # Input the datasets from paxDB
     compartment = pd.read_csv("data/yeastmine_results_2024-04-15T10-39-56.tsv", sep='\t')
-
     # extract compartment
-    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'Ontology_Description', 'GO_Namespace', 'GO_Name',
-                           'GO_Identifier', 'Annot_Type', 'GO_Qualifier']
-
-
+    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'Ontology_Description', 'GO_Namespace', 'GO_Name', 'GO_Identifier', 'Annot_Type', 'GO_Qualifier']
     compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
 
     # filter out compartment with "complex" or "subunit"
@@ -436,14 +432,13 @@ def gene_location_curation_sce(organelle0):
     gene_nucleus = pd.read_excel("data/sce_compartment_curation/nucleus_annotations_v2.xlsx")
 
     # mitochondrion specific
-    gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrial_suborganelle.xlsx")
-    gene_mitochondrion = gene_mitochondrion.iloc[0:987:]
-    gene_m_Outer_membrane = gene_mitochondrion[gene_mitochondrion['Outer membrane']=="X"]
-    gene_m_Inner_membrane = gene_mitochondrion[gene_mitochondrion['Inner membrane'] == "X"]
-    gene_m_OI_space = gene_mitochondrion[gene_mitochondrion['Inter-membrane space'] == "X"]
-    gene_m_matrix = gene_mitochondrion[gene_mitochondrion['Matrix'] == "X"]
-    # evaluate the mitochondrion gene
-    # gene_unassigned_m = set(gene_mitochondrion['gene'].tolist())-set(gene_m_Inner_membrane['gene'].tolist())-set(gene_m_Outer_membrane['gene'].tolist())-set(gene_m_matrix['gene'].tolist())
+    gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrion_annotations_manual_v2.xlsx")
+    gene_m_Outer_membrane = pd.read_excel("data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_manual_v3.xlsx")
+    gene_m_Inner_membrane = pd.read_excel("data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v3.xlsx")
+    gene_m_OI_space = pd.read_excel("data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx")
+    gene_m_matrix = pd.read_excel("data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v3.xlsx")
+    gene_m_unassigned = pd.read_excel("data/sce_compartment_curation/mitochondrial_unassigned_manual_v3.xlsx")
+    organelle0['mitochondrion_unassigned'] = gene_m_unassigned['gene'].tolist()
 
     organelle0_update = {}
     for y in organelle0.keys():
@@ -464,16 +459,16 @@ def gene_location_curation_sce(organelle0):
             genes_select = gene_cytoplasm["gene"].tolist()  # for the test
         elif y == "cytosol":
             genes_select = gene_cytosol["gene"].tolist()  # for the test
-            #elif y == "mitochondrion":
-            #genes_select = gene_mitochondrion["gene"].tolist()  # for the test
-            #elif y == "mitochondrial outer membrane":
-            #genes_select = gene_m_Outer_membrane["gene"].tolist()  # for the test
-            #elif y == "mitochondrial inner membrane":
-            #genes_select = gene_m_Inner_membrane["gene"].tolist()  # for the test
-            #elif y == "mitochondrial intermembrane space":
-            #genes_select = gene_m_OI_space["gene"].tolist()  # for the test
-            #elif y == "mitochondrial matrix":
-            #genes_select = gene_m_matrix["gene"].tolist()  # for the test
+        elif y == "mitochondrion":
+            genes_select = gene_mitochondrion["gene"].tolist()  # for the test
+        elif y == "mitochondrial outer membrane":
+            genes_select = gene_m_Outer_membrane["gene"].tolist()  # for the test
+        elif y == "mitochondrial inner membrane":
+            genes_select = gene_m_Inner_membrane["gene"].tolist()  # for the test
+        elif y == "mitochondrial intermembrane space":
+            genes_select = gene_m_OI_space["gene"].tolist()  # for the test
+        elif y == "mitochondrial matrix":
+            genes_select = gene_m_matrix["gene"].tolist()  # for the test
         elif y == "nucleus":
             genes_select = gene_nucleus["gene"].tolist()  # for the test
         else:
@@ -533,7 +528,7 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
     if compartment_type == "organelle":
         # compartment info
         compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
-        #compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
+        compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
     # sample ID information
@@ -649,32 +644,43 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
 
 # check in the following two functions, whether the cell wall proteins are covered!
 def getMembraneProList():
+    # for the membrane annotation, uniprot is good in transmembrane annotation
+    # maybe get the intersection between uniprot and SGD in membrane annotation
+    # also, put the unassigned membrane protein as a unique group?
+
     # be careful about this part of analysis. There are so many membrane proteins without manual curation!!
     # as the first step: define the membrane or transporter protein
-    protein_transporter = open("/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/tcdb.txt").readlines()
-    protein_transporter = [x for x in protein_transporter if ">" in x]
-    protein_transporter = [x for x in protein_transporter if "S288c" in x]
-    protein_ID = []
-    for xx in protein_transporter:
-        ss0 = xx.split("|")[2]
-        protein_ID.append(ss0)
+    #protein_transporter = open("/Users/xluhon/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/tcdb.txt").readlines()
+    #protein_transporter = [x for x in protein_transporter if ">" in x]
+    #protein_transporter = [x for x in protein_transporter if "S288c" in x]
+    #protein_ID = []
+    #for xx in protein_transporter:
+    #    ss0 = xx.split("|")[2]
+    #    protein_ID.append(ss0)
     # get the transporter gene id in sce
-    uniprotGeneID_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
-    transporter_tf = uniprotGeneID_mapping[uniprotGeneID_mapping["Entry"].isin(protein_ID)]
-    transporter_pro_list = transporter_tf["GeneName"].tolist()
+    #uniprotGeneID_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
+    #transporter_tf = uniprotGeneID_mapping[uniprotGeneID_mapping["Entry"].isin(protein_ID)]
+    #transporter_pro_list = transporter_tf["GeneName"].tolist()
 
     # get the membrane annotation from SGD
     membrane_pro = pd.read_excel("data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx")
     membrane_pro_list = list(set(membrane_pro['gene'].tolist()))
 
     # Input the datasets from paxDB
-    compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
+    #compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
     # extract compartment
-    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
-                           'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+    #compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier',
+    #                       'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+    #compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
+    # using the updated version in 2024
+    # Input the datasets from paxDB
+    compartment = pd.read_csv("data/yeastmine_results_2024-04-15T10-39-56.tsv", sep='\t')
+    # extract compartment
+    compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'Ontology_Description', 'GO_Namespace', 'GO_Name', 'GO_Identifier', 'Annot_Type', 'GO_Qualifier']
     compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
     compartment1_membrane_filter = compartment1[compartment1["GO_Name"].str.contains("membrane")][compartment1["GO_Name"] !="mitochondrial intermembrane space"]
     membrane_pro_list_database = list(set(compartment1_membrane_filter["Systematic_name"].tolist()))
+
     # check the relation between the annotation from the above procedures
     membrane_pro_final_merge = list(set(membrane_pro_list) & set(membrane_pro_list_database))
     cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
@@ -685,7 +691,6 @@ def getMembraneProList():
     membrane_pro_final_merge11 = membrane_pro_final_merge + list(set(cell_wall_gene) - set(membrane_pro_final_merge))
 
     return list(set(membrane_pro_final_merge11))
-
 
 # # calculate the membrane ratio
 def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
