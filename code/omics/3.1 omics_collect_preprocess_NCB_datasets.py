@@ -1,5 +1,5 @@
-# this script is to transform the unit of proteomics datasets from mmol/gDW or g/gDW into molecular/cell
-# 2021-11-16
+# this script is to preprocess the NCB datasets
+
 
 import sys
 
@@ -75,13 +75,14 @@ df_combine1.to_excel("data/mass_fraction_NCB.xlsx")
 df_combine2.to_excel("data/mass_fraction_NCB2.xlsx")
 
 # merge all the dataset
-mass_fraction_NCB = pd.merge(left=df_combine1, right=df_combine2, left_on=['Entry'], right_on=['Entry'], how="outer")
+mass_fraction_NCB = pd.merge(left=df_combine1, right=df_combine2, left_on=['geneID'], right_on=['geneID'], how="outer")
 
 
-mass_fraction_NCB = mass_fraction_NCB.drop(['Entry', 'geneID_y'], axis=1)
-mass_fraction_NCB = mass_fraction_NCB.rename(columns={'geneID_x': 'gene'})
+mass_fraction_NCB = mass_fraction_NCB.drop(['Entry_x', 'Entry_y'], axis=1)
+mass_fraction_NCB = mass_fraction_NCB.rename(columns={'geneID': 'gene'})
 mass_fraction_final = mass_fraction_NCB.copy()
 mass_fraction_final.to_excel("data/proteomics/mass_fraction_NCB.xlsx")
+
 
 # the above unit is g specific protein/ g total protein. However, the mass percentage of protein in some condition was not measured.
 # change the unit as protein abundance data in the unit of mmol/g DCW ??
