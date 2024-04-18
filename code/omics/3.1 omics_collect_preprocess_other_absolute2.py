@@ -111,6 +111,10 @@ omics_nc_tao2 = pd.read_excel("data/proteomics/Omics_from_tao_nc_scale.xlsx")
 
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=df_combine5, omics_new=omics_cell_system_2017, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_carbon_source, remove_column="gene")
+test = omics_cell_system_2017[omics_cell_system_2017["gene"] =="YPR080W"]
+test = df_combine5[df_combine5["all_gene"] =="YPR080W"]
+
+
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_jianye, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_kate, remove_column="gene")
 omics_combine_auto = combineAbosluteAbundance(omics_combine_base=omics_combine_auto, omics_new=omics_nc_tao2, remove_column="gene")

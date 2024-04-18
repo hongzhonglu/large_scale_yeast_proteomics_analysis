@@ -396,6 +396,8 @@ result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
 # this data is sysbio, cell systems, 2017
 # the unit is molecular/pgDCW, need change it as mmol/gDW
 protein_abundance = pd.read_excel("data/proteomics/omics_from_cell_systems_2017.xlsx")
+protein_abundance = protein_abundance.drop_duplicates("gene", keep='first')
+
 colnames = protein_abundance.columns
 protein_abundance1 = protein_abundance[colnames[1:]]
 colnames0 = colnames[1:]
