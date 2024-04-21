@@ -438,10 +438,11 @@ def gene_location_curation_sce(organelle0):
     gene_m_OI_space = pd.read_excel("data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx")
     gene_m_matrix = pd.read_excel("data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v3.xlsx")
     gene_m_unassigned = pd.read_excel("data/sce_compartment_curation/mitochondrial_unassigned_manual_v3.xlsx")
-    organelle0['mitochondrion_unassigned'] = gene_m_unassigned['gene'].tolist()
+    organelle1 = organelle0.copy()
+    organelle1['mitochondrion_unassigned'] = gene_m_unassigned['gene'].tolist()
 
     organelle0_update = {}
-    for y in organelle0.keys():
+    for y in organelle1.keys():
         print(y)
         if y == "plasma membrane":
             genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
@@ -451,7 +452,7 @@ def gene_location_curation_sce(organelle0):
             genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
             genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
         elif y == "endosome":
-            genes_select = organelle0[y]
+            genes_select = organelle1[y]
             genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
         elif y == "nucleolus":
             genes_select = gene_nucleolus["gene"].tolist()  # for the test
@@ -472,11 +473,11 @@ def gene_location_curation_sce(organelle0):
         elif y == "nucleus":
             genes_select = gene_nucleus["gene"].tolist()  # for the test
         else:
-            genes_select = organelle0[y]
+            genes_select = organelle1[y]
         organelle0_update[y] = list(filter(lambda x: str(x) != 'nan', genes_select))
         # remove cytoplasm
-        organelle0_update00 = {x:y for x, y in organelle0_update.items() if "cytoplasm" not in x}
-    return organelle0_update00
+        # organelle0_update = {x:y for x, y in organelle0_update.items() if x is not "cytoplasm"}
+    return organelle0_update
 
 
 def get_total_membrane_area(pro_size0, abundance0, need_check="No"):

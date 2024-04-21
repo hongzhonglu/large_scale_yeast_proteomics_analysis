@@ -110,9 +110,9 @@ ratio_all <- c()
 for(i in 2:ncol(combine)){
   print(i)
   ss1 <- combine[,c(1, i)]
-  ss1 <- ss1[order(ss1[[1]], decreasing = TRUE), ]
+  ss1 <- ss1[order(ss1[[2]], decreasing = TRUE), ]
   top1000 <- ss1[1:1000,]
-  ratio1 <- sum(top1000[,1],na.rm = TRUE)/sum(ss1[,1], na.rm = TRUE)
+  ratio1 <- sum(top1000[,2],na.rm = TRUE)/sum(ss1[,2], na.rm = TRUE)
   ratio_all <- c(ratio_all, ratio1)
 }
 
@@ -191,34 +191,10 @@ ggplot(df, aes(value)) +
        y = "Density") 
 
 
-# analyze the gene with fewer occurance num
+# analyze the gene with fewer occurrence num
 gene_existence_l <- gene_existence[gene_existence$exist_count <= 10,]
 gene_list <- rownames(gene_existence_l)
 paste0(gene_list,collapse = ",")
-
-
-
-
-
-
-
-
-
-
-
-
-# part2 protein compartment
-
-
-
-
-
-
-
-# part3 protein properties - mass, volume, sectional area
-
-
-
 
 
 
