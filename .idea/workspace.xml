@@ -6,26 +6,18 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot02.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot03.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot04.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot05.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot06.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot07.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot09.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot11.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot12.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot14.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/figure_1.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_1.R" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/figure/figure_2.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_2.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compare_compartment_anotation_with_and_without_filter.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compare_compartment_anotation_with_and_without_filter.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/1.1 proteomics_comparment_annotation_automatic_way.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/1.1 proteomics_comparment_annotation_automatic_way.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 correlation_of_protein_abundance_within_and_across_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 correlation_of_protein_abundance_within_and_across_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compare_compartment_anotation_with_and_without_filter.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compare_compartment_anotation_with_and_without_manual_curation.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$physiology_collection.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -432,32 +424,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>646</line>
+          <line>655</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>696</line>
+          <line>705</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>413</line>
+          <line>448</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>411</line>
+          <line>446</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>412</line>
+          <line>447</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>518</line>
+          <line>527</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

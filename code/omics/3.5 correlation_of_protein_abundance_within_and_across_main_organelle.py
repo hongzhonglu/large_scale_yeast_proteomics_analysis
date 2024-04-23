@@ -6,7 +6,7 @@ import os
 from src.protein_process import *
 
 # compartment info
-compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+compartment = getCompartmentGeneList(type="all")  # based on the automatic way
 compartment_corrected = gene_location_curation_sce(organelle0=compartment)  # based on the SGD manual curation
 
 
@@ -28,7 +28,7 @@ df2 = pd.DataFrame({"compartment":key0, "gene_number": len0})
 
 # combine the dataframe
 compartment_compare = pd.merge(left=df1, right=df2, left_on=['compartment'], right_on=['compartment'], how='outer')
-compartment_compare.columns = ["compartment", "annotation_filter", "annotation_curation"]
-compartment_compare.to_excel("data/compare_compartment_anotation_with_and_without_manual_curation.xlsx")
+compartment_compare.columns = ["compartment", "annotation_combine", "annotation_curation"]
+compartment_compare.to_excel("data/compare_compartment_annotation_with_and_without_manual_curation.xlsx")
 
 

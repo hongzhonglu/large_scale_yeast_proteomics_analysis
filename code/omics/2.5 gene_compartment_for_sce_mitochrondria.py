@@ -7,7 +7,7 @@ from src.protein_process import *
 
 # Part 1
 # Initially check how many genes could find compartment
-compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+compartment = getCompartmentGeneList(type="all")  # based on the automatic way
 #compartment = gene_location_curation_sce(organelle0=compartment)  # based on the SGD manual curation
 all_compartment = list(compartment.keys())
 mitochondrion_related = ['mitochondrion',

@@ -7,8 +7,8 @@ from src.protein_process import *
 from matplotlib import pyplot as plt
 
 # test the function
-compartment_dict_all0 = getCompartmentGeneList(filter="No")
-compartment_dict20 = getCompartmentGeneList(filter="Yes") # Remove some compartmental annotation only with computational evidence (keep experimental evidence)
+compartment_dict_all0 = getCompartmentGeneList(type="all")
+compartment_dict20 = getCompartmentGeneList(type="manual") # Remove some compartmental annotation only with computational evidence (keep experimental evidence)
 
 
 # compare the difference
@@ -29,8 +29,8 @@ df2 = pd.DataFrame({"compartment":key0, "gene_number": len0})
 
 # combine the dataframe
 compartment_compare = pd.merge(left=df1, right=df2, left_on=['compartment'], right_on=['compartment'], how='left')
-compartment_compare.columns = ["compartment", "all_annotation", "annotation_filter"]
-compartment_compare.to_excel("data/compare_compartment_anotation_with_and_without_filter.xlsx")
+compartment_compare.columns = ["compartment", "all_annotation", "annotation_manual_evidance"]
+compartment_compare.to_excel("data/compare_compartment_anotation_with_all_and_manual_evidance.xlsx")
 
 
 # add one plot

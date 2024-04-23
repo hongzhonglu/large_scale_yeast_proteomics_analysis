@@ -288,7 +288,7 @@ def get_total_protein_volume(pro_size0, abundance0, need_check="No"):
 
 # get the compartments of all genes
 # now we have the updated version of the compartment
-def getCompartmentGeneList(filter="Yes"):
+def getCompartmentGeneList(type="all"):
     """
     This function to build a compartment dict, with which we can get the gene list from the compartment name
 
@@ -325,6 +325,7 @@ def getCompartmentGeneList(filter="Yes"):
 
 
     # here if we remove "computational"
+    # it seems that this method is wrong, as a protein could be located in multiple compartment. Thus it removes too much information
     compartment_with_evidence = compartment2[compartment2["Annot_Type"] != 'computational']
     compartment_with_computation = compartment2[compartment2["Annot_Type"] == 'computational']
 
@@ -332,8 +333,12 @@ def getCompartmentGeneList(filter="Yes"):
     len(set(compartment_with_computation["Systematic_name"].tolist()))
 
     # in one procedure, if a protein has no compartment annotation from manual and high-throughput, then the computational is used!
-    compartment_addition = compartment_with_computation[~compartment_with_computation["Systematic_name"].isin(compartment_with_evidence["Systematic_name"])]
-    compartment_combine = pd.concat([compartment_with_evidence, compartment_addition])
+    #compartment_addition = compartment_with_computation[~compartment_with_computation["Systematic_name"].isin(compartment_with_evidence["Systematic_name"])]
+    #compartment_combine = pd.concat([compartment_with_evidence, compartment_addition])
+
+
+    # just for the test
+    # compartment_combine_test = compartment_combine[compartment_combine['GO_Name'] == "nuclear membrane"]
 
     # build the dict
     compartment_dict_all = {}
@@ -352,9 +357,10 @@ def getCompartmentGeneList(filter="Yes"):
             compartment_dict_all0[key] = value
         else:
             pass
-    # for compartment annotation removing some computation evidences
+
+    # for compartment annotation from manual evidence
     compartment_dict2 = {}
-    for i, x in compartment_combine.iterrows():
+    for i, x in compartment_with_evidence.iterrows():
         print(i, x)
         if x['GO_Name'] in compartment_dict2.keys():
             compartment_dict2[x['GO_Name']] = list(set(compartment_dict2[x['GO_Name']] + [x["Systematic_name"]]))
@@ -369,10 +375,39 @@ def getCompartmentGeneList(filter="Yes"):
             compartment_dict20[key] = value
         else:
             pass
-    if filter == "Yes":
+
+
+    # for compartment annotation from manual evidence
+    compartment_dict3 = {}
+    for i, x in compartment_with_computation.iterrows():
+        print(i, x)
+        if x['GO_Name'] in compartment_dict3.keys():
+            compartment_dict3[x['GO_Name']] = list(set(compartment_dict3[x['GO_Name']] + [x["Systematic_name"]]))
+        else:
+            compartment_dict3[x['GO_Name']] = list(set([x["Systematic_name"]]))
+    # filter
+    compartment_dict30 = {}
+    for key in compartment_dict3.keys():
+        print(key)
+        value = compartment_dict3[key]
+        if len(value) >= 6:
+            compartment_dict30[key] = value
+        else:
+            pass
+
+
+    #if filter == "Yes":
+    #    return compartment_dict20
+    #else:
+    #    return compartment_dict_all0
+    
+    if type == "all":
+        return compartment_dict_all0
+    elif type =="manual":
         return compartment_dict20
     else:
-        return compartment_dict_all0
+        return compartment_dict30
+
 
 # calibrate the compartments of some genes based on manual experiment
 # however this step can be omitted.
@@ -421,7 +456,7 @@ def gene_location_curation_sce(organelle0):
     # if the manual curated gene number for one compartment is larger, nealy equal to computational, then use the manual curation
     # otherwise using the computation prediction???
     # input the annotation from sgd
-    # organelle0 = getCompartmentGeneList(filter="Yes") # this is just for the test
+    # organelle0 = getCompartmentGeneList(type="all") # this is just for the test
     #gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
     gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/gene_belong_plasma_membrane_annotations_old_version.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
@@ -528,7 +563,7 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
 
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
         compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
@@ -586,7 +621,7 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
     """
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
         compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
@@ -703,7 +738,7 @@ def Pro_Membrance_Ratio_Cal(protein_copy, compartment_type="organelle"):
     """
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
         compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
@@ -775,7 +810,7 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
     """
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
         compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
 
@@ -880,7 +915,7 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
     """
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
         compartment = gene_location_curation_sce(organelle0=compartment) # based on the SGD manual curation
         all_compartment = list(compartment.keys())
     # sample ID information
@@ -1183,7 +1218,7 @@ def FingGenesForOrganelle(gene_set, compartment_list, compartment_type="organell
     """
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
         # all_compartment = list(compartment.keys())
 
     # use some manually checked gene compartment definion
@@ -1216,7 +1251,7 @@ def Pro3DCal(protein_copy, compartment_type="organelle"):
     """
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
         all_compartment = list(compartment.keys())
 
     # input the protein structure information
@@ -1274,7 +1309,7 @@ def ProAbsoluteCal(protein_copy, compartment_type="organelle"):
     """
     if compartment_type == "organelle":
         # compartment info
-        compartment = getCompartmentGeneList(filter="Yes")  # based on the automatic way
+        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
         all_compartment = list(compartment.keys())
 
     # input the protein structure information
