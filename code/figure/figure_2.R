@@ -95,73 +95,31 @@ physiology_collection0 <- physiology_collection[!duplicated(physiology_collectio
 
 ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
 ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassigned", ]
-
-
 ProMassRatio_ss <- ProMassRatio1[, colnames(ProMassRatio1) %in% physiology_collection0$sampleID]
-
-
 # all correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
 ss <- as.vector(M[upper.tri(M)])
 df1 <- data.frame(value=ss)
-# plot density plot
-ggplot(df, aes(value)) +
-  geom_histogram(aes(y = ..density..), 
-                 bins = 30, 
-                 fill = "lightblue", 
-                 color = "black") +
-  xlim(0.75, 1) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  geom_density(alpha = 0.5, fill = "lightgreen")+
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
-  labs(x = "Correlation coefficient for all component",
-       y = "Density") 
 
 
 
 # if based on the main organelle
 ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelle, ]
 ProMassRatio_ss <- ProMassRatio2[, colnames(ProMassRatio2) %in% physiology_collection0$sampleID]
-
 # correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
 ss <- as.vector(M[upper.tri(M)])
 df2 <- data.frame(value=ss)
-# plot density plot
-ggplot(df, aes(value)) +
-  geom_histogram(aes(y = ..density..), 
-                 bins = 30, 
-                 fill = "lightblue", 
-                 color = "black") +
-  xlim(0.75, 1) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  geom_density(alpha = 0.5, fill = "lightgreen")+
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
-  labs(x = "Correlation coefficient at main organelle level",
-       y = "Density") 
-
 
 
 # if based on the suborganelle
-ProMassRatio3 <- ProMassRatio1[!(ProMassRatio$compartment %in% organelle), ]
+ProMassRatio3 <- ProMassRatio1[!(ProMassRatio1$compartment %in% organelle), ]
 ProMassRatio_ss <- ProMassRatio3[, colnames(ProMassRatio3) %in% physiology_collection0$sampleID]
-
 # correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
 ss <- as.vector(M[upper.tri(M)])
 df3 <- data.frame(value=ss)
-# plot density plot
-ggplot(df, aes(value)) +
-  geom_histogram(aes(y = ..density..), 
-                 bins = 30, 
-                 fill = "lightblue", 
-                 color = "black") +
-  xlim(0.75, 1) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  geom_density(alpha = 0.5, fill = "lightgreen")+
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
-  labs(x = "Correlation coefficient at sub-organelle level",
-       y = "Density") 
+
 
 # combine the above three result together
 df1$type = "All component"
@@ -169,6 +127,144 @@ df2$type = "Main organelle"
 df3$type = "Sub-organelle"
 
 updated <- rbind(df1, df2, df3)
-ggplot(updated, aes(x=value, color=category, fill=category)) +
-  geom_density(alpha=0.3)
+ggplot(updated, aes(x=value, color=type, fill=type)) +
+  geom_density(alpha=0.3) +
+  xlim(0.5, 1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  geom_density(alpha = 0.5)+
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
+  labs(x = "Correlation coefficient between samples",
+       y = "Density") 
+
+# heatmap of mass fraction of main organelle in each unique condition?
+library("pheatmap")
+
+rownames0 <- ProMassRatio2$compartment
+DF <- ProMassRatio2[,-1]
+rownames(DF) <- rownames0
+pheatmap(DF, scale="none",
+         cutree_rows = 4,
+         show_colnames =FALSE)
+
+
+suorganelle <- c('mitochondrial outer membrane','mitochondrial inner membrane','mitochondrial intermembrane space','mitochondrial matrix')
+ProMassRatio_suborganelle <- ProMassRatio1[ProMassRatio1$compartment %in% suorganelle, ]
+
+rownames0 <- ProMassRatio_suborganelle$compartment
+DF <- ProMassRatio_suborganelle[,-1]
+rownames(DF) <- rownames0
+pheatmap(DF, scale="none",
+         cutree_rows = 4,
+         show_colnames =FALSE)
+
+
+
+
+
+
+
+
+
+# supplementary figure
+# calculate the protein correlation under different samples
+combine00 <- combine[,  colnames(combine) %in% c("gene",physiology_collection0$sampleID)]
+combine00 <- combine[, str_detect(colnames(combine), "prot\\.")]
+combine00$gene <- combine$gene
+# analyze the intersection of all samples
+na_counts_per_row <- rowSums(is.na(combine00[, 1:42]))
+# If you want the result as a dataframe
+na_counts_df <- data.frame(row_NA_count = na_counts_per_row, row.names = combine00$gene)
+gene_remove <- rownames(na_counts_df)[which(na_counts_df$row_NA_count >=42)]
+combine01 <- combine00[!(combine00$gene %in%gene_remove), ]
+combine02 <- t(combine01[, c(1:42)])
+colnames(combine02) <- combine01$gene
+# all correlation analysis of different samples
+M <- cor(combine02, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
+ss <- as.vector(M[upper.tri(M)])
+df_all <- data.frame(cor0=ss, type="all")
+# input the compartment annotation
+compartment_sce <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/compartment_sce_curation.xlsx")
+compartment_sce <- compartment_sce[compartment_sce$compartment !="membrane",]
+compartment_sce <- compartment_sce[compartment_sce$compartment !="mitochondrion_unassigned",]
+compartment_sce <- compartment_sce[compartment_sce$compartment !="cytoplasm",]
+compartment_sce <- compartment_sce[, c(2:3)]
+
+
+organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet', 'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'plasma membrane','mitochondrial outer membrane','mitochondrial inner membrane', 'nucleolus','mitochondrial intermembrane space','mitochondrial matrix')
+for (x in unique(organelle)){
+  print(x)
+  cc=x
+  gene_m <- compartment_sce[compartment_sce$compartment ==cc,]
+  gene_calcualted <- colnames(M)
+  gene_m_selected <- gene_m$gene[which(gene_m$gene %in% gene_calcualted)]
+  M_m <- M[gene_m_selected, gene_m_selected]
+  ss_m <- as.vector(M_m[upper.tri(M_m)])
+  df_m <- data.frame(cor0=ss_m, type=cc)
+  
+  
+  df_random_sample  <- data.frame(cor0=sample(ss, length(ss_m)), type="random")
+  df_combine_test <- rbind(df_all, df_m, df_random_sample)
+  
+  ggplot(df_combine_test, aes(x=cor0, color=type, fill=type)) +
+    geom_density(alpha=0.3) +
+    xlim(-1, 1) +
+    theme(panel.background = element_rect(fill = "white", colour = "black")) +
+    geom_density(alpha = 0.5)+
+    theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
+    labs(x = "Correlation coefficient of protein pair",
+         y = "Density") 
+  ggsave(out <- paste('result/',x,'.png', sep = ""), width=8, height=6, dpi=600)
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# supplementary figure
+# correlation between mass and protein volume
+sce_protein_MW_and_volume <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/sce_protein_MW_and_volume.xlsx")
+# scatter plot
+ggplot(sce_protein_MW_and_volume, mapping = aes(x=MW,y=Total_Volume)) +
+  geom_point() + # geom_point(alpha = 2/10) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  labs(x = "Protein molecular weight",
+       y = "Protein 3D structure volume") +
+  geom_bin2d(bins = 70) +
+  scale_fill_continuous(type = "viridis") +
+  theme_bw() +
+  geom_smooth(method=lm , color="red", se=FALSE)+
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold"))
+
+
+# compare Volume ration and mass ratio
+ProVolumeRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx")
+ProVolumeRatio <- ProVolumeRatio[,2:277]
+ProVolumeRatio[ProVolumeRatio <0.0000000000001] <- NA
+ProVolumeRatio1 <- ProVolumeRatio[ProVolumeRatio$compartment !="cytoplasm", ]
+ProVolumeRatio1 <- ProVolumeRatio1[ProVolumeRatio1$compartment !="mitochondrion_unassigned", ]
+
+mass_vs_volume <- ProMassRatio1[,c(1,2)]
+colnames(mass_vs_volume) <- c("compartment","mass_fraction")
+mass_vs_volume$volume_fraction <- ProVolumeRatio1$`Glucose_phase_rep1(g/gDW)`
+
+# scatter plot
+ggplot(mass_vs_volume, aes(x=mass_fraction, y=volume_fraction)) +
+  geom_point(colour = "black", size = 3) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  labs(x = "Mass fraction of components",
+       y = "Volume fraction of components") +
+  geom_smooth(method=lm , color="red", se=FALSE)+
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold"))
 

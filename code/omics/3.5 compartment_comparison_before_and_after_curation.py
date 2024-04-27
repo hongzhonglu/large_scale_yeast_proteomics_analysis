@@ -31,4 +31,18 @@ compartment_compare = pd.merge(left=df1, right=df2, left_on=['compartment'], rig
 compartment_compare.columns = ["compartment", "annotation_combine", "annotation_curation"]
 compartment_compare.to_excel("data/compare_compartment_annotation_with_and_without_manual_curation.xlsx")
 
+# save the corrected compartment annotation
+mapping =[]
+for key, value in compartment_corrected.items():
+    print(key, value)
+    new0 = [key+"@"+ x for x in value]
+    mapping = mapping + new0
+df = pd.DataFrame({"pair": mapping})
+df1 = df['pair'].str.split('@', n=1, expand=True)
+df1.columns = ['compartment','gene']
+df1.to_excel("data/compartment_sce_curation.xlsx")
+
+
+
+
 

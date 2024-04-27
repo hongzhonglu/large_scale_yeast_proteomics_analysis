@@ -7,18 +7,13 @@
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/figure/figure_2.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_2.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/1.1 proteomics_comparment_annotation_automatic_way.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/1.1 proteomics_comparment_annotation_automatic_way.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.5 correlation_of_protein_abundance_within_and_across_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 correlation_of_protein_abundance_within_and_across_main_organelle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compare_compartment_anotation_with_and_without_filter.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compare_compartment_anotation_with_and_without_manual_curation.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$physiology_collection.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 correlation_of_protein_abundance_within_and_across_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.3_Correlation_between_protein_size_and_MW_spo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/MW_Total_Volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/MW_Total_Volume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/structure_volume_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_volume_sce.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,48 +248,13 @@
           <option name="timeStamp" value="1" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.3_Correlation_between_protein_size_and_MW_spo.py</url>
-          <line>76</line>
-          <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.3_Correlation_between_protein_size_and_MW_spo.py</url>
-          <line>120</line>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.3_Correlation_between_protein_size_and_MW_spo.py</url>
-          <line>158</line>
-          <option name="timeStamp" value="11" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
-          <line>81</line>
-          <option name="timeStamp" value="15" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
-          <line>129</line>
-          <option name="timeStamp" value="16" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
-          <line>227</line>
-          <option name="timeStamp" value="17" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/2_alphaFold_quality_analysis.py</url>
           <line>76</line>
           <option name="timeStamp" value="20" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>117</line>
+          <line>119</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -349,22 +309,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>143</line>
+          <line>145</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.2_Correlation_between_protein_size_and_MW_ecoli.py</url>
-          <line>200</line>
-          <option name="timeStamp" value="36" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/structure/3.3_Correlation_between_protein_size_and_MW_spo.py</url>
-          <line>94</line>
-          <option name="timeStamp" value="37" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>207</line>
+          <line>209</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

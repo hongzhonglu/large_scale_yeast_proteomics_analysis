@@ -196,5 +196,23 @@ gene_existence_l <- gene_existence[gene_existence$exist_count <= 10,]
 gene_list <- rownames(gene_existence_l)
 paste0(gene_list,collapse = ",")
 
+# heatmap
+library("pheatmap")
+combine_1500 <- combine[combine$gene %in% rownames(gene_rank0[1:10, ]),]
+combine_1500_s <- combine_1500[, colnames(combine_1500) %in% c('gene',physiology_collection0$sampleID)]
+rownames0 <- combine_1500_s$gene
+DF <- combine_1500_s[,-1]
+rownames(DF) <- rownames0
+pheatmap(DF, scale="column",
+         show_colnames =FALSE,
+         show_rownames =TRUE)
 
 
+combine_1500 <- combine[combine$gene %in% rownames(gene_rank0[gene_rank0$exist_count>=275, ]),]
+combine_1500_s <- combine_1500[, colnames(combine_1500) %in% c('gene',physiology_collection0$sampleID)]
+rownames0 <- combine_1500_s$gene
+DF <- combine_1500_s[,-1]
+rownames(DF) <- rownames0
+pheatmap(DF, scale="column",
+         show_colnames =FALSE,
+         show_rownames =TRUE)
