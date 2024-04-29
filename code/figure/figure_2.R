@@ -138,11 +138,16 @@ ggplot(updated, aes(x=value, color=type, fill=type)) +
 
 # heatmap of mass fraction of main organelle in each unique condition?
 library("pheatmap")
-
+#organelle_s <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum', 'fungal-type vacuole','peroxisome','ribosome')
+ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelle, ]
 rownames0 <- ProMassRatio2$compartment
 DF <- ProMassRatio2[,-1]
 rownames(DF) <- rownames0
 pheatmap(DF, scale="none",
+         cutree_rows = 4,
+         show_colnames =FALSE)
+
+pheatmap(DF, scale="column",
          cutree_rows = 4,
          show_colnames =FALSE)
 
@@ -156,6 +161,10 @@ rownames(DF) <- rownames0
 pheatmap(DF, scale="none",
          cutree_rows = 4,
          show_colnames =FALSE)
+
+
+
+
 
 
 
