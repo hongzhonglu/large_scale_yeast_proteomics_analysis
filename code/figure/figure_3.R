@@ -46,6 +46,7 @@ ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassi
 # group1 select
 physiology <- physiology_jianye
 Pro_mass_select <-  ProMassRatio1[, colnames(ProMassRatio1) %in% c("compartment",physiology$sampleID)]
+Pro_mass_select <- Pro_mass_select[!is.na(Pro_mass_select$S27_carbon_limit),]
 Pro_mass_select0 <- t(Pro_mass_select[,-1])
 colnames(Pro_mass_select0) <- Pro_mass_select$compartment
 Pro_mass_select0 <- as.data.frame(Pro_mass_select0)
