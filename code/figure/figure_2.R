@@ -165,8 +165,15 @@ pheatmap(DF, scale="none",
 
 
 
+# compare the correlation between organelle and single protein mass fraction
+# select the proteomics under batch cultivation
+condition_batch <- c("Glucose_phase_rep1(g/gDW)",	"mmol/gDW_carl",	"Min_aerobic_1",	"sce_CEN.PK_batch_miu=0.391",	"Kulak et al. 2014 - Copy",	"Mean Copy number - Glucose")
+combine_batch <- combine[, condition_batch]
+ProMassRatio_batch <- ProMassRatio1[, condition_batch]
 
-
+library("PerformanceAnalytics")
+chart.Correlation(combine_batch , histogram=FALSE, pch=19)
+chart.Correlation(ProMassRatio_batch , histogram=FALSE, pch=19)
 
 
 
