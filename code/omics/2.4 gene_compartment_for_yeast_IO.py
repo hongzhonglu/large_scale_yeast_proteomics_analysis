@@ -180,6 +180,7 @@ IO_gene_with_sce_ortholog02.columns = ["gene","compartment","source"]
 
 # combine all the compartment data together
 IO_compartment = pd.concat([IO_gene_with_location00,new_compartment,IO_gene_with_sce_ortholog02])
+
 # unify the name
 IO_compartment["compartment"] = IO_compartment["compartment"].str.lower()
 IO_compartment["compartment"] = IO_compartment["compartment"].str.replace("peroxisome membrane","peroxisomal membrane")

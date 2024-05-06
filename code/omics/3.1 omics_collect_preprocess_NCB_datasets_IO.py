@@ -7,16 +7,6 @@ import sys
 from src.mainFunction import *
 from src.protein_process import *
 
-
-# some general datasets
-# Get the molecular weight data using the data from SGD with more genes
-mw = pd.read_csv("data/sce_protein_weight.tsv", sep="\t")
-mw = mw[["locus","proteins_molecular_weight"]]
-mw.columns = ["gene name", "MW"]
-mw["MW_Kda"] = mw["MW"]/1000
-# ID mapping between uniprot ID and gene locus IDs
-id_mapping = pd.read_excel("data/uniprotGeneID_mapping.xlsx")
-
 # absolute part
 proteomics_NCB1 = pd.read_excel("data/nature_chemical_biology_datatset_2024/41589_2024_1571_MOESM3_ESM_only_IO.xlsx", sheet_name="Table 10c. abs_prot_IO_SD108")
 
@@ -75,6 +65,20 @@ mass_fraction_NCB = mass_fraction_NCB.rename(columns={'Entry': 'gene'})
 mass_fraction_NCB = mass_fraction_NCB.rename(columns={'IO_SD108_batch_miu=0.52_x': 'IO_SD108_batch_miu=0.52'})
 
 mass_fraction_final = mass_fraction_NCB.copy()
+
+# quality check
+# check whether the mass fraction for some proteins is too high, if the value is larger than 0.1, then this dataset could be set as the outlier data point
+gene_remove = []
+for i, xx in mass_fraction_final.iterrows():
+    print(i,xx)
+    ss = list(xx)[1:]
+    max0= max(ss)
+    if max0 > 0.1:
+        gene_remove.append(list(xx)[0])
+
+
+# then remove the above two genes from the list
+mass_fraction_final = mass_fraction_final[~mass_fraction_final['gene'].isin(gene_remove)]
 mass_fraction_final.to_excel("data/proteomics/mass_fraction_NCB_for_yeast_IO.xlsx")
 
 def getCompartmentGeneList_IO(filter="Yes"):
@@ -84,9 +88,7 @@ def getCompartmentGeneList_IO(filter="Yes"):
     :param filter:
     :return:
     """
-
-    # Input the datasets from paxDB
-    # compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t') # for sce
+    # Input the datasets for IO
     compartment = pd.read_excel("data/nature_chemical_biology_datatset_2024/IO_gene_compartment.xlsx") # for yeast IO
     compartment = compartment.iloc[:,1:]
 
@@ -103,16 +105,6 @@ def getCompartmentGeneList_IO(filter="Yes"):
     compartment2 = compartment2[~compartment2["GO_Name"].str.contains("spindle")]
     compartment2 = compartment2[~compartment2["GO_Name"].str.contains("actin")]
     compartment2 = compartment2[~compartment2["GO_Name"].str.contains("cellular_component")]
-
-    # analyze the annotation type
-    annotation_type = compartment2["Annot_Type"].tolist()
-    annotation_type = list(set(annotation_type))
-    # here if we remove "computational"
-    compartment_with_evidence = compartment2[compartment2["Annot_Type"] != 'computational']
-    compartment_with_computation = compartment2[compartment2["Annot_Type"] == 'computational']
-    # in one procedure, if a protein has no compartment annotation from manual and high-throughput, then the computational is used!
-    compartment_addition = compartment_with_computation[~compartment_with_computation["Systematic_name"].isin(compartment_with_evidence["Systematic_name"])]
-    compartment_combine = pd.concat([compartment_with_evidence, compartment_addition])
 
     # build the dict
     compartment_dict_all = {}
@@ -131,27 +123,21 @@ def getCompartmentGeneList_IO(filter="Yes"):
             compartment_dict_all0[key] = value
         else:
             pass
-    # for compartment annotation removing some computation evidences
-    compartment_dict2 = {}
-    for i, x in compartment_combine.iterrows():
-        print(i, x)
-        if x['GO_Name'] in compartment_dict2.keys():
-            compartment_dict2[x['GO_Name']] = list(set(compartment_dict2[x['GO_Name']] + [x["Systematic_name"]]))
-        else:
-            compartment_dict2[x['GO_Name']] = list(set([x["Systematic_name"]]))
-    # filter
-    compartment_dict20 = {}
-    for key in compartment_dict2.keys():
-        print(key)
-        value = compartment_dict2[key]
-        if len(value) >= 6:
-            compartment_dict20[key] = value
-        else:
-            pass
+
     if filter == "Yes":
-        return compartment_dict20
-    else:
         return compartment_dict_all0
+    else:
+        return compartment_dict_all
+
+# get the curated compartment information for IO
+IO_compartment = getCompartmentGeneList_IO(filter="Yes")
+# Input the datasets for IO
+compartment = pd.read_excel("data/nature_chemical_biology_datatset_2024/IO_gene_compartment.xlsx")  # for yeast IO
+compartment = compartment.iloc[:, 1:]
+organelle_filter = list(IO_compartment.keys())
+compartment_filter = compartment[compartment["compartment"].isin(organelle_filter)]
+compartment_filter.to_excel("data/nature_chemical_biology_datatset_2024/IO_gene_compartment_filter.xlsx")
+
 
 def ProMassRatio_Organelle_IO(protein_abundance, compartment_type="organelle"):
     """
