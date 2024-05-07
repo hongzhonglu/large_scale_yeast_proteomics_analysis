@@ -166,19 +166,41 @@ long_DF %>%
   geom_bar(stat = "identity") +
   theme(axis.text.x = element_text(angle = 60, hjust = 1))
 
+
+
 # pca plot
+# cluter analysis
+library(plotly)
+library(Rtsne) # tSNE in an acronym for t-Distributed Neighbor Embedding is a statistical method that is mainly used to visualize high-dimensional data
+library(umap) # umap is similar to tSNE, but more efficient
+
 ProMassRatio_sce1 <- ProMassRatio_sce_all[, str_detect(colnames(ProMassRatio_sce_all), 'sce_FY4')|str_detect(colnames(ProMassRatio_sce_all), 'sce_CEN.PK')]
 ProMassRatio_sce1 <- as.matrix(ProMassRatio_sce1)
 heatmap(ProMassRatio_sce1)
 
-iris.pca <- prcomp(ProMassRatio_sce1, 
-                   center = TRUE, 
-                   scale. = TRUE)
 
-library(ggfortify) 
-iris.pca.plot <- autoplot(iris.pca, 
-                          data = ProMassRatio_sce1) 
 
-iris.pca.plot
+combine11 <- t(ProMassRatio_sce1)
+combine11[is.na(combine11)] <- 0 # here NA value was replaced as 0
+
+iris.umap = umap(combine11, n_components = 2, random_state = 15) 
+
+layout <- iris.umap[["layout"]] 
+layout <- data.frame(layout) 
+label11 <- rownames(layout)
+final <- cbind(layout, label11) 
+
+fig <- plot_ly(final, x = ~X1, y = ~X2, color = ~label11, type = 'scatter', mode = 'markers')%>%  
+  layout(
+    plot_bgcolor = "#e5ecf6",
+    legend=list(title=list(text='Source')), 
+    xaxis = list( 
+      title = "0"),  
+    yaxis = list( 
+      title = "1")) 
+fig 
+
+
+
 
 
