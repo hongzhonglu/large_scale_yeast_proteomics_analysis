@@ -140,7 +140,7 @@ ggplot(updated, aes(x=value, color=type, fill=type)) +
 library("pheatmap")
 ProMassRatio_IO <- ProMassRatio1[,c(2:26)]
 ProMassRatio_IO <- as.matrix(ProMassRatio_IO)
-heatmap(ProMassRatio_IO)
+#heatmap(ProMassRatio_IO)
 pheatmap(ProMassRatio_IO, scale="row",
          show_colnames = TRUE,
          show_rownames = FALSE)
@@ -174,8 +174,10 @@ library(umap) # umap is similar to tSNE, but more efficient
 ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
 ProMassRatio_sce1 <- ProMassRatio_sce_all[, str_detect(colnames(ProMassRatio_sce_all), 'sce_FY4')|str_detect(colnames(ProMassRatio_sce_all), 'sce_CEN.PK')]
 ProMassRatio_sce1 <- as.matrix(ProMassRatio_sce1)
-heatmap(ProMassRatio_sce1)
-
+#heatmap(ProMassRatio_sce1)
+pheatmap(ProMassRatio_sce1, scale="row",
+         show_colnames = TRUE,
+         show_rownames = FALSE)
 
 # PCA plot
 combine11 <- t(ProMassRatio_sce1)
