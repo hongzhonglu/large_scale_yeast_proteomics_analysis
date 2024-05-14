@@ -143,7 +143,8 @@ ProMassRatio_IO <- as.matrix(ProMassRatio_IO)
 #heatmap(ProMassRatio_IO)
 pheatmap(ProMassRatio_IO, scale="row",
          show_colnames = TRUE,
-         show_rownames = FALSE)
+         show_rownames = FALSE,
+         border_color=NA)
 # PCA plot
 combine11 <- t(ProMassRatio_IO)
 combine11[is.na(combine11)] <- 0 # here NA value was replaced as 0
@@ -169,6 +170,7 @@ fig
 
 
 # Heatmap and PCA plot for sce
+library(plotly)
 library(Rtsne) # tSNE in an acronym for t-Distributed Neighbor Embedding is a statistical method that is mainly used to visualize high-dimensional data
 library(umap) # umap is similar to tSNE, but more efficient
 ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
@@ -177,7 +179,8 @@ ProMassRatio_sce1 <- as.matrix(ProMassRatio_sce1)
 #heatmap(ProMassRatio_sce1)
 pheatmap(ProMassRatio_sce1, scale="row",
          show_colnames = TRUE,
-         show_rownames = FALSE)
+         show_rownames = FALSE,
+         border_color=NA)
 
 # PCA plot
 combine11 <- t(ProMassRatio_sce1)
