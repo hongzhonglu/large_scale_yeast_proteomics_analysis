@@ -137,10 +137,13 @@ ggplot(updated, aes(x=value, color=type, fill=type)) +
 
 # Heatmap and PCA plot for IO under all conditions
 # heatmap
+library("pheatmap")
 ProMassRatio_IO <- ProMassRatio1[,c(2:26)]
 ProMassRatio_IO <- as.matrix(ProMassRatio_IO)
 heatmap(ProMassRatio_IO)
-
+pheatmap(ProMassRatio_IO, scale="row",
+         show_colnames = TRUE,
+         show_rownames = FALSE)
 # PCA plot
 combine11 <- t(ProMassRatio_IO)
 combine11[is.na(combine11)] <- 0 # here NA value was replaced as 0
