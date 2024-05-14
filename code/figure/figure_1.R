@@ -204,15 +204,9 @@ rownames0 <- combine_1500_s$gene
 DF <- combine_1500_s[,-1]
 rownames(DF) <- rownames0
 pheatmap(DF, scale="column",
-         show_colnames =FALSE,
-         show_rownames =TRUE)
-
-
-combine_1500 <- combine[combine$gene %in% rownames(gene_rank0[gene_rank0$exist_count>=274, ]),]
-combine_1500_s <- combine_1500[, colnames(combine_1500) %in% c('gene',physiology_collection0$sampleID)]
-rownames0 <- combine_1500_s$gene
-DF <- combine_1500_s[,-1]
-rownames(DF) <- rownames0
-pheatmap(DF, scale="column",
-         show_colnames =FALSE,
-         show_rownames =TRUE)
+         show_colnames = FALSE,
+         show_rownames = FALSE)
+# transpose the row and column, output the graph: 3.84 * 8.71
+pheatmap(t(DF), scale="row",
+         show_colnames = TRUE,
+         show_rownames = FALSE)
