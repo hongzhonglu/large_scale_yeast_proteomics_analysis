@@ -92,7 +92,7 @@ physiology_collection0 <- physiology_collection[!duplicated(physiology_collectio
 
 ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
 ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassigned", ]
-ProMassRatio_ss <- ProMassRatio1[, colnames(ProMassRatio1) %in% physiology_collection0$sampleID]
+ProMassRatio_ss <- ProMassRatio1[, colnames(ProMassRatio1) %in% physiology_collection0$sampleID] # remove the duplicated ones
 # all correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
 ss <- as.vector(M[upper.tri(M)])
@@ -135,51 +135,46 @@ ggplot(updated, aes(x=value, color=type, fill=type)) +
 
 
 
-# stacked barplot
-#organelle_s <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum', 'fungal-type vacuole','peroxisome','ribosome')
-ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelle, ]
-test <- ProMassRatio2[, str_detect(colnames(ProMassRatio2), 'IO_SD108_C')]
-test$compartment <- ProMassRatio2$compartment
-long_DF <- test %>% gather(growth, mass_fraction, 1:5)
+# Heatmap and PCA plot for IO under all conditions
+# heatmap
+ProMassRatio_IO <- ProMassRatio1[,c(2:26)]
+ProMassRatio_IO <- as.matrix(ProMassRatio_IO)
+heatmap(ProMassRatio_IO)
 
-long_DF %>% 
-  group_by(growth, compartment) %>% 
-  ggplot(aes(x = growth, y = mass_fraction, group = compartment, fill = compartment)) +
-  geom_bar(stat = "identity") +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+# PCA plot
+combine11 <- t(ProMassRatio_IO)
+combine11[is.na(combine11)] <- 0 # here NA value was replaced as 0
 
+iris.umap = umap(combine11, n_components = 2, random_state = 15) 
 
+layout <- iris.umap[["layout"]] 
+layout <- data.frame(layout) 
+label11 <- rownames(layout)
+final <- cbind(layout, label11) 
 
-
-# plus sce
-# calculate the organelle mass fraction variance 
-ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
-ProMassRatio_sce0 <- ProMassRatio_sce_all[, str_detect(colnames(ProMassRatio_sce_all), 'sce_FY4_C')]
-ProMassRatio_sce0$compartment <- ProMassRatio_sce_all$compartment
-ProMassRatio_sce01 <- ProMassRatio_sce0[ProMassRatio_sce0$compartment %in% organelle, ]
-
-long_DF <- ProMassRatio_sce01 %>% gather(growth, mass_fraction, 1:4)
-
-long_DF %>% 
-  group_by(growth, compartment) %>% 
-  ggplot(aes(x = growth, y = mass_fraction, group = compartment, fill = compartment)) +
-  geom_bar(stat = "identity") +
-  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+fig <- plot_ly(final, x = ~X1, y = ~X2, color = ~label11, type = 'scatter', mode = 'markers')%>%  
+  layout(
+    plot_bgcolor = "#e5ecf6",
+    legend=list(title=list(text='Source')), 
+    xaxis = list( 
+      title = "0"),  
+    yaxis = list( 
+      title = "1")) 
+fig 
 
 
 
-# pca plot
-# cluter analysis
-library(plotly)
+
+# Heatmap and PCA plot for sce
 library(Rtsne) # tSNE in an acronym for t-Distributed Neighbor Embedding is a statistical method that is mainly used to visualize high-dimensional data
 library(umap) # umap is similar to tSNE, but more efficient
-
+ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
 ProMassRatio_sce1 <- ProMassRatio_sce_all[, str_detect(colnames(ProMassRatio_sce_all), 'sce_FY4')|str_detect(colnames(ProMassRatio_sce_all), 'sce_CEN.PK')]
 ProMassRatio_sce1 <- as.matrix(ProMassRatio_sce1)
 heatmap(ProMassRatio_sce1)
 
 
-
+# PCA plot
 combine11 <- t(ProMassRatio_sce1)
 combine11[is.na(combine11)] <- 0 # here NA value was replaced as 0
 
@@ -199,6 +194,51 @@ fig <- plot_ly(final, x = ~X1, y = ~X2, color = ~label11, type = 'scatter', mode
     yaxis = list( 
       title = "1")) 
 fig 
+
+
+
+
+
+
+
+
+
+
+# Supplementary file
+# stacked barplot
+#organelle_s <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum', 'fungal-type vacuole','peroxisome','ribosome')
+ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelle, ]
+test <- ProMassRatio2[, str_detect(colnames(ProMassRatio2), 'IO_SD108_C')]
+test$compartment <- ProMassRatio2$compartment
+long_DF <- test %>% gather(growth, mass_fraction, 1:5)
+
+long_DF %>% 
+  group_by(growth, compartment) %>% 
+  ggplot(aes(x = growth, y = mass_fraction, group = compartment, fill = compartment)) +
+  geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+# plus sce
+# calculate the organelle mass fraction variance 
+ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+ProMassRatio_sce0 <- ProMassRatio_sce_all[, str_detect(colnames(ProMassRatio_sce_all), 'sce_FY4_C')]
+ProMassRatio_sce0$compartment <- ProMassRatio_sce_all$compartment
+ProMassRatio_sce01 <- ProMassRatio_sce0[ProMassRatio_sce0$compartment %in% organelle, ]
+
+long_DF <- ProMassRatio_sce01 %>% gather(growth, mass_fraction, 1:4)
+
+long_DF %>% 
+  group_by(growth, compartment) %>% 
+  ggplot(aes(x = growth, y = mass_fraction, group = compartment, fill = compartment)) +
+  geom_bar(stat = "identity") +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+
+
+
+
+
+
 
 
 
