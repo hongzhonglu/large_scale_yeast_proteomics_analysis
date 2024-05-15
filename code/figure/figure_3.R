@@ -96,14 +96,50 @@ ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
 
 
 
+# plot for the main organelle membrane
+main_membrane <- c("fungal-type vacuole membrane" , "mitochondrial outer membrane","mitochondrial inner membrane", "endoplasmic reticulum membrane",
+                   "plasma membrane","nuclear inner membrane", "peroxisomal membrane" ,"nuclear outer membrane","Golgi membrane",
+                   "prospore membrane", "cellular bud membrane", "endosome membrane" )
+df_m <- Pro_mass_select0[, colnames(Pro_mass_select0) %in% main_membrane ]
+df_m_ref = df_m[c(1:3),]
+avearge_value <- apply(df_m_ref, 2, mean)
+
+df_m_relative <- mapply('/', df_m, avearge_value)
+
+df_m_relative <- as.data.frame(df_m_relative)
+df_m_relative$growth <- Pro_mass_select0$growth
+long_DF <- df_m_relative %>% gather(type, mass_fraction, 1:12)
+long_DF$type <- as.factor(long_DF$type)
+
+ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
+  geom_point() + # geom_point(alpha = 2/10) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  labs(x = "Growth rate (/h)",
+       y = "Mass fraction") +
+  theme_bw() +
+  geom_smooth()+
+  theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15))
+
+
+
+
+
+
+
+
+
+
+colnames(df_m)
+
+
 
 
 # calculate the correlation of all component and growth rate
 Pro_mass_select <-  ProMassRatio1[, colnames(ProMassRatio1) %in% c("compartment",physiology$sampleID)]
 Pro_mass_select <- Pro_mass_select[!is.na(Pro_mass_select$S27_carbon_limit),]
-Pro_mass_select <- Pro_mass_select[Pro_mass_select$S27_carbon_limit >0.01,]
-Pro_mass_select0 <- t(Pro_mass_select[,-1])
-colnames(Pro_mass_select0) <- Pro_mass_select$compartment
+Pro_mass_select_F <- Pro_mass_select[Pro_mass_select$S27_carbon_limit >0.01,]
+Pro_mass_select0 <- t(Pro_mass_select_F[,-1])
+colnames(Pro_mass_select0) <- Pro_mass_select_F$compartment
 Pro_mass_select0 <- as.data.frame(Pro_mass_select0)
 Pro_mass_select0$growth <- as.numeric(physiology$`dilution rate (/h)`)
 r <- cor(Pro_mass_select0)
@@ -122,6 +158,9 @@ ggplot(r_df, aes(x=reorder(component, cor), y=cor, fill=component)) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   theme(legend.position="none")+
   coord_flip()
+
+
+
 
 
 
