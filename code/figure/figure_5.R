@@ -4,7 +4,9 @@ library(tidyverse)
 library(hongR)
 library(corrplot)
 library(ggplot2)
-
+library(plotly)
+library(Rtsne) # tSNE in an acronym for t-Distributed Neighbor Embedding is a statistical method that is mainly used to visualize high-dimensional data
+library(umap) # umap is similar to tSNE, but more efficient
 # part 1 proteomics analysis-main part
 # data and sample
 combine <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/mass_fraction_NCB_for_yeast_IO.xlsx")
@@ -139,14 +141,14 @@ ggplot(updated, aes(x=value, color=type, fill=type)) +
 # heatmap
 library("pheatmap")
 ProMassRatio_IO <- ProMassRatio1[,c(2:26)]
-ProMassRatio_IO <- as.matrix(ProMassRatio_IO)
+ProMassRatio_IO100 <- as.matrix(ProMassRatio_IO)
 #heatmap(ProMassRatio_IO)
-pheatmap(ProMassRatio_IO, scale="row",
+pheatmap(ProMassRatio_IO100, scale="row",
          show_colnames = TRUE,
          show_rownames = FALSE,
          border_color=NA)
 # PCA plot
-combine11 <- t(ProMassRatio_IO)
+combine11 <- t(ProMassRatio_IO100)
 combine11[is.na(combine11)] <- 0 # here NA value was replaced as 0
 
 iris.umap = umap(combine11, n_components = 2, random_state = 15) 
@@ -167,23 +169,82 @@ fig <- plot_ly(final, x = ~X1, y = ~X2, color = ~label11, type = 'scatter', mode
 fig 
 
 
+ProMassRatio_IO$compartment <- ProMassRatio1$compartment
+# check the resource allocation under different conditions: with oxygen, without oxygen, with inhibition
+ProMassRatio_IO2 <- ProMassRatio_IO[,str_detect(colnames(ProMassRatio_IO), "O2")|str_detect(colnames(ProMassRatio_IO), "antimycin")]
+ProMassRatio_IO2$compartment <- ProMassRatio_IO$compartment
+#combine the same condition
+condition <- str_trim(colnames(ProMassRatio_IO2), side = "both")
+condition <- str_replace_all(condition, "_[:digit:]", "")
+
+colnames(ProMassRatio_IO2) <- condition
+ProMassRatio_IO2 <- ProMassRatio_IO2[!is.na(ProMassRatio_IO2$`IO_SD108_glucose + O2`),]
+Pro_mass_select0 <- ProMassRatio_IO2 [, !colnames(ProMassRatio_IO2 ) %in% c("compartment")]
+
+# calculate the average of columns
+df <- as.data.frame(sapply(split.default(Pro_mass_select0, names(Pro_mass_select0)), rowMeans))
+df$compartment <- ProMassRatio_IO2$compartment
+df <- df[df$compartment !="cytoplasm", ]
+df <- df[df$compartment !="mitochondrion_unassigned", ]
+
+colnames(df) <- c("IO_no_O2",       "IO_antimycin",     "IO_O2",  "compartment" ) 
+
+fit1 <- lm( IO_no_O2 ~ IO_O2, data = df)  
+ggplot(df, aes(x=IO_O2 , y=IO_no_O2, label=compartment)) +
+  geom_point(size=4, shape=1,colour='#E69F00') +
+  geom_smooth(method=lm) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+  labs(x = "IO_O2",
+       y = "IO_no_O2 ") +
+  xlim(0, 0.27) + ylim(0,0.27) +
+  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+  geom_label(aes(x = 0, y = 0.2), hjust = 0, 
+             label = paste("Adj R2 = ",signif(summary(fit1)$adj.r.squared, 3),
+                           "\nIntercept =",signif(fit1$coef[[1]],3),
+                           " \nSlope =",signif(fit1$coef[[2]], 3),
+                           " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
+             label.size = NA)+
+  geom_text(aes(label=ifelse(IO_no_O2 > 0.1, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
 
 
+
+fit1 <- lm( IO_antimycin ~ IO_O2, data = df)  
+ggplot(df, aes(x=IO_O2 , y=IO_antimycin, label=compartment)) +
+  geom_point(size=4, shape=1,colour='#E69F00') +
+  geom_smooth(method=lm) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+  labs(x = "IO_O2",
+       y = "IO_antimycin ") +
+  xlim(0, 0.27) + ylim(0,0.27) +
+  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+  geom_label(aes(x = 0, y = 0.2), hjust = 0, 
+             label = paste("Adj R2 = ",signif(summary(fit1)$adj.r.squared, 3),
+                           "\nIntercept =",signif(fit1$coef[[1]],3),
+                           " \nSlope =",signif(fit1$coef[[2]], 3),
+                           " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
+             label.size = NA)+
+  geom_text(aes(label=ifelse(IO_antimycin > 0.1, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+
+
+
+
+
+
+#############################################################################################3
 # Heatmap and PCA plot for sce
-library(plotly)
-library(Rtsne) # tSNE in an acronym for t-Distributed Neighbor Embedding is a statistical method that is mainly used to visualize high-dimensional data
-library(umap) # umap is similar to tSNE, but more efficient
 ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
 ProMassRatio_sce1 <- ProMassRatio_sce_all[, str_detect(colnames(ProMassRatio_sce_all), 'sce_FY4')|str_detect(colnames(ProMassRatio_sce_all), 'sce_CEN.PK')]
-ProMassRatio_sce1 <- as.matrix(ProMassRatio_sce1)
+ProMassRatio_sce100 <- as.matrix(ProMassRatio_sce1)
 #heatmap(ProMassRatio_sce1)
-pheatmap(ProMassRatio_sce1, scale="row",
+pheatmap(ProMassRatio_sce100, scale="row",
          show_colnames = TRUE,
          show_rownames = FALSE,
          border_color=NA)
 
 # PCA plot
-combine11 <- t(ProMassRatio_sce1)
+combine11 <- t(ProMassRatio_sce100)
 combine11[is.na(combine11)] <- 0 # here NA value was replaced as 0
 
 iris.umap = umap(combine11, n_components = 2, random_state = 15) 
@@ -207,6 +268,62 @@ fig
 
 
 
+# check the resource allocation under different conditions: with oxygen, without oxygen, with inhibition
+ProMassRatio_sce2 <- ProMassRatio_sce1[,str_detect(colnames(ProMassRatio_sce1), "O2")|str_detect(colnames(ProMassRatio_sce1), "antimycin")]
+ProMassRatio_sce2$compartment <- ProMassRatio_sce_all$compartment
+#combine the same condition
+condition <- str_trim(colnames(ProMassRatio_sce2), side = "both")
+condition <- str_replace_all(condition, "_[:digit:]", "")
+
+colnames(ProMassRatio_sce2) <- condition
+ProMassRatio_sce2 <- ProMassRatio_sce2[!is.na(ProMassRatio_sce2$`sce_CEN.PK_glucose + O2`),]
+Pro_mass_select0 <- ProMassRatio_sce2 [, !colnames(ProMassRatio_sce2 ) %in% c("compartment")]
+
+# calculate the average of columns
+df <- as.data.frame(sapply(split.default(Pro_mass_select0, names(Pro_mass_select0)), rowMeans))
+df$compartment <- ProMassRatio_sce2$compartment
+df <- df[df$compartment !="cytoplasm", ]
+df <- df[df$compartment !="mitochondrion_unassigned", ]
+
+colnames(df) <- c("sce_no_O2",       "sce_antimycin",     "sce_O2",  "compartment" ) 
+
+fit1 <- lm( sce_no_O2 ~ sce_O2, data = df)  
+ggplot(df, aes(x=sce_O2 , y=sce_no_O2, label=compartment)) +
+  geom_point(size=4, shape=1,colour='#E69F00') +
+  geom_smooth(method=lm) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+  labs(x = "sce_O2",
+       y = "sce_no_O2 ") +
+  xlim(0, 0.45) + ylim(0,0.45) +
+  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+             label = paste("Adj R2 = ",signif(summary(fit1)$adj.r.squared, 3),
+                           "\nIntercept =",signif(fit1$coef[[1]],3),
+                           " \nSlope =",signif(fit1$coef[[2]], 3),
+                           " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
+             label.size = NA)+
+  geom_text(aes(label=ifelse(sce_no_O2 > 0.1, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+
+
+
+fit1 <- lm( sce_antimycin ~ sce_O2, data = df)  
+ggplot(df, aes(x=sce_O2 , y=sce_antimycin, label=compartment)) +
+  geom_point(size=4, shape=1,colour='#E69F00') +
+  geom_smooth(method=lm) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+  labs(x = "sce_O2",
+       y = "sce_antimycin ") +
+  xlim(0, 0.45) + ylim(0,0.45) +
+  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+             label = paste("Adj R2 = ",signif(summary(fit1)$adj.r.squared, 3),
+                           "\nIntercept =",signif(fit1$coef[[1]],3),
+                           " \nSlope =",signif(fit1$coef[[2]], 3),
+                           " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
+             label.size = NA)+
+  geom_text(aes(label=ifelse(sce_antimycin > 0.1, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
 
 
 
