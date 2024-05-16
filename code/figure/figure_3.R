@@ -97,20 +97,12 @@ ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
 
 
 # plot for the main organelle membrane
-main_membrane <- c("fungal-type vacuole membrane" , "mitochondrial outer membrane","mitochondrial inner membrane", "endoplasmic reticulum membrane",
-                   "plasma membrane","nuclear inner membrane", "peroxisomal membrane" ,"nuclear outer membrane","Golgi membrane",
-                   "prospore membrane", "cellular bud membrane", "endosome membrane" )
+main_membrane <- c("mitochondrial outer membrane","mitochondrial inner membrane", "endoplasmic reticulum membrane",
+                   "plasma membrane" )
 df_m <- Pro_mass_select0[, colnames(Pro_mass_select0) %in% main_membrane ]
-df_m_ref = df_m[c(1:3),]
-avearge_value <- apply(df_m_ref, 2, mean)
-
-df_m_relative <- mapply('/', df_m, avearge_value)
-
-df_m_relative <- as.data.frame(df_m_relative)
-df_m_relative$growth <- Pro_mass_select0$growth
-long_DF <- df_m_relative %>% gather(type, mass_fraction, 1:12)
+df_m$growth <- Pro_mass_select0$growth
+long_DF <- df_m %>% gather(type, mass_fraction, 1:4)
 long_DF$type <- as.factor(long_DF$type)
-
 ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
   geom_point() + # geom_point(alpha = 2/10) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
@@ -122,14 +114,71 @@ ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
 
 
 
+# plot for the main organelle - mt
+df_mt <- Pro_mass_select0[, str_detect(colnames(Pro_mass_select0), "^mitochondrial ")]
+df_mt$growth <- Pro_mass_select0$growth
+long_DF <- df_mt %>% gather(type, mass_fraction, 1:9)
+long_DF$type <- as.factor(long_DF$type)
+ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
+  geom_point() + # geom_point(alpha = 2/10) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  labs(x = "Growth rate (/h)",
+       y = "Mass fraction") +
+  theme_bw() +
+  geom_smooth()+
+  theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15),legend.title=element_text(size=12), legend.text=element_text(size=12))
+
+
+
+# plot for the main organelle - nuclear
+df_o <- Pro_mass_select0[, str_detect(colnames(Pro_mass_select0), "^nucl")]
+col_select <- c("nucleosome","nucleolus", "nucleoplasm", "nuclear periphery", "nuclear chromosome", "nuclear envelope")
+df_o <- df_o[, colnames(df_o) %in% col_select]
+df_o$growth <- Pro_mass_select0$growth
+long_DF <- df_o %>% gather(type, mass_fraction, 1:6)
+long_DF$type <- as.factor(long_DF$type)
+ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
+  geom_point() + # geom_point(alpha = 2/10) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  labs(x = "Growth rate (/h)",
+       y = "Mass fraction") +
+  theme_bw() +
+  geom_smooth()+
+  theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15),legend.title=element_text(size=12), legend.text=element_text(size=12))
 
 
 
 
 
+# plot for the main organelle membrane
+# change all mass fraction into the relative value
+#main_membrane <- c("fungal-type vacuole membrane" , "mitochondrial outer membrane","mitochondrial inner membrane", "endoplasmic reticulum membrane",
+#                   "plasma membrane","nuclear inner membrane", "peroxisomal membrane" ,"nuclear outer membrane","Golgi membrane",
+#                   "prospore membrane", "cellular bud membrane", "endosome membrane" )
+main_membrane <- c("fungal-type vacuole membrane" , "mitochondrial outer membrane","mitochondrial inner membrane", "endoplasmic reticulum membrane",
+                   "plasma membrane","nuclear inner membrane", "peroxisomal membrane" ,"nuclear outer membrane","Golgi membrane",
+                   "endosome membrane" )
+df_m <- Pro_mass_select0[, colnames(Pro_mass_select0) %in% main_membrane ]
+df_m_ref = df_m[c(1:3),]
+avearge_value <- apply(df_m_ref, 2, mean)
 
+df_m_relative <- mapply('/', df_m, avearge_value)
 
-colnames(df_m)
+df_m_relative <- as.data.frame(df_m_relative)
+df_m_relative$growth <- Pro_mass_select0$growth
+long_DF <- df_m_relative %>% gather(type, mass_fraction, 1:10)
+long_DF$type <- as.factor(long_DF$type)
+
+ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
+  geom_point() + # geom_point(alpha = 2/10) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  labs(x = "Growth rate (/h)",
+       y = "Scaled mass fraction") +
+  theme_bw() +
+  geom_smooth()+
+  theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15),legend.title=element_text(size=12), legend.text=element_text(size=12)) +
+  geom_hline(yintercept = 1, col = "black")
+
 
 
 

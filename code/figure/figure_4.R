@@ -126,7 +126,7 @@ df$WT_8_vs_WT_0 <- (df$WT_8-df$WT_0)/df$WT_0
 df$WT_8_vs_WT_0_abs <- abs(df$WT_8_vs_WT_0)
 
 df_filter_mass <- df[df$WT_0 >=0.01, ]
-df_filter_mass <- df_filter_mass[df_filter_mass$WT_8_vs_WT_0_abs >=0.2, ] 
+df_filter_mass <- df_filter_mass[df_filter_mass$WT_8_vs_WT_0_abs >=0.15, ] 
 
 ggplot(df_filter_mass, aes(x=reorder(compartment, WT_8_vs_WT_0), y=WT_8_vs_WT_0)) + 
   geom_bar(position="dodge", stat="identity", fill = "red", alpha=0.4) +
@@ -306,4 +306,25 @@ ggplot(df_mt, aes(x=C_lim , y=C_N_50, label=compartment)) +
                            " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
              label.size = NA)+
   geom_text(aes(label=ifelse(C_N_50 > 0.0, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+
+
+
+# supplementary figure - check the fold change of protein mass fraction for organelle
+df$C_N_50_vs_C_lim <- (df$C_N_50 - df$C_lim)/df$C_lim
+df$C_N_50_vs_C_lim_abs <- abs(df$C_N_50_vs_C_lim)
+df_filter_mass <- df[df$C_lim >=0.01, ]
+df_filter_mass <- df_filter_mass[df_filter_mass$C_N_50_vs_C_lim_abs >=0.15, ] 
+
+ggplot(df_filter_mass, aes(x=reorder(compartment, C_N_50_vs_C_lim), y=C_N_50_vs_C_lim)) + 
+  geom_bar(position="dodge", stat="identity", fill = "red", alpha=0.4) +
+  xlab("Cellular Component") + 
+  theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12))+ 
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  theme(legend.position="none")+
+  coord_flip()
+
+
+
+
+
 
