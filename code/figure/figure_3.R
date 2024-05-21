@@ -217,7 +217,11 @@ ggplot(r_df, aes(x=reorder(component, cor), y=cor, fill=component)) +
 
 # focus on one specific organelle-for example nucleolus
 compartment_sce_curation <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/compartment_sce_curation.xlsx")
+
 compartment_one <- compartment_sce_curation[compartment_sce_curation$compartment=="nucleolus",]
+compartment_one <- compartment_sce_curation[compartment_sce_curation$compartment=="peroxisome",]
+
+
 combine_one <- combine[combine$gene %in% compartment_one$gene,]
 combine_one_select <-  combine_one[, colnames(combine_one) %in% c("gene",physiology$sampleID)]
 
