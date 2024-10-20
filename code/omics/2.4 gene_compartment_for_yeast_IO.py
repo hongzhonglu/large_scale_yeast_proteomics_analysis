@@ -154,8 +154,9 @@ new_compartment["source"] = "MULocDeep"
 
 
 #get sce gene annotation
-compartment_dict20 = getCompartmentGeneList(type="all") # Remove some compartmental annotation only with computational evidence (keep experimental evidence)
+compartment_dict20 = getCompartmentGeneList(type="all")
 compartment_dict20_update =gene_location_curation_sce(compartment_dict20)
+
 # change it as a list
 sce_gene_list = []
 for x, y in compartment_dict20_update.items():
