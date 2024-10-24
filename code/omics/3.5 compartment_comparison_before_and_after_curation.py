@@ -9,6 +9,12 @@ from src.protein_process import *
 compartment = getCompartmentGeneList(type="all")  # based on the automatic way
 compartment_corrected = gene_location_curation_sce(organelle0=compartment)  # based on the SGD manual curation
 
+df = pd.DataFrame(compartment_corrected.items(), columns=['compartment', 'gene'])
+df = df.explode('gene')
+# save this file
+df.to_excel("data/compartment_annotation_refine.xlsx")
+
+
 
 # compare the difference
 key0 = []
