@@ -22,7 +22,15 @@ result_df0["total_copy"] = result_df0["count"]*result_df0["mean"]
 
 # add the physiology datasets
 physiology_data = pd.read_excel("data/proteomics/physiology_collection.xlsx")
-result_df0["sampleID"] = physiology_data['kinetic'].tolist()[0:76]
+
+
+
+
+##
+##
+##
+## the following code is wrong as physiology data contain the duplications
+result_df0["sampleID"] = physiology_data['sampleID'].tolist()[0:76]
 result_df0["dilution rate (/h)"] = physiology_data['dilution rate (/h)'].tolist()[0:76]
 result_df0["total protein content (g/gDW)"] = physiology_data['total protein content (g/gDW)'].tolist()[0:76]
 result_df0["Nitrogen source"] = physiology_data['Nitrogen source'].tolist()[0:76]

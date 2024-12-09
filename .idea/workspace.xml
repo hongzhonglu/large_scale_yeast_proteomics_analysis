@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/result/predicted_vs_measured using ecModels from DLkcat.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/result/predicted_vs_measured using ecModels from DLkcat.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/Figure_part_protein_abundance_or_volume_correlation_for_different_samples.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/Figure_part_protein_abundance_or_volume_correlation_for_different_samples.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/Figure_part_total_protein_copy_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/Figure_part_total_protein_copy_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/protein_copy_statistical_top1000.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_protein_MW_and_volume.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_protein_MW_and_volume.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/MW_Total_Volume.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/MW_Total_Volume.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/fitted_structure_volume_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/fitted_structure_volume_sce.pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/result/structure_volume_sce.pdf" beforeDir="false" afterPath="$PROJECT_DIR$/result/structure_volume_sce.pdf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,7 +100,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/code/omics" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -246,7 +255,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>119</line>
+          <line>130</line>
           <option name="timeStamp" value="22" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -301,12 +310,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>145</line>
+          <line>156</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/structure/3.1_Correlation_between_protein_size_and_its_function_sce.py</url>
-          <line>209</line>
+          <line>220</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -326,7 +335,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/Figure_part_total_protein_copy_analysis.py</url>
-          <line>24</line>
+          <line>32</line>
           <option name="timeStamp" value="45" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

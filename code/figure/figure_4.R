@@ -80,8 +80,35 @@ ggplot(df, aes(x=WT_0 , y=WT_4, label=compartment)) +
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3),
                            " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
-             label.size = NA)+
-  geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+             label.size = NA) +
+  geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+
+
+
+library(ggrepel)
+fit1 <- lm(WT_4 ~ WT_0, data = df)  
+ggplot(df, aes(x=WT_0 , y=WT_4, label=compartment)) +
+  geom_point(size=4, shape=1,colour='#E69F00') +
+  geom_smooth(method=lm) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+  labs(x = "Zinc limitation 0h",
+       y = "Zinc limitation 4h") +
+  xlim(0, 0.45) + ylim(0,0.45) +
+  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+             label = paste("Adj R2 = ",signif(summary(fit1)$adj.r.squared, 3),
+                           "\nIntercept =",signif(fit1$coef[[1]],3),
+                           " \nSlope =",signif(fit1$coef[[2]], 3),
+                           " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
+             label.size = NA) +
+  #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+
+
+
+
+
 
 
 fit1 <- lm(WT_8 ~ WT_0, data = df)  

@@ -54,6 +54,17 @@ a, b = linearFit(df=pro_size00, x_name="MW", y_name="Total_Volume")
 pro_size00.to_excel("data/sce_protein_MW_and_volume.xlsx")
 
 
+a, b = linearFit(df=pro_size00, x_name="MW", y_name="section_area_new")
+
+a, b = linearFit(df=pro_size00, x_name="Total_Volume", y_name="section_area_new")
+
+
+
+
+
+
+
+
 # replot
 pro_size_sce = pro_size00
 pro_size_sce["calculated_volume"] = 1.06019171e-03*pro_size_sce["MW"] - 1.10587455
