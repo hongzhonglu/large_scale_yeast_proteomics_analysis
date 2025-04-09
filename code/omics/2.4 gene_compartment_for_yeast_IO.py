@@ -11,13 +11,8 @@ from src.protein_process import *
 # Part 1
 # Initially check how many genes could find compartment
 
-
-# pro_abundance = pd.read_csv("data/proteomics/sce_protein_abundance_sgd.tsv", sep='\t')
-
 # input data from cell system, 2018
 pro_abundance = pd.read_excel("data/nature_chemical_biology_datatset_2024/41589_2024_1571_MOESM3_ESM_only_IO.xlsx", sheet_name="Table 10c. abs_prot_IO_SD108")
-#pro_abundance = pd.read_excel("data/nature_chemical_biology_datatset_2024/41589_2024_1571_MOESM3_ESM_only_IO.xlsx", sheet_name="Table 11b. rel_prot_IO")
-
 IO_gene_list = pro_abundance[["Entry"]]
 
 IO_annotation = pd.read_excel("data/nature_chemical_biology_datatset_2024/uniprotkb_proteome_UP000029867_2024_03_18.xlsx")
@@ -74,11 +69,6 @@ IO_gene_with_sce_ortholog0["gene_sce"] = IO_gene_with_sce_ortholog0["gene_sce"].
 
 
 
-
-
-
-
-
 # get gene without location from above way
 gene_with_no_location = ii1 + IO_gene_no_location_g1["Entry"].tolist()
 # then for these 1046 genes, we can annotate them based on deep learning
@@ -111,6 +101,9 @@ SeqIO.write(select_sequences[1000:], "data/nature_chemical_biology_datatset_2024
 all_file = os.listdir("data/nature_chemical_biology_datatset_2024/compartment_annotation")
 all_file = [x for x in all_file if x !=".DS_Store"]
 def getCompartmentFromDL(file_name):
+    # test
+    file_name = all_file[0]
+
     c11 = pd.read_table(
         "data/nature_chemical_biology_datatset_2024/compartment_annotation/" + file_name + "/sub_cellular_prediction.txt",
         header=None)
@@ -215,6 +208,4 @@ list(set(IO_compartment2["compartment"])-set(IO_compartment1["compartment"]))
 # note: the protein compartment annotation from sce could affect the result of IO in compartment annotation
 IO_compartment = IO_compartment[IO_compartment["compartment"]!="cytoplasm"]
 IO_compartment.to_excel("data/nature_chemical_biology_datatset_2024/IO_gene_compartment.xlsx")
-
-
 

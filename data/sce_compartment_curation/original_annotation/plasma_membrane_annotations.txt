@@ -1,5 +1,5 @@
 !
-!Date: 04/07/2024
+!Date: 04/06/2025
 !From: Saccharomyces Genome Database (SGD) 
 !URL: http://www.yeastgenome.org/ 
 !Contact Email: sgd-helpdesk@lists.stanford.edu 
@@ -7,10 +7,15 @@
 !
 
 Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+DNF1-LEM3 P4-ATPase complex	CPX-1021	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-09-19	Hua Z, et al. (2002) PMID:12221123
+DNF1-LEM3 P4-ATPase complex	CPX-1021	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-09-19	Kato U, et al. (2002) PMID:12133835
+DNF2-LEM3 P4-ATPase complex	CPX-1022	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-09-19	Kato U, et al. (2002) PMID:12133835
+DNF2-LEM3 P4-ATPase complex	CPX-1022	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-09-19	Hua Z, et al. (2002) PMID:12221123
 OPY2-MSB2 osmosensory complex	CPX-1302	located in	GO:0005886	plasma membrane	cellular component		BSR	manually curated	ComplexPortal	2018-03-27	Yamamoto K, et al. (2016) PMID:26598606
 Vesicular SNARE complex SSO1-SEC9-SNC1	CPX-1365	located in	GO:0005886	plasma membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Mendonsa R and Engebrecht J (2009) PMID:19502581
 Vesicular SNARE complex SSO2-SEC9-SNC1	CPX-1369	located in	GO:0005886	plasma membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Mendonsa R and Engebrecht J (2009) PMID:19502581
 Ste4-Ste18 heterodimer	CPX-1645	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	ComplexPortal	2014-10-16	Clark KL, et al. (1993) PMID:8417317
+TORC2 complex	CPX-1717	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2025-03-21	Riggi M, et al. (2019) PMID:31123183
 VPS4 complex	CPX-334	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	ComplexPortal	2018-03-07	Wollert T, et al. (2009) PMID:19234443
 MIH complex	CPX-3503	located in	GO:0005886	plasma membrane	cellular component		BSR	manually curated	ComplexPortal	2018-06-22	Tian C, et al. (2014) PMID:24895401
 Vesicular SNARE complex SSO1-SEC9-SNC2	CPX-5463	located in	GO:0005886	plasma membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Mendonsa R and Engebrecht J (2009) PMID:19502581
@@ -19,501 +24,506 @@ Vacuolar SNARE complex SSO1-SEC9-NYV1	CPX-5521	located in	GO:0005886	plasma memb
 FET3-FTR1 high affinity iron permease complex	CPX-868	located in	GO:0005886	plasma membrane	cellular component		BSR	manually curated	ComplexPortal	2017-01-31	Kwok EY, et al. (2006) PMID:16700543
 SSA1	YAL005C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 SNC1	YAL030W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-09-29	Laidlaw KME, et al. (2022) PMID:36125415
-SNC1	YAL030W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-06-24	Lewis MJ, et al. (2000) PMID:10637288
+SNC1	YAL030W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lewis MJ, et al. (2000) PMID:10637288
 CDC19	YAL038W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-GPB2	YAL056W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-07-25	Harashima T and Heitman J (2005) PMID:16030250
-PRM9	YAR031W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-11-01	Poirey R, et al. (2002) PMID:12101299
-MST28	YAR033W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-03-10	Poirey R, et al. (2002) PMID:12101299
+GPB2	YAL056W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Harashima T and Heitman J (2005) PMID:16030250
+PRM9	YAR031W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Poirey R, et al. (2002) PMID:12101299
+MST28	YAR033W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Poirey R, et al. (2002) PMID:12101299
 YBL029C-A	YBL029C-A	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 FUI1	YBL042C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-FUI1	YBL042C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-09-19	Vickers MF, et al. (2000) PMID:10827169
-FUI1	YBL042C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-03-17	Zhang J, et al. (2006) PMID:16854981
-AST1	YBL069W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-05-10	Bagnat M, et al. (2001) PMID:11739806
+FUI1	YBL042C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Vickers MF, et al. (2000) PMID:10827169
+FUI1	YBL042C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Zhang J, et al. (2006) PMID:16854981
+AST1	YBL069W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Bagnat M, et al. (2001) PMID:11739806
 BOI1	YBL085W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
 PKC1	YBL105C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 SRO77	YBL106C	located in	GO:0005886	plasma membrane	cellular component		IPI with SRO7	manually curated	SGD	2019-02-28	Lehman K, et al. (1999) PMID:10402465
 RCR1	YBR005W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-06-04	Zhu L, et al. (2020) PMID:32421152
-FLR1	YBR008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2008-01-14	Jungwirth H, et al. (2000) PMID:10903515
-CPP1	YBR016W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-01-08	Giolito ML, et al. (2023) PMID:38159851
-CPP1	YBR016W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-10-14	Beilharz T, et al. (2003) PMID:12514182
-FUR4	YBR021W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Urban-Grimal D, et al. (1995) PMID:8948441
+FLR1	YBR008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Jungwirth H, et al. (2000) PMID:10903515
+CPP1	YBR016W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-01-08	Giolito ML, et al. (2024) PMID:38159851
+CPP1	YBR016W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Beilharz T, et al. (2003) PMID:12514182
+FUR4	YBR021W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Urban-Grimal D, et al. (1995) PMID:8948441
 QDR3	YBR043C	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-12-16	Kapetanakis GC, et al. (2021) PMID:34887841
-QDR3	YBR043C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-02-01	Tenreiro S, et al. (2005) PMID:15649438
-YRO2	YBR054W	located in	GO:0005886	plasma membrane	cellular component	exists during cellular response to stress	IDA	manually curated	SGD	2016-01-13	Takabatake A, et al. (2015) PMID:25503505
+QDR3	YBR043C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tenreiro S, et al. (2005) PMID:15649438
+YRO2	YBR054W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2016-01-13	Takabatake A, et al. (2015) PMID:25503505
 BAP2	YBR068C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2019-04-18	Regenberg B, et al. (1999) PMID:10654085
-TAT1	YBR069C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-06-17	Suzuki A, et al. (2013) PMID:23666621
+TAT1	YBR069C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Suzuki A, et al. (2013) PMID:23666621
+ECM33	YBR078W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Terashima H, et al. (2003) PMID:12583915
 ECM33	YBR078W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-ECM33	YBR078W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-02-17	Terashima H, et al. (2003) PMID:12583915
-IST2	YBR086C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-10-30	Takizawa PA, et al. (2000) PMID:11030653
-IST2	YBR086C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-01-23	Franz A, et al. (2007) PMID:17234190
+IST2	YBR086C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Franz A, et al. (2007) PMID:17234190
+IST2	YBR086C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Takizawa PA, et al. (2000) PMID:11030653
 OPY1	YBR129C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2017-05-30	Ling Y, et al. (2012) PMID:22562153
-AGP2	YBR132C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	van Roermund CW, et al. (1999) PMID:10545096
+AGP2	YBR132C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	van Roermund CW, et al. (1999) PMID:10545096
 PGI1	YBR196C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SUL1	YBR294W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-02	Smith FW, et al. (1995) PMID:7616962
-PCA1	YBR295W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-11-27	Adle DJ, et al. (2007) PMID:17107946
-PCA1	YBR295W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2016-11-14	Smith N, et al. (2016) PMID:27226596
-PHO89	YBR296C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-11-04	Martinez P and Persson BL (1998) PMID:9671031
+SUL1	YBR294W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Smith FW, et al. (1995) PMID:7616962
+PCA1	YBR295W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Smith N, et al. (2016) PMID:27226596
+PCA1	YBR295W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Adle DJ, et al. (2007) PMID:17107946
+PHO89	YBR296C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Martinez P and Persson BL (1998) PMID:9671031
 MAL32	YBR299W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 AGP1	YCL025C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2019-04-04	Popov-Čeleketić D, et al. (2016) PMID:27226538
-FUS1	YCL027W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-10-15	Trueheart J and Fink GR (1989) PMID:2690078
+FUS1	YCL027W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Trueheart J and Fink GR (1989) PMID:2690078
 GLK1	YCL040W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-GEX1	YCL073C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-04-18	Dhaoui M, et al. (2011) PMID:21490148
+GEX1	YCL073C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dhaoui M, et al. (2011) PMID:21490148
+YCP4	YCR004C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-06-18	Megarioti AH, et al. (2023) PMID:38096056
 YCP4	YCR004C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 ADY2	YCR010C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-ADY2	YCR010C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-04-05	Ricicová M, et al. (2007) PMID:17395151
+ADY2	YCR010C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ricicová M, et al. (2007) PMID:17395151
 PGK1	YCR012W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-CWH43	YCR017C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-06	Martin-Yken H, et al. (2001) PMID:11427965
+CWH43	YCR017C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Martin-Yken H, et al. (2001) PMID:11427965
 HSP30	YCR021C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-HSP30	YCR021C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Panaretou B and Piper PW (1992) PMID:1535043
+HSP30	YCR021C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Panaretou B and Piper PW (1992) PMID:1535043
 PMP1	YCR024C-A	is active in	GO:0005886	plasma membrane	cellular component		IGI with PMP2	manually curated	SGD	2021-10-20	Navarre C, et al. (1994) PMID:8063750
-PMP1	YCR024C-A	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-04-15	Navarre C, et al. (1992) PMID:1532582
+PMP1	YCR024C-A	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (1992) PMID:1532582
 FEN2	YCR028C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2019-03-12	Stolz J and Sauer N (1999) PMID:10373490
-PHO87	YCR037C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-07-29	Ghillebert R, et al. (2011) PMID:21143198
+PHO87	YCR037C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ghillebert R, et al. (2011) PMID:21143198
 ERS1	YCR075C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2016-07-01	Simpkins JA, et al. (2016) PMID:27142334
+GIT1	YCR098C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Patton-Vogt JL and Henry SA (1998) PMID:9691030
 GIT1	YCR098C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-10-24	Almaguer C, et al. (2006) PMID:16924500
-GIT1	YCR098C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-11	Patton-Vogt JL and Henry SA (1998) PMID:9691030
-YDL012C	YDL012C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-10-14	Beilharz T, et al. (2003) PMID:12514182
-OSH2	YDL019C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-03-28	Levine TP and Munro S (2001) PMID:11408574
+YDL012C	YDL012C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Beilharz T, et al. (2003) PMID:12514182
 OSH2	YDL019C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-01-23	Weber-Boyvat M, et al. (2015) PMID:25420878
-GPR1	YDL035C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-11-30	Yun CW, et al. (1997) PMID:9388468
-GPR1	YDL035C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-07-02	Lorenz MC, et al. (2000) PMID:10655215
-GPR1	YDL035C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-07-02	Xue Y, et al. (1998) PMID:9524122
+OSH2	YDL019C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Levine TP and Munro S (2001) PMID:11408574
+GPR1	YDL035C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Xue Y, et al. (1998) PMID:9524122
+GPR1	YDL035C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yun CW, et al. (1997) PMID:9388468
+GPR1	YDL035C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lorenz MC, et al. (2000) PMID:10655215
 YDL124W	YDL124W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 RDI1	YDL135C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-RGT2	YDL138W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-03	Ozcan S, et al. (1996) PMID:8901598
 RGT2	YDL138W	is active in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2021-12-15	Ozcan S, et al. (1996) PMID:8901598
+RGT2	YDL138W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Ozcan S, et al. (1996) PMID:8901598
 ENT1	YDL161W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2019-08-17	Tanner N, et al. (2019) PMID:31370222
-SNF3	YDL194W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-02	Marshall-Carlson L, et al. (1990) PMID:2406560
 SNF3	YDL194W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
+SNF3	YDL194W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Marshall-Carlson L, et al. (1990) PMID:2406560
 FMP45	YDL222C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 HBT1	YDL223C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 SSB1	YDL229W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SNQ2	YDR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
+SNQ2	YDR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
 PST2	YDR032C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
+MRH1	YDR033W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wu K, et al. (2000) PMID:10675524
+MRH1	YDR033W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
 MRH1	YDR033W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-MRH1	YDR033W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Wu K, et al. (2000) PMID:10675524
-MRH1	YDR033W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
-CPP3	YDR034W-B	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-01-08	Giolito ML, et al. (2023) PMID:38159851
+CPP3	YDR034W-B	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-01-08	Giolito ML, et al. (2024) PMID:38159851
+ENA5	YDR038C	located in	GO:0005886	plasma membrane	cellular component		ISS with ENA1	manually curated	SGD	2014-10-02	Wieland J, et al. (1995) PMID:7664728
 ENA5	YDR038C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-ENA5	YDR038C	located in	GO:0005886	plasma membrane	cellular component		ISS with ENA1	manually curated	SGD	2006-10-13	Wieland J, et al. (1995) PMID:7664728
-ENA2	YDR039C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Wieland J, et al. (1995) PMID:7664728
+ENA2	YDR039C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wieland J, et al. (1995) PMID:7664728
 ENA1	YDR040C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-ENA1	YDR040C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Wieland J, et al. (1995) PMID:7664728
-ENA1	YDR040C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-10-20	Benito B, et al. (1997) PMID:9315618
+ENA1	YDR040C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wieland J, et al. (1995) PMID:7664728
+ENA1	YDR040C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Benito B, et al. (1997) PMID:9315618
 TPI1	YDR050C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-PST1	YDR055W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-11-29	Pardo M, et al. (2004) PMID:15583168
+PST1	YDR055W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Pardo M, et al. (2004) PMID:15583168
 ILT1	YDR090C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2018-07-27	Higgins DA, et al. (2018) PMID:30045857
 DNF2	YDR093W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-10-29	Jain BK, et al. (2020) PMID:33060204
-DNF2	YDR093W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-07	Hua Z, et al. (2002) PMID:12221123
-DNF2	YDR093W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-04-21	Pomorski T, et al. (2003) PMID:12631737
+DNF2	YDR093W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Pomorski T, et al. (2003) PMID:12631737
+DNF2	YDR093W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hua Z, et al. (2002) PMID:12221123
 BMH2	YDR099W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-STE5	YDR103W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2007-08-28	Garrenton LS, et al. (2006) PMID:16847350
-KIN1	YDR122W	located in	GO:0005886	plasma membrane	cellular component		IPI with SRO7	manually curated	SGD	2005-02-16	Elbert M, et al. (2005) PMID:15563607
+STE5	YDR103W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Garrenton LS, et al. (2006) PMID:16847350
+KIN1	YDR122W	located in	GO:0005886	plasma membrane	cellular component		IPI with SRO7	manually curated	SGD	2013-08-07	Elbert M, et al. (2005) PMID:15563607
 SAC6	YDR129C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
 HOM2	YDR158W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SSY1	YDR160W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Klasson H, et al. (1999) PMID:10409731
 SSY1	YDR160W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
-SEC1	YDR164C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-03-24	Scott BL, et al. (2004) PMID:15466482
+SSY1	YDR160W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Klasson H, et al. (1999) PMID:10409731
+SEC1	YDR164C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Scott BL, et al. (2004) PMID:15466482
 MSS4	YDR208W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2017-05-30	Ling Y, et al. (2012) PMID:22562153
-MSS4	YDR208W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-02-14	Homma K, et al. (1998) PMID:9624177
-CPP2	YDR210W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-01-08	Giolito ML, et al. (2023) PMID:38159851
+MSS4	YDR208W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Homma K, et al. (1998) PMID:9624177
+CPP2	YDR210W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-01-08	Giolito ML, et al. (2024) PMID:38159851
 TCP1	YDR212W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-PMP3	YDR276C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Navarre C and Goffeau A (2000) PMID:10835350
-GIC2	YDR309C	located in	GO:0005886	plasma membrane	cellular component		IGI with CDC25	manually curated	SGD	2008-04-07	Orlando K, et al. (2008) PMID:18387956
+PMP3	YDR276C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C and Goffeau A (2000) PMID:10835350
+GIC2	YDR309C	located in	GO:0005886	plasma membrane	cellular component		IGI with CDC25	manually curated	SGD	2013-08-07	Orlando K, et al. (2008) PMID:18387956
+HXT7	YDR342C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Krampe S and Boles E (2002) PMID:11904149
+HXT7	YDR342C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
 HXT7	YDR342C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-HXT7	YDR342C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Krampe S and Boles E (2002) PMID:11904149
-HXT7	YDR342C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
 HXT6	YDR343C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-HXT3	YDR345C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-17	Spira F, et al. (2012) PMID:22544065
 HXT3	YDR345C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
-ATO3	YDR384C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-12-28	Guaragnella N and Butow RA (2003) PMID:12966084
-HKR1	YDR420W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-04-05	Yabe T, et al. (1996) PMID:8550469
-PFA5	YDR459C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-10-25	Ohno Y, et al. (2006) PMID:16647879
-STP1	YDR463W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-04-04	Tumusiime S, et al. (2011) PMID:21127045
+HXT3	YDR345C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Spira F, et al. (2012) PMID:22544065
+ATO3	YDR384C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Guaragnella N and Butow RA (2003) PMID:12966084
+HKR1	YDR420W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yabe T, et al. (1996) PMID:8550469
+PFA5	YDR459C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ohno Y, et al. (2006) PMID:16647879
+STP1	YDR463W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tumusiime S, et al. (2011) PMID:21127045
 ITR1	YDR497C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-ITR1	YDR497C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-11-18	Miyashita M, et al. (2003) PMID:16233524
+ITR1	YDR497C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Miyashita M, et al. (2003) PMID:16233524
 SPS2	YDR522C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-STL1	YDR536W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-05-23	Ferreira C, et al. (2005) PMID:15703210
+STL1	YDR536W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ferreira C, et al. (2005) PMID:15703210
 PMP2	YEL017C-A	is active in	GO:0005886	plasma membrane	cellular component		IGI with PMP1	manually curated	SGD	2021-11-16	Navarre C, et al. (1994) PMID:8063750
 FRD1	YEL047C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-CAN1	YEL063C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-07-06	Malinska K, et al. (2004) PMID:15536122
-GPA2	YER020W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-GPA2	YER020W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-07-25	Harashima T and Heitman J (2005) PMID:16030250
+CAN1	YEL063C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Malinska K, et al. (2004) PMID:15536122
+GPA2	YER020W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Harashima T and Heitman J (2005) PMID:16030250
 GPA2	YER020W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2019-11-14	Huang S, et al. (2019) PMID:31690628
+GPA2	YER020W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 CAJ1	YER048C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-09-03	Dobriyal N, et al. (2020) PMID:32777224
+FCY2	YER056C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Grandier-Vazeille X, et al. (1993) PMID:8267570
 FCY2	YER056C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-FCY2	YER056C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-19	Grandier-Vazeille X, et al. (1993) PMID:8267570
-FCY21	YER060W	located in	GO:0005886	plasma membrane	cellular component		ISA with FCY2	manually curated	SGD	2013-05-03	Paluszynski JP, et al. (2006) PMID:16845689
-FCY22	YER060W-A	located in	GO:0005886	plasma membrane	cellular component		ISA with FCY2	manually curated	SGD	2013-05-03	Paluszynski JP, et al. (2006) PMID:16845689
+FCY21	YER060W	located in	GO:0005886	plasma membrane	cellular component		ISA with FCY2	manually curated	SGD	2014-10-02	Paluszynski JP, et al. (2006) PMID:16845689
+FCY22	YER060W-A	located in	GO:0005886	plasma membrane	cellular component		ISA with FCY2	manually curated	SGD	2014-10-02	Paluszynski JP, et al. (2006) PMID:16845689
 MET6	YER091C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 TSC11	YER093C	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-02-14	Martinez Marshall MN, et al. (2019) PMID:30969890
 SHO1	YER118C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-12-13	Reiser V, et al. (2000) PMID:10980703
 SCS2	YER120W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-01-23	Weber-Boyvat M, et al. (2015) PMID:25420878
-YCK3	YER123W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-25	Wang X, et al. (1996) PMID:8816449
+YCK3	YER123W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wang X, et al. (1996) PMID:8816449
 RSP5	YER125W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-DDI1	YER143W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-07	Lustgarten V and Gerst JE (1999) PMID:10330187
-FTR1	YER145C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-03-14	Yun CW, et al. (2000) PMID:10748025
-FTR1	YER145C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-12-14	Kwok EY, et al. (2006) PMID:16700543
-BEM2	YER155C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-11-06	Knaus M, et al. (2007) PMID:17914457
+DDI1	YER143W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lustgarten V and Gerst JE (1999) PMID:10330187
+FTR1	YER145C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kwok EY, et al. (2006) PMID:16700543
+FTR1	YER145C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yun CW, et al. (2000) PMID:10748025
+BEM2	YER155C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Knaus M, et al. (2007) PMID:17914457
 DNF1	YER166W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-10-29	Jain BK, et al. (2020) PMID:33060204
-DNF1	YER166W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-07	Hua Z, et al. (2002) PMID:12221123
-DNF1	YER166W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-04-21	Pomorski T, et al. (2003) PMID:12631737
+DNF1	YER166W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hua Z, et al. (2002) PMID:12221123
+DNF1	YER166W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Pomorski T, et al. (2003) PMID:12631737
 BMH1	YER177W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-PUG1	YER185W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2008-05-12	Protchenko O, et al. (2008) PMID:18326586
+PUG1	YER185W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Protchenko O, et al. (2008) PMID:18326586
 SEC4	YFL005W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 HSP12	YFL014W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-HSP12	YFL014W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2004-07-02	Sales K, et al. (2000) PMID:10675505
-HSP12	YFL014W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-02-14	Welker S, et al. (2010) PMID:20797624
-STE2	YFL026W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-11-22	Blumer KJ, et al. (1988) PMID:2839507
-ALR2	YFL050C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2001-04-12	MacDiarmid CW and Gardner RC (1998) PMID:9430719
+HSP12	YFL014W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sales K, et al. (2000) PMID:10675505
+HSP12	YFL014W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Welker S, et al. (2010) PMID:20797624
+STE2	YFL026W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Blumer KJ, et al. (1988) PMID:2839507
+ALR2	YFL050C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	MacDiarmid CW and Gardner RC (1998) PMID:9430719
 PTR3	YFR029W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-25	Klasson H, et al. (1999) PMID:10409731
+PMA1	YGL008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
 PMA1	YGL008C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-PMA1	YGL008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2004-12-01	Bagnat M, et al. (2001) PMID:11739806
-PMA1	YGL008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
-MST27	YGL051W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-03-10	Poirey R, et al. (2002) PMID:12101299
-PRM8	YGL053W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-03-10	Poirey R, et al. (2002) PMID:12101299
-YGL082W	YGL082W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-GUP1	YGL084C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-04-19	Bleve G, et al. (2005) PMID:15813700
-YGL114W	YGL114W	located in	GO:0005886	plasma membrane	cellular component		ISS with OPT1	manually curated	SGD	2014-12-09	Pearson BM and Schweizer M (2002) PMID:11788967
-SNF4	YGL115W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-04-25	Lin SS, et al. (2003) PMID:12562756
-TPN1	YGL186C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-06-03	Stolz J and Vielreicher M (2003) PMID:12649274
-SIP2	YGL208W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-04-25	Lin SS, et al. (2003) PMID:12562756
-ZRT1	YGL255W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-09-17	Zhao H and Eide D (1996) PMID:8637895
-MSB2	YGR014W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-12-05	O'Rourke SM and Herskowitz I (2002) PMID:12052881
+PMA1	YGL008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Bagnat M, et al. (2001) PMID:11739806
+MST27	YGL051W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Poirey R, et al. (2002) PMID:12101299
+PRM8	YGL053W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Poirey R, et al. (2002) PMID:12101299
+HNM1	YGL077C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-08-15	Fernández-Murray JP, et al. (2013) PMID:24187140
+MIY3	YGL082W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2025-01-13	Weng F, et al. (2025) PMID:39798877
+MIY3	YGL082W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
+GUP1	YGL084C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Bleve G, et al. (2005) PMID:15813700
+YGL114W	YGL114W	located in	GO:0005886	plasma membrane	cellular component		ISS with OPT1	manually curated	SGD	2022-08-26	Pearson BM and Schweizer M (2002) PMID:11788967
+SNF4	YGL115W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lin SS, et al. (2003) PMID:12562756
+TPN1	YGL186C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Stolz J and Vielreicher M (2003) PMID:12649274
+SIP2	YGL208W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lin SS, et al. (2003) PMID:12562756
+ZRT1	YGL255W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2022-08-26	Zhao H and Eide D (1996) PMID:8637895
+MSB2	YGR014W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2022-08-26	O'Rourke SM and Herskowitz I (2002) PMID:12052881
 MTL1	YGR023W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-03-25	Kock C, et al. (2016) PMID:27337501
-NAG1	YGR031C-A	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2008-05-06	Ma J, et al. (2008) PMID:18310357
-BUD9	YGR041W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-12-09	Krappmann AB, et al. (2007) PMID:17581861
+NAG1	YGR031C-A	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ma J, et al. (2008) PMID:18310357
+BUD9	YGR041W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Krappmann AB, et al. (2007) PMID:17581861
 MUP1	YGR055W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
-ERG25	YGR060W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Li L and Kaplan J (1996) PMID:8663358
-VHT1	YGR065C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-02	Stolz J, et al. (1999) PMID:10373489
-PIL1	YGR086C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Tkach JM, et al. (2012) PMID:22842922
+ERG25	YGR060W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Li L and Kaplan J (1996) PMID:8663358
+VHT1	YGR065C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Stolz J, et al. (1999) PMID:10373489
 PIL1	YGR086C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
+PIL1	YGR086C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Tkach JM, et al. (2012) PMID:22842922
 MEP1	YGR121C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2018-02-01	Boeckstaens M, et al. (2015) PMID:26172854
 YGR122W	YGR122W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-TPO2	YGR138C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-04-22	Albertsen M, et al. (2003) PMID:12562762
-RSR1	YGR152C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-12-01	Michelitch M and Chant J (1996) PMID:8723349
+TPO2	YGR138C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Albertsen M, et al. (2003) PMID:12562762
 RSR1	YGR152C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2019-10-28	Park HO, et al. (2002) PMID:12058023
-HIP1	YGR191W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-02	Tanaka J and Fink GR (1985) PMID:3905514
+RSR1	YGR152C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Michelitch M and Chant J (1996) PMID:8723349
+HIP1	YGR191W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Tanaka J and Fink GR (1985) PMID:3905514
 TDH3	YGR192C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SNG1	YGR197C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-05-03	García-López MC, et al. (2010) PMID:20424846
-YPP1	YGR198W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-01-07	Baird D, et al. (2008) PMID:19075114
+SNG1	YGR197C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	García-López MC, et al. (2010) PMID:20424846
+YPP1	YGR198W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Baird D, et al. (2008) PMID:19075114
 YPP1	YGR198W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
-RTA1	YGR213C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-12-09	Kołaczkowska A, et al. (2012) PMID:22129104
-CCH1	YGR217W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-03	Locke EG, et al. (2000) PMID:10958666
-AZR1	YGR224W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2004-01-20	Tenreiro S, et al. (2000) PMID:11113970
+SLI1	YGR212W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-03-14	Momoi M, et al. (2004) PMID:15025559
+RTA1	YGR213C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kołaczkowska A, et al. (2012) PMID:22129104
+CCH1	YGR217W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Locke EG, et al. (2000) PMID:10958666
+AZR1	YGR224W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tenreiro S, et al. (2000) PMID:11113970
 YAP1802	YGR241C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-09-20	Laidlaw KME, et al. (2021) PMID:33443082
 ENO1	YGR254W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 GND2	YGR256W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-YGR266W	YGR266W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-01-03	Navarre C, et al. (2002) PMID:12469340
-YOR1	YGR281W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-03	Decottignies A, et al. (1998) PMID:9575223
+TNA1	YGR260W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2024-08-19	Paine KM, et al. (2021) PMID:34498791
+YGR266W	YGR266W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
+YOR1	YGR281W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Decottignies A, et al. (1998) PMID:9575223
 MAL12	YGR292W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 STE20	YHL007C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-DUR3	YHL016C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-02-01	Uemura T, et al. (2007) PMID:17218313
-DUR3	YHL016C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-03	ElBerry HM, et al. (1993) PMID:8335627
-ARN1	YHL040C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-06-30	Kim Y, et al. (2005) PMID:15719020
-DFP4	YHL044W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-03-10	Poirey R, et al. (2002) PMID:12101299
-GPA1	YHR005C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Dohlman HG, et al. (1996) PMID:8756677
+DUR3	YHL016C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Uemura T, et al. (2007) PMID:17218313
+DUR3	YHL016C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	ElBerry HM, et al. (1993) PMID:8335627
+ARN1	YHL040C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kim Y, et al. (2005) PMID:15719020
+DFP4	YHL044W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Poirey R, et al. (2002) PMID:12101299
+GPA1	YHR005C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dohlman HG, et al. (1996) PMID:8756677
 YHK8	YHR048W	located in	GO:0005886	plasma membrane	cellular component		ISS with FLR1	manually curated	SGD	2014-11-12	Goffeau A, et al. (1997) PMID:9046086
-YHK8	YHR048W	located in	GO:0005886	plasma membrane	cellular component		ISS with TPO1	manually curated	SGD	2014-11-12	Goffeau A, et al. (1997) PMID:9046086
 YHK8	YHR048W	located in	GO:0005886	plasma membrane	cellular component		ISS with TPO4	manually curated	SGD	2014-11-12	Goffeau A, et al. (1997) PMID:9046086
+YHK8	YHR048W	located in	GO:0005886	plasma membrane	cellular component		ISS with TPO1	manually curated	SGD	2014-11-12	Goffeau A, et al. (1997) PMID:9046086
 OSH3	YHR073W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-01-23	Weber-Boyvat M, et al. (2015) PMID:25420878
-HXT4	YHR092C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-13	Aronova S, et al. (2007) PMID:17507646
+HXT4	YHR092C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Aronova S, et al. (2007) PMID:17507646
 HXT4	YHR092C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
-HXT1	YHR094C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Sherwood PW and Carlson M (1999) PMID:10377429
 HXT1	YHR094C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
+HXT1	YHR094C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sherwood PW and Carlson M (1999) PMID:10377429
 HXT5	YHR096C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 BZZ1	YHR114W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-04-01	Sun Y, et al. (2006) PMID:16824951
 YCK1	YHR135C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-YCK1	YHR135C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Wang PC, et al. (1992) PMID:1627830
-YCK1	YHR135C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Vancura A, et al. (1994) PMID:8034689
+YCK1	YHR135C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Vancura A, et al. (1994) PMID:8034689
+YCK1	YHR135C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wang PC, et al. (1992) PMID:1627830
 YAP1801	YHR161C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-09-20	Laidlaw KME, et al. (2021) PMID:33443082
 ENO2	YHR174W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 RGD3	YHR182W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-01-28	Gingras RM, et al. (2020) PMID:32941095
-KOG1	YHR186C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-01-18	Araki T, et al. (2005) PMID:16394584
+KOG1	YHR186C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Araki T, et al. (2005) PMID:16394584
 PDR11	YIL013C	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-07-18	Stanchev LD, et al. (2020) PMID:33375075
-BCY1	YIL033C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-05-29	Behrens MM and Mazón MJ (1988) PMID:2831892
+BCY1	YIL033C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Behrens MM and Mazón MJ (1988) PMID:2831892
 CAP2	YIL034C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-SYG1	YIL047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Spain BH, et al. (1995) PMID:7592711
+SYG1	YIL047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Spain BH, et al. (1995) PMID:7592711
 NEO1	YIL048W	is active in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2022-01-18	Takar M, et al. (2016) PMID:27235400
-AVT7	YIL088C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-04-25	Russnak R, et al. (2001) PMID:11274162
+AVT7	YIL088C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Russnak R, et al. (2001) PMID:11274162
+SLM1	YIL105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Audhya A, et al. (2004) PMID:15372071
 SLM1	YIL105C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SLM1	YIL105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-01-06	Audhya A, et al. (2004) PMID:15372071
-SLM1	YIL105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-04-18	Fadri M, et al. (2005) PMID:15689497
-SLM1	YIL105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-08-09	Daquinag A, et al. (2007) PMID:17101780
+SLM1	YIL105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Daquinag A, et al. (2007) PMID:17101780
+SLM1	YIL105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Fadri M, et al. (2005) PMID:15689497
 RHO3	YIL118W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-QDR1	YIL120W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-30	Nunes PA, et al. (2001) PMID:11302822
+QDR1	YIL120W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nunes PA, et al. (2001) PMID:11302822
 QDR2	YIL121W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-12-16	Kapetanakis GC, et al. (2021) PMID:34887841
-QDR2	YIL121W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2004-08-11	Vargas RC, et al. (2004) PMID:15215105
-AXL2	YIL140W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-02-28	Roemer T, et al. (1996) PMID:8846915
-SLN1	YIL147C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-03-09	Ostrander DB and Gorman JA (1999) PMID:10198019
-SLN1	YIL147C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-01-12	Lu JM, et al. (2003) PMID:14665464
+QDR2	YIL121W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Vargas RC, et al. (2004) PMID:15215105
+AXL2	YIL140W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Roemer T, et al. (1996) PMID:8846915
+SLN1	YIL147C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Ostrander DB and Gorman JA (1999) PMID:10198019
+SLN1	YIL147C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lu JM, et al. (2003) PMID:14665464
 PAN1	YIR006C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
-FLO11	YIR019C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-04-08	Guo B, et al. (2000) PMID:11027318
+FLO11	YIR019C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Guo B, et al. (2000) PMID:11027318
 GTT1	YIR038C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-CYR1	YJL005W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Mitts MR, et al. (1990) PMID:2196438
+CYR1	YJL005W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mitts MR, et al. (1990) PMID:2196438
 TDH1	YJL052W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-BIT61	YJL058C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-01-21	Berchtold D and Walther TC (2009) PMID:19144819
-LAS21	YJL062W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-25	Benachour A, et al. (1999) PMID:10329735
-EXO70	YJL085W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-01-08	He B, et al. (2007) PMID:17717527
-TOK1	YJL093C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-03-05	Ketchum KA, et al. (1995) PMID:7651518
-TOK1	YJL093C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-03-05	Ketchum KA, et al. (1995) PMID:7651518
-LSB6	YJL100W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2008-06-09	Han GS, et al. (2002) PMID:12361950
-LSB6	YJL100W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-04-21	Shelton SN, et al. (2003) PMID:12523934
+BIT61	YJL058C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Berchtold D and Walther TC (2009) PMID:19144819
+LAS21	YJL062W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Benachour A, et al. (1999) PMID:10329735
+EXO70	YJL085W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	He B, et al. (2007) PMID:17717527
+TOK1	YJL093C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Ketchum KA, et al. (1995) PMID:7651518
+TOK1	YJL093C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ketchum KA, et al. (1995) PMID:7651518
+LSB6	YJL100W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Shelton SN, et al. (2003) PMID:12523934
+LSB6	YJL100W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Han GS, et al. (2002) PMID:12361950
 TRK1	YJL129C	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-09-29	Yenush L, et al. (2005) PMID:16166647
-TRK1	YJL129C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-07-03	Yenush L, et al. (2005) PMID:16166647
+TRK1	YJL129C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yenush L, et al. (2005) PMID:16166647
 TIF2	YJL138C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SFH5	YJL145W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-09-12	Yakir-Tamang L and Gerst JE (2009) PMID:19477927
+SFH5	YJL145W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yakir-Tamang L and Gerst JE (2009) PMID:19477927
 SSY5	YJL156C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-25	Forsberg H and Ljungdahl PO (2001) PMID:11154269
 CIS3	YJL158C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
 HAL5	YJL165C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-03-25	Tumolo JM, et al. (2020) PMID:32191698
-ASG7	YJL170C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-16	Kim J, et al. (2000) PMID:11073983
+ASG7	YJL170C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kim J, et al. (2000) PMID:11073983
 TOH1	YJL171C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-PHO90	YJL198W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-07-29	Ghillebert R, et al. (2011) PMID:21143198
-OPT1	YJL212C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2003-10-14	Bourbouloux A, et al. (2000) PMID:10788431
-OPT1	YJL212C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-07-15	Kaur J, et al. (2009) PMID:19496824
+PHO90	YJL198W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ghillebert R, et al. (2011) PMID:21143198
+OPT1	YJL212C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2022-08-26	Bourbouloux A, et al. (2000) PMID:10788431
+OPT1	YJL212C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kaur J, et al. (2009) PMID:19496824
 TDH2	YJR009C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-GEF1	YJR040W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2008-10-30	López-Rodríguez A, et al. (2007) PMID:17662057
-KCH1	YJR054W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-12-10	Stefan CP, et al. (2013) PMID:23204190
-PTK2	YJR059W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-03-10	Eraso P, et al. (2006) PMID:16510118
+GEF1	YJR040W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	López-Rodríguez A, et al. (2007) PMID:17662057
+KCH1	YJR054W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Stefan CP, et al. (2013) PMID:23204190
+PTK2	YJR059W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Eraso P, et al. (2006) PMID:16510118
 ARP3	YJR065C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-TOR1	YJR066W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-12-09	Kunz J, et al. (2000) PMID:10973982
-STE18	YJR086W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Hirschman JE, et al. (1997) PMID:8995254
-DAL5	YJR152W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-09-19	Rai R, et al. (1988) PMID:3275614
+TOR1	YJR066W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kunz J, et al. (2000) PMID:10973982
+STE18	YJR086W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hirschman JE, et al. (1997) PMID:8995254
+DAL5	YJR152W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Rai R, et al. (1988) PMID:3275614
 CAP1	YKL007W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
 UGP1	YKL035W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-DCW1	YKL046C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-12-09	Kitagaki H, et al. (2002) PMID:12421307
-SFK1	YKL051W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-05-05	Audhya A and Emr SD (2002) PMID:12015967
-SFK1	YKL051W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2003-05-05	Audhya A and Emr SD (2002) PMID:12015967
+DCW1	YKL046C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kitagaki H, et al. (2002) PMID:12421307
+SFK1	YKL051W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Audhya A and Emr SD (2002) PMID:12015967
+SFK1	YKL051W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Audhya A and Emr SD (2002) PMID:12015967
 YJU3	YKL094W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-YPK1	YKL126W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-07	Sun Y, et al. (2000) PMID:10825204
-STE3	YKL178C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-02-13	Hagen DC, et al. (1986) PMID:3006051
-TOR2	YKL203C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-12-09	Kunz J, et al. (2000) PMID:10973982
-STE6	YKL209C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-06-30	Kuchler K, et al. (1993) PMID:7679674
-JEN1	YKL217W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-05-27	Soares-Silva I, et al. (2007) PMID:17710650
-FRE2	YKL220C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-19	Georgatsou E and Alexandraki D (1994) PMID:8164662
-GAP1	YKR039W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-07-08	Kota J and Ljungdahl PO (2005) PMID:15623581
-GAP1	YKR039W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-03-18	Uemura T, et al. (2005) PMID:15707981
-GAP1	YKR039W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Roberg KJ, et al. (1997) PMID:9199164
+YPK1	YKL126W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sun Y, et al. (2000) PMID:10825204
+STE3	YKL178C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Hagen DC, et al. (1986) PMID:3006051
+TOR2	YKL203C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kunz J, et al. (2000) PMID:10973982
+STE6	YKL209C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kuchler K, et al. (1993) PMID:7679674
+JEN1	YKL217W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Soares-Silva I, et al. (2007) PMID:17710650
+FRE2	YKL220C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Georgatsou E and Alexandraki D (1994) PMID:8164662
+GAP1	YKR039W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Uemura T, et al. (2005) PMID:15707981
+GAP1	YKR039W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kota J and Ljungdahl PO (2005) PMID:15623581
+GAP1	YKR039W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Roberg KJ, et al. (1997) PMID:9199164
 TRK2	YKR050W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-09-29	Zeng GF, et al. (2004) PMID:14570869
-TRK2	YKR050W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2018-11-14	Zeng GF, et al. (2004) PMID:14570869
-RHO4	YKR055W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-06-07	Tiedje C, et al. (2008) PMID:18417612
-PTR2	YKR093W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
-PTR2	YKR093W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-10	Aronova S, et al. (2007) PMID:17507646
-VBA5	YKR105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-10-23	Shimazu M, et al. (2012) PMID:23047103
-GEX2	YKR106W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-04-18	Dhaoui M, et al. (2011) PMID:21490148
+TRK2	YKR050W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Zeng GF, et al. (2004) PMID:14570869
+RHO4	YKR055W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tiedje C, et al. (2008) PMID:18417612
+PTR2	YKR093W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
+PTR2	YKR093W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Aronova S, et al. (2007) PMID:17507646
+VBA5	YKR105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Shimazu M, et al. (2012) PMID:23047103
+GEX2	YKR106W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dhaoui M, et al. (2011) PMID:21490148
 LMO1	YLL007C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-01-28	Schmitz HP, et al. (2015) PMID:25598154
-PSR1	YLL010C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Siniossoglou S, et al. (2000) PMID:10777497
+PSR1	YLL010C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Siniossoglou S, et al. (2000) PMID:10777497
 SSA2	YLL024C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-TPO1	YLL028W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-04-22	Albertsen M, et al. (2003) PMID:12562762
-TPO1	YLL028W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-01-26	Uemura T, et al. (2005) PMID:15637075
-TPO1	YLL028W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-03-11	Uemura T, et al. (2005) PMID:15637075
+TPO1	YLL028W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Uemura T, et al. (2005) PMID:15637075
+TPO1	YLL028W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Uemura T, et al. (2005) PMID:15637075
+TPO1	YLL028W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Albertsen M, et al. (2003) PMID:12562762
 FPS1	YLL043W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
-FPS1	YLL043W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-01-07	Maciaszczyk-Dziubinska E, et al. (2010) PMID:20026328
+FPS1	YLL043W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Maciaszczyk-Dziubinska E, et al. (2010) PMID:20026328
 COF1	YLL050C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-AQY2	YLL052C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-01-08	Meyrial V, et al. (2001) PMID:11168368
-MMP1	YLL061W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-02	Rouillon A, et al. (1999) PMID:10497160
-PSR2	YLR019W	located in	GO:0005886	plasma membrane	cellular component		ISS with PSR1	manually curated	SGD	2004-09-17	Siniossoglou S, et al. (2000) PMID:10777497
-YEH2	YLR020C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-01-11	Müllner H, et al. (2005) PMID:15632184
+AQY2	YLL052C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Meyrial V, et al. (2001) PMID:11168368
+MMP1	YLL061W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Rouillon A, et al. (1999) PMID:10497160
+PSR2	YLR019W	located in	GO:0005886	plasma membrane	cellular component		ISS with PSR1	manually curated	SGD	2014-10-02	Siniossoglou S, et al. (2000) PMID:10777497
+YEH2	YLR020C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Müllner H, et al. (2005) PMID:15632184
 SNF7	YLR025W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2017-08-01	Obara K and Kihara A (2017) PMID:27803246
 SHM2	YLR058C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-GAL2	YLR081W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-10-05	Horak J and Wolf DH (1997) PMID:9045811
+GAL2	YLR081W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Horak J and Wolf DH (1997) PMID:9045811
+SUL2	YLR092W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Cherest H, et al. (1997) PMID:9055073
 SUL2	YLR092W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SUL2	YLR092W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-02	Cherest H, et al. (1997) PMID:9055073
-KIN2	YLR096W	located in	GO:0005886	plasma membrane	cellular component		IPI with SRO7	manually curated	SGD	2005-02-16	Elbert M, et al. (2005) PMID:15563607
-KIN2	YLR096W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-08-21	Tibbetts M, et al. (1994) PMID:8020610
+KIN2	YLR096W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tibbetts M, et al. (1994) PMID:8020610
+KIN2	YLR096W	located in	GO:0005886	plasma membrane	cellular component		IPI with SRO7	manually curated	SGD	2013-08-07	Elbert M, et al. (2005) PMID:15563607
 AHP1	YLR109W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-YPS1	YLR120C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-02-03	Ash J, et al. (1995) PMID:7657670
-YPS3	YLR121C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-04-05	Terashima H, et al. (2000) PMID:11016834
-ZRT2	YLR130C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-03	Zhao H and Eide D (1996) PMID:8798516
-NHA1	YLR138W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-07-11	Ohgaki R, et al. (2005) PMID:15950597
-NHA1	YLR138W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-02-06	BaAueIos MA, et al. (1998) PMID:9802016
-NCW2	YLR194C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-04-05	Terashima H, et al. (2000) PMID:11016834
-FRE1	YLR214W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-13	Aronova S, et al. (2007) PMID:17507646
-FRE1	YLR214W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-19	Georgatsou E and Alexandraki D (1994) PMID:8164662
-CDC42	YLR229C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-13	Richman TJ, et al. (2002) PMID:12455994
-CDC42	YLR229C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-13	Ziman M, et al. (1993) PMID:8167411
-THI7	YLR237W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-03-12	Mojzita D and Hohmann S (2006) PMID:16850348
-THI7	YLR237W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2008-02-12	Enjo F, et al. (1997) PMID:9235906
+YPS1	YLR120C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Ash J, et al. (1995) PMID:7657670
+YPS3	YLR121C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Terashima H, et al. (2000) PMID:11016834
+ZRT2	YLR130C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Zhao H and Eide D (1996) PMID:8798516
+NHA1	YLR138W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	BaAueIos MA, et al. (1998) PMID:9802016
+NHA1	YLR138W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ohgaki R, et al. (2005) PMID:15950597
+NCW2	YLR194C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Terashima H, et al. (2000) PMID:11016834
+FRE1	YLR214W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Georgatsou E and Alexandraki D (1994) PMID:8164662
+FRE1	YLR214W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Aronova S, et al. (2007) PMID:17507646
+CDC42	YLR229C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ziman M, et al. (1993) PMID:8167411
+CDC42	YLR229C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Richman TJ, et al. (2002) PMID:12455994
+THI7	YLR237W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mojzita D and Hohmann S (2006) PMID:16850348
+THI7	YLR237W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Enjo F, et al. (1997) PMID:9235906
 MET17	YLR303W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-STT4	YLR305C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-08-21	Audhya A and Emr SD (2002) PMID:12015967
-STT4	YLR305C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-01-07	Baird D, et al. (2008) PMID:19075114
-CDC25	YLR310C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Garreau H, et al. (1996) PMID:8893498
-MID2	YLR332W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-06-18	Ketela T, et al. (1999) PMID:10348843
-FKS1	YLR342W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-13	Utsugi T, et al. (2002) PMID:11856368
-FKS1	YLR342W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-13	Aronova S, et al. (2007) PMID:17507646
-BUD8	YLR353W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-12-09	Krappmann AB, et al. (2007) PMID:17581861
-VID22	YLR373C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-27	Brown CR, et al. (2002) PMID:11861771
-CTR3	YLR411W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-19	Pena MM, et al. (2000) PMID:10924521
+STT4	YLR305C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Baird D, et al. (2008) PMID:19075114
+STT4	YLR305C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Audhya A and Emr SD (2002) PMID:12015967
+CDC25	YLR310C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Garreau H, et al. (1996) PMID:8893498
+MID2	YLR332W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Ketela T, et al. (1999) PMID:10348843
+FKS1	YLR342W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Aronova S, et al. (2007) PMID:17507646
+FKS1	YLR342W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Utsugi T, et al. (2002) PMID:11856368
+BUD8	YLR353W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Krappmann AB, et al. (2007) PMID:17581861
+VID22	YLR373C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Brown CR, et al. (2002) PMID:11861771
+CTR3	YLR411W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Pena MM, et al. (2000) PMID:10924521
 INA1	YLR413W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-01-06	Germann SM, et al. (2014) PMID:24379413
-PUN1	YLR414C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2008-09-23	Alvarez FJ, et al. (2008) PMID:18799621
+PUN1	YLR414C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Alvarez FJ, et al. (2008) PMID:18799621
 DCK1	YLR422W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-01-28	Schmitz HP, et al. (2015) PMID:25598154
 IMD3	YLR432W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SST2	YLR452C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Dohlman HG, et al. (1996) PMID:8756677
-GIS4	YML006C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-10-16	Ye T, et al. (2006) PMID:17030993
-UBX2	YML013W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-03-18	Neuber O, et al. (2005) PMID:16179953
-PRM6	YML047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-12-10	Stefan CP, et al. (2013) PMID:23204190
-SUR7	YML052W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
-SUR7	YML052W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-14	Aronova S, et al. (2007) PMID:17507646
-ATR1	YML116W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-05-13	Kaya A, et al. (2009) PMID:19414602
-ATR1	YML116W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-07-12	Gömpel-Klein P and Brendel M (1990) PMID:2123132
-PHO84	YML123C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Bun-Ya M, et al. (1991) PMID:2038328
-PGA3	YML125C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-03-03	Jiménez-Hidalgo M, et al. (2009) PMID:19239415
+SST2	YLR452C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dohlman HG, et al. (1996) PMID:8756677
+GIS4	YML006C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ye T, et al. (2006) PMID:17030993
+UBX2	YML013W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Neuber O, et al. (2005) PMID:16179953
+PRM6	YML047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Stefan CP, et al. (2013) PMID:23204190
+SUR7	YML052W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Aronova S, et al. (2007) PMID:17507646
+SUR7	YML052W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
+ATR1	YML116W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kaya A, et al. (2009) PMID:19414602
+ATR1	YML116W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Gömpel-Klein P and Brendel M (1990) PMID:2123132
+PHO84	YML123C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Bun-Ya M, et al. (1991) PMID:2038328
+PGA3	YML125C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Jiménez-Hidalgo M, et al. (2009) PMID:19239415
 MSC1	YML128C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-COS3	YML132W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-14	Mitsui K, et al. (2004) PMID:14718542
+COS3	YML132W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mitsui K, et al. (2004) PMID:14718542
 PLB1	YMR008C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-PLB1	YMR008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-14	Lee KS, et al. (1994) PMID:8051052
-HXT2	YMR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Kruckeberg AL, et al. (1999) PMID:10191260
-HXT2	YMR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-14	Aronova S, et al. (2007) PMID:17507646
+PLB1	YMR008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lee KS, et al. (1994) PMID:8051052
+HXT2	YMR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kruckeberg AL, et al. (1999) PMID:10191260
 HXT2	YMR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
-SPO20	YMR017W	located in	GO:0005886	plasma membrane	cellular component	exists during single-celled organism vegetative growth phase	IDA	manually curated	SGD	2016-09-29	Nakanishi H, et al. (2004) PMID:14742704
+HXT2	YMR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Aronova S, et al. (2007) PMID:17507646
+SPO20	YMR017W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2016-09-29	Nakanishi H, et al. (2004) PMID:14742704
 EIS1	YMR031C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
 RCH1	YMR034C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2019-09-13	Zhao Y, et al. (2016) PMID:26832117
-FET3	YMR058W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-12-14	Kwok EY, et al. (2006) PMID:16700543
-FET3	YMR058W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	de Silva D, et al. (1997) PMID:9162052
-RIM9	YMR063W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-10-24	Obara K, et al. (2012) PMID:23019326
+FET3	YMR058W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kwok EY, et al. (2006) PMID:16700543
+FET3	YMR058W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	de Silva D, et al. (1997) PMID:9162052
+RIM9	YMR063W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Obara K, et al. (2012) PMID:23019326
 AVO2	YMR068W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-02-14	Martinez Marshall MN, et al. (2019) PMID:30969890
 ADE17	YMR120C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 DNF3	YMR162C	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-01-22	Frøsig MM, et al. (2020) PMID:32661085
+SSO2	YMR183C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mendonsa R and Engebrecht J (2009) PMID:19502581
+SSO2	YMR183C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Aronova S, et al. (2007) PMID:17507646
 SSO2	YMR183C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SSO2	YMR183C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-15	Aronova S, et al. (2007) PMID:17507646
-SSO2	YMR183C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-06-22	Mendonsa R and Engebrecht J (2009) PMID:19502581
 HSC82	YMR186W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-GYL1	YMR192W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-04-14	Chesneau L, et al. (2004) PMID:15331637
-EFR3	YMR212C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-01-07	Baird D, et al. (2008) PMID:19075114
-GAS3	YMR215W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-15	Aronova S, et al. (2007) PMID:17507646
+GYL1	YMR192W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Chesneau L, et al. (2004) PMID:15331637
+EFR3	YMR212C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Baird D, et al. (2008) PMID:19075114
 GAS3	YMR215W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-DFG5	YMR238W	located in	GO:0005886	plasma membrane	cellular component		ISA with DCW1	manually curated	SGD	2012-03-08	Kitagaki H, et al. (2002) PMID:12421307
+GAS3	YMR215W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Aronova S, et al. (2007) PMID:17507646
+DFG5	YMR238W	located in	GO:0005886	plasma membrane	cellular component		ISA with DCW1	manually curated	SGD	2022-08-26	Kitagaki H, et al. (2002) PMID:12421307
 FAA4	YMR246W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2016-08-05	Narita T, et al. (2016) PMID:27136724
 HOR7	YMR251W-A	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2004-10-13	Lisman Q, et al. (2004) PMID:15208314
+GAS1	YMR307W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nuoffer C, et al. (1991) PMID:1824714
+GAS1	YMR307W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Rolli E, et al. (2009) PMID:19793924
 GAS1	YMR307W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-GAS1	YMR307W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-04	Nuoffer C, et al. (1991) PMID:1824714
-GAS1	YMR307W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-11-20	Rolli E, et al. (2009) PMID:19793924
-FET4	YMR319C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
-FET4	YMR319C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Dix D, et al. (1997) PMID:9115232
-SLM2	YNL047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-01-06	Audhya A, et al. (2004) PMID:15372071
-SLM2	YNL047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-04-18	Fadri M, et al. (2005) PMID:15689497
-AQR1	YNL065W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+FET4	YMR319C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Dix D, et al. (1997) PMID:9115232
+FET4	YMR319C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
+SLM2	YNL047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Fadri M, et al. (2005) PMID:15689497
+SLM2	YNL047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Audhya A, et al. (2004) PMID:15372071
 AQR1	YNL065W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-12-16	Kapetanakis GC, et al. (2021) PMID:34887841
-AQR1	YNL065W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-12-12	Tenreiro S, et al. (2002) PMID:11922628
+AQR1	YNL065W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tenreiro S, et al. (2002) PMID:11922628
+AQR1	YNL065W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
 RAS2	YNL098C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-RAS2	YNL098C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
-RAS2	YNL098C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-03-01	Manandhar SP, et al. (2010) PMID:20162532
 RAS2	YNL098C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-06-07	Broggi S, et al. (2013) PMID:23127800
-MEP2	YNL142W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-06-29	Marini AM and André B (2000) PMID:11069679
+RAS2	YNL098C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+RAS2	YNL098C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Manandhar SP, et al. (2010) PMID:20162532
+MEP2	YNL142W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Marini AM and André B (2000) PMID:11069679
 MEP2	YNL142W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
+YCK2	YNL154C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Vancura A, et al. (1994) PMID:8034689
+YCK2	YNL154C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wang PC, et al. (1992) PMID:1627830
+YCK2	YNL154C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
 YCK2	YNL154C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-YCK2	YNL154C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
-YCK2	YNL154C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Wang PC, et al. (1992) PMID:1627830
-YCK2	YNL154C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Vancura A, et al. (1994) PMID:8034689
-MDG1	YNL173C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Leberer E, et al. (1996) PMID:8914522
+MDG1	YNL173C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Leberer E, et al. (1996) PMID:8914522
 MDG1	YNL173C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-RHO5	YNL180C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-08-14	Singh K, et al. (2008) PMID:18216266
-NPR1	YNL183C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-02-24	MacGurn JA, et al. (2011) PMID:22118465
-CHS1	YNL192W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2004-10-14	Ziman M, et al. (1996) PMID:8970154
+RHO5	YNL180C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Singh K, et al. (2008) PMID:18216266
+NPR1	YNL183C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	MacGurn JA, et al. (2011) PMID:22118465
+CHS1	YNL192W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ziman M, et al. (1996) PMID:8970154
 YNL194C	YNL194C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 SSB2	YNL209W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 PDR16	YNL231C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 SIP3	YNL257C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
 BNI1	YNL271C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-BOR1	YNL275W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-01-30	Zhao R and Reithmeier RA (2001) PMID:11401825
-BOR1	YNL275W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-02-15	Takano J, et al. (2002) PMID:12447444
+BOR1	YNL275W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Takano J, et al. (2002) PMID:12447444
+BOR1	YNL275W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Zhao R and Reithmeier RA (2001) PMID:11401825
 WSC2	YNL283C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-03-25	Kock C, et al. (2016) PMID:27337501
 WSC2	YNL283C	located in	GO:0005886	plasma membrane	cellular component	part of cellular bud	IDA	manually curated	SGD	2020-03-25	Wilk S, et al. (2010) PMID:20652590
 WSC2	YNL283C	located in	GO:0005886	plasma membrane	cellular component	part of cellular bud neck	IDA	manually curated	SGD	2020-03-25	Wilk S, et al. (2010) PMID:20652590
-MID1	YNL291C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-03	Locke EG, et al. (2000) PMID:10958666
-MSB3	YNL293W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-03-06	Lachmann J, et al. (2012) PMID:22593206
-RIM21	YNL294C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-10-24	Obara K, et al. (2012) PMID:23019326
-LEM3	YNL323W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-10-14	Kato U, et al. (2002) PMID:12133835
-ATO2	YNR002C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-04-05	Ricicová M, et al. (2007) PMID:17395151
-FPK1	YNR047W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-12-15	Roelants FM, et al. (2010) PMID:19966303
-MSO1	YNR049C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-03-19	Knop M, et al. (2005) PMID:16030256
-MSO1	YNR049C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-03-20	Castillo-Flores A, et al. (2005) PMID:16087665
-FRE4	YNR060W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-09-19	Yun CW, et al. (2001) PMID:11120744
+MID1	YNL291C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Locke EG, et al. (2000) PMID:10958666
+MSB3	YNL293W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lachmann J, et al. (2012) PMID:22593206
+RIM21	YNL294C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Obara K, et al. (2012) PMID:23019326
+LEM3	YNL323W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kato U, et al. (2002) PMID:12133835
+ATO2	YNR002C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ricicová M, et al. (2007) PMID:17395151
+FPK1	YNR047W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Roelants FM, et al. (2010) PMID:19966303
+MSO1	YNR049C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Knop M, et al. (2005) PMID:16030256
+MSO1	YNR049C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Castillo-Flores A, et al. (2005) PMID:16087665
+FRE4	YNR060W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Yun CW, et al. (2001) PMID:11120744
 PDR18	YNR070W	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-11-19	Cabrito TR, et al. (2011) PMID:21831043
-IZH2	YOL002C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-01-04	Narasimhan ML, et al. (2005) PMID:15664187
+IZH2	YOL002C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Narasimhan ML, et al. (2005) PMID:15664187
 MDM12	YOL009C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
 TOS7	YOL019W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-10-16	Zhu J, et al. (2020) PMID:33002606
-TOS7	YOL019W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2004-10-08	Sundin BA, et al. (2004) PMID:15282802
-TAT2	YOL020W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-09-08	Umebayashi K and Nakano A (2003) PMID:12810702
+TOS7	YOL019W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sundin BA, et al. (2004) PMID:15282802
 TAT2	YOL020W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-01-09	Amano K, et al. (2019) PMID:30660361
-AVO1	YOL078W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-01-21	Berchtold D and Walther TC (2009) PMID:19144819
+TAT2	YOL020W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Umebayashi K and Nakano A (2003) PMID:12810702
+AVO1	YOL078W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Berchtold D and Walther TC (2009) PMID:19144819
 ADH1	YOL086C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-ITR2	YOL103W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-11-18	Miyashita M, et al. (2003) PMID:16233524
+ITR2	YOL103W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Miyashita M, et al. (2003) PMID:16233524
 WSC3	YOL105C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-03-25	Kock C, et al. (2016) PMID:27337501
-ZEO1	YOL109W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 ZEO1	YOL109W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-25	Green R, et al. (2003) PMID:12949174
-SKM1	YOL113W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-08-16	Yu JW, et al. (2004) PMID:15023338
-SMF1	YOL122C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Supek F, et al. (1996) PMID:8643535
-ALR1	YOL130W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-08-04	Lim PH, et al. (2011) PMID:21738593
-ALR1	YOL130W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2001-04-12	MacDiarmid CW and Gardner RC (1998) PMID:9430719
-FRE7	YOL152W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-08-06	Rees EM and Thiele DJ (2007) PMID:17553781
-ENB1	YOL158C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-05-18	Froissard M, et al. (2007) PMID:17714436
+ZEO1	YOL109W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
+SKM1	YOL113W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yu JW, et al. (2004) PMID:15023338
+SMF1	YOL122C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Supek F, et al. (1996) PMID:8643535
+ALR1	YOL130W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lim PH, et al. (2011) PMID:21738593
+ALR1	YOL130W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	MacDiarmid CW and Gardner RC (1998) PMID:9430719
+FRE7	YOL152W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Rees EM and Thiele DJ (2007) PMID:17553781
+ENB1	YOL158C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Froissard M, et al. (2007) PMID:17714436
 SLG1	YOR008C	located in	GO:0005886	plasma membrane	cellular component	part of cellular bud	IDA	manually curated	SGD	2020-03-25	Wilk S, et al. (2010) PMID:20652590
 SLG1	YOR008C	located in	GO:0005886	plasma membrane	cellular component	part of cellular bud neck	IDA	manually curated	SGD	2020-03-25	Wilk S, et al. (2010) PMID:20652590
-SLG1	YOR008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-06-30	Verna J, et al. (1997) PMID:9391108
-AUS1	YOR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-05-16	Marek M, et al. (2011) PMID:21521689
-ROD1	YOR018W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-05-25	Wu AL, et al. (1996) PMID:8621680
-DFG16	YOR030W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-10-24	Obara K, et al. (2012) PMID:23019326
-STD1	YOR047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-07-16	Schmidt MC, et al. (1999) PMID:10373505
-RSB1	YOR049C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-23	Kihara A and Igarashi Y (2002) PMID:12034738
-RSB1	YOR049C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-05-12	Panwar SL and Moye-Rowley WS (2006) PMID:16407254
-NRT1	YOR071C	located in	GO:0005886	plasma membrane	cellular component		ISS with FUR4	manually curated	SGD	2008-02-11	Belenky PA, et al. (2008) PMID:18258590
+SLG1	YOR008C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Verna J, et al. (1997) PMID:9391108
+AUS1	YOR011W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Marek M, et al. (2011) PMID:21521689
+ROD1	YOR018W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wu AL, et al. (1996) PMID:8621680
+DFG16	YOR030W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Obara K, et al. (2012) PMID:23019326
+STD1	YOR047C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Schmidt MC, et al. (1999) PMID:10373505
+RSB1	YOR049C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kihara A and Igarashi Y (2002) PMID:12034738
+RSB1	YOR049C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Panwar SL and Moye-Rowley WS (2006) PMID:16407254
+NRT1	YOR071C	located in	GO:0005886	plasma membrane	cellular component		ISS with FUR4	manually curated	SGD	2014-10-02	Belenky PA, et al. (2008) PMID:18258590
 TCB1	YOR086C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
-RAS1	YOR101W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-03-01	Manandhar SP, et al. (2010) PMID:20162532
-RAS1	YOR101W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Fujiyama A and Tamanoi F (1986) PMID:3513173
+RAS1	YOR101W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Manandhar SP, et al. (2010) PMID:20162532
+RAS1	YOR101W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Fujiyama A and Tamanoi F (1986) PMID:3513173
 PIN2	YOR104W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-07-30	Ritz AM, et al. (2014) PMID:24656818
-AFI1	YOR129C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-04-15	Wysocka M, et al. (2003) PMID:14515169
-AFI1	YOR129C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2008-04-15	Tsai PC, et al. (2008) PMID:18397879
-AFI1	YOR129C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2008-04-15	Tsai PC, et al. (2008) PMID:18397879
-PDR5	YOR153W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
-PDR5	YOR153W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-19	Mahé Y, et al. (1996) PMID:8810273
+AFI1	YOR129C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tsai PC, et al. (2008) PMID:18397879
+AFI1	YOR129C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Tsai PC, et al. (2008) PMID:18397879
+AFI1	YOR129C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Wysocka M, et al. (2003) PMID:14515169
+PDR5	YOR153W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
+PDR5	YOR153W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mahé Y, et al. (1996) PMID:8810273
 PNS1	YOR161C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-LCB4	YOR171C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-06-22	Sano T, et al. (2005) PMID:16141212
+LCB4	YOR171C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sano T, et al. (2005) PMID:16141212
 MSB1	YOR188W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-STE4	YOR212W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2001-01-18	Hirschman JE, et al. (1997) PMID:8995254
-TPO4	YOR273C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-04-22	Albertsen M, et al. (2003) PMID:12562762
-MCH5	YOR306C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-08-24	Reihl P and Stolz J (2005) PMID:16204239
-FAA1	YOR317W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
+STE4	YOR212W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hirschman JE, et al. (1997) PMID:8995254
+TPO4	YOR273C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Albertsen M, et al. (2003) PMID:12562762
+MCH5	YOR306C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Reihl P and Stolz J (2005) PMID:16204239
 FAA1	YOR317W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2016-08-05	Narita T, et al. (2016) PMID:27136724
+FAA1	YOR317W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 LDB19	YOR322C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2020-08-18	Lin CH, et al. (2008) PMID:18976803
-LDB19	YOR322C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2012-02-24	MacGurn JA, et al. (2011) PMID:22118465
+LDB19	YOR322C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	MacGurn JA, et al. (2011) PMID:22118465
 SNC2	YOR327C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-09-29	Laidlaw KME, et al. (2022) PMID:36125415
-PDR10	YOR328W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-05-26	Rockwell NC, et al. (2009) PMID:19452121
+PDR10	YOR328W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Rockwell NC, et al. (2009) PMID:19452121
 PUT4	YOR348C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2019-08-09	Villers J, et al. (2017) PMID:28679684
 GPB1	YOR371C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2018-04-25	Harashima T and Heitman J (2005) PMID:16030250
 AMF1	YOR378W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-12-11	Chiasson DM, et al. (2014) PMID:24707045
-FRE3	YOR381W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-03-14	Yun CW, et al. (2001) PMID:11120744
+FRE3	YOR381W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yun CW, et al. (2001) PMID:11120744
 FEX1	YOR390W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-06-23	Smith KD, et al. (2015) PMID:26055717
 LSP1	YPL004C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
 PMA2	YPL036W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-PMA2	YPL036W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-08-01	Supply P, et al. (1993) PMID:8396147
-PDR12	YPL058C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Piper P, et al. (1998) PMID:9687494
-SSU1	YPL092W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-04-03	Avram D and Bakalinsky AT (1997) PMID:9294463
+PMA2	YPL036W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Supply P, et al. (1993) PMID:8396147
+PDR12	YPL058C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Piper P, et al. (1998) PMID:9687494
+SSU1	YPL092W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Avram D and Bakalinsky AT (1997) PMID:9294463
 AIM44	YPL158C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2019-10-29	Meitinger F and Pereira G (2017) PMID:28148650
 AIM44	YPL158C	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2019-10-29	Perez AM and Thorner J (2019) PMID:30341817
-HRR25	YPL204W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-05-04	Vancura A, et al. (1994) PMID:8034689
+HRR25	YPL204W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Vancura A, et al. (1994) PMID:8034689
+SSO1	YPL232W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mendonsa R and Engebrecht J (2009) PMID:19502581
+SSO1	YPL232W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nakanishi H, et al. (2007) PMID:17298976
 SSO1	YPL232W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-SSO1	YPL232W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-02-22	Nakanishi H, et al. (2007) PMID:17298976
-SSO1	YPL232W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2009-06-22	Mendonsa R and Engebrecht J (2009) PMID:19502581
-GYP5	YPL249C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2005-04-14	Chesneau L, et al. (2004) PMID:15331637
+GYP5	YPL249C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Chesneau L, et al. (2004) PMID:15331637
 DIP5	YPL265W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-SAM3	YPL274W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2002-10-02	Rouillon A, et al. (1999) PMID:10497160
-SAM3	YPL274W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2007-02-01	Uemura T, et al. (2007) PMID:17218313
+SAM3	YPL274W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Uemura T, et al. (2007) PMID:17218313
+SAM3	YPL274W	located in	GO:0005886	plasma membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Rouillon A, et al. (1999) PMID:10497160
 FEX2	YPL279C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2015-06-23	Smith KD, et al. (2015) PMID:26055717
-SRO7	YPR032W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-07-08	Lehman K, et al. (1999) PMID:10402465
+SRO7	YPR032W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lehman K, et al. (1999) PMID:10402465
+OPY2	YPR075C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Wu C, et al. (2006) PMID:16543225
 OPY2	YPR075C	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-OPY2	YPR075C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-01-10	Wu C, et al. (2006) PMID:16543225
 CTR1	YPR124W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
-CTR1	YPR124W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-19	Dancis A, et al. (1994) PMID:7929270
+CTR1	YPR124W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dancis A, et al. (1994) PMID:7929270
+NCE102	YPR149W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Navarre C, et al. (2002) PMID:12469340
 NCE102	YPR149W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-NCE102	YPR149W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2006-09-06	Navarre C, et al. (2002) PMID:12469340
-TPO3	YPR156C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-04-22	Albertsen M, et al. (2003) PMID:12562762
-KRE6	YPR159W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2011-02-22	Kurita T, et al. (2011) PMID:21193403
+TPO3	YPR156C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Albertsen M, et al. (2003) PMID:12562762
+KRE6	YPR159W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kurita T, et al. (2011) PMID:21193403
 RHO1	YPR165W	located in	GO:0005886	plasma membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Delom F, et al. (2006) PMID:16622836
-AQY1	YPR192W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2003-01-08	Laizé V, et al. (1999) PMID:10092523
+AQY1	YPR192W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Laizé V, et al. (1999) PMID:10092523
 OPT2	YPR194C	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2014-11-12	Yamauchi S, et al. (2015) PMID:25359886
-SGE1	YPR198W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2002-09-20	Ehrenhofer-Murray AE, et al. (1998) PMID:9483795
-ARR3	YPR201W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2010-08-12	Maciaszczyk-Dziubinska E, et al. (2010) PMID:20655873
+SGE1	YPR198W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Ehrenhofer-Murray AE, et al. (1998) PMID:9483795
+ARR3	YPR201W	located in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Maciaszczyk-Dziubinska E, et al. (2010) PMID:20655873
 MAL41	YSC0009	is active in	GO:0005886	plasma membrane	cellular component		ISS with MAL61	manually curated	SGD	2021-09-21	Chow TH, et al. (1989) PMID:2549370
 MAL61	YSC0013	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-09-21	Gadura N and Michels CA (2006) PMID:16741702
 TAT3	YSC0045	is active in	GO:0005886	plasma membrane	cellular component		IDA	manually curated	SGD	2021-09-20	Omura F, et al. (2007) PMID:17825063

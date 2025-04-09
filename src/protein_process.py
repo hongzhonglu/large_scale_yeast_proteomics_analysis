@@ -442,6 +442,7 @@ def getCompartment_manual_curation():
                     ".txt", "_v2.xlsx"))
         except:
             pass
+#getCompartment_manual_curation()
 
 # when running the following function, please firstly run function - getCompartment_manual_curation
 gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx")
@@ -457,8 +458,7 @@ def gene_location_curation_sce(organelle0):
     # otherwise using the computation prediction???
     # input the annotation from sgd
     # organelle0 = getCompartmentGeneList(type="all") # this is just for the test
-    #gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
-    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/gene_belong_plasma_membrane_annotations_old_version.xlsx")
+    gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/fungal_type_cell_wall_annotations_v3.xlsx")
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx")
     gene_nucleolus = pd.read_excel("data/sce_compartment_curation/nucleolus_annotations_v2.xlsx")

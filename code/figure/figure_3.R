@@ -255,3 +255,67 @@ ggplot(r_df, aes(x=reorder(gene, -cor), y=cor, fill=gene)) +
 
 
 
+
+
+
+
+#####################################################################################################
+## randomly analysis
+# group1 select
+physiology <- physiology_jianye
+combine_select <-  combine[, colnames(combine) %in% c("gene",physiology$sampleID)]
+
+combine_select0 <- t(combine_select[,-1])
+colnames(combine_select0) <- combine_select$gene
+combine_select0 <- as.data.frame(combine_select0)
+combine_select0$growth <- as.numeric(physiology$`dilution rate (/h)`)
+# remove the column with all NA values
+combine_select0 <- combine_select0[, colSums(is.na(combine_select0)) < nrow(combine_select0)]
+gene_list <- colnames(combine_select0)
+gene_list <- gene_list[which(gene_list !='growth')]
+
+
+# randomly selected genes
+ss <- 1000
+cycle <- seq(from = 1, to = ss, by = 1)
+new_df <- data.frame(growth=combine_select0$growth)
+
+for (x in cycle){
+  print(x)
+  col0 <- paste("mass_fraction", x)
+  number_gene <- ss
+  gene_select  <- sample(gene_list, number_gene)
+  combine_subset <- combine_select0[, colnames(combine_select0) %in%gene_select]
+  new <- rowSums(combine_subset[,1:number_gene], na.rm = TRUE)
+  new_df[,col0] <- new
+}
+
+new_df1 <- new_df[, !colnames(new_df) %in% c('growth')]
+# calculate the average value
+new11 <- rowSums(new_df1[,1:length(cycle)], na.rm = TRUE)/length(cycle)
+
+SD <- apply(new_df1[,1:length(cycle)],1,sd)
+
+final_df <- data.frame(growth=combine_select0$growth, mass_fraction=new11, sd=SD)
+
+
+ggplot(final_df, mapping = aes(x=growth, y=mass_fraction)) +
+  geom_point() + # geom_point(alpha = 2/10) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  labs(x = "Growth rate (/h)",
+       y = "Mass fraction") +
+  theme_bw() +
+  geom_smooth() +
+  ylim(0,0.4) +
+  geom_errorbar(aes(ymin=mass_fraction - sd, ymax=mass_fraction + sd), width=.01, 
+                position=position_dodge(0.05)) +
+  theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15))
+
+
+
+
+
+
+
+
+
