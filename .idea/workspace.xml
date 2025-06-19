@@ -6,50 +6,12 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/figure_3.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_3.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/0_ecYeast_from_DL_simulation_Crabtree.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/4.4 omics_inferred_enzyme_mass_fraction_from_GEMs.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/4.4 omics_inferred_enzyme_mass_fraction_from_ETFL.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compartment_annotation_refine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compartment_annotation_refine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_NCB_yeast_IO.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_NCB_yeast_IO.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/enzyme_fraction_based_on_total_protein_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/enzyme_fraction_based_on_total_protein_across_compartment.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/enzyme_per_protein_across_compartment.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/enzyme_per_protein_across_compartment.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compartment_annotation_refine.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/Golgi_apparatus_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/cytoplasm_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/cytosol_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/cytosol_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/endoplasmic_reticulum_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_cell_wall_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/fungal_type_vacuole_membrane_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/gene_belong_plasma_membrane_annotations_old_version.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/membrane_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_manual_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_manual_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_annotations_manual_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_annotations_manual_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_envelope_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_envelope_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_membrane_annotations_computational_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nuclear_membrane_annotations_computational_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleolus_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/nucleus_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/original_annotation/plasma_membrane_annotations.txt" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/original_annotation/plasma_membrane_annotations.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/peroxisome_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/plasma_membrane_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/ribosome_annotations_v2.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/ribosome_annotations_v2.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -140,9 +102,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/omics" />
+      <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -360,7 +322,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py</url>
-          <line>44</line>
+          <line>49</line>
           <option name="timeStamp" value="43" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">

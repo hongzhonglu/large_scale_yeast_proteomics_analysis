@@ -16,6 +16,15 @@ gem_rxn_nov = produceRxnList(ecYeast)
 gene_prot = gem_rxn_nov[gem_rxn_nov["name"].str.contains("prot_")]
 gene_prot['geneID'] = gene_prot['rxnID'].str.replace("prot_", "")
 
+# test
+# second ecYeast based om deep learning
+dir2 = "/Users/xluhon/Documents/GitHub/ecModels/eciML1515/model/eciML1515_batch.xml"
+m1 = read_sbml_model(dir2)
+
+dir2 = "/Users/xluhon/Documents/GitHub/ecModels/eciML1515/model/eciML1515.xml"
+m2 = read_sbml_model(dir2)
+
+
 
 #then get the protein volume information
 #input the protein volume datasets
