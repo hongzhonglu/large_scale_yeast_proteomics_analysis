@@ -5,13 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/model/0_ecYeast_simulation_prepare_constraint.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compartment_annotation_refine.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_1.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_1.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_3.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_3.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_4.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_4.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/cytosol.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/cytosol.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/endosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endosome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/nucleus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$mass_fraction_combine.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/~$compare_compartment_anotation_with_all_and_manual_evidance.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -120,6 +120,7 @@ M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # f
 ss <- as.vector(M[upper.tri(M)])
 df3 <- data.frame(value=ss)
 
+help(cor)
 
 # combine the above three result together
 df1$type = "All component"
@@ -175,7 +176,7 @@ library("PerformanceAnalytics")
 chart.Correlation(combine_batch , histogram=FALSE, pch=19)
 chart.Correlation(ProMassRatio_batch , histogram=FALSE, pch=19)
 
-
+help(chart.Correlation)
 
 
 

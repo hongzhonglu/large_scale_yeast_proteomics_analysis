@@ -56,22 +56,55 @@ library(umap) # umap is similar to tSNE, but more efficient
 combine11 <- t(combine0)
 combine11[is.na(combine11)] <- 0 # here NA value was replaced as 0
 
-label11 <- as.factor(physiology_collection0$source[1:150])
-iris.umap = umap(combine11, n_components = 2, random_state = 15) 
+label11 <- as.factor(physiology_collection0$source_simple[1:150])
+label12 <- as.factor(physiology_collection0$source[1:150])
 
+
+
+iris.umap = umap(combine11, n_components = 2, random_state = 15) 
 layout <- iris.umap[["layout"]] 
 layout <- data.frame(layout) 
 final <- cbind(layout, label11) 
 
-fig <- plot_ly(final, x = ~X1, y = ~X2, color = ~label11, type = 'scatter', mode = 'markers')%>%  
-  layout(
-    plot_bgcolor = "#e5ecf6",
-    legend=list(title=list(text='Source')), 
-    xaxis = list( 
-      title = "0"),  
-    yaxis = list( 
-      title = "1")) 
-fig 
+ggplot(final, aes(x = X1, y = X2, color = label11,
+               shape = label11)) +
+  geom_point(size = 2) +
+  scale_shape_manual(values = 0:12)
+
+
+
+# more test-only keep common genes?
+zero_ratio <- colSums(combine11 == 0, na.rm = TRUE) / nrow(combine11)
+# 步骤2：筛选列
+combine11_filter <- combine11[, zero_ratio <= 0.5, drop = FALSE]
+
+iris.umap = umap(combine11_filter, n_components = 2, random_state = 15) 
+layout <- iris.umap[["layout"]] 
+layout <- data.frame(layout) 
+final <- cbind(layout, label11) 
+
+
+ggplot(final, aes(x = X1, y = X2, color = label11, 
+                  shape = label11)) +
+  geom_point(size = 2) +
+  scale_shape_manual(values = 0:18) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 15, face = "bold")) +
+  labs(x = "PC 1",
+       y = "PC 2") 
+
+
+ggplot(final, aes(x = X1, y = X2, color = label11,
+                  shape = label12)) +
+  geom_point(size = 2) +
+  scale_shape_manual(values = 0:18) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 15, face = "bold")) +
+  labs(x = "PC 1",
+       y = "PC 2") 
+
+
+
 
 
 

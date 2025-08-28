@@ -41,21 +41,21 @@ df$compartment <- Pro_mass_select$compartment
 colnames(df) <- c("WT_0",  "WT_12", "WT_16", "WT_4",  "WT_8",  "compartment"  ) 
 
 
-ggplot(df, aes(x=WT_0 , y=WT_4)) +
-  geom_point(size=2, shape=23) +
-  geom_smooth(method=lm) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
-  labs(x = "Zinc limitation 0h",
-       y = "Zinc limitation 4h") 
+#ggplot(df, aes(x=WT_0 , y=WT_4)) +
+#  geom_point(size=2, shape=23) +
+#  geom_smooth(method=lm) +
+#  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+#  labs(x = "Zinc limitation 0h",
+#       y = "Zinc limitation 4h") 
 
-ggplot(df, aes(x=WT_0 , y=WT_8)) +
-  geom_point(size=2, shape=23) +
-  geom_smooth(method=lm) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
-  labs(x = "Zinc limitation 0h",
-       y = "Zinc limitation 8h") 
+#ggplot(df, aes(x=WT_0 , y=WT_8)) +
+#  geom_point(size=2, shape=23) +
+#  geom_smooth(method=lm) +
+#  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+#  labs(x = "Zinc limitation 0h",
+#       y = "Zinc limitation 8h") 
 
 
 
@@ -109,8 +109,6 @@ ggplot(df, aes(x=WT_0 , y=WT_4, label=compartment)) +
 
 
 
-
-
 fit1 <- lm(WT_8 ~ WT_0, data = df)  
 ggplot(df, aes(x=WT_0 , y=WT_8, label=compartment)) +
   geom_point(size=4, shape=1,colour='#E69F00') +
@@ -126,8 +124,11 @@ ggplot(df, aes(x=WT_0 , y=WT_8, label=compartment)) +
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3),
                            " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
-             label.size = NA)+
-  geom_text(aes(label=ifelse(WT_8 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+             label.size = NA) +
+  #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+
+
 
 
 fit1 <- lm(WT_12 ~ WT_0, data = df)  
@@ -145,8 +146,12 @@ ggplot(df, aes(x=WT_0 , y=WT_12, label=compartment)) +
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3),
                            " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
-             label.size = NA)+
-  geom_text(aes(label=ifelse(WT_12 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+             label.size = NA) +
+  #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+
+
+
 
 # supplementary figure - check the fold change of protein mass fraction for organelle
 df$WT_8_vs_WT_0 <- (df$WT_8-df$WT_0)/df$WT_0
@@ -160,17 +165,8 @@ ggplot(df_filter_mass, aes(x=reorder(compartment, WT_8_vs_WT_0), y=WT_8_vs_WT_0)
   xlab("Cellular Component") + 
   theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12))+ 
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  theme(legend.position="none")+
-  coord_flip()
-
-
-
-
-
-
-
-
-
+  theme(legend.position="none") #+
+  #coord_flip()
 
 
 
@@ -220,6 +216,30 @@ ggplot(df, aes(x=C_lim , y=C_N_30, label=compartment)) +
   geom_text(aes(label=ifelse(C_N_30 > 0.1, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
 
 
+fit1 <- lm( C_N_30 ~ C_lim, data = df)  
+ggplot(df, aes(x=C_lim , y=C_N_30, label=compartment)) +
+  geom_point(size=4, shape=1,colour='#E69F00') +
+  geom_smooth(method=lm) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+  labs(x = "C_lim",
+       y = "C_N_30 ") +
+  xlim(0, 0.45) + ylim(0,0.45) +
+  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+             label = paste("Adj R2 = ",signif(summary(fit1)$adj.r.squared, 3),
+                           "\nIntercept =",signif(fit1$coef[[1]],3),
+                           " \nSlope =",signif(fit1$coef[[2]], 3),
+                           " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
+             label.size = NA) +
+  #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+  geom_text_repel(data=filter(df, C_lim > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+
+
+
+
+
+
 
 fit1 <- lm( C_N_50 ~ C_lim, data = df)  
 ggplot(df, aes(x=C_lim , y=C_N_50, label=compartment)) +
@@ -236,9 +256,13 @@ ggplot(df, aes(x=C_lim , y=C_N_50, label=compartment)) +
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3),
                            " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
-             label.size = NA)+
-  geom_text(aes(label=ifelse(C_N_50 > 0.1, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+             label.size = NA) +
+  #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+  geom_text_repel(data=filter(df, C_lim > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
 
+  
+  
+  
 
 
 fit1 <- lm( C_N_115 ~ C_lim, data = df)  
@@ -256,8 +280,9 @@ ggplot(df, aes(x=C_lim , y=C_N_115, label=compartment)) +
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3),
                            " \nP value =",signif(summary(fit1)$coef[2,4], 3)),
-             label.size = NA)+
-  geom_text(aes(label=ifelse(C_N_115 > 0.1, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+             label.size = NA) +
+  #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+  geom_text_repel(data=filter(df, C_lim > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
 
 
 
@@ -346,9 +371,9 @@ ggplot(df_filter_mass, aes(x=reorder(compartment, C_N_50_vs_C_lim), y=C_N_50_vs_
   geom_bar(position="dodge", stat="identity", fill = "red", alpha=0.4) +
   xlab("Cellular Component") + 
   theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12))+ 
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  theme(legend.position="none")+
-  coord_flip()
+  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+  theme(legend.position="none")# +
+  #coord_flip()
 
 
 

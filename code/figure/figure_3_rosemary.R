@@ -30,9 +30,6 @@ physiology_collection1 <- physiology_collection1[!str_detect(physiology_collecti
 physiology_jianye <- physiology_collection[str_detect(physiology_collection$source,"sysbio_Jianye"),]
 physiology_rosemary <- physiology_collection[str_detect(physiology_collection$condition_unique,"@NH4@N_limit@C_N_ratio=30"),]
 physiology_rosemary <- physiology_rosemary[str_detect(physiology_rosemary$sampleID,"prot\\."),]
-physiology_Ibrahim <- physiology_collection[str_detect(physiology_collection$sampleID,"Chemostats_C_limit"),]
-
-physiology_yihui <- physiology_collection[str_detect(physiology_collection$sampleID,"sce_FY4_C"),]
 
 # compartment
 ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
@@ -44,9 +41,9 @@ ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassi
 
 
 # group1 select
-physiology <- physiology_jianye
+physiology <- physiology_rosemary
 Pro_mass_select <-  ProMassRatio1[, colnames(ProMassRatio1) %in% c("compartment",physiology$sampleID)]
-Pro_mass_select <- Pro_mass_select[!is.na(Pro_mass_select$S27_carbon_limit),]
+Pro_mass_select <- Pro_mass_select[!is.na(Pro_mass_select$prot.21),]
 Pro_mass_select0 <- t(Pro_mass_select[,-1])
 colnames(Pro_mass_select0) <- Pro_mass_select$compartment
 Pro_mass_select0 <- as.data.frame(Pro_mass_select0)
