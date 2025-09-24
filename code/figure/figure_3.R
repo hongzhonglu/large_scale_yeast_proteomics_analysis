@@ -214,11 +214,10 @@ ggplot(r_df, aes(x=reorder(component, cor), y=cor, fill=component)) +
 
 
 
-
+####### peroxisome
 # focus on one specific organelle-for example nucleolus
 compartment_sce_curation <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/compartment_sce_curation.xlsx")
 
-compartment_one <- compartment_sce_curation[compartment_sce_curation$compartment=="nucleolus",]
 compartment_one <- compartment_sce_curation[compartment_sce_curation$compartment=="peroxisome",]
 
 
@@ -250,6 +249,45 @@ ggplot(r_df, aes(x=reorder(gene, -cor), y=cor, fill=gene)) +
   theme(axis.text = element_text(size = 3), axis.title = element_text(size = 12))+ 
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   theme(legend.position="none")
+
+
+
+
+
+## nucleolus
+compartment_one <- compartment_sce_curation[compartment_sce_curation$compartment=="nucleolus",]
+
+
+combine_one <- combine[combine$gene %in% compartment_one$gene,]
+combine_one_select <-  combine_one[, colnames(combine_one) %in% c("gene",physiology$sampleID)]
+
+# remove too much na in each row
+na_counts_per_row <- rowSums(is.na(combine_one_select[,2:28]))
+na_counts_df <- data.frame(row_NA_count = na_counts_per_row, row.names = combine_one_select$gene)
+gene_remove <- rownames(na_counts_df)[which(na_counts_df$row_NA_count >=18)]
+combine_one_select <- combine_one_select[!(combine_one_select$gene %in% gene_remove),]
+
+combine_one_select0 <- t(combine_one_select[,-1])
+colnames(combine_one_select0) <- combine_one_select$gene
+combine_one_select0 <- as.data.frame(combine_one_select0)
+combine_one_select0$growth <- as.numeric(physiology$`dilution rate (/h)`)
+
+r <- cor(combine_one_select0, use='pairwise.complete.obs') # also calculate the columns with NA
+r_growth <- r["growth",]
+r_df <- as.data.frame(r_growth)
+colnames(r_df) <- "cor"
+r_df$gene <- rownames(r_df)
+r_df <- r_df[!is.na(r_df$cor), ]
+r_df <- r_df[r_df$gene !="growth", ]
+#bar plot
+ggplot(r_df, aes(x=reorder(gene, -cor), y=cor)) + 
+  geom_bar(position="dodge", stat="identity", fill = "steelblue", color="grey") +
+  xlab("Protein") + 
+  ylab("Pearson coefficient")+
+  theme(axis.text.x = element_text(size = 3), axis.text.y = element_text(size = 9),axis.title = element_text(size = 12))+ 
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  theme(legend.position="none")
+
 
 
 

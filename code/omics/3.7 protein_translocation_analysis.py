@@ -69,8 +69,8 @@ data = fraction_list
 # Create density plot
 plt.figure()
 sns.histplot(data)
-plt.xlabel("Mass fraction")
-plt.ylabel("Count")
+plt.xlabel("Mass fraction", fontsize=14)
+plt.ylabel("Count", fontsize=14)
 plt.show()
 
 
@@ -118,8 +118,8 @@ data = fraction_list2
 # Create density plot
 plt.figure()
 sns.histplot(data)
-plt.xlabel("Mass fraction")
-plt.ylabel("Count")
+plt.xlabel("Mass fraction", fontsize=14)
+plt.ylabel("Count",fontsize=14)
 plt.show()
 pd2.to_excel("data/organelle_interaction_data.xlsx")
 
@@ -127,6 +127,12 @@ pd2.to_excel("data/organelle_interaction_data.xlsx")
 
 
 
+
+
+
+
+
+# NOT USED
 # plot network graph
 import networkx as nx
 import matplotlib.pyplot as plt

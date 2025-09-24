@@ -191,7 +191,7 @@ ggplot(gene_existence, aes(exist_count)) +
                  fill = "lightblue", 
                  color = "black") +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 15, face = "bold")) +
+  theme(axis.text = element_text(size = 15), axis.title = element_text(size = 18)) +
   labs(x = "Gene occurance number across samples",
        y = "Density") 
 
@@ -219,7 +219,7 @@ ggplot(df, aes(value)) +
   xlim(0.4, 1) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
   geom_density(alpha = 0.5, fill = "lightgreen")+
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 15, face = "bold")) +
+  theme(axis.text = element_text(size = 15), axis.title = element_text(size = 18)) +
   labs(x = "Mass ratio of 1500 most frequent proteins",
        y = "Density") 
 

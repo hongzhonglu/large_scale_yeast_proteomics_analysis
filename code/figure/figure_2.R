@@ -35,7 +35,7 @@ compartment0 <- compartment0[order(compartment0[[4]], decreasing = TRUE), ]
 # bar plot to analyze the protein num in each main component
 ggplot(data=compartment0[1:10,], aes(x = reorder(compartment, annotation_curation), y = annotation_curation)) + 
   geom_bar(stat="identity",fill="#619CFF") +
-  xlab("Cellular Component") + 
+  xlab("Cellular component") + 
   ylab("Protein count") + 
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
@@ -53,8 +53,8 @@ long_DF <- compartment0 %>% gather(type, count, 3:4)
 long_DF$type <- as.factor(long_DF$type)
 ggplot(long_DF, aes(fill=type, y=count, x=compartment)) + 
   geom_bar(position="dodge", stat="identity") +
-  xlab("Cellular Component") + 
-  ylab("Protein count)") + 
+  xlab("Cellular component") + 
+  ylab("Protein count") + 
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
   theme(axis.text=element_text(size=12, family="Arial"),
@@ -123,17 +123,17 @@ df3 <- data.frame(value=ss)
 help(cor)
 
 # combine the above three result together
-df1$type = "All component"
-df2$type = "Main organelle"
-df3$type = "Sub-organelle"
+df1$Type = "All components"
+df2$Type = "Main organelles"
+df3$Type = "Sub-organelles"
 
 updated <- rbind(df1, df2, df3)
-ggplot(updated, aes(x=value, color=type, fill=type)) +
+ggplot(updated, aes(x=value, color=Type, fill=Type)) +
   geom_density(alpha=0.3) +
   xlim(0.5, 1) +
   theme(panel.background = element_rect(fill = "white", colour = "black")) +
   geom_density(alpha = 0.5)+
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold")) +
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20)) +
   labs(x = "Correlation coefficient between samples",
        y = "Density") 
 

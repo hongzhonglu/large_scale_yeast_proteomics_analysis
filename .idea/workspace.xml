@@ -5,17 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/code/figure/figure_1.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_1.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/figure_3.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_3.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/figure_4.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_4.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_2.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_2.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/Golgi apparatus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/Golgi apparatus.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/figure/result/cytosol.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/cytosol.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/figure/result/endosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endosome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/fungal-type vacuole.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/fungal-type vacuole.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/lipid droplet.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/lipid droplet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial inner membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial inner membrane.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial intermembrane space.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial intermembrane space.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial matrix.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial outer membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial outer membrane.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/nucleolus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleolus.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/figure/result/nucleus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/physiology_collection.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$mass_fraction_combine.xlsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/~$compare_compartment_anotation_with_all_and_manual_evidance.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/peroxisome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/peroxisome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/plasma membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/plasma membrane.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/ribosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/ribosome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.7 protein_translocation_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.7 protein_translocation_analysis.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/organelle_interaction_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/organelle_interaction_data.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
