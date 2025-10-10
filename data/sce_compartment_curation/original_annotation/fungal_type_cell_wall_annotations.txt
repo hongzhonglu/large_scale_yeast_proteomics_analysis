@@ -1,0 +1,121 @@
+!
+!Date: 04/06/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+1,3-beta-D-glucan synthase complex, FKS1-RHO1 variant	CPX-1812	located in	GO:0009277	fungal-type cell wall	cellular component		BSR	manually curated	ComplexPortal	2020-08-26	Qadota H, et al. (1996) PMID:8602515
+SSA1	YAL005C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-01-18	López-Ribot JL and Chaffin WL (1996) PMID:8755907
+FLO9	YAL063C	located in	GO:0009277	fungal-type cell wall	cellular component		ISS with FLO1	manually curated	SGD	2004-02-04	Teunissen AW and Steensma HY (1995) PMID:7502576
+FLO1	YAR050W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-13	Breinig F and Schmitt MJ (2002) PMID:11956747
+FLO1	YAR050W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2004-01-30	Bony M, et al. (1998) PMID:9483793
+FIG1	YBR040W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-09-24	Erdman S, et al. (1998) PMID:9456310
+TIP1	YBR067C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-07-26	Fujii T, et al. (1999) PMID:10216230
+TIP1	YBR067C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+ECM33	YBR078W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+PHO5	YBR093C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-09-26	Haguenauer-Tsapis R, et al. (1986) PMID:3537693
+TOS1	YBR162C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2004-01-14	Terashima H, et al. (2002) PMID:11935221
+TOS1	YBR162C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+PAU24	YBR301W	located in	GO:0009277	fungal-type cell wall	cellular component		ISS with TIR1	manually curated	SGD	2019-04-25	Abramova N, et al. (2001) PMID:11292809
+PAU24	YBR301W	located in	GO:0009277	fungal-type cell wall	cellular component		ISS with TIR3	manually curated	SGD	2019-04-25	Abramova N, et al. (2001) PMID:11292809
+PAU24	YBR301W	located in	GO:0009277	fungal-type cell wall	cellular component		ISS with TIR4	manually curated	SGD	2019-04-25	Abramova N, et al. (2001) PMID:11292809
+FIG2	YCR089W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-09-24	Erdman S, et al. (1998) PMID:9456310
+DIA3	YDL024C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2004-01-14	Terashima H, et al. (2002) PMID:11935221
+PST1	YDR055W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2006-11-29	Hamada K, et al. (1999) PMID:10383953
+PST1	YDR055W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2006-11-29	Pardo M, et al. (2004) PMID:15583168
+SED1	YDR077W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-03-06	Hamada K, et al. (1998) PMID:9613572
+CCW22	YDR134C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+MKC7	YDR144C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+EXG2	YDR261C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-09-24	Larriba G, et al. (1995) PMID:7875558
+SPS2	YDR522C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+FIT1	YDR534C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+UTR2	YEL040W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+UTR2	YEL040W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+TIR1	YER011W	is active in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2021-08-24	Yin QY, et al. (2005) PMID:15781460
+TIR1	YER011W	is active in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2021-08-24	Donzeau M, et al. (1996) PMID:8733242
+SPI1	YER150W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-03-06	Hamada K, et al. (1998) PMID:9613572
+SCW11	YGL028C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-19	Cappellaro C, et al. (1998) PMID:9748433
+AGA2	YGL032C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2013-02-27	Cappellaro C, et al. (1991) PMID:1756718
+CRH1	YGR189C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-12-01	Rodríguez-Peña JM, et al. (2000) PMID:10757808
+CRH1	YGR189C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+TDH3	YGR192C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2003-04-16	Delgado ML, et al. (2001) PMID:11158358
+SCW4	YGR279C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+SCW4	YGR279C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-08-01	Cappellaro C, et al. (1998) PMID:9748433
+BGL2	YGR282C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2007-08-31	Klebl F and Tanner W (1989) PMID:2509432
+BGL2	YGR282C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2007-08-31	Cappellaro C, et al. (1998) PMID:9748433
+DSE2	YHR143W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-10-02	Doolin MT, et al. (2001) PMID:11309124
+FLO5	YHR211W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2004-01-30	Bony M, et al. (1998) PMID:9483793
+TIR3	YIL011W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+BAR1	YIL015W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2017-03-08	Moukadiri I, et al. (1999) PMID:10438739
+SIM1	YIL123W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-07-21	Velours G, et al. (2002) PMID:11958935
+YPS6	YIR039C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+TDH1	YJL052W	located in	GO:0009277	fungal-type cell wall	cellular component	exists during G1 to G0 transition	IDA	manually curated	SGD	2017-03-17	Delgado ML, et al. (2001) PMID:11158358
+PRY3	YJL078C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2021-07-29	Cottier S, et al. (2020) PMID:32554483
+PRY3	YJL078C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+PRY3	YJL078C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+CIS3	YJL158C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-01-18	Moukadiri I, et al. (1999) PMID:10438739
+CIS3	YJL158C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+HSP150	YJL159W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-01-18	Kapteyn JC, et al. (1999) PMID:10209754
+HSP150	YJL159W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+HSP150	YJL159W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-03-17	Yun DJ, et al. (1997) PMID:9192695
+TOH1	YJL171C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+SAG1	YJR004C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+TDH2	YJR009C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2003-04-16	Delgado ML, et al. (2001) PMID:11158358
+JSN1	YJR091C	located in	GO:0009277	fungal-type cell wall	cellular component	exists during cellular response to glucose starvation	IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+DAN1	YJR150C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-09-18	Mrsa V, et al. (1999) PMID:10322008
+DAN4	YJR151C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+CWP1	YKL096W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+CWP1	YKL096W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-07-26	Kapteyn JC, et al. (1997) PMID:9335273
+CWP2	YKL096W-A	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-13	Breinig F and Schmitt MJ (2002) PMID:11956747
+PIR3	YKL163W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-03-17	Yun DJ, et al. (1997) PMID:9192695
+PIR3	YKL163W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+PIR1	YKL164C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+PIR1	YKL164C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-03-17	Yun DJ, et al. (1997) PMID:9192695
+MCD4	YKL165C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-08-16	Kalebina TS, et al. (2002) PMID:12023081
+FLO10	YKR102W	located in	GO:0009277	fungal-type cell wall	cellular component		ISS with FLO1	manually curated	SGD	2004-02-04	Teunissen AW and Steensma HY (1995) PMID:7502576
+SSA2	YLL024C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-01-18	López-Ribot JL and Chaffin WL (1996) PMID:8755907
+AFB1	YLR040C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+NFG1	YLR042C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+CCW12	YLR110C	is active in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2022-01-14	Hamada K, et al. (1999) PMID:10383953
+NCW2	YLR194C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+CTS1	YLR286C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2009-12-11	Colman-Lerner A, et al. (2001) PMID:11747810
+CTS1	YLR286C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2009-12-11	Kuranda MJ and Robbins PW (1991) PMID:1918080
+EXG1	YLR300W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-08-01	Cappellaro C, et al. (1998) PMID:9748433
+CCW14	YLR390W-A	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+CCW14	YLR390W-A	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-09-13	Moukadiri I, et al. (1997) PMID:9079899
+CCW14	YLR390W-A	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-09-13	Mrsă V, et al. (1997) PMID:9301021
+PLB2	YMR006C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+PLB2	YMR006C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+GAS3	YMR215W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+GAS3	YMR215W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+SCW10	YMR305C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-08-01	Cappellaro C, et al. (1998) PMID:9748433
+SCW10	YMR305C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+GAS1	YMR307W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+GAS1	YMR307W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2009-11-20	Rolli E, et al. (2009) PMID:19793924
+SUN4	YNL066W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-07-21	Velours G, et al. (2002) PMID:11958935
+YNL190W	YNL190W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+TOS6	YNL300W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+KRE1	YNL322C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-13	Breinig F and Schmitt MJ (2002) PMID:11956747
+EGT2	YNL327W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+AGA1	YNR044W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-01-18	Roy A, et al. (1991) PMID:2072914
+AGA1	YNR044W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2001-01-18	Cappellaro C, et al. (1994) PMID:7957044
+DSE4	YNR067C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2004-01-14	Terashima H, et al. (2002) PMID:11935221
+GAS5	YOL030W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+GAS5	YOL030W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-06-01	Yin QY, et al. (2005) PMID:15781460
+GAS4	YOL132W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+ZPS1	YOL154W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2004-01-14	Terashima H, et al. (2002) PMID:11935221
+HPF1	YOL155C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-12-06	Horie T and Isono K (2001) PMID:11748726
+TIR4	YOR009W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+SPR1	YOR190W	located in	GO:0009277	fungal-type cell wall	cellular component		IMP	manually curated	SGD	2002-09-24	Muthukumar G, et al. (1993) PMID:8419289
+SPR2	YOR214C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+SRL1	YOR247W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2004-01-14	Terashima H, et al. (2002) PMID:11935221
+FIT2	YOR382W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+FIT3	YOR383C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+SPO19	YPL130W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2002-06-17	Hamada K, et al. (1999) PMID:10383953
+SVS1	YPL163C	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2004-01-14	Terashima H, et al. (2002) PMID:11935221
+ATH1	YPR026W	located in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2005-08-12	Jules M, et al. (2004) PMID:15128531
+AWA1	YSC0042	is active in	GO:0009277	fungal-type cell wall	cellular component		IDA	manually curated	SGD	2021-09-17	Shimoi H, et al. (2002) PMID:11916725
+FPG1	YSC0053	is active in	GO:0009277	fungal-type cell wall	cellular component		ISS with AWA1	manually curated	SGD	2021-09-20	Blasco L, et al. (2011) PMID:21425329

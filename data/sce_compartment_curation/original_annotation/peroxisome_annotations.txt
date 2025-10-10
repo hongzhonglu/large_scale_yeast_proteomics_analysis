@@ -1,0 +1,119 @@
+!
+!Date: 04/07/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+RBG1	YAL036C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+MIN6	YBL039W-B	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+BNA4	YBL098W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+FAT1	YBR041W	located in	GO:0005777	peroxisome	cellular component		IMP	manually curated	SGD	2010-02-25	Watkins PA, et al. (1998) PMID:9660783
+ALG14	YBR070C	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+YBR072C-A	YBR072C-A	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+MTC4	YBR255W	located in	GO:0005777	peroxisome	cellular component	existence overlaps cellular response to oleic acid	IDA	manually curated	SGD	2021-09-29	Yifrach E, et al. (2016) PMID:27663510
+TYC1	YBR296C-A	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+GID7	YCL039W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+CIT2	YCR005C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2006-11-27	Lee JG, et al. (2006) PMID:16877773
+CIT2	YCR005C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2015-07-08	Nakatsukasa K, et al. (2015) PMID:25982115
+PTC1	YDL006W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+GPD1	YDL022W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2005-02-10	Valadi A, et al. (2004) PMID:15210723
+MPS1	YDL028C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PBP4	YDL053C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+MDH3	YDL078C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2005-05-16	Steffan JS and McAlister-Henn L (1992) PMID:1447211
+MDH3	YDL078C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2014-02-04	van Roermund CW, et al. (1995) PMID:7628449
+DMO2	YDL157C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+MGT1	YDL200C	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+ADY3	YDL239C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+AFR1	YDR085C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PEX7	YDR142C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2007-06-21	Nair DM, et al. (2004) PMID:15545321
+PEX7	YDR142C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2007-06-21	Zhang JW and Lazarow PB (1995) PMID:7535304
+PEX7	YDR142C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2015-04-27	Marzioch M, et al. (1994) PMID:7957058
+SAN1	YDR143C	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+TAF12	YDR145W	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+PEX5	YDR244W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2005-01-26	Kragt A, et al. (2005) PMID:15632140
+RMD5	YDR255C	located in	GO:0005777	peroxisome	cellular component	exists during cellular response to oleic acid	IDA	manually curated	SGD	2017-05-11	Yifrach E, et al. (2016) PMID:27663510
+DPL1	YDR294C	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+PEX3	YDR329C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2014-01-29	Knoblach B, et al. (2013) PMID:23900285
+PEX29	YDR479C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2016-06-29	Mast FD, et al. (2016) PMID:27129769
+PXP1	YEL020C	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PXP1	YEL020C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2016-07-22	Nötzel C, et al. (2016) PMID:27392156
+BUD16	YEL029C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+RMD6	YEL072W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+FAA2	YER015W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2002-09-17	Hettema EH, et al. (1996) PMID:8670886
+AIM11	YER093C-A	located in	GO:0005777	peroxisome	cellular component	existence overlaps cellular response to glucose stimulus	HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+GYP8	YFL027C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PNC1	YGL037C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2003-05-09	Anderson RM, et al. (2003) PMID:12736687
+NPY1	YGL067W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2002-08-01	AbdelRaheim SR, et al. (2001) PMID:11361135
+TOS3	YGL179C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+STR3	YGL184C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2011-02-15	Schäfer H, et al. (2001) PMID:11565790
+NCS6	YGL211W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+SHY1	YGR112W	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+YGR127W	YGR127W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PEX4	YGR133W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2005-10-27	Wiebel FF and Kunau WH (1992) PMID:1326082
+GTO1	YGR154C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2007-03-07	Barreto L, et al. (2006) PMID:16936141
+PEX35	YGR168C	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+PEX21	YGR239C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2001-01-18	Purdue PE, et al. (1998) PMID:9864360
+PXP3	YHL045W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+YHL048C-A	YHL048C-A	located in	GO:0005777	peroxisome	cellular component	existence overlaps cellular response to oleic acid	HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+RPC10	YHR143W-A	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+PEX18	YHR160C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2001-01-18	Purdue PE, et al. (1998) PMID:9864360
+IKI1	YHR187W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+FIS1	YIL065C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2009-02-24	Kuravi K, et al. (2006) PMID:16968746
+YIL089W	YIL089W	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2018-11-20	Yofe I, et al. (2016) PMID:26928762
+POT1	YIL160C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2010-09-23	Lee JR, et al. (2009) PMID:19470242
+DAL7	YIR031C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2017-05-11	Effelsberg D, et al. (2016) PMID:27678487
+BET4	YJL031C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2017-05-11	Yifrach E, et al. (2016) PMID:27663510
+ATG36	YJL185C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2012-06-08	Motley AM, et al. (2012) PMID:22643220
+TES1	YJR019C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2005-05-26	Jones JM, et al. (1999) PMID:10092594
+PXP2	YJR111C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2016-07-22	Nötzel C, et al. (2016) PMID:27392156
+CSE4	YKL049C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+LPX2	YKL050C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PMU1	YKL128C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PXA2	YKL188C	located in	GO:0005777	peroxisome	cellular component	exists during cellular response to oleic acid	IDA	manually curated	SGD	2017-05-11	Yifrach E, et al. (2016) PMID:27663510
+PEX1	YKL197C	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+VPS1	YKR001C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2006-11-27	Vizeacoumar FJ, et al. (2006) PMID:16520372
+FOX2	YKR009C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2021-12-16	Rymer Ł, et al. (2018) PMID:30131444
+ESL2	YKR096W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2019-04-26	Oeljeklaus S, et al. (2012) PMID:22375831
+DNM1	YLL001W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2009-02-24	Kuravi K, et al. (2006) PMID:16968746
+MMM1	YLL006W	located in	GO:0005777	peroxisome	cellular component	existence overlaps cellular response to glucose stimulus	HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+AYT1	YLL063C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+AAT2	YLR027C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2008-01-21	Verleur N, et al. (1997) PMID:9288922
+AAT2	YLR027C	located in	GO:0005777	peroxisome	cellular component		IMP	manually curated	SGD	2008-01-21	Verleur N, et al. (1997) PMID:9288922
+SEN2	YLR105C	located in	GO:0005777	peroxisome	cellular component	existence overlaps cellular response to oleic acid	HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+PCD1	YLR151C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2002-10-10	Cartwright JL, et al. (2000) PMID:10922370
+VPS34	YLR240W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2011-02-11	Grunau S, et al. (2011) PMID:21121900
+NDL1	YLR254C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+ECI1	YLR284C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2002-10-24	Gurvitz A, et al. (1998) PMID:9813046
+ECI1	YLR284C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2001-01-18	Geisbrecht BV, et al. (1998) PMID:9837886
+TAD3	YLR316C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PEX30	YLR324W	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+PEX30	YLR324W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2016-06-29	Mast FD, et al. (2016) PMID:27129769
+GMC2	YLR445W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+CAT2	YML042W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2008-09-03	Franken J, et al. (2008) PMID:18427809
+CAT2	YML042W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2019-04-26	Oeljeklaus S, et al. (2012) PMID:22375831
+PEX9	YMR018W	located in	GO:0005777	peroxisome	cellular component	exists during cellular response to oleic acid	IDA	manually curated	SGD	2017-05-11	Yifrach E, et al. (2016) PMID:27663510
+YMR158C-A	YMR158C-A	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+INP1	YMR204C	located in	GO:0005777	peroxisome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+INP1	YMR204C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2014-01-29	Knoblach B, et al. (2013) PMID:23900285
+UBP15	YMR304W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2012-09-13	Debelyy MO, et al. (2011) PMID:21665945
+IDP3	YNL009W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2005-07-08	Henke B, et al. (1998) PMID:9452501
+YIP3	YNL044W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+SWS2	YNL081C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+MLS1	YNL117W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2013-03-19	McCammon MT, et al. (1990) PMID:2211514
+MLS1	YNL117W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2017-05-11	Effelsberg D, et al. (2016) PMID:27678487
+PEX6	YNL329C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2004-08-16	Birschmann I, et al. (2003) PMID:12808025
+PEX6	YNL329C	located in	GO:0005777	peroxisome	cellular component		IMP	manually curated	SGD	2004-08-16	Birschmann I, et al. (2003) PMID:12808025
+AIM39	YOL053W	located in	GO:0005777	peroxisome	cellular component	existence overlaps cellular response to glucose stimulus	HDA	manually curated	SGD	2022-05-26	David Y, et al. (2022) PMID:35563734
+TSR3	YOR006C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PTC5	YOR090C	is active in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-08-26	Stehlik T, et al. (2020) PMID:32398688
+RIM20	YOR275C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+FSH3	YOR280C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+NUD1	YOR373W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+GLR1	YPL091W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+NAN1	YPL126W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+PRE2	YPR103W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2022-10-21	Yifrach E, et al. (2022) PMID:36164978
+RHO1	YPR165W	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2005-02-24	Marelli M, et al. (2004) PMID:15596542
+OPT2	YPR194C	located in	GO:0005777	peroxisome	cellular component		IDA	manually curated	SGD	2014-08-27	Elbaz-Alon Y, et al. (2014) PMID:25130273

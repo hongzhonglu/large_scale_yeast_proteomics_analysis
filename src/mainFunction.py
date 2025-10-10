@@ -130,6 +130,47 @@ df2['C'] = singleMapping(df1['C'], df1['A'], df2['A'])
 df2['C'] = multiMapping(df1['C'], df1['A'], df2['A'])
 '''
 
+def linearFit(df, x_name, y_name):
+    """
+    This function is used to fitting a linear relation between two variables
+    Linear fit for two colums in a dataframe
+    :param df:
+    :param x_name:
+    :param y_name:
+    :return:
+    """
+    from sklearn.metrics import r2_score
+    import matplotlib.pyplot as plt
+    df = df[[x_name, y_name]]
+    df = df.dropna()
+    x = df[x_name]
+    y = df[y_name]
+    x_name = x_name.split("(")[0]
+    y_name = y_name.split("(")[0]
+    x_name = x_name.replace("/", "_per_")
+    y_name = y_name.replace("/", "_per_")
+    coef = np.polyfit(x, y, 1)
+    poly1d_fn = np.poly1d(coef)
+    predict = np.poly1d(coef)
+    R2 = r2_score(y, predict(x))
+    print(R2)
+    print(coef)
+    R2 = "{:.3f}".format(R2)
+    # poly1d_fn is now a function which takes in x and returns an estimate for y
+    plt.figure()
+    plt.plot(x, y, 'yo', x, poly1d_fn(x), '--k')  # '--k'=black dashed line, 'yo' = yellow circle marker
+    plt.xlabel(x_name, fontsize=18)
+    plt.ylabel(y_name, fontsize=18)
+    plt.xticks(fontsize=15)
+    plt.yticks(fontsize=15)
+    x_max = max(x)
+    y_max = max(y)
+    plt.text(x_max/3, 2*y_max/3, "R2=" + str(R2), fontsize=18)
+    plt.savefig('result/' + x_name + '_' + y_name + '.pdf', bbox_inches='tight')
+    plt.show()
+    return coef[0], coef[1]
+
+
 
 def updateOneColumn(df1, df2, key0, value0):
     """

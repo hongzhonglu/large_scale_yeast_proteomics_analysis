@@ -32,7 +32,7 @@ all_condition0 = all_condition[1:]
 all_gene_predicted_in_use = []
 number_of_used_gene = []
 all_gene_list = []
-
+used_enzyme_dict = {}
 for xx in all_condition0:
     print(xx)
     x0 = measured_simple0[xx]
@@ -42,6 +42,7 @@ for xx in all_condition0:
     all_gene_predicted_in_use = all_gene_predicted_in_use + combine_df_used["all_gene"].tolist()
     number_of_used_gene.append(len(combine_df_used["all_gene"].tolist()))
     all_gene_list.append(combine_df_used["all_gene"].tolist())
+    used_enzyme_dict[xx] = combine_df_used["all_gene"].tolist()
 
 
 

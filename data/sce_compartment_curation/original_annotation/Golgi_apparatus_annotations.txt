@@ -1,0 +1,112 @@
+!
+!Date: 04/07/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+MST27-MST28 vesicle formation complex	CPX-1303	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	ComplexPortal	2018-03-27	Sandmann T, et al. (2003) PMID:12925749
+Mannosyl phosphorylinositol ceramide synthase SUR1-CSG2	CPX-1739	located in	GO:0005794	Golgi apparatus	cellular component		BSR	manually curated	ComplexPortal	2014-10-16	Uemura S, et al. (2003) PMID:12954640
+Mannosyl phosphorylinositol ceramide synthase CSH1-CSG2	CPX-1740	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	ComplexPortal	2020-08-25	Uemura S, et al. (2003) PMID:12954640
+Ric1-Rgp1 guanyl-nucleotide exchange factor complex	CPX-3078	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	ComplexPortal	2014-10-16	Siniossoglou S, et al. (2000) PMID:10990452
+MST28	YAR033W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2019-02-22	Sandmann T, et al. (2003) PMID:12925749
+PEP1	YBL017C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2010-10-19	Gharakhanian E, et al. (2011) PMID:20936498
+AST1	YBL069W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2012-05-10	Bagnat M, et al. (2001) PMID:11739806
+GRX7	YBR014C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2008-08-28	Izquierdo A, et al. (2008) PMID:18503006
+MNN2	YBR015C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2002-09-25	Rayner JC and Munro S (1998) PMID:9756928
+SEC18	YBR080C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2013-05-24	Aksnes H, et al. (2013) PMID:23613772
+ARL1	YBR164C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-05-23	Behnia R, et al. (2004) PMID:15077113
+ARL1	YBR164C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-06-15	Burd CG, et al. (2004) PMID:15564045
+KTR4	YBR199W	located in	GO:0005794	Golgi apparatus	cellular component		ISS with KRE2	manually curated	SGD	2014-01-23	Mallet L, et al. (1994) PMID:7975899
+KTR4	YBR199W	located in	GO:0005794	Golgi apparatus	cellular component		ISS with YUR1	manually curated	SGD	2014-01-23	Mallet L, et al. (1994) PMID:7975899
+KTR4	YBR199W	located in	GO:0005794	Golgi apparatus	cellular component		ISS with KTR1	manually curated	SGD	2014-01-23	Mallet L, et al. (1994) PMID:7975899
+PRD1	YCL057W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2014-07-08	Hrycyna CA and Clarke S (1993) PMID:8218194
+YCR043C	YCR043C	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+GRX6	YDL010W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2008-08-28	Izquierdo A, et al. (2008) PMID:18503006
+ARF2	YDL137W	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ARF2	YDL137W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2013-02-26	Chen KY, et al. (2010) PMID:20841378
+ARF1	YDL192W	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ARF1	YDL192W	is active in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2021-07-21	Chen KY, et al. (2010) PMID:20841378
+ARF1	YDL192W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2013-02-26	Chen KY, et al. (2010) PMID:20841378
+YCX1	YDL206W	is active in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2023-06-07	Lee GM, et al. (2023) PMID:36965615
+VPS54	YDR027C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2003-06-25	Conibear E and Stevens TH (2000) PMID:10637310
+TRS85	YDR108W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2013-12-20	Shirahama-Noda K, et al. (2013) PMID:23986483
+RGP1	YDR137W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2006-04-13	Siniossoglou S, et al. (2000) PMID:10990452
+RTN1	YDR233C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2006-04-26	Geng J, et al. (2005) PMID:16002643
+AKR1	YDR264C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2010-10-25	Ohno Y, et al. (2006) PMID:16647879
+SBE2	YDR351W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2003-01-30	Santos B and Snyder M (2000) PMID:10679005
+KEI1	YDR367W	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+VPS74	YDR372C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2008-04-22	Schmitz KR, et al. (2008) PMID:18410729
+KRE2	YDR483W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2013-03-25	Lussier M, et al. (1995) PMID:7490293
+VPS52	YDR484W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2003-06-25	Conibear E and Stevens TH (2000) PMID:10637310
+GDA1	YEL042W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2018-11-13	Vowels JJ and Payne GS (1998) PMID:9614179
+TCA17	YEL048C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2009-06-03	Montpetit B and Conibear E (2009) PMID:19220810
+MNN1	YER001W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2001-01-18	Graham TR, et al. (1994) PMID:7962051
+YND1	YER005W	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+YPT31	YER031C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-07-11	Chen SH, et al. (2005) PMID:15537705
+TMN3	YER113C	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RSP5	YER125W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-01-25	Katzmann DJ, et al. (2004) PMID:14657247
+MST27	YGL051W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2003-09-18	Sandmann T, et al. (2003) PMID:12925749
+YIP5	YGL161C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2007-02-14	Inadome H, et al. (2007) PMID:17178117
+YIP4	YGL198W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2007-02-14	Inadome H, et al. (2007) PMID:17178117
+YPT32	YGL210W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-07-11	Chen SH, et al. (2005) PMID:15537705
+VRG4	YGL225W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2002-05-28	Dean N, et al. (1997) PMID:9395539
+MNT2	YGL257C	located in	GO:0005794	Golgi apparatus	cellular component		ISS with MNN1	manually curated	SGD	2014-01-23	Romero PA, et al. (1999) PMID:10521541
+MNT2	YGL257C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2019-03-11	Tanabe Y, et al. (2019) PMID:30700649
+EPT1	YHR123W	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MNT3	YIL014W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2019-03-11	Tanabe Y, et al. (2019) PMID:30700649
+NEO1	YIL048W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-02-23	Wicky S, et al. (2004) PMID:15314152
+KTR7	YIL085C	located in	GO:0005794	Golgi apparatus	cellular component		ISS with YUR1	manually curated	SGD	2014-01-31	Lussier M, et al. (1999) PMID:9878809
+VPS53	YJL029C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2003-06-25	Conibear E and Stevens TH (2000) PMID:10637310
+KHA1	YJL094C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2007-04-16	Flis K, et al. (2005) PMID:15926887
+MTC1	YJL123C	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+YUR1	YJL139C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2001-01-18	Lussier M, et al. (1996) PMID:8631921
+MNN5	YJL186W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2002-09-25	Rayner JC and Munro S (1998) PMID:9756928
+RCY1	YJL204C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-07-11	Chen SH, et al. (2005) PMID:15537705
+GEF1	YJR040W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-03-18	Wächter A and Schwappach B (2005) PMID:15710404
+SGM1	YJR134C	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+AUR1	YKL004W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2002-07-11	Levine TP, et al. (2000) PMID:10888667
+TUL1	YKL034W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-04-21	Reggiori F and Pelham HR (2002) PMID:11788821
+YKL063C	YKL063C	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+PSG1	YKL077W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2020-03-20	Geva Y, et al. (2017) PMID:28727280
+TPO5	YKL174C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-02-08	Tachihara K, et al. (2005) PMID:15668236
+YKT6	YKL196C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2011-03-13	Meiringer CT, et al. (2008) PMID:18541004
+MNN4	YKL201C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2021-08-03	Noda Y, et al. (2019) PMID:30842360
+STE6	YKL209C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2010-06-30	Kölling R and Hollenberg CP (1994) PMID:8045256
+VPS51	YKR020W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2003-06-25	Siniossoglou S and Pelham HR (2002) PMID:12377769
+KTR2	YKR061W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2001-01-18	Lussier M, et al. (1996) PMID:8631921
+CCC1	YLR220W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2001-06-08	Lapinskas PJ, et al. (1996) PMID:8866476
+ARV1	YLR242C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2003-01-23	Swain E, et al. (2002) PMID:12145310
+LCB5	YLR260W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2012-08-13	Funato K, et al. (2003) PMID:12493772
+YPT6	YLR262C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2014-01-29	Suda Y, et al. (2013) PMID:24194547
+SEC22	YLR268W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2002-09-17	Ballensiefen W, et al. (1998) PMID:9580559
+IMH1	YLR309C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-05-23	Behnia R, et al. (2004) PMID:15077113
+STV1	YMR054W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2006-10-18	Kawasaki-Nishi S, et al. (2001) PMID:11592965
+STV1	YMR054W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2006-04-11	Perzov N, et al. (2002) PMID:11948198
+SEC14	YMR079W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2006-10-26	Cleves AE, et al. (1991) PMID:1997207
+GOT1	YMR292W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2010-03-02	Lorente-Rodríguez A, et al. (2009) PMID:19383723
+KSH1	YNL024C-A	is active in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2021-10-01	Wendler F, et al. (2010) PMID:19942856
+KTR5	YNL029C	located in	GO:0005794	Golgi apparatus	cellular component		ISS with KRE2	manually curated	SGD	2014-01-23	Lussier M, et al. (1997) PMID:9090056
+KTR5	YNL029C	located in	GO:0005794	Golgi apparatus	cellular component		ISS with YUR1	manually curated	SGD	2014-01-23	Lussier M, et al. (1997) PMID:9090056
+KTR5	YNL029C	located in	GO:0005794	Golgi apparatus	cellular component		ISS with KTR1	manually curated	SGD	2014-01-23	Lussier M, et al. (1997) PMID:9090056
+YIP3	YNL044W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2022-01-28	Geng J, et al. (2005) PMID:16002643
+CPT1	YNL130C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2010-06-11	Leber A, et al. (1995) PMID:8543066
+NPR1	YNL183C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2006-11-16	Devasahayam G, et al. (2006) PMID:17095607
+SEC12	YNR026C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2010-01-05	Nakano A, et al. (1988) PMID:3047151
+YOL107W	YOL107W	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+AKR2	YOR034C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2010-10-25	Ohno Y, et al. (2006) PMID:16647879
+PEP12	YOR036W	located in	GO:0005794	Golgi apparatus	cellular component		IMP	manually curated	SGD	2001-01-18	Becherer KA, et al. (1996) PMID:8730101
+GYP1	YOR070C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2002-07-08	Du LL and Novick P (2001) PMID:11359917
+KTR1	YOR099W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2001-01-18	Lussier M, et al. (1996) PMID:8631921
+LCB4	YOR171C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2002-12-09	Hait NC, et al. (2002) PMID:12459470
+RUD3	YOR216C	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RUD3	YOR216C	located in	GO:0005794	Golgi apparatus	cellular component		ISS with Q08378	manually curated	SGD	2014-03-28	Kim DW, et al. (1999) PMID:10512869
+LDB19	YOR322C	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2012-02-24	MacGurn JA, et al. (2011) PMID:22118465
+ARL3	YPL051W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-05-23	Behnia R, et al. (2004) PMID:15077113
+ARL3	YPL051W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2005-05-23	Setty SR, et al. (2004) PMID:15077114
+HRR25	YPL204W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2015-11-16	Lord C, et al. (2011) PMID:21532587
+RBD2	YPL246C	located in	GO:0005794	Golgi apparatus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+PIS1	YPR113W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2010-06-11	Leber A, et al. (1995) PMID:8543066
+RHO1	YPR165W	located in	GO:0005794	Golgi apparatus	cellular component		IDA	manually curated	SGD	2009-11-13	McCaffrey M, et al. (1991) PMID:1918143

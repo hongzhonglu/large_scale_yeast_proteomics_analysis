@@ -1,0 +1,75 @@
+!
+!Date: 04/10/2024
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+Ire1 serine/threonine-protein kinase/endoribonuclease complex	CPX-2147	is active in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2022-03-24	Sarkar R, et al. (2022) PMID:35294718
+TIM8-TIM13 mitochondrial intermembrane space protein transporter complex	CPX-2371	located in	GO:0005758	mitochondrial intermembrane space	cellular component		BSR	manually curated	ComplexPortal	2014-10-16	Beverly KN, et al. (2008) PMID:18706423
+CYC3	YAL039C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-09-27	Dumont ME, et al. (1991) PMID:1656231
+CMC2	YBL059C-A	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2009-09-14	Longen S, et al. (2009) PMID:19703468
+MIX23	YBL107C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+PDX3	YBR035C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+MRX18	YBR056W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+PRD1	YCL057W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2001-12-14	Büchler M, et al. (1994) PMID:8307027
+PTC6	YCR079W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2007-01-17	Tal R, et al. (2007) PMID:17166847
+MIX14	YDR031W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2006-11-30	Gabriel K, et al. (2007) PMID:17095012
+CPR1	YDR155C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+UPS3	YDR185C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2009-06-25	Tamura Y, et al. (2009) PMID:19506038
+ADK1	YDR226W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2008-09-02	Bandlow W, et al. (1988) PMID:2850178
+TRR1	YDR353W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+CYM1	YDR430C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2005-04-18	Kambacheld M, et al. (2005) PMID:15772085
+RIB3	YDR487C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2003-05-05	Jin C, et al. (2003) PMID:12595523
+SDH7	YDR511W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-07-16	Dennis RA and McCammon MT (1999) PMID:10103055
+CYC7	YEL039C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-09-06	Wang X, et al. (1996) PMID:8636074
+HMF1	YER057C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+QCR6	YFR033C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+ERV1	YGR029W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2003-05-12	Lange H, et al. (2001) PMID:11493598
+TIM13	YGR181W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2001-01-18	Koehler CM, et al. (1999) PMID:10051608
+TIM13	YGR181W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-04-10	Kurz M, et al. (1999) PMID:10397776
+ATG44	YIL156W-B	is active in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2023-05-17	Fukuda T, et al. (2023) PMID:37192628
+POT1	YIL160C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+HYR1	YIR037W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+MPM1	YJL066C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+MPM1	YJL066C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-05	Schreiner B, et al. (2012) PMID:22993211
+PET191	YJR034W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+CYC1	YJR048W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-10-02	Martin H, et al. (1998) PMID:9866716
+SOD1	YJR104C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-10-01	Sturtz LA, et al. (2001) PMID:11500508
+MDM35	YKL053C-A	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2006-11-30	Gabriel K, et al. (2007) PMID:17095012
+YNK1	YKL067W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2003-03-24	Amutha B and Pain D (2003) PMID:12472466
+HOT13	YKL084W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2004-10-14	Curran SP, et al. (2004) PMID:15294910
+CYT2	YKL087C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2003-01-20	Steiner H, et al. (1995) PMID:7559417
+CMC1	YKL137W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2009-09-14	Longen S, et al. (2009) PMID:19703468
+MCR1	YKL150W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-09-26	Hahne K, et al. (1994) PMID:8001120
+GPM1	YKL152C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+MIA40	YKL195W	is active in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2015-05-13	Koch JR and Schmid FX (2014) PMID:25451030
+MIA40	YKL195W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2006-05-15	Chacinska A, et al. (2004) PMID:15359280
+CCP1	YKR066C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2004-10-05	Daum G, et al. (1982) PMID:6290489
+DRE2	YKR071C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2008-07-23	Zhang Y, et al. (2008) PMID:18625724
+COX17	YLL009C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2001-01-18	Beers J, et al. (1997) PMID:9407107
+COX19	YLL018C-A	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2003-04-15	Nobrega MP, et al. (2002) PMID:12171940
+COX12	YLR038C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+TRX1	YLR043C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+UPS2	YLR168C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2009-06-25	Tamura Y, et al. (2009) PMID:19506038
+UPS1	YLR193C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2006-07-11	Sesaki H, et al. (2006) PMID:16754953
+UPS1	YLR193C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2009-06-25	Tamura Y, et al. (2009) PMID:19506038
+COA4	YLR218C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2009-09-14	Longen S, et al. (2009) PMID:19703468
+COA4	YLR218C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2010-08-30	Bestwick M, et al. (2010) PMID:20624914
+AIM32	YML050W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2021-11-09	Zhang D, et al. (2021) PMID:34461091
+CYB2	YML054C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-09-27	Guiard B (1985) PMID:3004948
+CYB2	YML054C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2004-10-05	Daum G, et al. (1982) PMID:6290489
+MIX17	YMR002W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2006-11-30	Gabriel K, et al. (2007) PMID:17095012
+CMC4	YMR194C-B	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2009-09-14	Longen S, et al. (2009) PMID:19703468
+MTF1	YMR228W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2008-01-30	Biswas TK and Getz GS (2002) PMID:12270918
+MTF1	YMR228W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+COA6	YMR244C-A	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+NCE103	YNL036W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+ATP23	YNR020C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2008-08-26	Osman C, et al. (2007) PMID:17135288
+RIB4	YOL143C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+PTC5	YOR090C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+MGM1	YOR211C	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2002-12-02	Wong ED, et al. (2000) PMID:11038181
+COX11	YPL132W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2012-10-29	Vögtle FN, et al. (2012) PMID:22984289
+ISA2	YPR067W	located in	GO:0005758	mitochondrial intermembrane space	cellular component		IDA	manually curated	SGD	2018-01-22	Jensen LT and Culotta VC (2000) PMID:10805735
