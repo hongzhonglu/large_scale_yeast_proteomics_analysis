@@ -112,7 +112,17 @@ compartment1['m_marcel'] = gene_mitochondrion_marcel['gene'].tolist()
 
 
 
-compartment_all = getCompartmentGeneList(type="manual")
+compartment_all = getCompartmentGeneList(type="all")
+compartment_list = list(compartment_all.keys())
+compartment_out = ','.join(compartment_list)
+
+organelles_main = [
+    "mitochondrion", "nucleus", "endoplasmic reticulum", "Golgi apparatus",
+    "fungal-type vacuole", "peroxisome", "endosome", "lipid droplet", "fungal-type cell wall",
+    "plasma membrane", "P-body", "cytoplasmic stress granule", "ribosome","cytosol",
+    "cytoskeleton","extracellular region"]
+
+
 compartment_all123 = {k: v for k, v in compartment_all.items() if k=="mitochondrion"}
 compartment_all_other = {k: v for k, v in compartment_all.items() if "itochondri" not in k}
 compartment_all_f = {**compartment_all123, **compartment_all_other}

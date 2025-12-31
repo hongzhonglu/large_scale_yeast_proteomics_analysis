@@ -7,14 +7,12 @@
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_unassigned_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_unassigned_manual_v3.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_xia.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_xia.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -100,13 +98,13 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/data/sce_compartment_curation" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/code/omics" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/data/sce_compartment_curation" />
       <recent name="$PROJECT_DIR$/code/omics" />
+      <recent name="$PROJECT_DIR$/data/sce_compartment_curation" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src" />

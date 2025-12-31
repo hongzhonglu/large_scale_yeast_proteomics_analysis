@@ -467,9 +467,9 @@ def gene_location_curation_sce(organelle0):
     gene_nucleus = pd.read_excel("data/sce_compartment_curation/nucleus_annotations_v2.xlsx")
 
     # mitochondrion specific
-    # gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrion_annotations_manual_v2.xlsx")
-    # gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrial_suborganelle.xlsx")
-    gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrion_xia.xlsx")
+    gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrion_annotations_manual_v2.xlsx")
+    #gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrial_suborganelle.xlsx")
+    #gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/mitochondrion_xia.xlsx")
     gene_m_Outer_membrane = pd.read_excel("data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_manual_v3.xlsx")
     gene_m_Inner_membrane = pd.read_excel("data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v3.xlsx")
     gene_m_OI_space = pd.read_excel("data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx")
