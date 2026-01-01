@@ -149,6 +149,9 @@ output_f2 = {k: v for k, v in output_f.items() if len(v) <=2}
 compartment1['m_sgd_core'] = list(output_f2.keys())
 
 
+#compartment1['plasma_test'] = plasma
+#','.join(plasma)
+
 
 def ProMassRatio_Organelle(protein_abundance, compartment=compartment1):
     """

@@ -3,9 +3,15 @@
 
 import os
 # import self function
+import pandas as pd
 from src.protein_process import *
 
-compartment_all = getCompartmentGeneList(type="all")
+mass_fraction_final = pd.read_excel("data/proteomics/mass_fraction_combine.xlsx")
+
+
+compartment_all0 = getCompartmentGeneList(type="all")
+compartment_all = gene_location_curation_sce(organelle0=compartment_all0)
+
 compartment_list = list(compartment_all.keys())
 compartment_out = ','.join(compartment_list)
 
@@ -20,6 +26,13 @@ compartment_main = {k: v for k, v in compartment_all.items() if k in organelles_
 
 compartment_main_c = gene_location_curation_sce(compartment_main)
 compartment_main_c = {k: v for k, v in compartment_main_c.items() if k in organelles_main}
+
+
+# quality check
+plasma = compartment_main_c['plasma membrane']
+mass_fraction_final_plasma = mass_fraction_final[mass_fraction_final['gene'].isin(plasma)]
+column_sums1 = mass_fraction_final_plasma.sum()
+column_sums2 = mass_fraction_final.sum()
 
 
 
@@ -45,74 +58,12 @@ print(output)
 
 
 
-def ProMassRatio_Organelle(protein_abundance, compartment=compartment_all):
-    """
-    This function is used to calculate the organelle protein aboslute abundance as a whole
-    :param protein_abundance:
-    :param compartment_type:
-    :return:
-    """
-    # test
-    # sample ID information
-    Sample_ID_select = list(protein_abundance.columns)
-    Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
-    # use some manually checked gene compartment definion
-    # gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
-    # all_compartment = ['fungal-type vacuole membrane']
-    # gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
-    # creat a dataframe to save the result
-
-    all_compartment = list(compartment.keys())
-    result1 = pd.DataFrame({"compartment": all_compartment})
-    # run the cycle
-
-    for col0 in Sample_ID_select:
-        print(col0)
-        value1 = []
-        for y in all_compartment:
-            print(y)
-            # test
-            # y = "plasma membrane"
-            # col0 = "Glucose_phase_rep1(g/gDW)"
-            pro_abundance = protein_abundance[['gene', col0]]
-            pro_abundance.columns = ['gene', 'g/gDW']
-
-            '''if y == "plasma membrane":
-                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
-            elif y == "fungal-type vacuole membrane":
-                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
-                genes_select = [x for x in genes_select if
-                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
-            elif y == "endosome":
-                genes_select = compartment[y]
-                genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
-            else:
-                genes_select = compartment[y]'''
-            genes_select = compartment[y]
-
-            # get the sum
-            pro_abundance.fillna(0, axis=1, inplace=True)
-            pro_select = pro_abundance[pro_abundance['gene'].isin(genes_select)]
-            sum_all = sum(pro_abundance['g/gDW'])
-            sum_select = sum(pro_select['g/gDW'])
-            ratio = sum_select/sum_all
-            value1.append(ratio)
-        result1[col0] = value1
-    return result1
-mass_fraction_final = pd.read_excel("data/proteomics/mass_fraction_combine.xlsx")
 
 
-
-out00 = ProMassRatio_Organelle(protein_abundance=mass_fraction_final)
-out00.to_excel("data/sce_compartment_curation/mitochondrion_fraction_under_different_input.xlsx")
-
-
-
-
-import pandas as pd
-
+# new way
 Sample_ID_select = list(mass_fraction_final.columns)
 Sample_ID_select = [x for x in Sample_ID_select if x !="gene"]
+output0 = {}
 for col0 in Sample_ID_select:
     print(col0)
     value1 = []
@@ -166,11 +117,13 @@ for col0 in Sample_ID_select:
     proportions_sorted = dict(sorted(proportions.items(), key=lambda x: x[1], reverse=True))
     for org, pct in proportions_sorted.items():
         print(f"{org}: {pct:.2f}%")
+    output0[col0] = proportions_sorted
 
 
 
-
-
+output_df = pd.DataFrame(output0)
+output_df = output_df / 100
+output_df.to_excel("data/sce_compartment_curation/mass_fraction_new_way.xlsx")
 
 
 

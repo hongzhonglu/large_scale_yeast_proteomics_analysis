@@ -7,13 +7,16 @@
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics_for_database_2024_09_16/ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics_for_database_2024_09_16/ProMassRatio_across_compartment_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics_for_database_2024_09_16/~$ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_outer_membrane_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_unassigned_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_unassigned_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_xia.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_xia.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
