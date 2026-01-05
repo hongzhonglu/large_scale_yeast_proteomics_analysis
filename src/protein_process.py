@@ -287,6 +287,7 @@ def get_total_protein_volume(pro_size0, abundance0, need_check="No"):
 
 
 # get the compartments of all genes
+
 # now we have the updated version of the compartment
 def getCompartmentGeneList(type="all"):
     """

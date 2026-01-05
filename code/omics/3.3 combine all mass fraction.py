@@ -51,7 +51,7 @@ protein_in_mol = protein_in_mol[new_column]
 
 # calculate the mass ratio
 out = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment_type="organelle")
-#out.to_excel("data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+out.to_excel("data/proteomics/ProMassRatio_across_compartment_combine_test.xlsx")
 
 
 # calculate the volume ratio

@@ -1,0 +1,182 @@
+# note:
+# this part can be rewritten as a function
+
+import os
+# import self function
+from src.protein_process import *
+
+"""
+# Part 1
+# Initially check how many genes could find compartment
+compartment = getCompartmentGeneList(type="all")  # based on the automatic way
+#compartment = gene_location_curation_sce(organelle0=compartment)  # based on the SGD manual curation
+all_compartment = list(compartment.keys())
+mitochondrion_related = ['mitochondrion',
+'mitochondrial outer membrane',
+'mitochondrial intermembrane space',
+'mitochondrial matrix',
+'mitochondrial inner membrane']
+compartment_m = {x:y for x, y in compartment.items() if x in mitochondrion_related}
+"""
+
+# reanalyze the data set
+def getCompartmentGeneList(type="all"):
+    """
+    This function to build a compartment dict, with which we can get the gene list from the compartment name
+
+    :param filter:
+    :return:
+    """
+
+    # Input the datasets from paxDB
+    # compartment = pd.read_csv("data/protein_location_sce.tsv", sep='\t')
+    # extract compartment
+    # compartment.columns = ['DBID', 'Systematic_name', 'Organism', 'Standard_name', 'Gene_name', 'GO_Qualifier', 'GO_Identifier', 'GO_Name', 'GO_Namespace', 'Ontology_Description', 'Annot_Type']
+
+    # using the updated version in 2026
+    # Input the datasets from paxDB
+    compartment = pd.read_csv("data/alliancemine_results_2026-01-03T10-33-37.tsv", sep='\t')
+    compartment = compartment.iloc[:,0:11]
+    # extract compartment
+    compartment.columns = ['DBID', 'Systematic_name',  'Standard_name', 'Feature_type', 'Gene_qualifier','GO_Identifier', 'GO_Name', 'GO_Namespace', 'Annot_Type', 'GO_Qualifier', 'Organism']
+
+    compartment1 = compartment[compartment["GO_Namespace"] == "cellular_component"]
+
+    # filter out compartment with "complex" or "subunit"
+    compartment2 = compartment1[~compartment1["GO_Name"].str.contains("complex")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("subunit")]
+    # firstly remove some general cellular component
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("snRNP")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("spindle")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("actin")]
+    compartment2 = compartment2[~compartment2["GO_Name"].str.contains("cellular_component")]
+
+    # analyze the annotation type
+    annotation_type = compartment2["Annot_Type"].tolist()
+    print("Annotation type:")
+    print(list(set(annotation_type)))
+    ratios = pd.Series(annotation_type).value_counts(normalize=True).round(4)
+    print(ratios)
+
+    # add annotation
+    go_evidence_codes = {
+    'IDA': 'Inferred from Direct Assay',
+    'IEA': 'Inferred from Electronic Annotation',
+    'HDA': 'Inferred from High Throughput Direct Assay',
+    'IBA': 'Inferred from Biological aspect of Ancestor',
+    'TAS': 'Traceable Author Statement',
+    'ISA': 'Inferred from Sequence Alignment',
+    'ND': 'No biological Data available',
+    'IPI': 'Inferred from Physical Interaction',
+    'NAS': 'Non-traceable Author Statement',
+    'ISS': 'Inferred from Sequence or structural Similarity',
+    'IMP': 'Inferred from Mutant Phenotype',
+    'IC': 'Inferred by Curator',
+    'EXP': 'Inferred from Experiment',
+    'IGI': 'Inferred from Genetic Interaction',
+    'ISM': 'Inferred from Sequence Model',
+    'ISO': 'Inferred from Sequence Orthology'}
+
+    g1 = ['EXP', 'IDA', 'IPI', 'IMP', 'IGI', 'HDA', 'ISS', 'ISO', 'IBA', 'TAS'] # Experimental (EXP, IDA, IPI, IMP, IGI, HDA)。Computational (ISS, ISO, IBA) + Author Statement (TAS)。
+    exp = [
+    'IDA',  # Inferred from Direct Assay (直接实验测定)
+    'HDA',  # Inferred from High Throughput Direct Assay (高通量直接实验)
+    'IPI',  # Inferred from Physical Interaction (物理相互作用实验)
+    'IMP',  # Inferred from Mutant Phenotype (突变体表型实验)
+    'IGI',  # Inferred from Genetic Interaction (遗传相互作用实验)
+    'IC',   # Inferred by Curator (人工curator推断)
+    'EXP',  # Inferred from Experiment (实验证据伞状代码)
+    'TAS',  # Traceable Author Statement (可追溯作者声明，已弃用)
+    'NAS',  # Non-traceable Author Statement (不可追溯作者声明，已弃用)
+        ]
+
+
+    comput = [
+    'IEA',  # Inferred from Electronic Annotation (纯电子/自动注释)
+    'IBA',  # Inferred from Biological aspect of Ancestor (系统发育祖先推断)
+    'ISA',  # Inferred from Sequence Alignment (序列比对)
+    'ISS',  # Inferred from Sequence or structural Similarity (序列/结构相似性，广义)
+    'ISM',  # Inferred from Sequence Model (序列模型)
+    'ISO'   # Inferred from Sequence Orthology (正交同源性)
+    ]
+
+    # here if we remove "computational"
+    # it seems that this method is wrong, as a protein could be located in multiple compartment. Thus it removes too much information
+    compartment_with_evidence = compartment2[compartment2["Annot_Type"].isin(exp)]
+    compartment_with_computation = compartment2[compartment2["Annot_Type"].isin(comput)]
+
+    len(set(compartment_with_evidence["Systematic_name"].tolist()))
+    len(set(compartment_with_computation["Systematic_name"].tolist()))
+
+    # in one procedure, if a protein has no compartment annotation from manual and high-throughput, then the computational is used!
+    # compartment_addition = compartment_with_computation[~compartment_with_computation["Systematic_name"].isin(compartment_with_evidence["Systematic_name"])]
+    # compartment_combine = pd.concat([compartment_with_evidence, compartment_addition])
+
+    # just for the test
+    # compartment_combine_test = compartment_combine[compartment_combine['GO_Name'] == "nuclear membrane"]
+
+    # build the dict
+    compartment_dict_all = {}
+    for i, x in compartment2.iterrows():
+        print(i, x)
+        if x['GO_Name'] in compartment_dict_all.keys():
+            compartment_dict_all[x['GO_Name']] = list(set(compartment_dict_all[x['GO_Name']] + [x["Systematic_name"]]))
+        else:
+            compartment_dict_all[x['GO_Name']] = list(set([x["Systematic_name"]]))
+    # filter
+    compartment_dict_all0 = {}
+    for key in compartment_dict_all.keys():
+        print(key)
+        value = compartment_dict_all[key]
+        if len(value) >= 6:
+            compartment_dict_all0[key] = value
+        else:
+            pass
+
+    # for compartment annotation from manual evidence
+    compartment_dict2 = {}
+    for i, x in compartment_with_evidence.iterrows():
+        print(i, x)
+        if x['GO_Name'] in compartment_dict2.keys():
+            compartment_dict2[x['GO_Name']] = list(set(compartment_dict2[x['GO_Name']] + [x["Systematic_name"]]))
+        else:
+            compartment_dict2[x['GO_Name']] = list(set([x["Systematic_name"]]))
+    # filter
+    compartment_dict20 = {}
+    for key in compartment_dict2.keys():
+        print(key)
+        value = compartment_dict2[key]
+        if len(value) >= 6:
+            compartment_dict20[key] = value
+        else:
+            pass
+
+    # for compartment annotation from manual evidence
+    compartment_dict3 = {}
+    for i, x in compartment_with_computation.iterrows():
+        print(i, x)
+        if x['GO_Name'] in compartment_dict3.keys():
+            compartment_dict3[x['GO_Name']] = list(set(compartment_dict3[x['GO_Name']] + [x["Systematic_name"]]))
+        else:
+            compartment_dict3[x['GO_Name']] = list(set([x["Systematic_name"]]))
+    # filter
+    compartment_dict30 = {}
+    for key in compartment_dict3.keys():
+        print(key)
+        value = compartment_dict3[key]
+        if len(value) >= 6:
+            compartment_dict30[key] = value
+        else:
+            pass
+
+    # if filter == "Yes":
+    #    return compartment_dict20
+    # else:
+    #    return compartment_dict_all0
+
+    if type == "all":
+        return compartment_dict_all0
+    elif type == "manual":
+        return compartment_dict20
+    else:
+        return compartment_dict30

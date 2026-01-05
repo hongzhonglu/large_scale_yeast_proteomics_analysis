@@ -1,0 +1,53 @@
+!
+!Date: 01/05/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+VAR1	Q0140	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+VAR1	Q0140	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2019-09-24	Groot GS, et al. (1979) PMID:384172
+MRP21	YBL090W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Green-Willms NS, et al. (1998) PMID:9528754
+MRPS9	YBR146W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRPS5	YBR251W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRP10	YDL045W-A	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Kitakawa M, et al. (1997) PMID:9151978
+MRP10	YDL045W-A	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Jin C, et al. (1997) PMID:9065385
+EHD3	YDR036C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2018-08-30	Desai N, et al. (2017) PMID:28154081
+RSM10	YDR041W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+RSM24	YDR175C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRPS28	YDR337W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRP1	YDR347W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+RSM28	YDR494W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Williams EH, et al. (2005) PMID:15701796
+RSM18	YER050C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+RSM23	YGL129C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRP13	YGR084C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Kitakawa M, et al. (1997) PMID:9151978
+MRP13	YGR084C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Gan X, et al. (2002) PMID:12392552
+MRPS35	YGR165W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-05	Gan X, et al. (2002) PMID:12392552
+RSM27	YGR215W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRP4	YHL004W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+FYV4	YHR059W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2018-08-30	Desai N, et al. (2017) PMID:28154081
+PPE1	YHR075C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2022-10-21	Kitakawa M, et al. (1997) PMID:9151978
+RSM25	YIL093C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+RSM26	YJR101W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+RSM7	YJR113C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRP17	YKL003C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Kitakawa M, et al. (1997) PMID:9151978
+MRP17	YKL003C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Gan X, et al. (2002) PMID:12392552
+RSM22	YKL155C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+QRI5	YLR204W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2022-06-20	Desai N, et al. (2017) PMID:28154081
+MRPS8	YMR158W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-05	Gan X, et al. (2002) PMID:12392552
+MRPS17	YMR188C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-05	Gan X, et al. (2002) PMID:12392552
+15S_RRNA	YNCQ0002W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2015-06-25	Osinga KA, et al. (1981) PMID:6262728
+SWS2	YNL081C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2018-08-30	Desai N, et al. (2017) PMID:28154081
+NAM9	YNL137C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRPS18	YNL306W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Kitakawa M, et al. (1997) PMID:9151978
+MRPS18	YNL306W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-11-22	Gan X, et al. (2002) PMID:12392552
+MRPS12	YNR036C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2018-08-30	Desai N, et al. (2017) PMID:28154081
+MRPS12	YNR036C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		ISA with P0A7S3	manually curated	SGD	2013-08-07	Gan X, et al. (2002) PMID:12392552
+RSM19	YNR037C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+PET123	YOR158W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRPS16	YPL013C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-05	Gan X, et al. (2002) PMID:12392552
+MRP51	YPL118W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2013-08-07	Green-Willms NS, et al. (1998) PMID:9528754
+MRP51	YPL118W	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
+MRP2	YPR166C	part of	GO:0005763	mitochondrial small ribosomal subunit	cellular component		IDA	manually curated	SGD	2014-12-08	Saveanu C, et al. (2001) PMID:11278769
