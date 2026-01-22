@@ -1,0 +1,165 @@
+!
+!Date: 01/19/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+CoQ biosynthetic complex	CPX-1155	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	ComplexPortal	2018-07-23	He CH, et al. (2014) PMID:24406904
+COX1 pre-assembly complex	CPX-1423	located in	GO:0005743	mitochondrial inner membrane	cellular component		BSR	manually curated	ComplexPortal	2018-03-27	Fontanesi F, et al. (2011) PMID:21068384
+54S mitochondrial large ribosomal subunit	CPX-1602	located in	GO:0005743	mitochondrial inner membrane	cellular component		BSR	manually curated	ComplexPortal	2018-03-27	Pfeffer S, et al. (2015) PMID:25609543
+37S mitochondrial small ribosomal subunit	CPX-1603	located in	GO:0005743	mitochondrial inner membrane	cellular component		BSR	manually curated	ComplexPortal	2018-03-27	Pfeffer S, et al. (2015) PMID:25609543
+TIM22 mitochondrial inner membrane twin-pore carrier translocase complex	CPX-1629	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	ComplexPortal	2014-10-16	Koehler CM, et al. (2000) PMID:10648604
+m-AAA protease complex	CPX-1654	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	ComplexPortal	2019-10-29	Arlt H, et al. (1996) PMID:8681382
+i-AAA complex	CPX-1655	located in	GO:0005743	mitochondrial inner membrane	cellular component		BSR	manually curated	ComplexPortal	2019-10-30	Dunn CD, et al. (2008) PMID:18843051
+Mitochondrial inner membrane peptidase complex	CPX-1892	located in	GO:0005743	mitochondrial inner membrane	cellular component		BSR	manually curated	ComplexPortal	2020-02-03	Jan PS, et al. (2000) PMID:10821182
+Mitochondrial pyruvate carrier, fermentative isoform	CPX-302	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2024-10-30	Bricker DK, et al. (2012) PMID:22628558
+INAC inner membrane assembly complex	CPX-3279	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	ComplexPortal	2015-04-10	Lytovchenko O, et al. (2014) PMID:24942160
+Mitochondrial proton-transporting ATP synthase complex	CPX-3281	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	ComplexPortal	2020-09-09	Tzagoloff A and Meagher P (1971) PMID:4256832
+TIM23 mitochondrial inner membrane pre-sequence translocase complex, motor variant	CPX-539	located in	GO:0005743	mitochondrial inner membrane	cellular component		BSR	manually curated	ComplexPortal	2020-09-28	van der Laan M, et al. (2005) PMID:16107694
+Mitochondrial respiratory chain complex II	CPX-565	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	ComplexPortal	2018-01-11	Oyedotun KS and Lemire BD (1999) PMID:9929002
+Mitochondrial respiratory chain complex III	CPX-567	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	ComplexPortal	2020-08-25	Cruciat CM, et al. (2000) PMID:10764779
+TIM23 mitochondrial inner membrane pre-sequence translocase complex, sort variant	CPX-6127	located in	GO:0005743	mitochondrial inner membrane	cellular component		BSR	manually curated	ComplexPortal	2020-09-28	van der Laan M, et al. (2005) PMID:16107694
+PET9	YBL030C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lauquin G, et al. (1976) PMID:795470
+MRX3	YBL095W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2015-01-14	Jin K, et al. (2015) PMID:25546499
+SCO1	YBR037C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Buchwald P, et al. (1991) PMID:1944230
+TCM62	YBR044C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dibrov E, et al. (1998) PMID:9822678
+AAC3	YBR085W	located in	GO:0005743	mitochondrial inner membrane	cellular component		ISA with PET9	manually curated	SGD	2014-10-02	Kolarov J, et al. (1990) PMID:2165073
+AAC3	YBR085W	located in	GO:0005743	mitochondrial inner membrane	cellular component		ISA with AAC1	manually curated	SGD	2014-10-02	Kolarov J, et al. (1990) PMID:2165073
+MBA1	YBR185C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Preuss M, et al. (2001) PMID:11381092
+MRX9	YDL027C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-07-19	Chagas JAC, et al. (2022) PMID:35779633
+DMO2	YDL157C	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2025-02-25	Badrie S, et al. (2025) PMID:39753782
+DLD1	YDL174C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Rojo EE, et al. (1998) PMID:9525904
+MRX19	YDL183C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Zotova L, et al. (2010) PMID:20197279
+TIM22	YDL217C	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2021-10-29	Kumar A, et al. (2020) PMID:32591483
+TGL2	YDR058C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2025-02-04	Tiku V, et al. (2025) PMID:39863106
+PET100	YDR079W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Forsha D, et al. (2001) PMID:11498004
+PET100	YDR079W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Church C, et al. (2005) PMID:15507444
+COX26	YDR119W-A	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Vukotic M, et al. (2012) PMID:22342701
+COQ4	YDR204W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Belogrudov GI, et al. (2001) PMID:11469793
+COX20	YDR231C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hell K, et al. (2000) PMID:10671482
+FMN1	YDR236C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Santos MA, et al. (2000) PMID:10887197
+MRX10	YDR282C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Garcia-Diaz B, et al. (2012) PMID:23022099
+ATP22	YDR350C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Helfenbein KG, et al. (2003) PMID:12646576
+BCS1	YDR375C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Fölsch H, et al. (1996) PMID:8599931
+ARH1	YDR376W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lacour T, et al. (1998) PMID:9727014
+COI1	YDR381C-A	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Singhal RK, et al. (2017) PMID:28794267
+SHE9	YDR393W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Messerschmitt M, et al. (2003) PMID:12591915
+AFG1	YEL052W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Khalimonchuk O, et al. (2007) PMID:17430883
+SOM1	YEL059C-A	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Bauerfeind M, et al. (1998) PMID:9604886
+HEM14	YER014W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Camadro JM, et al. (1994) PMID:7798202
+HEM14	YER014W	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2023-12-12	Camadro JM, et al. (1994) PMID:7798202
+AFG3	YER017C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tauer R, et al. (1994) PMID:7926051
+COX15	YER141W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Glerum DM, et al. (1997) PMID:9228094
+PET122	YER153C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Naithani S, et al. (2003) PMID:12529447
+PET122	YER153C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	McMullin TW and Fox TD (1993) PMID:8389363
+ADK2	YER170W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Gu Y, et al. (2005) PMID:15753074
+ADK2	YER170W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Schricker R, et al. (1995) PMID:8537371
+FMP32	YFL046W	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2020-09-29	Zulkifli M, et al. (2020) PMID:32978391
+MRX20	YFR045W	located in	GO:0005743	mitochondrial inner membrane	cellular component		ISS with MIR1	manually curated	SGD	2019-08-09	Belenkiy R, et al. (2000) PMID:10930523
+MPC1	YGL080W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Herzig S, et al. (2012) PMID:22628554
+MPC1	YGL080W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Bricker DK, et al. (2012) PMID:22628558
+COX18	YGR062C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Saracco SA and Fox TD (2002) PMID:11950926
+TPC1	YGR096W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Marobbio CM, et al. (2002) PMID:12411483
+PCP1	YGR101W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	McQuibban GA, et al. (2003) PMID:12774122
+CLD1	YGR110W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Baile MG, et al. (2013) PMID:23637464
+SHY1	YGR112W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mashkevich G, et al. (1997) PMID:9162072
+SHY1	YGR112W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Barrientos A, et al. (2004) PMID:15306853
+PHB1	YGR132C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nijtmans LG, et al. (2000) PMID:10835343
+PHB1	YGR132C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Berger KH and Yaffe MP (1998) PMID:9632789
+PET54	YGR222W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	McMullin TW and Fox TD (1993) PMID:8389363
+PHB2	YGR231C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nijtmans LG, et al. (2000) PMID:10835343
+PHB2	YGR231C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Berger KH and Yaffe MP (1998) PMID:9632789
+COQ6	YGR255C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Gin P, et al. (2003) PMID:12721307
+LEU5	YHR002W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Prohl C, et al. (2001) PMID:11158296
+MPC2	YHR162W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Bricker DK, et al. (2012) PMID:22628558
+MTG2	YHR168W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Datta K, et al. (2005) PMID:15591131
+MDM31	YHR194W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dimmer KS, et al. (2005) PMID:15631992
+AIM18	YHR198C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2023-02-06	Schmitz JM, et al. (2023) PMID:36739946
+AIM46	YHR199C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2023-02-06	Schmitz JM, et al. (2023) PMID:36739946
+COA1	YIL157C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Mick DU, et al. (2007) PMID:17882259
+INA22	YIR024C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Lytovchenko O, et al. (2014) PMID:24942160
+COX16	YJL003W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Carlson CG, et al. (2003) PMID:12446688
+COA3	YJL062W-A	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Fontanesi F, et al. (2011) PMID:21068384
+COA3	YJL062W-A	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mick DU, et al. (2010) PMID:20876281
+NUC1	YJL208C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Büttner S, et al. (2007) PMID:17244531
+NUC1	YJL208C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dake E, et al. (1988) PMID:3286639
+PET191	YJR034W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Khalimonchuk O, et al. (2008) PMID:18503002
+SSC1	YJR045C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Schneider HC, et al. (1994) PMID:7935837
+MIR1	YJR077C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Dietmeier K, et al. (1993) PMID:8245029
+AIM24	YJR080C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Harner ME, et al. (2014) PMID:24714493
+CCE1	YKL011C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ezekiel UR and Zassenhaus HP (1993) PMID:8413191
+OAC1	YKL120W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Palmieri L, et al. (1999) PMID:10428783
+MIA40	YKL195W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Terziyska N, et al. (2005) PMID:15620710
+MIA40	YKL195W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Naoé M, et al. (2004) PMID:15364952
+MIC60	YKR016W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Rabl R, et al. (2009) PMID:19528297
+UTH1	YKR042W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-25	Welter E, et al. (2013) PMID:23910823
+MRS4	YKR052C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wiesenberger G, et al. (1991) PMID:1703236
+OMA1	YKR087C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kaser M, et al. (2003) PMID:12963738
+PET309	YLR067C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-25	Manthey GM, et al. (1998) PMID:9692914
+FMP25	YLR077W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Mathieu L, et al. (2011) PMID:21168530
+SLS1	YLR139C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Rouillard JM, et al. (1996) PMID:8917313
+SHH4	YLR164W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kerscher O, et al. (2000) PMID:10637294
+MDL1	YLR188W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Young L, et al. (2001) PMID:11251115
+UPS1	YLR193C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2016-06-13	Watanabe Y, et al. (2015) PMID:26235513
+COQ9	YLR201C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hsieh EJ, et al. (2007) PMID:17391640
+COQ9	YLR201C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Johnson A, et al. (2005) PMID:16027161
+QRI5	YLR204W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Barros MH, et al. (2006) PMID:16339141
+SYM1	YLR251W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Trott A and Morano KA (2004) PMID:15189984
+SYM1	YLR251W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2014-01-17	Reinhold R, et al. (2012) PMID:23045398
+CQD2	YLR253W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-12-03	Tan T, et al. (2013) PMID:23781023
+PUT7	YLR283W	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2020-09-29	Zulkifli M, et al. (2020) PMID:32978391
+ATP10	YLR393W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IPI with ATP6	manually curated	SGD	2013-08-07	Tzagoloff A, et al. (2004) PMID:14998992
+RCF1	YML030W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Chen YC, et al. (2012) PMID:22405070
+RCF1	YML030W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Strogolova V, et al. (2012) PMID:22310663
+RCF1	YML030W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Vukotic M, et al. (2012) PMID:22342701
+COX14	YML129C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Barrientos A, et al. (2004) PMID:15306853
+MSS1	YMR023C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Broadley SA, et al. (2001) PMID:11604502
+CCS1	YMR038C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sturtz LA, et al. (2001) PMID:11500508
+AAC1	YMR056C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dyall SD, et al. (2003) PMID:12740376
+YTA12	YMR089C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tzagoloff A, et al. (1994) PMID:7929327
+MTG1	YMR097C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Barrientos A, et al. (2003) PMID:12808030
+ATP25	YMR098C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Zeng X, et al. (2008) PMID:18216280
+MGR3	YMR115W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dunn CD, et al. (2008) PMID:18843051
+MME1	YMR166C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2015-01-20	Cui Y, et al. (2015) PMID:25585246
+PET111	YMR257C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Green-Willms NS, et al. (2001) PMID:11106667
+ATM1	YMR301C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Leighton J and Schatz G (1995) PMID:7828591
+YME2	YMR302C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Hanekamp T and Thorsness PE (1996) PMID:8649384
+PSD1	YNL169C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Tamura Y, et al. (2012) PMID:23124206
+MDJ2	YNL328C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Westermann B and Neupert W (1997) PMID:9325105
+RCF2	YNR018W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Vukotic M, et al. (2012) PMID:22342701
+MRX15	YNR040W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2019-03-19	Möller-Hergt BV, et al. (2018) PMID:30091672
+PET494	YNR045W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	McMullin TW and Fox TD (1993) PMID:8389363
+COQ10	YOL008W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Barros MH, et al. (2005) PMID:16230336
+MDM38	YOL027C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nowikovsky K, et al. (2004) PMID:15138253
+MDM38	YOL027C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Frazier AE, et al. (2006) PMID:16476776
+COQ3	YOL096C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Poon WW, et al. (1999) PMID:10419476
+CYC2	YOR037W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-25	Bernard DG, et al. (2005) PMID:16207709
+CRC1	YOR100C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	van Roermund CW, et al. (1999) PMID:10545096
+CAT5	YOR125C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Jonassen T, et al. (1998) PMID:9452453
+MDM32	YOR147W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Dimmer KS, et al. (2005) PMID:15631992
+HEM15	YOR176W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Prasad AR and Dailey HA (1995) PMID:7629135
+HEM15	YOR176W	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2023-12-12	Prasad AR and Dailey HA (1995) PMID:7629135
+GEP3	YOR205C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Paul MF, et al. (2012) PMID:22621929
+MGM1	YOR211C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Zick M, et al. (2009) PMID:19505460
+ODC2	YOR222W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Palmieri L, et al. (2001) PMID:11013234
+PNT1	YOR266W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	He S and Fox TD (1999) PMID:10490599
+MRS2	YOR334W	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2023-10-17	Bui DM, et al. (1999) PMID:10400670
+MRS2	YOR334W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Bui DM, et al. (1999) PMID:10400670
+MFM1	YPL060W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Gregan J, et al. (2001) PMID:11254124
+INA17	YPL099C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Lytovchenko O, et al. (2014) PMID:24942160
+FMP30	YPL103C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kuroda T, et al. (2011) PMID:21306442
+CQD1	YPL109C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2023-04-25	Khosravi S, et al. (2023) PMID:37073556
+COX11	YPL132W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Khalimonchuk O, et al. (2005) PMID:15776235
+COX11	YPL132W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Pungartnik C, et al. (1999) PMID:10501934
+ODC1	YPL134C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Palmieri L, et al. (2001) PMID:11013234
+MDL2	YPL270W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Young L, et al. (2001) PMID:11251115
+MRA1	YPR010C-A	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2025-04-21	Moretti-Horten DN, et al. (2024) PMID:38508182
+MRX21	YPR011C	located in	GO:0005743	mitochondrial inner membrane	cellular component		ISM	manually curated	SGD	2013-12-12	Belenkiy R, et al. (2000) PMID:10930523
+YME1	YPR024W	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2025-02-11	Weber ER, et al. (1996) PMID:8688560
+YME1	YPR024W	is active in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2025-02-11	Wu X, et al. (2018) PMID:29138251
+JID1	YPR061C	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2020-11-13	Bursać D and Lithgow T (2009) PMID:19682992
+YLH47	YPR125W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Frazier AE, et al. (2006) PMID:16476776
+TAZ1	YPR140W	located in	GO:0005743	mitochondrial inner membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Claypool SM, et al. (2006) PMID:16880272

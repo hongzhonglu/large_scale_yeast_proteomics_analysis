@@ -1,0 +1,22 @@
+!
+!Date: 01/19/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+MKT1-PBP1 translation regulation complex	CPX-1295	located in	GO:0005840	ribosome	cellular component		IPI	manually curated	ComplexPortal	2017-12-18	Tadauchi T, et al. (2004) PMID:15082763
+Elongation Factor eEF1 complex, variant CAM1	CPX-2854	located in	GO:0005840	ribosome	cellular component		IDA	manually curated	ComplexPortal	2016-06-22	Algire MA, et al. (2002) PMID:12008673
+MTQ2-TRM112 eRF1 methyltransferase complex	CPX-418	located in	GO:0005840	ribosome	cellular component		BSR	manually curated	ComplexPortal	2016-06-22	Heurgué-Hamard V, et al. (2006) PMID:17008308
+Elongation Factor eEF1 complex, variant TEF4	CPX-425	located in	GO:0005840	ribosome	cellular component		IDA	manually curated	ComplexPortal	2016-06-22	Algire MA, et al. (2002) PMID:12008673
+Eukaryotic translation initiation factor 2 complex	CPX-427	located in	GO:0005840	ribosome	cellular component		IDA	manually curated	ComplexPortal	2016-06-22	Algire MA, et al. (2002) PMID:12008673
+Eukaryotic translation initiation factor 4F complex, variant TIF4631	CPX-430	located in	GO:0005840	ribosome	cellular component		BSR	manually curated	ComplexPortal	2016-06-22	Neff CL and Sachs AB (1999) PMID:10409745
+Eukaryotic translation initiation factor 4F complex, variant TIF4632	CPX-431	located in	GO:0005840	ribosome	cellular component		BSR	manually curated	ComplexPortal	2016-06-22	Neff CL and Sachs AB (1999) PMID:10409745
+SED1	YDR077W	located in	GO:0005840	ribosome	cellular component		IDA	manually curated	SGD	2013-08-07	Oender K, et al. (2003) PMID:12627396
+PAB1	YER165W	located in	GO:0005840	ribosome	cellular component		IDA	manually curated	SGD	2013-08-07	Proweller A and Butler JS (1996) PMID:8631901
+ZUO1	YGR285C	located in	GO:0005840	ribosome	cellular component		IDA	manually curated	SGD	2013-08-07	Meyer AE, et al. (2007) PMID:17242366
+TEF4	YKL081W	located in	GO:0005840	ribosome	cellular component		TAS	manually curated	SGD	2013-08-07	McCarthy JE (1998) PMID:9841679
+YEF3	YLR249W	located in	GO:0005840	ribosome	cellular component		IDA	manually curated	SGD	2013-08-07	Gontarek RR, et al. (1998) PMID:9553076
+RRP12	YPL012W	located in	GO:0005840	ribosome	cellular component		TAS	manually curated	SGD	2013-08-07	Fatica A and Tollervey D (2002) PMID:12067653

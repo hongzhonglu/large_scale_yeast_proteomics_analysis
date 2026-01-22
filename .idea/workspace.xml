@@ -5,11 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/ProMassRatio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.6 gene_compartment_for_new_version_dataset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/organelle_interaction_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/organelle_interaction_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026/mitochondrial_small_ribosomal_subunit_annotations.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026/nucleus_annotations_2026.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mass_fraction_new_way.xlsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_inner_membrane_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_intermembrane_space_annotations_manual_v3.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v3.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrial_matrix_annotations_manual_v3.xlsx" afterDir="false" />
@@ -121,7 +128,7 @@
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.3.1 omics_collect_preprocess_for_protein_copy">
+  <component name="RunManager" selected="Python.2.5 gene_compartment_for_sce_main_organelle">
     <configuration name="2.3 proteomics_abundance_unit_unify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="De-nevo-protein-3D-structure-yeast" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -137,6 +144,27 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/2.3 proteomics_abundance_unit_unify.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2.5 gene_compartment_for_sce_main_organelle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="De-nevo-protein-3D-structure-yeast" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/omics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -166,6 +194,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2.5 gene_compartment_for_sce_main_organelle" />
         <item itemvalue="Python.3.1 omics_collect_preprocess_for_protein_copy" />
         <item itemvalue="Python.2.3 proteomics_abundance_unit_unify" />
       </list>
@@ -378,12 +407,12 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>662</line>
+          <line>649</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>712</line>
+          <line>699</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -432,9 +461,29 @@
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py</url>
-          <line>227</line>
+          <url>file://$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py</url>
+          <line>265</line>
           <option name="timeStamp" value="85" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py</url>
+          <line>264</line>
+          <option name="timeStamp" value="86" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py</url>
+          <line>263</line>
+          <option name="timeStamp" value="87" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>184</line>
+          <option name="timeStamp" value="90" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>237</line>
+          <option name="timeStamp" value="91" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

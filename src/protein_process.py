@@ -591,20 +591,7 @@ def ProMassRatio_Organelle(protein_abundance, compartment_type="organelle"):
             # col0 = "Glucose_phase_rep1(g/gDW)"
             pro_abundance = protein_abundance[['gene', col0]]
             pro_abundance.columns = ['gene', 'g/gDW']
-
-            '''if y == "plasma membrane":
-                genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
-            elif y == "fungal-type vacuole membrane":
-                genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
-                genes_select = [x for x in genes_select if
-                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
-            elif y == "endosome":
-                genes_select = compartment[y]
-                genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
-            else:
-                genes_select = compartment[y]'''
             genes_select = compartment[y]
-
             # get the sum
             pro_abundance.fillna(0, axis=1, inplace=True)
             pro_select = pro_abundance[pro_abundance['gene'].isin(genes_select)]
