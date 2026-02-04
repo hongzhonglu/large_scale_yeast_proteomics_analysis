@@ -60,15 +60,14 @@ compartment_list = list(compartment_all.keys())
 compartment_all123 = {k: v for k, v in compartment_all.items() if k == "mitochondrion"}  # mitochondrion
 compartment_all_other = {k: v for k, v in compartment_all.items() if "itochondri" not in k}
 compartment_all_f = {**compartment_all123, **compartment_all_other}
+
 from collections import defaultdict
 def count_keys_per_value_optimized(input_dict):
     # 自动初始化值为 list 类型
     result = defaultdict(list)
-
     for key, value_list in input_dict.items():
         for item in value_list:
             result[item].append(key)
-
     return dict(result)  # 转回普通字典返回
 
 output = count_keys_per_value_optimized(compartment_all_f)
@@ -76,6 +75,8 @@ output_f = {k: v for k, v in output.items() if 'mitochondrion' in v} #mitochondr
 # check which protein exist only in mitochondrion
 output_f2 = {k: v for k, v in output_f.items() if len(v) <= 1}
 compartment1['m_sgd_core'] = list(output_f2.keys())
+
+
 
 
 
@@ -99,7 +100,12 @@ gene_sgd_2026.columns =['short_name','gene']
 
 compartment1['mitochondrion_sgd_2026'] = list(set(gene_sgd_2026['gene'].tolist()))
 ','.join(list(set(gene_sgd_2026['gene'].tolist())))
-# enrichment analysis, find 27 genes related to EMP, only 8 genes mainly exist in mitochrondria
+
+
+
+
+# enrichment analysis, find 27 genes related to EMP, only 8 genes mainly exist in mitochondria.
+# how to find another 9 proteins not in mitochondria.
 non_mitochondrial_proteins = [
     'YFR053C',  # HXK1, glycolysis
     'YDR050C',  # TPI1, glycolysis
@@ -128,7 +134,13 @@ non_mitochondrial_proteins = [
     "YAL001C",  # TFC3: 细胞核转录因子
     "YAL011W",  # SWC3: 细胞核 SWR1 复合物亚基
     "YOR151C",  # YHB1: 胞质氧化氮双加氧酶
-] # 这些蛋白的线粒体注解多为 HDA（高通量），而非 IDA/IMP 等直接证据支持的主要定位。
+    "YGL008C",  # (PMA1): 质膜 H+-ATPase， 丰度极高
+    "YDR342C",  # 葡萄糖转运
+    "YDR343C",  # 葡萄糖转运
+    "YDR233C"   # Reticulon protein; involved in nuclear pore assembly and maintenance of tubular ER morphology;
+]
+
+# 这些蛋白的线粒体注解多为 HDA（高通量），而非 IDA/IMP 等直接证据支持的主要定位。
 compartment1['mitochondrion_sgd_2026_reduce_glycolysis_refine'] = list(set(list(set(gene_sgd_2026['gene'].tolist())))-set(non_mitochondrial_proteins))
 compartment1['mitochondrion_intersection'] = list(set(compartment1['mitochondrion_sgd_2026_reduce_glycolysis_refine']) & set(compartment1['m_marcel']))
 
@@ -199,6 +211,8 @@ df00 = df[df['Evidence'].str.contains('ISS')]
 # only select "located"
 df = df[df['Qualifier']=='located in']
 df = df[~df['Systematic Name/Complex Accession'].str.contains('CPX-')]
+df = df[~df['Systematic Name/Complex Accession'].str.contains('YNC')]
+
 gene_sgd_2026 = df.iloc[:,0:2]
 gene_sgd_2026.columns =['short_name','gene']
 compartment1['cytosol_sgd_2026'] = list(set(gene_sgd_2026['gene'].tolist()))
@@ -348,6 +362,8 @@ df_renamed.to_excel("data/sce_compartment_curation/2026_curated/nucleolus_annota
 
 
 
+#compartment1['m_latest'] = gene_list300['gene'].tolist() # from part 2.7
+#compartment1['m_latest2'] = gene_double_check # from part 2.7
 
 def ProMassRatio_Organelle(protein_abundance, compartment=compartment1):
     """
@@ -540,6 +556,7 @@ nucleus_refine.to_excel('data/sce_compartment_curation/2026_curated/nucleus_anno
 endosome = pd.read_csv("data/sce_compartment_curation/2026/endosome_annotations.txt",sep='\t', skiprows=8, header=0)
 endosome = polish_annotaiton(endosome)
 endosome.to_excel('data/sce_compartment_curation/2026_curated/endosome_annotations.xlsx')
+
 
 # other
 endoplasmic_reticulum = pd.read_csv("data/sce_compartment_curation/2026/endoplasmic_reticulum_annotations.txt",sep='\t', skiprows=8, header=0)
