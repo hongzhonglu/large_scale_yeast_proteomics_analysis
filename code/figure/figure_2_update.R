@@ -106,6 +106,13 @@ df1 <- data.frame(value=ss)
 
 
 # if based on the main organelle
+# define main organelle
+main_organelle <- organelle_df[organelle_df$mean >0.003, ]
+organelle <- main_organelle$compartment
+to_remove <- c("mitochondrion_unassigned", "vacuole", "cytoplasm")
+main_organelle <- organelle[!(organelle %in% to_remove)]
+
+
 ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelle, ]
 ProMassRatio_ss <- ProMassRatio2[, colnames(ProMassRatio2) %in% physiology_collection0$sampleID]
 # correlation analysis of different samples
@@ -130,6 +137,7 @@ df2$Type = "Main organelles"
 df3$Type = "Sub-organelles"
 
 updated <- rbind(df1, df2, df3)
+updated <- df2
 ggplot(updated, aes(x=value, color=Type, fill=Type)) +
   geom_density(alpha=0.3) +
   xlim(0.5, 1) +
@@ -138,6 +146,9 @@ ggplot(updated, aes(x=value, color=Type, fill=Type)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20)) +
   labs(x = "Correlation coefficient between samples",
        y = "Density") 
+
+
+
 
 # heatmap of mass fraction of main organelle in each unique condition?
 library("pheatmap")

@@ -184,9 +184,17 @@ glycolysis0 = glycolysis.split(', ')
 compartment1['plasma_sgd_2026_refine_reduce_glycolysis'] = list(set(list(set(gene_sgd_2026['gene'].tolist())))-set(glycolysis0))
 ## 结论 之前plasma中包括10个糖酵解蛋白，去掉之后mass fraction降低50%。
 
+','.join(compartment1['plasma_sgd_2026_refine_reduce_glycolysis'])
+
+# go term -- membrane, further filtering based on membrane annotation
+membrane = 'YDR055W, YPR192W, YKL046C, YFL026W, YJL170C, YOR273C, YHL016C, YNL294C, YNL173C, YML132W, YBR078W, YNR002C, YER060W, YNL323W, YOR381W, YPR149W, YDR032C, YOR030W, YBR054W, YLR092W, YBR043C, YIR019C, YML047C, YDR459C, YIL140W, YJL171C, YGR031C-A, YGR224W, YDL135C, YKR105C, YKL209C, YLL052C, YLR025W, YOL122C, YPR124W, YCR024C-A, YLR081W, YIR006C, YMR031C, YOL158C, YJL212C, YHR092C, YGR213C, YBR068C, YGL053W, YDR033W, YNL098C, YLR120C, YHR048W, YER123W, YML013W, YGL077C, YGL186C, YDL035C, YCR037C, YJL062W, YBR294W, YDR276C, YBL069W, YOL002C, YOR348C, YKR106W, YNL194C, YDR522C, YKL178C, YOR161C, YLR121C, YMR068W, YDL012C, YJL129C, YGL051W, YGL008C, YHR135C, YDR384C, YOR008C, YBR295W, YBR296C, YPR194C, YHR094C, YNL291C, YOR390W, YGR138C, YGR060W, YJR152W, YKL220C, YJL093C, YLR194C, YER185W, YDR040C, YER118C, YOR306C, YAL030W, YJL145W, YMR034C, YIL118W, YHL040C, YBR132C, YLR096W, YDR160W, YCL073C, YAR033W, YOR047C, YCL027W, YLL043W, YKR039W, YJR054W, YGL208W, YJR066W, YGR014W, YCR010C, YMR058W, YIL105C, YIL088C, YKL094W, YOR317W, YLR332W, YLR138W, YPR201W, YDL194W, YPR075C, YDL138W, YGR191W, YCR021C, YOL103W, YGR023W, YBL042C, YPR198W, YKR050W, YMR011W, YMR319C, YOR328W, YMR307W, YOR153W, YLR353W, YGR121C, YBR069C, YNR047W, YGR266W, YNL271C, YNL283C, YJR040W, YDL222C, YOL019W, YLL010C, YLR342W, YOR327C, YNL065W, YBR021W, YJL100W, YDR420W, YOR071C, YOR378W, YER020W, YML116W, YPL279C, YPL092W, YLR214W, YCL025C, YDL161W, YDR343C, YOL105C, YDR463W, YJR086W, YNL047C, YPL232W, YFR029W, YGR241C, YDR342C, YHR161C, YGL255W, YDR039C, YER056C, YJL058C, YOL009C, YOL078W, YLR310C, YGR055W, YLR019W, YGR217W, YPL265W, YER060W-A, YHR186C, YDL019C, YML052W, YDR345C, YJL156C, YAR031W, YNL154C, YOL152W, YDR210W, YIL147C, YHL044W, YPL036W, YPR165W, YPR032W, YKR093W, YOR011W, YKL126W, YNL142W, YNL275W, YLR237W, YBL029C-A, YMR017W, YOL020W, YDR011W, YIL121W, YLR130C, YGR041W, YCR075C, YGR198W, YOL109W, YOR104W, YNL192W, YDR536W, YMR183C, YOR171C, YOL130W, YGR260W, YOR086C, YPR156C, YCR098C, YLR373C, YIL120W, YIR038C, YKR055W, YDR034W-B, YDR208W, YDR090C, YER120W, YNL257C, YOR018W, YBR008C, YBR129C, YGR152C, YNR060W, YER145C, YKL217W, YJL198W, YLR413W, YPL058C, YEL063C, YHR096C, YGL114W, YLL028W, YNL180C, YML123C, YLR414C, YMR008C, YMR063W, YDR122W, YCR017C, YIL047C, YKL051W, YER143W, YBR016W, YHR005C, YNL268W, YOR101W, YMR238W, YGR197C, YPR159W, YDR093W, YDR038C, YLR229C, YGR281W, YLR020C, YNL231C, YFL005W, YKL203C, YLL061W, YDR497C, YPL274W, YCR028C, YGL084C, YCR004C, YER166W, YHR073W, YML125C, YFL050C, YLR411W, YGR065C, YMR215W, YBR086C'
+membrane_gene_list = membrane.split(', ')
+
 ### output ###
 df_update = df[df['Systematic Name/Complex Accession'].isin(compartment1['plasma_sgd_2026_refine_reduce_glycolysis'])]   # update the name
-df123 = df_update[df_update['Systematic Name/Complex Accession'].isin(sce_gene['GeneName'])]
+df1234 = df_update[df_update['Systematic Name/Complex Accession'].isin(sce_gene['GeneName'])]
+df123 = df1234[df1234['Systematic Name/Complex Accession'].isin(membrane_gene_list)]
+
 print("quality check")
 print(list(set(df['Systematic Name/Complex Accession'].tolist())-set(sce_gene['GeneName'].tolist())))
 df_renamed = df123.rename(columns={'Systematic Name/Complex Accession': 'gene'})
@@ -218,6 +226,8 @@ gene_sgd_2026.columns =['short_name','gene']
 compartment1['cytosol_sgd_2026'] = list(set(gene_sgd_2026['gene'].tolist()))
 ','.join(list(set(gene_sgd_2026['gene'].tolist())))
 
+#cytosol_double_check = list(set(compartment1['cytosol_sgd_2026']) & set(ribo_gene_double_check))
+#根据这个对比，cytosol中多了核糖体蛋白 YER117W
 # 根据查阅，cytosol中少了一个关键酶YCR012W
 supplementary_cytosol_proteins = [
     "YOL086C", # ADH1: 乙醇脱氢酶1，酵母丰度最高的蛋白之一
@@ -227,6 +237,7 @@ supplementary_cytosol_proteins = [
     "YBR118W", # TEF2: 翻译延伸因子 EF-1 alpha，与 TEF1 共同占据巨大质量比
     "YCR012W" ] #3-磷酸甘油酸激酶
 compartment1['cytosol'] = list(set(gene_sgd_2026['gene'].tolist())) + supplementary_cytosol_proteins
+compartment1['cytosol'] = [x for x in compartment1['cytosol'] if x !='YER117W']
 
 ### output ###
 df_update = df[df['Systematic Name/Complex Accession'].isin(compartment1['cytosol'])]   # update the name
@@ -577,4 +588,3 @@ Golgi_apparatus.to_excel('data/sce_compartment_curation/2026_curated/Golgi_appar
 Golgi_membrane = pd.read_csv("data/sce_compartment_curation/2026/Golgi_membrane_annotations.txt",sep='\t', skiprows=8, header=0)
 Golgi_membrane = polish_annotaiton(Golgi_membrane)
 Golgi_membrane.to_excel('data/sce_compartment_curation/2026_curated/Golgi_membrane_annotations.xlsx')
-

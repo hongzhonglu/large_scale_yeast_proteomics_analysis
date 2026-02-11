@@ -187,9 +187,8 @@ def gene_location_curation_sce(organelle0):
     gene_Golgi_apparatus = pd.read_excel("data/sce_compartment_curation/2026_curated/Golgi_apparatus_annotations.xlsx")
     gene_Golgi_membrane_annotations = pd.read_excel("data/sce_compartment_curation/2026_curated/Golgi_membrane_annotations.xlsx")
 
-
-
-
+    ribo_gene_double_check = 'YMR242C, YOR312C, YDL081C, YJR094W-A, YCR031C, YPL198W, YHR010W, YPR043W, YGL031C, YHL015W, YIL069C, YKL006W, YGL030W, YBR191W, YOL040C, YOL121C, YJL177W, YJL189W, YLR048W, YJR145C, YGL135W, YEL054C, YGL123W, YLR185W, YDR382W, YFL034C-A, YDR447C, YGR034W, YBL087C, YPL220W, YER056C-A, YPL081W, YLR340W, YDR418W, YKL156W, YLR388W, YGL147C, YBR031W, YPL249C-A, YLR325C, YLR406C, YDR450W, YKL180W, YBR048W, YLR249W, YDL184C, YLR167W, YLR264W, YHR203C, YIL148W, YDL133C-A, YPR102C, YOL039W, YML024W, YGL076C, YNL069C, YDL075W, YOR293W, YOR063W, YNL178W, YGR085C, YML063W, YMR142C, YKR094C, YHL033C, YLR075W, YDL061C, YDR471W, YJL190C, YMR194W, YER117W, YNL096C, YFR032C-A, YLR441C, YPR132W, YBL072C, YGR118W, YLR367W, YBL027W, YBR084C-A, YGL103W, YLR029C, YLR287C-A, YMR116C, YPL090C, YDR500C, YPL143W, YPL131W, YIL133C, YJR123W, YNL302C, YMR143W, YDL130W, YML026C, YIL052C, YLR344W, YNL067W, YOR167C, YLR333C, YHR141C, YOR369C, YLR061W, YGR027C, YGR148C, YDL083C, YOR182C, YDR025W, YBR181C, YOL127W, YPL079W, YNL162W, YBR189W, YLL045C, YNL301C, YER131W, YHL001W, YER074W, YDL191W, YOR096W, YHR021C, YDL082W, YML073C, YMR121C, YJL136C, YJL191W, YBL092W, YDR012W, YFR031C-A, YKR057W, YLR448W, YER102W, YGR214W, YMR230W, YOL120C, YGL189C, YOR234C, YIL018W, YDL136W, YDR064W'
+    ribo_gene_double_check = ribo_gene_double_check.split(', ')
 
     # mitochondrion specific
     gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx")
@@ -243,6 +242,8 @@ def gene_location_curation_sce(organelle0):
             genes_select = gene_Golgi_apparatus["gene"].tolist()  # for the test
         elif y == "Golgi membrane":
             genes_select = gene_Golgi_membrane_annotations["gene"].tolist()  # for the test
+        elif y == "ribosome":
+            genes_select = ribo_gene_double_check
         else:
             genes_select = organelle1[y]
         organelle0_update[y] = list(filter(lambda x: str(x) != 'nan', genes_select))
@@ -343,6 +344,12 @@ mass_fraction_final = pd.read_excel("data/proteomics/mass_fraction_combine.xlsx"
 #out00 = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment=compartment_single)
 out00 = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment=compartment1)
 out00.to_excel("data/sce_compartment_curation/main_organelle_fraction_test.xlsx")
+
+
+out11 = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment=compartment_all)
+out11.to_excel("data/sce_compartment_curation/all_organelle_fraction_test.xlsx")
+
+
 
 
 

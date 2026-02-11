@@ -269,19 +269,28 @@ print(final_scores.head(20))
 
 gene = final_scores[final_scores['gene']=='YGR240C']
 
+
 ########## 核糖体蛋白重新校正
+## 确保消除计算置信区间时cytosol出现的错误趋势。目前sgd数据库注释会把核糖体蛋白归为细胞质。
 ribosome_gene = pd.read_excel("data/sce_compartment_curation/2026/ribosome_uniprot.xlsx")
 ribo_genes = ribosome_gene['gene'].tolist()
 ribo_genes = pd.Series(ribo_genes).dropna().tolist()
+','.join(ribo_genes)
+# 将ribo_genes 包括所有基因进行富集分析，得到注释为ribosome的基因，然后添加YMR242C, YOR312C，得到下述完整列表。
+ribo_gene_double_check = 'YMR242C, YOR312C, YDL081C, YJR094W-A, YCR031C, YPL198W, YHR010W, YPR043W, YGL031C, YHL015W, YIL069C, YKL006W, YGL030W, YBR191W, YOL040C, YOL121C, YJL177W, YJL189W, YLR048W, YJR145C, YGL135W, YEL054C, YGL123W, YLR185W, YDR382W, YFL034C-A, YDR447C, YGR034W, YBL087C, YPL220W, YER056C-A, YPL081W, YLR340W, YDR418W, YKL156W, YLR388W, YGL147C, YBR031W, YPL249C-A, YLR325C, YLR406C, YDR450W, YKL180W, YBR048W, YLR249W, YDL184C, YLR167W, YLR264W, YHR203C, YIL148W, YDL133C-A, YPR102C, YOL039W, YML024W, YGL076C, YNL069C, YDL075W, YOR293W, YOR063W, YNL178W, YGR085C, YML063W, YMR142C, YKR094C, YHL033C, YLR075W, YDL061C, YDR471W, YJL190C, YMR194W, YER117W, YNL096C, YFR032C-A, YLR441C, YPR132W, YBL072C, YGR118W, YLR367W, YBL027W, YBR084C-A, YGL103W, YLR029C, YLR287C-A, YMR116C, YPL090C, YDR500C, YPL143W, YPL131W, YIL133C, YJR123W, YNL302C, YMR143W, YDL130W, YML026C, YIL052C, YLR344W, YNL067W, YOR167C, YLR333C, YHR141C, YOR369C, YLR061W, YGR027C, YGR148C, YDL083C, YOR182C, YDR025W, YBR181C, YOL127W, YPL079W, YNL162W, YBR189W, YLL045C, YNL301C, YER131W, YHL001W, YER074W, YDL191W, YOR096W, YHR021C, YDL082W, YML073C, YMR121C, YJL136C, YJL191W, YBL092W, YDR012W, YFR031C-A, YKR057W, YLR448W, YER102W, YGR214W, YMR230W, YOL120C, YGL189C, YOR234C, YIL018W, YDL136W, YDR064W'
+ribo_gene_double_check = ribo_gene_double_check.split(', ')
+
+
+
 target_organelle = 'cytosol'
 # 定义一个掩码（Mask）
-is_ribo_protein = final_scores['gene'].isin(ribo_genes)
+is_ribo_protein = final_scores['gene'].isin(ribo_gene_double_check)
 is_cytosol = final_scores['organelle'] == target_organelle
 final_scores.loc[is_ribo_protein & is_cytosol, 'organelle'] = 'ribosome'
-
-
-
+########## 核糖体蛋白重新校正
 final_scores.to_excel("data/sce_compartment_curation/organelle_score.xlsx")
+
+
 
 
 
@@ -439,7 +448,7 @@ def analyze_full_hierarchy_mass(score_path, mass_path, organelle_hierarchy):
 score_file = "data/sce_compartment_curation/organelle_score.xlsx"
 mass_fraction_file = "data/proteomics/mass_fraction_combine.xlsx"
 results = analyze_full_hierarchy_mass(score_file, mass_fraction_file, organelle_hierarchy)
-
+#full_output.to_excel("SubOrganelle_Mass_Fraction_Analysis.xlsx", index=False)
 # 查看前几个结果
 print(results.head())
 
@@ -452,6 +461,7 @@ print(results.head())
 
 # more analysis cytosol
 final_scores_filter = final_scores[final_scores['organelle']=='cytosol']
+
 common_gene_check = list(set(compartment1['cytosol']) & set(final_scores_filter['gene'].tolist()))
 # 确认cytosol中是否混入了ribosome
 common_gene_check = list(set(final_scores_filter['gene'].tolist())-set(compartment1['cytosol']))
