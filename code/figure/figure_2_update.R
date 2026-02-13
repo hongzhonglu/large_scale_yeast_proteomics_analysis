@@ -77,6 +77,7 @@ organelle_df = data.frame(compartment=ProMassRatio$compartment, mean=mean0, sd=s
 # check the main organelle
 organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet', 'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'plasma membrane')
 organelle_main <- organelle_df[organelle_df$compartment %in% organelle,]
+
 # bar plot
 ggplot(organelle_main) +
   geom_bar( aes(x= reorder(compartment, -mean), y=mean), stat="identity", fill="skyblue", alpha=0.7) +
@@ -97,6 +98,8 @@ physiology_collection0 <- physiology_collection[!duplicated(physiology_collectio
 
 ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
 ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassigned", ]
+ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="membrane", ]
+
 ProMassRatio_ss <- ProMassRatio1[, colnames(ProMassRatio1) %in% physiology_collection0$sampleID]
 # all correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
@@ -107,13 +110,15 @@ df1 <- data.frame(value=ss)
 
 # if based on the main organelle
 # define main organelle
-main_organelle <- organelle_df[organelle_df$mean >0.003, ]
-organelle <- main_organelle$compartment
-to_remove <- c("mitochondrion_unassigned", "vacuole", "cytoplasm")
-main_organelle <- organelle[!(organelle %in% to_remove)]
+#main_organelle <- organelle_df[organelle_df$mean >0.003, ]
+#organelle <- main_organelle$compartment
+#to_remove <- c("mitochondrion_unassigned", "vacuole", "cytoplasm")
+#main_organelle <- organelle[!(organelle %in% to_remove)]
 
+#redefine the main organelle
+organelles_main <- c("mitochondrion", "nucleus", "endoplasmic reticulum", "Golgi apparatus", "fungal-type vacuole", "peroxisome", "endosome", "lipid droplet", "fungal-type cell wall","plasma membrane", "P-body", "cytoplasmic stress granule", "spindle pole body", "ribosome", "cytosol","extracellular region")
 
-ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelle, ]
+ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelles_main, ]
 ProMassRatio_ss <- ProMassRatio2[, colnames(ProMassRatio2) %in% physiology_collection0$sampleID]
 # correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
@@ -122,7 +127,7 @@ df2 <- data.frame(value=ss)
 
 
 # if based on the suborganelle
-ProMassRatio3 <- ProMassRatio1[!(ProMassRatio1$compartment %in% organelle), ]
+ProMassRatio3 <- ProMassRatio1[!(ProMassRatio1$compartment %in% organelles_main), ]
 ProMassRatio_ss <- ProMassRatio3[, colnames(ProMassRatio3) %in% physiology_collection0$sampleID]
 # correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
@@ -136,8 +141,9 @@ df1$Type = "All components"
 df2$Type = "Main organelles"
 df3$Type = "Sub-organelles"
 
-updated <- rbind(df1, df2, df3)
-updated <- df2
+#updated <- rbind(df1, df2, df3)
+updated <- rbind(df2, df3)
+#updated <- df2
 ggplot(updated, aes(x=value, color=Type, fill=Type)) +
   geom_density(alpha=0.3) +
   xlim(0.5, 1) +
@@ -146,6 +152,71 @@ ggplot(updated, aes(x=value, color=Type, fill=Type)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20)) +
   labs(x = "Correlation coefficient between samples",
        y = "Density") 
+
+# then check the mass fraction on the sub organelle or the protein number?
+
+sd0 <- apply(subset(ProMassRatio3, select = 2:276), 1, sd, na.rm=TRUE) 
+mean0 <- apply(subset(ProMassRatio3, select = 2:276), 1, mean, na.rm=TRUE) 
+# generate new dataframe
+organelle_df = data.frame(compartment=ProMassRatio3$compartment, mean=mean0, sd=sd0)
+
+
+
+#large components with PMF greater than 0.0035; medium components with PMF between 0.00035-0.0035; small components with PMF smaller than 0.00035
+large_component <- organelle_df[organelle_df$mean > 0.0035, ]
+medium_component <- organelle_df[organelle_df$mean <=0.0035 & organelle_df$mean > 0.0006, ]
+small_component <- organelle_df[organelle_df$mean <=0.0006, ]
+
+
+
+ProMassRatio_l <- ProMassRatio3[ProMassRatio3$compartment %in% large_component$compartment, ]
+ProMassRatio_l <- ProMassRatio_l[, colnames(ProMassRatio_l) %in% physiology_collection0$sampleID]
+M <- cor(ProMassRatio_l, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
+ss <- as.vector(M[upper.tri(M)])
+df1 <- data.frame(value=ss)
+
+
+
+ProMassRatio_m <- ProMassRatio3[ProMassRatio3$compartment %in% medium_component$compartment, ]
+ProMassRatio_m <- ProMassRatio_m[, colnames(ProMassRatio_m) %in% physiology_collection0$sampleID]
+M <- cor(ProMassRatio_m, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
+ss <- as.vector(M[upper.tri(M)])
+df2 <- data.frame(value=ss)
+
+
+ProMassRatio_s <- ProMassRatio3[ProMassRatio3$compartment %in% small_component$compartment, ]
+ProMassRatio_s <- ProMassRatio_s[, colnames(ProMassRatio_s) %in% physiology_collection0$sampleID]
+M <- cor(ProMassRatio_s, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
+ss <- as.vector(M[upper.tri(M)])
+df3 <- data.frame(value=ss)
+
+
+# combine the above three result together
+df1$Type = "Large components"
+df2$Type = "Medium components"
+df3$Type = "Small components"
+
+updated <- rbind(df1, df2, df3)
+
+ggplot(updated, aes(x=value, color=Type, fill=Type)) +
+  geom_density(alpha=0.3) +
+  xlim(0.5, 1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  geom_density(alpha = 0.5)+
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20)) +
+  labs(x = "Correlation coefficient between samples",
+       y = "Density") 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
