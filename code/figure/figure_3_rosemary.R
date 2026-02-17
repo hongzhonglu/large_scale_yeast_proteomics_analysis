@@ -32,7 +32,10 @@ physiology_rosemary <- physiology_collection[str_detect(physiology_collection$co
 physiology_rosemary <- physiology_rosemary[str_detect(physiology_rosemary$sampleID,"prot\\."),]
 
 # compartment
-ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+# ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
+
+
 ProMassRatio <- ProMassRatio[,2:277]
 ProMassRatio[ProMassRatio <0.0000000000001] <- NA
 ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
@@ -132,7 +135,14 @@ df_o <- Pro_mass_select0[, str_detect(colnames(Pro_mass_select0), "^nucl")]
 col_select <- c("nucleosome","nucleolus", "nucleoplasm", "nuclear periphery", "nuclear chromosome", "nuclear envelope")
 df_o <- df_o[, colnames(df_o) %in% col_select]
 df_o$growth <- Pro_mass_select0$growth
-long_DF <- df_o %>% gather(type, mass_fraction, 1:6)
+#long_DF <- df_o %>% gather(type, mass_fraction, 1:6)
+long_DF <- df_o %>%
+  pivot_longer(
+    cols = -growth,                    # all columns except growth
+    names_to = "type",
+    values_to = "mass_fraction"
+  )
+
 long_DF$type <- as.factor(long_DF$type)
 ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
   geom_point() + # geom_point(alpha = 2/10) +
@@ -142,6 +152,22 @@ ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
   theme_bw() +
   geom_smooth()+
   theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15),legend.title=element_text(size=12), legend.text=element_text(size=12))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -182,8 +208,8 @@ ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
 
 # calculate the correlation of all component and growth rate
 Pro_mass_select <-  ProMassRatio1[, colnames(ProMassRatio1) %in% c("compartment",physiology$sampleID)]
-Pro_mass_select <- Pro_mass_select[!is.na(Pro_mass_select$S27_carbon_limit),]
-Pro_mass_select_F <- Pro_mass_select[Pro_mass_select$S27_carbon_limit >0.01,]
+Pro_mass_select <- Pro_mass_select[!is.na(Pro_mass_select$prot.21),]
+Pro_mass_select_F <- Pro_mass_select[Pro_mass_select$prot.21 >0.01,]
 Pro_mass_select0 <- t(Pro_mass_select_F[,-1])
 colnames(Pro_mass_select0) <- Pro_mass_select_F$compartment
 Pro_mass_select0 <- as.data.frame(Pro_mass_select0)
@@ -223,7 +249,7 @@ combine_one <- combine[combine$gene %in% compartment_one$gene,]
 combine_one_select <-  combine_one[, colnames(combine_one) %in% c("gene",physiology$sampleID)]
 
 # remove too much na in each row
-na_counts_per_row <- rowSums(is.na(combine_one_select[,2:28]))
+na_counts_per_row <- rowSums(is.na(combine_one_select[,2:19]))
 na_counts_df <- data.frame(row_NA_count = na_counts_per_row, row.names = combine_one_select$gene)
 gene_remove <- rownames(na_counts_df)[which(na_counts_df$row_NA_count >=18)]
 combine_one_select <- combine_one_select[!(combine_one_select$gene %in% gene_remove),]
@@ -247,12 +273,4 @@ ggplot(r_df, aes(x=reorder(gene, -cor), y=cor, fill=gene)) +
   theme(axis.text = element_text(size = 3), axis.title = element_text(size = 12))+ 
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   theme(legend.position="none")
-
-
-
-
-### randomly selected proteins and check the related tendencies
-# compartment
-SingleMass <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/mass_fraction_combine.xlsx")
-
 

@@ -6,222 +6,13 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/SubOrganelle_Mass_Fraction_Analysis.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/SubOrganelle_Mass_Fraction_Analysis.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot01.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot02.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot03.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot04.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot05.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot06.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot07.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot08.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot09.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot10.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot100.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot101.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot102.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot103.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot104.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot105.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot106.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot107.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot108.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot109.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot11.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot110.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot111.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot112.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot113.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot114.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot115.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot116.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot117.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot118.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot119.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot12.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot120.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot121.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot122.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot123.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot124.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot125.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot126.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot127.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot128.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot129.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot13.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot130.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot131.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot132.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot133.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot134.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot135.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot136.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot137.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot138.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot139.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot14.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot140.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot141.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot142.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot143.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot144.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot145.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot146.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot147.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot148.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot149.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot15.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot150.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot151.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot152.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot153.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot154.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot155.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot156.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot157.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot158.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot159.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot16.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot160.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot161.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot162.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot163.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot164.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot165.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot17.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot18.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot19.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot20.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot21.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot22.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot23.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot24.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot25.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot26.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot27.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot28.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot29.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot30.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot31.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot32.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot33.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot34.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot35.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot36.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot37.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot38.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot39.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot40.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot41.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot42.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot43.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot44.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot45.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot46.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot47.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot48.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot49.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot50.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot51.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot52.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot53.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot54.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot55.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot56.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot57.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot58.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot59.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot60.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot61.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot62.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot63.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot64.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot65.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot66.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot67.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot68.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot69.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot70.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot71.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot72.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot73.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot74.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot75.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot76.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot77.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot78.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot79.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot80.afdesign" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot80.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot81.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot82.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot83.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot84.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot85.afdesign" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot85.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot86.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot87.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot88.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot89.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot90.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot91.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot92.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot93.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot94.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot95.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot96.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot97.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot98.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/Rplot99.pdf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/figure_2.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_2.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/newdata.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/Golgi apparatus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/Golgi apparatus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/cytosol.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/cytosol.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/endosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endosome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/fungal-type vacuole.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/fungal-type vacuole.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/lipid droplet.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/lipid droplet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial inner membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial inner membrane.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial intermembrane space.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial intermembrane space.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial outer membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial outer membrane.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/nucleolus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleolus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/nucleus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/peroxisome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/peroxisome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/plasma membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/plasma membrane.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/ribosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/ribosome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/2.7 screen_unreliable_protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.7 screen_unreliable_protein.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/Supplementary 6.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/Supplementary 6.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_3.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_3.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_3_rosemary.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_3_rosemary.R" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/mass_fraction_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/volume_size_ratio_across_compartment_combine.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/Golgi_apparatus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/Golgi_apparatus_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/Golgi_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/Golgi_membrane_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytoplasm_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytoplasm_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytosol_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytosol_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_membrane_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endosome_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endosome_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_cell_wall_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_cell_wall_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/lipid_droplet_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/lipid_droplet_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleolus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleolus_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleus_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/peroxisome_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/peroxisome_annotations.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/plasma_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/plasma_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/all_organelle_fraction_test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_organelle_fraction_test.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/all_organelle_fraction_test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/all_organelle_fraction_test.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/main_organelle_fraction_test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/main_organelle_fraction_test.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_fraction_under_different_input.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_fraction_under_different_input.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_xia.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_xia.xlsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/organelle_score.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/organelle_score.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -658,19 +449,34 @@
           <option name="timeStamp" value="84" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
-          <line>184</line>
-          <option name="timeStamp" value="90" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
-          <line>236</line>
-          <option name="timeStamp" value="91" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py</url>
           <line>217</line>
           <option name="timeStamp" value="92" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>15</line>
+          <option name="timeStamp" value="93" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>269</line>
+          <option name="timeStamp" value="95" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>350</line>
+          <option name="timeStamp" value="96" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>187</line>
+          <option name="timeStamp" value="97" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>196</line>
+          <option name="timeStamp" value="98" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
