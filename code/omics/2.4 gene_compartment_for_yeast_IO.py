@@ -147,8 +147,17 @@ new_compartment["source"] = "MULocDeep"
 
 
 #get sce gene annotation
+# compartment_dict20 = getCompartmentGeneList(type="all")
+# compartment_dict20_update =gene_location_curation_sce(compartment_dict20)
+
+# based on part 3.8
 compartment_dict20 = getCompartmentGeneList(type="all")
-compartment_dict20_update =gene_location_curation_sce(compartment_dict20)
+compartment_dict20_update = gene_location_curation_sce(organelle0=compartment_dict20)
+compartment_dict20_update['nucleoplasm'] = ss0 # nucleoplasm_proteins, this gene list is from SGD annotation in 2026!
+
+
+
+
 
 # change it as a list
 sce_gene_list = []

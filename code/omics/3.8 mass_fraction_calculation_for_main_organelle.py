@@ -6,8 +6,7 @@ import os
 from src.protein_process import *
 
 compartment_all00 = getCompartmentGeneList(type="all")
-ss0 = compartment_all00['endoplasmic reticulum']
-#ss0 = compartment_all00['nucleolus']
+ss0 = compartment_all00['nucleoplasm']
 
 
 
@@ -265,91 +264,13 @@ def gene_location_curation_sce(organelle0):
 
 mass_fraction_final = pd.read_excel("data/proteomics/mass_fraction_combine.xlsx")
 
-
 compartment_all0 = getCompartmentGeneList(type="all")
-ss1 = compartment_all0['nucleoplasm']
-ss1 = compartment_all0['nucleolus']
-
-
-
-# optimized based on gemini 3
-nucleoplasm_proteins = [
-    # --- DNA Replication (DNA 复制) ---
-    'YML065W',  # ORC1: Origin Recognition Complex
-    'YBR060C',  # ORC2
-    'YLL004W',  # ORC3
-    'YPR162C',  # ORC4
-    'YNL261W',  # ORC5
-    'YHR118C',  # ORC6
-    'YBL023C',  # MCM2: Minichromosome Maintenance
-    'YEL032W',  # MCM3
-    'YPR019W',  # MCM4
-    'YLR274W',  # MCM5
-    'YGL201C',  # MCM6
-    'YBR202W',  # MCM7
-    'YJL194W',  # CDC6: Replication initiation
-
-    # --- Transcription: RNA Polymerases (转录: 聚合酶) ---
-    'YIL021W',  # RPB2: Pol II subunit
-    'YBR154C',  # RPB5: Pol I/II/III subunit
-    'YOR116C',  # RPO31 (RPC160): Pol III catalytic subunit
-    'YPR190C',  # RPC82: Pol III subunit
-    'YNR003C',  # RPC34: Pol III subunit
-    'YNL151C',  # RPC31: Pol III subunit
-    'YKL144C',  # RPC25: Pol III subunit
-    'YNL113W',  # RPC19: Pol I/III subunit
-    'YPR110C',  # RPC40: Pol I/III subunit
-    'YHR143W-A',  # RPC10: Pol I/II/III subunit
-    'YOR207C',  # RET1: Pol III subunit
-    'YDL150W',  # RPC53: Pol III subunit
-    'YPR187W',  # RPO26: Pol I/II/III subunit
-
-    # --- Transcription Factors & Regulation (转录因子与调控) ---
-    'YER148W',  # SPT15 (TBP): TATA-binding protein
-    'YAL001C',  # TFC3: TFIIIC complex
-    'YGR047C',  # TFC4: TFIIIC complex
-    'YBR123C',  # TFC1: TFIIIC complex
-    'YOR210W',  # TFC6: TFIIIC complex
-    'YGR246C',  # BRF1: TFIIIB complex
-    'YNL039W',  # BDP1: TFIIIB complex
-    'YBR279W',  # PAF1: Transcription elongation
-    'YLR418C',  # CDC73: Paf1 complex
-    'YGL244W',  # RTF1: Paf1 complex
-    'YMR039C',  # SUB1: Transcriptional coactivator
-    'YBR049C',  # REB1: DNA binding/Termination
-    'YOR294W',  # RSC30: Chromatin remodeling
-    'YIL084C',  # SDS3: Histone deacetylase
-    'YAL013W',  # DEP1: Histone deacetylase
-    'YBR111W-A',  # SUS1: SAGA complex/Nuclear pore
-    'YKL139W',  # CTK1: Pol II CTD kinase
-    'YJL006C',  # CTK2: Pol II CTD kinase
-    'YML112W',  # CTK3: Pol II CTD kinase
-    'YPR186C',  # PZF1: Transcription factor
-
-    # --- DNA Repair & Modification (修复与修饰) ---
-    'YNL250W',  # RAD50: MRX complex
-    'YGL175C',  # SAE2: DNA break repair
-    'YKL113C',  # MSH6: Mismatch repair
-    'YEL026W',  # SNM1 (PSO2): DNA cross-link repair
-    'YHL022C',  # SPO11: Meiotic recombination
-
-    # --- RNA Processing/Splicing/Other (RNA加工/剪接/其他) ---
-    'YPL190C',  # NAB3: mRNA termination/polyadenylation
-    'YDL051W',  # LHP1 (La): RNA binding/tRNA processing
-    'YKL078W',  # PRP46: Splicing
-    'YCR033W',  # SNT309: Splicing
-    'YLR106C',  # BNS1: Splicing related
-    'YKR095W',  # MLP1: Nuclear basket (Periphery but non-nucleolar)
-    'YIL149C',  # MLP2: Nuclear basket
-    'YPL212C',  # PUS1: tRNA modification
-    'YOR243C',  # PUS7: tRNA modification
-    'YDL201W',  # TRM1: tRNA modification
-    'YHR070W',  # TRM5: tRNA modification
-]
-
 compartment_all = gene_location_curation_sce(organelle0=compartment_all0)
-#ss2 = compartment_all['nucleolus']
-compartment_all['nucleoplasm'] = ss0#nucleoplasm_proteins
+compartment_all['nucleoplasm'] = ss0 # nucleoplasm_proteins, this gene list is from SGD annotation in 2026!
+
+
+
+
 compartment_list = list(compartment_all.keys())
 compartment_out = ','.join(compartment_list)
 
