@@ -5,9 +5,11 @@ import os
 # import self function
 from src.protein_process import *
 
-compartment_all00 = getCompartmentGeneList(type="all")
-ss0 = compartment_all00['nucleoplasm']
-
+##
+# the following code is to get protein within nucleoplasm based on SGD annotation in 2025.
+# compartment_all00 = getCompartmentGeneList(type="all")
+# ss0 = compartment_all00['nucleoplasm']
+# ','.join(ss0)
 
 
 
@@ -198,6 +200,10 @@ def gene_location_curation_sce(organelle0):
     ribo_gene_double_check = 'YMR242C, YOR312C, YDL081C, YJR094W-A, YCR031C, YPL198W, YHR010W, YPR043W, YGL031C, YHL015W, YIL069C, YKL006W, YGL030W, YBR191W, YOL040C, YOL121C, YJL177W, YJL189W, YLR048W, YJR145C, YGL135W, YEL054C, YGL123W, YLR185W, YDR382W, YFL034C-A, YDR447C, YGR034W, YBL087C, YPL220W, YER056C-A, YPL081W, YLR340W, YDR418W, YKL156W, YLR388W, YGL147C, YBR031W, YPL249C-A, YLR325C, YLR406C, YDR450W, YKL180W, YBR048W, YLR249W, YDL184C, YLR167W, YLR264W, YHR203C, YIL148W, YDL133C-A, YPR102C, YOL039W, YML024W, YGL076C, YNL069C, YDL075W, YOR293W, YOR063W, YNL178W, YGR085C, YML063W, YMR142C, YKR094C, YHL033C, YLR075W, YDL061C, YDR471W, YJL190C, YMR194W, YER117W, YNL096C, YFR032C-A, YLR441C, YPR132W, YBL072C, YGR118W, YLR367W, YBL027W, YBR084C-A, YGL103W, YLR029C, YLR287C-A, YMR116C, YPL090C, YDR500C, YPL143W, YPL131W, YIL133C, YJR123W, YNL302C, YMR143W, YDL130W, YML026C, YIL052C, YLR344W, YNL067W, YOR167C, YLR333C, YHR141C, YOR369C, YLR061W, YGR027C, YGR148C, YDL083C, YOR182C, YDR025W, YBR181C, YOL127W, YPL079W, YNL162W, YBR189W, YLL045C, YNL301C, YER131W, YHL001W, YER074W, YDL191W, YOR096W, YHR021C, YDL082W, YML073C, YMR121C, YJL136C, YJL191W, YBL092W, YDR012W, YFR031C-A, YKR057W, YLR448W, YER102W, YGR214W, YMR230W, YOL120C, YGL189C, YOR234C, YIL018W, YDL136W, YDR064W'
     ribo_gene_double_check = ribo_gene_double_check.split(', ')
 
+    # Protein list in nucleoplasm is bsed on SGD annotation in 2025.
+    nucleoplasm_gene_double_check = 'YHR197W,YOR294W,YJL006C,YKL113C,YPL190C,YKR095W,YFL002C,YGR280C,YHR085W,YNL124W,YOR272W,YMR239C,YDL051W,YIL149C,YHL020C,YHR170W,YGL244W,YKL009W,YNL189W,YIL021W,YOR206W,YBR279W,YLR106C,YPL235W,YNL201C,YPL146C,YAL013W,YLR418C,YOL145C,YPL204W,YCR035C,YOR123C,YBR028C,YEL037C,YLR002C,YNR053C,YMR049C,YIL104C,YBR111W-A,YIL084C,YKR092C,YNL182C,YBR049C,YKL139W,YOL006C,YGR103W,YDR101C,YOR026W,YML112W,YGR251W,YPL193W,YHR084W,YBL004W,YJL030W'
+    nucleoplasm_gene_double_check = nucleoplasm_gene_double_check.split(',')
+
     # mitochondrion specific
     gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx")
     gene_m_Outer_membrane = pd.read_excel("data/sce_compartment_curation/2026_curated/mitochondrial_outer_membrane_annotations.xlsx")
@@ -222,8 +228,8 @@ def gene_location_curation_sce(organelle0):
         elif y == "endosome":
             genes_select = organelle1[y]
             genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
-        #elif y == "nucleolus":
-        #    genes_select = gene_nucleolus["gene"].tolist()  # for the test
+        elif y == "nucleolus":
+            genes_select = gene_nucleolus["gene"].tolist()  # for the test
         elif y == "cytoplasm":
             genes_select = gene_cytoplasm["gene"].tolist()  # for the test
         elif y == "cytosol":
@@ -242,8 +248,8 @@ def gene_location_curation_sce(organelle0):
             genes_select = gene_nucleus["gene"].tolist()  # for the test
         elif y == "peroxisome":
             genes_select = gene_peroxisome["gene"].tolist()  # for the test
-        #elif y == "endoplasmic reticulum":
-        #    genes_select = gene_endoplasmic_reticulum["gene"].tolist()  # for the test
+        elif y == "endoplasmic reticulum":
+            genes_select = gene_endoplasmic_reticulum["gene"].tolist()  # for the test
         elif y == "endoplasmic reticulum membrane":
             genes_select = gene_endoplasmic_reticulum_membrane["gene"].tolist()  # for the test
         elif y == "Golgi apparatus":
@@ -252,6 +258,8 @@ def gene_location_curation_sce(organelle0):
             genes_select = gene_Golgi_membrane_annotations["gene"].tolist()  # for the test
         elif y == "ribosome":
             genes_select = ribo_gene_double_check
+        elif y == "nucleoplasm":
+            genes_select = nucleoplasm_gene_double_check
         else:
             genes_select = organelle1[y]
         organelle0_update[y] = list(filter(lambda x: str(x) != 'nan', genes_select))
@@ -265,9 +273,8 @@ def gene_location_curation_sce(organelle0):
 mass_fraction_final = pd.read_excel("data/proteomics/mass_fraction_combine.xlsx")
 
 compartment_all0 = getCompartmentGeneList(type="all")
-compartment_all = gene_location_curation_sce(organelle0=compartment_all0)
-compartment_all['nucleoplasm'] = ss0 # nucleoplasm_proteins, this gene list is from SGD annotation in 2026!
 
+compartment_all = gene_location_curation_sce(organelle0=compartment_all0)
 
 
 
