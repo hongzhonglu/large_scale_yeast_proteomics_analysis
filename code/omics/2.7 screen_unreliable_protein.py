@@ -291,9 +291,6 @@ final_scores.loc[is_ribo_protein & is_cytosol, 'organelle'] = 'ribosome'
 final_scores.to_excel("data/sce_compartment_curation/organelle_score.xlsx")
 
 
-
-
-
 non_mitochondrial_proteins = [
     'YFR053C',  # HXK1, glycolysis
     'YDR050C',  # TPI1, glycolysis
@@ -443,7 +440,6 @@ def analyze_full_hierarchy_mass(score_path, mass_path, organelle_hierarchy):
 # results = analyze_organelle_mass_full('organelle_score.xlsx', 'mass_fraction_combine.xlsx', organelle_hierarchy)
 
 # 2. 实例化并运行
-
 # 请确保文件名与你本地或上传的文件名一致
 score_file = "data/sce_compartment_curation/organelle_score.xlsx"
 mass_fraction_file = "data/proteomics/mass_fraction_combine.xlsx"
@@ -451,24 +447,4 @@ results = analyze_full_hierarchy_mass(score_file, mass_fraction_file, organelle_
 #full_output.to_excel("SubOrganelle_Mass_Fraction_Analysis.xlsx", index=False)
 # 查看前几个结果
 print(results.head())
-
-
-
-
-
-
-
-
-# more analysis cytosol
-final_scores_filter = final_scores[final_scores['organelle']=='cytosol']
-
-common_gene_check = list(set(compartment1['cytosol']) & set(final_scores_filter['gene'].tolist()))
-# 确认cytosol中是否混入了ribosome
-common_gene_check = list(set(final_scores_filter['gene'].tolist())-set(compartment1['cytosol']))
-ribosome_gene = pd.read_excel("data/sce_compartment_curation/2026/ribosome_uniprot.xlsx")
-ribosome_gene0 = ribosome_gene['gene'].tolist()
-ribosome_gene0 = pd.Series(ribosome_gene0).dropna().tolist()
-
-
-
 

@@ -6,7 +6,14 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.7 screen_unreliable_protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.7 screen_unreliable_protein.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_absolute_protein_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.2 omics_inferred_absolute_protein_size.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.2 real_protein_copy_per_cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.2 real_protein_copy_per_cell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 combine all mass fraction.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 mass_fraction_calculation_for_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/all_organelle_fraction_test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_organelle_fraction_test.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/main_organelle_fraction_test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/main_organelle_fraction_test.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,9 +110,9 @@
       <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/data/sce_compartment_curation" />
       <recent name="$PROJECT_DIR$/code/omics" />
-      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>

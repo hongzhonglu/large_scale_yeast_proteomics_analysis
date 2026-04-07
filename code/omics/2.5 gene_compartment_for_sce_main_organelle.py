@@ -343,11 +343,6 @@ df_renamed.to_excel("data/sce_compartment_curation/2026_curated/peroxisome_annot
 
 
 
-
-
-
-
-
 # 文件名为附件中的名称
 filename = 'data/sce_compartment_curation/2026/nucleolus_annotations.txt'
 df = pd.read_csv(filename, sep='\t', skiprows=8, header=0)

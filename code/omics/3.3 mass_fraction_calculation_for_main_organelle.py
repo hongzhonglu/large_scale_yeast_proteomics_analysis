@@ -1,9 +1,18 @@
-import matplotlib.pyplot as plt
+# note:
+# this part can be rewritten as a function
+import pandas as pd
 import os
-
-
 # import self function
 from src.protein_process import *
+
+##
+# the following code is to get protein within nucleoplasm based on SGD annotation in 2025.
+# compartment_all00 = getCompartmentGeneList(type="all")
+# ss0 = compartment_all00['nucleoplasm']
+# ','.join(ss0)
+
+
+
 # reanalyze the data set
 def getCompartmentGeneList(type="all"):
     """
@@ -173,6 +182,7 @@ def gene_location_curation_sce(organelle0):
     # otherwise using the computation prediction???
     # input the annotation from sgd
     # organelle0 = getCompartmentGeneList(type="all") # this is just for the test
+    # organelle0 = compartment_all0
     gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/2026_curated/plasma_annotations.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/2026_curated/fungal_type_cell_wall_annotations.xlsx")
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx")
@@ -189,6 +199,10 @@ def gene_location_curation_sce(organelle0):
 
     ribo_gene_double_check = 'YMR242C, YOR312C, YDL081C, YJR094W-A, YCR031C, YPL198W, YHR010W, YPR043W, YGL031C, YHL015W, YIL069C, YKL006W, YGL030W, YBR191W, YOL040C, YOL121C, YJL177W, YJL189W, YLR048W, YJR145C, YGL135W, YEL054C, YGL123W, YLR185W, YDR382W, YFL034C-A, YDR447C, YGR034W, YBL087C, YPL220W, YER056C-A, YPL081W, YLR340W, YDR418W, YKL156W, YLR388W, YGL147C, YBR031W, YPL249C-A, YLR325C, YLR406C, YDR450W, YKL180W, YBR048W, YLR249W, YDL184C, YLR167W, YLR264W, YHR203C, YIL148W, YDL133C-A, YPR102C, YOL039W, YML024W, YGL076C, YNL069C, YDL075W, YOR293W, YOR063W, YNL178W, YGR085C, YML063W, YMR142C, YKR094C, YHL033C, YLR075W, YDL061C, YDR471W, YJL190C, YMR194W, YER117W, YNL096C, YFR032C-A, YLR441C, YPR132W, YBL072C, YGR118W, YLR367W, YBL027W, YBR084C-A, YGL103W, YLR029C, YLR287C-A, YMR116C, YPL090C, YDR500C, YPL143W, YPL131W, YIL133C, YJR123W, YNL302C, YMR143W, YDL130W, YML026C, YIL052C, YLR344W, YNL067W, YOR167C, YLR333C, YHR141C, YOR369C, YLR061W, YGR027C, YGR148C, YDL083C, YOR182C, YDR025W, YBR181C, YOL127W, YPL079W, YNL162W, YBR189W, YLL045C, YNL301C, YER131W, YHL001W, YER074W, YDL191W, YOR096W, YHR021C, YDL082W, YML073C, YMR121C, YJL136C, YJL191W, YBL092W, YDR012W, YFR031C-A, YKR057W, YLR448W, YER102W, YGR214W, YMR230W, YOL120C, YGL189C, YOR234C, YIL018W, YDL136W, YDR064W'
     ribo_gene_double_check = ribo_gene_double_check.split(', ')
+
+    # Protein list in nucleoplasm is bsed on SGD annotation in 2025.
+    nucleoplasm_gene_double_check = 'YHR197W,YOR294W,YJL006C,YKL113C,YPL190C,YKR095W,YFL002C,YGR280C,YHR085W,YNL124W,YOR272W,YMR239C,YDL051W,YIL149C,YHL020C,YHR170W,YGL244W,YKL009W,YNL189W,YIL021W,YOR206W,YBR279W,YLR106C,YPL235W,YNL201C,YPL146C,YAL013W,YLR418C,YOL145C,YPL204W,YCR035C,YOR123C,YBR028C,YEL037C,YLR002C,YNR053C,YMR049C,YIL104C,YBR111W-A,YIL084C,YKR092C,YNL182C,YBR049C,YKL139W,YOL006C,YGR103W,YDR101C,YOR026W,YML112W,YGR251W,YPL193W,YHR084W,YBL004W,YJL030W'
+    nucleoplasm_gene_double_check = nucleoplasm_gene_double_check.split(',')
 
     # mitochondrion specific
     gene_mitochondrion = pd.read_excel("data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx")
@@ -214,8 +228,8 @@ def gene_location_curation_sce(organelle0):
         elif y == "endosome":
             genes_select = organelle1[y]
             genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
-        elif y == "nucleolus":
-            genes_select = gene_nucleolus["gene"].tolist()  # for the test
+        #elif y == "nucleolus":
+        #   genes_select = gene_nucleolus["gene"].tolist()  # for the test
         elif y == "cytoplasm":
             genes_select = gene_cytoplasm["gene"].tolist()  # for the test
         elif y == "cytosol":
@@ -244,6 +258,8 @@ def gene_location_curation_sce(organelle0):
             genes_select = gene_Golgi_membrane_annotations["gene"].tolist()  # for the test
         elif y == "ribosome":
             genes_select = ribo_gene_double_check
+        elif y == "nucleoplasm":
+            genes_select = nucleoplasm_gene_double_check
         else:
             genes_select = organelle1[y]
         organelle0_update[y] = list(filter(lambda x: str(x) != 'nan', genes_select))
@@ -253,54 +269,76 @@ def gene_location_curation_sce(organelle0):
 
     return organelle0_update
 
-def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
+
+mass_fraction_final = pd.read_excel("data/proteomics/mass_fraction_combine.xlsx")
+
+compartment_all0 = getCompartmentGeneList(type="all")
+
+compartment_all = gene_location_curation_sce(organelle0=compartment_all0)
+
+
+
+compartment_list = list(compartment_all.keys())
+compartment_out = ','.join(compartment_list)
+
+organelles_main = [
+    "mitochondrion", "nucleus", "endoplasmic reticulum", "Golgi apparatus",
+    "fungal-type vacuole", "peroxisome", "endosome", "lipid droplet", "fungal-type cell wall",
+    "plasma membrane", "P-body", "cytoplasmic stress granule", "spindle pole body", "ribosome", "cytosol","extracellular region", "nucleolus", "mitochondrial inner membrane"]
+
+# "cytosol","extracellular region" 属于区室，而非细胞器
+compartment1 = {k: v for k, v in compartment_all.items() if k in organelles_main}
+# remove duplicates
+compartment1 = {key: list(set(value)) for key, value in compartment1.items()}
+
+
+
+# test for single compartment under different filteration strategy
+compartment_single ={}
+cc = 'cytosol'
+cc_refine = 'cytosol' + '_refine'
+compartment_single[cc] = compartment_all0[cc]
+compartment_single[cc_refine] = compartment_all[cc]
+
+
+def ProMassRatio_Organelle(protein_abundance, compartment=compartment1):
     """
-    This function is used to calculate the organelle protein volume or sectional area as a whole
-    :param protein_copy:
+    This function is used to calculate the organelle protein aboslute abundance as a whole
+    :param protein_abundance:
     :param compartment_type:
     :return:
     """
-    if compartment_type == "organelle":
-        # compartment info
-        compartment = getCompartmentGeneList(type="all")  # based on the automatic way
-        compartment = gene_location_curation_sce(organelle0=compartment)  # based on the SGD manual curation
-        all_compartment = list(compartment.keys())
-
-    # input the protein structure information
-    pro_size = pd.read_excel("result/sce_protein_size_3D_structure.xlsx")
-    pro_size = pro_size[['DBID', 'locus', 'Total_Volume', 'section_area_new']]
+    # test
     # sample ID information
-    Sample_ID_select = list(protein_copy.columns)
+    Sample_ID_select = list(protein_abundance.columns)
     Sample_ID_select = [x for x in Sample_ID_select if x != "gene"]
-
     # use some manually checked gene compartment definion
     # gene_plasma_membrane = pd.read_excel("data/gene_belong_plasma_membrane_annotations.xlsx")
     # all_compartment = ['fungal-type vacuole membrane']
     # gene_fungal_type_vacuole_membrane = pd.read_excel("data/gene_belong_fungal_type_vacuole_membrane_annotations.xlsx")
+    # creat a dataframe to save the result
 
-    # creat two dataframe to save the result
+    all_compartment = list(compartment.keys())
     result1 = pd.DataFrame({"compartment": all_compartment})
-    # result2 = pd.DataFrame({"compartment": all_compartment})
-
     # run the cycle
+
     for col0 in Sample_ID_select:
         print(col0)
         value1 = []
-        pro_abundance = protein_copy[['gene', col0]]
-        pro_abundance.columns = ['gene', 'molecular/cell']
-        total_volume = get_total_protein_volume(pro_size0=pro_size, abundance0=pro_abundance, need_check="No")
-
         for y in all_compartment:
             print(y)
             # test
-            # y = "cytosol"
+            # y = "plasma membrane"
+            # col0 = "Glucose_phase_rep1(g/gDW)"
+            pro_abundance = protein_abundance[['gene', col0]]
+            pro_abundance.columns = ['gene', 'g/gDW']
 
-            '''
-            if y == "plasma membrane":
+            '''if y == "plasma membrane":
                 genes_select = gene_plasma_membrane["gene"].tolist()  # for the test
             elif y == "fungal-type vacuole membrane":
                 genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
-                genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+                genes_select = [x for x in genes_select if
+                                x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
             elif y == "endosome":
                 genes_select = compartment[y]
                 genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.
@@ -308,73 +346,205 @@ def Pro_3D_Volume_Ratio_Cal(protein_copy, compartment_type="organelle"):
                 genes_select = compartment[y]'''
             genes_select = compartment[y]
 
-            pro_abundance1 = getProAundance(genes_select0=genes_select, pro_abundance0=pro_abundance)
-            if pro_abundance1 is "no_abundance":
-                value1.append(None)
-            else:
-                x, S = getStructureSize_MeasuredAbundances(pro_size0=pro_size, abundance0=pro_abundance1)
-                value1.append(x / total_volume)
-                # value2.append(S)
+            # get the sum
+            pro_abundance.fillna(0, axis=1, inplace=True)
+            pro_select = pro_abundance[pro_abundance['gene'].isin(genes_select)]
+            sum_all = sum(pro_abundance['g/gDW'])
+            sum_select = sum(pro_select['g/gDW'])
+            ratio = sum_select/sum_all
+            value1.append(ratio)
         result1[col0] = value1
     return result1
 
+mass_fraction_final = pd.read_excel("data/proteomics/mass_fraction_combine.xlsx")
+#mass_fraction_final = mass_fraction_final.iloc[:,0:9]
 
-# input the new absolute proteomics
-mass_fraction_NCB = pd.read_excel("data/proteomics/mass_fraction_NCB.xlsx")
-mass_fraction_NCB = mass_fraction_NCB.iloc[:,1:]
+#out00 = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment=compartment_single)
+out00 = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment=compartment1)
+out00.to_excel("data/proteomics/main_organelle_fraction_test.xlsx")
 
-mass_fraction_ibrahim = pd.read_excel("data/proteomics/mass_fraction_ibrahim.xlsx")
-mass_fraction_ibrahim = mass_fraction_ibrahim.iloc[:,1:]
 
-mass_fraction_from_protein_copy = pd.read_excel("data/proteomics/mass_fraction_from_protein_copy.xlsx")
-mass_fraction_from_protein_copy = mass_fraction_from_protein_copy.iloc[:,1:]
-
-mass_fraction_others = pd.read_excel("data/proteomics/mass_fraction_others.xlsx")
-mass_fraction_others = mass_fraction_others.iloc[:,1:]
-
-mass_fraction_all = pd.merge(left=mass_fraction_others, right=mass_fraction_ibrahim, left_on=['gene'], right_on=['gene'], how="outer")
-mass_fraction_all = pd.merge(left=mass_fraction_all, right=mass_fraction_NCB, left_on=['gene'], right_on=['gene'], how="outer")
-mass_fraction_all = pd.merge(left=mass_fraction_all, right=mass_fraction_from_protein_copy, left_on=['gene'], right_on=['gene'], how="outer")
-mass_fraction_final = mass_fraction_all.copy()
-
-# Save
-mass_fraction_final.to_excel("data/proteomics/mass_fraction_combine.xlsx", index=False) # the unit the mmol/gDW
+out11 = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment=compartment_all)
+out11.to_excel("data/proteomics/all_organelle_fraction_test.xlsx")
 
 
 
-# Get the molecular weight data using the data from SGD with more genes
-mw = pd.read_csv("data/sce_protein_weight.tsv", sep="\t")
-mw = mw[["locus","proteins_molecular_weight"]]
-mw.columns = ["gene name", "MW"]
-mw["MW_Kda"] = mw["MW"]/1000
-
-# how to further calculation the protein volume ratio and protein area ratio of main organelle
-# change the unit from g/g into mol/g?
-mass_fraction = mass_fraction_final.copy()
-mass_fraction["MW_Kda"] = singleMapping(mw["MW_Kda"], mw["gene name"], mass_fraction["gene"])
-all_colum = mass_fraction.columns
-all_colum1 = [x for x in all_colum if x !='MW_Kda']
-all_colum2 = [x for x in all_colum1 if x !='gene']
-protein_in_mol = mass_fraction[all_colum2]
-for x in all_colum2:
-    protein_in_mol[x] = 1000 * protein_in_mol[x] / mass_fraction["MW_Kda"]
-protein_in_mol["gene"] = mass_fraction["gene"]
-new_column = ["gene"] + all_colum2
-protein_in_mol = protein_in_mol[new_column]
+# 逐行计算统计量
+df = out00
+df_stats = pd.DataFrame()
+# 计算均值
+df_stats['mean'] = df.mean(axis=1)
+# 计算标准差
+df_stats['std'] = df.std(axis=1)
+# 计算分位数
+df_stats['q25'] = df.quantile(0.25, axis=1)
+df_stats['q50'] = df.quantile(0.5, axis=1)  # 中位数
+df_stats['q75'] = df.quantile(0.75, axis=1)
+# 计算最小值和最大值
+df_stats['min'] = df.min(axis=1)
+df_stats['max'] = df.max(axis=1)
+# 计算范围（极差）
+df_stats['range'] = df.max(axis=1) - df.min(axis=1)
+df_stats.index = df['compartment'].tolist()
 
 
-# calculate the mass ratio
-# out = ProMassRatio_Organelle(protein_abundance=mass_fraction_final, compartment_type="organelle")
-# out.to_excel("data/proteomics/ProMassRatio_across_compartment_combine_test.xlsx")
+
+# check nucleolus. Some errors exist in automatic annotation.
+ss0 = compartment_all['nucleolus']
+ss1 = list(set(gene_nucleolus['gene'].tolist()))
+gene_double_check = list(set(ss0)-set(ss1))
+# based on grok, 剩余42个均为明确、核心或组成性定位于nucleolus的蛋白（核糖体生物发生因子、Pol I亚基、snoRNP、核/核仁exosome、processome等，SGD GO:0005730有直接证据）。
+nucleolar_proteins = [
+    'YNL096C',   # RPS7B
+    'YIL133C',   # RPL16A
+    'YNL075W',   # IMP4
+    'YBL014C',   # RRN6
+    'YOR210W',   # RPB10
+    'YER127W',   # LCP5
+    'YPL090C',   # RPS6A
+    'YGR245C',   # SDA1
+    'YDL208W',   # NHP2
+    'YLL035W',   # GRC3
+    'YGR095C',   # RRP46
+    'YPR110C',   # RPC40
+    'YMR190C',   # SGS1
+    'YDL111C',   # RRP42
+    'YHR072W-A', # NOP10
+    'YHL001W',   # RPL14B
+    'YPR010C',   # RPA135
+    'YNL113W',   # RPC19
+    'YJL191W',   # RPS14B
+    'YOR340C',   # RPA43
+    'YJL033W',   # HCA4/DBP4
+    'YOR096W',   # RPS7A
+    'YHR148W',   # IMP3
+    'YKR024C',   # DBP7
+    'YDR156W',   # RPA14
+    'YOR206W',   # NOC2
+    'YHR069C',   # RRP4
+    'YDR412W',   # RRP17
+    'YBR181C',   # RPS6B
+    'YCR031C',   # RPS14A
+    'YGL123W',   # RPS2
+    'YLR175W',   # CBF5
+    'YNL069C',   # RPL16B
+    'YOL142W',   # RRP40
+    'YER126C',   # NSA2
+    'YJR063W',   # RPA12
+    'YKL006W',   # RPL14A
+    'YPL081W',   # RPS9A
+    'YBR189W',   # RPS9B
+    'YNL232W',   # CSL4
+    'YPL266W'    # DIM1
+]
 
 
-# calculate the volume ratio
-s2 =Pro_3D_Volume_Ratio_Cal(protein_in_mol, compartment_type="organelle")
-s2.to_excel("data/proteomics/volume_size_ratio_across_compartment_combine.xlsx")
 
 
-# calculate the membrane ratio
-s2 = Pro_Membrance_Ratio_Cal(protein_in_mol)
-s2.to_excel("data/proteomics/membrane_size_ratio_across_compartment_combine.xlsx")
+
+
+'''
+compartment_main_c = gene_location_curation_sce(compartment_main)
+compartment_main_c = {k: v for k, v in compartment_main_c.items() if k in organelles_main}
+
+
+# quality check
+plasma = compartment_main_c['plasma membrane']
+mass_fraction_final_plasma = mass_fraction_final[mass_fraction_final['gene'].isin(plasma)]
+column_sums1 = mass_fraction_final_plasma.sum()
+column_sums2 = mass_fraction_final.sum()
+
+
+
+from collections import defaultdict
+def count_keys_per_value_optimized(input_dict):
+    # 自动初始化值为 list 类型
+    result = defaultdict(list)
+
+    for key, value_list in input_dict.items():
+        for item in value_list:
+            result[item].append(key)
+
+    return dict(result)  # 转回普通字典返回
+
+output = count_keys_per_value_optimized(compartment_main_c)
+print(output)
+
+
+
+
+
+
+
+
+
+
+
+# new way
+Sample_ID_select = list(mass_fraction_final.columns)
+Sample_ID_select = [x for x in Sample_ID_select if x !="gene"]
+output0 = {}
+for col0 in Sample_ID_select:
+    print(col0)
+    value1 = []
+    pro_abundance = mass_fraction_final[['gene', col0]]
+    pro_abundance.columns = ['gene', 'g/gDW']
+    pro_abundance = pro_abundance.dropna()
+
+    gene = pro_abundance['gene'].tolist()
+    gene_with_compartment = list(output.keys())
+    gene_refine = list(set(gene) & set(gene_with_compartment))
+
+    pro_abundance00 = pro_abundance[pro_abundance['gene'].isin(gene_refine)]
+    gene_refine00 = pro_abundance00['gene'].tolist()
+
+    pro_local = []
+    for x in gene_refine00:
+        print(list(output[x]))
+        pro_local.append(list(output[x]))
+
+    # 示例数据（实际替换为您的数据集，如从SGD或Ho et al.下载）
+    data = {
+        'protein': pro_abundance00['gene'].tolist(),
+        'abundance': pro_abundance00['g/gDW'].tolist(),  # 每细胞拷贝数
+        'localizations': pro_local
+    }
+    df = pd.DataFrame(data)
+
+    # 您的细胞器列表
+    organelles_main = [
+        "mitochondrion", "nucleus", "endoplasmic reticulum", "Golgi apparatus",
+        "fungal-type vacuole", "peroxisome", "endosome", "lipid droplet", "fungal-type cell wall",
+        "plasma membrane", "P-body", "cytoplasmic stress granule", "ribosome", "cytosol",
+        "cytoskeleton", "extracellular region"
+    ]
+
+    # Fractional分配计算
+    allocation = {org: 0.0 for org in organelles_main}  # 初始化
+    total_abundance = df['abundance'].sum()  # 总资源（守恒）
+
+    for _, row in df.iterrows():
+        locs = [org for org in row['localizations'] if org in organelles_main]  # 只计您的列表中
+        if locs:  # 避免未注解蛋白
+            fraction = row['abundance'] / len(locs)  # 均匀分配
+            for loc in locs:
+                allocation[loc] += fraction
+
+    # 计算比例
+    proportions = {org: (allocation[org] / total_abundance) * 100 for org in organelles_main}
+
+    # 输出（排序显示）
+    proportions_sorted = dict(sorted(proportions.items(), key=lambda x: x[1], reverse=True))
+    for org, pct in proportions_sorted.items():
+        print(f"{org}: {pct:.2f}%")
+    output0[col0] = proportions_sorted
+
+
+
+output_df = pd.DataFrame(output0)
+output_df = output_df / 100
+output_df.to_excel("data/sce_compartment_curation/mass_fraction_new_way.xlsx")
+'''
+
 
 
