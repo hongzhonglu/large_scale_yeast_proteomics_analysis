@@ -147,15 +147,29 @@ new_compartment["source"] = "MULocDeep"
 
 
 #get sce gene annotation
-# compartment_dict20 = getCompartmentGeneList(type="all")
-# compartment_dict20_update =gene_location_curation_sce(compartment_dict20)
+# based on part 3.3
+compartment_all0 = getCompartmentGeneList(type="all")
 
-# based on part 3.8
-compartment_dict20 = getCompartmentGeneList(type="all")
-compartment_dict20_update = gene_location_curation_sce(organelle0=compartment_dict20)
-compartment_dict20_update['nucleoplasm'] = ss0 # nucleoplasm_proteins, this gene list is from SGD annotation in 2026!
+compartment_all00 = gene_location_curation_sce(organelle0=compartment_all0)
+
+## 重新整合，包括实验、手动校正和所有
+# 这个23个细胞器或者子细胞器完全基于有实验证据的，且未经手工查询校正
+Exp_list = pd.read_excel('data/compare_compartment_anotation_from_different_version_check.xlsx', sheet_name='g2-exp')
+compartment_dict20 = getCompartmentGeneList(type="manual") # Remove some compartmental annotation only with computational evidence (keep experimental evidence)
+filtered = {k: v for k, v in compartment_dict20.items() if k in Exp_list['compartment'].tolist()}
+
+# 其他103个， 21个细胞器是经过手动校正，剩余的是基于全部证据整合(其中就包括计算推测与实验)
+filtered2 = {k: v for k, v in compartment_all00.items() if k not in Exp_list['compartment'].tolist()}
+# 去重
+duplicated = ['mitochondrial membrane','vacuolar membrane','vacuole']
+filtered20 = {k: v for k, v in filtered2.items() if k not in duplicated}
+# 合并
+compartment_all = {**filtered, **filtered20}
 
 
+
+
+compartment_dict20_update = compartment_all
 
 
 

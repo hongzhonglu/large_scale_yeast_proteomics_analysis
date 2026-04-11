@@ -12,8 +12,6 @@ compartment_all0 = getCompartmentGeneList(type="all")
 
 compartment_all00 = gene_location_curation_sce(organelle0=compartment_all0)
 
-
-
 ## 重新整合，包括实验、手动校正和所有
 # 这个23个细胞器或者子细胞器完全基于有实验证据的，且未经手工查询校正
 Exp_list = pd.read_excel('data/compare_compartment_anotation_from_different_version_check.xlsx', sheet_name='g2-exp')
