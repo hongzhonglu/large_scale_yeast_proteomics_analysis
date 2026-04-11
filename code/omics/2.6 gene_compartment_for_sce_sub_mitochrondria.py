@@ -26,7 +26,9 @@ def polish_annotaiton(df):
     df_renamed = df.rename(columns={'Systematic Name/Complex Accession': 'gene'})
     return df_renamed
 
-mitochondrial_inner_membrane = pd.read_csv("data/sce_compartment_curation/2026/mitochondrial_inner_membrane_annotations.txt",sep='\t', skiprows=8, header=0)
+#mitochondrial_inner_membrane = pd.read_csv("data/sce_compartment_curation/2026/mitochondrial_inner_membrane_annotations.txt",sep='\t', skiprows=8, header=0)
+mitochondrial_inner_membrane = pd.read_csv("data/sce_compartment_curation/2026/mitochondrial_inner_membrane_annotations 20260411.txt",sep='\t', skiprows=8, header=0)
+
 mitochondrial_inner_membrane = polish_annotaiton(mitochondrial_inner_membrane)
 
 mitochondrial_outer_membrane = pd.read_csv("data/sce_compartment_curation/2026/mitochondrial_outer_membrane_annotations.txt",sep='\t', skiprows=8, header=0)
@@ -49,13 +51,14 @@ gene_m_Inner_membrane = gene_mitochondrion_nc[gene_mitochondrion_nc['Inner membr
 gene_m_OI_space = gene_mitochondrion_nc[gene_mitochondrion_nc['Inter-membrane space'] == "X"]
 gene_m_matrix = gene_mitochondrion_nc[gene_mitochondrion_nc['Matrix'] == "X"]
 
+gene_check = list(set(gene_m_Inner_membrane['gene'].tolist()) - set(mitochondrial_inner_membrane['gene']))
+
 
 # 不同方法的交集
 gene_m_Outer_membrane = list(set(gene_m_Outer_membrane['gene'].tolist()) & set(mitochondrion_gene))
 gene_m_Inner_membrane = list(set(gene_m_Inner_membrane['gene'].tolist()) & set(mitochondrion_gene))
 gene_m_OI_space = list(set(gene_m_OI_space['gene'].tolist()) & set(mitochondrion_gene))
 gene_m_matrix = list(set(gene_m_matrix['gene'].tolist()) & set(mitochondrion_gene))
-
 
 
 # 不同方法的并集
@@ -68,15 +71,35 @@ gene_unassigned = list(set(mitochondrion_gene)-set(gene_assigned)) # 454 protein
 
 
 
-gene_m_Outer_membrane_v3 = pd.DataFrame({"gene": gene_m_Outer_membrane_v3})
-gene_m_Inner_membrane_v3 = pd.DataFrame({"gene": gene_m_Inner_membrane_v3})
-gene_m_OI_space_v3 = pd.DataFrame({"gene": gene_m_OI_space_v3})
+# Outer_membrane
+# 2 genes not in OI
+two_gene = ['YMR152W','YDL126C']
+gene_m_Outer_membrane_v3 = pd.DataFrame({"gene": list(set(gene_m_Outer_membrane_v3)-set(two_gene))})
+
+
+## Inner membrane
+# here the selected genes are much more that the manually curated ones
+# with kimi check
+# gene_not_IM
+# 经 kimi， grok核查这200个蛋白不在线粒体内膜上。
+gene_not_IM = pd.read_excel("data/sce_compartment_curation/2026/gene_not_belong_mitochondrial_inner_membrane_based_sgd.xlsx")
+gene_m_Inner_membrane_v30 = list(set(gene_m_Inner_membrane_v3)-set(gene_not_IM['gene'].tolist()))
+gene_m_Inner_membrane_v3 = pd.DataFrame({"gene": gene_m_Inner_membrane_v30})
+#gene_m_Inner_membrane_v3 = pd.DataFrame({"gene": mitochondrial_inner_membrane['gene'].tolist()}) # for the test
+
+## OI
+# 3 genes not in OI
+three_gene = ['YIL155C','YJL180C','YBR091C']
+gene_m_OI_space_v3 = pd.DataFrame({"gene": list(set(gene_m_OI_space_v3)-set(three_gene))})
+
+## matrix
 gene_m_matrix_v3 = pd.DataFrame({"gene": gene_m_matrix_v3})
 gene_m_unassigned_v3 = pd.DataFrame({"gene": gene_unassigned})
-
+','.join(gene_m_matrix_v3['gene'].tolist())
 
 gene_m_Outer_membrane_v3.to_excel("data/sce_compartment_curation/2026_curated/mitochondrial_outer_membrane_annotations.xlsx")
 gene_m_Inner_membrane_v3.to_excel("data/sce_compartment_curation/2026_curated/mitochondrial_inner_membrane_annotations.xlsx")
 gene_m_OI_space_v3.to_excel("data/sce_compartment_curation/2026_curated/mitochondrial_intermembrane_space_annotations.xlsx")
 gene_m_matrix_v3.to_excel("data/sce_compartment_curation/2026_curated/mitochondrial_matrix_annotations.xlsx")
 gene_m_unassigned_v3.to_excel("data/sce_compartment_curation/2026_curated/mitochondrial_unassigned.xlsx")
+

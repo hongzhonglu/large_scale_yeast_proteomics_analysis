@@ -120,7 +120,7 @@ ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
 # plot for the main organelle - mt
 df_mt <- Pro_mass_select0[, str_detect(colnames(Pro_mass_select0), "^mitochondrial ")]
 df_mt$growth <- Pro_mass_select0$growth
-long_DF <- df_mt %>% gather(type, mass_fraction, 1:9)
+long_DF <- df_mt %>% gather(type, mass_fraction, 1:8)
 long_DF$type <- as.factor(long_DF$type)
 ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
   geom_point() + # geom_point(alpha = 2/10) +

@@ -3,7 +3,7 @@
 import pandas as pd
 import os
 # import self function
-# from src.protein_process import *
+from src.protein_process import *
 # reanalyze the data set
 # compartment info
 compartment = getCompartmentGeneList(type="all")  # based on the automatic way
@@ -39,6 +39,7 @@ compartment_compare = pd.merge(left=df1, right=df2, left_on=['compartment'], rig
 compartment_compare.columns = ["compartment", "annotation_combine", "annotation_curation"]
 compartment_compare.to_excel("data/compare_compartment_annotation_with_and_without_manual_curation.xlsx")
 
+
 # save the corrected compartment annotation
 mapping =[]
 for key, value in compartment_corrected.items():
@@ -49,8 +50,5 @@ df0 = pd.DataFrame({"pair": mapping})
 df3 = df0['pair'].str.split('@', n=1, expand=True)
 df3.columns = ['compartment','gene']
 df3.to_excel("data/compartment_sce_curation.xlsx")
-
-
-
 
 

@@ -6,14 +6,59 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_3.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_3.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_3_rosemary.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_3_rosemary.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/Golgi apparatus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/Golgi apparatus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/cytosol.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/cytosol.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/endosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endosome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/fungal-type vacuole.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/fungal-type vacuole.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/lipid droplet.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/lipid droplet.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial inner membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial inner membrane.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial intermembrane space.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial intermembrane space.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial matrix.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial outer membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial outer membrane.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/nucleolus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleolus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/nucleus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleus.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/peroxisome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/peroxisome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/plasma membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/plasma membrane.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/result/ribosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/ribosome.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/1.1 proteomics_comparment_annotation_automatic_way.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/1.1 proteomics_comparment_annotation_automatic_way.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/2.7 screen_unreliable_protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.7 screen_unreliable_protein.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.2 omics_inferred_absolute_protein_size.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.2 omics_inferred_absolute_protein_size.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.2 real_protein_copy_per_cell.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/not_used/3.2 real_protein_copy_per_cell.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.3 combine all mass fraction.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.2 combine all mass fraction.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.8 mass_fraction_calculation_for_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 mass_fraction_calculation_for_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.6 gene_compartment_for_sce_sub_mitochrondria.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.6 gene_compartment_for_sce_sub_mitochrondria.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.7 screen_unreliable_protein.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.8 screen_unreliable_protein.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.3 mass_fraction_calculation_for_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.3 mass_fraction_calculation_for_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compare_compartment_annotation_with_and_without_manual_curation.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compare_compartment_anotation_with_all_and_manual_evidance.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/compartment_sce_curation.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/all_organelle_fraction_test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/all_organelle_fraction_test.xlsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/data/proteomics/main_organelle_fraction_test.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/proteomics/main_organelle_fraction_test.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/Golgi_apparatus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/Golgi_apparatus_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/Golgi_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/Golgi_membrane_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytoplasm_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytoplasm_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytosol_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytosol_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_membrane_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endosome_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endosome_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_cell_wall_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_cell_wall_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/lipid_droplet_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/lipid_droplet_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_inner_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_inner_membrane_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_intermembrane_space_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_intermembrane_space_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_matrix_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_matrix_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_outer_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_outer_membrane_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_unassigned.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrial_unassigned.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleolus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleolus_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleus_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/peroxisome_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/peroxisome_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/plasma_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/plasma_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_fraction_under_different_input.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_fraction_under_different_input.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_xia.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/mitochondrion_xia.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,10 +149,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/omics" />
+      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/data/sce_compartment_curation" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/omics/not_used" />
@@ -183,6 +228,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2.5 gene_compartment_for_sce_main_organelle" />
         <item itemvalue="Python.2.5 gene_compartment_for_sce_main_organelle" />
         <item itemvalue="Python.3.1 omics_collect_preprocess_for_protein_copy" />
         <item itemvalue="Python.2.3 proteomics_abundance_unit_unify" />
@@ -396,32 +442,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>649</line>
+          <line>726</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>699</line>
+          <line>776</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>450</line>
+          <line>642</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>448</line>
+          <line>640</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>449</line>
+          <line>641</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>534</line>
+          <line>659</line>
           <option name="timeStamp" value="76" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
@@ -440,24 +486,19 @@
           <option name="timeStamp" value="80" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>470</line>
-          <option name="timeStamp" value="83" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>455</line>
-          <option name="timeStamp" value="84" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py</url>
-          <line>217</line>
-          <option name="timeStamp" value="92" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/2.4 gene_compartment_for_yeast_IO.py</url>
           <line>153</line>
           <option name="timeStamp" value="99" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.3 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>54</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/2.6 gene_compartment_for_sce_sub_mitochrondria.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="102" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
