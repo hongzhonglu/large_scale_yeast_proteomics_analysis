@@ -116,10 +116,9 @@ supplementary_cytosol_proteins = [
     "YOL086C", # ADH1: 乙醇脱氢酶1，酵母丰度最高的蛋白之一
     "YAL038W", # PYK1 (CDC19): 丙酮酸激酶，糖酵解最后一步的关键质量贡献者
     "YDR050C", # TPI1: 磷酸丙糖异构酶，极高丰度代谢酶
-    "YBR196C", # PGI1: 磷酸葡萄糖异构酶，糖酵解途径核心成员
-    "YBR118W", # TEF2: 翻译延伸因子 EF-1 alpha，与 TEF1 共同占据巨大质量比
-    "YCR012W" ] #3-磷酸甘油酸激酶
-compartment1['cytosol'] = list(set(gene_sgd_2026['gene'].tolist())) + supplementary_cytosol_proteins
+    "YBR196C", # PGI1: 磷酸葡萄糖异构酶，糖酵解途径核心成
+    "YCR012W"] #3-磷酸甘油酸激酶 #
+compartment1['cytosol'] = list(set(gene_sgd_2026['gene'].tolist()))  + supplementary_cytosol_proteins
 compartment1['cytosol'] = [x for x in compartment1['cytosol'] if x !='YER117W']
 
 ### output ###

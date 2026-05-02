@@ -77,14 +77,14 @@ ggplot(df, aes(x=WT_0 , y=WT_4, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "Zinc limitation 0h",
        y = "Zinc limitation 4h") +
-  xlim(0, 0.35) + ylim(0,0.35) +
+  xlim(0, 0.45) + ylim(0,0.45) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.4), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
              label.size = NA) +
-  geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+  geom_text(aes(label=ifelse(WT_4 > 0.02, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
 
 
 
@@ -97,15 +97,15 @@ ggplot(df, aes(x=WT_0 , y=WT_4, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "Zinc limitation 0h",
        y = "Zinc limitation 4h") +
-  xlim(0, 0.35) + ylim(0,0.35) +
+  xlim(0, 0.45) + ylim(0,0.45) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.4), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
              label.size = NA) +
   #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
-  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+  geom_text_repel(data=filter(df, WT_0 > 0.03), aes(label=compartment),hjust=-0.3,vjust=-0.3)
 
 
 
@@ -119,15 +119,15 @@ ggplot(df, aes(x=WT_0 , y=WT_8, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "Zinc limitation 0h",
        y = "Zinc limitation 8h") +
-  xlim(0, 0.35) + ylim(0,0.35) +
+  xlim(0, 0.45) + ylim(0,0.45) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.4), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
              label.size = NA) +
   #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
-  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+  geom_text_repel(data=filter(df, WT_0 > 0.03), aes(label=compartment),hjust=-0.3,vjust=-0.3)
 
 
 
@@ -140,21 +140,21 @@ ggplot(df, aes(x=WT_0 , y=WT_12, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "Zinc limitation 0h",
        y = "Zinc limitation 12h") +
-  xlim(0, 0.35) + ylim(0,0.35) +
+  xlim(0, 0.45) + ylim(0,0.45) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.4), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
              label.size = NA) +
   #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
-  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+  geom_text_repel(data=filter(df, WT_0 > 0.03), aes(label=compartment),hjust=-0.3,vjust=-0.3)
 
 
 
 
 # supplementary figure - check the fold change of protein mass fraction for organelle
-df$WT_8_vs_WT_0 <- (df$WT_8-df$WT_0)/df$WT_0
+df$WT_8_vs_WT_0 <- (df$WT_8-df$WT_0)/df$WT_0*100
 df$WT_8_vs_WT_0_abs <- abs(df$WT_8_vs_WT_0)
 
 df_filter_mass <- df[df$WT_0 >=0.01, ]
@@ -356,7 +356,7 @@ ggplot(df_mt, aes(x=C_lim , y=C_N_50, label=compartment)) +
 
 
 # supplementary figure - check the fold change of protein mass fraction for organelle
-df$C_N_50_vs_C_lim <- (df$C_N_50 - df$C_lim)/df$C_lim
+df$C_N_50_vs_C_lim <- (df$C_N_50 - df$C_lim)/df$C_lim*100
 df$C_N_50_vs_C_lim_abs <- abs(df$C_N_50_vs_C_lim)
 df_filter_mass <- df[df$C_lim >=0.01, ]
 df_filter_mass <- df_filter_mass[df_filter_mass$C_N_50_vs_C_lim_abs >=0.15, ] 

@@ -45,11 +45,25 @@ ggplot(data=compartment0[1:10,], aes(x = reorder(compartment, annotation_curatio
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   coord_flip()
 
+# bar plot to analyze the protein num in each main component
+ggplot(data=compartment0[1:10,], aes(x = reorder(compartment, annotation_curation), y = annotation_curation)) + 
+  geom_bar(stat="identity",fill="#619CFF") +
+  xlab("Cellular component") + 
+  ylab("Protein count") + 
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1),
+        plot.margin = margin(1, 1, 1, 1, "cm")) +
+  theme(axis.text=element_text(size=12, family="Arial"),
+        axis.title=element_text(size=12, family="Arial")) +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+  coord_flip()
+
+
+
 # bar plot to analyze the protein num in each compartment before and after curation based on experimental evidance
 compartment0 <- compartment0[compartment0$fold != 1, ]
 
 
-long_DF <- compartment0 %>% gather(type, count, 3:4)
+long_DF <- compartment0[1:10,] %>% gather(type, count, 3:4)
 long_DF$type <- as.factor(long_DF$type)
 ggplot(long_DF, aes(fill=type, y=count, x=compartment)) + 
   geom_bar(position="dodge", stat="identity") +
@@ -58,8 +72,8 @@ ggplot(long_DF, aes(fill=type, y=count, x=compartment)) +
   theme(panel.background = element_rect(fill = "white", color="black", size = 1),
         plot.margin = margin(1, 1, 1, 1, "cm")) +
   theme(axis.text=element_text(size=12, family="Arial"),
-        axis.title=element_text(size=12, family="Arial"),
-        legend.text = element_text(size=12, family="Arial")) +
+        axis.title=element_text(size=12, family="Arial")) +
+  theme(legend.position = "none")+
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   coord_flip()
 
@@ -257,8 +271,8 @@ combine_batch <- combine[, condition_batch]
 ProMassRatio_batch <- ProMassRatio1[, condition_batch]
 
 library("PerformanceAnalytics")
-chart.Correlation(combine_batch , histogram=FALSE, pch=19)
-chart.Correlation(ProMassRatio_batch , histogram=FALSE, pch=19)
+chart.Correlation(combine_batch , histogram=FALSE, pch=15)
+chart.Correlation(ProMassRatio_batch , histogram=FALSE, pch=15)
 
 help(chart.Correlation)
 
@@ -291,6 +305,10 @@ compartment_sce <- compartment_sce[compartment_sce$compartment !="cytoplasm",]
 compartment_sce <- compartment_sce[, c(2:3)]
 
 
+
+#####
+# this code is not used!!
+"
 organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet', 'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'plasma membrane','mitochondrial outer membrane','mitochondrial inner membrane', 'nucleolus','mitochondrial intermembrane space','mitochondrial matrix')
 for (x in unique(organelle)){
   print(x)
@@ -316,7 +334,7 @@ for (x in unique(organelle)){
          y = "Density") 
   ggsave(out <- paste('result/',x,'.png', sep = ""), width=8, height=6, dpi=600)
 }
-
+"
 
 
 

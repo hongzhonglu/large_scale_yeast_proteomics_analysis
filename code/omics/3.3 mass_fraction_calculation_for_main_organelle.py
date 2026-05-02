@@ -8,10 +8,10 @@ from src.protein_process import *
 ##
 mass_fraction_final = pd.read_excel("data/proteomics/mass_fraction_combine.xlsx")
 
+
+
 compartment_all0 = getCompartmentGeneList(type="all")
-
 compartment_all00 = gene_location_curation_sce(organelle0=compartment_all0)
-
 ## 重新整合，包括实验、手动校正和所有
 # 这个23个细胞器或者子细胞器完全基于有实验证据的，且未经手工查询校正
 Exp_list = pd.read_excel('data/compare_compartment_anotation_from_different_version_check.xlsx', sheet_name='g2-exp')
@@ -28,13 +28,33 @@ compartment_all = {**filtered, **filtered20}
 
 
 
+
+# save the corrected compartment annotation
+mapping =[]
+for key, value in compartment_all.items():
+    print(key, value)
+    new0 = [key+"@"+ x for x in value]
+    mapping = mapping + new0
+df0 = pd.DataFrame({"pair": mapping})
+df3 = df0['pair'].str.split('@', n=1, expand=True)
+df3.columns = ['compartment','gene']
+df3.to_excel("data/compartment_sce_curation.xlsx")
+
+
+
+
+
+
+
+
+
 compartment_list = list(compartment_all.keys())
 compartment_out = ','.join(compartment_list)
 
 organelles_main = [
     "mitochondrion", "nucleus", "endoplasmic reticulum", "Golgi apparatus",
     "fungal-type vacuole", "peroxisome", "endosome", "lipid droplet", "fungal-type cell wall",
-    "plasma membrane", "P-body", "spindle pole body", "ribosome", "cytosol", "extracellular region"]
+    "plasma membrane", "P-body", "spindle pole body", "ribosome", "cytosol", "extracellular region", "nucleolus", "mitochondrial inner membrane"]
 # "cytosol","extracellular region" 属于区室，而非细胞器
 
 
