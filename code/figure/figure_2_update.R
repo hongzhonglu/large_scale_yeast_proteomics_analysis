@@ -271,10 +271,23 @@ combine_batch <- combine[, condition_batch]
 ProMassRatio_batch <- ProMassRatio1[, condition_batch]
 
 library("PerformanceAnalytics")
-chart.Correlation(combine_batch , histogram=FALSE, pch=15)
-chart.Correlation(ProMassRatio_batch , histogram=FALSE, pch=15)
+colnames(combine_batch) <- c("Batch_1","Batch_2","Batch_3","Batch_4","Batch_5","Batch_6")
+colnames(ProMassRatio_batch) <- c("Batch_1","Batch_2","Batch_3","Batch_4","Batch_5","Batch_6")
+
+chart.Correlation(combine_batch , histogram=FALSE, pch=15,
+                  cex.axis = 1.2,  # 坐标轴刻度字体大小
+                  cex.labels = 1.5, # 对角线变量名大小
+                  cex.cor = 0.8 )   # 相关系数数字大小)
+chart.Correlation(ProMassRatio_batch , histogram=FALSE, pch=15,
+                  cex.axis = 1.2,  # 坐标轴刻度字体大小
+                  cex.labels = 1.5, # 对角线变量名大小
+                  cex.cor = 0.8 )   # 相关系数数字大小)
 
 help(chart.Correlation)
+
+# replot 
+
+
 
 
 
