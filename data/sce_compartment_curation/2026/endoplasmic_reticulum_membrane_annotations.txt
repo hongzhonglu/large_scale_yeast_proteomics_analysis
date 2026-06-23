@@ -1,0 +1,185 @@
+!
+!Date: 01/22/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+ERV41-ERV46 retrograde receptor complex	CPX-1045	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	ComplexPortal	2017-03-13	Otte S and Barlowe C (2002) PMID:12426381
+PPG1-FAR complex	CPX-1197	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2018-03-27	Pracheil T and Liu Z (2013) PMID:23625923
+Glycosylphosphatidylinositol-mannosyltransferase II complex	CPX-1269	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	ComplexPortal	2022-03-28	Sato K, et al. (2007) PMID:17615295
+Glycosylphosphatidylinositol-mannosyltransferase I complex	CPX-1270	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2017-11-14	Ashida H, et al. (2005) PMID:15635094
+Glycosylphosphatidylinositol-N-acetylglucosaminyltransferase complex	CPX-1274	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2021-03-08	Newman HA, et al. (2005) PMID:16278447
+GPI-anchor transamidase complex	CPX-1275	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2017-11-14	Grimme SJ, et al. (2004) PMID:15075373
+Luminal surveillance complex	CPX-1280	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2018-03-27	Denic V, et al. (2006) PMID:16873065
+Oligosaccharyltransferase complex, OST6 variant	CPX-1638	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2018-04-24	Chavan M, et al. (2006) PMID:16754853
+Oligosaccharyltransferase complex, OST3 variant	CPX-1639	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2018-05-17	Chavan M, et al. (2006) PMID:16754853
+EMP24 complex	CPX-1698	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2014-10-16	Aguilera-Romero A, et al. (2008) PMID:18283113
+SSH1 translocon complex	CPX-1834	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2014-10-16	Finke K, et al. (1996) PMID:8612571
+Signal peptidase complex	CPX-1835	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2020-08-27	Meyer HA and Hartmann E (1997) PMID:9148931
+Golgi SNARE complex SED5-BOS1-BET1-SEC22	CPX-1854	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-03	Parlati F, et al. (2000) PMID:11001058
+Golgi SNARE complex SED5-GOS1-SFT1-YKT6	CPX-1855	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-03	Parlati F, et al. (2002) PMID:11959998
+Ire1 serine/threonine-protein kinase/endoribonuclease complex	CPX-2147	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2020-11-03	Kimata Y, et al. (2007) PMID:17923530
+Glycosylphosphatidylinsitol ethanolamine-phosphate transferase II complex	CPX-2678	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2022-07-15	Pittet M and Conzelmann A (2007) PMID:16859984
+Glycosylphosphatidylinsitol ethanolamine-phosphate transferase III complex	CPX-2680	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2022-07-15	Pittet M and Conzelmann A (2007) PMID:16859984
+PMT1-PMT2 dolichyl-phosphate-mannose-protein mannosyltransferase complex	CPX-3036	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2014-10-16	Girrbach V and Strahl S (2003) PMID:12551906
+PMT4 dolichyl-phosphate-mannose-protein mannosyltransferase complex	CPX-3039	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	ComplexPortal	2014-10-16	Hutzler J, et al. (2007) PMID:17470820
+Seipin complex	CPX-3342	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	ComplexPortal	2018-05-01	Wang CW, et al. (2014) PMID:24434579
+Palmitoyltransferase ERF2-SHR5 complex	CPX-813	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	ComplexPortal	2023-02-10	Bartels DJ, et al. (1999) PMID:10490616
+GET complex	CPX-956	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		BSR	manually curated	ComplexPortal	2021-02-19	McDowell MA, et al. (2020) PMID:32910895
+ERV46	YAL042W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Otte S, et al. (2001) PMID:11157978
+CNE1	YAL058W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Parlati F, et al. (1995) PMID:7814381
+RFT1	YBL020W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IGI with ALG11	manually curated	SGD	2013-08-07	Helenius J, et al. (2002) PMID:11807558
+RFT1	YBL020W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Helenius J, et al. (2002) PMID:11807558
+ERD2	YBL040C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Semenza JC, et al. (1990) PMID:2194670
+YBL100C	YBL100C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-08	Beilharz T, et al. (2003) PMID:12514182
+GPI18	YBR004C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Sato K, et al. (2007) PMID:17615295
+RCR1	YBR005W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Imai K, et al. (2005) PMID:15590673
+CSG2	YBR036C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2023-06-28	Takita Y, et al. (1995) PMID:7854312
+CSG2	YBR036C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2023-06-28	Liu S, et al. (2023) PMID:37349354
+ALG14	YBR070C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Gao XD, et al. (2005) PMID:16100110
+ALG14	YBR070C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Averbeck N, et al. (2007) PMID:17686769
+AGP2	YBR132C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	van Roermund CW, et al. (1999) PMID:10545096
+IFA38	YBR159W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2014-04-22	Browne CM, et al. (2013) PMID:23263984
+SEC66	YBR171W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2015-07-10	Sato K, et al. (1997) PMID:9275186
+SMY2	YBR172C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Higashio H, et al. (2008) PMID:17973654
+YBR196C-A	YBR196C-A	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2020-05-20	Vakirlis N, et al. (2020) PMID:32034123
+DER1	YBR201W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Knop M, et al. (1996) PMID:8631297
+LDB16	YCL005W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Wang CW, et al. (2014) PMID:24434579
+SED4	YCR067C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Gimeno RE, et al. (1995) PMID:7593162
+GRX6	YDL010W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Izquierdo A, et al. (2008) PMID:18503006
+TSC13	YDL015C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kohlwein SD, et al. (2001) PMID:11113186
+UBP1	YDL122W	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-01-25	Peterson BG, et al. (2019) PMID:31713515
+CDC48	YDL126C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nita-Lazar M and Lennarz WJ (2005) PMID:15910746
+SHR3	YDL212W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Ljungdahl PO, et al. (1992) PMID:1423607
+SHR3	YDL212W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kota J and Ljungdahl PO (2005) PMID:15623581
+OST4	YDL232W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Kim H, et al. (2000) PMID:10677492
+VMS1	YDR049W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tran JR, et al. (2011) PMID:21148305
+VPS64	YDR200C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Beilharz T, et al. (2003) PMID:12514182
+RTN1	YDR233C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	De Craene JO, et al. (2006) PMID:16624861
+SRP101	YDR292C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ogg SC, et al. (1998) PMID:9679135
+SUR2	YDR297W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Cliften P, et al. (1996) PMID:8868422
+YFT2	YDR319C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		ISO with P59266	manually curated	SGD	2021-12-17	Gross DA, et al. (2010) PMID:20520733
+SWA2	YDR320C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Du Y, et al. (2001) PMID:11553703
+GPI8	YDR331W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Benghezal M, et al. (1996) PMID:8978684
+STE14	YDR410C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Romano JD and Michaelis S (2001) PMID:11451995
+STE14	YDR410C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Romano JD, et al. (1998) PMID:9693378
+GPI19	YDR437W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Newman HA, et al. (2005) PMID:16278447
+WBP1	YEL002C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2014-03-12	Li G, et al. (2003) PMID:12974639
+SPF1	YEL031W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2020-01-31	Sørensen DM, et al. (2019) PMID:30785834
+SPF1	YEL031W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Cronin SR, et al. (2002) PMID:12058017
+SPF1	YEL031W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2014-01-17	Corradi GR, et al. (2012) PMID:22745129
+PRE1	YER012W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kalies KU, et al. (2005) PMID:15973433
+ERG28	YER044C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mo C, et al. (2002) PMID:12119386
+YOS1	YER074W-A	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Heidtman M, et al. (2005) PMID:15659647
+YOS1	YER074W-A	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IPI with YIP1	manually curated	SGD	2013-08-07	Heidtman M, et al. (2005) PMID:15659647
+YOS1	YER074W-A	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IPI with YIF1	manually curated	SGD	2013-08-07	Heidtman M, et al. (2005) PMID:15659647
+GET2	YER083C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2023-01-26	Heo P, et al. (2023) PMID:36640319
+GET2	YER083C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2023-02-03	Wang F, et al. (2014) PMID:25043001
+SBH1	YER087C-B	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2019-06-27	Shyu P, et al. (2019) PMID:31201345
+UBC6	YER100W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sommer T and Jentsch S (1993) PMID:8396728
+SCS2	YER120W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kagiwada S, et al. (1998) PMID:9537365
+EMP65	YER140W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Friederichs JM, et al. (2012) PMID:23275891
+YPT1	YFL038C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Cao X and Barlowe C (2000) PMID:10747087
+EMP47	YFL048C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Sato K and Nakano A (2003) PMID:12857885
+KEG1	YFR042W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Nakamata K, et al. (2007) PMID:17893149
+ERG26	YGL001C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mo C, et al. (2002) PMID:12119386
+ERG4	YGL012W	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	UniProt	2022-07-07	Zweytick D, et al. (2000) PMID:10722850
+GET1	YGL020C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2023-01-26	Heo P, et al. (2023) PMID:36640319
+GET1	YGL020C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2023-02-03	Wang F, et al. (2014) PMID:25043001
+CWH41	YGL027C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Jiang B, et al. (1996) PMID:8576053
+ERV14	YGL054C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Powers J and Barlowe C (1998) PMID:9732282
+OLE1	YGL055W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Tatzer V, et al. (2002) PMID:12475963
+SCS3	YGL126W	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		ISO with P59266	manually curated	SGD	2021-12-17	Gross DA, et al. (2010) PMID:20520733
+CAX4	YGR036C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Fernandez F, et al. (2001) PMID:11504728
+ERG25	YGR060W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Li L and Kaplan J (1996) PMID:8663358
+VMA21	YGR105W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Graham LA, et al. (1998) PMID:9660861
+VOA1	YGR106C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Ryan M, et al. (2008) PMID:18799613
+VOA1	YGR106C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ryan M, et al. (2008) PMID:18799613
+YIP1	YGR172C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Heidtman M, et al. (2003) PMID:14557247
+YIP1	YGR172C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Heidtman M, et al. (2005) PMID:15659647
+ATF2	YGR177C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Tiwari R, et al. (2007) PMID:18034159
+DIE2	YGR227W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Burda P and Aebi M (1998) PMID:9597543
+WSC4	YHL028W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mamoun CB, et al. (1999) PMID:10196219
+IRE1	YHR079C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Mori K, et al. (1993) PMID:8358794
+BIG1	YHR101C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Azuma M, et al. (2002) PMID:12112232
+CHS7	YHR142W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Trilla JA, et al. (1999) PMID:10366589
+MTC6	YHR151C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2024-04-22	Uemura S, et al. (2024) PMID:38621657
+FMO1	YHR176W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Suh JK, et al. (1999) PMID:10077572
+SVP26	YHR181W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Bue CA, et al. (2006) PMID:16957051
+GPI16	YHR188C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Fraering P, et al. (2001) PMID:11598210
+BET1	YIL004C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Newman AP, et al. (1992) PMID:1396561
+EPS1	YIL005W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wang Q and Chang A (1999) PMID:10545109
+SNL1	YIL016W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ho AK, et al. (1998) PMID:9450961
+SSM4	YIL030C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Swanson R, et al. (2001) PMID:11641273
+ICE2	YIL090W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Estrada de Martin P, et al. (2005) PMID:15585575
+MGA2	YIR033W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Hoppe T, et al. (2000) PMID:11007476
+CYR1	YJL005W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Belotti F, et al. (2012) PMID:22575457
+LAS21	YJL062W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Benachour A, et al. (1999) PMID:10329735
+SCP160	YJL080C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Frey S, et al. (2001) PMID:11278502
+PHS1	YJL097W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kihara A, et al. (2008) PMID:18272525
+STE24	YJR117W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Tam A, et al. (2001) PMID:11581258
+SPT23	YKL020C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Hoppe T, et al. (2000) PMID:11007476
+VPH2	YKL119C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Jackson DD and Stevens TH (1997) PMID:9325326
+SRP102	YKL154W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Ogg SC, et al. (1998) PMID:9679135
+YKT6	YKL196C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2025-04-15	Tateishi M, et al. (2025) PMID:40049413
+SAC1	YKL212W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2022-08-26	Faulhammer F, et al. (2005) PMID:15657391
+SAC1	YKL212W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Foti M, et al. (2001) PMID:11514624
+SAC1	YKL212W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Faulhammer F, et al. (2005) PMID:15657391
+SAC1	YKL212W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2022-08-26	Foti M, et al. (2001) PMID:11514624
+SAC1	YKL212W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2022-08-26	Konrad G, et al. (2002) PMID:11792713
+SAC1	YKL212W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Whitters EA, et al. (1993) PMID:8314848
+MMM1	YLL006W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kornmann B, et al. (2009) PMID:19556461
+AQY2	YLL052C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Meyrial V, et al. (2001) PMID:11168368
+BOS1	YLR078C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Newman AP, et al. (1992) PMID:1396561
+ERG27	YLR100W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mo C, et al. (2002) PMID:12119386
+HRD3	YLR207W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IPI with HRD1	manually curated	SGD	2013-08-07	Gauss R, et al. (2006) PMID:16619026
+HRD3	YLR207W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IPI with DER1	manually curated	SGD	2013-08-07	Gauss R, et al. (2006) PMID:16619026
+ERF2	YLR246W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Bartels DJ, et al. (1999) PMID:10490616
+HRI1	YLR301W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IPI with SEC72	manually curated	SGD	2019-09-07	Willer M, et al. (2003) PMID:12518317
+CDC25	YLR310C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Belotti F, et al. (2012) PMID:22575457
+SEI1	YLR404W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Wang CW, et al. (2014) PMID:24434579
+SEC39	YLR440C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kraynack BA, et al. (2005) PMID:15958492
+HMG2	YLR450W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Koning AJ, et al. (1996) PMID:8744950
+UBX2	YML013W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Schuberth C and Buchberger A (2005) PMID:16179952
+USA1	YML029W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IPI with HRD1	manually curated	SGD	2013-08-07	Carvalho P, et al. (2006) PMID:16873066
+GSF2	YML048W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Sherwood PW and Carlson M (1999) PMID:10377429
+ERV41	YML067C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Otte S, et al. (2001) PMID:11157978
+HMG1	YML075C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Koning AJ, et al. (1996) PMID:8744950
+SEC59	YMR013C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Bernstein M, et al. (1989) PMID:2657387
+SEC59	YMR013C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein M, et al. (1989) PMID:2657387
+UBC7	YMR022W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Biederer T, et al. (1997) PMID:9388185
+KAR5	YMR065W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Beh CT, et al. (1997) PMID:9382856
+PKR1	YMR123W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Davis-Kaplan SR, et al. (2006) PMID:16926153
+SWP1	YMR149W	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2021-11-24	Bai L, et al. (2018) PMID:29466327
+HLJ1	YMR161W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Beilharz T, et al. (2003) PMID:12514182
+ROT1	YMR200W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Takeuchi M, et al. (2006) PMID:16567426
+CUE1	YMR264W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Biederer T, et al. (1997) PMID:9388185
+RCE1	YMR274C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Schmidt WK, et al. (1998) PMID:9736709
+LIP1	YMR298W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Vallée B and Riezman H (2005) PMID:15692566
+ALG11	YNL048W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Cipollo JF, et al. (2001) PMID:11278778
+EOS1	YNL080C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nakamura T, et al. (2007) PMID:17187761
+RAS2	YNL098C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Belotti F, et al. (2012) PMID:22575457
+CYB5	YNL111C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Beilharz T, et al. (2003) PMID:12514182
+PGA1	YNL158W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Sato K, et al. (2007) PMID:17615295
+PSD1	YNL169C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2021-12-02	Gok MO, et al. (2022) PMID:34818062
+WHI3	YNL197C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-05-20	Lau Y, et al. (2022) PMID:35085498
+YIF1	YNL263C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IPI with YOS1	manually curated	SGD	2013-08-07	Heidtman M, et al. (2005) PMID:15659647
+VNX1	YNL321W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Manohar M, et al. (2010) PMID:20578725
+ACC1	YNR016C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ivessa AS, et al. (1997) PMID:9438137
+HRD1	YOL013C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Bordallo J, et al. (1998) PMID:9437001
+HRD1	YOL013C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Deak PM and Wolf DH (2001) PMID:11139575
+IRA2	YOL081W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Belotti F, et al. (2012) PMID:22575457
+ALG8	YOR067C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Stagljar I, et al. (1994) PMID:8016100
+SLP1	YOR154W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		ISM	manually curated	SGD	2022-08-26	Friederichs JM, et al. (2012) PMID:23275891
+SLP1	YOR154W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Friederichs JM, et al. (2012) PMID:23275891
+DGK1	YOR311C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kosodo Y, et al. (2001) PMID:11481671
+ERI1	YPL096C-A	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sobering AK, et al. (2003) PMID:12832483
+CSM4	YPL200W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Beilharz T, et al. (2003) PMID:12514182
+ALG5	YPL227C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Stagljar I, et al. (1998) PMID:9560251
+ERV2	YPR037C	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2021-05-19	Sevier CS, et al. (2001) PMID:11584268
+ERV2	YPR037C	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Sevier CS, et al. (2001) PMID:11584268
+MAY24	YPR153W	is active in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2021-08-18	Kurosaka G, et al. (2019) PMID:31797992
+KRE6	YPR159W	located in	GO:0005789	endoplasmic reticulum membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Nakamata K, et al. (2007) PMID:17893149

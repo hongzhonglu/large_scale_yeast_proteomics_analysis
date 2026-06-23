@@ -1,0 +1,113 @@
+!
+!Date: 01/05/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+Dehydrodolichyl diphosphate synthase complex variant RER2	CPX-162	is active in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2024-10-17	Currie E, et al. (2014) PMID:24868093
+Phosphatidylinositol transporter complex	CPX-2148	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	ComplexPortal	2014-10-16	Ren J, et al. (2014) PMID:24403601
+Seipin complex	CPX-3342	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	ComplexPortal	2018-05-01	Wang CW, et al. (2014) PMID:24434579
+LDS1	YAL018C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+ATG8	YBL078C	is active in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2021-03-19	Maeda Y, et al. (2017) PMID:28003432
+RER2	YBR002C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+FAT1	YBR041W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+FAT1	YBR041W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+CST26	YBR042C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ALG14	YBR070C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2024-09-10	Hirata E, et al. (2024) PMID:39025454
+EHT1	YBR177C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+EHT1	YBR177C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+LDH1	YBR204C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+LDH1	YBR204C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Thoms S, et al. (2011) PMID:21478430
+MTC4	YBR255W	located in	GO:0005811	lipid droplet	cellular component	existence overlaps cellular response to glucose stimulus	IDA	manually curated	SGD	2021-09-29	Yifrach E, et al. (2016) PMID:27663510
+TSC10	YBR265W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+LDB16	YCL005W	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SLC1	YDL052C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+SLC1	YDL052C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+CLB3	YDL155W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2020-06-30	Örd M, et al. (2020) PMID:32553169
+NUS1	YDL193W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+NUS1	YDL193W	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+NUS1	YDL193W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+NUS1	YDL193W	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+CAB5	YDR196C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+TLD1	YDR275W	is active in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2023-10-31	Speer NO, et al. (2024) PMID:37889293
+TLD1	YDR275W	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ERG1	YGR175C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Leber R, et al. (1998) PMID:9450962
+ERG1	YGR175C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+TDH3	YGR192C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+SAY1	YGR263C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+NEM1	YHR004C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2016-01-13	Wolinski H, et al. (2015) PMID:26275961
+ERG7	YHR072W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+ERG7	YHR072W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+ERG7	YHR072W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Milla P, et al. (2002) PMID:11706015
+AYR1	YIL124W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+AYR1	YIL124W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K and Daum G (2000) PMID:10617610
+TDH1	YJL052W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+TDH2	YJR009C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+ANR2	YKL047W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+YJU3	YKL094W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+YJU3	YKL094W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Heier C, et al. (2010) PMID:20554061
+YJU3	YKL094W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+TGL1	YKL140W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Köffel R, et al. (2005) PMID:15713625
+TGL1	YKL140W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+TGL1	YKL140W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+FAS1	YKL182W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Desfougères T, et al. (2008) PMID:17803462
+PLN1	YKR046C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+PLN1	YKR046C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+GPT2	YKR067W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Marr N, et al. (2012) PMID:22267742
+GPT2	YKR067W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K and Daum G (1997) PMID:9401016
+TGL4	YKR089C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Kurat CF, et al. (2006) PMID:16267052
+TGL4	YKR089C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+TGL4	YKR089C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+TGL4	YKR089C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K and Daum G (2005) PMID:16135509
+TGL4	YKR089C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+YEH1	YLL012W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Köffel R, et al. (2005) PMID:15713625
+YEH1	YLL012W	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ERG27	YLR100W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+CSR1	YLR380W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Desfougères T, et al. (2008) PMID:17803462
+ERG6	YML008C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+ERG6	YML008C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+UBX2	YML013W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+UBX2	YML013W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Wang CW and Lee SC (2012) PMID:22454508
+SRT1	YMR101C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+SRT1	YMR101C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Sato M, et al. (2001) PMID:11442630
+HFD1	YMR110C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+HFD1	YMR110C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+LDO45	YMR147W	is active in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2021-12-07	Teixeira V, et al. (2018) PMID:29187528
+LDO16	YMR148W	is active in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2021-12-07	Teixeira V, et al. (2018) PMID:29187528
+YIM1	YMR152W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+YIM1	YMR152W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+PAH1	YMR165C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2016-01-13	Wolinski H, et al. (2015) PMID:26275961
+FAA4	YMR246W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2021-07-09	Adhikari S, et al. (2021) PMID:34161133
+FAA4	YMR246W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+FAA4	YMR246W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+TGL3	YMR313C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+TGL3	YMR313C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+TGL3	YMR313C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+TGL3	YMR313C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Kurat CF, et al. (2006) PMID:16267052
+PDR16	YNL231C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-01-25	Ren J, et al. (2014) PMID:24403601
+PDR16	YNL231C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Schnabl M, et al. (2003) PMID:12869188
+LRO1	YNR008W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Wang CW and Lee SC (2012) PMID:22454508
+LDS2	YOL047C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+RRT8	YOL048C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+LPL1	YOR059C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+LPL1	YOR059C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+LPL1	YOR059C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-07-26	Selvaraju K, et al. (2014) PMID:25014274
+TGL5	YOR081C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+TGL5	YOR081C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K and Daum G (2005) PMID:16135509
+TGL5	YOR081C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+DGA1	YOR245C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Sorger D and Daum G (2002) PMID:11751830
+DGA1	YOR245C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+ENV9	YOR246C	is active in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2020-08-27	Siddiqah IM, et al. (2017) PMID:28540421
+ENV9	YOR246C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SPS4	YOR313C	located in	GO:0005811	lipid droplet	cellular component		HDA	manually curated	SGD	2018-11-19	Lam C, et al. (2014) PMID:24390141
+FAA1	YOR317W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+FAA1	YOR317W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Athenstaedt K, et al. (1999) PMID:10515935
+ATF1	YOR377W	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Verstrepen KJ, et al. (2004) PMID:15042596
+PGC1	YPL206C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Beilharz T, et al. (2003) PMID:12514182
+PGC1	YPL206C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093
+LOA1	YPR139C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Grillitsch K, et al. (2011) PMID:21820081
+LOA1	YPR139C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2013-08-07	Ayciriex S, et al. (2012) PMID:22090344
+YPR147C	YPR147C	located in	GO:0005811	lipid droplet	cellular component		IDA	manually curated	SGD	2014-06-06	Currie E, et al. (2014) PMID:24868093

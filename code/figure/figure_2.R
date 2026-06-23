@@ -66,6 +66,8 @@ ggplot(long_DF, aes(fill=type, y=count, x=compartment)) +
 
 # calculate the organelle mass fraction variance 
 ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+# ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
+
 ProMassRatio <- ProMassRatio[,2:277]
 ProMassRatio[ProMassRatio <0.0000000000001] <- NA
 sd0 <- apply(subset(ProMassRatio, select = 2:276), 1, sd, na.rm=TRUE) 
@@ -274,7 +276,9 @@ ProVolumeRatio1 <- ProVolumeRatio1[ProVolumeRatio1$compartment !="mitochondrion_
 
 mass_vs_volume <- ProMassRatio1[,c(1,2)]
 colnames(mass_vs_volume) <- c("compartment","mass_fraction")
-mass_vs_volume$volume_fraction <- ProVolumeRatio1$`Glucose_phase_rep1(g/gDW)`
+#mass_vs_volume$volume_fraction <- ProVolumeRatio1$`Glucose_phase_rep1(g/gDW)`
+mass_vs_volume$volume_fraction <- getSingleReactionFormula(ProVolumeRatio1$`Glucose_phase_rep1(g/gDW)`,ProVolumeRatio1$compartment,mass_vs_volume$compartment)
+mass_vs_volume$volume_fraction <- as.numeric(mass_vs_volume$volume_fraction)
 
 # scatter plot
 ggplot(mass_vs_volume, aes(x=mass_fraction, y=volume_fraction)) +

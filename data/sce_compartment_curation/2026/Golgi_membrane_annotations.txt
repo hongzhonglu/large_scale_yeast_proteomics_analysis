@@ -1,0 +1,71 @@
+!
+!Date: 01/22/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+ERV41-ERV46 retrograde receptor complex	CPX-1045	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	ComplexPortal	2017-03-13	Otte S and Barlowe C (2002) PMID:12426381
+TUL1 E3 ubiquitin ligase complex	CPX-1190	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2017-11-14	Tong Z, et al. (2014) PMID:25078903
+Vacuolar proton translocating ATPase complex, Golgi variant	CPX-1192	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2021-10-18	Vasanthakumar T, et al. (2019) PMID:30910982
+Vesicular SNARE complex SSO2-SEC9-SNC1	CPX-1369	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Brennwald P, et al. (1994) PMID:7954793
+Phosphatidylinositol 3-kinase complex II	CPX-1677	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2019-11-08	Kihara A, et al. (2001) PMID:11157979
+Endosomal SNARE complex TLG2-VTI1-TLG1-SNC2	CPX-5321	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Abeliovich H, et al. (1998) PMID:9565594
+Endosomal SNARE complex TLG2-VTI1-TLG1-SNC1	CPX-5322	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Holthuis JC, et al. (1998) PMID:9427746
+Endosomal SNARE complex PEP12-VTI1-SYN8-YKT6	CPX-5421	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Lewis MJ and Pelham HR (2002) PMID:12453154
+Endosomal SNARE complex PEP12-VTI1-TLG1-YKT6	CPX-5422	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Lewis MJ and Pelham HR (2002) PMID:12453154
+Endosomal SNARE complex PEP12-VTI1-TLG1-SNC1	CPX-5423	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Lewis MJ and Pelham HR (2002) PMID:12453154
+Endosomal SNARE complex PEP12-VTI1-SYN8-SNC1	CPX-5424	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Lewis MJ and Pelham HR (2002) PMID:12453154
+Endosomal SNARE complex PEP12-VTI1-SYN8-SNC2	CPX-5461	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Lewis MJ and Pelham HR (2002) PMID:12453154
+Endosomal SNARE complex PEP12-VTI1-TLG1-SNC2	CPX-5462	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Lewis MJ and Pelham HR (2002) PMID:12453154
+Vesicular SNARE complex SSO1-SPO20-SNC1	CPX-5464	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Yang HJ, et al. (2008) PMID:19064671
+Vesicular SNARE complex SSO2-SEC9-SNC2	CPX-5465	located in	GO:0000139	Golgi membrane	cellular component		BSR	manually curated	ComplexPortal	2020-03-13	Brennwald P, et al. (1994) PMID:7954793
+ERV46	YAL042W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Otte S, et al. (2001) PMID:11157978
+SFT2	YBL102W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2014-03-14	Conchon S, et al. (1999) PMID:10406798
+SFT2	YBL102W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Wooding S and Pelham HR (1998) PMID:9725919
+USO1	YDL058W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Noda Y, et al. (2007) PMID:17192843
+TVP23	YDR084C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Inadome H, et al. (2005) PMID:16107716
+TVP15	YDR100W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Inadome H, et al. (2005) PMID:16107716
+RGP1	YDR137W	located in	GO:0000139	Golgi membrane	cellular component		IPI with RIC1	manually curated	SGD	2013-08-07	Siniossoglou S, et al. (2000) PMID:10990452
+SLY1	YDR189W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Peng R and Gallwitz D (2004) PMID:15372079
+KEI1	YDR367W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Sato K, et al. (2009) PMID:19726565
+FRQ1	YDR373W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Faulhammer F, et al. (2007) PMID:17908202
+GRH1	YDR517W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Behnia R, et al. (2007) PMID:17261844
+YND1	YER005W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Zhong X and Guidotti G (1999) PMID:10551827
+YOS1	YER074W-A	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Heidtman M, et al. (2005) PMID:15659647
+YOS1	YER074W-A	located in	GO:0000139	Golgi membrane	cellular component		IPI with YIP1	manually curated	SGD	2022-08-26	Heidtman M, et al. (2005) PMID:15659647
+YOS1	YER074W-A	located in	GO:0000139	Golgi membrane	cellular component		IPI with YIF1	manually curated	SGD	2022-08-26	Heidtman M, et al. (2005) PMID:15659647
+YPT1	YFL038C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Cao X and Barlowe C (2000) PMID:10747087
+EMP47	YFL048C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Sato K and Nakano A (2003) PMID:12857885
+VPS45	YGL095C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Piper RC, et al. (1994) PMID:7720726
+PMR1	YGL167C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sorin A, et al. (1997) PMID:9092527
+PMR1	YGL167C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2014-04-04	Scharff-Poulsen P and Pedersen PA (2013) PMID:24124599
+YIP1	YGR172C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Yang X, et al. (1998) PMID:9724632
+SVP26	YHR181W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Inadome H, et al. (2005) PMID:16107716
+GVP36	YIL041W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Inadome H, et al. (2005) PMID:16107716
+NEO1	YIL048W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hua Z and Graham TR (2003) PMID:12960419
+SYS1	YJL004C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Votsmeier C and Gallwitz D (2001) PMID:11726510
+TOR1	YJR066W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Chen EJ and Kaiser CA (2003) PMID:12719473
+COY1	YKL179C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2020-01-10	Anderson NS and Barlowe C (2019) PMID:31073031
+COY1	YKL179C	located in	GO:0000139	Golgi membrane	cellular component		IGI with GOS1	manually curated	SGD	2018-04-26	Gillingham AK, et al. (2002) PMID:12429822
+SAC1	YKL212W	located in	GO:0000139	Golgi membrane	cellular component		IMP	manually curated	SGD	2022-08-26	Faulhammer F, et al. (2005) PMID:15657391
+SAC1	YKL212W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Faulhammer F, et al. (2005) PMID:15657391
+SAC1	YKL212W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Whitters EA, et al. (1993) PMID:8314848
+GMH1	YKR030W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Chantalat S, et al. (2003) PMID:12808035
+TVP38	YKR088C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Inadome H, et al. (2005) PMID:16107716
+RIC1	YLR039C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Siniossoglou S, et al. (2000) PMID:10990452
+EMP46	YLR080W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Sato K and Nakano A (2002) PMID:12134087
+ERV41	YML067C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Otte S, et al. (2001) PMID:11157978
+TVP18	YMR071C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Inadome H, et al. (2005) PMID:16107716
+SEC14	YMR079W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Skinner HB, et al. (1995) PMID:7816798
+VTI1	YMR197C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Lupashin VV, et al. (1997) PMID:9398683
+GOT1	YMR292W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Conchon S, et al. (1999) PMID:10406798
+LST8	YNL006W	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Chen EJ and Kaiser CA (2003) PMID:12719473
+YIF1	YNL263C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Matern H, et al. (2000) PMID:10970842
+ATX2	YOR079C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Lin SJ and Culotta VC (1996) PMID:8887660
+RUD3	YOR216C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2014-03-28	Gillingham AK, et al. (2004) PMID:15504911
+KES1	YPL145C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Li X, et al. (2002) PMID:11916983
+SYT1	YPR095C	located in	GO:0000139	Golgi membrane	cellular component		IDA	manually curated	SGD	2013-10-10	Chen KY, et al. (2010) PMID:20841378
+GLD1	YPR109W	located in	GO:0000139	Golgi membrane	cellular component		ISM	manually curated	SGD	2022-08-26	Yang X, et al. (2018) PMID:29355480

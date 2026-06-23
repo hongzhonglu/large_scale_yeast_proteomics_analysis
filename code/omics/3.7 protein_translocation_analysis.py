@@ -77,8 +77,36 @@ plt.show()
 
 # test two
 # compartment info
-compartment = getCompartmentGeneList(type="all")  # based on the automatic way
-compartment_corrected = gene_location_curation_sce(organelle0=compartment)  # based on the SGD manual curation
+
+compartment_all0 = getCompartmentGeneList(type="all")
+compartment_all00 = gene_location_curation_sce(organelle0=compartment_all0)
+## 重新整合，包括实验、手动校正和所有
+# 这个23个细胞器或者子细胞器完全基于有实验证据的，且未经手工查询校正
+Exp_list = pd.read_excel('data/compare_compartment_anotation_from_different_version_check.xlsx', sheet_name='g2-exp')
+compartment_dict20 = getCompartmentGeneList(type="manual") # Remove some compartmental annotation only with computational evidence (keep experimental evidence)
+filtered = {k: v for k, v in compartment_dict20.items() if k in Exp_list['compartment'].tolist()}
+
+# 其他103个， 21个细胞器是经过手动校正，剩余的是基于全部证据整合(其中就包括计算推测与实验)
+filtered2 = {k: v for k, v in compartment_all00.items() if k not in Exp_list['compartment'].tolist()}
+# 去重
+duplicated = ['mitochondrial membrane','vacuolar membrane','vacuole']
+filtered20 = {k: v for k, v in filtered2.items() if k not in duplicated}
+# 合并
+compartment_all = {**filtered, **filtered20}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # select the main organelle for the further analysis
 organelle = ['mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet', 'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'plasma membrane']
 # get the combination
@@ -89,8 +117,8 @@ for x in combinations:
     print(x)
     x1 = x[0]
     x2 = x[1]
-    gene_List1 = compartment_corrected[x1]
-    gene_List2 = compartment_corrected[x2]
+    gene_List1 = compartment_all[x1]
+    gene_List2 = compartment_all[x2]
     gene_common = list(set(gene_List1) & set( gene_List2 ))
     result_dict2[x] = gene_common
 

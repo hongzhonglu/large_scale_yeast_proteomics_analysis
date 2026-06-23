@@ -1,5 +1,5 @@
 # this script is to process compartment datasets
-# 2021-11-16
+# 2026-04-08
 
 # here the compartment annotation is mainly from SGD and MitoMiner
 import pandas as pd
@@ -9,6 +9,7 @@ from matplotlib import pyplot as plt
 # test the function
 compartment_dict_all0 = getCompartmentGeneList(type="all")
 compartment_dict20 = getCompartmentGeneList(type="manual") # Remove some compartmental annotation only with computational evidence (keep experimental evidence)
+compartment_dict30 = gene_location_curation_sce(organelle0=compartment_dict_all0)
 
 
 # compare the difference
@@ -27,10 +28,26 @@ for key in compartment_dict20.keys():
     len0.append(len(compartment_dict20[key]))
 df2 = pd.DataFrame({"compartment":key0, "gene_number": len0})
 
+
+key0 = []
+len0 = []
+for key in compartment_dict30.keys():
+    key0.append(key)
+    len0.append(len(compartment_dict30[key]))
+df3 = pd.DataFrame({"compartment":key0, "gene_number": len0})
+
+
+
+
+
+
+
 # combine the dataframe
 compartment_compare = pd.merge(left=df1, right=df2, left_on=['compartment'], right_on=['compartment'], how='left')
-compartment_compare.columns = ["compartment", "all_annotation", "annotation_manual_evidance"]
-compartment_compare.to_excel("data/compare_compartment_anotation_with_all_and_manual_evidance.xlsx")
+compartment_compare = pd.merge(left=compartment_compare, right=df3, left_on=['compartment'], right_on=['compartment'], how='left')
+
+compartment_compare.columns = ["compartment", "all_annotation", "annotation_with_Exp_evidance", "all_annotation_with_curation"]
+compartment_compare.to_excel("data/compare_compartment_anotation_from_different_version.xlsx")
 
 
 # add one plot

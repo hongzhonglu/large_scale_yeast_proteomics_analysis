@@ -1,0 +1,107 @@
+!
+!Date: 01/21/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+BLOC-1 complex	CPX-1153	located in	GO:0005768	endosome	cellular component		IDA	manually curated	ComplexPortal	2017-12-18	John Peter AT, et al. (2013) PMID:23547030
+VPS55-VPS68 sorting complex	CPX-1413	is active in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2025-03-19	Schluter C, et al. (2008) PMID:18216282
+ESCRT-I complex	CPX-940	is active in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2024-11-05	Chu T, et al. (2006) PMID:17145965
+ESCRT-I complex	CPX-940	is active in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2024-11-05	Katzmann DJ, et al. (2001) PMID:11511343
+SYN8	YAL014C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Lewis MJ and Pelham HR (2002) PMID:12453154
+SNC1	YAL030W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Robinson M, et al. (2006) PMID:16452633
+CCZ1	YBR131W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2014-11-06	Nordmann M, et al. (2010) PMID:20797862
+RRT2	YBR246W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Shi Y, et al. (2011) PMID:21880895
+COS2	YBR302C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+STP22	YCL008C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Katzmann DJ, et al. (2001) PMID:11511343
+ERS1	YCR075C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Gao XD, et al. (2005) PMID:15885099
+ATG20	YDL113C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Hettema EH, et al. (2003) PMID:12554655
+GCS1	YDL226C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Robinson M, et al. (2006) PMID:16452633
+COS7	YDL248W	located in	GO:0005768	endosome	cellular component		ISS with COS5	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+DOA4	YDR069C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Amerik A, et al. (2006) PMID:17145966
+VPS41	YDR080W	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+TMS1	YDR105C	is active in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2024-10-03	Kölling R (2024) PMID:39271159
+DOP1	YDR141C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Barbosa S, et al. (2010) PMID:20477991
+ENT5	YDR153C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Eugster A, et al. (2004) PMID:15107463
+SNX41	YDR425W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Hettema EH, et al. (2003) PMID:12554655
+TLG1	YDR468C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Holthuis JC, et al. (1998) PMID:9427746
+VPS3	YDR495C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2017-09-29	Balderhaar HJ, et al. (2013) PMID:23417307
+AGE1	YDR524C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Benjamin JJ, et al. (2011) PMID:21135091
+SIT1	YEL065W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Jeong MY, et al. (2009) PMID:19469713
+YPT31	YER031C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Chen SH, et al. (2005) PMID:15537705
+VFA1	YER128W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Arlt H, et al. (2011) PMID:21777356
+HSP12	YFL014W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Welker S, et al. (2010) PMID:20797624
+COS4	YFL062W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+ATG18	YFR021W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Krick R, et al. (2008) PMID:18769150
+KXD1	YGL079W	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MON1	YGL124C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2014-11-06	Nordmann M, et al. (2010) PMID:20797862
+YPT32	YGL210W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Chen SH, et al. (2005) PMID:15537705
+COS12	YGL263W	located in	GO:0005768	endosome	cellular component		ISS with COS5	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+PSD2	YGR170W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Gulshan K, et al. (2010) PMID:20016005
+YPP1	YGR198W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Flower TR, et al. (2007) PMID:17576801
+MVB12	YGR206W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Curtiss M, et al. (2007) PMID:17135292
+MVB12	YGR206W	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MVB12	YGR206W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Chu T, et al. (2006) PMID:17145965
+HSV2	YGR223C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Krick R, et al. (2008) PMID:18769150
+COS6	YGR295C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+HSE1	YHL002W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Bilodeau PS, et al. (2002) PMID:12055639
+ARN1	YHL040C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Kim Y, et al. (2007) PMID:17344478
+GPA1	YHR005C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Slessareva JE, et al. (2006) PMID:16839886
+VPS29	YHR012W	located in	GO:0005768	endosome	cellular component		IPI with VPS35	manually curated	SGD	2016-01-29	Seaman MN, et al. (1998) PMID:9700157
+YPT35	YHR105W	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+NEO1	YIL048W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Wicky S, et al. (2004) PMID:15314152
+VTH1	YIL173W	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+GYP6	YJL044C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Ali R, et al. (2004) PMID:14610088
+PEP8	YJL053W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2019-05-03	Seaman MN, et al. (1998) PMID:9700157
+VPS35	YJL154C	located in	GO:0005768	endosome	cellular component		IPI with VPS29	manually curated	SGD	2016-01-29	Seaman MN, et al. (1998) PMID:9700157
+RCY1	YJL204C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Chen SH, et al. (2005) PMID:15537705
+GEF1	YJR040W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Wächter A and Schwappach B (2005) PMID:15710404
+ENT3	YJR125C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2014-03-14	Friant S, et al. (2003) PMID:12967568
+COS5	YJR161C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+BLI1	YKL061W	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+YKT6	YKL196C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Meiringer CT, et al. (2008) PMID:18541004
+COS9	YKL219W	located in	GO:0005768	endosome	cellular component		ISS with COS5	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+SPO14	YKR031C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Li X, et al. (2000) PMID:10848624
+GAP1	YKR039W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Scott PM, et al. (2004) PMID:15039776
+RFU1	YLR073C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2015-12-15	Kimura Y, et al. (2014) PMID:24962567
+RFU1	YLR073C	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+EMP70	YLR083C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Singer-Krüger B, et al. (1993) PMID:8314797
+SRN2	YLR119W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2019-08-06	Katzmann DJ, et al. (2001) PMID:11511343
+VTA1	YLR181C	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+VPS34	YLR240W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Obara K, et al. (2006) PMID:16421251
+CSR1	YLR380W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Schnabl M, et al. (2003) PMID:12869188
+CSR1	YLR380W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Li X, et al. (2000) PMID:10848624
+BLS1	YLR408C	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+COS3	YML132W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+MVP1	YMR004W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2015-01-05	Chi RJ, et al. (2014) PMID:24567361
+HFD1	YMR110C	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+EAR1	YMR171C	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+EAR1	YMR171C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Léon S, et al. (2008) PMID:18367543
+SNN1	YNL086W	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+PDR17	YNL264C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Gulshan K, et al. (2010) PMID:20016005
+IST1	YNL265C	is active in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2022-09-29	Laidlaw KME, et al. (2022) PMID:36125415
+IST1	YNL265C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Rue SM, et al. (2008) PMID:18032584
+IST1	YNL265C	located in	GO:0005768	endosome	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MON2	YNL297C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Jochum A, et al. (2002) PMID:12052896
+COS1	YNL336W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+VPS27	YNR006W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Bilodeau PS, et al. (2002) PMID:12055639
+COS10	YNR075W	located in	GO:0005768	endosome	cellular component		ISS with COS5	manually curated	SGD	2015-10-29	MacDonald C, et al. (2015) PMID:25942624
+VPS68	YOL129W	is active in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2024-10-03	Kölling R (2024) PMID:39271159
+PEP12	YOR036W	located in	GO:0005768	endosome	cellular component		IMP	manually curated	SGD	2013-08-07	Becherer KA, et al. (1996) PMID:8730101
+VPS5	YOR069W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Nothwehr SF and Hindes AE (1997) PMID:9175702
+VPS5	YOR069W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Seaman MN, et al. (1998) PMID:9700157
+VPS17	YOR132W	located in	GO:0005768	endosome	cellular component		IPI with VPS5	manually curated	SGD	2019-05-03	Seaman MN, et al. (1998) PMID:9700157
+SNC2	YOR327C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Robinson M, et al. (2006) PMID:16452633
+SNX3	YOR357C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Strochlic TI, et al. (2007) PMID:17420293
+VPS28	YPL065W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Katzmann DJ, et al. (2001) PMID:11511343
+BRO1	YPL084W	is active in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2022-05-20	Buysse D, et al. (2022) PMID:34908216
+BRO1	YPL084W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Odorizzi G, et al. (2003) PMID:12668726
+BRO1	YPL084W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Kim J, et al. (2005) PMID:15935782
+ATG21	YPL100W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Krick R, et al. (2008) PMID:18769150
+DAP1	YPL170W	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Craven RJ, et al. (2007) PMID:17954932
+RTT10	YPL183C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Shi Y, et al. (2011) PMID:21880895
+GLD1	YPR109W	is active in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2025-03-20	Yang X, et al. (2018) PMID:29355480
+VPS4	YPR173C	located in	GO:0005768	endosome	cellular component		IDA	manually curated	SGD	2013-08-07	Babst M, et al. (1998) PMID:9606181

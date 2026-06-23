@@ -6,25 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/figure_2.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_2.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/Golgi apparatus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/Golgi apparatus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/cytosol.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/cytosol.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endoplasmic reticulum.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/endosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/endosome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/fungal-type vacuole.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/fungal-type vacuole.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/lipid droplet.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/lipid droplet.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial inner membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial inner membrane.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial intermembrane space.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial intermembrane space.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial matrix.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial matrix.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrial outer membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrial outer membrane.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/mitochondrion.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/nucleolus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleolus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/nucleus.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/nucleus.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/peroxisome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/peroxisome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/plasma membrane.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/plasma membrane.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/result/ribosome.png" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/result/ribosome.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/omics/3.7 protein_translocation_analysis.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/3.7 protein_translocation_analysis.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/organelle_interaction_data.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/organelle_interaction_data.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/proteomics/~$all_organelle_fraction_test.xlsx" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -115,20 +97,20 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/code/omics" />
+      <recent name="$PROJECT_DIR$/code/omics/not_used" />
+      <recent name="$PROJECT_DIR$/data/sce_compartment_curation" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/src" />
-      <recent name="$PROJECT_DIR$/code/structure" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/data/sce_compartment_curation" />
       <recent name="$PROJECT_DIR$/code/omics" />
-      <recent name="$PROJECT_DIR$/code/omics/not_used" />
       <recent name="$PROJECT_DIR$/code/model" />
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.3.1 omics_collect_preprocess_for_protein_copy">
+  <component name="RunManager" selected="Python.2.5 gene_compartment_for_sce_main_organelle">
     <configuration name="2.3 proteomics_abundance_unit_unify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="De-nevo-protein-3D-structure-yeast" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -144,6 +126,27 @@
       <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/2.3 proteomics_abundance_unit_unify.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="2.5 gene_compartment_for_sce_main_organelle" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="De-nevo-protein-3D-structure-yeast" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/omics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
       <option name="MODULE_MODE" value="false" />
       <option name="REDIRECT_INPUT" value="false" />
@@ -173,6 +176,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2.5 gene_compartment_for_sce_main_organelle" />
+        <item itemvalue="Python.2.5 gene_compartment_for_sce_main_organelle" />
         <item itemvalue="Python.3.1 omics_collect_preprocess_for_protein_copy" />
         <item itemvalue="Python.2.3 proteomics_abundance_unit_unify" />
       </list>
@@ -385,38 +390,33 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>655</line>
+          <line>726</line>
           <option name="timeStamp" value="70" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>705</line>
+          <line>776</line>
           <option name="timeStamp" value="72" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>449</line>
+          <line>642</line>
           <option name="timeStamp" value="73" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>447</line>
+          <line>640</line>
           <option name="timeStamp" value="74" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>448</line>
+          <line>641</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
-          <line>527</line>
+          <line>659</line>
           <option name="timeStamp" value="76" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_mitochrondria.py</url>
-          <line>27</line>
-          <option name="timeStamp" value="77" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/code/omics/3.1 omics_collect_preprocess_other_absolute2.py</url>
@@ -432,6 +432,26 @@
           <url>file://$PROJECT_DIR$/src/protein_process.py</url>
           <line>209</line>
           <option name="timeStamp" value="80" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.3 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>72</line>
+          <option name="timeStamp" value="100" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/2.6 gene_compartment_for_sce_sub_mitochrondria.py</url>
+          <line>58</line>
+          <option name="timeStamp" value="102" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.3 mass_fraction_calculation_for_main_organelle.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="103" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/code/omics/3.5 compartment_comparison_before_and_after_curation.py</url>
+          <line>8</line>
+          <option name="timeStamp" value="105" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

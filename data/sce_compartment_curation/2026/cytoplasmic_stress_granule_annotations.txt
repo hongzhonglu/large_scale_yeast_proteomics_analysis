@@ -1,0 +1,154 @@
+!
+!Date: 01/05/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+FUN12	YAL035W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+RBG1	YAL036C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+FUS3	YBL016W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PKC1	YBL105C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2020-03-24	Amen T and Kaganovich D (2020) PMID:32184286
+OLA1	YBR025C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2020-01-27	Wallace EW, et al. (2015) PMID:26359986
+HSP26	YBR072W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+HSP26	YBR072W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2015-12-15	Cherkasov V, et al. (2013) PMID:24291094
+RPG1	YBR079C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Grousl T, et al. (2009) PMID:19470581
+RPG1	YBR079C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+VMA2	YBR127C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SUP45	YBR143C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2014-01-29	Grousl T, et al. (2013) PMID:23451152
+CDC28	YBR160W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+NGR1	YBR212W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Grousl T, et al. (2009) PMID:19470581
+NGR1	YBR212W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+NGR1	YBR212W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+GBP2	YCL011C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2021-07-09	Poornima G, et al. (2021) PMID:33910495
+GBP2	YCL011C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+GBP2	YCL011C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SRO9	YCL037C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SRO9	YCL037C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+PAT1	YCR077C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+PBP4	YDL053C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2017-05-19	Swisher KD and Parker R (2010) PMID:20368989
+PBP4	YDL053C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PPH21	YDL134C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+RPO21	YDL140C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+DHH1	YDL160C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2017-05-19	Swisher KD and Parker R (2010) PMID:20368989
+DHH1	YDL160C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+FAP7	YDL166C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+NRP1	YDL167C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+NRP1	YDL167C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+SES1	YDR023W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SUP35	YDR172W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2014-01-29	Grousl T, et al. (2013) PMID:23451152
+SSD1	YDR293C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Kurischko C, et al. (2011) PMID:21339329
+TIF35	YDR429C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+NPL3	YDR432W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SAM2	YDR502C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SLF1	YDR515W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+SLF1	YDR515W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+HSP31	YDR533C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-09	Miller-Fleming L, et al. (2014) PMID:24706893
+HSP31	YDR533C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+KAP123	YER110C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PAB1	YER165W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+PAB1	YER165W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Grousl T, et al. (2009) PMID:19470581
+PAB1	YER165W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Hoyle NP, et al. (2007) PMID:17908917
+PAB1	YER165W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PAB1	YER165W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2015-12-15	Cherkasov V, et al. (2013) PMID:24291094
+PAB1	YER165W	is active in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2025-08-13	Zhang R, et al. (2025) PMID:40593583
+ECM32	YER176W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+ECM32	YER176W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+BMH1	YER177W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SEC53	YFL045C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+LEU1	YGL009C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TIF4632	YGL049C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Hoyle NP, et al. (2007) PMID:17908917
+TIF4632	YGL049C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Grousl T, et al. (2009) PMID:19470581
+TIF4632	YGL049C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+TIF4632	YGL049C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+ARC1	YGL105W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2020-01-27	Wallace EW, et al. (2015) PMID:26359986
+ARC1	YGL105W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+XRN1	YGL173C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+GUS1	YGL245W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2020-05-20	Wallace EW, et al. (2015) PMID:26359986
+GUS1	YGL245W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+CYS4	YGR155W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TIF4631	YGR162W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Hoyle NP, et al. (2007) PMID:17908917
+TIF4631	YGR162W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+TIF4631	YGR162W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PBP1	YGR178C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PBP1	YGR178C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+TYS1	YGR185C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+RPS0A	YGR214W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+YHB1	YGR234W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+RIE1	YGR250C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+RIE1	YGR250C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+MES1	YGR264C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2020-01-27	Wallace EW, et al. (2015) PMID:26359986
+SLH1	YGR271W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+RIM4	YHL024W	is active in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2025-08-13	Zhang R, et al. (2025) PMID:40593583
+SBP1	YHL034C	located in	GO:0010494	cytoplasmic stress granule	cellular component	existence overlaps cellular response to glucose starvation	IDA	manually curated	SGD	2021-09-30	Mitchell SF, et al. (2013) PMID:23222640
+SBP1	YHL034C	located in	GO:0010494	cytoplasmic stress granule	cellular component	existence overlaps cellular response to azide	HDA	manually curated	SGD	2021-09-30	Jain S, et al. (2016) PMID:26777405
+KSP1	YHR082C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+KSP1	YHR082C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+LSM12	YHR121W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+LSM12	YHR121W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2017-05-19	Swisher KD and Parker R (2010) PMID:20368989
+KOG1	YHR186C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+YVH1	YIR026C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PBS2	YJL128C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TIF2	YJL138C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SUI2	YJR007W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+MET5	YJR137C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+UGP1	YKL035W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TMA19	YKL056C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TEF4	YKL081W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TEF4	YKL081W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2014-01-29	Grousl T, et al. (2013) PMID:23451152
+TPK3	YKL166C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2018-10-10	Tudisca V, et al. (2012) PMID:22899713
+PRS1	YKL181W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+EAP1	YKL204W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+EAP1	YKL204W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+SAM1	YLR180W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+HCR1	YLR192C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+MAP1	YLR244C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+YEF3	YLR249W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2014-01-29	Grousl T, et al. (2013) PMID:23451152
+YEF3	YLR249W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+RPS30A	YLR287C-A	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Grousl T, et al. (2009) PMID:19470581
+RPS30A	YLR287C-A	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+NAB6	YML117W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+NAB6	YML117W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+CLU1	YMR012W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TIF34	YMR146C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SKY1	YMR216C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2019-08-23	Shattuck JE, et al. (2019) PMID:31399582
+FAA4	YMR246W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TIF11	YMR260C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+NIP1	YMR309C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Grousl T, et al. (2009) PMID:19470581
+NIP1	YMR309C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PUB1	YNL016W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2015-10-15	Cherkasov V, et al. (2013) PMID:24291094
+PUB1	YNL016W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PUB1	YNL016W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+MKT1	YNL085W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+CBK1	YNL161W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+WHI3	YNL197C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2018-09-12	Cai Y and Futcher B (2013) PMID:24386402
+WHI3	YNL197C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2018-09-12	Holmes KJ, et al. (2013) PMID:24386330
+WHI3	YNL197C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+RIO2	YNL207W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SSB2	YNL209W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+GIS2	YNL255C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Rojas M, et al. (2012) PMID:23285195
+MDY2	YOL111C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2018-09-19	Arhzaouy K and Ramezani-Rad M (2012) PMID:23285234
+MDY2	YOL111C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+HRP1	YOL123W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+HRP1	YOL123W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+CDC33	YOL139C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Hoyle NP, et al. (2007) PMID:17908917
+CDC33	YOL139C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Buchan JR, et al. (2008) PMID:18981231
+CDC33	YOL139C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+DBP5	YOR046C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2017-10-21	Eshleman N, et al. (2016) PMID:27251550
+RPB2	YOR151C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+DED1	YOR204W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+DED1	YOR204W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2019-11-18	Hilliker A, et al. (2011) PMID:21925384
+CPA1	YOR303W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PRT1	YOR361C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+PRT1	YOR361C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Grousl T, et al. (2009) PMID:19470581
+RQC2	YPL009C	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-07	Mitchell SF, et al. (2013) PMID:23222640
+RQC2	YPL009C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+CAM1	YPL048W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+MRN1	YPL184C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+HSP32	YPL280W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2016-01-09	Miller-Fleming L, et al. (2014) PMID:24706893
+HSP32	YPL280W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+SCD6	YPR129W	located in	GO:0010494	cytoplasmic stress granule	cellular component		IDA	manually curated	SGD	2013-08-07	Rajyaguru P, et al. (2012) PMID:22284680
+SCD6	YPR129W	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405
+TIF3	YPR163C	located in	GO:0010494	cytoplasmic stress granule	cellular component		HDA	manually curated	SGD	2020-07-10	Jain S, et al. (2016) PMID:26777405

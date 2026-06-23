@@ -35,7 +35,10 @@ physiology_Ibrahim <- physiology_collection[str_detect(physiology_collection$sam
 physiology_yihui <- physiology_collection[str_detect(physiology_collection$sampleID,"sce_FY4_C"),]
 
 # compartment
-ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+#ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
+
+
 ProMassRatio <- ProMassRatio[,2:277]
 ProMassRatio[ProMassRatio <0.0000000000001] <- NA
 ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
@@ -116,8 +119,12 @@ ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
 
 # plot for the main organelle - mt
 df_mt <- Pro_mass_select0[, str_detect(colnames(Pro_mass_select0), "^mitochondrial ")]
+
+df_mt <- df_mt[, !str_detect(colnames(df_mt), "crista")]
+
 df_mt$growth <- Pro_mass_select0$growth
-long_DF <- df_mt %>% gather(type, mass_fraction, 1:9)
+
+long_DF <- df_mt %>% gather(type, mass_fraction, 1:7)
 long_DF$type <- as.factor(long_DF$type)
 ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
   geom_point() + # geom_point(alpha = 2/10) +
@@ -135,7 +142,15 @@ df_o <- Pro_mass_select0[, str_detect(colnames(Pro_mass_select0), "^nucl")]
 col_select <- c("nucleosome","nucleolus", "nucleoplasm", "nuclear periphery", "nuclear chromosome", "nuclear envelope")
 df_o <- df_o[, colnames(df_o) %in% col_select]
 df_o$growth <- Pro_mass_select0$growth
-long_DF <- df_o %>% gather(type, mass_fraction, 1:6)
+#long_DF <- df_o %>% gather(type, mass_fraction, 1:6)
+long_DF <- df_o %>%
+  pivot_longer(
+    cols = -growth,                    # all columns except growth
+    names_to = "type",
+    values_to = "mass_fraction"
+  )
+
+
 long_DF$type <- as.factor(long_DF$type)
 ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
   geom_point() + # geom_point(alpha = 2/10) +
@@ -246,7 +261,7 @@ r_df <- r_df[r_df$gene !="growth", ]
 ggplot(r_df, aes(x=reorder(gene, -cor), y=cor, fill=gene)) + 
   geom_bar(position="dodge", stat="identity") +
   xlab("Gene") + 
-  theme(axis.text = element_text(size = 3), axis.title = element_text(size = 12))+ 
+  theme(axis.text = element_text(size = 9), axis.title = element_text(size = 12))+ 
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   theme(legend.position="none")
 
@@ -284,7 +299,7 @@ ggplot(r_df, aes(x=reorder(gene, -cor), y=cor)) +
   geom_bar(position="dodge", stat="identity", fill = "steelblue", color="grey") +
   xlab("Protein") + 
   ylab("Pearson coefficient")+
-  theme(axis.text.x = element_text(size = 3), axis.text.y = element_text(size = 9),axis.title = element_text(size = 12))+ 
+  theme(axis.text.x = element_text(size = 6), axis.text.y = element_text(size = 9),axis.title = element_text(size = 12))+ 
   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
   theme(legend.position="none")
 

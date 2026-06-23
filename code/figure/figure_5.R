@@ -14,7 +14,11 @@ physiology_rosemary2 <- physiology_collection[str_detect(physiology_collection$s
 physiology_yirong <- physiology_collection[str_detect(physiology_collection$condition_unique, "Copy number WT"),]
 
 # compartment
-ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+#ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
+
+
+
 ProMassRatio <- ProMassRatio[,2:277]
 ProMassRatio[ProMassRatio <0.0000000000001] <- NA
 ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
@@ -75,12 +79,12 @@ ggplot(df, aes(x=WT_0 , y=WT_4, label=compartment)) +
        y = "Zinc limitation 4h") +
   xlim(0, 0.45) + ylim(0,0.45) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.4), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
              label.size = NA) +
-  geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
+  geom_text(aes(label=ifelse(WT_4 > 0.02, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
 
 
 
@@ -95,13 +99,13 @@ ggplot(df, aes(x=WT_0 , y=WT_4, label=compartment)) +
        y = "Zinc limitation 4h") +
   xlim(0, 0.45) + ylim(0,0.45) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.4), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
              label.size = NA) +
   #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
-  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+  geom_text_repel(data=filter(df, WT_0 > 0.03), aes(label=compartment),hjust=-0.3,vjust=-0.3)
 
 
 
@@ -117,13 +121,13 @@ ggplot(df, aes(x=WT_0 , y=WT_8, label=compartment)) +
        y = "Zinc limitation 8h") +
   xlim(0, 0.45) + ylim(0,0.45) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.4), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
              label.size = NA) +
   #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
-  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+  geom_text_repel(data=filter(df, WT_0 > 0.03), aes(label=compartment),hjust=-0.3,vjust=-0.3)
 
 
 
@@ -138,22 +142,23 @@ ggplot(df, aes(x=WT_0 , y=WT_12, label=compartment)) +
        y = "Zinc limitation 12h") +
   xlim(0, 0.45) + ylim(0,0.45) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.4), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
              label.size = NA) +
   #geom_text(aes(label=ifelse(WT_4 > 0.05, as.character(compartment),'')),hjust=-0.1,vjust=-0.1, check_overlap = TRUE)
-  geom_text_repel(data=filter(df, WT_0 > 0.05), aes(label=compartment),hjust=-0.3,vjust=-0.3)
+  geom_text_repel(data=filter(df, WT_0 > 0.03), aes(label=compartment),hjust=-0.3,vjust=-0.3)
 
 
 
 
 # supplementary figure - check the fold change of protein mass fraction for organelle
-df$WT_8_vs_WT_0 <- (df$WT_8-df$WT_0)/df$WT_0
+df$WT_8_vs_WT_0 <- (df$WT_8-df$WT_0)/df$WT_0*100
 df$WT_8_vs_WT_0_abs <- abs(df$WT_8_vs_WT_0)
 
 df_filter_mass <- df[df$WT_0 >=0.01, ]
+df_filter_mass <- na.omit(df_filter_mass)
 df_filter_mass <- df_filter_mass[df_filter_mass$WT_8_vs_WT_0_abs >=0.15, ] 
 
 ggplot(df_filter_mass, aes(x=reorder(compartment, WT_8_vs_WT_0), y=WT_8_vs_WT_0)) + 
@@ -201,9 +206,9 @@ ggplot(df, aes(x=C_lim , y=C_N_30, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "C_lim",
        y = "C_N_30 ") +
-  xlim(0, 0.45) + ylim(0,0.45) +
+  xlim(0, 0.35) + ylim(0,0.35) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
@@ -219,9 +224,9 @@ ggplot(df, aes(x=C_lim , y=C_N_30, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "C_lim",
        y = "C_N_30 ") +
-  xlim(0, 0.45) + ylim(0,0.45) +
+  xlim(0, 0.35) + ylim(0,0.35) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
@@ -243,9 +248,9 @@ ggplot(df, aes(x=C_lim , y=C_N_50, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "C_lim",
        y = "C_N_50 ") +
-  xlim(0, 0.45) + ylim(0,0.45) +
+  xlim(0, 0.35) + ylim(0,0.35) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
@@ -266,9 +271,9 @@ ggplot(df, aes(x=C_lim , y=C_N_115, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "C_lim",
        y = "C_N_115 ") +
-  xlim(0, 0.45) + ylim(0,0.45) +
+  xlim(0, 0.35) + ylim(0,0.35) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
@@ -351,7 +356,7 @@ ggplot(df_mt, aes(x=C_lim , y=C_N_50, label=compartment)) +
 
 
 # supplementary figure - check the fold change of protein mass fraction for organelle
-df$C_N_50_vs_C_lim <- (df$C_N_50 - df$C_lim)/df$C_lim
+df$C_N_50_vs_C_lim <- (df$C_N_50 - df$C_lim)/df$C_lim*100
 df$C_N_50_vs_C_lim_abs <- abs(df$C_N_50_vs_C_lim)
 df_filter_mass <- df[df$C_lim >=0.01, ]
 df_filter_mass <- df_filter_mass[df_filter_mass$C_N_50_vs_C_lim_abs >=0.15, ] 

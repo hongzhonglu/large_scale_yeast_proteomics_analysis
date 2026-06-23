@@ -1,0 +1,405 @@
+!
+!Date: 01/19/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+BUD23-TRM112 methyltransferase complex	CPX-1047	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2024-09-26	Létoquart J, et al. (2014) PMID:25489090
+UTP-A complex	CPX-1409	located in	GO:0005730	nucleolus	cellular component		BSR	manually curated	ComplexPortal	2018-03-27	Hunziker M, et al. (2016) PMID:27354316
+UTP-B complex	CPX-1410	located in	GO:0005730	nucleolus	cellular component		BSR	manually curated	ComplexPortal	2018-03-27	Hunziker M, et al. (2016) PMID:27354316
+Small ribosomal subunit processome	CPX-1604	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	ComplexPortal	2018-03-27	Chaker-Margot M, et al. (2017) PMID:27980088
+RCL1-BMS1 40S ribosomal subunit maturation complex	CPX-1606	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	ComplexPortal	2018-12-05	Delprato A, et al. (2014) PMID:25064857
+RENT complex	CPX-1669	located in	GO:0005730	nucleolus	cellular component		BSR	manually curated	ComplexPortal	2014-10-16	Shou W, et al. (1999) PMID:10219244
+DBF2-MOB1 protein kinase complex	CPX-1683	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2021-10-26	Zhou X, et al. (2021) PMID:33481703
+NOC1-NOC2 pre-ribosome maturation complex	CPX-1733	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	ComplexPortal	2014-10-16	Milkereit P, et al. (2001) PMID:11371346
+LSM2-7 complex	CPX-46	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	ComplexPortal	2015-06-29	Fernandez CF, et al. (2004) PMID:15075370
+Nuclear/nucleolar exosome complex, DIS3-RRP6 variant	CPX-599	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	ComplexPortal	2016-09-13	Shiomi T, et al. (1998) PMID:9562621
+Cytoplasmic exosome complex, DIS3 variant	CPX-603	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	ComplexPortal	2016-09-13	Shiomi T, et al. (1998) PMID:9562621
+MAK16	YAL025C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Milhon JL, et al. (2000) PMID:10838225
+ECM1	YAL059W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bassler J, et al. (2001) PMID:11583615
+UTP20	YBL004W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+UTP20	YBL004W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dez C, et al. (2007) PMID:17652137
+UTP20	YBL004W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2004) PMID:15590835
+RRN10	YBL025W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Ha CW, et al. (2012) PMID:22362748
+LSM2	YBL026W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Fernandez CF, et al. (2004) PMID:15075370
+YBL028C	YBL028C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+BMT2	YBR141C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+BMT2	YBR141C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Sharma S, et al. (2013) PMID:23558746
+MAK5	YBR142W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Zagulski M, et al. (2003) PMID:13680366
+PCH2	YBR186W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	San-Segundo PA and Roeder GS (2000) PMID:11029058
+ENP1	YBR247C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+RRP7	YCL031C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SPB1	YCL054W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Kressler D, et al. (1999) PMID:10556316
+SPB1	YCL054W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Pintard L, et al. (2000) PMID:10648622
+KRR1	YCL059C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Sasaki T, et al. (2000) PMID:11027267
+KRR1	YCL059C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+RBP95	YCR016W	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2023-09-06	Bhutada P, et al. (2022) PMID:36018804
+RBP95	YCR016W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RRP43	YCR035C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Zanchin NI and Goldfarb DS (1999) PMID:9891085
+BUD23	YCR047C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	White J, et al. (2008) PMID:18332120
+PWP2	YCR057C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+PWP2	YCR057C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+RSA4	YCR072C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	de la Cruz J, et al. (2005) PMID:16221974
+CSM1	YCR086W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rabitsch KP, et al. (2003) PMID:12689592
+YCR087C-A	YCR087C-A	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+NOP1	YDL014W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Schimmang T, et al. (1989) PMID:2686980
+NOP1	YDL014W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Moy TI, et al. (2002) PMID:11932453
+DBP10	YDL031W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Burger F, et al. (2000) PMID:10871363
+SIR2	YDL042C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Gotta M, et al. (1997) PMID:9214640
+LHP1	YDL051W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Long KS, et al. (2001) PMID:11720288
+TSR1	YDL060W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Gelperin D, et al. (2001) PMID:11565749
+NOP14	YDL148C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+NOP14	YDL148C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+NOP14	YDL148C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+SAS10	YDL153C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+AIR2	YDL175C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dez C, et al. (2006) PMID:16541108
+NOP6	YDL213C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Buchhaupt M, et al. (2007) PMID:17425675
+NOP6	YDL213C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MAF1	YDR005C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Wei Y, et al. (2009) PMID:19574957
+FAL1	YDR021W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Kressler D, et al. (1997) PMID:9372960
+NSI1	YDR026C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Ha CW, et al. (2012) PMID:22362748
+NSI1	YDR026C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MAK21	YDR060W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2019-09-06	Milkereit P, et al. (2001) PMID:11371346
+RRP8	YDR083W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bousquet-Antonelli C, et al. (2000) PMID:10864042
+RRP8	YDR083W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Peifer C, et al. (2013) PMID:23180764
+RRP1	YDR087C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ARX1	YDR101C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-10-18	Hung NJ and Johnson AW (2006) PMID:16648468
+FOB1	YDR110W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Defossez PA, et al. (1999) PMID:10230397
+HMO1	YDR174W	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2024-02-26	Gadal O, et al. (2002) PMID:12374750
+HMO1	YDR174W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Gadal O, et al. (2002) PMID:12374750
+RRP45	YDR280W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dez C, et al. (2006) PMID:16541108
+BFR2	YDR299W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+BFR2	YDR299W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2004) PMID:15590835
+SSF2	YDR312W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bogengruber E, et al. (2003) PMID:12702244
+UTP4	YDR324C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+FCF1	YDR339C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rempola B, et al. (2006) PMID:16762320
+FCF1	YDR339C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bleichert F, et al. (2006) PMID:16769905
+ESF1	YDR365C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+LSM6	YDR378C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Fernandez CF, et al. (2004) PMID:15075370
+UTP5	YDR398W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+RRP17	YDR412W	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2020-11-10	Oeffinger M, et al. (2009) PMID:20005841
+LRS4	YDR439W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rabitsch KP, et al. (2003) PMID:12689592
+UTP6	YDR449C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+UTP6	YDR449C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+TOM1	YDR457W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+PUF6	YDR496C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SNU13	YEL026W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+POL5	YEL055C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Shimizu K, et al. (2002) PMID:12093911
+POL5	YEL055C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+NOP16	YER002W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+NUG1	YER006W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+NUG1	YER006W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bassler J, et al. (2006) PMID:16803892
+EDC2	YER035W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Neef DW and Thiele DJ (2009) PMID:19682251
+UTP7	YER082C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+UTP7	YER082C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+LSM4	YER112W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Fernandez CF, et al. (2004) PMID:15075370
+GLC7	YER133W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Wu X and Tatchell K (2001) PMID:11412094
+LSM5	YER146W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Fernandez CF, et al. (2004) PMID:15075370
+SPB4	YFL002C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SPB4	YFL002C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	de la Cruz J, et al. (1998) PMID:9769101
+LOC1	YFR001W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Urbinati CR, et al. (2006) PMID:16871394
+CDC14	YFR028C	located in	GO:0005730	nucleolus	cellular component	existence starts and ends during mitotic anaphase B	IDA	manually curated	SGD	2022-10-26	Abbasi M, et al. (2022) PMID:36259662
+CDC14	YFR028C	located in	GO:0005730	nucleolus	cellular component	existence starts and ends during mitotic telophase	IDA	manually curated	SGD	2022-10-26	Abbasi M, et al. (2022) PMID:36259662
+CDC14	YFR028C	located in	GO:0005730	nucleolus	cellular component	existence starts and ends during G1 phase	IDA	manually curated	SGD	2022-10-26	Abbasi M, et al. (2022) PMID:36259662
+CDC14	YFR028C	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2024-02-26	Abbasi M, et al. (2022) PMID:36259662
+CDC14	YFR028C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Yoshida S, et al. (2002) PMID:12062061
+CDC14	YFR028C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2016-06-14	Yellman CM and Roeder GS (2015) PMID:26090959
+CGR1	YGL029W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Sun J, et al. (2001) PMID:11116400
+DBP3	YGL078C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Weaver PL, et al. (1997) PMID:9032262
+NSA1	YGL111W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ROK1	YGL171W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Venema J, et al. (1997) PMID:9154839
+UPF3	YGR072W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Shirley RL, et al. (2002) PMID:12196393
+SLX9	YGR081C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+UTP22	YGR090W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+UTP22	YGR090W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2004) PMID:15590835
+UTP22	YGR090W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+NOP7	YGR103W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+UTP8	YGR128C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+ENP2	YGR145W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+ENP2	YGR145W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2004) PMID:15590835
+MTR3	YGR158C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Kadowaki T, et al. (1995) PMID:8534909
+NSR1	YGR159C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SKI6	YGR195W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2021-01-20	Okuda EK, et al. (2020) PMID:32554806
+NOP19	YGR251W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+NOP19	YGR251W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Choque E, et al. (2011) PMID:21941128
+NOP19	YGR251W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+EFG1	YGR271C-A	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+PXR1	YGR280C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Guglielmi B and Werner M (2002) PMID:12107183
+UPA1	YGR283C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ZUO1	YGR285C	located in	GO:0005730	nucleolus	cellular component		IMP	manually curated	SGD	2013-08-07	Albanèse V, et al. (2010) PMID:20368619
+RPL14B	YHL001W	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2021-12-13	Espinar-Marchena F, et al. (2018) PMID:29788267
+SHU1	YHL006C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2011) PMID:21372173
+SBP1	YHL034C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Jong AY, et al. (1987) PMID:2823109
+SBP1	YHL034C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Clark MW, et al. (1990) PMID:2121740
+CIC1	YHR052W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Jäger S, et al. (2001) PMID:11500370
+RRP3	YHR065C	located in	GO:0005730	nucleolus	cellular component		IC with maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)	manually curated	SGD	2013-08-07	Granneman S, et al. (2006) PMID:16449634
+SSF1	YHR066W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Kim J and Hirsch JP (1998) PMID:9611192
+RPF1	YHR088W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Wehner KA and Baserga SJ (2002) PMID:11864606
+GAR1	YHR089C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Girard JP, et al. (1992) PMID:1531632
+RPC10	YHR143W-A	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+SPO12	YHR152W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Shah R, et al. (2001) PMID:11729145
+DBP8	YHR169W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Daugeron MC and Linder P (2001) PMID:11222764
+UTP9	YHR196W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+UTP9	YHR196W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+UTP9	YHR196W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+FAF1	YIL019W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Karkusiewicz I, et al. (2004) PMID:15178413
+FAF1	YIL019W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Shirai C, et al. (2004) PMID:15078877
+AIR1	YIL079C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Drees BL, et al. (2001) PMID:11489916
+UTP25	YIL091C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+UTP25	YIL091C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+UTP25	YIL091C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Goldfeder MB and Oliveira CC (2010) PMID:20528918
+BMT5	YIL096C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2014-01-09	Sharma S, et al. (2014) PMID:24335083
+BMT5	YIL096C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RRT14	YIL127C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RPL16A	YIL133C	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2021-02-05	Espinar-Marchena FJ, et al. (2016) PMID:27374275
+CTK2	YJL006C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bouchoux C, et al. (2004) PMID:15520468
+NOP9	YJL010C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Thomson E, et al. (2007) PMID:17956976
+NOP9	YJL010C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+NOP9	YJL010C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RRN7	YJL025W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Ha CW, et al. (2012) PMID:22362748
+MTR4	YJL050W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dez C, et al. (2006) PMID:16541108
+UTP18	YJL069C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2004) PMID:15590835
+UTP18	YJL069C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+NET1	YJL076W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Shou W, et al. (1999) PMID:10219244
+UTP10	YJL109C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+UTP10	YJL109C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+UTP10	YJL109C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+UTP10	YJL109C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dez C, et al. (2007) PMID:17652137
+RPA34	YJL148W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Teixeira MT, et al. (2002) PMID:12206772
+MPP10	YJR002W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+LSM8	YJR022W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Spiller MP, et al. (2007) PMID:18029398
+URB2	YJR041C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dez C, et al. (2004) PMID:15226434
+URB2	YJR041C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RPL14A	YKL006W	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2021-12-13	Espinar-Marchena F, et al. (2018) PMID:29788267
+MRT4	YKL009W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Kemmler S, et al. (2009) PMID:19797079
+MRT4	YKL009W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+MRT4	YKL009W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Lo KY, et al. (2009) PMID:19797078
+URB1	YKL014C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+URB1	YKL014C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Tkach JM, et al. (2012) PMID:22842922
+URB1	YKL014C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rosado IV and de la Cruz J (2004) PMID:15208443
+DHR2	YKL078W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Colley A, et al. (2000) PMID:10982841
+RRP14	YKL082C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Yamada H, et al. (2007) PMID:17804645
+RRP14	YKL082C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Drees BL, et al. (2001) PMID:11489916
+UTP11	YKL099C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+RRN3	YKL125W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Wnuk M, et al. (2009) PMID:19416370
+CTK1	YKL139W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bouchoux C, et al. (2004) PMID:15520468
+EBP2	YKL172W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Huber MD, et al. (2000) PMID:10849420
+TOF2	YKR010C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Geil C, et al. (2008) PMID:18595708
+DBP7	YKR024C	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2022-03-11	Daugeron MC and Linder P (1998) PMID:9582098
+UTP30	YKR060W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+LAS1	YKR063C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Castle CD, et al. (2013) PMID:23175604
+RPF2	YKR081C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Wehner KA and Baserga SJ (2002) PMID:11864606
+SRP40	YKR092C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Meier UT (1996) PMID:8702624
+DRS1	YLL008W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+SOF1	YLL011W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Jansen R, et al. (1993) PMID:8508778
+SOF1	YLL011W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Leslie DM, et al. (2004) PMID:15367670
+RIX7	YLL034C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Gadal O, et al. (2001) PMID:11447111
+RIX7	YLL034C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+NOC3	YLR002C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Milkereit P, et al. (2001) PMID:11371346
+RLP24	YLR009W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Lo KY, et al. (2010) PMID:20670889
+FCF2	YLR051C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+FCF2	YLR051C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+FYV7	YLR068W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+DIP2	YLR129W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+RRN5	YLR141W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Ha CW, et al. (2012) PMID:22362748
+RMP1	YLR145W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+STM1	YLR150W	is active in	GO:0005730	nucleolus	cellular component		IPI with NOP7	manually curated	SGD	2025-12-19	Bianco E, et al. (2025) PMID:40315826
+STM1	YLR150W	is active in	GO:0005730	nucleolus	cellular component		IPI with RRP7	manually curated	SGD	2025-12-19	Bianco E, et al. (2025) PMID:40315826
+STM1	YLR150W	is active in	GO:0005730	nucleolus	cellular component		IPI with UTP22	manually curated	SGD	2025-12-19	Bianco E, et al. (2025) PMID:40315826
+ACS2	YLR153C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Falcón AA, et al. (2010) PMID:19618123
+EMG1	YLR186W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2004) PMID:15590835
+PWP1	YLR196W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+NOP56	YLR197W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Kumar A, et al. (2002) PMID:11914276
+NOP56	YLR197W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Gautier T, et al. (1997) PMID:9372940
+RSA3	YLR221C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+UTP13	YLR222C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+IFH1	YLR223C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Jorgensen P, et al. (2004) PMID:15466158
+EST1	YLR233C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Teixeira MT, et al. (2002) PMID:12101098
+YCS4	YLR272C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bhalla N, et al. (2002) PMID:11854418
+DBP9	YLR276C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Daugeron MC, et al. (2001) PMID:11565753
+EST2	YLR318W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Teixeira MT, et al. (2002) PMID:12101098
+SGD1	YLR336C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Akhtar N, et al. (2000) PMID:11042259
+UTP21	YLR409C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2004) PMID:15590835
+UTP21	YLR409C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+LSM3	YLR438C-A	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Fernandez CF, et al. (2004) PMID:15075370
+SIR3	YLR442C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Kennedy BK, et al. (1997) PMID:9150138
+FPR4	YLR449W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+RRN11	YML043C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Aksnes H, et al. (2013) PMID:23613772
+FPR3	YML074C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Shan X, et al. (1994) PMID:8051210
+FPR3	YML074C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Benton BM, et al. (1994) PMID:7525596
+UTP14	YML093W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+CTK3	YML112W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bouchoux C, et al. (2004) PMID:15520468
+BUD22	YMR014W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+ERB1	YMR049C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+UTP15	YMR093W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+RPL15B	YMR121C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+ECM16	YMR128W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Colley A, et al. (2000) PMID:10982841
+ECM16	YMR128W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+RRB1	YMR131C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+SGS1	YMR190C	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2021-12-17	Sinclair DA, et al. (1997) PMID:9271578
+RRP5	YMR229C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Venema J and Tollervey D (1996) PMID:8896463
+RRP5	YMR229C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+TRI1	YMR233W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RNT1	YMR239C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Catala M, et al. (2004) PMID:15090619
+TMA23	YMR269W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Buchhaupt M, et al. (2007) PMID:17425675
+TMA23	YMR269W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RRN9	YMR270C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Ha CW, et al. (2012) PMID:22362748
+HAS1	YMR290C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+HAS1	YMR290C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Emery B, et al. (2004) PMID:15049817
+SNR18	YNCA0003W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Kiss-László Z, et al. (1996) PMID:8674114
+SNR56	YNCB0003W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR161	YNCB0009C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Schattner P, et al. (2004) PMID:15306656
+SNR43	YNCC0003C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Torchet C, et al. (2005) PMID:15923376
+SNR33	YNCC0006C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Ni J, et al. (1997) PMID:9160748
+SNR65	YNCC0011W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR189	YNCC0012C	located in	GO:0005730	nucleolus	cellular component		IC with box H/ACA snoRNP complex	manually curated	SGD	2015-10-16	Torchet C, et al. (2005) PMID:15923376
+SNR63	YNCD0002C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR47	YNCD0010C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR13	YNCD0030W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR84	YNCD0032C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Schattner P, et al. (2004) PMID:15306656
+SNR80	YNCE0001C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Schattner P, et al. (2004) PMID:15306656
+SNR67	YNCE0002W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR53	YNCE0003W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR4	YNCE0019W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Tollervey D (1987) PMID:3327689
+SNR52	YNCE0020C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-10-16	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR52	YNCE0020C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA 2'-O-ribose methylation guide activity	manually curated	SGD	2015-10-16	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR82	YNCG0010W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Schattner P, et al. (2004) PMID:15306656
+SNR10	YNCG0013W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Morrissey JP and Tollervey D (1993) PMID:8455623
+SNR10	YNCG0013W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Tollervey D (1987) PMID:3327689
+SNR10	YNCG0013W	located in	GO:0005730	nucleolus	cellular component		IPI with SBP1	manually curated	SGD	2015-06-25	Clark MW, et al. (1990) PMID:2121740
+SNR39	YNCG0014C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Kiss-László Z, et al. (1996) PMID:8674114
+SNR39B	YNCG0015C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR46	YNCG0024W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Ni J, et al. (1997) PMID:9160748
+SNR48	YNCG0026W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR32	YNCH0012W	located in	GO:0005730	nucleolus	cellular component		IC with snoRNA guided rRNA pseudouridine synthesis	manually curated	SGD	2015-12-15	Ni J, et al. (1997) PMID:9160748
+SNR71	YNCH0014W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR68	YNCI0001W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR128	YNCJ0003C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Zagorski J, et al. (1988) PMID:2850487
+SNR190	YNCJ0004C	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2023-02-27	Zagorski J, et al. (1988) PMID:2850487
+SNR37	YNCJ0007C	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2022-04-14	Ismail S, et al. (2022) PMID:35385737
+SNR37	YNCJ0007C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Ni J, et al. (1997) PMID:9160748
+SNR60	YNCJ0009C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR3	YNCJ0030W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Tollervey D (1987) PMID:3327689
+SNR64	YNCK0001W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR38	YNCK0009W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Kiss-László Z, et al. (1996) PMID:8674114
+SNR69	YNCK0013W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR87	YNCK0015C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Davis CA and Ares M (2006) PMID:16484372
+SNR42	YNCK0020C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Ni J, et al. (1997) PMID:9160748
+SNR30	YNCL0003W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Morrissey JP and Tollervey D (1993) PMID:8455623
+SNR79	YNCL0005C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR61	YNCL0041C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR55	YNCL0042C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR57	YNCL0043C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR44	YNCL0046W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Schattner P, et al. (2004) PMID:15306656
+SNR34	YNCL0048W	located in	GO:0005730	nucleolus	cellular component		IC with snoRNA guided rRNA pseudouridine synthesis	manually curated	SGD	2015-12-15	Ni J, et al. (1997) PMID:9160748
+SNR85	YNCM0002C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Torchet C, et al. (2005) PMID:15923376
+SNR54	YNCM0005C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR78	YNCM0011W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR77	YNCM0012W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR76	YNCM0013W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR75	YNCM0014W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR74	YNCM0015W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR73	YNCM0016W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR72	YNCM0017W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR24	YNCM0026C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Kiss-László Z, et al. (1996) PMID:8674114
+SNR83	YNCM0030W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Schattner P, et al. (2004) PMID:15306656
+SNR11	YNCM0031W	located in	GO:0005730	nucleolus	cellular component		IPI with SBP1	manually curated	SGD	2015-06-25	Clark MW, et al. (1990) PMID:2121740
+SNR86	YNCM0034C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Torchet C, et al. (2005) PMID:15923376
+SNR40	YNCN0001W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Kiss-László Z, et al. (1996) PMID:8674114
+SNR40	YNCN0001W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR66	YNCN0014W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR49	YNCN0018W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridylation guide activity	manually curated	SGD	2015-10-16	Schattner P, et al. (2004) PMID:15306656
+SNR191	YNCN0019C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Badis G, et al. (2003) PMID:12810910
+SNR58	YNCO0003C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR81	YNCO0006W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Schattner P, et al. (2004) PMID:15306656
+SNR50	YNCO0007W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR9	YNCO0014C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Tollervey D (1987) PMID:3327689
+SNR62	YNCO0015C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR36	YNCO0022C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Ganot P, et al. (1997) PMID:9182768
+SNR35	YNCO0024C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Samarsky DA, et al. (1995) PMID:7630735
+SNR17A	YNCO0025W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Tollervey D (1987) PMID:3327689
+SNR17A	YNCO0025W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Morrissey JP and Tollervey D (1993) PMID:8455623
+SNR8	YNCO0026W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Tollervey D (1987) PMID:3327689
+SNR8	YNCO0026W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Ni J, et al. (1997) PMID:9160748
+SNR31	YNCO0027C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Ni J, et al. (1997) PMID:9160748
+SNR5	YNCO0028W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Tollervey D (1987) PMID:3327689
+SNR5	YNCO0028W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA pseudouridine synthesis	manually curated	SGD	2015-06-25	Ganot P, et al. (1997) PMID:9182768
+SNR59	YNCP0003W	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR17B	YNCP0005C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Tollervey D (1987) PMID:3327689
+SNR17B	YNCP0005C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-06-25	Morrissey JP and Tollervey D (1993) PMID:8455623
+SNR51	YNCP0013C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR70	YNCP0014C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR41	YNCP0015C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Lowe TM and Eddy SR (1999) PMID:10024243
+SNR41	YNCP0015C	located in	GO:0005730	nucleolus	cellular component		IC with rRNA methylation	manually curated	SGD	2015-06-25	Kiss-László Z, et al. (1996) PMID:8674114
+RLP7	YNL002C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dunbar DA, et al. (2000) PMID:11087857
+SIS1	YNL007C	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2022-09-26	Feder ZA, et al. (2021) PMID:33326013
+RCM1	YNL022C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-11-27	Sharma S, et al. (2013) PMID:23913415
+NOP2	YNL061W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2015-07-27	Bourgeois G, et al. (2015) PMID:26196125
+NOP2	YNL061W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+RPL16B	YNL069C	is active in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2021-02-05	Espinar-Marchena FJ, et al. (2016) PMID:27374275
+NOP15	YNL110C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Harnpicharnchai P, et al. (2001) PMID:11583614
+KRE33	YNL132W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+LSM7	YNL147W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Spiller MP, et al. (2007) PMID:18029398
+LSM7	YNL147W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Fernandez CF, et al. (2004) PMID:15075370
+NOP13	YNL175C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+NOP13	YNL175C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Wu K, et al. (2001) PMID:11452019
+UBP10	YNL186W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2014-01-11	Richardson LA, et al. (2012) PMID:22902402
+SQS1	YNL224C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+JJJ1	YNL227C	located in	GO:0005730	nucleolus	cellular component		IMP	manually curated	SGD	2013-08-07	Albanèse V, et al. (2010) PMID:20368619
+RPA49	YNL248C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2014-03-03	Albert B, et al. (2011) PMID:21263028
+TRF5	YNL299W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+KRI1	YNL308C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Sasaki T, et al. (2000) PMID:11027267
+SWM2	YNR004W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+DBP6	YNR038W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Kressler D, et al. (1998) PMID:9528757
+TRM112	YNR046W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+NOG2	YNR053C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Saveanu C, et al. (2001) PMID:11707418
+ESF2	YNR054C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Hoang T, et al. (2005) PMID:15964808
+ESF2	YNR054C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+TOP1	YOL006C	located in	GO:0005730	nucleolus	cellular component		IPI with NSR1	manually curated	SGD	2013-08-07	Edwards TK, et al. (2000) PMID:10967121
+RCL1	YOL010W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Billy E, et al. (2000) PMID:10790377
+DIS3	YOL021C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Shiomi T, et al. (1998) PMID:9562621
+DIS3	YOL021C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+NOP12	YOL041C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Wu K, et al. (2001) PMID:11452019
+BRX1	YOL077C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2018-01-30	Kaser A, et al. (2001) PMID:11843177
+REX4	YOL080C	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+PAP2	YOL115W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dez C, et al. (2006) PMID:16541108
+NOP8	YOL144W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Zanchin NI and Goldfarb DS (1999) PMID:9891085
+RRP6	YOR001W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dez C, et al. (2006) PMID:16541108
+RRP6	YOR001W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2019-11-07	Cepeda LPP, et al. (2019) PMID:31662437
+UTP23	YOR004W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bleichert F, et al. (2006) PMID:16769905
+UTP23	YOR004W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591
+BUD21	YOR078W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+BUD21	YOR078W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+PNO1	YOR145C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grava S, et al. (2000) PMID:10923024
+ULS1	YOR191W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Shirai C and Mizuta K (2008) PMID:18603780
+YTM1	YOR272W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Harnpicharnchai P, et al. (2001) PMID:11583614
+MOD5	YOR274W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Tolerico LH, et al. (1999) PMID:9872948
+RRP36	YOR287C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Gérus M, et al. (2010) PMID:20038530
+RRS1	YOR294W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Tsuno A, et al. (2000) PMID:10688653
+UAF30	YOR295W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Ha CW, et al. (2012) PMID:22362748
+NOP58	YOR310C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Gautier T, et al. (1997) PMID:9372940
+RPA190	YOR341W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bouchoux C, et al. (2004) PMID:15520468
+RRP12	YPL012W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-20	Tkach JM, et al. (2012) PMID:22842922
+ULP1	YPL020C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Sydorskyy Y, et al. (2010) PMID:20647537
+NOP4	YPL043W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+NOG1	YPL093W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Park JH, et al. (2001) PMID:11112701
+NAN1	YPL126W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Dragon F, et al. (2002) PMID:12068309
+NOP53	YPL146C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+NOP53	YPL146C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Thomson E and Tollervey D (2005) PMID:16043506
+TGS1	YPL157W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Mouaikel J, et al. (2002) PMID:11983179
+RPL7B	YPL198W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Kim TY, et al. (2009) PMID:19466602
+NIP7	YPL211W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+BMS1	YPL217C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Rout MP, et al. (2000) PMID:10684247
+TIF6	YPR016C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Menne TF, et al. (2007) PMID:17353896
+FHL1	YPR104C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Jorgensen P, et al. (2004) PMID:15466158
+MRD1	YPR112C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Jin SB, et al. (2002) PMID:11884397
+RRP9	YPR137W	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+RRP15	YPR143W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+NOC4	YPR144C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Grandi P, et al. (2002) PMID:12150911
+NOC4	YPR144C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Milkereit P, et al. (2003) PMID:12446671
+NOC4	YPR144C	located in	GO:0005730	nucleolus	cellular component		IDA	manually curated	SGD	2013-08-07	Bernstein KA, et al. (2004) PMID:15590835
+JIP5	YPR169W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Huh WK, et al. (2003) PMID:14562095
+JIP5	YPR169W	located in	GO:0005730	nucleolus	cellular component		HDA	manually curated	SGD	2018-11-19	Hazbun TR, et al. (2003) PMID:14690591

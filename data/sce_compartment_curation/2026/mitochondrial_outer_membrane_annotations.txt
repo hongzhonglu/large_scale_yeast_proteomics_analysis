@@ -1,0 +1,151 @@
+!
+!Date: 01/19/2026
+!From: Saccharomyces Genome Database (SGD) 
+!URL: http://www.yeastgenome.org/ 
+!Contact Email: sgd-helpdesk@lists.stanford.edu 
+!Funding: NHGRI at US NIH, grant number 5-U41-HG001315 
+!
+
+Gene/Complex	Systematic Name/Complex Accession	Qualifier	Gene Ontology Term ID	Gene Ontology Term	Aspect	Annotation Extension	Evidence	Method	Source	Assigned On	Reference
+PPG1-FAR complex	CPX-1197	is active in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2021-11-12	Innokentev A, et al. (2020) PMID:33317697
+tRNA-intron endonuclease complex	CPX-1832	located in	GO:0005741	mitochondrial outer membrane	cellular component		BSR	manually curated	ComplexPortal	2014-10-16	Trotta CR, et al. (1997) PMID:9200603
+TOM40 mitochondrial outer membrane translocase core complex	CPX-473	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	ComplexPortal	2019-11-20	Dekker PJ, et al. (1998) PMID:9774667
+TOM40 mitochondrial outer membrane translocase holocomplex	CPX-474	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	ComplexPortal	2019-11-20	Dekker PJ, et al. (1998) PMID:9774667
+FUN14	YAL008W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Sinzel M, et al. (2016) PMID:27226123
+FUN14	YAL008W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MDM10	YAL010C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2024-03-01	Zahedi RP, et al. (2006) PMID:16407407
+MDM10	YAL010C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2024-03-01	Sogo LF and Yaffe MP (1994) PMID:8089171
+GEM1	YAL048C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+GEM1	YAL048C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Frederick RL, et al. (2004) PMID:15479738
+SEN34	YAR008W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+PTH2	YBL057C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+BNA4	YBL098W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+CNM1	YBR063C	is active in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-04-08	Eisenberg-Bord M, et al. (2021) PMID:34694322
+EHT1	YBR177C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+FZO1	YBR179C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Rapaport D, et al. (1998) PMID:9685359
+FZO1	YBR179C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Hermann GJ, et al. (1998) PMID:9786948
+FZO1	YBR179C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Fritz S, et al. (2001) PMID:11266460
+FZO1	YBR179C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+OM14	YBR230C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+TSC10	YBR265W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+COI1	YDR381C-A	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+UGO1	YDR470C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+UGO1	YDR470C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Hoppins S, et al. (2009) PMID:19237599
+FMP52	YER004W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+ISC1	YER019W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kitagaki H, et al. (2007) PMID:17880915
+CHO1	YER026C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kuchler K, et al. (1986) PMID:3005242
+YPT31	YER031C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+SEC4	YFL005W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+YPT32	YGL210W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MDM34	YGL219C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Youngman MJ, et al. (2004) PMID:14981098
+MDM34	YGL219C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MCY1	YGR012W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MSP1	YGR028W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Nakai M, et al. (1993) PMID:8226973
+MSP1	YGR028W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+SCM4	YGR049W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TOM20	YGR082W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TOM20	YGR082W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+PIL1	YGR086C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-10-03	Pal A, et al. (2022) PMID:36162502
+PIL1	YGR086C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+YGR266W	YGR266W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TCD1	YHR003C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+YSC83	YHR017W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+NCP1	YHR042W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+SAM35	YHR083W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Waizenegger T, et al. (2004) PMID:15205677
+SAM35	YHR083W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+SAM35	YHR083W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Milenkovic D, et al. (2004) PMID:15067005
+TOM71	YHR117W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TOM71	YHR117W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+TOM71	YHR117W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Schlossmann J, et al. (1996) PMID:8663394
+ERG9	YHR190W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+CBR1	YIL043C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+FIS1	YIL065C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+FIS1	YIL065C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Mozdy AD, et al. (2000) PMID:11038183
+FIS1	YIL065C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Suzuki M, et al. (2005) PMID:15809300
+POR2	YIL114C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+POR2	YIL114C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Blachly-Dyson E, et al. (1997) PMID:9315631
+AYR1	YIL124W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+AYR1	YIL124W	is active in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2026-01-07	Krüger V, et al. (2017) PMID:28916712
+OM45	YIL136W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+OM45	YIL136W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+OM45	YIL136W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Cerveny KL, et al. (2001) PMID:11179417
+ATG32	YIL146C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Okamoto K, et al. (2009) PMID:19619494
+ATG32	YIL146C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Kanki T, et al. (2009) PMID:19619495
+GUT2	YIL155C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+GTT1	YIR038C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+IML2	YJL082W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MDV1	YJL112W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Fekkes P, et al. (2000) PMID:11038180
+MDV1	YJL112W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MDV1	YJL112W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tieu Q and Nunnari J (2000) PMID:11038182
+MCO6	YJL127C-B	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2024-02-29	Morgenstern M, et al. (2017) PMID:28658629
+STE24	YJR117W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TCD2	YKL027W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+YJU3	YKL094W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MCR1	YKL150W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hahne K, et al. (1994) PMID:8001120
+MCR1	YKL150W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MCR1	YKL150W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+SAC1	YKL212W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+VPS1	YKR001C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+DNM1	YLL001W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Tieu Q and Nunnari J (2000) PMID:11038182
+MMM1	YLL006W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MMM1	YLL006W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Hobbs AE, et al. (2001) PMID:11266455
+XDJ1	YLR090W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+MIM2	YLR099W-A	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Dimmer KS, et al. (2012) PMID:22467864
+ERG27	YLR100W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+SEN2	YLR105C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yoshihisa T, et al. (2003) PMID:12925762
+SEN2	YLR105C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Yoshihisa T, et al. (2003) PMID:12925762
+SEN2	YLR105C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MMR1	YLR190W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Itoh T, et al. (2004) PMID:15201867
+MMR1	YLR190W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+YPT7	YML001W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+ERG6	YML008C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+UBX2	YML013W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+GSF2	YML048W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+ALO1	YML086C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+ALO1	YML086C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+SAM37	YMR060C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+HFD1	YMR110C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+HFD1	YMR110C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+TOM40	YMR203W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+SAM50	YNL026W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Gentle I, et al. (2004) PMID:14699090
+SAM50	YNL026W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+POR1	YNL055C	is active in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2023-12-13	Smith MD, et al. (1995) PMID:7499333
+POR1	YNL055C	is active in	GO:0005741	mitochondrial outer membrane	cellular component		IMP	manually curated	SGD	2023-12-13	Jahn H, et al. (2023) PMID:38065946
+POR1	YNL055C	is active in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2023-12-13	Burri L, et al. (2006) PMID:16689936
+POR1	YNL055C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Smith MD, et al. (1995) PMID:7499333
+POR1	YNL055C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+POR1	YNL055C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+TOM7	YNL070W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TOM70	YNL121C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TOM70	YNL121C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+CPT1	YNL130C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kuchler K, et al. (1986) PMID:3005242
+TOM22	YNL131W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Burri L, et al. (2006) PMID:16689936
+TOM22	YNL131W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+PPG1	YNR032W	is active in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2021-11-12	Innokentev A, et al. (2020) PMID:33317697
+MDM12	YOL009C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2014-02-04	Berger KH, et al. (1997) PMID:9024686
+MIM1	YOL026C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Ishikawa D, et al. (2004) PMID:15326197
+MIM1	YOL026C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Waizenegger T, et al. (2005) PMID:15608614
+ZEO1	YOL109W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+VPS21	YOR089C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+MGM1	YOR211C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2020-06-22	Harner ME, et al. (2016) PMID:27849155
+MCP1	YOR228C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-12-03	Tan T, et al. (2013) PMID:23781023
+MCP1	YOR228C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+RDL1	YOR285W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+FAA1	YOR317W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+LSP1	YPL004C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+UBP16	YPL072W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+UBP16	YPL072W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kinner A and Kölling R (2003) PMID:12914939
+SEN54	YPL083C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Yoshihisa T, et al. (2003) PMID:12925762
+SEN54	YPL083C	located in	GO:0005741	mitochondrial outer membrane	cellular component		IMP	manually curated	SGD	2013-08-07	Yoshihisa T, et al. (2003) PMID:12925762
+SEN54	YPL083C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+UIP4	YPL186C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+PDH1	YPR002W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TMH18	YPR098C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+PIS1	YPR113W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Kuchler K, et al. (1986) PMID:3005242
+TOM5	YPR133W-A	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Dietmeier K, et al. (1997) PMID:9217162
+TOM5	YPR133W-A	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+TAZ1	YPR140W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2013-08-07	Claypool SM, et al. (2006) PMID:16880272
+TAZ1	YPR140W	located in	GO:0005741	mitochondrial outer membrane	cellular component		IDA	manually curated	SGD	2022-08-26	Brandner K, et al. (2005) PMID:16135531
+NCA2	YPR155C	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+RHO1	YPR165W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407
+DPM1	YPR183W	located in	GO:0005741	mitochondrial outer membrane	cellular component		HDA	manually curated	SGD	2018-11-19	Zahedi RP, et al. (2006) PMID:16407407

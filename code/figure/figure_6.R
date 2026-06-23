@@ -121,11 +121,12 @@ df3 <- data.frame(value=ss)
 
 
 # combine the above three result together
-df1$type = "All component"
+#df1$type = "All component"
 df2$type = "Main organelle"
 df3$type = "Sub-organelle"
 
-updated <- rbind(df1, df2, df3)
+#updated <- rbind(df1, df2, df3)
+updated <- rbind(df2, df3)
 ggplot(updated, aes(x=value, color=type, fill=type)) +
   geom_density(alpha=0.3) +
   xlim(0.95, 1) +
@@ -140,6 +141,7 @@ ggplot(updated, aes(x=value, color=type, fill=type)) +
 # Heatmap and PCA plot for IO under all conditions
 # heatmap
 library("pheatmap")
+ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment != 'bounding membrane of organelle', ]
 ProMassRatio_IO <- ProMassRatio1[,c(2:26)]
 ProMassRatio_IO100 <- as.matrix(ProMassRatio_IO)
 #heatmap(ProMassRatio_IO)
@@ -197,7 +199,7 @@ ggplot(df, aes(x=IO_O2 , y=IO_no_O2, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "IO_O2",
        y = "IO_no_O2 ") +
-  xlim(0, 0.27) + ylim(0,0.27) +
+  xlim(0, 0.25) + ylim(0,0.25) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
   geom_label(aes(x = 0, y = 0.2), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
@@ -216,7 +218,7 @@ ggplot(df, aes(x=IO_O2 , y=IO_antimycin, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "IO_O2",
        y = "IO_antimycin ") +
-  xlim(0, 0.27) + ylim(0,0.27) +
+  xlim(0, 0.25) + ylim(0,0.25) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
   geom_label(aes(x = 0, y = 0.2), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
@@ -233,6 +235,9 @@ ggplot(df, aes(x=IO_O2 , y=IO_antimycin, label=compartment)) +
 #############################################################################################3
 # Heatmap and PCA plot for sce
 ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
+
+
 ProMassRatio_sce1 <- ProMassRatio_sce_all[, str_detect(colnames(ProMassRatio_sce_all), 'sce_FY4')|str_detect(colnames(ProMassRatio_sce_all), 'sce_CEN.PK')]
 ProMassRatio_sce100 <- as.matrix(ProMassRatio_sce1)
 #heatmap(ProMassRatio_sce1)
@@ -293,9 +298,9 @@ ggplot(df, aes(x=sce_O2 , y=sce_no_O2, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "sce_O2",
        y = "sce_no_O2 ") +
-  xlim(0, 0.45) + ylim(0,0.45) +
+  xlim(0, 0.35) + ylim(0,0.35) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
@@ -312,9 +317,9 @@ ggplot(df, aes(x=sce_O2 , y=sce_antimycin, label=compartment)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
   labs(x = "sce_O2",
        y = "sce_antimycin ") +
-  xlim(0, 0.45) + ylim(0,0.45) +
+  xlim(0, 0.35) + ylim(0,0.35) +
   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.35), hjust = 0, 
+  geom_label(aes(x = 0, y = 0.3), hjust = 0, 
              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
                            "\nIntercept =",signif(fit1$coef[[1]],3),
                            " \nSlope =",signif(fit1$coef[[2]], 3)),
@@ -342,6 +347,8 @@ long_DF %>%
 # plus sce
 # calculate the organelle mass fraction variance 
 ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+ProMassRatio_sce_all <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
+
 ProMassRatio_sce0 <- ProMassRatio_sce_all[, str_detect(colnames(ProMassRatio_sce_all), 'sce_FY4_C')]
 ProMassRatio_sce0$compartment <- ProMassRatio_sce_all$compartment
 ProMassRatio_sce01 <- ProMassRatio_sce0[ProMassRatio_sce0$compartment %in% organelle, ]

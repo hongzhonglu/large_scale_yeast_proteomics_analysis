@@ -33,12 +33,15 @@ physiology_collection1 <- physiology_collection1[!str_detect(physiology_collecti
 # classify into two group
 physiology_jianye <- physiology_collection[str_detect(physiology_collection$source,"sysbio_Jianye"),]
 physiology_rosemary <- physiology_collection[str_detect(physiology_collection$condition_unique,"@NH4@N_limit@C_N_ratio=30"),]
-#physiology_rosemary <- physiology_rosemary[str_detect(physiology_rosemary$sampleID,"prot\\."),]
+physiology_rosemary <- physiology_rosemary[str_detect(physiology_rosemary$sampleID,"prot\\."),]
+
 #physiology_Ibrahim <- physiology_collection[str_detect(physiology_collection$sampleID,"Chemostats_C_limit"),]
 #physiology_yihui <- physiology_collection[str_detect(physiology_collection$sampleID,"sce_FY4_C"),]
 
 # compartment
-ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+# ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
+ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
+
 ProMassRatio <- ProMassRatio[,2:277]
 ProMassRatio[ProMassRatio <0.0000000000001] <- NA
 ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
