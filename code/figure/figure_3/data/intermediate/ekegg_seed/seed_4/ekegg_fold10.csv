@@ -1,0 +1,19 @@
+"Description","Count","p.adjust"
+"Ribosome",8,0.000975406343853399
+"Carbon metabolism",6,0.000975406343853399
+"Glycolysis / Gluconeogenesis",4,0.00346139817621802
+"Citrate cycle (TCA cycle)",3,0.00610706605046627
+"Biosynthesis of amino acids",5,0.00610706605046627
+"Carbon fixation by Calvin cycle",2,0.0300993442670287
+"Biosynthesis of secondary metabolites",7,0.0341757670532913
+"Methane metabolism",2,0.0341757670532913
+"2-Oxocarboxylic acid metabolism",2,0.0750196703778366
+"Propanoate metabolism",1,0.186961434506416
+"Oxidative phosphorylation",2,0.186961434506416
+"Protein processing in endoplasmic reticulum",2,0.2184219946754
+"Fructose and mannose metabolism",1,0.2184219946754
+"Pentose phosphate pathway",1,0.242705484951597
+"Longevity regulating pathway - multiple species",1,0.297115867814678
+"RNA degradation",1,0.429990090143046
+"Endocytosis",1,0.471073648534177
+"Spliceosome",1,0.473939485767508

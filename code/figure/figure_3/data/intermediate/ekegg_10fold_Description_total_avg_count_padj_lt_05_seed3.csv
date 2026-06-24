@@ -1,0 +1,10 @@
+Description,Total_count,Average_count,n_folds
+Ribosome,77,7.7,9
+Glycolysis / Gluconeogenesis,44,4.4,10
+Carbon metabolism,30,3.0,6
+Biosynthesis of secondary metabolites,16,1.6,2
+Biosynthesis of amino acids,15,1.5,3
+Carbon fixation by Calvin cycle,7,0.7,3
+Methane metabolism,6,0.6,2
+Oxidative phosphorylation,4,0.4,1
+Longevity regulating pathway - multiple species,3,0.3,1
