@@ -1,0 +1,31 @@
+"Description","Count","p.adjust"
+"Glycolysis / Gluconeogenesis",6,7.54800484060295e-05
+"Carbon metabolism",6,0.00247862354243151
+"Methane metabolism",3,0.00991128616464126
+"Ribosome",6,0.0177716573422925
+"Oxidative phosphorylation",4,0.0177716573422925
+"Biosynthesis of secondary metabolites",8,0.0210629281178939
+"Carbon fixation by Calvin cycle",2,0.0492513039377965
+"Biosynthesis of amino acids",4,0.056529135555264
+"Citrate cycle (TCA cycle)",2,0.0808921549565956
+"Pyruvate metabolism",2,0.188022336747581
+"Ascorbate and aldarate metabolism",1,0.225150127366884
+"beta-Alanine metabolism",1,0.225150127366884
+"Valine, leucine and isoleucine degradation",1,0.225150127366884
+"Histidine metabolism",1,0.225150127366884
+"Propanoate metabolism",1,0.225150127366884
+"Lysine degradation",1,0.225150127366884
+"Fatty acid degradation",1,0.229348151636968
+"Tryptophan metabolism",1,0.229348151636968
+"Protein processing in endoplasmic reticulum",2,0.229348151636968
+"Fructose and mannose metabolism",1,0.229348151636968
+"Arginine and proline metabolism",1,0.229348151636968
+"Pantothenate and CoA biosynthesis",1,0.229348151636968
+"Pentose phosphate pathway",1,0.262187613746034
+"Glycine, serine and threonine metabolism",1,0.267239467508129
+"Glycerolipid metabolism",1,0.271653909848227
+"Longevity regulating pathway - multiple species",1,0.303461348171687
+"RNA degradation",1,0.448336875576971
+"Spliceosome",1,0.484355404779776
+"Endocytosis",1,0.484355404779776
+"Biosynthesis of cofactors",1,0.660637465274991

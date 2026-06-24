@@ -1,0 +1,36 @@
+"Description","Count","p.adjust"
+"Glycolysis / Gluconeogenesis",5,0.00159875003010381
+"Ribosome",7,0.0134586847091437
+"Carbon metabolism",5,0.0161224274405906
+"Carbon fixation by Calvin cycle",2,0.0970650622242647
+"Methane metabolism",2,0.104947220525609
+"Biosynthesis of secondary metabolites",7,0.104947220525609
+"Citrate cycle (TCA cycle)",2,0.117228606255665
+"Mitophagy - yeast",2,0.172681148638548
+"Pyruvate metabolism",2,0.235900806744812
+"Biosynthesis of amino acids",3,0.245771479473424
+"Ascorbate and aldarate metabolism",1,0.256343914394553
+"beta-Alanine metabolism",1,0.256343914394553
+"Valine, leucine and isoleucine degradation",1,0.256343914394553
+"Histidine metabolism",1,0.256343914394553
+"Propanoate metabolism",1,0.256343914394553
+"Lysine degradation",1,0.256343914394553
+"Oxidative phosphorylation",2,0.256343914394553
+"Fatty acid degradation",1,0.258861203048699
+"Tryptophan metabolism",1,0.258861203048699
+"Fructose and mannose metabolism",1,0.258861203048699
+"Arginine and proline metabolism",1,0.258861203048699
+"Pantothenate and CoA biosynthesis",1,0.258861203048699
+"IgSF CAM signaling",1,0.258861203048699
+"Cadherin signaling",1,0.258861203048699
+"Efferocytosis",1,0.258861203048699
+"Pentose phosphate pathway",1,0.266119858733256
+"Protein export",1,0.280666929012835
+"Glycerolipid metabolism",1,0.286038538407642
+"Longevity regulating pathway - multiple species",1,0.312371439152507
+"RNA degradation",1,0.464026393100163
+"Endocytosis",1,0.521502631353054
+"Spliceosome",1,0.537573192586696
+"Protein processing in endoplasmic reticulum",1,0.551025405661613
+"MAPK signaling pathway - yeast",1,0.616019331223623
+"Biosynthesis of cofactors",1,0.653641893749023

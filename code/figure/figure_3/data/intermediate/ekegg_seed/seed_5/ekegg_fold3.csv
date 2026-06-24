@@ -1,0 +1,36 @@
+"Description","Count","p.adjust"
+"Glycolysis / Gluconeogenesis",7,4.54397005044174e-06
+"Carbon fixation by Calvin cycle",3,0.0100083365516688
+"Biosynthesis of secondary metabolites",9,0.0153192633193019
+"Carbon metabolism",5,0.0153192633193019
+"Biosynthesis of amino acids",5,0.0192103106986503
+"Ribosome",6,0.034157878903389
+"Fatty acid degradation",2,0.0554657498424369
+"Methane metabolism",2,0.0806024751415375
+"Pyruvate metabolism",2,0.25213844925772
+"Ascorbate and aldarate metabolism",1,0.25213844925772
+"Selenocompound metabolism",1,0.25213844925772
+"Tyrosine metabolism",1,0.25213844925772
+"beta-Alanine metabolism",1,0.25213844925772
+"Valine, leucine and isoleucine degradation",1,0.25213844925772
+"Histidine metabolism",1,0.25213844925772
+"Propanoate metabolism",1,0.25213844925772
+"Lysine degradation",1,0.25213844925772
+"Oxidative phosphorylation",2,0.25213844925772
+"Tryptophan metabolism",1,0.25213844925772
+"Protein processing in endoplasmic reticulum",2,0.25213844925772
+"Fructose and mannose metabolism",1,0.25213844925772
+"Arginine and proline metabolism",1,0.25213844925772
+"Pantothenate and CoA biosynthesis",1,0.25213844925772
+"Biosynthesis of nucleotide sugars",1,0.25213844925772
+"Pentose phosphate pathway",1,0.289117594839729
+"Amino sugar and nucleotide sugar metabolism",1,0.293033193893348
+"Citrate cycle (TCA cycle)",1,0.293033193893348
+"Glycerolipid metabolism",1,0.29853293284305
+"Longevity regulating pathway - multiple species",1,0.325722560235666
+"Mitophagy - yeast",1,0.335925204846198
+"Cysteine and methionine metabolism",1,0.34498914707184
+"RNA degradation",1,0.451583430261171
+"Endocytosis",1,0.507380838862618
+"Spliceosome",1,0.523427337722234
+"Biosynthesis of cofactors",1,0.67159918755308

@@ -1,0 +1,24 @@
+"Description","Count","p.adjust"
+"Ribosome",7,0.00532195342706204
+"Glycolysis / Gluconeogenesis",4,0.00532195342706204
+"Carbon metabolism",4,0.0518147107889167
+"Longevity regulating pathway - multiple species",2,0.16184464730119
+"Biosynthesis of amino acids",3,0.247982442232615
+"Propanoate metabolism",1,0.276007711805725
+"Oxidative phosphorylation",2,0.276007711805725
+"Biosynthesis of secondary metabolites",5,0.276007711805725
+"Spliceosome",2,0.276007711805725
+"Carbon fixation by Calvin cycle",1,0.276007711805725
+"IgSF CAM signaling",1,0.276007711805725
+"Cadherin signaling",1,0.276007711805725
+"Methane metabolism",1,0.276007711805725
+"Efferocytosis",1,0.276007711805725
+"Citrate cycle (TCA cycle)",1,0.302208580578671
+"Mitophagy - yeast",1,0.362841229885193
+"mRNA surveillance pathway",1,0.390960538788125
+"Pyruvate metabolism",1,0.394957254510112
+"RNA degradation",1,0.426483510840093
+"Nucleocytoplasmic transport",1,0.426483510840093
+"Endocytosis",1,0.468075746714915
+"Protein processing in endoplasmic reticulum",1,0.504809169281935
+"MAPK signaling pathway - yeast",1,0.559912450872889

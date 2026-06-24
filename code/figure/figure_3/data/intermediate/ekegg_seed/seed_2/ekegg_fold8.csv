@@ -1,0 +1,34 @@
+"Description","Count","p.adjust"
+"Glycolysis / Gluconeogenesis",7,2.90391759642709e-06
+"Carbon metabolism",7,0.000212234425348434
+"Methane metabolism",3,0.00809602467793831
+"Biosynthesis of secondary metabolites",9,0.00809602467793831
+"Biosynthesis of amino acids",5,0.0143528489548907
+"Ribosome",6,0.0246904093091449
+"Pyruvate metabolism",3,0.0330794996735186
+"Carbon fixation by Calvin cycle",2,0.0457592436200105
+"Citrate cycle (TCA cycle)",2,0.0859676445874875
+"Ascorbate and aldarate metabolism",1,0.237248389358839
+"Fatty acid biosynthesis",1,0.237248389358839
+"beta-Alanine metabolism",1,0.237248389358839
+"Valine, leucine and isoleucine degradation",1,0.237248389358839
+"Histidine metabolism",1,0.237248389358839
+"Propanoate metabolism",1,0.237248389358839
+"Lysine degradation",1,0.237248389358839
+"Oxidative phosphorylation",2,0.237248389358839
+"Fatty acid degradation",1,0.237248389358839
+"Tryptophan metabolism",1,0.237248389358839
+"Fructose and mannose metabolism",1,0.237248389358839
+"Arginine and proline metabolism",1,0.237248389358839
+"Pantothenate and CoA biosynthesis",1,0.237248389358839
+"Fatty acid metabolism",1,0.237248389358839
+"Pentose phosphate pathway",1,0.271822427134683
+"Glycine, serine and threonine metabolism",1,0.277578131633479
+"Glycerolipid metabolism",1,0.290439131306221
+"Longevity regulating pathway - multiple species",1,0.316338060602062
+"RNA degradation",1,0.458075459867715
+"Nucleocytoplasmic transport",1,0.458075459867715
+"Endocytosis",1,0.508092563689689
+"Spliceosome",1,0.523204876840139
+"Protein processing in endoplasmic reticulum",1,0.535773809612051
+"Biosynthesis of cofactors",1,0.653641893749023

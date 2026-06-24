@@ -1,0 +1,23 @@
+"Description","Count","p.adjust"
+"Ribosome",9,0.000691893182672453
+"Glycolysis / Gluconeogenesis",4,0.0114165426429718
+"Carbon fixation by Calvin cycle",2,0.0979355103247271
+"Methane metabolism",2,0.110772904432386
+"Oxidative phosphorylation",3,0.124874073558455
+"Carbon metabolism",3,0.25536218620028
+"Biosynthesis of amino acids",3,0.278069107631813
+"Fructose and mannose metabolism",1,0.364256518850907
+"Motor proteins",1,0.364256518850907
+"Base excision repair",1,0.364256518850907
+"IgSF CAM signaling",1,0.364256518850907
+"Biosynthesis of secondary metabolites",5,0.364256518850907
+"Pentose phosphate pathway",1,0.364256518850907
+"Glycerolipid metabolism",1,0.374324896875142
+"Phagosome",1,0.374324896875142
+"Longevity regulating pathway - multiple species",1,0.386080662734984
+"Mitophagy - yeast",1,0.387468214516531
+"RNA degradation",1,0.500990504485854
+"Nucleocytoplasmic transport",1,0.500990504485854
+"Endocytosis",1,0.543811615154746
+"Spliceosome",1,0.549883418518867
+"Protein processing in endoplasmic reticulum",1,0.553640534574104

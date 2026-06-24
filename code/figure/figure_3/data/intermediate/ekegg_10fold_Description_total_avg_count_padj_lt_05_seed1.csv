@@ -1,0 +1,12 @@
+Description,Total_count,Average_count,n_folds
+Ribosome,72,7.2,9
+Carbon metabolism,61,6.1,10
+Glycolysis / Gluconeogenesis,60,6.0,10
+Biosynthesis of secondary metabolites,58,5.8,7
+Biosynthesis of amino acids,47,4.7,9
+Carbon fixation by Calvin cycle,26,2.6,9
+Methane metabolism,21,2.1,8
+Protein processing in endoplasmic reticulum,4,0.4,1
+Citrate cycle (TCA cycle),3,0.3,1
+Longevity regulating pathway - multiple species,3,0.3,1
+Fructose and mannose metabolism,2,0.2,1

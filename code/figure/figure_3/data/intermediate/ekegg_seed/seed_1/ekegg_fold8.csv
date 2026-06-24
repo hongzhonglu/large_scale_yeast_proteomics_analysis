@@ -1,0 +1,29 @@
+"Description","Count","p.adjust"
+"Ribosome",10,4.35976045696847e-05
+"Glycolysis / Gluconeogenesis",6,4.35976045696847e-05
+"Carbon fixation by Calvin cycle",3,0.00533777949422335
+"Methane metabolism",3,0.00762231427565759
+"Carbon metabolism",5,0.00980432852435321
+"Biosynthesis of amino acids",5,0.0128068737991002
+"Longevity regulating pathway - multiple species",3,0.0132656948299605
+"Endocytosis",3,0.0848056037437097
+"Spliceosome",3,0.0943377004332797
+"Protein processing in endoplasmic reticulum",3,0.104057015902924
+"Biosynthesis of secondary metabolites",6,0.181967926306076
+"Ascorbate and aldarate metabolism",1,0.202044819070632
+"beta-Alanine metabolism",1,0.20334930398413
+"Valine, leucine and isoleucine degradation",1,0.20334930398413
+"Histidine metabolism",1,0.20334930398413
+"Lysine degradation",1,0.216202819689987
+"Oxidative phosphorylation",2,0.220048101170374
+"Fatty acid degradation",1,0.220048101170374
+"Tryptophan metabolism",1,0.220048101170374
+"Fructose and mannose metabolism",1,0.220048101170374
+"Arginine and proline metabolism",1,0.220048101170374
+"Pantothenate and CoA biosynthesis",1,0.220048101170374
+"Pentose phosphate pathway",1,0.25140660420846
+"Glycine, serine and threonine metabolism",1,0.256190442044604
+"Glycerolipid metabolism",1,0.267485507827373
+"Pyruvate metabolism",1,0.377521534986176
+"RNA degradation",1,0.428167993136518
+"Biosynthesis of cofactors",1,0.67159918755308
