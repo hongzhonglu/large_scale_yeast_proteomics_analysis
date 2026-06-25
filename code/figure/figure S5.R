@@ -56,47 +56,49 @@ Pro_mass_select0 <- as.data.frame(Pro_mass_select0)
 Pro_mass_select0$growth <- as.numeric(physiology$`dilution rate (/h)`)
 
 
-
-# scatter plot
-ggplot(Pro_mass_select0, mapping = aes(x=growth, y=mitochondrion)) +
-  geom_point() + # geom_point(alpha = 2/10) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  labs(x = "Growth",
-       y = "mitochondrion") +
-  theme_bw() +
-  geom_smooth()+
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold"))
-
-# plot for the main organelle
-organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'ribosome')
-df_c <- Pro_mass_select0[, c("growth", organelle)]
-long_DF <- df_c %>% gather(type, mass_fraction, 2:5)
-long_DF$type <- as.factor(long_DF$type)
-ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
-  geom_point() + # geom_point(alpha = 2/10) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  labs(x = "Growth rate (/h)",
-       y = "Mass fraction") +
-  theme_bw() +
-  geom_smooth()+
-  theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15))
+# 
+# # scatter plot
+# ggplot(Pro_mass_select0, mapping = aes(x=growth, y=mitochondrion)) +
+#   geom_point() + # geom_point(alpha = 2/10) +
+#   theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#   labs(x = "Growth",
+#        y = "mitochondrion") +
+#   theme_bw() +
+#   geom_smooth()+
+#   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20, face = "bold"))
 
 
-
-#plot for the organelle with smaller fraction
-organelle <- c('lipid droplet', 'fungal-type vacuole', 'endoplasmic reticulum', 'Golgi apparatus','peroxisome','endosome')
-df_c <- Pro_mass_select0[, c("growth", organelle)]
-long_DF <- df_c %>% gather(type, mass_fraction, 2:(1+length(organelle)))
-long_DF$type <- as.factor(long_DF$type)
-ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
-  geom_point() + # geom_point(alpha = 2/10) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  labs(x = "Growth rate (/h)",
-       y = "Mass fraction") +
-  theme_bw() +
-  geom_smooth()+
-  theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15))
-
+# 
+# # plot for the main organelle
+# organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'ribosome')
+# df_c <- Pro_mass_select0[, c("growth", organelle)]
+# long_DF <- df_c %>% gather(type, mass_fraction, 2:5)
+# long_DF$type <- as.factor(long_DF$type)
+# ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
+#   geom_point() + # geom_point(alpha = 2/10) +
+#   theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#   labs(x = "Growth rate (/h)",
+#        y = "Mass fraction") +
+#   theme_bw() +
+#   geom_smooth()+
+#   theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15))
+# 
+# 
+# 
+# #plot for the organelle with smaller fraction
+# organelle <- c('lipid droplet', 'fungal-type vacuole', 'endoplasmic reticulum', 'Golgi apparatus','peroxisome','endosome')
+# df_c <- Pro_mass_select0[, c("growth", organelle)]
+# long_DF <- df_c %>% gather(type, mass_fraction, 2:(1+length(organelle)))
+# long_DF$type <- as.factor(long_DF$type)
+# ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
+#   geom_point() + # geom_point(alpha = 2/10) +
+#   theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#   labs(x = "Growth rate (/h)",
+#        y = "Mass fraction") +
+#   theme_bw() +
+#   geom_smooth()+
+#   theme(axis.text = element_text(size = 12), axis.title = element_text(size = 15))
+# 
 
 
 # plot for the main organelle membrane

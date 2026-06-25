@@ -6,7 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/data/proteomics/~$all_organelle_fraction_test.xlsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure S4.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure S4.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/figure/figure_1_part2.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_1_part2.R" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -110,7 +112,7 @@
       <recent name="$PROJECT_DIR$/code/structure" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.2.5 gene_compartment_for_sce_main_organelle">
+  <component name="RunManager" selected="Python.3.7 protein_translocation_analysis">
     <configuration name="2.3 proteomics_abundance_unit_unify" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="De-nevo-protein-3D-structure-yeast" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -174,8 +176,30 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
+    <configuration name="3.7 protein_translocation_analysis" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="De-nevo-protein-3D-structure-yeast" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/code/omics" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/code/omics/3.7 protein_translocation_analysis.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="true" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.3.7 protein_translocation_analysis" />
         <item itemvalue="Python.2.5 gene_compartment_for_sce_main_organelle" />
         <item itemvalue="Python.2.5 gene_compartment_for_sce_main_organelle" />
         <item itemvalue="Python.3.1 omics_collect_preprocess_for_protein_copy" />
