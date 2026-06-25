@@ -153,21 +153,21 @@ ggplot(df, aes(x=WT_0 , y=WT_12, label=compartment)) +
 
 
 
-# supplementary figure - check the fold change of protein mass fraction for organelle
-df$WT_8_vs_WT_0 <- (df$WT_8-df$WT_0)/df$WT_0*100
-df$WT_8_vs_WT_0_abs <- abs(df$WT_8_vs_WT_0)
-
-df_filter_mass <- df[df$WT_0 >=0.01, ]
-df_filter_mass <- na.omit(df_filter_mass)
-df_filter_mass <- df_filter_mass[df_filter_mass$WT_8_vs_WT_0_abs >=0.15, ] 
-
-ggplot(df_filter_mass, aes(x=reorder(compartment, WT_8_vs_WT_0), y=WT_8_vs_WT_0)) + 
-  geom_bar(position="dodge", stat="identity", fill = "red", alpha=0.4) +
-  xlab("Cellular Component") + 
-  theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12))+ 
-  theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
-  theme(legend.position="none") #+
-  #coord_flip()
+# # supplementary figure - check the fold change of protein mass fraction for organelle
+# df$WT_8_vs_WT_0 <- (df$WT_8-df$WT_0)/df$WT_0*100
+# df$WT_8_vs_WT_0_abs <- abs(df$WT_8_vs_WT_0)
+# 
+# df_filter_mass <- df[df$WT_0 >=0.01, ]
+# df_filter_mass <- na.omit(df_filter_mass)
+# df_filter_mass <- df_filter_mass[df_filter_mass$WT_8_vs_WT_0_abs >=0.15, ] 
+# 
+# ggplot(df_filter_mass, aes(x=reorder(compartment, WT_8_vs_WT_0), y=WT_8_vs_WT_0)) + 
+#   geom_bar(position="dodge", stat="identity", fill = "red", alpha=0.4) +
+#   xlab("Cellular Component") + 
+#   theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12))+ 
+#   theme(axis.text.x = element_text(angle = 60, hjust = 1)) +
+#   theme(legend.position="none") #+
+#   #coord_flip()
 
 
 
@@ -285,90 +285,90 @@ ggplot(df, aes(x=C_lim , y=C_N_115, label=compartment)) +
 
 
 
-
-# focus on membrane
-df_m <- df[str_detect(df$compartment, " membrane"),]
-
-fit1 <- lm( C_N_50 ~ C_lim, data = df_m)  
-ggplot(df_m, aes(x=C_lim , y=C_N_50, label=compartment)) +
-  geom_point(size=4, shape=1,colour='#E69F00') +
-  geom_smooth(method=lm) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
-  labs(x = "C_lim",
-       y = "C_N_50 ") +
-  xlim(0, 0.1) + ylim(0, 0.1) +
-  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.075), hjust = 0, 
-             label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
-                           "\nIntercept =",signif(fit1$coef[[1]],3),
-                           " \nSlope =",signif(fit1$coef[[2]], 3)),
-             label.size = NA)+
-  geom_text(aes(label=ifelse(C_N_50 > 0.01, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
-
-
-
-
-# focus on specific organelle
-df_o <- df[str_detect(df$compartment, "^nucl"),]
-df_o <- df_o[!str_detect(df_o$compartment, "^nucleus"),]
-
-fit1 <- lm( C_N_50 ~ C_lim, data = df_o)  
-ggplot(df_o, aes(x=C_lim , y=C_N_50, label=compartment)) +
-  geom_point(size=4, shape=1,colour='#E69F00') +
-  geom_smooth(method=lm) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
-  labs(x = "C_lim",
-       y = "C_N_50 ") +
-  xlim(0, 0.024) + ylim(0, 0.024) +
-  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.020), hjust = 0, 
-             label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
-                           "\nIntercept =",signif(fit1$coef[[1]],3),
-                           " \nSlope =",signif(fit1$coef[[2]], 3)),
-             label.size = NA)+
-  geom_text(aes(label=ifelse(C_N_50 > 0.01, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+# 
+# # focus on membrane
+# df_m <- df[str_detect(df$compartment, " membrane"),]
+# 
+# fit1 <- lm( C_N_50 ~ C_lim, data = df_m)  
+# ggplot(df_m, aes(x=C_lim , y=C_N_50, label=compartment)) +
+#   geom_point(size=4, shape=1,colour='#E69F00') +
+#   geom_smooth(method=lm) +
+#   theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+#   labs(x = "C_lim",
+#        y = "C_N_50 ") +
+#   xlim(0, 0.1) + ylim(0, 0.1) +
+#   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+#   geom_label(aes(x = 0, y = 0.075), hjust = 0, 
+#              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
+#                            "\nIntercept =",signif(fit1$coef[[1]],3),
+#                            " \nSlope =",signif(fit1$coef[[2]], 3)),
+#              label.size = NA)+
+#   geom_text(aes(label=ifelse(C_N_50 > 0.01, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
 
 
 
-# focus on specific organelle
-df_mt <- df[str_detect(df$compartment, "^mitochondrial "),]
+# 
+# # focus on specific organelle
+# df_o <- df[str_detect(df$compartment, "^nucl"),]
+# df_o <- df_o[!str_detect(df_o$compartment, "^nucleus"),]
+# 
+# fit1 <- lm( C_N_50 ~ C_lim, data = df_o)  
+# ggplot(df_o, aes(x=C_lim , y=C_N_50, label=compartment)) +
+#   geom_point(size=4, shape=1,colour='#E69F00') +
+#   geom_smooth(method=lm) +
+#   theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+#   labs(x = "C_lim",
+#        y = "C_N_50 ") +
+#   xlim(0, 0.024) + ylim(0, 0.024) +
+#   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+#   geom_label(aes(x = 0, y = 0.020), hjust = 0, 
+#              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
+#                            "\nIntercept =",signif(fit1$coef[[1]],3),
+#                            " \nSlope =",signif(fit1$coef[[2]], 3)),
+#              label.size = NA)+
+#   geom_text(aes(label=ifelse(C_N_50 > 0.01, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
+# 
+# 
+# 
+# # focus on specific organelle
+# df_mt <- df[str_detect(df$compartment, "^mitochondrial "),]
+# 
+# 
+# fit1 <- lm( C_N_50 ~ C_lim, data = df_mt)  
+# ggplot(df_mt, aes(x=C_lim , y=C_N_50, label=compartment)) +
+#   geom_point(size=4, shape=1,colour='#E69F00') +
+#   geom_smooth(method=lm) +
+#   theme(panel.background = element_rect(fill = "white", colour = "black")) +
+#   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
+#   labs(x = "C_lim",
+#        y = "C_N_50 ") +
+#   xlim(0, 0.085) + ylim(0, 0.085) +
+#   geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
+#   geom_label(aes(x = 0, y = 0.0750), hjust = 0, 
+#              label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
+#                            "\nIntercept =",signif(fit1$coef[[1]],3),
+#                            " \nSlope =",signif(fit1$coef[[2]], 3)),
+#              label.size = NA)+
+#   geom_text(aes(label=ifelse(C_N_50 > 0.0, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
 
 
-fit1 <- lm( C_N_50 ~ C_lim, data = df_mt)  
-ggplot(df_mt, aes(x=C_lim , y=C_N_50, label=compartment)) +
-  geom_point(size=4, shape=1,colour='#E69F00') +
-  geom_smooth(method=lm) +
-  theme(panel.background = element_rect(fill = "white", colour = "black")) +
-  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 16)) +
-  labs(x = "C_lim",
-       y = "C_N_50 ") +
-  xlim(0, 0.085) + ylim(0, 0.085) +
-  geom_abline(slope=1, intercept=0, linetype=2, size=1.5, colour = "grey") +
-  geom_label(aes(x = 0, y = 0.0750), hjust = 0, 
-             label = paste("Adj R² = ",signif(summary(fit1)$adj.r.squared, 3),
-                           "\nIntercept =",signif(fit1$coef[[1]],3),
-                           " \nSlope =",signif(fit1$coef[[2]], 3)),
-             label.size = NA)+
-  geom_text(aes(label=ifelse(C_N_50 > 0.0, as.character(compartment),'')),hjust=-0.1,vjust=-0.1)
-
-
-
-# supplementary figure - check the fold change of protein mass fraction for organelle
-df$C_N_50_vs_C_lim <- (df$C_N_50 - df$C_lim)/df$C_lim*100
-df$C_N_50_vs_C_lim_abs <- abs(df$C_N_50_vs_C_lim)
-df_filter_mass <- df[df$C_lim >=0.01, ]
-df_filter_mass <- df_filter_mass[df_filter_mass$C_N_50_vs_C_lim_abs >=0.15, ] 
-
-ggplot(df_filter_mass, aes(x=reorder(compartment, C_N_50_vs_C_lim), y=C_N_50_vs_C_lim)) + 
-  geom_bar(position="dodge", stat="identity", fill = "red", alpha=0.4) +
-  xlab("Cellular Component") + 
-  theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12))+ 
-  theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
-  theme(legend.position="none")# +
-  #coord_flip()
-
+# 
+# # supplementary figure - check the fold change of protein mass fraction for organelle
+# df$C_N_50_vs_C_lim <- (df$C_N_50 - df$C_lim)/df$C_lim*100
+# df$C_N_50_vs_C_lim_abs <- abs(df$C_N_50_vs_C_lim)
+# df_filter_mass <- df[df$C_lim >=0.01, ]
+# df_filter_mass <- df_filter_mass[df_filter_mass$C_N_50_vs_C_lim_abs >=0.15, ] 
+# 
+# ggplot(df_filter_mass, aes(x=reorder(compartment, C_N_50_vs_C_lim), y=C_N_50_vs_C_lim)) + 
+#   geom_bar(position="dodge", stat="identity", fill = "red", alpha=0.4) +
+#   xlab("Cellular Component") + 
+#   theme(axis.text = element_text(size = 10), axis.title = element_text(size = 12))+ 
+#   theme(axis.text.x = element_text(angle = 75, hjust = 1)) +
+#   theme(legend.position="none")# +
+#   #coord_flip()
+# 
 
 
 

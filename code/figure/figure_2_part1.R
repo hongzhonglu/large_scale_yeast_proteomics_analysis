@@ -99,6 +99,30 @@ ggplot(long_DF, mapping = aes(x=growth, y=mass_fraction, colour=type)) +
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# the following figures were moved into supplementary figure
 # plot for the main organelle membrane
 main_membrane <- c("mitochondrial outer membrane","mitochondrial inner membrane", "endoplasmic reticulum membrane",
                    "plasma membrane" )
