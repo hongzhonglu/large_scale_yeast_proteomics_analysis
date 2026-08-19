@@ -84,13 +84,16 @@ library(ggplot2)
 # calculate the organelle mass fraction variance 
 # ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
 ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
-
 ProMassRatio <- ProMassRatio[,2:277]
 ProMassRatio[ProMassRatio <0.0000000000001] <- NA
-sd0 <- apply(subset(ProMassRatio, select = 2:276), 1, sd, na.rm=TRUE) 
-mean0 <- apply(subset(ProMassRatio, select = 2:276), 1, mean, na.rm=TRUE) 
+
+col_num <- length(colnames(ProMassRatio))
 # generate new dataframe
+sd0 <- apply(subset(ProMassRatio, select = 2:col_num), 1, sd, na.rm=TRUE) 
+mean0 <- apply(subset(ProMassRatio, select = 2:col_num), 1, mean, na.rm=TRUE) 
 organelle_df = data.frame(compartment=ProMassRatio$compartment, mean=mean0, sd=sd0)
+
+
 # check the main organelle
 organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet', 'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'plasma membrane')
 organelle_main <- organelle_df[organelle_df$compartment %in% organelle,]
@@ -109,6 +112,47 @@ ggplot(organelle_main) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1))
 
 
+## dataset from different labs
+physiology_collection <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/physiology_collection.xlsx")
+# select one lab
+physiology_collection$source_simple
+lab_name <- "Brown lab's curated" #"Rabinowitz lab"  "Teusink lab"
+physiology_collection_subset <- physiology_collection[physiology_collection$source_simple==lab_name, ]
+
+
+# analyze the subset
+ProMassRatio22 <- ProMassRatio[, colnames(ProMassRatio) %in% c('compartment',physiology_collection_subset$sampleID)]
+
+col_num <- length(colnames(ProMassRatio22))
+# generate new dataframe
+sd0 <- apply(subset(ProMassRatio22, select = 2:col_num), 1, sd, na.rm=TRUE) 
+mean0 <- apply(subset(ProMassRatio22, select = 2:col_num), 1, mean, na.rm=TRUE) 
+organelle_df = data.frame(compartment=ProMassRatio22$compartment, mean=mean0, sd=sd0)
+
+# check the main organelle
+organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet', 'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'plasma membrane')
+organelle_main <- organelle_df[organelle_df$compartment %in% organelle,]
+
+# bar plot
+ggplot(organelle_main) +
+  geom_bar( aes(x= reorder(compartment, -mean), y=mean), stat="identity", fill="skyblue", alpha=0.7) +
+  geom_errorbar( aes(x=compartment, ymin=mean-sd, ymax=mean+sd), width=0.4, colour="black", alpha=0.9, size=0.5) +
+  ylab("Mass fraction of protein") + 
+  xlab("") + 
+  theme(panel.background = element_rect(fill = "white", color="black", size = 1),
+        plot.margin = margin(1, 1, 1, 1, "cm")) +
+  theme(axis.text=element_text(size=12, family="Arial"),
+        axis.title=element_text(size=12, family="Arial"),
+        legend.text = element_text(size=12, family="Arial")) +
+  theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+
+
+
+
+
+
+
 # calculate the correlation of organelle mass across unique conditions
 physiology_collection <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/physiology_collection.xlsx")
 physiology_collection0 <- physiology_collection[!duplicated(physiology_collection$condition_unique),]
@@ -117,7 +161,10 @@ ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
 ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassigned", ]
 ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="membrane", ]
 
-ProMassRatio_ss <- ProMassRatio1[, colnames(ProMassRatio1) %in% physiology_collection0$sampleID]
+ProMassRatio_ss <- ProMassRatio1[, colnames(ProMassRatio1) %in% physiology_collection0$sampleID] # 去重
+
+
+
 # all correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
 ss <- as.vector(M[upper.tri(M)])
@@ -134,9 +181,9 @@ df1 <- data.frame(value=ss)
 
 #redefine the main organelle
 organelles_main <- c("mitochondrion", "nucleus", "endoplasmic reticulum", "Golgi apparatus", "fungal-type vacuole", "peroxisome", "endosome", "lipid droplet", "fungal-type cell wall","plasma membrane", "P-body", "cytoplasmic stress granule", "spindle pole body", "ribosome", "cytosol","extracellular region")
-
 ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelles_main, ]
 ProMassRatio_ss <- ProMassRatio2[, colnames(ProMassRatio2) %in% physiology_collection0$sampleID]
+
 # correlation analysis of different samples
 M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
 ss <- as.vector(M[upper.tri(M)])
@@ -154,7 +201,7 @@ df3 <- data.frame(value=ss)
 help(cor)
 
 # combine the above three result together
-df1$Type = "All components"
+#df1$Type = "All components"
 df2$Type = "Main organelles"
 df3$Type = "Sub-organelles"
 
@@ -169,6 +216,105 @@ ggplot(updated, aes(x=value, color=Type, fill=Type)) +
   theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20)) +
   labs(x = "Correlation coefficient between samples",
        y = "Density") 
+
+
+
+
+
+
+
+
+
+
+# for the  dataset subset analysis
+# check the tendency in a small dataset
+# calculate the correlation of organelle mass across unique conditions
+physiology_collection <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/physiology_collection.xlsx")
+physiology_collection0 <- physiology_collection[!duplicated(physiology_collection$condition_unique),]
+
+lab_name <-"Teusink lab" #"Rabinowitz lab"  # "Brown lab's curated" # "Teusink lab"
+physiology_collection0 <- physiology_collection0[physiology_collection0$source_simple==lab_name, ]
+
+
+
+ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
+ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassigned", ]
+ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="membrane", ]
+
+ProMassRatio_ss <- ProMassRatio1[, colnames(ProMassRatio1) %in% physiology_collection0$sampleID] # 去重
+
+
+
+# all correlation analysis of different samples
+M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
+ss <- as.vector(M[upper.tri(M)])
+df1 <- data.frame(value=ss)
+
+
+
+# if based on the main organelle
+# define main organelle
+#main_organelle <- organelle_df[organelle_df$mean >0.003, ]
+#organelle <- main_organelle$compartment
+#to_remove <- c("mitochondrion_unassigned", "vacuole", "cytoplasm")
+#main_organelle <- organelle[!(organelle %in% to_remove)]
+
+#redefine the main organelle
+organelles_main <- c("mitochondrion", "nucleus", "endoplasmic reticulum", "Golgi apparatus", "fungal-type vacuole", "peroxisome", "endosome", "lipid droplet", "fungal-type cell wall","plasma membrane", "P-body", "cytoplasmic stress granule", "spindle pole body", "ribosome", "cytosol","extracellular region")
+ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelles_main, ]
+ProMassRatio_ss <- ProMassRatio2[, colnames(ProMassRatio2) %in% physiology_collection0$sampleID]
+
+# correlation analysis of different samples
+M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
+ss <- as.vector(M[upper.tri(M)])
+df2 <- data.frame(value=ss)
+
+
+# if based on the suborganelle
+ProMassRatio3 <- ProMassRatio1[!(ProMassRatio1$compartment %in% organelles_main), ]
+ProMassRatio_ss <- ProMassRatio3[, colnames(ProMassRatio3) %in% physiology_collection0$sampleID]
+# correlation analysis of different samples
+M <- cor(ProMassRatio_ss, method = "pearson", use = "pairwise.complete.obs") # for each pair, only non-NA value was calculated
+ss <- as.vector(M[upper.tri(M)])
+df3 <- data.frame(value=ss)
+
+help(cor)
+
+# combine the above three result together
+#df1$Type = "All components"
+df2$Type = "Main organelles"
+df3$Type = "Sub-organelles"
+
+#updated <- rbind(df1, df2, df3)
+updated <- rbind(df2, df3)
+#updated <- df2
+ggplot(updated, aes(x=value, color=Type, fill=Type)) +
+  geom_density(alpha=0.3) +
+  xlim(0.5, 1) +
+  theme(panel.background = element_rect(fill = "white", colour = "black")) +
+  geom_density(alpha = 0.5)+
+  theme(axis.text = element_text(size = 16), axis.title = element_text(size = 20)) +
+  labs(x = "Correlation coefficient between samples",
+       y = "Density") 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
