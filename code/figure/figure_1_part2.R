@@ -116,7 +116,7 @@ ggplot(organelle_main) +
 physiology_collection <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/physiology_collection.xlsx")
 # select one lab
 physiology_collection$source_simple
-lab_name <- "Brown lab's curated" #"Rabinowitz lab"  "Teusink lab"
+lab_name <- "Rabinowitz lab" #"Nielsen lab"
 physiology_collection_subset <- physiology_collection[physiology_collection$source_simple==lab_name, ]
 
 
@@ -145,6 +145,11 @@ ggplot(organelle_main) +
         axis.title=element_text(size=12, family="Arial"),
         legend.text = element_text(size=12, family="Arial")) +
   theme(axis.text.x = element_text(angle = 60, hjust = 1))
+
+
+
+
+
 
 
 
@@ -232,7 +237,7 @@ ggplot(updated, aes(x=value, color=Type, fill=Type)) +
 physiology_collection <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/physiology_collection.xlsx")
 physiology_collection0 <- physiology_collection[!duplicated(physiology_collection$condition_unique),]
 
-lab_name <-"Teusink lab" #"Rabinowitz lab"  # "Brown lab's curated" # "Teusink lab"
+lab_name <-  "Rabinowitz lab" # "Nielsen lab"
 physiology_collection0 <- physiology_collection0[physiology_collection0$source_simple==lab_name, ]
 
 

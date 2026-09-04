@@ -6,9 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="a02a681d-252b-44d2-bfd2-836d9a1e7c73" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/code/figure/figure S4.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure S4.R" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/code/figure/figure_1_part2.R" beforeDir="false" afterPath="$PROJECT_DIR$/code/figure/figure_1_part2.R" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/protein_process.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/protein_process.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" beforeDir="false" afterPath="$PROJECT_DIR$/code/omics/2.5 gene_compartment_for_sce_main_organelle.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytoplasm_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytoplasm_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytosol_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/cytosol_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endosome_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/endosome_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_cell_wall_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_cell_wall_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/lipid_droplet_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/lipid_droplet_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/mitochondrion_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleolus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleolus_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleus_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/nucleus_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/peroxisome_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/peroxisome_annotations.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/plasma_annotations.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/data/sce_compartment_curation/2026_curated/plasma_annotations.xlsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
