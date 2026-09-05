@@ -251,7 +251,7 @@ df = pd.read_csv(filename, sep='\t', skiprows=8, header=0)
 gene_sgd_2026 = polish_annotaiton(df)
 
 # 不在vacuole且丰度高
-non_vacuole_proteins = ["YHR174W", "YDR382W", "YDL130W", "YGR254W", "YBL039C"]
+non_vacuole_proteins = ["YHR174W", "YDR382W", "YDL130W", "YGR254W"]
 compartment1['fungal_type_vacuole'] = list(set(gene_sgd_2026['gene'].tolist()) - set(non_vacuole_proteins))
 ### output ###
 df_renamed = gene_sgd_2026[gene_sgd_2026['gene'].isin(compartment1['fungal_type_vacuole'])]   # update the name
@@ -314,10 +314,11 @@ endosome.to_excel('data/sce_compartment_curation/2026_curated/endosome_annotatio
 
 endoplasmic_reticulum = pd.read_csv("data/sce_compartment_curation/2026/endoplasmic_reticulum_annotations.txt",sep='\t', skiprows=8, header=0)
 endoplasmic_reticulum = polish_annotaiton(endoplasmic_reticulum)
-# 不在ER且丰度高
-non_ER_proteins = ["YHR027C", "YDR033W", "YBR078W", "YPR165W", "YML123C", "YJL167W"]
-endoplasmic_reticulum_refine = endoplasmic_reticulum[~endoplasmic_reticulum['gene'].isin(non_ER_proteins)]
-endoplasmic_reticulum_refine.to_excel('data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx')
+# 不主要在ER且丰度高
+# non_ER_proteins = ["YHR027C", "YDR033W", "YBR078W", "YPR165W", "YML123C"]
+# endoplasmic_reticulum_refine = endoplasmic_reticulum[~endoplasmic_reticulum['gene'].isin(non_ER_proteins)]
+# endoplasmic_reticulum_refine.to_excel('data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx')
+endoplasmic_reticulum.to_excel('data/sce_compartment_curation/2026_curated/endoplasmic_reticulum_annotations.xlsx')
 
 
 
