@@ -77,17 +77,17 @@ ggplot(long_DF, aes(fill=type, y=count, x=compartment)) +
 # 
 # # calculate the organelle mass fraction variance 
 # # ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/ProMassRatio_across_compartment_combine.xlsx")
-# ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
+ProMassRatio <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/all_organelle_fraction_test.xlsx") # update on 2/10/2026
 # 
-# ProMassRatio <- ProMassRatio[,2:277]
-# ProMassRatio[ProMassRatio <0.0000000000001] <- NA
-# sd0 <- apply(subset(ProMassRatio, select = 2:276), 1, sd, na.rm=TRUE) 
-# mean0 <- apply(subset(ProMassRatio, select = 2:276), 1, mean, na.rm=TRUE) 
+ProMassRatio <- ProMassRatio[,2:277]
+ProMassRatio[ProMassRatio <0.0000000000001] <- NA
+sd0 <- apply(subset(ProMassRatio, select = 2:276), 1, sd, na.rm=TRUE) 
+mean0 <- apply(subset(ProMassRatio, select = 2:276), 1, mean, na.rm=TRUE) 
 # # generate new dataframe
-# organelle_df = data.frame(compartment=ProMassRatio$compartment, mean=mean0, sd=sd0)
+organelle_df = data.frame(compartment=ProMassRatio$compartment, mean=mean0, sd=sd0)
 # # check the main organelle
-# organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet', 'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'plasma membrane')
-# organelle_main <- organelle_df[organelle_df$compartment %in% organelle,]
+organelle <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum','endosome','lipid droplet', 'fungal-type vacuole','peroxisome','ribosome','Golgi apparatus', 'plasma membrane')
+organelle_main <- organelle_df[organelle_df$compartment %in% organelle,]
 # 
 # # bar plot
 # ggplot(organelle_main) +
@@ -104,12 +104,12 @@ ggplot(long_DF, aes(fill=type, y=count, x=compartment)) +
 # 
 # 
 # # calculate the correlation of organelle mass across unique conditions
-# physiology_collection <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/physiology_collection.xlsx")
-# physiology_collection0 <- physiology_collection[!duplicated(physiology_collection$condition_unique),]
+physiology_collection <- read_excel("~/Documents/GitHub/large_scale_yeast_proteomics_analysis/data/proteomics/physiology_collection.xlsx")
+physiology_collection0 <- physiology_collection[!duplicated(physiology_collection$condition_unique),]
 # 
-# ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
-# ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassigned", ]
-# ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="membrane", ]
+ProMassRatio1 <- ProMassRatio[ProMassRatio$compartment !="cytoplasm", ]
+ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="mitochondrion_unassigned", ]
+ProMassRatio1 <- ProMassRatio1[ProMassRatio1$compartment !="membrane", ]
 # 
 # ProMassRatio_ss <- ProMassRatio1[, colnames(ProMassRatio1) %in% physiology_collection0$sampleID]
 # # all correlation analysis of different samples
@@ -250,7 +250,7 @@ ggplot(long_DF, aes(fill=type, y=count, x=compartment)) +
 
 # heatmap of mass fraction of main organelle in each unique condition?
 library("pheatmap")
-#organelle_s <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum', 'fungal-type vacuole','peroxisome','ribosome')
+organelle_s <- c('mitochondrion', 'nucleus', 'cytosol', 'endoplasmic reticulum', 'fungal-type vacuole','peroxisome','ribosome')
 ProMassRatio2 <- ProMassRatio1[ProMassRatio1$compartment %in% organelle, ]
 rownames0 <- ProMassRatio2$compartment
 DF <- ProMassRatio2[,-1]

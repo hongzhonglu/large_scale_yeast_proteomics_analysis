@@ -257,7 +257,8 @@ compartment1['fungal_type_vacuole'] = list(set(gene_sgd_2026['gene'].tolist()) -
 df_renamed = gene_sgd_2026[gene_sgd_2026['gene'].isin(compartment1['fungal_type_vacuole'])]   # update the name
 df_renamed.to_excel("data/sce_compartment_curation/2026_curated/fungal_type_vacuole_annotations.xlsx") # update the name
 len(set(df_renamed['gene'].tolist()))
-
+# test
+vacuole = df_renamed
 
 
 # peroxisome
@@ -298,7 +299,9 @@ len(set(fungaltype_cell_wall['gene'].tolist()))
 
 fungal_type_vacuole_membrane = pd.read_csv("data/sce_compartment_curation/2026/fungaltype_vacuole_membrane_annotations.txt",sep='\t', skiprows=8, header=0)
 fungal_type_vacuole_membrane = polish_annotaiton(fungal_type_vacuole_membrane)
-fungal_type_vacuole_membrane.to_excel('data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx')
+# add one more filteration, that is remove the protein not in the vacuole
+fungal_type_vacuole_membrane2 = fungal_type_vacuole_membrane[fungal_type_vacuole_membrane['gene'].isin(vacuole['gene'])]
+fungal_type_vacuole_membrane2.to_excel('data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx')
 
 
 cytoplasm = pd.read_csv("data/sce_compartment_curation/2026/cytoplasm_annotations.txt",sep='\t', skiprows=8, header=0)
