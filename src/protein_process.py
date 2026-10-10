@@ -461,6 +461,7 @@ def gene_location_curation_sce(organelle0):
     gene_plasma_membrane = pd.read_excel("data/sce_compartment_curation/2026_curated/plasma_annotations.xlsx")
     gene_cell_wall = pd.read_excel("data/sce_compartment_curation/2026_curated/fungal_type_cell_wall_annotations.xlsx")
     gene_fungal_type_vacuole_membrane = pd.read_excel("data/sce_compartment_curation/2026_curated/fungal_type_vacuole_membrane_annotations.xlsx")
+    gene_fungal_type_vacuole = pd.read_excel("data/sce_compartment_curation/2026_curated/fungal_type_vacuole_annotations.xlsx")
     gene_nucleolus = pd.read_excel("data/sce_compartment_curation/2026_curated/nucleolus_annotations.xlsx")
     gene_cytoplasm = pd.read_excel("data/sce_compartment_curation/2026_curated/cytoplasm_annotations.xlsx")
     gene_cytosol = pd.read_excel("data/sce_compartment_curation/2026_curated/cytosol_annotations.xlsx")
@@ -500,6 +501,8 @@ def gene_location_curation_sce(organelle0):
         elif y == "fungal-type vacuole membrane":
             genes_select = gene_fungal_type_vacuole_membrane["gene"].tolist()  # for the test
             genes_select = [x for x in genes_select if x not in ["YAL005C", "YLL024C"]]  # remove two genes for fungal type vacuole membrane
+        elif y == "fungal-type vacuole":
+            genes_select = gene_fungal_type_vacuole["gene"].tolist()  # for the test
         elif y == "endosome":
             genes_select = organelle1[y]
             genes_select = [x for x in genes_select if x not in ["YKR039W"]]  # remove one gene from endosome as this gene belongs to different compartments, also result in dramatic change in organelle protein volume.

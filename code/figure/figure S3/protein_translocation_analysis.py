@@ -203,3 +203,4 @@ nx.draw_networkx_edges(
 plt.axis("off")  # Hide axes
 plt.title("Weighted Network Visualization", fontsize=14)
 plt.show()  #
+plt.savefig("Weighted Network Visualization.pdf")

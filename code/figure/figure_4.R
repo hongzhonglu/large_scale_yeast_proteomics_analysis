@@ -34,7 +34,7 @@ compartment0 <- compartment0[compartment0$compartment !="cytoplasm",]
 compartment_sum <- as.data.frame(table(compartment0$compartment))
 compartment_sum <- compartment_sum[order(compartment_sum[[2]], decreasing = TRUE), ]
 source_sum <- as.data.frame(table(compartment0$source))
-
+source_sum$Var1 <- c("MULocDeep","Ortholog_transfer","UniProt")
 # bar plot to analyze the protein num in each main component
 ggplot(data=compartment_sum[1:10,], aes(x = reorder(Var1, Freq), y = Freq)) + 
   geom_bar(stat="identity",fill="#619CFF") +
