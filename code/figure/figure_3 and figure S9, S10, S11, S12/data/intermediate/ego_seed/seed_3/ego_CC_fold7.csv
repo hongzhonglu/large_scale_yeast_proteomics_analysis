@@ -1,0 +1,54 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,9.76743288489422e-05
+"ribosomal subunit",7,0.00034230203101988
+"cytosolic large ribosomal subunit",5,0.00034230203101988
+"ribosome",7,0.00044602113800491
+"large ribosomal subunit",5,0.00144028071350877
+"proton-transporting ATP synthase complex",2,0.0134912636448004
+"cation channel complex",2,0.0134912636448004
+"monoatomic ion channel complex",2,0.0157065242035633
+"respiratory chain complex",2,0.0157065242035633
+"proton-transporting two-sector ATPase complex",2,0.0297051182508174
+"transmembrane transporter complex",2,0.0524137981388429
+"mitochondrial inner membrane",4,0.052840068552042
+"organelle inner membrane",4,0.0620655658344721
+"cytosolic small ribosomal subunit",2,0.0773641484561669
+"transporter complex",2,0.0773641484561669
+"cytoplasmic side of plasma membrane",1,0.11969447796999
+"proton-transporting ATP synthase complex, coupling factor F(o)",1,0.11969447796999
+"TIM23 mitochondrial import inner membrane translocase complex",1,0.12311315088626
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.124239128440544
+"cellular bud neck septin ring",1,0.124239128440544
+"small ribosomal subunit",2,0.124239128440544
+"mitochondrial membrane",4,0.136322206115168
+"proton-transporting two-sector ATPase complex, proton-transporting domain",1,0.137105961660722
+"cytoplasmic side of membrane",1,0.137105961660722
+"peroxisomal matrix",1,0.138977332057233
+"microbody lumen",1,0.138977332057233
+"septin ring",1,0.138977332057233
+"mitochondrial envelope",4,0.138977332057233
+"cellular bud neck septin structure",1,0.138977332057233
+"cleavage apparatus septin structure",1,0.138977332057233
+"membrane protein complex",3,0.152570416488428
+"septin cytoskeleton",1,0.167958683469326
+"inner mitochondrial membrane protein complex",1,0.188429297070633
+"small-subunit processome",1,0.277982822027255
+"cell division site",1,0.287768307433371
+"lipid droplet",1,0.296775117863589
+"mitochondrial matrix",2,0.300978687385208
+"incipient cellular bud site",1,0.300978687385208
+"side of membrane",1,0.370852046555461
+"peroxisome",1,0.525295476603705
+"microbody",1,0.525295476603705
+"mitochondrial protein-containing complex",1,0.536932575361725
+"preribosome",1,0.553371650462503
+"storage vacuole",2,0.553371650462503
+"lytic vacuole",2,0.553371650462503
+"fungal-type vacuole",2,0.553371650462503
+"cell cortex",1,0.553371650462503
+"cellular bud neck",1,0.573882377352287
+"cellular bud",1,0.647442537301271
+"cytoskeleton",1,0.647442537301271
+"site of polarized growth",1,0.665684228904816
+"Golgi apparatus",1,0.665684228904816
+"nucleolus",1,0.748737972567602

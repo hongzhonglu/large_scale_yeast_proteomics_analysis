@@ -1,0 +1,57 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",5,0.0191352819264192
+"ribosomal subunit",5,0.0421939920158834
+"ribosome",5,0.0465958699854777
+"cytosolic large ribosomal subunit",3,0.0668005256264
+"large ribosomal subunit",3,0.162752508842993
+"cytosolic small ribosomal subunit",2,0.198494910927385
+"ATPase complex",2,0.202225400486401
+"extracellular space",1,0.202225400486401
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.202225400486401
+"small ribosomal subunit",2,0.202225400486401
+"vacuolar proton-transporting V-type ATPase complex",1,0.202225400486401
+"proton-transporting V-type ATPase complex",1,0.202225400486401
+"cation-transporting ATPase complex",1,0.202225400486401
+"ATPase dependent transmembrane transport complex",1,0.202225400486401
+"mitochondrial membrane",4,0.202225400486401
+"mitochondrial outer membrane",2,0.202225400486401
+"organelle outer membrane",2,0.202225400486401
+"SCF ubiquitin ligase complex",1,0.202225400486401
+"outer membrane",2,0.202225400486401
+"mitochondrial envelope",4,0.202225400486401
+"extracellular region",2,0.202225400486401
+"nucleoid",1,0.231222832803385
+"mitochondrial nucleoid",1,0.231222832803385
+"proton-transporting two-sector ATPase complex",1,0.251551140421962
+"nucleolus",3,0.314000358987836
+"transmembrane transporter complex",1,0.314000358987836
+"cullin-RING ubiquitin ligase complex",1,0.314000358987836
+"small-subunit processome",1,0.336814671211956
+"fungal-type vacuole membrane",2,0.336814671211956
+"lytic vacuole membrane",2,0.336814671211956
+"SWI/SNF superfamily-type complex",1,0.336814671211956
+"transporter complex",1,0.336814671211956
+"mitochondrial intermembrane space",1,0.336814671211956
+"storage vacuole",3,0.336814671211956
+"lytic vacuole",3,0.336814671211956
+"fungal-type vacuole",3,0.336814671211956
+"organelle envelope lumen",1,0.342724609529634
+"mitochondrial inner membrane",2,0.342724609529634
+"organelle inner membrane",2,0.370280711838017
+"vacuolar membrane",2,0.38911587437545
+"ubiquitin ligase complex",1,0.404461240564997
+"fungal-type cell wall",1,0.492060479471354
+"cell wall",1,0.492060479471354
+"external encapsulating structure",1,0.492060479471354
+"nuclear envelope",1,0.552812018239473
+"preribosome",1,0.552812018239473
+"nuclear chromosome",1,0.552812018239473
+"mitochondrial matrix",1,0.684900227486503
+"chromatin",1,0.694743622924188
+"membrane protein complex",1,0.74710358671407
+"endoplasmic reticulum membrane",1,0.811400843914606
+"endoplasmic reticulum subcompartment",1,0.811400843914606
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.811400843914606
+"transferase complex",1,0.811400843914606
+"intracellular protein-containing complex",1,0.818294975082829
+"organelle subcompartment",1,0.820899544937382

@@ -1,0 +1,49 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,4.79499970473229e-06
+"cytosolic large ribosomal subunit",6,1.96140232830225e-05
+"ribosomal subunit",8,1.96140232830225e-05
+"ribosome",8,3.48425719713729e-05
+"large ribosomal subunit",6,8.67960526703115e-05
+"mitochondrial inner membrane",5,0.014370942049956
+"organelle inner membrane",5,0.0162190492331664
+"mitochondrial membrane",6,0.0162190492331664
+"nucleoid",2,0.0192897975645077
+"mitochondrial nucleoid",2,0.0192897975645077
+"mitochondrial envelope",6,0.0192897975645077
+"cytosolic small ribosomal subunit",2,0.0850692475403081
+"cytoplasmic side of plasma membrane",1,0.14175717565096
+"small ribosomal subunit",2,0.16877768391923
+"mitochondrial matrix",3,0.171558127320394
+"mitochondrial outer membrane",2,0.173836425743369
+"cytoplasmic side of membrane",1,0.173836425743369
+"organelle outer membrane",2,0.173836425743369
+"outer membrane",2,0.173836425743369
+"COPI-coated vesicle",1,0.188799394492845
+"Golgi-associated vesicle",1,0.296825894620336
+"nucleolus",3,0.320021393465842
+"small-subunit processome",1,0.372164040646825
+"nuclear periphery",1,0.385874832144798
+"mitochondrial intermembrane space",1,0.414328396823109
+"organelle envelope lumen",1,0.424184831111436
+"side of membrane",1,0.485139784173181
+"coated vesicle",1,0.53777196398257
+"extracellular region",1,0.579928422234096
+"fungal-type cell wall",1,0.579928422234096
+"cell wall",1,0.579928422234096
+"external encapsulating structure",1,0.579928422234096
+"Golgi membrane",1,0.581597975817578
+"preribosome",1,0.632415240569501
+"storage vacuole",2,0.632415240569501
+"lytic vacuole",2,0.632415240569501
+"fungal-type vacuole",2,0.632415240569501
+"fungal-type vacuole membrane",1,0.679566285506841
+"lytic vacuole membrane",1,0.679566285506841
+"Golgi apparatus",1,0.753849628452217
+"vacuolar membrane",1,0.753849628452217
+"cytoplasmic vesicle",1,0.753849628452217
+"intracellular vesicle",1,0.753849628452217
+"vesicle",1,0.753849628452217
+"endoplasmic reticulum membrane",1,0.793083370971003
+"endoplasmic reticulum subcompartment",1,0.793083370971003
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.793083370971003
+"organelle subcompartment",1,0.820899544937382

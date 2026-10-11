@@ -1,0 +1,51 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.0013956442242434
+"ribosomal subunit",6,0.00431425541876563
+"ribosome",6,0.00436908345678278
+"cytosolic large ribosomal subunit",4,0.00436908345678278
+"proton-transporting ATP synthase complex",2,0.0127276072120759
+"large ribosomal subunit",4,0.0127276072120759
+"cation channel complex",2,0.0127276072120759
+"monoatomic ion channel complex",2,0.014817475663739
+"respiratory chain complex",2,0.014817475663739
+"storage vacuole",6,0.0170022254174347
+"lytic vacuole",6,0.0170022254174347
+"fungal-type vacuole",6,0.0170022254174347
+"mitochondrial envelope",6,0.0170022254174347
+"proton-transporting two-sector ATPase complex",2,0.0200169260450252
+"transmembrane transporter complex",2,0.0327311233302064
+"fungal-type cell wall",3,0.0327311233302064
+"cell wall",3,0.0327311233302064
+"external encapsulating structure",3,0.0327311233302064
+"mitochondrial membrane",5,0.0363434558926622
+"cytosolic small ribosomal subunit",2,0.0521321755095464
+"transporter complex",2,0.0521321755095464
+"mitochondrial intermembrane space",2,0.0541505663909994
+"organelle envelope lumen",2,0.0591184399556068
+"cytoplasmic side of plasma membrane",1,0.0767851368109369
+"proton-transporting ATP synthase complex, coupling factor F(o)",1,0.0767851368109369
+"fungal-type vacuole membrane",3,0.078547326389332
+"lytic vacuole membrane",3,0.078547326389332
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.080749689370496
+"small ribosomal subunit",2,0.0848738353042105
+"fungal-type vacuole lumen",1,0.0866678407250963
+"mitochondrial inner membrane",3,0.0940692704361726
+"proton-transporting two-sector ATPase complex, proton-transporting domain",1,0.0940692704361726
+"cytoplasmic side of membrane",1,0.0940692704361726
+"vacuolar lumen",1,0.10110582476471
+"organelle inner membrane",3,0.104058231155495
+"extracellular region",2,0.105325729420001
+"vacuolar membrane",3,0.111484450811401
+"small-subunit processome",1,0.234642898434128
+"lipid droplet",1,0.25843987041822
+"side of membrane",1,0.341113910746768
+"membrane protein complex",2,0.35527546397596
+"mitochondrial outer membrane",1,0.39387728545478
+"organelle outer membrane",1,0.403018486329389
+"outer membrane",1,0.403018486329389
+"nucleolus",2,0.433778112818841
+"preribosome",1,0.502179675962481
+"mitochondrial matrix",1,0.624529082814441
+"cytoskeleton",1,0.636244631781909
+"Golgi apparatus",1,0.666453213381795
+"intracellular protein-containing complex",1,0.803682564813493

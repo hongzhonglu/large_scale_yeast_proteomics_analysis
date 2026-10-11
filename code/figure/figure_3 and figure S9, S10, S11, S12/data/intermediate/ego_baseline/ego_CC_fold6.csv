@@ -1,0 +1,67 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,0.000121632183094909
+"ribosome",7,0.00111084509842732
+"ribosomal subunit",6,0.00379654476851376
+"cytosolic large ribosomal subunit",4,0.00576719016295327
+"large ribosomal subunit",4,0.0212469579125651
+"cytosolic small ribosomal subunit",2,0.233940430735847
+"cytoplasmic stress granule",2,0.329883703191295
+"small ribosomal subunit",2,0.329883703191295
+"guanyl-nucleotide exchange factor complex",1,0.329883703191295
+"respiratory chain complex",1,0.329883703191295
+"extracellular region",2,0.329883703191295
+"fungal-type cell wall",2,0.329883703191295
+"cell wall",2,0.329883703191295
+"external encapsulating structure",2,0.329883703191295
+"oxidoreductase complex",1,0.329883703191295
+"ribonucleoprotein granule",2,0.329883703191295
+"cytoplasmic ribonucleoprotein granule",2,0.329883703191295
+"nucleoid",1,0.329883703191295
+"mitochondrial nucleoid",1,0.329883703191295
+"preribosome",2,0.407129320415344
+"nucleolus",3,0.426365734474366
+"transmembrane transporter complex",1,0.426365734474366
+"small-subunit processome",1,0.426365734474366
+"organelle membrane contact site",1,0.426365734474366
+"mitochondrial membrane",3,0.426365734474366
+"preribosome, large subunit precursor",1,0.426365734474366
+"lipid droplet",1,0.426365734474366
+"transporter complex",1,0.426365734474366
+"mitochondrial matrix",2,0.426365734474366
+"mitochondrial intermembrane space",1,0.426365734474366
+"storage vacuole",3,0.426365734474366
+"lytic vacuole",3,0.426365734474366
+"fungal-type vacuole",3,0.426365734474366
+"mitochondrial envelope",3,0.426365734474366
+"organelle envelope lumen",1,0.426365734474366
+"mitochondrial inner membrane",2,0.426365734474366
+"supramolecular complex",2,0.438566909780979
+"organelle inner membrane",2,0.44788653772136
+"side of membrane",1,0.461815756087932
+"membrane protein complex",2,0.480687702759474
+"cellular bud tip",1,0.496966562452141
+"mitochondrial outer membrane",1,0.510337011566004
+"organelle outer membrane",1,0.510337011566004
+"outer membrane",1,0.510337011566004
+"mating projection tip",1,0.510337011566004
+"mating projection",1,0.510337011566004
+"plasma membrane bounded cell projection",1,0.510337011566004
+"cell projection",1,0.510337011566004
+"cell tip",1,0.510337011566004
+"cell pole",1,0.510337011566004
+"Golgi membrane",1,0.517451140249462
+"endosome",1,0.63921149804512
+"fungal-type vacuole membrane",1,0.674847075190821
+"lytic vacuole membrane",1,0.674847075190821
+"cellular bud",1,0.727735048060335
+"site of polarized growth",1,0.744677365069936
+"Golgi apparatus",1,0.744677365069936
+"vacuolar membrane",1,0.744677365069936
+"cytoplasmic vesicle",1,0.747670533137035
+"intracellular vesicle",1,0.747670533137035
+"vesicle",1,0.747670533137035
+"endoplasmic reticulum membrane",1,0.800828325765641
+"endoplasmic reticulum subcompartment",1,0.800828325765641
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.800828325765641
+"intracellular protein-containing complex",1,0.816046911964469
+"organelle subcompartment",1,0.820899544937382

@@ -1,0 +1,40 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",11,2.08379885673172e-10
+"ribosomal subunit",11,3.6429375380412e-09
+"ribosome",11,8.2915778318197e-09
+"cytosolic large ribosomal subunit",6,8.2083394720499e-06
+"cytosolic small ribosomal subunit",5,1.83671126545287e-05
+"large ribosomal subunit",6,5.87681606621901e-05
+"small ribosomal subunit",5,0.000125030184887538
+"90S preribosome",3,0.0206904645946355
+"fungal-type cell wall",3,0.0417768155960089
+"cell wall",3,0.0417768155960089
+"external encapsulating structure",3,0.0417768155960089
+"preribosome",3,0.0716341201069556
+"cytoplasmic side of plasma membrane",1,0.109092056698026
+"side of membrane",2,0.109092056698026
+"cytoplasmic side of membrane",1,0.161422868068472
+"extracellular region",2,0.18047000944169
+"preribosome, small subunit precursor",1,0.18047000944169
+"nucleoid",1,0.194931279158493
+"mitochondrial nucleoid",1,0.194931279158493
+"endoplasmic reticulum membrane",3,0.307440344983591
+"endoplasmic reticulum subcompartment",3,0.307440344983591
+"nuclear outer membrane-endoplasmic reticulum membrane network",3,0.307440344983591
+"lipid droplet",1,0.341814819918359
+"organelle subcompartment",3,0.368823672387019
+"endoplasmic reticulum protein-containing complex",1,0.400915924125905
+"Golgi membrane",1,0.599772912561877
+"storage vacuole",2,0.655585626538642
+"lytic vacuole",2,0.655585626538642
+"fungal-type vacuole",2,0.655585626538642
+"fungal-type vacuole membrane",1,0.694637311999936
+"lytic vacuole membrane",1,0.694637311999936
+"mitochondrial matrix",1,0.708947895533752
+"mitochondrial inner membrane",1,0.708947895533752
+"organelle inner membrane",1,0.708947895533752
+"Golgi apparatus",1,0.708947895533752
+"vacuolar membrane",1,0.708947895533752
+"nucleolus",1,0.789210295409094
+"mitochondrial membrane",1,0.804703152972512
+"mitochondrial envelope",1,0.816736001296233

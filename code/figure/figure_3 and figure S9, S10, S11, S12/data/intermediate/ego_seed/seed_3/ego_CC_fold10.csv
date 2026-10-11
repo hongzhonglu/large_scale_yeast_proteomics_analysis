@@ -1,0 +1,44 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,4.29552056882268e-06
+"ribosomal subunit",8,2.63563437865615e-05
+"ribosome",8,4.16175165213621e-05
+"cytosolic small ribosomal subunit",4,0.00071600307636422
+"cytosolic large ribosomal subunit",4,0.00281136774204926
+"small ribosomal subunit",4,0.00281136774204926
+"large ribosomal subunit",4,0.00988765357402922
+"mitochondrial membrane",4,0.238168907540428
+"mitochondrial inner membrane",3,0.238168907540428
+"organelle inner membrane",3,0.238168907540428
+"mitochondrial envelope",4,0.238168907540428
+"preribosome, small subunit precursor",1,0.238168907540428
+"fungal-type cell wall",2,0.238168907540428
+"cell wall",2,0.238168907540428
+"external encapsulating structure",2,0.238168907540428
+"nucleoid",1,0.240209434498474
+"mitochondrial nucleoid",1,0.240209434498474
+"inner mitochondrial membrane protein complex",1,0.280273765768584
+"organelle membrane contact site",1,0.410243655561509
+"nuclear periphery",1,0.412765393039386
+"lipid droplet",1,0.412765393039386
+"mitochondrial intermembrane space",1,0.421783169114434
+"organelle envelope lumen",1,0.429563986578429
+"90S preribosome",1,0.512214189229579
+"mitochondrial outer membrane",1,0.564822945285336
+"organelle outer membrane",1,0.564822945285336
+"outer membrane",1,0.564822945285336
+"extracellular region",1,0.569491576270775
+"nucleolus",2,0.578869412623764
+"mitochondrial protein-containing complex",1,0.60987435918445
+"preribosome",1,0.640846063905669
+"fungal-type vacuole membrane",1,0.719465063633189
+"lytic vacuole membrane",1,0.719465063633189
+"mitochondrial matrix",1,0.742454868451755
+"vacuolar membrane",1,0.796762257656375
+"membrane protein complex",1,0.796762257656375
+"endoplasmic reticulum membrane",1,0.820899544937382
+"endoplasmic reticulum subcompartment",1,0.820899544937382
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.820899544937382
+"storage vacuole",1,0.820899544937382
+"lytic vacuole",1,0.820899544937382
+"fungal-type vacuole",1,0.820899544937382
+"organelle subcompartment",1,0.820899544937382

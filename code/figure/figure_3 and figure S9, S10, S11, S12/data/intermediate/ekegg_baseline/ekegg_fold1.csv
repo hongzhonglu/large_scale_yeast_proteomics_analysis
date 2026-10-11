@@ -1,34 +1,31 @@
 "Description","Count","p.adjust"
-"Glycolysis / Gluconeogenesis",6,5.91072958379443e-05
-"Carbon metabolism",5,0.0192517983575722
-"Ribosome",6,0.0221109426869652
-"Pyruvate metabolism",3,0.0525345079241701
-"Carbon fixation by Calvin cycle",2,0.0590761343126716
-"Biosynthesis of secondary metabolites",7,0.0590761343126716
-"Biosynthesis of amino acids",4,0.0590761343126716
-"Methane metabolism",2,0.0648875299678486
-"Ascorbate and aldarate metabolism",1,0.25593046994177
-"Fatty acid biosynthesis",1,0.25593046994177
-"beta-Alanine metabolism",1,0.25593046994177
-"Valine, leucine and isoleucine degradation",1,0.25593046994177
-"Histidine metabolism",1,0.25593046994177
-"Lysine degradation",1,0.264767120993875
-"Fatty acid degradation",1,0.264767120993875
-"Tryptophan metabolism",1,0.264767120993875
-"Fructose and mannose metabolism",1,0.264767120993875
-"Arginine and proline metabolism",1,0.264767120993875
-"Pantothenate and CoA biosynthesis",1,0.264767120993875
-"Fatty acid metabolism",1,0.264767120993875
-"Base excision repair",1,0.272171742897537
-"Pentose phosphate pathway",1,0.287940691553336
-"Citrate cycle (TCA cycle)",1,0.297477821145084
-"Glycerolipid metabolism",1,0.297477821145084
-"Proteasome",1,0.31684773584656
-"Longevity regulating pathway - multiple species",1,0.319369593111848
-"RNA degradation",1,0.474016496557655
-"Spliceosome",1,0.500892305492109
-"Endocytosis",1,0.500892305492109
-"Oxidative phosphorylation",1,0.500892305492109
-"Ribosome biogenesis in eukaryotes",1,0.523989128008323
-"Protein processing in endoplasmic reticulum",1,0.523989128008323
+"Glycolysis / Gluconeogenesis",6,5.37339053072221e-05
+"Carbon metabolism",7,0.000127771301079113
+"Carbon fixation by Calvin cycle",4,0.000127771301079113
+"Biosynthesis of amino acids",6,0.00158197116735065
+"Oxidative phosphorylation",4,0.014399274982246
+"Biosynthesis of secondary metabolites",8,0.014399274982246
+"Ribosome",5,0.0482284014976634
+"Methane metabolism",2,0.0589886636071351
+"Citrate cycle (TCA cycle)",2,0.0733597937346658
+"Ascorbate and aldarate metabolism",1,0.232664063583428
+"beta-Alanine metabolism",1,0.232664063583428
+"Valine, leucine and isoleucine degradation",1,0.232664063583428
+"Histidine metabolism",1,0.232664063583428
+"Lysine degradation",1,0.240697382721705
+"Fatty acid degradation",1,0.240697382721705
+"Tryptophan metabolism",1,0.240697382721705
+"Protein processing in endoplasmic reticulum",2,0.240697382721705
+"Fructose and mannose metabolism",1,0.240697382721705
+"Arginine and proline metabolism",1,0.240697382721705
+"Pantothenate and CoA biosynthesis",1,0.240697382721705
+"Pentose phosphate pathway",1,0.274229230050797
+"Glycerolipid metabolism",1,0.295019326755455
+"Longevity regulating pathway - multiple species",1,0.328205905964745
+"2-Oxocarboxylic acid metabolism",1,0.342876156593414
+"Pyruvate metabolism",1,0.393813743333595
+"RNA degradation",1,0.447498091155829
+"Spliceosome",1,0.483304335946293
+"Endocytosis",1,0.483304335946293
+"Ribosome biogenesis in eukaryotes",1,0.509397613096942
 "Biosynthesis of cofactors",1,0.641720296954171

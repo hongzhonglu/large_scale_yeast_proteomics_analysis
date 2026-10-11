@@ -1,0 +1,67 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,6.5931245940069e-06
+"cytosolic large ribosomal subunit",6,2.69692820141559e-05
+"ribosomal subunit",8,2.69692820141559e-05
+"ribosome",8,4.79085364606378e-05
+"large ribosomal subunit",6,0.000119344572421678
+"fungal-type cell wall",4,0.00995110103009398
+"cell wall",4,0.00995110103009398
+"external encapsulating structure",4,0.00995110103009398
+"nucleoid",2,0.0284349233281795
+"mitochondrial nucleoid",2,0.0284349233281795
+"mitochondrial matrix",4,0.0592754374127384
+"lipid droplet",2,0.107972506493468
+"cytosolic small ribosomal subunit",2,0.107972506493468
+"cytoplasmic side of plasma membrane",1,0.172309504938421
+"side of membrane",2,0.172309504938421
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.18278078950777
+"small ribosomal subunit",2,0.18278078950777
+"proton-transporting ATP synthase complex",1,0.18278078950777
+"ER to Golgi transport vesicle membrane",1,0.18278078950777
+"cation channel complex",1,0.18278078950777
+"cytoplasmic side of membrane",1,0.18278078950777
+"mating projection tip",2,0.18278078950777
+"monoatomic ion channel complex",1,0.18278078950777
+"respiratory chain complex",1,0.18278078950777
+"extracellular region",2,0.18278078950777
+"mating projection",2,0.18278078950777
+"plasma membrane bounded cell projection",2,0.18278078950777
+"cell projection",2,0.18278078950777
+"cell tip",2,0.18278078950777
+"cell pole",2,0.18278078950777
+"phagophore assembly site membrane",1,0.188376469731834
+"transport vesicle membrane",1,0.195868448769832
+"proton-transporting two-sector ATPase complex",1,0.209273637830036
+"vesicle coat",1,0.209273637830036
+"membrane coat",1,0.220869659595619
+"coated membrane",1,0.220869659595619
+"transport vesicle",1,0.237187887094426
+"COPII-coated ER to Golgi transport vesicle",1,0.249798499873359
+"transmembrane transporter complex",1,0.249798499873359
+"phagophore assembly site",1,0.249798499873359
+"coated vesicle membrane",1,0.25345726737112
+"transporter complex",1,0.317568118571273
+"storage vacuole",3,0.317568118571273
+"lytic vacuole",3,0.317568118571273
+"fungal-type vacuole",3,0.317568118571273
+"site of polarized growth",2,0.383421748265048
+"membrane protein complex",2,0.409095917242106
+"cellular bud tip",1,0.422535114557733
+"coated vesicle",1,0.422535114557733
+"endoplasmic reticulum membrane",2,0.53272617692077
+"endoplasmic reticulum subcompartment",2,0.53272617692077
+"nuclear outer membrane-endoplasmic reticulum membrane network",2,0.53272617692077
+"cytoplasmic vesicle membrane",1,0.53272617692077
+"vesicle membrane",1,0.53272617692077
+"organelle subcompartment",2,0.600582973732341
+"fungal-type vacuole membrane",1,0.639328808075515
+"lytic vacuole membrane",1,0.639328808075515
+"cellular bud",1,0.68002447837071
+"mitochondrial inner membrane",1,0.68002447837071
+"organelle inner membrane",1,0.69804222043195
+"vacuolar membrane",1,0.708053888099283
+"cytoplasmic vesicle",1,0.712623476896237
+"intracellular vesicle",1,0.712623476896237
+"vesicle",1,0.712623476896237
+"mitochondrial membrane",1,0.796132350159787
+"mitochondrial envelope",1,0.816736001296233

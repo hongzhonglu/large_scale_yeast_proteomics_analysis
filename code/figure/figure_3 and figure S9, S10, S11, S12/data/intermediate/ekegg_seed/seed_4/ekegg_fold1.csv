@@ -1,23 +1,25 @@
 "Description","Count","p.adjust"
-"Carbon fixation by Calvin cycle",3,0.00563982978287925
-"Glycolysis / Gluconeogenesis",4,0.00563982978287925
-"Ribosome",7,0.00563982978287925
-"Carbon metabolism",5,0.00760057293627841
-"Methane metabolism",2,0.0644757334406156
-"Biosynthesis of secondary metabolites",7,0.0644757334406156
-"Oxidative phosphorylation",3,0.0644757334406156
-"Citrate cycle (TCA cycle)",2,0.0644757334406156
-"Longevity regulating pathway - multiple species",2,0.0838742377196122
-"Pyruvate metabolism",2,0.133452456387065
-"Biosynthesis of amino acids",3,0.140440845413385
-"Endocytosis",2,0.223508126843364
-"Spliceosome",2,0.237558366549365
-"Protein processing in endoplasmic reticulum",2,0.242520575789036
-"Fructose and mannose metabolism",1,0.242520575789036
-"Efferocytosis",1,0.249347297618468
-"Pentose phosphate pathway",1,0.249347297618468
-"Glyoxylate and dicarboxylate metabolism",1,0.249347297618468
-"Glycerolipid metabolism",1,0.264962014524974
-"Mitophagy - yeast",1,0.303909482301316
-"Cysteine and methionine metabolism",1,0.307318496375376
-"RNA degradation",1,0.397736908371568
+"Glycolysis / Gluconeogenesis",4,0.0182529230918787
+"Ribosome",6,0.0323289970755483
+"Carbon metabolism",4,0.0689518255129151
+"Carbon fixation by Calvin cycle",2,0.0689518255129151
+"Biosynthesis of amino acids",4,0.0694719885937317
+"Methane metabolism",2,0.0694719885937317
+"Longevity regulating pathway - multiple species",2,0.121692656796499
+"Valine, leucine and isoleucine biosynthesis",1,0.271188879318096
+"Sphingolipid metabolism",1,0.271188879318096
+"Propanoate metabolism",1,0.271188879318096
+"Oxidative phosphorylation",2,0.2800424047132
+"Biosynthesis of secondary metabolites",5,0.288323390629332
+"Fructose and mannose metabolism",1,0.288323390629332
+"Pantothenate and CoA biosynthesis",1,0.288323390629332
+"Pentose phosphate pathway",1,0.319592835115561
+"Protein export",1,0.319592835115561
+"Glycerolipid metabolism",1,0.319592835115561
+"Mitophagy - yeast",1,0.36188547755383
+"2-Oxocarboxylic acid metabolism",1,0.36188547755383
+"RNA degradation",1,0.484203825623128
+"Spliceosome",1,0.510774790495037
+"Endocytosis",1,0.510774790495037
+"Autophagy - yeast",1,0.526212196943144
+"Protein processing in endoplasmic reticulum",1,0.526212196943144

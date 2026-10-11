@@ -1,6 +1,6 @@
 """
-figS9B: Dilution-rate scatter plot (Train=Rosemary, Val=Jianye, Val2=Ibrahim E. Elsemman).
-Output: figS9B_plot_dilution_rate_1x1_scatter.png
+figS9b: Dilution-rate scatter plot (Train=Rosemary, Val=Jianye, Val2=Ibrahim E. Elsemman).
+Output: figS9b_plot_dilution_rate_1x1_scatter.png
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -22,7 +22,7 @@ FIGURE_DIR = os.path.join(SCRIPT_DIR, '..', '..', 'figure')
 os.makedirs(FIGURE_DIR, exist_ok=True)
 CSV_PATH = os.path.join(INTERMEDIATE_DIR, 'results_Val_adj_R2_1_8.csv')
 PHENOTYPE_PATH = os.path.join(ORIGINAL_DATA_DIR, 'physiology_collection.xlsx')
-ORGANELLE_PATH = os.path.join(ORIGINAL_DATA_DIR, 'all_organelle_fraction_test_260412.xlsx')
+ORGANELLE_PATH = os.path.join(ORIGINAL_DATA_DIR, 'main_organelle_fraction_test_260905.xlsx')
 
 results_df = pd.read_csv(CSV_PATH)
 
@@ -167,6 +167,5 @@ y_pos -= line_height
 plt.text(0.05, y_pos, r"$\bf{adj.R^2}\ (\bf{I})$ = " + f"{adj_r2_val2:.3f}", transform=plt.gca().transAxes, fontsize=28, verticalalignment='top')
 
 plt.tight_layout()
-out_path = os.path.join(FIGURE_DIR, 'figS9B_plot_dilution_rate_1x1_scatter.png')
+out_path = os.path.join(FIGURE_DIR, 'figS9b_plot_dilution_rate_1x1_scatter.png')
 plt.savefig(out_path, dpi=400, bbox_inches='tight')
-plt.show()

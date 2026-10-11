@@ -1,0 +1,50 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00136773133975854
+"ribosomal subunit",6,0.00422797031039032
+"ribosome",6,0.00428170178764712
+"cytosolic large ribosomal subunit",4,0.00428170178764712
+"large ribosomal subunit",4,0.0157742566320559
+"extracellular region",3,0.0641530017272045
+"fungal-type cell wall",3,0.0641530017272045
+"cell wall",3,0.0641530017272045
+"external encapsulating structure",3,0.0641530017272045
+"lipid droplet",2,0.0947362074880703
+"cytosolic small ribosomal subunit",2,0.0947362074880703
+"extracellular space",1,0.137064378928289
+"cytoplasmic side of plasma membrane",1,0.137064378928289
+"side of membrane",2,0.137064378928289
+"small ribosomal subunit",2,0.160807626623044
+"cytoplasmic side of membrane",1,0.189333836702139
+"storage vacuole",4,0.189333836702139
+"lytic vacuole",4,0.189333836702139
+"fungal-type vacuole",4,0.189333836702139
+"nuclear periphery",1,0.472696669377378
+"microtubule",1,0.485993434287397
+"mitochondrial inner membrane",2,0.485993434287397
+"polymeric cytoskeletal fiber",1,0.485993434287397
+"supramolecular polymer",1,0.485993434287397
+"supramolecular fiber",1,0.485993434287397
+"organelle inner membrane",2,0.485993434287397
+"cellular bud tip",1,0.560272628488412
+"mating projection tip",1,0.562635728685614
+"mating projection",1,0.562635728685614
+"plasma membrane bounded cell projection",1,0.562635728685614
+"cell projection",1,0.562635728685614
+"cell tip",1,0.562635728685614
+"cell pole",1,0.562635728685614
+"nucleolus",2,0.562635728685614
+"microtubule cytoskeleton",1,0.571922782150119
+"mitochondrial membrane",2,0.600510072972565
+"mitochondrial envelope",2,0.653446552018781
+"fungal-type vacuole membrane",1,0.6937239164549
+"lytic vacuole membrane",1,0.6937239164549
+"cellular bud",1,0.725863276699712
+"cytoskeleton",1,0.725863276699712
+"supramolecular complex",1,0.725863276699712
+"site of polarized growth",1,0.728778605898333
+"vacuolar membrane",1,0.728778605898333
+"endoplasmic reticulum membrane",1,0.809605941199565
+"endoplasmic reticulum subcompartment",1,0.809605941199565
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.809605941199565
+"intracellular protein-containing complex",1,0.82042595158044
+"organelle subcompartment",1,0.820899544937382

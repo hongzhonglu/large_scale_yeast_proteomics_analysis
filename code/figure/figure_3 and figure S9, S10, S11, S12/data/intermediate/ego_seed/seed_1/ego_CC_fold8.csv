@@ -1,0 +1,41 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,7.37164746029752e-05
+"ribosomal subunit",7,0.000258341155486702
+"cytosolic large ribosomal subunit",5,0.000258341155486702
+"ribosome",7,0.000336619726796158
+"large ribosomal subunit",5,0.00108700431208209
+"mitochondrial outer membrane",3,0.0438136902760547
+"organelle outer membrane",3,0.0438136902760547
+"outer membrane",3,0.0438136902760547
+"organelle membrane contact site",2,0.0734527653283572
+"cytosolic small ribosomal subunit",2,0.0850692475403081
+"cytoplasmic side of plasma membrane",1,0.139609339656249
+"small ribosomal subunit",2,0.164089414921474
+"mitochondrial membrane",4,0.174112541917776
+"cytoplasmic side of membrane",1,0.177387767108211
+"mitochondrial envelope",4,0.202152436295419
+"oxidoreductase complex",1,0.21103671247928
+"nucleoid",1,0.21103671247928
+"mitochondrial nucleoid",1,0.21103671247928
+"mitochondrial matrix",2,0.37656298644815
+"mitochondrial intermembrane space",1,0.37656298644815
+"storage vacuole",3,0.37656298644815
+"lytic vacuole",3,0.37656298644815
+"fungal-type vacuole",3,0.37656298644815
+"organelle envelope lumen",1,0.382944639197824
+"side of membrane",1,0.436625805755863
+"extracellular region",1,0.533267514698019
+"fungal-type cell wall",1,0.533267514698019
+"cell wall",1,0.533267514698019
+"external encapsulating structure",1,0.533267514698019
+"endosome",1,0.671494907037298
+"fungal-type vacuole membrane",1,0.690184508717885
+"lytic vacuole membrane",1,0.690184508717885
+"mitochondrial inner membrane",1,0.708747513929435
+"organelle inner membrane",1,0.708747513929435
+"vacuolar membrane",1,0.708747513929435
+"membrane protein complex",1,0.708747513929435
+"cytoplasmic vesicle",1,0.708747513929435
+"intracellular vesicle",1,0.708747513929435
+"vesicle",1,0.708747513929435
+"transferase complex",1,0.782422242346227

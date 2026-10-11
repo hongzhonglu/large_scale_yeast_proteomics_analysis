@@ -1,0 +1,47 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,8.47739457934215e-05
+"ribosomal subunit",7,0.000368667326457643
+"ribosome",7,0.000516150247754109
+"cytosolic large ribosomal subunit",4,0.00401955678024016
+"extracellular region",4,0.00693561586945944
+"fungal-type cell wall",4,0.00693561586945944
+"cell wall",4,0.00693561586945944
+"external encapsulating structure",4,0.00693561586945944
+"cytosolic small ribosomal subunit",3,0.007226920956214
+"large ribosomal subunit",4,0.00740424290892421
+"small ribosomal subunit",3,0.0217117261231657
+"extracellular space",1,0.134018902558288
+"90S preribosome",2,0.153031139988114
+"storage vacuole",4,0.211068588364374
+"lytic vacuole",4,0.211068588364374
+"fungal-type vacuole",4,0.211068588364374
+"preribosome, small subunit precursor",1,0.212862062418404
+"nucleoid",1,0.229918944648478
+"mitochondrial nucleoid",1,0.229918944648478
+"preribosome",2,0.283756799077361
+"mitochondrial membrane",3,0.370779794930434
+"fungal-type vacuole membrane",2,0.370779794930434
+"lytic vacuole membrane",2,0.370779794930434
+"lipid droplet",1,0.386367606275239
+"mitochondrial envelope",3,0.407112328785796
+"mitochondrial inner membrane",2,0.411457841660577
+"organelle inner membrane",2,0.439341003331615
+"side of membrane",1,0.440870202494352
+"vacuolar membrane",2,0.440870202494352
+"cellular bud tip",1,0.456012092696896
+"mitochondrial outer membrane",1,0.456012092696896
+"organelle outer membrane",1,0.456012092696896
+"outer membrane",1,0.456012092696896
+"mating projection tip",1,0.456012092696896
+"mating projection",1,0.456012092696896
+"plasma membrane bounded cell projection",1,0.456012092696896
+"cell projection",1,0.456012092696896
+"cell tip",1,0.456012092696896
+"cell pole",1,0.456012092696896
+"nuclear envelope",1,0.500458360723402
+"transferase complex, transferring phosphorus-containing groups",1,0.500458360723402
+"mitochondrial matrix",1,0.642967560497534
+"cellular bud",1,0.648756050596422
+"site of polarized growth",1,0.667638019094474
+"Golgi apparatus",1,0.667638019094474
+"transferase complex",1,0.782422242346227

@@ -1,0 +1,50 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00136773133975854
+"ribosomal subunit",6,0.00422797031039032
+"ribosome",6,0.0052537204197494
+"cytosolic small ribosomal subunit",3,0.0173210442483172
+"respiratory chain complex",2,0.0261380270708355
+"oxidoreductase complex",2,0.028105475839414
+"cytosolic large ribosomal subunit",3,0.0318005988597454
+"small ribosomal subunit",3,0.0318005988597454
+"transmembrane transporter complex",2,0.0592264930751285
+"large ribosomal subunit",3,0.0712042226188095
+"transporter complex",2,0.0975345610896787
+"cytoplasmic side of plasma membrane",1,0.15676965432233
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.169626111475014
+"proton-transporting ATP synthase complex",1,0.169626111475014
+"cation channel complex",1,0.169626111475014
+"cytoplasmic side of membrane",1,0.169626111475014
+"monoatomic ion channel complex",1,0.169626111475014
+"storage vacuole",4,0.169626111475014
+"lytic vacuole",4,0.169626111475014
+"fungal-type vacuole",4,0.169626111475014
+"extracellular region",2,0.169626111475014
+"fungal-type cell wall",2,0.169626111475014
+"cell wall",2,0.169626111475014
+"external encapsulating structure",2,0.169626111475014
+"nucleoid",1,0.178975365775697
+"mitochondrial nucleoid",1,0.178975365775697
+"proton-transporting two-sector ATPase complex",1,0.195650886994859
+"fungal-type vacuole membrane",2,0.313244999165366
+"lytic vacuole membrane",2,0.313244999165366
+"lipid droplet",1,0.329252394912812
+"microtubule",1,0.33043768626843
+"mitochondrial intermembrane space",1,0.33043768626843
+"organelle envelope lumen",1,0.332521823459798
+"mitochondrial inner membrane",2,0.332521823459798
+"polymeric cytoskeletal fiber",1,0.332521823459798
+"supramolecular polymer",1,0.332521823459798
+"supramolecular fiber",1,0.332521823459798
+"organelle inner membrane",2,0.332521823459798
+"side of membrane",1,0.340476390078519
+"vacuolar membrane",2,0.340476390078519
+"membrane protein complex",2,0.348169954696441
+"microtubule cytoskeleton",1,0.476602318458432
+"mitochondrial membrane",2,0.502752619232845
+"mitochondrial envelope",2,0.549489146015793
+"mitochondrial matrix",1,0.639240212320736
+"cytoskeleton",1,0.648643779178466
+"supramolecular complex",1,0.648643779178466
+"nucleolus",1,0.764336680329427
+"intracellular protein-containing complex",1,0.803682564813493

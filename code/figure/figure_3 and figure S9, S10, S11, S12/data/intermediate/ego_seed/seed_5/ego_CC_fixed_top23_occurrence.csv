@@ -1,0 +1,66 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,6.49322876682498e-06
+"cytosolic large ribosomal subunit",6,2.6560656529093e-05
+"ribosomal subunit",8,2.6560656529093e-05
+"ribosome",8,4.71826495445675e-05
+"large ribosomal subunit",6,0.00011753632132438
+"fungal-type cell wall",4,0.00980032677206225
+"cell wall",4,0.00980032677206225
+"external encapsulating structure",4,0.00980032677206225
+"lipid droplet",2,0.138237527253001
+"cytosolic small ribosomal subunit",2,0.138237527253001
+"ATPase complex",2,0.13843461373229
+"cytoplasmic side of plasma membrane",1,0.13843461373229
+"fungal-type vacuole membrane",3,0.13843461373229
+"lytic vacuole membrane",3,0.13843461373229
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.13843461373229
+"small ribosomal subunit",2,0.13843461373229
+"Swr1 complex",1,0.13843461373229
+"vacuolar proton-transporting V-type ATPase complex",1,0.13843461373229
+"proton-transporting V-type ATPase complex",1,0.13843461373229
+"cation-transporting ATPase complex",1,0.13843461373229
+"ATPase dependent transmembrane transport complex",1,0.13843461373229
+"SWI/SNF complex",1,0.13843461373229
+"Ino80 complex",1,0.13843461373229
+"NuA4 histone acetyltransferase complex",1,0.13843461373229
+"H4/H2A histone acetyltransferase complex",1,0.13843461373229
+"H4 histone acetyltransferase complex",1,0.13843461373229
+"cytoplasmic side of membrane",1,0.149465618581919
+"storage vacuole",4,0.159007875382452
+"lytic vacuole",4,0.159007875382452
+"fungal-type vacuole",4,0.159007875382452
+"extracellular region",2,0.159007875382452
+"vacuolar membrane",3,0.167575065125887
+"INO80-type complex",1,0.176366395429112
+"nucleoid",1,0.176366395429112
+"mitochondrial nucleoid",1,0.176366395429112
+"proton-transporting two-sector ATPase complex",1,0.194652668183661
+"peroxisomal membrane",1,0.227446917249639
+"microbody membrane",1,0.227446917249639
+"histone acetyltransferase complex",1,0.241066445059007
+"transmembrane transporter complex",1,0.241066445059007
+"protein acetyltransferase complex",1,0.266832029304319
+"acetyltransferase complex",1,0.266832029304319
+"histone deacetylase complex",1,0.268071447495975
+"mitochondrial membrane",3,0.268071447495975
+"SWI/SNF superfamily-type complex",1,0.282864417641859
+"transporter complex",1,0.292920513221804
+"mitochondrial intermembrane space",1,0.298441331931539
+"mitochondrial envelope",3,0.299618448494981
+"organelle envelope lumen",1,0.302332066263641
+"mitochondrial inner membrane",2,0.302332066263641
+"organelle inner membrane",2,0.328663026788996
+"side of membrane",1,0.341113910746768
+"mitochondrial outer membrane",1,0.405767920487377
+"organelle outer membrane",1,0.419139225782565
+"outer membrane",1,0.419139225782565
+"nucleolus",2,0.453143207141111
+"peroxisome",1,0.455404178643095
+"microbody",1,0.455404178643095
+"nuclear chromosome",1,0.511150337688133
+"nucleoplasm",1,0.559220874441242
+"mitochondrial matrix",1,0.625552900982989
+"chromatin",1,0.63731521860989
+"membrane protein complex",1,0.688233179370955
+"transferase complex",1,0.794647589882887
+"intracellular protein-containing complex",1,0.803682564813493

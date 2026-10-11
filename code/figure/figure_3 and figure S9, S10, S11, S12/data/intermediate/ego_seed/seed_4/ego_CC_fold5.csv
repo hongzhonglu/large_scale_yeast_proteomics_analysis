@@ -1,0 +1,44 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00120025403284933
+"ribosomal subunit",6,0.00371025966013845
+"ribosome",6,0.00375741177283319
+"cytosolic large ribosomal subunit",4,0.00375741177283319
+"large ribosomal subunit",4,0.0138427150036409
+"cytosolic small ribosomal subunit",2,0.152415735176385
+"cytoplasmic side of plasma membrane",1,0.188028084900338
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.188028084900338
+"small ribosomal subunit",2,0.188028084900338
+"proton-transporting ATP synthase complex",1,0.188028084900338
+"mitochondrial inner membrane",3,0.188028084900338
+"cation channel complex",1,0.188028084900338
+"cytoplasmic side of membrane",1,0.188028084900338
+"monoatomic ion channel complex",1,0.188028084900338
+"organelle inner membrane",3,0.188028084900338
+"respiratory chain complex",1,0.188028084900338
+"fungal-type cell wall",2,0.188028084900338
+"cell wall",2,0.188028084900338
+"external encapsulating structure",2,0.188028084900338
+"proton-transporting two-sector ATPase complex",1,0.231786407960236
+"transmembrane transporter complex",1,0.303761381319775
+"mitochondrial membrane",3,0.354679145917752
+"preribosome, large subunit precursor",1,0.356551861632448
+"lipid droplet",1,0.356551861632448
+"transporter complex",1,0.356551861632448
+"mitochondrial envelope",3,0.365924543013989
+"side of membrane",1,0.434604389988475
+"extracellular region",1,0.569491576270775
+"nucleolus",2,0.578869412623764
+"preribosome",1,0.635210004890199
+"storage vacuole",2,0.635210004890199
+"lytic vacuole",2,0.635210004890199
+"fungal-type vacuole",2,0.635210004890199
+"fungal-type vacuole membrane",1,0.678352774282721
+"lytic vacuole membrane",1,0.678352774282721
+"mitochondrial matrix",1,0.701207375759991
+"vacuolar membrane",1,0.75482740199025
+"membrane protein complex",1,0.75482740199025
+"endoplasmic reticulum membrane",1,0.814441815412803
+"endoplasmic reticulum subcompartment",1,0.814441815412803
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.814441815412803
+"intracellular protein-containing complex",1,0.820899544937382
+"organelle subcompartment",1,0.820899544937382

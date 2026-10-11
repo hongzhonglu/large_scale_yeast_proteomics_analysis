@@ -1,0 +1,71 @@
+"Description","Count","p.adjust"
+"structural constituent of ribosome",10,1.73195504734738e-07
+"structural molecule activity",10,8.23976606155804e-06
+"melatonin binding",2,0.0124530544797008
+"amide binding",2,0.0555777831793867
+"carbon-carbon lyase activity",2,0.104324986761604
+"tRNA binding",2,0.133284646743265
+"vitamin binding",2,0.133284646743265
+"magnesium ion binding",2,0.170156995891616
+"unfolded protein binding",2,0.21112162604865
+"quaternary ammonium group binding",1,0.21112162604865
+"intramolecular phosphotransferase activity",1,0.21112162604865
+"acid-thiol ligase activity",1,0.21112162604865
+"ubiquinol-cytochrome-c reductase activity",1,0.21112162604865
+"palmitoyltransferase activity",1,0.21112162604865
+"oxidoreductase activity, acting on diphenols and related substances as donors",1,0.21112162604865
+"sulfur compound binding",1,0.227605976471485
+"lyase activity",2,0.235932758767942
+"metalloendopeptidase activity",1,0.235932758767942
+"NADP binding",1,0.235932758767942
+"ligase activity, forming carbon-sulfur bonds",1,0.235932758767942
+"carboxy-lyase activity",1,0.235932758767942
+"heat shock protein binding",1,0.235932758767942
+"intramolecular transferase activity",1,0.235932758767942
+"translation initiation factor binding",1,0.235932758767942
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",1,0.235932758767942
+"ATP-dependent protein folding chaperone",1,0.235932758767942
+"oxidoreduction-driven active transmembrane transporter activity",1,0.235932758767942
+"heme binding",1,0.235932758767942
+"tetrapyrrole binding",1,0.235932758767942
+"NAD binding",1,0.235932758767942
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors",1,0.235932758767942
+"protein-folding chaperone binding",1,0.235932758767942
+"oxidoreductase activity",3,0.24814361331592
+"translation initiation factor activity",1,0.24814361331592
+"pyridoxal phosphate binding",1,0.252617679759666
+"vitamin B6 binding",1,0.252617679759666
+"protein folding chaperone",1,0.257533418964508
+"metallopeptidase activity",1,0.27184751759417
+"electron transfer activity",1,0.27184751759417
+"translation factor activity, RNA binding",1,0.322489361480509
+"translation regulator activity, nucleic acid binding",1,0.329543037345996
+"isomerase activity",1,0.419545514540765
+"primary active transmembrane transporter activity",1,0.430137859093301
+"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",1,0.430137859093301
+"oxidoreductase activity, acting on CH-OH group of donors",1,0.43242106256024
+"endopeptidase activity",1,0.43242106256024
+"active monoatomic ion transmembrane transporter activity",1,0.43242106256024
+"proton transmembrane transporter activity",1,0.43242106256024
+"GTP binding",1,0.43242106256024
+"guanyl nucleotide binding",1,0.43242106256024
+"guanyl ribonucleotide binding",1,0.43242106256024
+"acyltransferase activity, transferring groups other than amino-acyl groups",1,0.43242106256024
+"translation regulator activity",1,0.456142710005116
+"ligase activity",1,0.468962376825181
+"inorganic cation transmembrane transporter activity",1,0.550460855389369
+"peptidase activity",1,0.550460855389369
+"monoatomic cation transmembrane transporter activity",1,0.550460855389369
+"monoatomic ion transmembrane transporter activity",1,0.559887674822445
+"active transmembrane transporter activity",1,0.559887674822445
+"inorganic molecular entity transmembrane transporter activity",1,0.574874439102257
+"acyltransferase activity",1,0.661459010734721
+"ATP hydrolysis activity",1,0.671540913293902
+"protein-containing complex binding",1,0.683635455608187
+"ATP-dependent activity",1,0.758995504562322
+"ribonucleoside triphosphate phosphatase activity",1,0.758995504562322
+"pyrophosphatase activity",1,0.761997366485259
+"hydrolase activity, acting on acid anhydrides",1,0.761997366485259
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",1,0.761997366485259
+"transmembrane transporter activity",1,0.781880017740086
+"transporter activity",1,0.802332526778946

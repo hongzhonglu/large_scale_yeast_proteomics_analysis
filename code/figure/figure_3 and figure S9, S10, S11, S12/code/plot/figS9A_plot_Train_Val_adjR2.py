@@ -1,6 +1,6 @@
 """
-figS9A: Train/Val adjusted R^2 vs number of features (organelles), 1x4 subplots.
-Output: figS9A_plot_Train_Val_adjR2_1x4.png
+figS9a: Train/Val adjusted R^2 vs number of features (organelles), 1x4 subplots.
+Output: figS9a_plot_Train_Val_adjR2_1x4.png
 """
 import matplotlib.pyplot as plt
 import numpy as np
@@ -135,6 +135,5 @@ for i in range(len(target_variables), len(axes)):
     axes[i].axis('off')
 
 plt.tight_layout()
-out_path = os.path.join(FIGURE_DIR, 'figS9A_plot_Train_Val_adjR2_1x4.png')
+out_path = os.path.join(FIGURE_DIR, 'figS9a_plot_Train_Val_adjR2_1x4.png')
 plt.savefig(out_path, dpi=400, bbox_inches='tight')
-plt.show()

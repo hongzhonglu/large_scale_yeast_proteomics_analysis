@@ -1,23 +1,30 @@
 "Description","Count","p.adjust"
-"Glycolysis / Gluconeogenesis",5,0.000573837849637203
-"Carbon metabolism",6,0.000845821735274869
-"Carbon fixation by Calvin cycle",3,0.00261420333817679
-"Biosynthesis of secondary metabolites",7,0.0424348806844106
-"Biosynthesis of amino acids",4,0.0424348806844106
-"Ribosome",5,0.0429785903387329
-"Methane metabolism",2,0.0429785903387329
-"Citrate cycle (TCA cycle)",2,0.0527028999330864
-"Pyruvate metabolism",2,0.122496268709607
-"RNA degradation",2,0.159550289120719
-"Propanoate metabolism",1,0.191098246177412
-"Oxidative phosphorylation",2,0.191098246177412
-"Fructose and mannose metabolism",1,0.253976852561249
-"Pentose phosphate pathway",1,0.272176081052818
-"Glyoxylate and dicarboxylate metabolism",1,0.272176081052818
-"Longevity regulating pathway - multiple species",1,0.324782683561994
-"Mitophagy - yeast",1,0.326649905165187
-"Cysteine and methionine metabolism",1,0.327912284199541
-"Nucleocytoplasmic transport",1,0.429411315262337
-"Endocytosis",1,0.470110858657153
-"Spliceosome",1,0.477488773160555
-"Protein processing in endoplasmic reticulum",1,0.482860944530546
+"Glycolysis / Gluconeogenesis",7,2.89314125189328e-06
+"Carbon metabolism",6,0.00239600275768379
+"Ribosome",7,0.00377026585739141
+"Carbon fixation by Calvin cycle",3,0.00377026585739141
+"Biosynthesis of amino acids",5,0.0136808166821096
+"Biosynthesis of secondary metabolites",8,0.0203608305139641
+"Pyruvate metabolism",3,0.0305882202431888
+"Fructose and mannose metabolism",2,0.0497139392851931
+"Methane metabolism",2,0.0559635463671728
+"Ascorbate and aldarate metabolism",1,0.236141414358756
+"beta-Alanine metabolism",1,0.236141414358756
+"Valine, leucine and isoleucine degradation",1,0.236141414358756
+"Histidine metabolism",1,0.236141414358756
+"Lysine degradation",1,0.248148686398641
+"Oxidative phosphorylation",2,0.248148686398641
+"Fatty acid degradation",1,0.252274306037736
+"Tryptophan metabolism",1,0.252274306037736
+"Arginine and proline metabolism",1,0.25670898376208
+"Pantothenate and CoA biosynthesis",1,0.25670898376208
+"Pentose phosphate pathway",1,0.291465230614341
+"Citrate cycle (TCA cycle)",1,0.298407703999946
+"Glycerolipid metabolism",1,0.298407703999946
+"ATP-dependent chromatin remodeling",1,0.308786870875398
+"Longevity regulating pathway - multiple species",1,0.317791467390906
+"RNA degradation",1,0.468063698102357
+"Spliceosome",1,0.502892463481225
+"Endocytosis",1,0.502892463481225
+"Protein processing in endoplasmic reticulum",1,0.545005489691113
+"Biosynthesis of cofactors",1,0.660637465274991

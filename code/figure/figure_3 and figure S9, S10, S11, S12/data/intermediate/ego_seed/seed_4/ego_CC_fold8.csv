@@ -1,0 +1,69 @@
+"Description","Count","p.adjust"
+"cytosolic large ribosomal subunit",6,5.72479060614762e-05
+"cytosolic ribosome",7,6.2659003412529e-05
+"large ribosomal subunit",6,0.000204935124360458
+"ribosomal subunit",7,0.000272493241294779
+"ribosome",7,0.000457802828442775
+"nucleoid",2,0.0418522681020823
+"mitochondrial nucleoid",2,0.0418522681020823
+"proteasome regulatory particle, base subcomplex",1,0.232970685257357
+"cytoplasmic side of plasma membrane",1,0.232970685257357
+"fungal-type vacuole membrane",3,0.232970685257357
+"lytic vacuole membrane",3,0.232970685257357
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.232970685257357
+"proton-transporting ATP synthase complex",1,0.232970685257357
+"cation channel complex",1,0.232970685257357
+"cytoplasmic side of membrane",1,0.232970685257357
+"proteasome regulatory particle",1,0.232970685257357
+"proteasome accessory complex",1,0.232970685257357
+"monoatomic ion channel complex",1,0.232970685257357
+"storage vacuole",4,0.232970685257357
+"lytic vacuole",4,0.232970685257357
+"fungal-type vacuole",4,0.232970685257357
+"respiratory chain complex",1,0.232970685257357
+"vacuolar membrane",3,0.243908589775204
+"endoplasmic reticulum-Golgi intermediate compartment",1,0.259898062093893
+"proton-transporting two-sector ATPase complex",1,0.293236757977602
+"proteasome complex",1,0.360275126681593
+"COPII-coated ER to Golgi transport vesicle",1,0.360275126681593
+"transmembrane transporter complex",1,0.360275126681593
+"endopeptidase complex",1,0.38094272037539
+"mitochondrial membrane",3,0.38094272037539
+"actin cortical patch",1,0.38094272037539
+"endocytic patch",1,0.38094272037539
+"cytosolic small ribosomal subunit",1,0.38094272037539
+"transporter complex",1,0.38094272037539
+"mitochondrial matrix",2,0.38094272037539
+"mitochondrial intermembrane space",1,0.38094272037539
+"mitochondrial envelope",3,0.38094272037539
+"cortical actin cytoskeleton",1,0.38094272037539
+"organelle envelope lumen",1,0.38094272037539
+"mitochondrial inner membrane",2,0.38094272037539
+"cytoskeleton",2,0.38094272037539
+"cortical cytoskeleton",1,0.38094272037539
+"peptidase complex",1,0.389676368172389
+"actin cytoskeleton",1,0.389676368172389
+"organelle inner membrane",2,0.389676368172389
+"side of membrane",1,0.403404277057047
+"small ribosomal subunit",1,0.439407980018568
+"coated vesicle",1,0.444408775791151
+"mitochondrial outer membrane",1,0.459148378473001
+"organelle outer membrane",1,0.472875023959816
+"outer membrane",1,0.472875023959816
+"extracellular region",1,0.478001608629315
+"fungal-type cell wall",1,0.478001608629315
+"cell wall",1,0.478001608629315
+"external encapsulating structure",1,0.478001608629315
+"Golgi membrane",1,0.485530453026281
+"cell cortex",1,0.585427274041099
+"cellular bud",1,0.711005506725614
+"Golgi apparatus",1,0.745872383706691
+"membrane protein complex",1,0.745872383706691
+"cytoplasmic vesicle",1,0.745872383706691
+"intracellular vesicle",1,0.745872383706691
+"vesicle",1,0.745872383706691
+"endoplasmic reticulum membrane",1,0.800092946219484
+"endoplasmic reticulum subcompartment",1,0.800092946219484
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.800092946219484
+"intracellular protein-containing complex",1,0.815677826974888
+"organelle subcompartment",1,0.820899544937382

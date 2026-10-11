@@ -1,0 +1,37 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",11,1.92350663698313e-10
+"ribosomal subunit",11,3.3627115735765e-09
+"ribosome",11,7.65376415244895e-09
+"cytosolic large ribosomal subunit",7,2.642111149555e-07
+"large ribosomal subunit",7,3.49353761451371e-06
+"cytosolic small ribosomal subunit",4,0.000399629624017239
+"small ribosomal subunit",4,0.00201745990791574
+"multi-eIF complex",1,0.157326537785817
+"eukaryotic 43S preinitiation complex",1,0.18693489836022
+"mitochondrial outer membrane",2,0.18693489836022
+"translation preinitiation complex",1,0.18693489836022
+"organelle outer membrane",2,0.18693489836022
+"outer membrane",2,0.18693489836022
+"fungal-type cell wall",2,0.18693489836022
+"cell wall",2,0.18693489836022
+"external encapsulating structure",2,0.18693489836022
+"nucleolus",3,0.310608999540376
+"organelle membrane contact site",1,0.343826050877429
+"mitochondrial membrane",3,0.343826050877429
+"lipid droplet",1,0.359634965507522
+"mitochondrial intermembrane space",1,0.359634965507522
+"mitochondrial envelope",3,0.359634965507522
+"organelle envelope lumen",1,0.359634965507522
+"extracellular region",1,0.556247586124943
+"endoplasmic reticulum membrane",2,0.573243585795576
+"endoplasmic reticulum subcompartment",2,0.573243585795576
+"nuclear outer membrane-endoplasmic reticulum membrane network",2,0.573243585795576
+"organelle subcompartment",2,0.643481757570365
+"fungal-type vacuole membrane",1,0.66257712836917
+"lytic vacuole membrane",1,0.66257712836917
+"mitochondrial inner membrane",1,0.705949165229417
+"organelle inner membrane",1,0.713905573124897
+"vacuolar membrane",1,0.713905573124897
+"storage vacuole",1,0.813195813513683
+"lytic vacuole",1,0.813195813513683
+"fungal-type vacuole",1,0.813195813513683

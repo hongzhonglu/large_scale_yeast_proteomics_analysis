@@ -1,20 +1,24 @@
 "Description","Count","p.adjust"
-"Ribosome",10,2.95840888151432e-05
-"Glycolysis / Gluconeogenesis",6,2.95840888151432e-05
-"Carbon fixation by Calvin cycle",4,0.000114982982568507
-"Carbon metabolism",6,0.000957602071594116
-"Biosynthesis of amino acids",5,0.0104284543792673
-"Biosynthesis of secondary metabolites",8,0.0206914286320642
-"Biosynthesis of unsaturated fatty acids",1,0.214493529606236
-"Propanoate metabolism",1,0.276140160009993
-"Oxidative phosphorylation",2,0.284955398483222
-"Fructose and mannose metabolism",1,0.298636708731222
-"Fatty acid metabolism",1,0.298636708731222
-"Methane metabolism",1,0.30182606054697
-"Pentose phosphate pathway",1,0.30182606054697
-"Citrate cycle (TCA cycle)",1,0.306787813198546
-"Longevity regulating pathway - multiple species",1,0.341853582266384
-"Pyruvate metabolism",1,0.416284906882078
-"Endocytosis",1,0.534668547843464
-"Spliceosome",1,0.536720730426291
-"Protein processing in endoplasmic reticulum",1,0.536899780061595
+"Glycolysis / Gluconeogenesis",4,0.017257134073466
+"Carbon metabolism",5,0.017257134073466
+"Carbon fixation by Calvin cycle",2,0.0665773224023262
+"Biosynthesis of amino acids",4,0.0665773224023262
+"Biosynthesis of secondary metabolites",7,0.0665773224023262
+"Methane metabolism",2,0.0665773224023262
+"Oxidative phosphorylation",3,0.0697694836500637
+"Citrate cycle (TCA cycle)",2,0.0697694836500637
+"Ribosome",4,0.144150458173145
+"Pyruvate metabolism",2,0.144150458173145
+"Biosynthesis of unsaturated fatty acids",1,0.160480289787557
+"Fructose and mannose metabolism",1,0.297564524944374
+"Fatty acid metabolism",1,0.297564524944374
+"Lysosome",1,0.308216105937004
+"Pentose phosphate pathway",1,0.308216105937004
+"Protein export",1,0.31640674249466
+"Proteasome",1,0.336055344827164
+"Longevity regulating pathway - multiple species",1,0.336055344827164
+"2-Oxocarboxylic acid metabolism",1,0.346806915989088
+"RNA degradation",1,0.464028666222165
+"Spliceosome",1,0.489492507557744
+"Endocytosis",1,0.489492507557744
+"Protein processing in endoplasmic reticulum",1,0.526212196943144

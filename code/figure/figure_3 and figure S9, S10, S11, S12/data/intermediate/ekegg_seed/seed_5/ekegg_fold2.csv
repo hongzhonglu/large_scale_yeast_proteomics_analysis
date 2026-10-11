@@ -1,25 +1,21 @@
 "Description","Count","p.adjust"
-"Ribosome",9,0.000480477676808437
-"Glycolysis / Gluconeogenesis",4,0.00871121631503725
-"Methane metabolism",3,0.00871121631503725
-"Carbon metabolism",4,0.0716271431262659
-"Oxidative phosphorylation",3,0.120262417141069
-"Biosynthesis of amino acids",3,0.316463797419274
-"Fatty acid biosynthesis",1,0.348160440858511
-"Carbon fixation by Calvin cycle",1,0.361686685034076
-"Fructose and mannose metabolism",1,0.361686685034076
-"Fatty acid metabolism",1,0.361686685034076
-"Biosynthesis of secondary metabolites",5,0.361686685034076
-"Pentose phosphate pathway",1,0.361686685034076
-"Glycine, serine and threonine metabolism",1,0.361686685034076
-"Citrate cycle (TCA cycle)",1,0.361686685034076
-"Protein export",1,0.361686685034076
-"Phagosome",1,0.367705358374295
-"Longevity regulating pathway - multiple species",1,0.381013280544577
-"Pyruvate metabolism",1,0.46740761474479
-"RNA degradation",1,0.477490486895968
-"Nucleocytoplasmic transport",1,0.477490486895968
-"Lysosome biogenesis",1,0.477490486895968
-"Endocytosis",1,0.521877434258692
-"Spliceosome",1,0.530579760970613
-"Protein processing in endoplasmic reticulum",1,0.536899780061595
+"Ribosome",10,1.60347579789553e-05
+"Glycolysis / Gluconeogenesis",5,0.000643776196912915
+"Methane metabolism",3,0.00765606311140749
+"Carbon metabolism",5,0.00949945698457203
+"Carbon fixation by Calvin cycle",2,0.0505525212249676
+"Biosynthesis of amino acids",4,0.0597383085124451
+"Longevity regulating pathway - multiple species",2,0.111034656757169
+"Biosynthesis of secondary metabolites",6,0.168650646610512
+"Propanoate metabolism",1,0.215885504321657
+"Spliceosome",2,0.215885504321657
+"Endocytosis",2,0.215885504321657
+"Oxidative phosphorylation",2,0.215885504321657
+"Steroid biosynthesis",1,0.215885504321657
+"Fructose and mannose metabolism",1,0.236486446598
+"Protein processing in endoplasmic reticulum",2,0.236486446598
+"Pentose phosphate pathway",1,0.255315062210954
+"Glycine, serine and threonine metabolism",1,0.255315062210954
+"Citrate cycle (TCA cycle)",1,0.255315062210954
+"Phagosome",1,0.26224229953155
+"RNA degradation",1,0.418779616977564

@@ -1,0 +1,49 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",9,2.15734658164261e-07
+"ribosomal subunit",9,1.87233843798681e-06
+"ribosome",9,3.33728934479475e-06
+"cytosolic large ribosomal subunit",6,1.01025716579076e-05
+"large ribosomal subunit",6,8.67960526703115e-05
+"cytosolic small ribosomal subunit",3,0.011311702366248
+"small ribosomal subunit",3,0.0356018366243214
+"preribosome, large subunit precursor",2,0.117553427867825
+"preribosome",3,0.117553427867825
+"proteasome regulatory particle, base subcomplex",1,0.167814973638204
+"nucleolus",4,0.181025081616384
+"proteasome regulatory particle",1,0.23420500583092
+"proteasome accessory complex",1,0.23420500583092
+"extracellular region",2,0.23420500583092
+"fungal-type cell wall",2,0.23420500583092
+"cell wall",2,0.23420500583092
+"external encapsulating structure",2,0.23420500583092
+"peroxisome",2,0.23420500583092
+"microbody",2,0.23420500583092
+"peroxisomal membrane",1,0.303605289714292
+"microbody membrane",1,0.303605289714292
+"proteasome complex",1,0.303605289714292
+"endopeptidase complex",1,0.378303552954597
+"mitochondrial inner membrane",2,0.465126255790217
+"peptidase complex",1,0.476075200934593
+"organelle inner membrane",2,0.476075200934593
+"side of membrane",1,0.485139784173181
+"90S preribosome",1,0.490091981721324
+"cellular bud tip",1,0.510987562646715
+"mating projection tip",1,0.530220271756887
+"mating projection",1,0.530220271756887
+"plasma membrane bounded cell projection",1,0.530220271756887
+"cell projection",1,0.530220271756887
+"cell tip",1,0.530220271756887
+"cell pole",1,0.530220271756887
+"mitochondrial membrane",2,0.588254765360879
+"storage vacuole",2,0.592102589992528
+"lytic vacuole",2,0.592102589992528
+"fungal-type vacuole",2,0.592102589992528
+"mitochondrial envelope",2,0.592102589992528
+"nucleoplasm",1,0.604336254555639
+"fungal-type vacuole membrane",1,0.6163508170876
+"lytic vacuole membrane",1,0.6163508170876
+"mitochondrial matrix",1,0.640426186740626
+"cellular bud",1,0.646875598275853
+"site of polarized growth",1,0.668337132287138
+"vacuolar membrane",1,0.668337132287138
+"intracellular protein-containing complex",1,0.803682564813493

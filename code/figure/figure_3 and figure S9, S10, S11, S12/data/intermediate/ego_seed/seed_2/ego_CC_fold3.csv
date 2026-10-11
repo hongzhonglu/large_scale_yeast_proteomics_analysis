@@ -1,0 +1,55 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,5.39437466782383e-06
+"ribosomal subunit",8,3.30986642901005e-05
+"ribosome",8,5.22638579570594e-05
+"cytosolic large ribosomal subunit",5,0.000261570419930286
+"fungal-type cell wall",5,0.000724903023633335
+"cell wall",5,0.000724903023633335
+"external encapsulating structure",5,0.000724903023633335
+"large ribosomal subunit",5,0.000917159888319266
+"cytosolic small ribosomal subunit",3,0.00848377677468599
+"small ribosomal subunit",3,0.0280364463416531
+"lipid droplet",2,0.101357483200543
+"fungal-type vacuole membrane",3,0.156002113305173
+"lytic vacuole membrane",3,0.156002113305173
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.156002113305173
+"vacuolar proton-transporting V-type ATPase complex",1,0.156002113305173
+"proton-transporting V-type ATPase complex",1,0.156002113305173
+"cation-transporting ATPase complex",1,0.156002113305173
+"ATPase dependent transmembrane transport complex",1,0.156002113305173
+"mitochondrial outer membrane",2,0.163802574393985
+"organelle outer membrane",2,0.163802574393985
+"outer membrane",2,0.163802574393985
+"storage vacuole",4,0.163802574393985
+"lytic vacuole",4,0.163802574393985
+"fungal-type vacuole",4,0.163802574393985
+"extracellular region",2,0.163802574393985
+"vacuolar membrane",3,0.171343025170138
+"proton-transporting two-sector ATPase complex",1,0.215615263218825
+"transmembrane transporter complex",1,0.286100835894206
+"cellular bud neck",2,0.300166368752825
+"mitochondrial membrane",3,0.320685201090254
+"actin cortical patch",1,0.320685201090254
+"endocytic patch",1,0.320685201090254
+"transporter complex",1,0.325783593443207
+"mitochondrial intermembrane space",1,0.325783593443207
+"mitochondrial envelope",3,0.325783593443207
+"cortical actin cytoskeleton",1,0.325783593443207
+"organelle envelope lumen",1,0.325783593443207
+"cellular bud",2,0.325783593443207
+"cortical cytoskeleton",1,0.325783593443207
+"ATPase complex",1,0.328724017342764
+"actin cytoskeleton",1,0.33848436370855
+"site of polarized growth",2,0.342700487075823
+"side of membrane",1,0.342700487075823
+"nucleolus",2,0.479127642795356
+"cell cortex",1,0.588870963888399
+"mitochondrial matrix",1,0.687144202324462
+"mitochondrial inner membrane",1,0.687144202324462
+"cytoskeleton",1,0.687144202324462
+"organelle inner membrane",1,0.699337289486555
+"membrane protein complex",1,0.720421315759996
+"endoplasmic reticulum membrane",1,0.791212891322486
+"endoplasmic reticulum subcompartment",1,0.791212891322486
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.791212891322486
+"organelle subcompartment",1,0.820899544937382

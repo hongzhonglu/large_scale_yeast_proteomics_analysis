@@ -1,0 +1,54 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,9.76743288489422e-05
+"ribosomal subunit",7,0.00034230203101988
+"cytosolic large ribosomal subunit",5,0.00034230203101988
+"ribosome",7,0.00044602113800491
+"large ribosomal subunit",5,0.00144028071350877
+"cytosolic small ribosomal subunit",2,0.187861254984847
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.211462087966919
+"small ribosomal subunit",2,0.211462087966919
+"mitochondrial membrane",4,0.211462087966919
+"proton-transporting ATP synthase complex",1,0.211462087966919
+"mitochondrial outer membrane",2,0.211462087966919
+"mitochondrial inner membrane",3,0.211462087966919
+"cation channel complex",1,0.211462087966919
+"organelle outer membrane",2,0.211462087966919
+"outer membrane",2,0.211462087966919
+"monoatomic ion channel complex",1,0.211462087966919
+"organelle inner membrane",3,0.211462087966919
+"respiratory chain complex",1,0.211462087966919
+"mitochondrial envelope",4,0.211462087966919
+"nucleoid",1,0.239677409172896
+"mitochondrial nucleoid",1,0.239677409172896
+"proton-transporting two-sector ATPase complex",1,0.259718385240857
+"transmembrane transporter complex",1,0.33752226505904
+"serine/threonine protein kinase complex",1,0.33752226505904
+"fungal-type vacuole membrane",2,0.33752226505904
+"lytic vacuole membrane",2,0.33752226505904
+"P-body",1,0.33752226505904
+"protein kinase complex",1,0.33752226505904
+"transporter complex",1,0.33752226505904
+"mitochondrial matrix",2,0.33752226505904
+"mitochondrial intermembrane space",1,0.33752226505904
+"storage vacuole",3,0.33752226505904
+"lytic vacuole",3,0.33752226505904
+"fungal-type vacuole",3,0.33752226505904
+"organelle envelope lumen",1,0.347932557899737
+"vacuolar membrane",2,0.409189312339263
+"extracellular region",1,0.499044650376106
+"fungal-type cell wall",1,0.499044650376106
+"cell wall",1,0.499044650376106
+"external encapsulating structure",1,0.499044650376106
+"ribonucleoprotein granule",1,0.499044650376106
+"cytoplasmic ribonucleoprotein granule",1,0.499044650376106
+"transferase complex, transferring phosphorus-containing groups",1,0.549795762311402
+"chromatin",1,0.71684634158543
+"cytoskeleton",1,0.71684634158543
+"supramolecular complex",1,0.71684634158543
+"membrane protein complex",1,0.752212957747829
+"endoplasmic reticulum membrane",1,0.813105467536275
+"endoplasmic reticulum subcompartment",1,0.813105467536275
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.813105467536275
+"transferase complex",1,0.813105467536275
+"intracellular protein-containing complex",1,0.819137998752214
+"organelle subcompartment",1,0.820899544937382

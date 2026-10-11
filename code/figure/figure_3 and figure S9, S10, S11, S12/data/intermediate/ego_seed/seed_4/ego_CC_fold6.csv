@@ -1,0 +1,66 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00181433749151642
+"ribosomal subunit",6,0.00560853204439532
+"ribosome",6,0.00696922096497369
+"cytosolic small ribosomal subunit",3,0.0229768954314412
+"cytosolic large ribosomal subunit",3,0.0562459571668967
+"small ribosomal subunit",3,0.0562459571668967
+"fungal-type cell wall",3,0.0851009206585366
+"cell wall",3,0.0851009206585366
+"external encapsulating structure",3,0.0851009206585366
+"large ribosomal subunit",3,0.0944545810249514
+"lipid droplet",2,0.122004377926579
+"cytoplasmic side of plasma membrane",1,0.172899334887415
+"Hrd1p ubiquitin ligase complex",1,0.172899334887415
+"Hrd1p ubiquitin ligase ERAD-L complex",1,0.172899334887415
+"cytoplasmic ubiquitin ligase complex",1,0.172899334887415
+"ER ubiquitin ligase complex",1,0.172899334887415
+"nucleus-vacuole junction",1,0.172899334887415
+"replisome",1,0.17555793595176
+"cytoplasmic side of membrane",1,0.212398510616411
+"outer mitochondrial membrane protein complex",1,0.212629706048758
+"preribosome, small subunit precursor",1,0.243491282580059
+"nucleoid",1,0.255302505928643
+"mitochondrial nucleoid",1,0.255302505928643
+"membrane raft",1,0.255302505928643
+"membrane microdomain",1,0.255302505928643
+"perinuclear region of cytoplasm",1,0.26153447806128
+"phagophore assembly site",1,0.364464702396595
+"organelle membrane contact site",1,0.401678111174637
+"fungal-type vacuole membrane",2,0.401678111174637
+"lytic vacuole membrane",2,0.401678111174637
+"replication fork",1,0.402115474814275
+"protein-DNA complex",1,0.402115474814275
+"storage vacuole",3,0.402115474814275
+"lytic vacuole",3,0.402115474814275
+"fungal-type vacuole",3,0.402115474814275
+"endoplasmic reticulum protein-containing complex",1,0.464023060330909
+"side of membrane",1,0.464566357673339
+"vacuolar membrane",2,0.464566357673339
+"90S preribosome",1,0.464566357673339
+"nuclear membrane",1,0.464566357673339
+"ubiquitin ligase complex",1,0.469463939941514
+"chromosome, telomeric region",1,0.496946734997929
+"mitochondrial outer membrane",1,0.50013255315886
+"organelle outer membrane",1,0.512281275956468
+"outer membrane",1,0.512281275956468
+"extracellular region",1,0.524001349248135
+"Golgi membrane",1,0.552982117964851
+"mitochondrial protein-containing complex",1,0.576189438182984
+"mitochondrial membrane",2,0.57987892666429
+"nuclear envelope",1,0.57987892666429
+"preribosome",1,0.588830286716791
+"mitochondrial envelope",2,0.616773531242216
+"chromosomal region",1,0.650258207084398
+"mitochondrial matrix",1,0.706643091851154
+"mitochondrial inner membrane",1,0.718428064614786
+"organelle inner membrane",1,0.736570524806441
+"Golgi apparatus",1,0.744790696358252
+"membrane protein complex",1,0.747563625868451
+"nucleolus",1,0.807261043690552
+"endoplasmic reticulum membrane",1,0.807261043690552
+"endoplasmic reticulum subcompartment",1,0.807261043690552
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.807261043690552
+"transferase complex",1,0.807261043690552
+"intracellular protein-containing complex",1,0.816240104888703
+"organelle subcompartment",1,0.820899544937382

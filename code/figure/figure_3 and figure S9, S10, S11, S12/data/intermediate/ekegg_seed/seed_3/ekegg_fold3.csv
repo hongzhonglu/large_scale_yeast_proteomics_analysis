@@ -1,24 +1,24 @@
 "Description","Count","p.adjust"
-"Glycolysis / Gluconeogenesis",6,9.68685371811481e-05
-"Ribosome",8,0.00204961703405077
-"Carbon metabolism",6,0.00204961703405077
-"Carbon fixation by Calvin cycle",3,0.00378764414036551
-"Biosynthesis of amino acids",5,0.0157082769467009
-"Biosynthesis of secondary metabolites",8,0.0344954536906552
-"Methane metabolism",2,0.0661760208297371
-"Oxidative phosphorylation",3,0.0815938548819453
-"Longevity regulating pathway - multiple species",2,0.104655846926551
-"Pyruvate metabolism",2,0.165357005334472
-"Tyrosine metabolism",1,0.221921027619298
-"Propanoate metabolism",1,0.232833156322773
-"Endocytosis",2,0.250759441875015
-"Fatty acid degradation",1,0.250759441875015
-"Spliceosome",2,0.250759441875015
-"Fructose and mannose metabolism",1,0.250759441875015
-"Protein processing in endoplasmic reticulum",2,0.250759441875015
-"Pentose phosphate pathway",1,0.275032068526316
-"Citrate cycle (TCA cycle)",1,0.28505645101386
-"Glycerolipid metabolism",1,0.28600060869061
-"Glycerophospholipid metabolism",1,0.321180640463298
-"RNA degradation",1,0.432673617510511
-"Nucleocytoplasmic transport",1,0.432673617510511
+"Glycolysis / Gluconeogenesis",4,0.00894528004493256
+"Methane metabolism",3,0.00894528004493256
+"Carbon metabolism",5,0.00894528004493256
+"Biosynthesis of amino acids",5,0.00924639421454908
+"Ribosome",6,0.00924639421454908
+"Carbon fixation by Calvin cycle",2,0.0398466470600871
+"Oxidative phosphorylation",3,0.0658124386943489
+"Longevity regulating pathway - multiple species",2,0.0927098452992461
+"Biosynthesis of secondary metabolites",6,0.110253337096372
+"Lysine biosynthesis",1,0.20017459689351
+"Propanoate metabolism",1,0.21929025449268
+"Lysine degradation",1,0.21929025449268
+"Fructose and mannose metabolism",1,0.263620942980915
+"Biosynthesis of nucleotide sugars",1,0.263620942980915
+"Pentose phosphate pathway",1,0.268738348854381
+"Glycine, serine and threonine metabolism",1,0.268738348854381
+"Amino sugar and nucleotide sugar metabolism",1,0.268738348854381
+"Citrate cycle (TCA cycle)",1,0.268738348854381
+"RNA degradation",1,0.469480453528396
+"Spliceosome",1,0.494044432300655
+"Endocytosis",1,0.494044432300655
+"Protein processing in endoplasmic reticulum",1,0.531206609110366
+"Aminoacyl-tRNA biosynthesis",1,0.93594850087822

@@ -1,0 +1,70 @@
+"Description","Count","p.adjust"
+"structural constituent of ribosome",8,5.63539274267388e-05
+"structural molecule activity",8,0.000974235627160559
+"melatonin binding",2,0.00971163534731486
+"lyase activity",4,0.00971163534731486
+"amide binding",2,0.0438270518786021
+"hydro-lyase activity",2,0.0734533070056188
+"carbon-carbon lyase activity",2,0.0734533070056188
+"carbon-oxygen lyase activity",2,0.0899280204896387
+"magnesium ion binding",2,0.149089939257416
+"quaternary ammonium group binding",1,0.197566152278285
+"intramolecular phosphotransferase activity",1,0.197566152278285
+"acid-thiol ligase activity",1,0.197566152278285
+"serine-type endopeptidase activity",1,0.197566152278285
+"ubiquinol-cytochrome-c reductase activity",1,0.197566152278285
+"oxidoreductase activity, acting on diphenols and related substances as donors",1,0.197566152278285
+"endopeptidase activity",2,0.197566152278285
+"sulfur compound binding",1,0.211157141197075
+"serine-type peptidase activity",1,0.225254248238903
+"metalloendopeptidase activity",1,0.225570637054625
+"serine hydrolase activity",1,0.233343523282581
+"ligase activity, forming carbon-sulfur bonds",1,0.233343523282581
+"carboxy-lyase activity",1,0.233343523282581
+"heat shock protein binding",1,0.233343523282581
+"O-acyltransferase activity",1,0.233343523282581
+"intramolecular transferase activity",1,0.233343523282581
+"ATP-dependent protein folding chaperone",1,0.233343523282581
+"oxidoreductase activity, acting on the CH-CH group of donors",1,0.233343523282581
+"oxidoreduction-driven active transmembrane transporter activity",1,0.233343523282581
+"heme binding",1,0.233343523282581
+"tetrapyrrole binding",1,0.233343523282581
+"peptidase activity",2,0.248876285111748
+"oxidoreductase activity",3,0.254020598084745
+"active transmembrane transporter activity",2,0.270574466532739
+"protein folding chaperone",1,0.276253285132936
+"metallopeptidase activity",1,0.290294313430917
+"electron transfer activity",1,0.290294313430917
+"tRNA binding",1,0.293749704125338
+"vitamin binding",1,0.296948039576219
+"carboxylic acid transmembrane transporter activity",1,0.347875423036849
+"organic acid transmembrane transporter activity",1,0.347875423036849
+"organic anion transmembrane transporter activity",1,0.408252967879214
+"isomerase activity",1,0.408252967879214
+"unfolded protein binding",1,0.408252967879214
+"primary active transmembrane transporter activity",1,0.413426054608179
+"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",1,0.413426054608179
+"secondary active transmembrane transporter activity",1,0.413426054608179
+"oxidoreductase activity, acting on CH-OH group of donors",1,0.416080721052237
+"ribosome binding",1,0.429642865577893
+"active monoatomic ion transmembrane transporter activity",1,0.429642865577893
+"proton transmembrane transporter activity",1,0.429642865577893
+"acyltransferase activity, transferring groups other than amino-acyl groups",1,0.43460133682525
+"ribonucleoprotein complex binding",1,0.451955612842377
+"ligase activity",1,0.470984856078335
+"transmembrane transporter activity",2,0.538378798474993
+"inorganic cation transmembrane transporter activity",1,0.552148434553987
+"monoatomic cation transmembrane transporter activity",1,0.552286363328161
+"monoatomic ion transmembrane transporter activity",1,0.55879234689906
+"transporter activity",2,0.55879234689906
+"inorganic molecular entity transmembrane transporter activity",1,0.576266386896694
+"kinase activity",1,0.640825266131513
+"acyltransferase activity",1,0.652009596295653
+"ATP hydrolysis activity",1,0.661947471675417
+"protein-containing complex binding",1,0.673869234813784
+"ATP-dependent activity",1,0.744117689655835
+"ribonucleoside triphosphate phosphatase activity",1,0.744117689655835
+"pyrophosphatase activity",1,0.744117689655835
+"hydrolase activity, acting on acid anhydrides",1,0.744117689655835
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",1,0.744117689655835
+"transferase activity, transferring phosphorus-containing groups",1,0.744117689655835

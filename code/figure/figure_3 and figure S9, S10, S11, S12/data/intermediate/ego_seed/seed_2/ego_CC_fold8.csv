@@ -1,0 +1,46 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,4.49531222318653e-06
+"cytosolic large ribosomal subunit",6,1.83881468278336e-05
+"ribosomal subunit",8,1.83881468278336e-05
+"ribosome",8,3.26649112231621e-05
+"large ribosomal subunit",6,8.1371299378417e-05
+"cytosolic small ribosomal subunit",2,0.159504839138078
+"cytoplasmic side of plasma membrane",1,0.246809368320869
+"small ribosomal subunit",2,0.276900887679987
+"cytoplasmic side of membrane",1,0.287592151323415
+"preribosome, small subunit precursor",1,0.287592151323415
+"fungal-type cell wall",2,0.287592151323415
+"cell wall",2,0.287592151323415
+"external encapsulating structure",2,0.287592151323415
+"preribosome",2,0.396554532872088
+"actin cortical patch",1,0.503957747315529
+"endocytic patch",1,0.503957747315529
+"preribosome, large subunit precursor",1,0.503957747315529
+"lipid droplet",1,0.503957747315529
+"cortical actin cytoskeleton",1,0.529398339345211
+"cortical cytoskeleton",1,0.529398339345211
+"actin cytoskeleton",1,0.550708686986133
+"side of membrane",1,0.558186399403802
+"90S preribosome",1,0.559344109573251
+"mitochondrial outer membrane",1,0.613828156101685
+"organelle outer membrane",1,0.613828156101685
+"outer membrane",1,0.613828156101685
+"extracellular region",1,0.618052873472159
+"nucleolus",2,0.627429056041538
+"mitochondrial membrane",2,0.649678163040325
+"storage vacuole",2,0.649678163040325
+"lytic vacuole",2,0.649678163040325
+"fungal-type vacuole",2,0.649678163040325
+"cell cortex",1,0.649678163040325
+"mitochondrial envelope",2,0.649678163040325
+"nucleoplasm",1,0.649678163040325
+"cellular bud neck",1,0.649678163040325
+"fungal-type vacuole membrane",1,0.653859008259049
+"lytic vacuole membrane",1,0.653859008259049
+"cellular bud",1,0.669286474804591
+"mitochondrial inner membrane",1,0.669286474804591
+"cytoskeleton",1,0.669286474804591
+"organelle inner membrane",1,0.669286474804591
+"site of polarized growth",1,0.669286474804591
+"vacuolar membrane",1,0.669286474804591
+"intracellular protein-containing complex",1,0.803682564813493

@@ -1,0 +1,58 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",5,0.00996151028146474
+"cytosolic large ribosomal subunit",4,0.00996151028146474
+"ribosomal subunit",5,0.0168919222566624
+"proton-transporting ATP synthase complex",2,0.0168919222566624
+"large ribosomal subunit",4,0.0168919222566624
+"cation channel complex",2,0.0168919222566624
+"monoatomic ion channel complex",2,0.0168919222566624
+"ribosome",5,0.0168919222566624
+"respiratory chain complex",2,0.0168919222566624
+"nucleoid",2,0.0223249398031161
+"mitochondrial nucleoid",2,0.0223249398031161
+"proton-transporting two-sector ATPase complex",2,0.0266225116398835
+"transmembrane transporter complex",2,0.0476973170291067
+"mitochondrial inner membrane",4,0.048709712789214
+"organelle inner membrane",4,0.0578497915513759
+"transporter complex",2,0.0780027676061589
+"cytoplasmic side of plasma membrane",1,0.121576466617317
+"proton-transporting ATP synthase complex, coupling factor F(o)",1,0.121576466617317
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.135659478142433
+"guanyl-nucleotide exchange factor complex",1,0.145518054423548
+"mitochondrial matrix",3,0.145518054423548
+"mitochondrial membrane",4,0.146610674501218
+"proton-transporting two-sector ATPase complex, proton-transporting domain",1,0.147453581408701
+"cytoplasmic side of membrane",1,0.147453581408701
+"mitochondrial envelope",4,0.172840333032584
+"fungal-type vacuole membrane",2,0.372539572131815
+"lytic vacuole membrane",2,0.372539572131815
+"actin cortical patch",1,0.372539572131815
+"endocytic patch",1,0.372539572131815
+"cytosolic small ribosomal subunit",1,0.372539572131815
+"storage vacuole",3,0.372539572131815
+"lytic vacuole",3,0.372539572131815
+"fungal-type vacuole",3,0.372539572131815
+"cortical actin cytoskeleton",1,0.372539572131815
+"cytoskeleton",2,0.372539572131815
+"cortical cytoskeleton",1,0.372539572131815
+"actin cytoskeleton",1,0.395914893887328
+"side of membrane",1,0.406219868853492
+"vacuolar membrane",2,0.406219868853492
+"membrane protein complex",2,0.412175762769518
+"cytoplasmic stress granule",1,0.412175762769518
+"small ribosomal subunit",1,0.412175762769518
+"extracellular region",1,0.465130013823496
+"fungal-type cell wall",1,0.465130013823496
+"cell wall",1,0.465130013823496
+"external encapsulating structure",1,0.465130013823496
+"ribonucleoprotein granule",1,0.465130013823496
+"cytoplasmic ribonucleoprotein granule",1,0.465130013823496
+"Golgi membrane",1,0.465130013823496
+"intracellular protein-containing complex",2,0.537948768515664
+"cell cortex",1,0.548458250680372
+"cellular bud neck",1,0.569717773743054
+"cellular bud",1,0.652215373261621
+"supramolecular complex",1,0.656733440823549
+"site of polarized growth",1,0.664787080348341
+"Golgi apparatus",1,0.664787080348341
+"transferase complex",1,0.782422242346227

@@ -1,0 +1,86 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,8.49114531046344e-06
+"ribosome",8,0.000123400775731946
+"ribosomal subunit",7,0.000411731216556931
+"cytosolic large ribosomal subunit",5,0.000411731216556931
+"large ribosomal subunit",5,0.00230988416317445
+"nucleoid",2,0.0523153351276029
+"mitochondrial nucleoid",2,0.0523153351276029
+"cytosolic small ribosomal subunit",2,0.225965188778943
+"Hrd1p ubiquitin ligase complex",1,0.243516725833236
+"Hrd1p ubiquitin ligase ERAD-L complex",1,0.243516725833236
+"cytoplasmic ubiquitin ligase complex",1,0.243516725833236
+"ER ubiquitin ligase complex",1,0.243516725833236
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.243516725833236
+"replisome",1,0.243516725833236
+"small ribosomal subunit",2,0.243516725833236
+"guanyl-nucleotide exchange factor complex",1,0.243516725833236
+"mitochondrial membrane",4,0.243516725833236
+"proton-transporting ATP synthase complex",1,0.243516725833236
+"mitochondrial inner membrane",3,0.243516725833236
+"cation channel complex",1,0.243516725833236
+"outer mitochondrial membrane protein complex",1,0.243516725833236
+"monoatomic ion channel complex",1,0.243516725833236
+"organelle inner membrane",3,0.243516725833236
+"respiratory chain complex",1,0.243516725833236
+"mitochondrial envelope",4,0.243516725833236
+"preribosome, small subunit precursor",1,0.243516725833236
+"fungal-type cell wall",2,0.243516725833236
+"cell wall",2,0.243516725833236
+"external encapsulating structure",2,0.243516725833236
+"proton-transporting two-sector ATPase complex",1,0.305454956226668
+"transmembrane transporter complex",1,0.406762239801799
+"actin cortical patch",1,0.47622420236892
+"endocytic patch",1,0.47622420236892
+"replication fork",1,0.47622420236892
+"lipid droplet",1,0.47622420236892
+"protein-DNA complex",1,0.47622420236892
+"transporter complex",1,0.47622420236892
+"mitochondrial matrix",2,0.478817787415321
+"cortical actin cytoskeleton",1,0.494725762605084
+"cortical cytoskeleton",1,0.499987320492699
+"actin cytoskeleton",1,0.520113759931348
+"endoplasmic reticulum protein-containing complex",1,0.520113759931348
+"site of polarized growth",2,0.528251950569535
+"90S preribosome",1,0.544703215228478
+"membrane protein complex",2,0.544703215228478
+"ubiquitin ligase complex",1,0.544703215228478
+"cytoplasmic stress granule",1,0.544703215228478
+"mitochondrial outer membrane",1,0.566452195197328
+"organelle outer membrane",1,0.566452195197328
+"outer membrane",1,0.566452195197328
+"mating projection tip",1,0.566452195197328
+"extracellular region",1,0.566452195197328
+"mating projection",1,0.566452195197328
+"plasma membrane bounded cell projection",1,0.566452195197328
+"cell projection",1,0.566452195197328
+"cell tip",1,0.566452195197328
+"cell pole",1,0.566452195197328
+"ribonucleoprotein granule",1,0.566452195197328
+"cytoplasmic ribonucleoprotein granule",1,0.566452195197328
+"Golgi membrane",1,0.566452195197328
+"endoplasmic reticulum membrane",2,0.571004353038562
+"endoplasmic reticulum subcompartment",2,0.571004353038562
+"mitochondrial protein-containing complex",1,0.571004353038562
+"nuclear outer membrane-endoplasmic reticulum membrane network",2,0.571004353038562
+"preribosome",1,0.594552782272607
+"intracellular protein-containing complex",2,0.594552782272607
+"storage vacuole",2,0.594552782272607
+"lytic vacuole",2,0.594552782272607
+"fungal-type vacuole",2,0.594552782272607
+"cell cortex",1,0.594552782272607
+"organelle subcompartment",2,0.594552782272607
+"endosome",1,0.594552782272607
+"cellular bud neck",1,0.605179658722494
+"fungal-type vacuole membrane",1,0.625767287904216
+"lytic vacuole membrane",1,0.625767287904216
+"cellular bud",1,0.674254051342907
+"cytoskeleton",1,0.674254051342907
+"supramolecular complex",1,0.678004159554676
+"Golgi apparatus",1,0.695314282158103
+"vacuolar membrane",1,0.695314282158103
+"cytoplasmic vesicle",1,0.706583360360283
+"intracellular vesicle",1,0.706583360360283
+"vesicle",1,0.707680123095204
+"nucleolus",1,0.757651519860073
+"transferase complex",1,0.782422242346227

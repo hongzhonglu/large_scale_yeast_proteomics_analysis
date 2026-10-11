@@ -1,0 +1,57 @@
+"Description","Count","p.adjust"
+"mitochondrial inner membrane",6,0.00637842730880639
+"organelle inner membrane",6,0.00637842730880639
+"cytosolic ribosome",5,0.00637842730880639
+"ribosomal subunit",5,0.0210969960079417
+"ribosome",5,0.0216253989775551
+"respiratory chain complex",2,0.0216253989775551
+"mitochondrial membrane",6,0.0216253989775551
+"mitochondrial envelope",6,0.0296891225006222
+"cytosolic large ribosomal subunit",3,0.0296891225006222
+"transmembrane transporter complex",2,0.050758418948997
+"fungal-type cell wall",3,0.050758418948997
+"cell wall",3,0.050758418948997
+"external encapsulating structure",3,0.050758418948997
+"large ribosomal subunit",3,0.0581258960153547
+"cytosolic small ribosomal subunit",2,0.0766342979990333
+"transporter complex",2,0.0766342979990333
+"cytoplasmic side of plasma membrane",1,0.121835003491813
+"side of membrane",2,0.121835003491813
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.133279487297829
+"small ribosomal subunit",2,0.137835108534038
+"proton-transporting ATP synthase complex",1,0.15116522762265
+"cation channel complex",1,0.15116522762265
+"cytoplasmic side of membrane",1,0.15116522762265
+"monoatomic ion channel complex",1,0.168158814045714
+"extracellular region",2,0.169869336408577
+"oxidoreductase complex",1,0.183550493610594
+"Golgi stack",1,0.215615263218825
+"proton-transporting two-sector ATPase complex",1,0.215615263218825
+"small-subunit processome",1,0.344358681288154
+"lipid droplet",1,0.349979487631822
+"mitochondrial intermembrane space",1,0.349979487631822
+"storage vacuole",3,0.349979487631822
+"lytic vacuole",3,0.349979487631822
+"fungal-type vacuole",3,0.349979487631822
+"Golgi apparatus subcompartment",1,0.349979487631822
+"organelle envelope lumen",1,0.349979487631822
+"cellular bud",2,0.349979487631822
+"site of polarized growth",2,0.393817553241932
+"90S preribosome",1,0.407856232644402
+"membrane protein complex",2,0.407856232644402
+"cellular bud tip",1,0.421668598444241
+"mating projection tip",1,0.460652363760416
+"mating projection",1,0.460652363760416
+"plasma membrane bounded cell projection",1,0.460652363760416
+"cell projection",1,0.460652363760416
+"cell tip",1,0.460652363760416
+"cell pole",1,0.460652363760416
+"preribosome",1,0.539006185533063
+"cellular bud neck",1,0.593991463351154
+"fungal-type vacuole membrane",1,0.606279725305123
+"lytic vacuole membrane",1,0.606279725305123
+"mitochondrial matrix",1,0.632215594602926
+"Golgi apparatus",1,0.678650976921199
+"vacuolar membrane",1,0.678650976921199
+"nucleolus",1,0.762351390250649
+"organelle subcompartment",1,0.820899544937382

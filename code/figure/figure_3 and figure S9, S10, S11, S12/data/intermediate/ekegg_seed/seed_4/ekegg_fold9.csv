@@ -1,29 +1,23 @@
 "Description","Count","p.adjust"
-"Glycolysis / Gluconeogenesis",5,0.00073033908135644
-"Carbon fixation by Calvin cycle",3,0.00340700280211718
-"Ribosome",7,0.00340700280211718
-"Carbon metabolism",4,0.0473090837637935
-"Biosynthesis of amino acids",4,0.0503007165987263
-"Fructose and mannose metabolism",2,0.0503007165987263
-"Methane metabolism",2,0.0547000240674782
-"Oxidative phosphorylation",3,0.0574765665454964
-"Ascorbate and aldarate metabolism",1,0.214034066959516
-"beta-Alanine metabolism",1,0.214034066959516
-"Valine, leucine and isoleucine degradation",1,0.214034066959516
-"Histidine metabolism",1,0.214034066959516
-"Lysine degradation",1,0.214034066959516
-"Biosynthesis of secondary metabolites",5,0.214034066959516
-"Fatty acid degradation",1,0.230624399620883
-"Tryptophan metabolism",1,0.230624399620883
-"Arginine and proline metabolism",1,0.233453470536098
-"Pantothenate and CoA biosynthesis",1,0.233453470536098
-"Pentose phosphate pathway",1,0.26490546001278
-"Glycerolipid metabolism",1,0.291839157476097
-"Proteasome",1,0.300290769104271
-"Longevity regulating pathway - multiple species",1,0.300625293875564
-"Pyruvate metabolism",1,0.376291977831941
-"RNA degradation",1,0.427345574508938
-"Endocytosis",1,0.478658328814556
-"Spliceosome",1,0.490845102479731
-"Protein processing in endoplasmic reticulum",1,0.500744683216863
-"Biosynthesis of cofactors",1,0.614752650002242
+"Glycolysis / Gluconeogenesis",4,0.0167318461675555
+"Ribosome",6,0.0217209145294686
+"Oxidative phosphorylation",4,0.0217209145294686
+"Carbon metabolism",4,0.0505646720428044
+"Carbon fixation by Calvin cycle",2,0.0505646720428044
+"Biosynthesis of amino acids",4,0.0545851338950749
+"Methane metabolism",2,0.0545851338950749
+"Longevity regulating pathway - multiple species",2,0.097607651805525
+"Biosynthesis of secondary metabolites",6,0.133179140625756
+"Propanoate metabolism",1,0.230425561438548
+"Spliceosome",2,0.230425561438548
+"Endocytosis",2,0.230425561438548
+"Protein processing in endoplasmic reticulum",2,0.256452239450958
+"Fructose and mannose metabolism",1,0.256452239450958
+"One carbon pool by folate",1,0.256452239450958
+"Pentose phosphate pathway",1,0.269022157869856
+"Glycine, serine and threonine metabolism",1,0.269022157869856
+"Citrate cycle (TCA cycle)",1,0.269022157869856
+"Mitophagy - yeast",1,0.318231883149807
+"Cysteine and methionine metabolism",1,0.327767640272063
+"Nucleocytoplasmic transport",1,0.427808472159684
+"Biosynthesis of cofactors",1,0.660637465274991

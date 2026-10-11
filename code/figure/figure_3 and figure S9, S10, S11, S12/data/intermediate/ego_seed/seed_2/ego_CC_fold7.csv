@@ -1,0 +1,48 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,8.66168576584959e-05
+"ribosomal subunit",7,0.000303550857696875
+"cytosolic large ribosomal subunit",5,0.000303550857696875
+"ribosome",7,0.000395528178985486
+"large ribosomal subunit",5,0.00127723006669646
+"fungal-type cell wall",4,0.00708639012749116
+"cell wall",4,0.00708639012749116
+"external encapsulating structure",4,0.00708639012749116
+"lipid droplet",2,0.099956365859862
+"cytosolic small ribosomal subunit",2,0.099956365859862
+"mitochondrial intermembrane space",2,0.101803064815079
+"organelle envelope lumen",2,0.106511722653352
+"Prp19 complex",1,0.128889336789787
+"U2-type catalytic step 2 spliceosome",1,0.128889336789787
+"U2-type catalytic step 1 spliceosome",1,0.132833239014466
+"catalytic step 1 spliceosome",1,0.132833239014466
+"small ribosomal subunit",2,0.136097691199575
+"mitochondrial membrane",4,0.147753837655224
+"cell surface",1,0.147892859019396
+"storage vacuole",4,0.147892859019396
+"lytic vacuole",4,0.147892859019396
+"fungal-type vacuole",4,0.147892859019396
+"mitochondrial envelope",4,0.147892859019396
+"extracellular region",2,0.147892859019396
+"preribosome, small subunit precursor",1,0.147892859019396
+"nucleoid",1,0.165312091442102
+"mitochondrial nucleoid",1,0.165312091442102
+"catalytic step 2 spliceosome",1,0.1863056050243
+"fungal-type vacuole membrane",2,0.290444172695506
+"lytic vacuole membrane",2,0.290444172695506
+"U2-type spliceosomal complex",1,0.301271661199746
+"mitochondrial matrix",2,0.31440020894256
+"mitochondrial inner membrane",2,0.331226273062731
+"organelle inner membrane",2,0.356472975209603
+"vacuolar membrane",2,0.373233593788697
+"90S preribosome",1,0.373241347190546
+"spliceosomal complex",1,0.379379549930454
+"mitochondrial outer membrane",1,0.409217769204072
+"organelle outer membrane",1,0.416721114864588
+"outer membrane",1,0.416721114864588
+"preribosome",1,0.529615833868724
+"nucleolus",1,0.811074614108771
+"endoplasmic reticulum membrane",1,0.811074614108771
+"endoplasmic reticulum subcompartment",1,0.811074614108771
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.811074614108771
+"intracellular protein-containing complex",1,0.820899544937382
+"organelle subcompartment",1,0.820899544937382

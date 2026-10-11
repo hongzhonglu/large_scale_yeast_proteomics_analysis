@@ -1,0 +1,72 @@
+"Description","Count","p.adjust"
+"cytosolic large ribosomal subunit",5,0.000990907399212817
+"cytosolic ribosome",6,0.000990907399212817
+"large ribosomal subunit",5,0.0030631213473236
+"ribosomal subunit",6,0.0030631213473236
+"ribosome",6,0.00456752020165968
+"proton-transporting two-sector ATPase complex, catalytic domain",2,0.0108661126553896
+"proton-transporting ATP synthase complex",2,0.0158140519610043
+"cation channel complex",2,0.0158140519610043
+"monoatomic ion channel complex",2,0.0189367338982584
+"respiratory chain complex",2,0.0189367338982584
+"proton-transporting two-sector ATPase complex",2,0.0361760445250092
+"transmembrane transporter complex",2,0.0557738341546717
+"fungal-type cell wall",3,0.0557738341546717
+"cell wall",3,0.0557738341546717
+"external encapsulating structure",3,0.0557738341546717
+"transporter complex",2,0.0971613421059172
+"cytoplasmic side of plasma membrane",1,0.15446937942712
+"side of membrane",2,0.15446937942712
+"Swr1 complex",1,0.163814292916543
+"SWI/SNF complex",1,0.163814292916543
+"Ino80 complex",1,0.163814292916543
+"NuA4 histone acetyltransferase complex",1,0.163814292916543
+"H4/H2A histone acetyltransferase complex",1,0.163814292916543
+"H4 histone acetyltransferase complex",1,0.163814292916543
+"cytoplasmic side of membrane",1,0.176323440505562
+"extracellular region",2,0.206863534089383
+"preribosome, small subunit precursor",1,0.206863534089383
+"INO80-type complex",1,0.224754098790433
+"nucleoid",1,0.224754098790433
+"mitochondrial nucleoid",1,0.224754098790433
+"preribosome",2,0.282562871451509
+"histone acetyltransferase complex",1,0.329148415369029
+"protein acetyltransferase complex",1,0.357515905156877
+"acetyltransferase complex",1,0.357515905156877
+"histone deacetylase complex",1,0.357515905156877
+"SWI/SNF superfamily-type complex",1,0.357515905156877
+"preribosome, large subunit precursor",1,0.357515905156877
+"lipid droplet",1,0.357515905156877
+"cytosolic small ribosomal subunit",1,0.357515905156877
+"mitochondrial matrix",2,0.357515905156877
+"storage vacuole",3,0.357515905156877
+"lytic vacuole",3,0.357515905156877
+"fungal-type vacuole",3,0.357515905156877
+"mitochondrial inner membrane",2,0.375272320012562
+"ATPase complex",1,0.384187740433518
+"organelle inner membrane",2,0.398023016723396
+"90S preribosome",1,0.430919531514175
+"membrane protein complex",2,0.430919531514175
+"small ribosomal subunit",1,0.438384746453994
+"cellular bud tip",1,0.438384746453994
+"mating projection tip",1,0.486288094896911
+"mating projection",1,0.486288094896911
+"plasma membrane bounded cell projection",1,0.486288094896911
+"cell projection",1,0.486288094896911
+"cell tip",1,0.486288094896911
+"cell pole",1,0.486288094896911
+"nucleolus",2,0.486288094896911
+"Golgi membrane",1,0.489469848182681
+"mitochondrial membrane",2,0.530924851787573
+"nuclear chromosome",1,0.549027888352715
+"mitochondrial envelope",2,0.574307156959965
+"nucleoplasm",1,0.591136705985036
+"fungal-type vacuole membrane",1,0.612538751487123
+"lytic vacuole membrane",1,0.612538751487123
+"cellular bud",1,0.653953751123715
+"chromatin",1,0.653953751123715
+"site of polarized growth",1,0.673381947597276
+"Golgi apparatus",1,0.673381947597276
+"vacuolar membrane",1,0.673381947597276
+"transferase complex",1,0.793599702951173
+"intracellular protein-containing complex",1,0.803682564813493

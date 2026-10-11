@@ -1,0 +1,84 @@
+"Description","Count","p.adjust"
+"magnesium ion binding",5,0.000153914724449199
+"melatonin binding",3,0.00019179070293681
+"amide binding",3,0.00208768892646088
+"structural constituent of ribosome",6,0.00266862302604779
+"lyase activity",4,0.00934568966756097
+"ubiquinol-cytochrome-c reductase activity",2,0.0108979467195296
+"oxidoreductase activity, acting on diphenols and related substances as donors",2,0.0108979467195296
+"structural molecule activity",6,0.0170147191423749
+"oxidoreduction-driven active transmembrane transporter activity",2,0.045567974597673
+"proton transmembrane transporter activity",3,0.0468239683104745
+"hydro-lyase activity",2,0.0515415113167446
+"carbon-carbon lyase activity",2,0.0515415113167446
+"carbon-oxygen lyase activity",2,0.0665687910870904
+"electron transfer activity",2,0.0673391542302174
+"vitamin binding",2,0.0737508378646066
+"inorganic cation transmembrane transporter activity",3,0.0961819908595015
+"monoatomic cation transmembrane transporter activity",3,0.0965905908794684
+"monoatomic ion transmembrane transporter activity",3,0.103315243611675
+"inorganic molecular entity transmembrane transporter activity",3,0.121515361206641
+"oxidoreductase activity",4,0.12543832527911
+"pseudouridine synthase activity",1,0.137793350706367
+"primary active transmembrane transporter activity",2,0.137793350706367
+"quaternary ammonium group binding",1,0.137793350706367
+"transferase activity, transferring phosphorus-containing groups",4,0.137793350706367
+"acid-thiol ligase activity",1,0.138878992837776
+"palmitoyltransferase activity",1,0.144421112324489
+"phosphotransferase activity, for other substituted phosphate groups",1,0.148647392380912
+"active monoatomic ion transmembrane transporter activity",2,0.148647392380912
+"sulfur compound binding",1,0.148896914657208
+"acyltransferase activity, transferring groups other than amino-acyl groups",2,0.153651176749379
+"metalloendopeptidase activity",1,0.156225250169145
+"proton channel activity",1,0.156225250169145
+"proton-transporting ATP synthase activity, rotational mechanism",1,0.156225250169145
+"NADP binding",1,0.166231298586517
+"ligase activity",2,0.166231298586517
+"ligase activity, forming carbon-sulfur bonds",1,0.166231298586517
+"ATPase activator activity",1,0.169155231227856
+"carboxy-lyase activity",1,0.174481383758132
+"heat shock protein binding",1,0.174481383758132
+"intramolecular transferase activity",1,0.174930643397685
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",1,0.174930643397685
+"ATP-dependent protein folding chaperone",1,0.174930643397685
+"monoatomic cation channel activity",1,0.177136211627585
+"heme binding",1,0.183057773463651
+"tetrapyrrole binding",1,0.183057773463651
+"NAD binding",1,0.183057773463651
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors",1,0.184824775490073
+"monoatomic ion channel activity",1,0.186499228359421
+"ATPase regulator activity",1,0.207368578879638
+"active transmembrane transporter activity",2,0.207368578879638
+"pyridoxal phosphate binding",1,0.207368578879638
+"vitamin B6 binding",1,0.207368578879638
+"protein folding chaperone",1,0.213176584808626
+"metallopeptidase activity",1,0.224482248584778
+"channel activity",1,0.224482248584778
+"passive transmembrane transporter activity",1,0.224482248584778
+"phosphotransferase activity, alcohol group as acceptor",2,0.225413628527964
+"tRNA binding",1,0.225413628527964
+"transmembrane transporter activity",3,0.235523424084273
+"kinase activity",2,0.262000020479229
+"transporter activity",3,0.274460640540044
+"acyltransferase activity",2,0.274460640540044
+"isomerase activity",1,0.329949013215787
+"unfolded protein binding",1,0.329949013215787
+"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",1,0.345244716793129
+"oxidoreductase activity, acting on CH-OH group of donors",1,0.356418729210535
+"endopeptidase activity",1,0.363827805744669
+"catalytic activity, acting on a tRNA",1,0.376967732869513
+"protein serine kinase activity",1,0.421126685444438
+"protein serine/threonine kinase activity",1,0.431697593883783
+"nucleotidyltransferase activity",1,0.43898744254107
+"protein kinase activity",1,0.445847804018583
+"peptidase activity",1,0.500483828687183
+"molecular function activator activity",1,0.500483828687183
+"ATP hydrolysis activity",1,0.658238007582937
+"catalytic activity, acting on RNA",1,0.739382813250401
+"ATP-dependent activity",1,0.749959843793723
+"ribonucleoside triphosphate phosphatase activity",1,0.749959843793723
+"pyrophosphatase activity",1,0.758503198667161
+"hydrolase activity, acting on acid anhydrides",1,0.758503198667161
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",1,0.758503198667161
+"molecular function regulator activity",1,0.76279471052739
+"catalytic activity, acting on a nucleic acid",1,0.8147700328736

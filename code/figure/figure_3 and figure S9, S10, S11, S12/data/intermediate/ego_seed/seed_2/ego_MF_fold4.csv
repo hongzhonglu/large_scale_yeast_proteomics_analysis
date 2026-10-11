@@ -1,0 +1,70 @@
+"Description","Count","p.adjust"
+"structural constituent of ribosome",7,0.000779514798993048
+"structural molecule activity",8,0.000974235627160559
+"magnesium ion binding",4,0.00126939894207768
+"lyase activity",4,0.00971163534731486
+"hydro-lyase activity",2,0.0856955248398886
+"carbon-carbon lyase activity",2,0.0856955248398886
+"carbon-oxygen lyase activity",2,0.102774880559587
+"melatonin binding",1,0.210614459728496
+"oxidoreductase activity, acting on the CH-NH group of donors, NAD or NADP as acceptor",1,0.210614459728496
+"quaternary ammonium group binding",1,0.210614459728496
+"aldehyde dehydrogenase (NAD+) activity",1,0.210614459728496
+"intramolecular phosphotransferase activity",1,0.210614459728496
+"aldehyde dehydrogenase [NAD(P)+] activity",1,0.210614459728496
+"5'-3' exonuclease activity",1,0.210614459728496
+"phosphotransferase activity, for other substituted phosphate groups",1,0.210614459728496
+"oxidoreductase activity, acting on the CH-NH group of donors",1,0.210614459728496
+"sulfur compound binding",1,0.210614459728496
+"metalloendopeptidase activity",1,0.210614459728496
+"phosphatase activity",2,0.210614459728496
+"DNA endonuclease activity",1,0.210614459728496
+"ATPase activator activity",1,0.210614459728496
+"carboxy-lyase activity",1,0.210614459728496
+"heat shock protein binding",1,0.210614459728496
+"amide binding",1,0.210614459728496
+"phosphoric ester hydrolase activity",2,0.210614459728496
+"intramolecular transferase activity",1,0.210614459728496
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",1,0.210614459728496
+"4 iron, 4 sulfur cluster binding",1,0.210614459728496
+"ATP-dependent protein folding chaperone",1,0.210614459728496
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors",1,0.240064300165722
+"DNA nuclease activity",1,0.240064300165722
+"oxidoreductase activity",3,0.248823697226501
+"ATPase regulator activity",1,0.248823697226501
+"protein folding chaperone",1,0.248823697226501
+"hydrolase activity, acting on ester bonds",3,0.248823697226501
+"transferase activity, transferring phosphorus-containing groups",3,0.248823697226501
+"exonuclease activity",1,0.248823697226501
+"structural constituent of cell wall",1,0.248823697226501
+"catalytic activity, acting on DNA",2,0.248823697226501
+"metallopeptidase activity",1,0.248823697226501
+"iron-sulfur cluster binding",1,0.248823697226501
+"metal cluster binding",1,0.248823697226501
+"tRNA binding",1,0.250756122308807
+"phosphoprotein phosphatase activity",1,0.250756122308807
+"vitamin binding",1,0.250756122308807
+"kinase activity",2,0.284096407748561
+"single-stranded DNA binding",1,0.316937499568504
+"endonuclease activity, active with either ribo- or deoxyribonucleic acids and producing 5'-phosphomonoesters",1,0.342313750062611
+"isomerase activity",1,0.351097552376124
+"unfolded protein binding",1,0.351097552376124
+"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",1,0.365797910422202
+"oxidoreductase activity, acting on CH-OH group of donors",1,0.376072959412599
+"endopeptidase activity",1,0.382354159117437
+"acyltransferase activity, transferring groups other than amino-acyl groups",1,0.410456818112736
+"endonuclease activity",1,0.453858134039123
+"nuclease activity",1,0.530841385391931
+"peptidase activity",1,0.530841385391931
+"molecular function activator activity",1,0.530841385391931
+"catalytic activity, acting on a nucleic acid",2,0.573186128331793
+"phosphotransferase activity, alcohol group as acceptor",1,0.589726203132483
+"acyltransferase activity",1,0.652009596295653
+"ATP hydrolysis activity",1,0.661947471675417
+"double-stranded DNA binding",1,0.690727048767522
+"ATP-dependent activity",1,0.748152711640003
+"ribonucleoside triphosphate phosphatase activity",1,0.748152711640003
+"pyrophosphatase activity",1,0.751111689821184
+"hydrolase activity, acting on acid anhydrides",1,0.751111689821184
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",1,0.751111689821184
+"molecular function regulator activity",1,0.753604412810192

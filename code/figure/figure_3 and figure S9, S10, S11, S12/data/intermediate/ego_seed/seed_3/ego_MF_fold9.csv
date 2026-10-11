@@ -1,0 +1,74 @@
+"Description","Count","p.adjust"
+"structural constituent of ribosome",6,0.00863900300614217
+"structural molecule activity",7,0.00863900300614217
+"melatonin binding",2,0.0129867568145451
+"ubiquinol-cytochrome-c reductase activity",2,0.0134189175269388
+"oxidoreductase activity, acting on diphenols and related substances as donors",2,0.0134189175269388
+"magnesium ion binding",3,0.0149837973985638
+"metalloendopeptidase activity",2,0.0185992303013881
+"amide binding",2,0.0289798440863945
+"oxidoreduction-driven active transmembrane transporter activity",2,0.0400778571762666
+"lyase activity",3,0.0493582856617434
+"carbon-carbon lyase activity",2,0.049452753464916
+"metallopeptidase activity",2,0.0637818495118463
+"electron transfer activity",2,0.0637818495118463
+"active transmembrane transporter activity",3,0.124024447365823
+"inorganic molecular entity transmembrane transporter activity",3,0.135374944573181
+"unfolded protein binding",2,0.140196690849452
+"acyltransferase activity, acyl groups converted into alkyl on transfer",1,0.140196690849452
+"peptidase regulator activity",1,0.140196690849452
+"primary active transmembrane transporter activity",2,0.140196690849452
+"quaternary ammonium group binding",1,0.140196690849452
+"intramolecular phosphotransferase activity",1,0.145412600073977
+"endopeptidase activity",2,0.146068011274008
+"phosphotransferase activity, for other substituted phosphate groups",1,0.146068011274008
+"active monoatomic ion transmembrane transporter activity",2,0.146068011274008
+"proton transmembrane transporter activity",2,0.146068011274008
+"sulfur compound binding",1,0.146068011274008
+"ATP hydrolysis activity",3,0.152500974496367
+"kinase activator activity",1,0.188600487938757
+"protein kinase activator activity",1,0.188600487938757
+"carboxy-lyase activity",1,0.188600487938757
+"heat shock protein binding",1,0.188600487938757
+"inorganic anion transmembrane transporter activity",1,0.188600487938757
+"intramolecular transferase activity",1,0.188600487938757
+"ATP-dependent protein folding chaperone",1,0.190055759269065
+"protein-folding chaperone binding",1,0.209487227295957
+"ATP-dependent activity",3,0.209487227295957
+"inorganic cation transmembrane transporter activity",2,0.209487227295957
+"peptidase activity",2,0.209487227295957
+"ribonucleoside triphosphate phosphatase activity",3,0.209487227295957
+"monoatomic cation transmembrane transporter activity",2,0.209487227295957
+"oxidoreductase activity",3,0.209487227295957
+"hydro-lyase activity",1,0.209487227295957
+"monoatomic ion transmembrane transporter activity",2,0.211612423021974
+"protein folding chaperone",1,0.216430070135131
+"pyrophosphatase activity",3,0.216430070135131
+"hydrolase activity, acting on acid anhydrides",3,0.216430070135131
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",3,0.216430070135131
+"carbon-oxygen lyase activity",1,0.221062502075601
+"tRNA binding",1,0.234669609832161
+"vitamin binding",1,0.238763438198386
+"transmembrane transporter activity",3,0.239640771918489
+"enzyme inhibitor activity",1,0.258700257011837
+"protein kinase regulator activity",1,0.265596380830754
+"transporter activity",3,0.265596380830754
+"molecular function inhibitor activity",1,0.265596380830754
+"acyltransferase activity",2,0.265596380830754
+"kinase regulator activity",1,0.265596380830754
+"isomerase activity",1,0.316829198911819
+"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",1,0.334528523827526
+"secondary active transmembrane transporter activity",1,0.335334466515523
+"oxidoreductase activity, acting on CH-OH group of donors",1,0.33917152623669
+"enzyme regulator activity",2,0.365280824286699
+"acyltransferase activity, transferring groups other than amino-acyl groups",1,0.372215499655027
+"phospholipid binding",1,0.382524750579635
+"phosphatase activity",1,0.382524750579635
+"transferase activity, transferring phosphorus-containing groups",2,0.418962367970026
+"phosphoric ester hydrolase activity",1,0.418962367970026
+"enzyme activator activity",1,0.419965992615899
+"molecular function regulator activity",2,0.420096448139166
+"lipid binding",1,0.437302027079617
+"molecular function activator activity",1,0.458783920340771
+"kinase activity",1,0.564978797434788
+"hydrolase activity, acting on ester bonds",1,0.737270169739611

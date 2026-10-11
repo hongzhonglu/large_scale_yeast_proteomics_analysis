@@ -1,17 +1,26 @@
 "Description","Count","p.adjust"
-"Ribosome",9,0.000320318451205625
-"Glycolysis / Gluconeogenesis",5,0.000471839722500844
-"Carbon fixation by Calvin cycle",3,0.00305015971098477
-"Carbon metabolism",5,0.00700309180310944
-"Oxidative phosphorylation",4,0.0106972685771738
-"Biosynthesis of amino acids",4,0.0421106808902726
-"Methane metabolism",2,0.0421106808902726
-"Longevity regulating pathway - multiple species",2,0.0751498004108954
-"Propanoate metabolism",1,0.206701406323269
-"Fructose and mannose metabolism",1,0.258680543621018
-"Biosynthesis of secondary metabolites",5,0.258680543621018
-"Pentose phosphate pathway",1,0.275350090323552
-"RNA degradation",1,0.508155420425757
-"Endocytosis",1,0.536899780061595
-"Spliceosome",1,0.536899780061595
-"Protein processing in endoplasmic reticulum",1,0.536899780061595
+"Glycolysis / Gluconeogenesis",6,4.34437617218373e-05
+"Biosynthesis of amino acids",8,4.34437617218373e-05
+"Carbon fixation by Calvin cycle",4,0.000162635500618496
+"Carbon metabolism",6,0.00127506925003196
+"Biosynthesis of secondary metabolites",10,0.00127506925003196
+"Ribosome",6,0.0147455408618373
+"Methane metabolism",2,0.068126150598434
+"2-Oxocarboxylic acid metabolism",2,0.145807103127322
+"Valine, leucine and isoleucine biosynthesis",1,0.239444081200429
+"Lysine biosynthesis",1,0.239444081200429
+"Propanoate metabolism",1,0.268908008743705
+"Nicotinate and nicotinamide metabolism",1,0.295608058247499
+"Fructose and mannose metabolism",1,0.295608058247499
+"Pantothenate and CoA biosynthesis",1,0.295608058247499
+"Protein processing in endoplasmic reticulum",2,0.295608058247499
+"Pentose phosphate pathway",1,0.31090076188176
+"Citrate cycle (TCA cycle)",1,0.31090076188176
+"Alanine, aspartate and glutamate metabolism",1,0.31090076188176
+"Glycerolipid metabolism",1,0.31090076188176
+"Longevity regulating pathway - multiple species",1,0.342758400428731
+"RNA degradation",1,0.498547163068528
+"Spliceosome",1,0.509625949965332
+"Endocytosis",1,0.509625949965332
+"Oxidative phosphorylation",1,0.509625949965332
+"Biosynthesis of cofactors",1,0.678562977313287

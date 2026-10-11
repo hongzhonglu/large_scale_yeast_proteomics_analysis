@@ -1,0 +1,66 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",5,0.0222105950931651
+"ribosomal subunit",5,0.0489751693041504
+"ribosome",5,0.0516908829251904
+"nucleoid",2,0.0516908829251904
+"mitochondrial nucleoid",2,0.0516908829251904
+"cytosolic large ribosomal subunit",3,0.0516908829251904
+"mitochondrial inner membrane",4,0.098953590811564
+"mitochondrial membrane",5,0.098953590811564
+"large ribosomal subunit",3,0.098953590811564
+"organelle inner membrane",4,0.098953590811564
+"mitochondrial envelope",5,0.115197939377501
+"cytosolic small ribosomal subunit",2,0.115197939377501
+"extracellular space",1,0.174807264206463
+"cytoplasmic side of plasma membrane",1,0.178251210453961
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.19595257953907
+"small ribosomal subunit",2,0.197169765474241
+"mitochondrial matrix",3,0.197169765474241
+"proton-transporting ATP synthase complex",1,0.197169765474241
+"cation channel complex",1,0.197169765474241
+"cytoplasmic side of membrane",1,0.197169765474241
+"peroxisomal matrix",1,0.197169765474241
+"microbody lumen",1,0.197169765474241
+"monoatomic ion channel complex",1,0.197169765474241
+"respiratory chain complex",1,0.197169765474241
+"extracellular region",2,0.197169765474241
+"cortical endoplasmic reticulum",1,0.215210701042549
+"peroxisome",2,0.215210701042549
+"microbody",2,0.215210701042549
+"Golgi stack",1,0.226048259826187
+"endoplasmic reticulum tubular network",1,0.226048259826187
+"proton-transporting two-sector ATPase complex",1,0.226048259826187
+"inner mitochondrial membrane protein complex",1,0.238314175835206
+"peroxisomal membrane",1,0.254205378102538
+"microbody membrane",1,0.254205378102538
+"transmembrane transporter complex",1,0.275504508638865
+"organelle membrane contact site",1,0.327293872492548
+"transporter complex",1,0.343269307768283
+"mitochondrial intermembrane space",1,0.343269307768283
+"storage vacuole",3,0.343269307768283
+"lytic vacuole",3,0.343269307768283
+"fungal-type vacuole",3,0.343269307768283
+"Golgi apparatus subcompartment",1,0.347321882063143
+"organelle envelope lumen",1,0.347321882063143
+"side of membrane",1,0.403134621791635
+"90S preribosome",1,0.411656135433015
+"membrane protein complex",2,0.411656135433015
+"mitochondrial outer membrane",1,0.457568080549596
+"organelle outer membrane",1,0.470462396286552
+"outer membrane",1,0.470462396286552
+"fungal-type cell wall",1,0.48327368519508
+"cell wall",1,0.48327368519508
+"external encapsulating structure",1,0.48327368519508
+"mitochondrial protein-containing complex",1,0.521831944014778
+"nuclear envelope",1,0.536924932096565
+"preribosome",1,0.546006265864661
+"cell cortex",1,0.569592450189672
+"organelle subcompartment",2,0.570729434102371
+"fungal-type vacuole membrane",1,0.60829821107339
+"lytic vacuole membrane",1,0.60829821107339
+"cellular bud",1,0.656983029498913
+"Golgi apparatus",1,0.68607860858105
+"vacuolar membrane",1,0.68607860858105
+"endoplasmic reticulum membrane",1,0.77656080074244
+"endoplasmic reticulum subcompartment",1,0.77656080074244
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.77656080074244

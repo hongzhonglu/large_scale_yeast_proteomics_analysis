@@ -1,0 +1,42 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,7.55593864680496e-05
+"ribosomal subunit",7,0.00026479968437387
+"cytosolic large ribosomal subunit",5,0.00026479968437387
+"ribosome",7,0.000345035219966062
+"large ribosomal subunit",5,0.00111417941988414
+"nucleoid",2,0.025234455767432
+"mitochondrial nucleoid",2,0.025234455767432
+"cytosolic small ribosomal subunit",2,0.10899497341102
+"nucleolus",4,0.188986832891179
+"small ribosomal subunit",2,0.199826227844777
+"mitochondrial matrix",3,0.199826227844777
+"extracellular region",2,0.212898078688028
+"preribosome, small subunit precursor",1,0.212898078688028
+"fungal-type cell wall",2,0.212898078688028
+"cell wall",2,0.212898078688028
+"external encapsulating structure",2,0.212898078688028
+"preribosome",2,0.297545492638665
+"preribosome, large subunit precursor",1,0.403521472977961
+"mitochondrial intermembrane space",1,0.403521472977961
+"storage vacuole",3,0.403521472977961
+"lytic vacuole",3,0.403521472977961
+"fungal-type vacuole",3,0.403521472977961
+"organelle envelope lumen",1,0.409584266272455
+"side of membrane",1,0.466189011353916
+"90S preribosome",1,0.4688546625134
+"cellular bud tip",1,0.486830298066462
+"mating projection tip",1,0.495355527324957
+"mating projection",1,0.495355527324957
+"plasma membrane bounded cell projection",1,0.495355527324957
+"cell projection",1,0.495355527324957
+"cell tip",1,0.495355527324957
+"cell pole",1,0.495355527324957
+"nucleoplasm",1,0.641344219638908
+"fungal-type vacuole membrane",1,0.646801482455618
+"lytic vacuole membrane",1,0.646801482455618
+"cellular bud",1,0.687973105725061
+"site of polarized growth",1,0.687973105725061
+"Golgi apparatus",1,0.687973105725061
+"vacuolar membrane",1,0.687973105725061
+"intracellular protein-containing complex",1,0.816736001296233
+"mitochondrial envelope",1,0.816736001296233
