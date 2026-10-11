@@ -1,0 +1,47 @@
+"Description","Count","p.adjust"
+"cytosolic large ribosomal subunit",7,1.35041236532811e-06
+"cytosolic ribosome",8,2.29760402518422e-06
+"large ribosomal subunit",7,7.43994121609401e-06
+"ribosomal subunit",8,1.40975792346724e-05
+"ribosome",8,2.67126385113859e-05
+"cytoplasmic side of plasma membrane",1,0.218024259899401
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.218024259899401
+"proton-transporting ATP synthase complex",1,0.218024259899401
+"cation channel complex",1,0.218024259899401
+"cytoplasmic side of membrane",1,0.218024259899401
+"monoatomic ion channel complex",1,0.218024259899401
+"storage vacuole",4,0.218024259899401
+"lytic vacuole",4,0.218024259899401
+"fungal-type vacuole",4,0.218024259899401
+"respiratory chain complex",1,0.218024259899401
+"extracellular region",2,0.218024259899401
+"proton-transporting two-sector ATPase complex",1,0.291714767884292
+"transmembrane transporter complex",1,0.379113041802199
+"nuclear periphery",1,0.427916155327
+"cytosolic small ribosomal subunit",1,0.427916155327
+"transporter complex",1,0.427916155327
+"mitochondrial intermembrane space",1,0.427916155327
+"mitochondrial envelope",3,0.427916155327
+"organelle envelope lumen",1,0.427916155327
+"mitochondrial inner membrane",2,0.427916155327
+"organelle inner membrane",2,0.456238734228985
+"side of membrane",1,0.464925626499299
+"small ribosomal subunit",1,0.498949607563101
+"fungal-type cell wall",1,0.573692632747708
+"cell wall",1,0.573692632747708
+"external encapsulating structure",1,0.573692632747708
+"mitochondrial membrane",2,0.634212168904698
+"endosome",1,0.70201740281172
+"fungal-type vacuole membrane",1,0.725679712023376
+"lytic vacuole membrane",1,0.725679712023376
+"Golgi apparatus",1,0.775300634139882
+"vacuolar membrane",1,0.775300634139882
+"membrane protein complex",1,0.775300634139882
+"cytoplasmic vesicle",1,0.775300634139882
+"intracellular vesicle",1,0.775300634139882
+"vesicle",1,0.775300634139882
+"nucleolus",1,0.793817707425605
+"endoplasmic reticulum membrane",1,0.793817707425605
+"endoplasmic reticulum subcompartment",1,0.793817707425605
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.793817707425605
+"organelle subcompartment",1,0.820899544937382

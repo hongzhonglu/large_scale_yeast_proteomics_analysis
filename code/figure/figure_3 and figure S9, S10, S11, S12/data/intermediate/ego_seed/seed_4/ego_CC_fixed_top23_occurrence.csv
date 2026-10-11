@@ -1,0 +1,41 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",9,1.79778881803551e-07
+"ribosomal subunit",9,1.56028203165567e-06
+"ribosome",9,2.78107445399562e-06
+"cytosolic large ribosomal subunit",6,8.41880971492297e-06
+"large ribosomal subunit",6,7.23300438919263e-05
+"cytosolic small ribosomal subunit",3,0.00942641863854
+"small ribosomal subunit",3,0.0296681971869345
+"cytoplasmic side of plasma membrane",1,0.166164354097973
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.166164354097973
+"proton-transporting ATP synthase complex",1,0.166164354097973
+"mitochondrial inner membrane",3,0.166164354097973
+"cation channel complex",1,0.166164354097973
+"cytoplasmic side of membrane",1,0.166164354097973
+"monoatomic ion channel complex",1,0.166164354097973
+"organelle inner membrane",3,0.166164354097973
+"respiratory chain complex",1,0.166164354097973
+"preribosome, small subunit precursor",1,0.166164354097973
+"fungal-type cell wall",2,0.166164354097973
+"cell wall",2,0.166164354097973
+"external encapsulating structure",2,0.166164354097973
+"proton-transporting two-sector ATPase complex",1,0.205347869732214
+"preribosome",2,0.224313675159969
+"transmembrane transporter complex",1,0.257997533173519
+"mitochondrial membrane",3,0.302439581790331
+"preribosome, large subunit precursor",1,0.307107546625709
+"lipid droplet",1,0.307107546625709
+"transporter complex",1,0.307107546625709
+"mitochondrial envelope",3,0.31608100061009
+"side of membrane",1,0.376401556686089
+"90S preribosome",1,0.381182652449919
+"extracellular region",1,0.478492547204252
+"nucleolus",2,0.488000376921196
+"storage vacuole",2,0.557127711930274
+"lytic vacuole",2,0.557127711930274
+"fungal-type vacuole",2,0.557127711930274
+"fungal-type vacuole membrane",1,0.596916331864117
+"lytic vacuole membrane",1,0.596916331864117
+"mitochondrial matrix",1,0.617955092469025
+"vacuolar membrane",1,0.667056773851848
+"membrane protein complex",1,0.667056773851848

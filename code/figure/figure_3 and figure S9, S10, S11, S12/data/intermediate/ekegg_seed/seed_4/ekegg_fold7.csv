@@ -1,24 +1,18 @@
 "Description","Count","p.adjust"
-"Ribosome",9,0.000283462382754124
-"Glycolysis / Gluconeogenesis",3,0.0766471947915318
-"Carbon metabolism",4,0.0766471947915318
-"Methane metabolism",2,0.0964419678157197
-"Citrate cycle (TCA cycle)",2,0.107850317755212
-"Biosynthesis of secondary metabolites",6,0.221717655650546
-"Biosynthesis of amino acids",3,0.230724246036276
-"Fatty acid biosynthesis",1,0.278690151809754
-"Propanoate metabolism",1,0.283748706493103
-"Terpenoid backbone biosynthesis",1,0.29255104422104
-"Carbon fixation by Calvin cycle",1,0.29255104422104
-"Fructose and mannose metabolism",1,0.29255104422104
-"Fatty acid metabolism",1,0.29255104422104
-"Pentose phosphate pathway",1,0.324774848005075
-"Proteasome",1,0.360350931548961
-"Longevity regulating pathway - multiple species",1,0.360350931548961
-"Mitophagy - yeast",1,0.360350931548961
-"2-Oxocarboxylic acid metabolism",1,0.360350931548961
-"RNA degradation",1,0.48147099434453
-"Endocytosis",1,0.510630529316155
-"Oxidative phosphorylation",1,0.510630529316155
-"Spliceosome",1,0.513836194472478
-"Protein processing in endoplasmic reticulum",1,0.519538239623807
+"Carbon fixation by Calvin cycle",4,0.000217211211834492
+"Ribosome",8,0.000282325374120795
+"Carbon metabolism",6,0.000680123550084205
+"Glycolysis / Gluconeogenesis",4,0.002628223899835
+"Biosynthesis of amino acids",4,0.042606424140654
+"Oxidative phosphorylation",3,0.0534478497209708
+"Citrate cycle (TCA cycle)",2,0.0534478497209708
+"Biosynthesis of secondary metabolites",6,0.0916780466073093
+"Propanoate metabolism",1,0.20332229247744
+"Fructose and mannose metabolism",1,0.27194398646704
+"Methane metabolism",1,0.27194398646704
+"Pentose phosphate pathway",1,0.27194398646704
+"Longevity regulating pathway - multiple species",1,0.329047459569783
+"Pyruvate metabolism",1,0.398502002182805
+"Spliceosome",1,0.479276799813407
+"Endocytosis",1,0.479276799813407
+"Protein processing in endoplasmic reticulum",1,0.508110669583829

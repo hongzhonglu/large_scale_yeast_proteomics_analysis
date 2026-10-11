@@ -1,20 +1,27 @@
 "Description","Count","p.adjust"
-"Glycolysis / Gluconeogenesis",6,3.05790199015611e-05
-"Ribosome",8,0.000659208187885325
-"Carbon metabolism",6,0.000686397056785725
-"Carbon fixation by Calvin cycle",3,0.00200019891836586
-"Methane metabolism",3,0.00305559462174179
-"Biosynthesis of amino acids",5,0.00537195624809533
-"Biosynthesis of secondary metabolites",7,0.0361271268254196
-"Propanoate metabolism",1,0.241203332171858
-"Oxidative phosphorylation",2,0.241203332171858
-"Fructose and mannose metabolism",1,0.299723514915687
-"Pentose phosphate pathway",1,0.302335380408803
-"Glycine, serine and threonine metabolism",1,0.302335380408803
-"Citrate cycle (TCA cycle)",1,0.302335380408803
-"Longevity regulating pathway - multiple species",1,0.336023898123743
-"RNA degradation",1,0.459449495574173
-"Lysosome biogenesis",1,0.459449495574173
-"Endocytosis",1,0.497244406786076
-"Spliceosome",1,0.500269457199036
-"Protein processing in endoplasmic reticulum",1,0.501533155324577
+"Glycolysis / Gluconeogenesis",6,2.19702975583723e-05
+"Carbon metabolism",7,5.29546669140046e-05
+"Biosynthesis of amino acids",6,0.000905384874524363
+"Carbon fixation by Calvin cycle",3,0.00204906626980809
+"Biosynthesis of secondary metabolites",8,0.00625794095421219
+"Fructose and mannose metabolism",2,0.0432510255702418
+"Methane metabolism",2,0.0470597834573412
+"Ribosome",4,0.111343698091853
+"Propanoate metabolism",1,0.253492162867505
+"Oxidative phosphorylation",2,0.253492162867505
+"Protein processing in endoplasmic reticulum",2,0.27975216704136
+"Biosynthesis of nucleotide sugars",1,0.27975216704136
+"Galactose metabolism",1,0.27975216704136
+"One carbon pool by folate",1,0.27975216704136
+"Pentose phosphate pathway",1,0.291161210494489
+"Amino sugar and nucleotide sugar metabolism",1,0.291161210494489
+"Citrate cycle (TCA cycle)",1,0.291161210494489
+"Longevity regulating pathway - multiple species",1,0.329851550898753
+"Starch and sucrose metabolism",1,0.334057126463995
+"Cysteine and methionine metabolism",1,0.337447842454463
+"Pyruvate metabolism",1,0.370625516281901
+"RNA degradation",1,0.419856230406434
+"Spliceosome",1,0.449780370051276
+"Endocytosis",1,0.449780370051276
+"MAPK signaling pathway - yeast",1,0.5679430093985
+"Biosynthesis of cofactors",1,0.600690359056113

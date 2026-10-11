@@ -1,0 +1,54 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",10,8.961477609896e-09
+"ribosomal subunit",10,1.10265609552766e-07
+"ribosome",10,2.22019451149893e-07
+"cytosolic large ribosomal subunit",7,3.88977474795598e-07
+"large ribosomal subunit",7,5.14326371025629e-06
+"cytosolic small ribosomal subunit",3,0.0124900046960655
+"small ribosomal subunit",3,0.0393103612726882
+"mitochondrial intermembrane space",2,0.157848901029763
+"organelle envelope lumen",2,0.160145285124188
+"cytoplasmic side of plasma membrane",1,0.172252333441129
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.172252333441129
+"cytoplasmic stress granule",2,0.172252333441129
+"vacuolar proton-transporting V-type ATPase complex",1,0.172252333441129
+"proton-transporting V-type ATPase complex",1,0.172252333441129
+"cation-transporting ATPase complex",1,0.172252333441129
+"ATPase dependent transmembrane transport complex",1,0.172252333441129
+"cytoplasmic side of membrane",1,0.193561357638666
+"fungal-type cell wall",2,0.210358274833785
+"cell wall",2,0.210358274833785
+"external encapsulating structure",2,0.210358274833785
+"ribonucleoprotein granule",2,0.210358274833785
+"cytoplasmic ribonucleoprotein granule",2,0.210358274833785
+"proton-transporting two-sector ATPase complex",1,0.248426281534733
+"transmembrane transporter complex",1,0.327603117644292
+"histone deacetylase complex",1,0.355351670382859
+"fungal-type vacuole membrane",2,0.355351670382859
+"lytic vacuole membrane",2,0.355351670382859
+"lipid droplet",1,0.355351670382859
+"transporter complex",1,0.355351670382859
+"storage vacuole",3,0.355351670382859
+"lytic vacuole",3,0.355351670382859
+"fungal-type vacuole",3,0.355351670382859
+"mitochondrial envelope",3,0.355351670382859
+"ATPase complex",1,0.372307233801082
+"supramolecular complex",2,0.372307233801082
+"side of membrane",1,0.398130141735499
+"vacuolar membrane",2,0.398130141735499
+"mitochondrial outer membrane",1,0.461458335485442
+"organelle outer membrane",1,0.469919555060067
+"outer membrane",1,0.469919555060067
+"extracellular region",1,0.479367838449138
+"mitochondrial membrane",2,0.556741117216547
+"nuclear chromosome",1,0.571866585313342
+"nucleoplasm",1,0.621791042210892
+"chromatin",1,0.700407293763244
+"mitochondrial inner membrane",1,0.700407293763244
+"organelle inner membrane",1,0.715594539320955
+"membrane protein complex",1,0.736541854461416
+"nucleolus",1,0.791494662295179
+"endoplasmic reticulum membrane",1,0.791494662295179
+"endoplasmic reticulum subcompartment",1,0.791494662295179
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.791494662295179
+"organelle subcompartment",1,0.820899544937382

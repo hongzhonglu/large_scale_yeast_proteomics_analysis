@@ -1,0 +1,80 @@
+"Description","Count","p.adjust"
+"magnesium ion binding",6,3.82583018253113e-06
+"melatonin binding",2,0.0205238345005325
+"acid-thiol ligase activity",2,0.0205238345005325
+"structural constituent of ribosome",5,0.0234390583853874
+"ligase activity, forming carbon-sulfur bonds",2,0.0384274982547633
+"amide binding",2,0.0398119067473145
+"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",3,0.0398119067473145
+"oxidoreductase activity, acting on CH-OH group of donors",3,0.0407203521971984
+"lyase activity",3,0.0588690996726191
+"carbon-carbon lyase activity",2,0.0588690996726191
+"structural molecule activity",5,0.0617356613854564
+"ligase activity",3,0.0617356613854564
+"adenine nucleotide transmembrane transporter activity",1,0.202292942047611
+"purine nucleotide transmembrane transporter activity",1,0.202292942047611
+"quaternary ammonium group binding",1,0.202292942047611
+"intramolecular phosphotransferase activity",1,0.206540670824253
+"FAD binding",1,0.208405185432386
+"sulfur compound binding",1,0.208405185432386
+"steroid binding",1,0.208405185432386
+"nucleotide transmembrane transporter activity",1,0.208405185432386
+"sterol binding",1,0.208405185432386
+"proton channel activity",1,0.213346897428476
+"proton-transporting ATP synthase activity, rotational mechanism",1,0.213346897428476
+"carboxy-lyase activity",1,0.244144229072
+"heat shock protein binding",1,0.244144229072
+"carbohydrate derivative transmembrane transporter activity",1,0.244144229072
+"intramolecular transferase activity",1,0.244144229072
+"ATP-dependent protein folding chaperone",1,0.244144229072
+"monoatomic cation channel activity",1,0.244144229072
+"nucleobase-containing compound transmembrane transporter activity",1,0.244144229072
+"organophosphate ester transmembrane transporter activity",1,0.244144229072
+"NAD binding",1,0.244144229072
+"monoatomic ion channel activity",1,0.244144229072
+"antiporter activity",1,0.244144229072
+"ATP-dependent activity",3,0.244144229072
+"ribonucleoside triphosphate phosphatase activity",3,0.244144229072
+"oxidoreductase activity",3,0.244144229072
+"hydro-lyase activity",1,0.244144229072
+"flavin adenine dinucleotide binding",1,0.244144229072
+"protein folding chaperone",1,0.256006642373922
+"pyrophosphatase activity",3,0.256006642373922
+"hydrolase activity, acting on acid anhydrides",3,0.256006642373922
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",3,0.256006642373922
+"carbon-oxygen lyase activity",1,0.260112485002372
+"channel activity",1,0.260112485002372
+"passive transmembrane transporter activity",1,0.260112485002372
+"tRNA binding",1,0.264764226074117
+"vitamin binding",1,0.269153989978203
+"GTPase activator activity",1,0.295779875861959
+"ATPase-coupled transmembrane transporter activity",1,0.295779875861959
+"ATP hydrolysis activity",2,0.342026179168649
+"organic anion transmembrane transporter activity",1,0.372204866313926
+"isomerase activity",1,0.372204866313926
+"unfolded protein binding",1,0.372204866313926
+"GTPase activity",1,0.380767148565963
+"primary active transmembrane transporter activity",1,0.381418162808244
+"secondary active transmembrane transporter activity",1,0.381996003673055
+"proton transmembrane transporter activity",1,0.409632293624463
+"GTP binding",1,0.409632293624463
+"guanyl nucleotide binding",1,0.409632293624463
+"guanyl ribonucleotide binding",1,0.409632293624463
+"GTPase regulator activity",1,0.421095275030003
+"nucleoside-triphosphatase regulator activity",1,0.421095275030003
+"enzyme activator activity",1,0.482888979523247
+"lipid binding",1,0.504331127425191
+"transmembrane transporter activity",2,0.504331127425191
+"rRNA binding",1,0.505862292207822
+"inorganic cation transmembrane transporter activity",1,0.505862292207822
+"molecular function activator activity",1,0.505862292207822
+"monoatomic cation transmembrane transporter activity",1,0.505862292207822
+"monoatomic ion transmembrane transporter activity",1,0.510692065038633
+"transporter activity",2,0.510692065038633
+"active transmembrane transporter activity",1,0.510692065038633
+"inorganic molecular entity transmembrane transporter activity",1,0.526043405665
+"phosphotransferase activity, alcohol group as acceptor",1,0.540155015043086
+"kinase activity",1,0.579235652452969
+"enzyme regulator activity",1,0.701960619640032
+"transferase activity, transferring phosphorus-containing groups",1,0.753604412810192
+"molecular function regulator activity",1,0.753604412810192

@@ -1,0 +1,59 @@
+"Description","Count","p.adjust"
+"structural molecule activity",10,1.3654469473439e-05
+"structural constituent of ribosome",8,2.36849839909482e-05
+"melatonin binding",3,8.93482792797991e-05
+"amide binding",3,0.00109415022049456
+"oxidoreduction-driven active transmembrane transporter activity",3,0.0017315767908622
+"electron transfer activity",3,0.00519881081803878
+"ubiquinol-cytochrome-c reductase activity",2,0.00666350356645934
+"oxidoreductase activity, acting on diphenols and related substances as donors",2,0.00666350356645934
+"magnesium ion binding",3,0.00793662327960459
+"metalloendopeptidase activity",2,0.0103442294552925
+"primary active transmembrane transporter activity",3,0.0186002694354542
+"active monoatomic ion transmembrane transporter activity",3,0.0251695103059084
+"proton transmembrane transporter activity",3,0.0251695103059084
+"lyase activity",3,0.0280115515497174
+"carbon-carbon lyase activity",2,0.0288135677722524
+"metallopeptidase activity",2,0.0411742418937775
+"inorganic cation transmembrane transporter activity",3,0.0632578933505439
+"monoatomic cation transmembrane transporter activity",3,0.0637472038869852
+"monoatomic ion transmembrane transporter activity",3,0.0683963946294155
+"active transmembrane transporter activity",3,0.0689779803157862
+"inorganic molecular entity transmembrane transporter activity",3,0.0768272679573828
+"oxidoreductase activity",4,0.0796869974390844
+"unfolded protein binding",2,0.0850822224965285
+"quaternary ammonium group binding",1,0.0928242930281761
+"acid-thiol ligase activity",1,0.0970479708986871
+"endopeptidase activity",2,0.102196984010172
+"sulfur compound binding",1,0.110797693521015
+"cytochrome-c oxidase activity",1,0.110797693521015
+"oxidoreductase activity, acting on a heme group of donors",1,0.110797693521015
+"NADP binding",1,0.132980058430674
+"ligase activity, forming carbon-sulfur bonds",1,0.134897377166206
+"carboxy-lyase activity",1,0.144095250113507
+"heat shock protein binding",1,0.144095250113507
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",1,0.146688828680468
+"ATP-dependent protein folding chaperone",1,0.146688828680468
+"heme binding",1,0.154850393025054
+"tetrapyrrole binding",1,0.154850393025054
+"NAD binding",1,0.154850393025054
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors",1,0.155647926470787
+"protein-folding chaperone binding",1,0.156389714383322
+"peptidase activity",2,0.158175878625282
+"hydro-lyase activity",1,0.166441906618706
+"protein folding chaperone",1,0.183610205015892
+"structural constituent of cell wall",1,0.187347946964528
+"carbon-oxygen lyase activity",1,0.187347946964528
+"tRNA binding",1,0.198609598315367
+"vitamin binding",1,0.201811125262407
+"transmembrane transporter activity",3,0.202299487253108
+"transporter activity",3,0.239896301190825
+"ATP hydrolysis activity",2,0.256129984298953
+"ATP-dependent activity",2,0.372778089602805
+"ribonucleoside triphosphate phosphatase activity",2,0.372778089602805
+"ligase activity",1,0.392483722898233
+"pyrophosphatase activity",2,0.392483722898233
+"hydrolase activity, acting on acid anhydrides",2,0.392483722898233
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",2,0.392483722898233
+"kinase activity",1,0.567015491008814
+"transferase activity, transferring phosphorus-containing groups",1,0.744117689655835

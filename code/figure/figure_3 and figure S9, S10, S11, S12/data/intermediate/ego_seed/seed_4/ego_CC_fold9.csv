@@ -1,0 +1,48 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,8.66168576584959e-05
+"ribosomal subunit",7,0.000376681833554548
+"ribosome",7,0.000527370905313981
+"mitochondrial inner membrane",6,0.00251797045537892
+"organelle inner membrane",6,0.00273795896625054
+"cytosolic large ribosomal subunit",4,0.00273795896625054
+"mitochondrial membrane",7,0.00290121773358723
+"mitochondrial envelope",7,0.00460030302667206
+"cytosolic small ribosomal subunit",3,0.007384027933523
+"large ribosomal subunit",4,0.00756520471129213
+"respiratory chain complex",2,0.0113959858286574
+"small ribosomal subunit",3,0.020335076821878
+"transmembrane transporter complex",2,0.0346131629216932
+"fungal-type cell wall",3,0.0346131629216932
+"cell wall",3,0.0346131629216932
+"external encapsulating structure",3,0.0346131629216932
+"transporter complex",2,0.0605346555622616
+"mitochondrial intermembrane space",2,0.0622129840536592
+"organelle envelope lumen",2,0.067270561675801
+"proton-transporting ATP synthase complex, coupling factor F(o)",1,0.0902225357528509
+"proton-transporting ATP synthase complex",1,0.126870816040438
+"proton-transporting two-sector ATPase complex, proton-transporting domain",1,0.126870816040438
+"cation channel complex",1,0.126870816040438
+"monoatomic ion channel complex",1,0.141133290359796
+"extracellular region",2,0.142568907342913
+"oxidoreductase complex",1,0.154051307137463
+"nucleoid",1,0.159408088176313
+"mitochondrial nucleoid",1,0.159408088176313
+"proton-transporting two-sector ATPase complex",1,0.174722713298013
+"fungal-type vacuole membrane",2,0.281075005834361
+"lytic vacuole membrane",2,0.281075005834361
+"lipid droplet",1,0.296075176547873
+"vacuolar membrane",2,0.395853811594072
+"membrane protein complex",2,0.402715187695103
+"cytoplasmic stress granule",1,0.404453580652002
+"mitochondrial outer membrane",1,0.431952089715409
+"organelle outer membrane",1,0.438653805120619
+"outer membrane",1,0.438653805120619
+"ribonucleoprotein granule",1,0.464676481057751
+"cytoplasmic ribonucleoprotein granule",1,0.464676481057751
+"nuclear envelope",1,0.511337890304346
+"storage vacuole",2,0.520724480753012
+"lytic vacuole",2,0.520724480753012
+"fungal-type vacuole",2,0.520724480753012
+"mitochondrial matrix",1,0.613148775083155
+"supramolecular complex",1,0.635693925556891
+"nucleolus",1,0.748737972567602

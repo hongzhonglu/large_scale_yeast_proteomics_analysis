@@ -1,6 +1,5 @@
 from sklearn.model_selection import KFold, train_test_split
 from sklearn.linear_model import Ridge
-from sklearn.feature_selection import RFE
 from sklearn.metrics import r2_score, mean_squared_error
 import numpy as np
 import pandas as pd
@@ -12,7 +11,7 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SCRIPT_DIR, '..', '..', 'data')
 ORIGINAL_DATA_DIR = os.path.join(DATA_DIR, 'original_data')
 INTERMEDIATE_DIR = os.path.join(DATA_DIR, 'intermediate')
-organelle_path = os.path.join(ORIGINAL_DATA_DIR, "main_organelle_fraction_260414.xlsx")
+organelle_path = os.path.join(ORIGINAL_DATA_DIR, "main_organelle_fraction_test_260905.xlsx")
 genes_path = os.path.join(ORIGINAL_DATA_DIR, "df_genes.csv")
 physiology_path = os.path.join(ORIGINAL_DATA_DIR, "physiology_collection.xlsx")
 
@@ -23,6 +22,26 @@ X_full = None
 y_full = None
 out_dir = None
 header = "fold\tmin_protein_count\tR2_cv\tRMSE_cv\tR2_test\tRMSE_test\tproteins\n"
+
+
+def rfe_ranking(X, y, random_state):
+    remaining = list(range(X.shape[1]))
+    ranking = np.zeros(X.shape[1], dtype=int)
+    current_rank = X.shape[1]
+    Xv = np.asarray(X, dtype=float)
+    yv = np.asarray(y, dtype=float)
+    model = Ridge(random_state=random_state)
+    while len(remaining) > 1:
+        model.fit(Xv[:, remaining], yv)
+        coef = np.abs(model.coef_)
+        scores = coef.sum(axis=0) if coef.ndim > 1 else coef
+        drop_local = int(np.argmin(scores))
+        drop_global = remaining.pop(drop_local)
+        ranking[drop_global] = current_rank
+        current_rank -= 1
+    ranking[remaining[0]] = 1
+    return ranking
+
 
 def run_seed(split_seed):
     output_txt_file = os.path.join(out_dir, f"10fold_R2_results_seed{split_seed}.txt")
@@ -37,14 +56,14 @@ def run_seed(split_seed):
     for fold_idx, (train_idx, val_idx) in enumerate(splits, 1):
         X_train, X_val = X_train_cv.iloc[train_idx], X_train_cv.iloc[val_idx]
         y_train, y_val = y_train_cv.iloc[train_idx], y_train_cv.iloc[val_idx]
+        ranking = rfe_ranking(X_train, y_train, random_state=split_seed)
         for n in range(1, 61):
-            model = Ridge(random_state=split_seed)
-            selector = RFE(model, n_features_to_select=n)
-            selector.fit(X_train, y_train)
-            selected_cols = X_train.columns[selector.support_]
+            selected_mask = ranking <= n
+            selected_cols = X_train.columns[selected_mask]
             X_train_sel = X_train[selected_cols]
             X_val_sel = X_val[selected_cols]
             X_test_sel = X_test[selected_cols]
+            model = Ridge(random_state=split_seed)
             model.fit(X_train_sel, y_train)
             y_pred_val = model.predict(X_val_sel)
             y_pred_test = model.predict(X_test_sel)

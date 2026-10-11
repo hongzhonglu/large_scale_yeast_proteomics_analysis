@@ -1,0 +1,78 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00214929210533484
+"ribosomal subunit",6,0.00664395334489908
+"ribosome",6,0.00825584637389191
+"cytosolic small ribosomal subunit",3,0.0272187838187842
+"cytosolic large ribosomal subunit",3,0.0666298261823238
+"small ribosomal subunit",3,0.0666298261823238
+"large ribosomal subunit",3,0.159846214042225
+"mitochondrial intermembrane space",2,0.229327648665882
+"organelle envelope lumen",2,0.232663904803066
+"cytoplasmic side of plasma membrane",1,0.234354648092098
+"cellular bud neck septin ring",1,0.234354648092098
+"mitochondrial membrane",4,0.234354648092098
+"mitochondrial inner membrane",3,0.234354648092098
+"ER to Golgi transport vesicle membrane",1,0.234354648092098
+"cytoplasmic side of membrane",1,0.234354648092098
+"septin ring",1,0.234354648092098
+"organelle inner membrane",3,0.234354648092098
+"storage vacuole",4,0.234354648092098
+"lytic vacuole",4,0.234354648092098
+"fungal-type vacuole",4,0.234354648092098
+"respiratory chain complex",1,0.234354648092098
+"mitochondrial envelope",4,0.234354648092098
+"cellular bud neck septin structure",1,0.234354648092098
+"cleavage apparatus septin structure",1,0.234354648092098
+"fungal-type cell wall",2,0.234354648092098
+"cell wall",2,0.234354648092098
+"external encapsulating structure",2,0.234354648092098
+"oxidoreductase complex",1,0.234354648092098
+"nucleoid",1,0.235884583464743
+"transport vesicle membrane",1,0.235884583464743
+"mitochondrial nucleoid",1,0.235884583464743
+"septin cytoskeleton",1,0.244015445795059
+"vesicle coat",1,0.251551140421962
+"membrane coat",1,0.265043591514743
+"coated membrane",1,0.265043591514743
+"transport vesicle",1,0.284405846099335
+"COPII-coated ER to Golgi transport vesicle",1,0.300601073190989
+"transmembrane transporter complex",1,0.300601073190989
+"coated vesicle membrane",1,0.310864255279964
+"fungal-type vacuole membrane",2,0.34817127084931
+"lytic vacuole membrane",2,0.34817127084931
+"cell division site",1,0.348398736986943
+"lipid droplet",1,0.360974386449263
+"transporter complex",1,0.362770789451619
+"incipient cellular bud site",1,0.369251001798373
+"cellular bud",2,0.385357915597178
+"cytoskeleton",2,0.385357915597178
+"site of polarized growth",2,0.428027461812995
+"side of membrane",1,0.428027461812995
+"vacuolar membrane",2,0.428027461812995
+"membrane protein complex",2,0.439844956773375
+"coated vesicle",1,0.464517770170841
+"mitochondrial outer membrane",1,0.477155924100725
+"organelle outer membrane",1,0.477155924100725
+"outer membrane",1,0.477155924100725
+"mating projection tip",1,0.477155924100725
+"extracellular region",1,0.477155924100725
+"mating projection",1,0.477155924100725
+"plasma membrane bounded cell projection",1,0.477155924100725
+"cell projection",1,0.477155924100725
+"cell tip",1,0.477155924100725
+"cell pole",1,0.477155924100725
+"nucleolus",2,0.477155924100725
+"cytoplasmic vesicle membrane",1,0.516334602246284
+"vesicle membrane",1,0.516334602246284
+"cell cortex",1,0.572513437113722
+"cellular bud neck",1,0.597316042437074
+"mitochondrial matrix",1,0.664756103148665
+"Golgi apparatus",1,0.728848688141888
+"cytoplasmic vesicle",1,0.739016939003505
+"intracellular vesicle",1,0.739016939003505
+"vesicle",1,0.739016939003505
+"endoplasmic reticulum membrane",1,0.797269088762239
+"endoplasmic reticulum subcompartment",1,0.797269088762239
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.797269088762239
+"intracellular protein-containing complex",1,0.814257335403144
+"organelle subcompartment",1,0.820899544937382

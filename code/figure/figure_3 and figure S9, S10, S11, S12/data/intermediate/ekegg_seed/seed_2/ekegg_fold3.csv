@@ -1,28 +1,22 @@
 "Description","Count","p.adjust"
-"Oxidative phosphorylation",6,0.000262742441235042
-"Glycolysis / Gluconeogenesis",5,0.000352127771368284
-"Carbon fixation by Calvin cycle",3,0.0032083404604897
-"Ribosome",6,0.0167242776433553
-"Carbon metabolism",4,0.0364955789034979
-"Biosynthesis of amino acids",4,0.0433993097908745
-"Methane metabolism",2,0.052746451779354
-"Ascorbate and aldarate metabolism",1,0.222266146457959
-"beta-Alanine metabolism",1,0.222266146457959
-"Valine, leucine and isoleucine degradation",1,0.222266146457959
-"Histidine metabolism",1,0.222266146457959
-"Lysine degradation",1,0.222266146457959
-"Biosynthesis of secondary metabolites",5,0.222266146457959
-"Fatty acid degradation",1,0.22511584658838
-"Tryptophan metabolism",1,0.22511584658838
-"Fructose and mannose metabolism",1,0.22511584658838
-"Arginine and proline metabolism",1,0.22511584658838
-"Pantothenate and CoA biosynthesis",1,0.22511584658838
-"Pentose phosphate pathway",1,0.25544455072661
-"Glycerolipid metabolism",1,0.281416330423379
-"Longevity regulating pathway - multiple species",1,0.303692898915111
-"Pyruvate metabolism",1,0.379346295833823
-"RNA degradation",1,0.429999894847503
-"Endocytosis",1,0.480795196353907
-"Spliceosome",1,0.492247517058245
-"Protein processing in endoplasmic reticulum",1,0.501432519320183
-"Biosynthesis of cofactors",1,0.614752650002242
+"Glycolysis / Gluconeogenesis",6,7.27344654779008e-05
+"Carbon fixation by Calvin cycle",4,0.000146740645083921
+"Carbon metabolism",7,0.000146740645083921
+"Ribosome",8,0.000411299529629641
+"Biosynthesis of amino acids",5,0.0124926749808092
+"Methane metabolism",2,0.0661130051290952
+"Biosynthesis of secondary metabolites",7,0.0661130051290952
+"Longevity regulating pathway - multiple species",2,0.102013090895649
+"Sphingolipid metabolism",1,0.224694446222413
+"Propanoate metabolism",1,0.224694446222413
+"Spliceosome",2,0.224694446222413
+"Endocytosis",2,0.224694446222413
+"Oxidative phosphorylation",2,0.224694446222413
+"Fructose and mannose metabolism",1,0.2483107689279
+"Protein processing in endoplasmic reticulum",2,0.2483107689279
+"Pentose phosphate pathway",1,0.268080815321502
+"Glycine, serine and threonine metabolism",1,0.268080815321502
+"Citrate cycle (TCA cycle)",1,0.268080815321502
+"Phagosome",1,0.275354414508127
+"Pyruvate metabolism",1,0.373632764549934
+"Autophagy - yeast",1,0.535658676633153

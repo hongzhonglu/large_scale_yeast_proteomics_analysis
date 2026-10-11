@@ -1,0 +1,57 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00156312153115261
+"ribosomal subunit",6,0.00483196606901751
+"ribosome",6,0.00600425190828503
+"cytosolic small ribosomal subunit",3,0.019795479140934
+"cytosolic large ribosomal subunit",3,0.0484580554053264
+"small ribosomal subunit",3,0.0484580554053264
+"fungal-type cell wall",3,0.0733177162596623
+"cell wall",3,0.0733177162596623
+"external encapsulating structure",3,0.0733177162596623
+"large ribosomal subunit",3,0.0813762544214966
+"lipid droplet",2,0.105111464059822
+"CMG complex",1,0.179165319225519
+"nuclear pre-replicative complex",1,0.211256550860235
+"pre-replicative complex",1,0.211256550860235
+"mitochondrial membrane",4,0.211256550860235
+"mitochondrial inner membrane",3,0.214974607159121
+"organelle inner membrane",3,0.22343164011599
+"DNA replication preinitiation complex",1,0.22343164011599
+"mitochondrial envelope",4,0.22343164011599
+"replication fork protection complex",1,0.241732961567175
+"nucleoid",1,0.241732961567175
+"mitochondrial nucleoid",1,0.241732961567175
+"inner mitochondrial membrane protein complex",1,0.285658196051297
+"nuclear replication fork",1,0.353250403861315
+"organelle membrane contact site",1,0.391139618181627
+"replication fork",1,0.391139618181627
+"protein-DNA complex",1,0.391139618181627
+"mitochondrial matrix",2,0.391139618181627
+"storage vacuole",3,0.391139618181627
+"lytic vacuole",3,0.391139618181627
+"fungal-type vacuole",3,0.391139618181627
+"endoplasmic reticulum protein-containing complex",1,0.449745427705342
+"90S preribosome",1,0.485141557663533
+"chromosome, telomeric region",1,0.528877249192366
+"extracellular region",1,0.593330758533272
+"nucleolus",2,0.605176272134506
+"Golgi membrane",1,0.605176272134506
+"mitochondrial protein-containing complex",1,0.627043404791846
+"preribosome",1,0.649554121431381
+"nuclear chromosome",1,0.649554121431381
+"endosome",1,0.687117022012472
+"nucleoplasm",1,0.687117022012472
+"chromosomal region",1,0.687117022012472
+"fungal-type vacuole membrane",1,0.687117022012472
+"lytic vacuole membrane",1,0.687117022012472
+"Golgi apparatus",1,0.758776750206807
+"vacuolar membrane",1,0.758776750206807
+"membrane protein complex",1,0.758776750206807
+"cytoplasmic vesicle",1,0.758776750206807
+"intracellular vesicle",1,0.758776750206807
+"vesicle",1,0.758776750206807
+"endoplasmic reticulum membrane",1,0.805322311881049
+"endoplasmic reticulum subcompartment",1,0.805322311881049
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.805322311881049
+"intracellular protein-containing complex",1,0.818294975082829
+"organelle subcompartment",1,0.820899544937382

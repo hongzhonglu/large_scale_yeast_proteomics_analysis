@@ -14,9 +14,8 @@ SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 DATA_DIR = os.path.join(SCRIPT_DIR, '..', '..', 'data')
 ORIGINAL_DATA_DIR = os.path.join(DATA_DIR, 'original_data')
 INTERMEDIATE_DIR = os.path.join(DATA_DIR, 'intermediate')
-ORGANELLE_ALL_PATH = os.path.join(ORIGINAL_DATA_DIR, 'main_organelle_fraction_260414.xlsx')
+ORGANELLE_ALL_PATH = os.path.join(ORIGINAL_DATA_DIR, 'main_organelle_fraction_test_260905.xlsx')
 PHYSIOLOGY_PATH = os.path.join(ORIGINAL_DATA_DIR, 'physiology_collection.xlsx')
-#旧版是physiology_collection.xlsx
 OUTPUT_CSV_PATH = os.path.join(INTERMEDIATE_DIR, 'results_Val_adj_R2_1_8.csv')
 OUTPUT_XLSX_PATH = os.path.join(INTERMEDIATE_DIR, 'all_summary.xlsx')
 TARGET_VARIABLES = ['dilution rate (/h)', 'qGlucose (mmol/gDW h)', 'qCO2 (mmol/gDW h)', 'qO2 (mmol/gDW h)']

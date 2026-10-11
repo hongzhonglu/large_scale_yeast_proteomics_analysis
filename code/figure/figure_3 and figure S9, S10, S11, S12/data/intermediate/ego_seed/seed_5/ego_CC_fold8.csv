@@ -1,0 +1,53 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",5,0.00908769359010818
+"cytosolic large ribosomal subunit",4,0.00908769359010818
+"ribosomal subunit",5,0.0209250343078293
+"large ribosomal subunit",4,0.0209250343078293
+"ribosome",5,0.0259605561347661
+"storage vacuole",5,0.127112837666292
+"lytic vacuole",5,0.127112837666292
+"fungal-type vacuole",5,0.127112837666292
+"proteasome regulatory particle, base subcomplex",1,0.200509902273858
+"fungal-type vacuole membrane",3,0.200509902273858
+"lytic vacuole membrane",3,0.200509902273858
+"fungal-type vacuole lumen",1,0.2110206355115
+"vacuolar lumen",1,0.2110206355115
+"proteasome regulatory particle",1,0.2110206355115
+"proteasome accessory complex",1,0.2110206355115
+"extracellular region",2,0.2110206355115
+"fungal-type cell wall",2,0.2110206355115
+"cell wall",2,0.2110206355115
+"vacuolar membrane",3,0.2110206355115
+"external encapsulating structure",2,0.2110206355115
+"oxidoreductase complex",1,0.2110206355115
+"nucleoid",1,0.214706916174572
+"mitochondrial nucleoid",1,0.214706916174572
+"proteasome complex",1,0.301496919646831
+"endopeptidase complex",1,0.362927498148397
+"mitochondrial membrane",3,0.362927498148397
+"cytosolic small ribosomal subunit",1,0.383511614073576
+"mitochondrial matrix",2,0.383511614073576
+"mitochondrial intermembrane space",1,0.383511614073576
+"mitochondrial envelope",3,0.383511614073576
+"organelle envelope lumen",1,0.385415249773294
+"peptidase complex",1,0.41326403596535
+"cytoplasmic stress granule",1,0.464495286836237
+"small ribosomal subunit",1,0.464495286836237
+"mitochondrial outer membrane",1,0.491558852247566
+"organelle outer membrane",1,0.498435836065752
+"outer membrane",1,0.498435836065752
+"ribonucleoprotein granule",1,0.508102269227897
+"cytoplasmic ribonucleoprotein granule",1,0.508102269227897
+"peroxisome",1,0.508102269227897
+"microbody",1,0.508102269227897
+"endoplasmic reticulum membrane",2,0.508102269227897
+"endoplasmic reticulum subcompartment",2,0.508102269227897
+"nuclear outer membrane-endoplasmic reticulum membrane network",2,0.508102269227897
+"transferase complex, transferring phosphorus-containing groups",1,0.515447934812702
+"organelle subcompartment",2,0.565766569458002
+"mitochondrial inner membrane",1,0.672570954107459
+"supramolecular complex",1,0.67343590839446
+"organelle inner membrane",1,0.67343590839446
+"nucleolus",1,0.778687491470306
+"transferase complex",1,0.797763854941251
+"intracellular protein-containing complex",1,0.803682564813493

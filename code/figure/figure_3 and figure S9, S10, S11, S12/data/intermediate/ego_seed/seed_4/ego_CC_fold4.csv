@@ -1,0 +1,28 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",9,1.21350745217397e-07
+"ribosomal subunit",9,1.05319037136758e-06
+"ribosome",9,1.87722525644705e-06
+"cytosolic large ribosomal subunit",6,5.68269655757301e-06
+"large ribosomal subunit",6,4.88227796270502e-05
+"cytosolic small ribosomal subunit",3,0.0063628325810145
+"small ribosomal subunit",3,0.0200260331011808
+"preribosome, small subunit precursor",1,0.23889561388719
+"protein serine/threonine phosphatase complex",1,0.23889561388719
+"phosphatase complex",1,0.23889561388719
+"fungal-type vacuole membrane",2,0.417127269296738
+"lytic vacuole membrane",2,0.417127269296738
+"vacuolar membrane",2,0.55135347943649
+"90S preribosome",1,0.55135347943649
+"extracellular region",1,0.554779375868307
+"fungal-type cell wall",1,0.554779375868307
+"cell wall",1,0.554779375868307
+"external encapsulating structure",1,0.554779375868307
+"nucleolus",2,0.554779375868307
+"preribosome",1,0.57226705192838
+"storage vacuole",2,0.57226705192838
+"lytic vacuole",2,0.57226705192838
+"fungal-type vacuole",2,0.57226705192838
+"mitochondrial inner membrane",1,0.683888253815998
+"organelle inner membrane",1,0.685350543696824
+"mitochondrial membrane",1,0.814226267208873
+"mitochondrial envelope",1,0.816736001296233

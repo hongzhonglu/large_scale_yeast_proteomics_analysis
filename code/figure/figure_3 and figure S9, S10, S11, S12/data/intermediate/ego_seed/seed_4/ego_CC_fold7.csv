@@ -1,0 +1,48 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",7,8.66168576584959e-05
+"ribosomal subunit",7,0.000303550857696875
+"cytosolic large ribosomal subunit",5,0.000303550857696875
+"ribosome",7,0.000395528178985486
+"large ribosomal subunit",5,0.00127723006669646
+"fungal-type cell wall",3,0.0692263258433865
+"cell wall",3,0.0692263258433865
+"external encapsulating structure",3,0.0692263258433865
+"lipid droplet",2,0.099956365859862
+"cytosolic small ribosomal subunit",2,0.099956365859862
+"proton-transporting ATP synthase complex, coupling factor F(o)",1,0.164040974096092
+"small ribosomal subunit",2,0.169663651890799
+"mitochondrial membrane",4,0.169663651890799
+"proton-transporting ATP synthase complex",1,0.169663651890799
+"mitochondrial inner membrane",3,0.169663651890799
+"proton-transporting two-sector ATPase complex, proton-transporting domain",1,0.169663651890799
+"cation channel complex",1,0.169663651890799
+"monoatomic ion channel complex",1,0.169663651890799
+"organelle inner membrane",3,0.169663651890799
+"respiratory chain complex",1,0.169663651890799
+"mitochondrial envelope",4,0.169663651890799
+"proton-transporting two-sector ATPase complex",1,0.230316303892835
+"preribosome",2,0.252109065342835
+"transmembrane transporter complex",1,0.290515972250598
+"small-subunit processome",1,0.335257773282682
+"preribosome, large subunit precursor",1,0.359208519122775
+"transporter complex",1,0.360851367285208
+"mitochondrial intermembrane space",1,0.36222906716306
+"organelle envelope lumen",1,0.372380649150988
+"90S preribosome",1,0.447889616628655
+"cytoplasmic stress granule",1,0.456641139445809
+"mitochondrial outer membrane",1,0.485946100929835
+"organelle outer membrane",1,0.489133137955528
+"outer membrane",1,0.489133137955528
+"extracellular region",1,0.489133137955528
+"nucleolus",2,0.489133137955528
+"ribonucleoprotein granule",1,0.489133137955528
+"cytoplasmic ribonucleoprotein granule",1,0.489133137955528
+"storage vacuole",2,0.558826272027623
+"lytic vacuole",2,0.558826272027623
+"fungal-type vacuole",2,0.558826272027623
+"fungal-type vacuole membrane",1,0.603510175064941
+"lytic vacuole membrane",1,0.603510175064941
+"mitochondrial matrix",1,0.627083974516863
+"supramolecular complex",1,0.649820457235933
+"vacuolar membrane",1,0.667056773851848
+"membrane protein complex",1,0.667056773851848

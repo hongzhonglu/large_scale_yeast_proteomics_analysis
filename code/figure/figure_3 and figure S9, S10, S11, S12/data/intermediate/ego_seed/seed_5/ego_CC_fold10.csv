@@ -1,0 +1,65 @@
+"Description","Count","p.adjust"
+"ribosome",10,8.0429687963735e-07
+"cytosolic ribosome",8,3.19666646982153e-06
+"ribosomal subunit",8,2.615203104403e-05
+"cytosolic small ribosomal subunit",4,0.0010656789973793
+"cytosolic large ribosomal subunit",4,0.00418436129049191
+"small ribosomal subunit",4,0.00418436129049191
+"fungal-type cell wall",4,0.00857738001247157
+"cell wall",4,0.00857738001247157
+"external encapsulating structure",4,0.00857738001247157
+"large ribosomal subunit",4,0.0103015553515467
+"lipid droplet",2,0.12012738749694
+"actin filament",1,0.179022862273684
+"cytoplasmic side of plasma membrane",1,0.179022862273684
+"side of membrane",2,0.179022862273684
+"cytoplasmic side of membrane",1,0.264899065548262
+"COPI-coated vesicle",1,0.296155912929954
+"preribosome, small subunit precursor",1,0.296155912929954
+"Golgi-associated vesicle",1,0.461729169409412
+"actin cortical patch",1,0.515748134345809
+"endocytic patch",1,0.515748134345809
+"storage vacuole",3,0.515748134345809
+"lytic vacuole",3,0.515748134345809
+"fungal-type vacuole",3,0.515748134345809
+"cortical actin cytoskeleton",1,0.515748134345809
+"mitochondrial inner membrane",2,0.515748134345809
+"cortical cytoskeleton",1,0.515748134345809
+"polymeric cytoskeletal fiber",1,0.515748134345809
+"supramolecular complex",2,0.515748134345809
+"supramolecular polymer",1,0.515748134345809
+"supramolecular fiber",1,0.515748134345809
+"actin cytoskeleton",1,0.515748134345809
+"organelle inner membrane",2,0.515748134345809
+"site of polarized growth",2,0.518270719417954
+"90S preribosome",1,0.538140215223415
+"cytoplasmic stress granule",1,0.550745301313365
+"coated vesicle",1,0.557689444130072
+"mating projection tip",1,0.56244529149307
+"extracellular region",1,0.56244529149307
+"mating projection",1,0.56244529149307
+"plasma membrane bounded cell projection",1,0.56244529149307
+"cell projection",1,0.56244529149307
+"cell tip",1,0.56244529149307
+"cell pole",1,0.56244529149307
+"ribonucleoprotein granule",1,0.56244529149307
+"cytoplasmic ribonucleoprotein granule",1,0.56244529149307
+"mitochondrial membrane",2,0.613831059507005
+"preribosome",1,0.629113602567465
+"cell cortex",1,0.6444654040735
+"mitochondrial envelope",2,0.6444654040735
+"cellular bud neck",1,0.665270438953292
+"fungal-type vacuole membrane",1,0.679566285506841
+"lytic vacuole membrane",1,0.679566285506841
+"cellular bud",1,0.723905003271861
+"cytoskeleton",1,0.723905003271861
+"Golgi apparatus",1,0.747901076607035
+"vacuolar membrane",1,0.747901076607035
+"cytoplasmic vesicle",1,0.749590591003335
+"intracellular vesicle",1,0.749590591003335
+"vesicle",1,0.749590591003335
+"nucleolus",1,0.788887162658987
+"endoplasmic reticulum membrane",1,0.788887162658987
+"endoplasmic reticulum subcompartment",1,0.788887162658987
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.788887162658987
+"organelle subcompartment",1,0.820899544937382

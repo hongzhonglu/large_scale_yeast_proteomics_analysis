@@ -1,0 +1,61 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",4,0.143143983485143
+"cytosolic large ribosomal subunit",3,0.143143983485143
+"ribosomal subunit",4,0.184913173645893
+"large ribosomal subunit",3,0.184913173645893
+"ribosome",4,0.184913173645893
+"proteasome regulatory particle, lid subcomplex",1,0.2261186062792
+"cytoplasmic side of plasma membrane",1,0.2261186062792
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.2261186062792
+"fungal-type vacuole lumen",1,0.2261186062792
+"mitochondrial matrix",3,0.2261186062792
+"proton-transporting ATP synthase complex",1,0.2261186062792
+"cation channel complex",1,0.2261186062792
+"cytoplasmic side of membrane",1,0.2261186062792
+"vacuolar lumen",1,0.2261186062792
+"proteasome regulatory particle",1,0.2261186062792
+"proteasome accessory complex",1,0.2261186062792
+"proteasome storage granule",1,0.2261186062792
+"monoatomic ion channel complex",1,0.2261186062792
+"eisosome",1,0.2261186062792
+"respiratory chain complex",1,0.2261186062792
+"nucleoid",1,0.245483178777541
+"mitochondrial nucleoid",1,0.245483178777541
+"membrane raft",1,0.245483178777541
+"membrane microdomain",1,0.245483178777541
+"proton-transporting two-sector ATPase complex",1,0.25873831586259
+"proteasome complex",1,0.321120979505501
+"transmembrane transporter complex",1,0.329663514610608
+"organelle membrane contact site",1,0.362927498148397
+"endopeptidase complex",1,0.362927498148397
+"mitochondrial membrane",3,0.362927498148397
+"cytosolic small ribosomal subunit",1,0.368761167378439
+"transporter complex",1,0.368761167378439
+"storage vacuole",3,0.368761167378439
+"lytic vacuole",3,0.368761167378439
+"fungal-type vacuole",3,0.368761167378439
+"mitochondrial envelope",3,0.368761167378439
+"mitochondrial inner membrane",2,0.377129396586663
+"peptidase complex",1,0.396729334112161
+"organelle inner membrane",2,0.396729334112161
+"side of membrane",1,0.409336692896122
+"membrane protein complex",2,0.426330556771152
+"small ribosomal subunit",1,0.433869223967914
+"mitochondrial outer membrane",1,0.461660818300487
+"organelle outer membrane",1,0.468480361844348
+"outer membrane",1,0.468480361844348
+"extracellular region",1,0.468480361844348
+"fungal-type cell wall",1,0.468480361844348
+"cell wall",1,0.468480361844348
+"external encapsulating structure",1,0.468480361844348
+"nucleolus",2,0.468480361844348
+"peroxisome",1,0.468877675052653
+"microbody",1,0.468877675052653
+"endoplasmic reticulum membrane",2,0.469017479287289
+"endoplasmic reticulum subcompartment",2,0.469017479287289
+"nuclear outer membrane-endoplasmic reticulum membrane network",2,0.469017479287289
+"organelle subcompartment",2,0.536234797975304
+"fungal-type vacuole membrane",1,0.571187179628595
+"lytic vacuole membrane",1,0.571187179628595
+"vacuolar membrane",1,0.665505195285921
+"intracellular protein-containing complex",1,0.803682564813493

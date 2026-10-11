@@ -1,0 +1,58 @@
+"Description","Count","p.adjust"
+"cytosolic large ribosomal subunit",6,4.79872153750609e-05
+"large ribosomal subunit",6,0.000257675781364987
+"cytosolic ribosome",6,0.000530344805212493
+"ribosomal subunit",6,0.00245912558869641
+"ribosome",6,0.00366688241541693
+"mitochondrial inner membrane",4,0.113655996508166
+"organelle inner membrane",4,0.123963839038663
+"cytoplasmic side of plasma membrane",1,0.264809418887426
+"CCR4-NOT complex",1,0.264809418887426
+"mitochondrial membrane",4,0.294907162817401
+"ER to Golgi transport vesicle membrane",1,0.294907162817401
+"cytoplasmic side of membrane",1,0.294907162817401
+"mitochondrial envelope",4,0.332385255831892
+"transport vesicle membrane",1,0.381502139301523
+"vesicle coat",1,0.381502139301523
+"inner mitochondrial membrane protein complex",1,0.381502139301523
+"membrane coat",1,0.381502139301523
+"coated membrane",1,0.381502139301523
+"transport vesicle",1,0.398906901022444
+"COPII-coated ER to Golgi transport vesicle",1,0.414087008567679
+"coated vesicle membrane",1,0.42736625818637
+"organelle membrane contact site",1,0.46965526318511
+"nuclear periphery",1,0.474686610801466
+"storage vacuole",3,0.474686610801466
+"lytic vacuole",3,0.474686610801466
+"fungal-type vacuole",3,0.474686610801466
+"side of membrane",1,0.524697143926087
+"membrane protein complex",2,0.524697143926087
+"cytoplasmic vesicle",2,0.524697143926087
+"intracellular vesicle",2,0.524697143926087
+"coated vesicle",1,0.524697143926087
+"vesicle",2,0.524697143926087
+"mating projection tip",1,0.524697143926087
+"extracellular region",1,0.524697143926087
+"mating projection",1,0.524697143926087
+"fungal-type cell wall",1,0.524697143926087
+"plasma membrane bounded cell projection",1,0.524697143926087
+"cell wall",1,0.524697143926087
+"external encapsulating structure",1,0.524697143926087
+"cell projection",1,0.524697143926087
+"cell tip",1,0.524697143926087
+"cell pole",1,0.524697143926087
+"mitochondrial protein-containing complex",1,0.552098037899707
+"cytoplasmic vesicle membrane",1,0.552098037899707
+"vesicle membrane",1,0.552098037899707
+"intracellular protein-containing complex",2,0.584726922299635
+"endosome",1,0.610774622890308
+"fungal-type vacuole membrane",1,0.642294155051746
+"lytic vacuole membrane",1,0.642294155051746
+"mitochondrial matrix",1,0.669245365143954
+"site of polarized growth",1,0.717337811457229
+"vacuolar membrane",1,0.717337811457229
+"nucleolus",1,0.790427957898555
+"endoplasmic reticulum membrane",1,0.790427957898555
+"endoplasmic reticulum subcompartment",1,0.790427957898555
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.790427957898555
+"organelle subcompartment",1,0.820899544937382

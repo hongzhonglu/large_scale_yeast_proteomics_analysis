@@ -1,0 +1,47 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,4.59520805036845e-06
+"ribosomal subunit",8,2.81951584693448e-05
+"ribosome",8,4.45210641856432e-05
+"cytosolic large ribosomal subunit",5,0.00022281924660728
+"nucleoid",3,0.00089289639921029
+"mitochondrial nucleoid",3,0.00089289639921029
+"large ribosomal subunit",5,0.00089289639921029
+"cytosolic small ribosomal subunit",3,0.00813028607574075
+"small ribosomal subunit",3,0.0265365541505359
+"cytoplasmic side of plasma membrane",1,0.176605814665155
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.178496440652638
+"mitochondrial matrix",3,0.178496440652638
+"proton-transporting ATP synthase complex",1,0.178496440652638
+"mitochondrial inner membrane",3,0.178496440652638
+"cation channel complex",1,0.178496440652638
+"cytoplasmic side of membrane",1,0.178496440652638
+"monoatomic ion channel complex",1,0.182481682260407
+"organelle inner membrane",3,0.182481682260407
+"respiratory chain complex",1,0.182481682260407
+"phagophore assembly site membrane",1,0.203503671089088
+"proton-transporting two-sector ATPase complex",1,0.236150050192046
+"transmembrane transporter complex",1,0.302786060452556
+"phagophore assembly site",1,0.302786060452556
+"mitochondrial membrane",3,0.347805519058881
+"transporter complex",1,0.350958904125686
+"storage vacuole",3,0.350958904125686
+"lytic vacuole",3,0.350958904125686
+"fungal-type vacuole",3,0.350958904125686
+"mitochondrial envelope",3,0.350958904125686
+"side of membrane",1,0.412426963623749
+"vacuolar membrane",2,0.412426963623749
+"extracellular region",1,0.498844829741667
+"fungal-type cell wall",1,0.498844829741667
+"cell wall",1,0.498844829741667
+"external encapsulating structure",1,0.498844829741667
+"nucleolus",2,0.498844829741667
+"endoplasmic reticulum membrane",2,0.507100095126855
+"endoplasmic reticulum subcompartment",2,0.507100095126855
+"nuclear outer membrane-endoplasmic reticulum membrane network",2,0.507100095126855
+"organelle subcompartment",2,0.57555868316016
+"cellular bud neck",1,0.583125765850828
+"fungal-type vacuole membrane",1,0.590669533042283
+"lytic vacuole membrane",1,0.590669533042283
+"cellular bud",1,0.634011594901049
+"site of polarized growth",1,0.658279845510515
+"membrane protein complex",1,0.667056773851848

@@ -1,19 +1,23 @@
 "Description","Count","p.adjust"
-"Carbon metabolism",7,0.000334751116880836
-"Glycolysis / Gluconeogenesis",5,0.00053081968781345
-"Ribosome",8,0.000967366245831027
-"Biosynthesis of amino acids",6,0.00158298675178195
-"Carbon fixation by Calvin cycle",3,0.00205885780491472
-"Protein processing in endoplasmic reticulum",4,0.0168020623478416
-"Biosynthesis of secondary metabolites",8,0.0168020623478416
-"Methane metabolism",2,0.0414527015013621
-"Citrate cycle (TCA cycle)",2,0.0514413741639583
-"Longevity regulating pathway - multiple species",2,0.0676348203698059
-"Selenocompound metabolism",1,0.153978727030518
-"Propanoate metabolism",1,0.174404311585259
-"Endocytosis",2,0.183040590125676
-"Spliceosome",2,0.195376987364343
-"Glycine, serine and threonine metabolism",1,0.263510168960164
-"Cysteine and methionine metabolism",1,0.343757042975155
-"Pyruvate metabolism",1,0.371176635238509
-"RNA degradation",1,0.412876279095928
+"Ribosome",8,0.0025352255649935
+"Glycolysis / Gluconeogenesis",4,0.0122269660444806
+"Longevity regulating pathway - multiple species",3,0.0293571180105043
+"Pyruvate metabolism",3,0.053285883202312
+"Carbon fixation by Calvin cycle",2,0.0550470954284967
+"Carbon metabolism",4,0.0550470954284967
+"Methane metabolism",2,0.0579759561185791
+"Biosynthesis of amino acids",4,0.0579759561185791
+"Biosynthesis of secondary metabolites",6,0.200639656200893
+"Lysine biosynthesis",1,0.220267024643937
+"Spliceosome",2,0.25389660537674
+"Endocytosis",2,0.25389660537674
+"Oxidative phosphorylation",2,0.25389660537674
+"Fructose and mannose metabolism",1,0.27192922831768
+"Protein processing in endoplasmic reticulum",2,0.27192922831768
+"Base excision repair",1,0.27192922831768
+"Pentose phosphate pathway",1,0.277132710753732
+"Glycine, serine and threonine metabolism",1,0.277132710753732
+"Citrate cycle (TCA cycle)",1,0.277132710753732
+"Phagosome",1,0.285285209054362
+"Mitophagy - yeast",1,0.310279287740405
+"2-Oxocarboxylic acid metabolism",1,0.310279287740405

@@ -1,0 +1,55 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00150729576218288
+"ribosomal subunit",6,0.00465939585226688
+"ribosome",6,0.00578981434013199
+"cytosolic small ribosomal subunit",3,0.0190884977430435
+"respiratory chain complex",2,0.0288051726903085
+"cytosolic large ribosomal subunit",3,0.0400520662023616
+"small ribosomal subunit",3,0.0400520662023616
+"transmembrane transporter complex",2,0.0685063321003135
+"mitochondrial inner membrane",4,0.0685063321003135
+"mitochondrial membrane",5,0.0685063321003135
+"large ribosomal subunit",3,0.0685063321003135
+"organelle inner membrane",4,0.0685063321003135
+"mitochondrial envelope",5,0.0844541243254652
+"transporter complex",2,0.0844541243254652
+"mitochondrial intermembrane space",2,0.085774497163343
+"organelle envelope lumen",2,0.0917813780310796
+"cytoplasmic side of plasma membrane",1,0.115177705216405
+"proton-transporting ATP synthase complex, coupling factor F(o)",1,0.115177705216405
+"90S preribosome",2,0.122915171935533
+"proton-transporting ATP synthase complex",1,0.145766469493269
+"proton-transporting two-sector ATPase complex, proton-transporting domain",1,0.145766469493269
+"cation channel complex",1,0.145766469493269
+"cytoplasmic side of membrane",1,0.145766469493269
+"monoatomic ion channel complex",1,0.16215314211551
+"oxidoreductase complex",1,0.184074923592339
+"nucleoid",1,0.189933041231352
+"mitochondrial nucleoid",1,0.189933041231352
+"proton-transporting two-sector ATPase complex",1,0.207914718103867
+"preribosome",2,0.229728143181072
+"actin cortical patch",1,0.325581889622173
+"endocytic patch",1,0.325581889622173
+"nuclear periphery",1,0.325581889622173
+"cortical actin cytoskeleton",1,0.371441160800823
+"cortical cytoskeleton",1,0.373692945420149
+"actin cytoskeleton",1,0.396510254630016
+"side of membrane",1,0.409336692896122
+"membrane protein complex",2,0.425178312023122
+"mitochondrial outer membrane",1,0.470165096532338
+"organelle outer membrane",1,0.474486890918806
+"outer membrane",1,0.474486890918806
+"extracellular region",1,0.474486890918806
+"fungal-type cell wall",1,0.474486890918806
+"cell wall",1,0.474486890918806
+"external encapsulating structure",1,0.474486890918806
+"storage vacuole",2,0.552066528645375
+"lytic vacuole",2,0.552066528645375
+"fungal-type vacuole",2,0.552066528645375
+"cell cortex",1,0.552066528645375
+"fungal-type vacuole membrane",1,0.596319415532253
+"lytic vacuole membrane",1,0.596319415532253
+"mitochondrial matrix",1,0.621590122424726
+"cytoskeleton",1,0.634286955991811
+"vacuolar membrane",1,0.666760865465706
+"nucleolus",1,0.748737972567602

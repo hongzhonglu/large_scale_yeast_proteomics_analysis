@@ -1,24 +1,23 @@
 "Description","Count","p.adjust"
-"Glycolysis / Gluconeogenesis",6,2.57496010169581e-05
-"Carbon metabolism",6,0.000884268177787363
-"Methane metabolism",3,0.00522650535878618
-"Biosynthesis of amino acids",5,0.00747591549647261
-"Ribosome",6,0.0113972855051014
-"Carbon fixation by Calvin cycle",2,0.0309888343331439
-"Biosynthesis of secondary metabolites",7,0.0309888343331439
-"Fructose and mannose metabolism",2,0.0309888343331439
-"Propanoate metabolism",1,0.256757177628529
-"Protein processing in endoplasmic reticulum",2,0.302208580578671
-"Glutathione metabolism",1,0.302208580578671
-"Pentose phosphate pathway",1,0.302208580578671
-"Glycine, serine and threonine metabolism",1,0.302208580578671
-"Citrate cycle (TCA cycle)",1,0.302208580578671
-"Pyrimidine metabolism",1,0.302208580578671
-"Longevity regulating pathway - multiple species",1,0.339545532814812
-"Nucleotide metabolism",1,0.348707918768896
-"Pyruvate metabolism",1,0.394957254510112
-"Purine metabolism",1,0.403708665662871
-"RNA degradation",1,0.421240637730239
-"Endocytosis",1,0.451130681491205
-"Oxidative phosphorylation",1,0.451130681491205
-"Spliceosome",1,0.455784738016893
+"Carbon metabolism",8,4.89547709801766e-06
+"Glycolysis / Gluconeogenesis",5,0.000230200447543944
+"Citrate cycle (TCA cycle)",4,0.000293326420188601
+"Biosynthesis of secondary metabolites",9,0.00104461926191845
+"Methane metabolism",3,0.00265539902631386
+"Biosynthesis of amino acids",5,0.00389316115851772
+"Propanoate metabolism",2,0.0126519635126226
+"Pyruvate metabolism",3,0.0126519635126226
+"Ribosome",5,0.0165681115240304
+"Carbon fixation by Calvin cycle",2,0.0183712777443131
+"Fructose and mannose metabolism",1,0.289622357808462
+"Pentose phosphate pathway",1,0.290410726057529
+"Glyoxylate and dicarboxylate metabolism",1,0.290410726057529
+"Glycine, serine and threonine metabolism",1,0.290410726057529
+"Longevity regulating pathway - multiple species",1,0.334926190143349
+"2-Oxocarboxylic acid metabolism",1,0.335920929140189
+"Cysteine and methionine metabolism",1,0.335920929140189
+"RNA degradation",1,0.434210289565629
+"Spliceosome",1,0.439219275846436
+"Endocytosis",1,0.439219275846436
+"Oxidative phosphorylation",1,0.439219275846436
+"Protein processing in endoplasmic reticulum",1,0.469830723159891

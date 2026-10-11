@@ -1,0 +1,51 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,4.99479135909614e-06
+"ribosomal subunit",8,3.06469113797226e-05
+"ribosome",8,4.83924610713513e-05
+"cytosolic small ribosomal subunit",4,0.000832561716702582
+"cytosolic large ribosomal subunit",4,0.00326903225819681
+"small ribosomal subunit",4,0.00326903225819681
+"large ribosomal subunit",4,0.0114972715977084
+"preribosome",4,0.0178833887279792
+"small-subunit processome",2,0.0887269583669936
+"nucleolus",4,0.205544663852172
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.205544663852172
+"proton-transporting ATP synthase complex",1,0.238791224953361
+"cation channel complex",1,0.238791224953361
+"monoatomic ion channel complex",1,0.251242895865778
+"respiratory chain complex",1,0.251242895865778
+"oxidoreductase complex",1,0.2637958905991
+"nucleoid",1,0.2637958905991
+"mitochondrial nucleoid",1,0.2637958905991
+"proton-transporting two-sector ATPase complex",1,0.28370429370898
+"transmembrane transporter complex",1,0.370871453936934
+"mitochondrial membrane",3,0.425493654667429
+"preribosome, large subunit precursor",1,0.425493654667429
+"lipid droplet",1,0.425493654667429
+"transporter complex",1,0.425493654667429
+"mitochondrial matrix",2,0.425493654667429
+"mitochondrial envelope",3,0.425493654667429
+"mitochondrial inner membrane",2,0.430672459065016
+"organelle inner membrane",2,0.460489405665901
+"90S preribosome",1,0.49290860230593
+"cytoplasmic stress granule",1,0.501981394426244
+"mitochondrial outer membrane",1,0.507011981514186
+"organelle outer membrane",1,0.507011981514186
+"outer membrane",1,0.507011981514186
+"extracellular region",1,0.507011981514186
+"fungal-type cell wall",1,0.507011981514186
+"cell wall",1,0.507011981514186
+"external encapsulating structure",1,0.507011981514186
+"ribonucleoprotein granule",1,0.507011981514186
+"cytoplasmic ribonucleoprotein granule",1,0.507011981514186
+"transferase complex, transferring phosphorus-containing groups",1,0.557575891023356
+"fungal-type vacuole membrane",1,0.657318579731319
+"lytic vacuole membrane",1,0.657318579731319
+"supramolecular complex",1,0.723451770797055
+"vacuolar membrane",1,0.741174193168721
+"membrane protein complex",1,0.741174193168721
+"transferase complex",1,0.813195813513683
+"intracellular protein-containing complex",1,0.813195813513683
+"storage vacuole",1,0.813195813513683
+"lytic vacuole",1,0.813195813513683
+"fungal-type vacuole",1,0.813195813513683

@@ -1,0 +1,64 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00175851172254669
+"ribosomal subunit",6,0.0054359618276447
+"ribosome",6,0.00675478339682066
+"cytosolic small ribosomal subunit",3,0.0222699140335507
+"cytosolic large ribosomal subunit",3,0.0545153123309922
+"small ribosomal subunit",3,0.0545153123309922
+"fungal-type cell wall",3,0.0824824307921201
+"cell wall",3,0.0824824307921201
+"external encapsulating structure",3,0.0824824307921201
+"large ribosomal subunit",3,0.0915482862241837
+"lipid droplet",2,0.1182503970673
+"nuclear pore nuclear basket",1,0.176883381758492
+"proton-transporting ATP synthase complex, coupling factor F(o)",1,0.176883381758492
+"nuclear pore central transport channel",1,0.176883381758492
+"fungal-type vacuole lumen",1,0.176883381758492
+"proton-transporting ATP synthase complex",1,0.176883381758492
+"mitochondrial inner membrane",3,0.176883381758492
+"proton-transporting two-sector ATPase complex, proton-transporting domain",1,0.176883381758492
+"cation channel complex",1,0.176883381758492
+"vacuolar lumen",1,0.176883381758492
+"monoatomic ion channel complex",1,0.176883381758492
+"organelle inner membrane",3,0.176883381758492
+"storage vacuole",4,0.176883381758492
+"lytic vacuole",4,0.176883381758492
+"fungal-type vacuole",4,0.176883381758492
+"respiratory chain complex",1,0.176883381758492
+"mitochondrial envelope",4,0.176883381758492
+"Golgi apparatus",3,0.184134444036186
+"endoplasmic reticulum-Golgi intermediate compartment",1,0.192996477380245
+"nucleoid",1,0.192996477380245
+"mitochondrial nucleoid",1,0.192996477380245
+"proton-transporting two-sector ATPase complex",1,0.21224627473103
+"peroxisomal membrane",1,0.246383674160921
+"microbody membrane",1,0.246383674160921
+"COPII-coated ER to Golgi transport vesicle",1,0.259610017755854
+"transmembrane transporter complex",1,0.259610017755854
+"nuclear pore",1,0.284867403422162
+"small-subunit processome",1,0.284867403422162
+"mitochondrial membrane",3,0.284867403422162
+"fungal-type vacuole membrane",2,0.284867403422162
+"lytic vacuole membrane",2,0.284867403422162
+"transporter complex",1,0.31094639095853
+"mitochondrial intermembrane space",1,0.316166291180425
+"organelle envelope lumen",1,0.328984258219949
+"vacuolar membrane",2,0.38911587437545
+"nuclear membrane",1,0.391540876701275
+"coated vesicle",1,0.420491908007648
+"extracellular region",1,0.486716637859325
+"nucleolus",2,0.492321558805286
+"Golgi membrane",1,0.492321558805286
+"peroxisome",1,0.492321558805286
+"microbody",1,0.492321558805286
+"endoplasmic reticulum membrane",2,0.492468353251654
+"endoplasmic reticulum subcompartment",2,0.492468353251654
+"nuclear outer membrane-endoplasmic reticulum membrane network",2,0.492468353251654
+"nuclear envelope",1,0.50181830192102
+"preribosome",1,0.510637438926059
+"organelle subcompartment",2,0.543631140016343
+"mitochondrial matrix",1,0.62685783532663
+"membrane protein complex",1,0.691028826081199
+"cytoplasmic vesicle",1,0.691028826081199
+"intracellular vesicle",1,0.691028826081199
+"vesicle",1,0.691028826081199

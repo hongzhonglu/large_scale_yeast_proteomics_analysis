@@ -1,0 +1,41 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,3.99583308727691e-06
+"ribosome",9,4.17161168099343e-06
+"ribosomal subunit",8,1.63450194025187e-05
+"cytosolic large ribosomal subunit",5,0.000193755866615027
+"large ribosomal subunit",5,0.00108700431208209
+"proton-transporting two-sector ATPase complex, catalytic domain",2,0.00612175360867021
+"cytosolic small ribosomal subunit",3,0.00791940004306943
+"proton-transporting ATP synthase complex",2,0.00791940004306943
+"cation channel complex",2,0.00791940004306943
+"monoatomic ion channel complex",2,0.00969871134353822
+"respiratory chain complex",2,0.00969871134353822
+"small ribosomal subunit",3,0.0172453516695602
+"proton-transporting two-sector ATPase complex",2,0.0172453516695602
+"transmembrane transporter complex",2,0.031080958465082
+"transporter complex",2,0.058388036570692
+"cytoplasmic stress granule",2,0.120887116143148
+"mitochondrial inner membrane",3,0.144520744308653
+"organelle inner membrane",3,0.161868359575214
+"oxidoreductase complex",1,0.165159166288132
+"ribonucleoprotein granule",2,0.165159166288132
+"cytoplasmic ribonucleoprotein granule",2,0.165159166288132
+"nucleoid",1,0.165159166288132
+"mitochondrial nucleoid",1,0.165159166288132
+"mitochondrial membrane",3,0.285215226869564
+"fungal-type vacuole membrane",2,0.285215226869564
+"lytic vacuole membrane",2,0.285215226869564
+"mitochondrial matrix",2,0.31608100061009
+"mitochondrial envelope",3,0.31608100061009
+"supramolecular complex",2,0.339121748419984
+"vacuolar membrane",2,0.370586547024238
+"membrane protein complex",2,0.375904361884242
+"extracellular region",1,0.441850226464073
+"fungal-type cell wall",1,0.441850226464073
+"cell wall",1,0.441850226464073
+"external encapsulating structure",1,0.441850226464073
+"storage vacuole",2,0.513143945198937
+"lytic vacuole",2,0.513143945198937
+"fungal-type vacuole",2,0.513143945198937
+"cytoskeleton",1,0.626456252831418
+"nucleolus",1,0.748737972567602

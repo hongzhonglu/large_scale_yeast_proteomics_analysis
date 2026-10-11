@@ -1,0 +1,72 @@
+"Description","Count","p.adjust"
+"ribosomal subunit",8,6.54233712101405e-05
+"cytosolic ribosome",7,6.54233712101405e-05
+"ribosome",8,6.87172947213188e-05
+"cytosolic large ribosomal subunit",5,0.000343916663241672
+"large ribosomal subunit",5,0.00192943265394571
+"storage vacuole",6,0.0371611073103638
+"lytic vacuole",6,0.0371611073103638
+"fungal-type vacuole",6,0.0371611073103638
+"small ribosomal subunit",3,0.0409585944497402
+"fungal-type cell wall",3,0.0697172926933396
+"cell wall",3,0.0697172926933396
+"external encapsulating structure",3,0.0697172926933396
+"cytosolic small ribosomal subunit",2,0.116152241833882
+"cytoplasmic side of plasma membrane",1,0.177147323162764
+"side of membrane",2,0.177147323162764
+"fungal-type vacuole membrane",3,0.177147323162764
+"lytic vacuole membrane",3,0.177147323162764
+"mitochondrial outer membrane",2,0.232004526981003
+"cytoplasmic side of membrane",1,0.232004526981003
+"organelle outer membrane",2,0.232644184849012
+"outer membrane",2,0.232644184849012
+"extracellular region",2,0.244738694906838
+"vacuolar membrane",3,0.252108788099075
+"Golgi cisterna",1,0.252108788099075
+"peroxisome",2,0.253159096847685
+"microbody",2,0.253159096847685
+"Golgi stack",1,0.275095525071865
+"organellar small ribosomal subunit",1,0.302641319767826
+"mitochondrial small ribosomal subunit",1,0.302641319767826
+"phagophore assembly site",1,0.358296838202191
+"mitochondrial membrane",3,0.38823009564838
+"late endosome",1,0.38823009564838
+"actin cortical patch",1,0.38823009564838
+"endocytic patch",1,0.38823009564838
+"lipid droplet",1,0.38823009564838
+"microtubule",1,0.38823009564838
+"mitochondrial intermembrane space",1,0.38823009564838
+"mitochondrial envelope",3,0.38823009564838
+"cortical actin cytoskeleton",1,0.38823009564838
+"Golgi apparatus subcompartment",1,0.38823009564838
+"organelle envelope lumen",1,0.38823009564838
+"cytoskeleton",2,0.38823009564838
+"cortical cytoskeleton",1,0.38823009564838
+"polymeric cytoskeletal fiber",1,0.38823009564838
+"supramolecular polymer",1,0.38823009564838
+"supramolecular fiber",1,0.38823009564838
+"actin cytoskeleton",1,0.38823009564838
+"organellar ribosome",1,0.402984973650993
+"mitochondrial ribosome",1,0.402984973650993
+"cellular bud tip",1,0.438384746453994
+"mating projection tip",1,0.490177594983581
+"mating projection",1,0.490177594983581
+"plasma membrane bounded cell projection",1,0.490177594983581
+"cell projection",1,0.490177594983581
+"cell tip",1,0.490177594983581
+"cell pole",1,0.490177594983581
+"microtubule cytoskeleton",1,0.508853603166146
+"mitochondrial protein-containing complex",1,0.520863025285838
+"cell cortex",1,0.590534441187519
+"endosome",1,0.595951729995602
+"mitochondrial matrix",1,0.683296245689111
+"cellular bud",1,0.68509440593913
+"mitochondrial inner membrane",1,0.68509440593913
+"supramolecular complex",1,0.690218205076065
+"organelle inner membrane",1,0.692116635628437
+"site of polarized growth",1,0.692116635628437
+"Golgi apparatus",1,0.692116635628437
+"cytoplasmic vesicle",1,0.700900666453788
+"intracellular vesicle",1,0.700900666453788
+"vesicle",1,0.700900666453788
+"organelle subcompartment",1,0.820899544937382

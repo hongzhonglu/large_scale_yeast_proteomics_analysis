@@ -1,0 +1,50 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.00136773133975854
+"ribosomal subunit",6,0.00422797031039032
+"ribosome",6,0.00428170178764712
+"cytosolic large ribosomal subunit",4,0.00428170178764712
+"large ribosomal subunit",4,0.0157742566320559
+"mitochondrial envelope",5,0.148871183195539
+"cytosolic small ribosomal subunit",2,0.148871183195539
+"cytoplasmic side of plasma membrane",1,0.175211559283133
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.175211559283133
+"small ribosomal subunit",2,0.175211559283133
+"mitochondrial membrane",4,0.175211559283133
+"proton-transporting ATP synthase complex",1,0.175211559283133
+"mitochondrial inner membrane",3,0.175211559283133
+"cation channel complex",1,0.175211559283133
+"cytoplasmic side of membrane",1,0.175211559283133
+"monoatomic ion channel complex",1,0.175211559283133
+"organelle inner membrane",3,0.175211559283133
+"storage vacuole",4,0.175211559283133
+"lytic vacuole",4,0.175211559283133
+"fungal-type vacuole",4,0.175211559283133
+"respiratory chain complex",1,0.175211559283133
+"preribosome, small subunit precursor",1,0.175211559283133
+"proton-transporting two-sector ATPase complex",1,0.229677128211357
+"nucleolus",3,0.290763219886556
+"transmembrane transporter complex",1,0.290763219886556
+"nuclear periphery",1,0.363612822597983
+"transporter complex",1,0.376206744616493
+"mitochondrial intermembrane space",1,0.377643070021063
+"organelle envelope lumen",1,0.388226634221242
+"side of membrane",1,0.44572217670911
+"90S preribosome",1,0.451885886372081
+"mitochondrial outer membrane",1,0.498534959464398
+"organelle outer membrane",1,0.498534959464398
+"outer membrane",1,0.498534959464398
+"extracellular region",1,0.498534959464398
+"fungal-type cell wall",1,0.498534959464398
+"cell wall",1,0.498534959464398
+"external encapsulating structure",1,0.498534959464398
+"endoplasmic reticulum membrane",2,0.513821994585059
+"endoplasmic reticulum subcompartment",2,0.513821994585059
+"nuclear outer membrane-endoplasmic reticulum membrane network",2,0.513821994585059
+"preribosome",1,0.539006185533063
+"organelle subcompartment",2,0.570321040947378
+"fungal-type vacuole membrane",1,0.601227394260913
+"lytic vacuole membrane",1,0.601227394260913
+"Golgi apparatus",1,0.680953789973762
+"vacuolar membrane",1,0.680953789973762
+"membrane protein complex",1,0.680953789973762
+"transferase complex",1,0.782422242346227

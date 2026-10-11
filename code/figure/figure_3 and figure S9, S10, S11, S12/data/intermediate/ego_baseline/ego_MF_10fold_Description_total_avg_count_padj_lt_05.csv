@@ -1,0 +1,38 @@
+Description,Total_count,Average_count
+structural molecule activity,79,7.9
+structural constituent of ribosome,75,7.5
+melatonin binding,23,2.3
+amide binding,18,1.8
+magnesium ion binding,13,1.3
+lyase activity,8,0.8
+oxidoreductase activity,7,0.7
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors",5,0.5
+NAD binding,5,0.5
+ATP-dependent activity,5,0.5
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",5,0.5
+monoatomic ion channel activity,4,0.4
+ATP-dependent protein folding chaperone,4,0.4
+active transmembrane transporter activity,4,0.4
+heat shock protein binding,4,0.4
+NADP binding,4,0.4
+primary active transmembrane transporter activity,4,0.4
+active monoatomic ion transmembrane transporter activity,3,0.3
+ATPase-coupled transmembrane transporter activity,3,0.3
+proton transmembrane transporter activity,3,0.3
+ligase activity,3,0.3
+ATPase-coupled monoatomic cation transmembrane transporter activity,2,0.2
+ATPase-coupled ion transmembrane transporter activity,2,0.2
+"ATPase activity, coupled to transmembrane movement of ions, rotational mechanism",2,0.2
+"ligase activity, forming carbon-sulfur bonds",2,0.2
+acid-thiol ligase activity,2,0.2
+heme binding,2,0.2
+channel activity,2,0.2
+carbon-carbon lyase activity,2,0.2
+protein folding chaperone,2,0.2
+passive transmembrane transporter activity,2,0.2
+monoatomic cation channel activity,2,0.2
+proton channel activity,2,0.2
+"proton-transporting ATPase activity, rotational mechanism",2,0.2
+"proton-transporting ATP synthase activity, rotational mechanism",2,0.2
+tRNA binding,2,0.2
+tetrapyrrole binding,2,0.2

@@ -1,0 +1,70 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",6,0.0019259890294559
+"ribosomal subunit",6,0.00595367247789657
+"ribosome",6,0.00739809610127977
+"cytosolic small ribosomal subunit",3,0.0243908582272222
+"cytosolic large ribosomal subunit",3,0.0597072468387057
+"small ribosomal subunit",3,0.0597072468387057
+"large ribosomal subunit",3,0.143238815180696
+"cytoplasmic side of plasma membrane",1,0.331135902497165
+"precatalytic spliceosome",1,0.358291888523754
+"mitochondrial inner membrane",3,0.358291888523754
+"cytoplasmic side of membrane",1,0.358291888523754
+"U2 snRNP",1,0.358291888523754
+"organelle inner membrane",3,0.358291888523754
+"fungal-type cell wall",2,0.358291888523754
+"cell wall",2,0.358291888523754
+"external encapsulating structure",2,0.358291888523754
+"nucleoid",1,0.360917579724566
+"mitochondrial nucleoid",1,0.360917579724566
+"U2-type prespliceosome",1,0.360917579724566
+"prespliceosome",1,0.360917579724566
+"catalytic step 2 spliceosome",1,0.36468331196246
+"preribosome",2,0.386941089650946
+"clathrin-coated vesicle",1,0.426684938839951
+"mitochondrial membrane",3,0.435067655938001
+"actin cortical patch",1,0.435067655938001
+"endocytic patch",1,0.435067655938001
+"nuclear periphery",1,0.435067655938001
+"U2-type spliceosomal complex",1,0.435067655938001
+"preribosome, large subunit precursor",1,0.435067655938001
+"spliceosomal snRNP complex",1,0.435067655938001
+"lipid droplet",1,0.435067655938001
+"small nuclear ribonucleoprotein complex",1,0.435067655938001
+"Sm-like protein family complex",1,0.435067655938001
+"incipient cellular bud site",1,0.435067655938001
+"mitochondrial envelope",3,0.435067655938001
+"cortical actin cytoskeleton",1,0.435067655938001
+"cortical cytoskeleton",1,0.438780605583418
+"actin cytoskeleton",1,0.466653150551408
+"side of membrane",1,0.482807381364656
+"90S preribosome",1,0.493155056607083
+"spliceosomal complex",1,0.502623762829501
+"cellular bud tip",1,0.503334102316385
+"coated vesicle",1,0.503334102316385
+"mitochondrial outer membrane",1,0.503334102316385
+"organelle outer membrane",1,0.503334102316385
+"outer membrane",1,0.503334102316385
+"mating projection tip",1,0.503334102316385
+"extracellular region",1,0.503334102316385
+"mating projection",1,0.503334102316385
+"plasma membrane bounded cell projection",1,0.503334102316385
+"cell projection",1,0.503334102316385
+"cell tip",1,0.503334102316385
+"cell pole",1,0.503334102316385
+"storage vacuole",2,0.59403649865935
+"lytic vacuole",2,0.59403649865935
+"fungal-type vacuole",2,0.59403649865935
+"cell cortex",1,0.59403649865935
+"cellular bud neck",1,0.618314389652171
+"fungal-type vacuole membrane",1,0.634969748020454
+"lytic vacuole membrane",1,0.634969748020454
+"mitochondrial matrix",1,0.664048464120404
+"cellular bud",1,0.66896578427355
+"cytoskeleton",1,0.66896578427355
+"site of polarized growth",1,0.694279524561871
+"vacuolar membrane",1,0.694685038463842
+"cytoplasmic vesicle",1,0.70119101470004
+"intracellular vesicle",1,0.70119101470004
+"vesicle",1,0.70119101470004
+"nucleolus",1,0.748737972567602

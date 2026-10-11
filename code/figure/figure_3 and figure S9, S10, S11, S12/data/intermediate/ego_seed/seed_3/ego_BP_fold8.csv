@@ -1,0 +1,315 @@
+"Description","Count","p.adjust"
+"generation of precursor metabolites and energy",13,1.25667868247196e-11
+"energy derivation by oxidation of organic compounds",9,3.18200304384341e-07
+"cellular respiration",8,3.18200304384341e-07
+"aerobic respiration",7,2.48224362246276e-06
+"pyruvate metabolic process",5,1.35258852404206e-05
+"ATP metabolic process",5,3.92221844850805e-05
+"purine ribonucleoside triphosphate metabolic process",5,5.40353763976606e-05
+"purine nucleoside triphosphate metabolic process",5,5.64530436760148e-05
+"ribonucleoside triphosphate metabolic process",5,5.81161855606942e-05
+"glycolytic process",4,5.81161855606942e-05
+"purine nucleoside diphosphate catabolic process",4,5.81161855606942e-05
+"purine ribonucleoside diphosphate catabolic process",4,5.81161855606942e-05
+"ADP catabolic process",4,5.81161855606942e-05
+"ribonucleoside diphosphate catabolic process",4,5.81161855606942e-05
+"nucleoside diphosphate catabolic process",4,5.81161855606942e-05
+"purine ribonucleotide catabolic process",4,5.81161855606942e-05
+"pyridine nucleotide catabolic process",4,5.81161855606942e-05
+"ADP metabolic process",4,5.81161855606942e-05
+"nucleoside triphosphate metabolic process",5,5.81161855606942e-05
+"purine nucleoside diphosphate metabolic process",4,5.81161855606942e-05
+"purine ribonucleoside diphosphate metabolic process",4,5.81161855606942e-05
+"ribonucleotide catabolic process",4,5.81161855606942e-05
+"pyridine-containing compound catabolic process",4,6.31082110466464e-05
+"purine nucleotide catabolic process",4,6.56461575352973e-05
+"ribonucleoside diphosphate metabolic process",4,6.56461575352973e-05
+"purine ribonucleotide metabolic process",5,7.63852308718618e-05
+"nucleoside diphosphate metabolic process",4,8.59539609116996e-05
+"nucleotide catabolic process",4,9.24174845720124e-05
+"oxidative phosphorylation",4,0.000161800185326286
+"ribonucleotide metabolic process",5,0.000165737817140517
+"purine-containing compound catabolic process",4,0.000165737817140517
+"nucleoside phosphate catabolic process",4,0.000175436309267661
+"ribose phosphate metabolic process",5,0.000214005464875294
+"purine-containing compound metabolic process",6,0.000266754873545249
+"carbohydrate derivative catabolic process",4,0.000283120837132072
+"glucose metabolic process",4,0.000450884454086318
+"organophosphate catabolic process",4,0.000499504139599376
+"purine nucleotide metabolic process",5,0.000751316712960691
+"nucleoside phosphate metabolic process",6,0.00103546200825333
+"hexose metabolic process",4,0.00108195164447159
+"gluconeogenesis",3,0.00119790249308817
+"tricarboxylic acid cycle",3,0.00119790249308817
+"hexose biosynthetic process",3,0.00119790249308817
+"nicotinamide nucleotide metabolic process",4,0.00119790249308817
+"pyridine nucleotide metabolic process",4,0.00122845017041073
+"nucleobase-containing small molecule metabolic process",6,0.00126149274917827
+"monosaccharide biosynthetic process",3,0.00133089565456168
+"monosaccharide metabolic process",4,0.00151388066066983
+"monocarboxylic acid metabolic process",5,0.00172640647779291
+"pyridine-containing compound metabolic process",4,0.00203170424964541
+"nucleotide metabolic process",5,0.00217700615067412
+"protein-RNA complex organization",5,0.00217700615067412
+"organophosphate metabolic process",7,0.00260501690321042
+"proton transmembrane transport",4,0.00265019009658921
+"respiratory electron transport chain",3,0.00287680858226087
+"carbohydrate catabolic process",4,0.00326599202222267
+"monoatomic cation transport",5,0.00384627898304575
+"electron transport chain",3,0.00442092933601139
+"monoatomic ion transport",5,0.00540448724275371
+"carboxylic acid metabolic process",6,0.00736617743562023
+"oxoacid metabolic process",6,0.00927888781075517
+"organic acid metabolic process",6,0.00937568314149528
+"carbohydrate metabolic process",5,0.012271230694738
+"ribosome assembly",3,0.0136762488114969
+"inorganic cation transmembrane transport",4,0.0141398612687023
+"protein-RNA complex assembly",4,0.0142196754216582
+"monoatomic cation transmembrane transport",4,0.014599382981812
+"cytoplasmic translation",4,0.0159166614682995
+"carbohydrate derivative metabolic process",5,0.0160872085744244
+"monoatomic ion transmembrane transport",4,0.0164052010432222
+"carbohydrate biosynthetic process",3,0.0166249897219849
+"inorganic ion transmembrane transport",4,0.0200019531553969
+"transmembrane transport",6,0.0232698772218524
+"nucleobase-containing compound catabolic process",4,0.0321806820880985
+"aerobic electron transport chain",2,0.0328605517766387
+"ATP synthesis coupled electron transport",2,0.0336646028382533
+"mitochondrial ATP synthesis coupled electron transport",2,0.0336646028382533
+"ribosomal large subunit assembly",2,0.0419730931753944
+"non-membrane-bounded organelle assembly",3,0.0773819728690151
+"protein targeting to mitochondrion",2,0.0885122439013346
+"protein localization to mitochondrion",2,0.106890297074128
+"establishment of protein localization to mitochondrion",2,0.106890297074128
+"small molecule biosynthetic process",4,0.118706984563008
+"amino acid catabolic process to alcohol via Ehrlich pathway",1,0.12340341665218
+"tryptophan catabolic process",1,0.12340341665218
+"protein-RNA complex disassembly",1,0.12340341665218
+"indole-containing compound catabolic process",1,0.12340341665218
+"regulation of sphingolipid biosynthetic process",1,0.12340341665218
+"regulation of membrane lipid metabolic process",1,0.12340341665218
+"organelle assembly",3,0.124193893215283
+"organophosphate ester transport",2,0.128305919343422
+"amino acid catabolic process via Ehrlich pathway",1,0.128305919343422
+"branched-chain amino acid catabolic process",1,0.128305919343422
+"eisosome assembly",1,0.128305919343422
+"protein-containing complex disassembly",2,0.136822300925771
+"negative regulation of transport",1,0.136822300925771
+"ethanol metabolic process",1,0.137917178736358
+"SRP-dependent cotranslational protein targeting to membrane, translocation",1,0.137917178736358
+"aromatic amino acid family catabolic process",1,0.137917178736358
+"mitochondrial protein processing",1,0.137917178736358
+"purine-containing compound transmembrane transport",1,0.137917178736358
+"mitochondria-associated ubiquitin-dependent protein catabolic process",1,0.137917178736358
+"cell-cell adhesion",1,0.137917178736358
+"fermentation",1,0.14545098914613
+"nucleotide transmembrane transport",1,0.14545098914613
+"mitochondrial electron transport, ubiquinol to cytochrome c",1,0.151255611877346
+"dicarboxylic acid transport",1,0.151255611877346
+"negative regulation of lipid biosynthetic process",1,0.151255611877346
+"negative regulation of lipid metabolic process",1,0.158138526207267
+"chaperone cofactor-dependent protein refolding",1,0.158138526207267
+"indolalkylamine metabolic process",1,0.171084975930319
+"indole-containing compound metabolic process",1,0.171084975930319
+"biological process involved in intraspecies interaction between organisms",1,0.171084975930319
+"reactive oxygen species metabolic process",1,0.171084975930319
+"cellular component disassembly",2,0.174719915613785
+"SRP-dependent cotranslational protein targeting to membrane",1,0.177031112269213
+"ATP biosynthetic process",1,0.177031112269213
+"proton motive force-driven ATP synthesis",1,0.177031112269213
+"regulation of fungal-type cell wall organization",1,0.177031112269213
+"iron coordination entity transport",1,0.177031112269213
+"erythrose 4-phosphate/phosphoenolpyruvate family amino acid metabolic process",1,0.177031112269213
+"L-alpha-amino acid transmembrane transport",1,0.177031112269213
+"regulation of cell wall organization or biogenesis",1,0.184060985328827
+"cell adhesion",1,0.18791790747803
+"phospholipid translocation",1,0.18791790747803
+"protein depolymerization",1,0.18791790747803
+"cotranslational protein targeting to membrane",1,0.189289424654685
+"acyl-CoA metabolic process",1,0.189289424654685
+"lipid translocation",1,0.189289424654685
+"thioester metabolic process",1,0.189289424654685
+"ribosomal large subunit biogenesis",2,0.189289424654685
+"purine nucleoside triphosphate biosynthetic process",1,0.189289424654685
+"purine ribonucleoside triphosphate biosynthetic process",1,0.189289424654685
+"L-amino acid transport",1,0.189289424654685
+"'de novo' post-translational protein folding",1,0.189289424654685
+"regulation of membrane lipid distribution",1,0.189289424654685
+"ribosomal small subunit assembly",1,0.195408284773663
+"ribosome biogenesis",4,0.195442694967311
+"translational termination",1,0.195739464205724
+"biogenic amine metabolic process",1,0.195739464205724
+"branched-chain amino acid metabolic process",1,0.195739464205724
+"regulation of vacuole organization",1,0.195739464205724
+"ATP transport",1,0.201507551554103
+"ribosomal small subunit biogenesis",2,0.202309926746883
+"purine ribonucleotide transport",1,0.204333385296004
+"organelle disassembly",1,0.204333385296004
+"respiratory chain complex IV assembly",1,0.20842093512855
+"mitochondrial cytochrome c oxidase assembly",1,0.20842093512855
+"'de novo' protein folding",1,0.209581997456323
+"ribonucleoside triphosphate biosynthetic process",1,0.209581997456323
+"protein refolding",1,0.209581997456323
+"adenine nucleotide transport",1,0.209581997456323
+"purine nucleotide transport",1,0.214792033757185
+"primary alcohol metabolic process",1,0.218493305078367
+"regulation of lipid biosynthetic process",1,0.218493305078367
+"chaperone-mediated protein folding",1,0.223502039609268
+"nucleoside triphosphate biosynthetic process",1,0.22697949369984
+"proteinogenic amino acid catabolic process",1,0.22697949369984
+"nucleotide transport",1,0.238021672575091
+"apoptotic process",1,0.241190759030692
+"aromatic amino acid metabolic process",1,0.241190759030692
+"phospholipid transport",1,0.244261403144839
+"L-amino acid catabolic process",1,0.244261403144839
+"cell death",1,0.247237251255694
+"programmed cell death",1,0.247237251255694
+"G2/M transition of mitotic cell cycle",1,0.251005215934854
+"cell cycle G2/M phase transition",1,0.251005215934854
+"protein targeting to ER",1,0.251005215934854
+"nucleocytoplasmic transport",2,0.251005215934854
+"nuclear transport",2,0.251005215934854
+"amine metabolic process",1,0.251005215934854
+"cytochrome complex assembly",1,0.251005215934854
+"cellular response to oxygen-containing compound",1,0.251005215934854
+"protein polyubiquitination",1,0.251005215934854
+"iron ion transport",1,0.251005215934854
+"sphingolipid biosynthetic process",1,0.251005215934854
+"vacuole fusion, non-autophagic",1,0.251005215934854
+"carbohydrate derivative transport",1,0.251005215934854
+"protein processing",1,0.253565755805438
+"establishment of protein localization to endoplasmic reticulum",1,0.253565755805438
+"vacuole fusion",1,0.254319686818809
+"fungal-type cell wall organization",2,0.254319686818809
+"purine ribonucleotide biosynthetic process",1,0.254319686818809
+"regulation of lipid metabolic process",1,0.254319686818809
+"intracellular protein transmembrane transport",1,0.254319686818809
+"alpha-amino acid catabolic process",1,0.254319686818809
+"carboxylic acid transmembrane transport",1,0.254319686818809
+"mitochondrial respiratory chain complex assembly",1,0.256671114776795
+"organic acid transmembrane transport",1,0.256671114776795
+"amino acid transmembrane transport",1,0.265300977755275
+"proteolysis",3,0.266629479806278
+"dicarboxylic acid metabolic process",1,0.267450483712519
+"response to pheromone triggering conjugation with cellular fusion",1,0.280627354249625
+"fungal-type cell wall organization or biogenesis",2,0.281595866497903
+"sphingolipid metabolic process",1,0.287275879555742
+"mitochondrial respirasome assembly",1,0.290524919899738
+"protein localization to endoplasmic reticulum",1,0.298383605412373
+"amino acid transport",1,0.301495904709756
+"amino acid catabolic process",1,0.304561167465352
+"protein targeting",2,0.306049901038444
+"ribonucleotide biosynthetic process",1,0.306049901038444
+"protein targeting to membrane",1,0.309016201550345
+"cellular response to pheromone",1,0.31481594682198
+"mitochondrial transmembrane transport",1,0.31481594682198
+"phosphorylation",2,0.318576732960886
+"vesicle-mediated transport",3,0.318576732960886
+"protein maturation",2,0.318576732960886
+"transition metal ion transport",1,0.318576732960886
+"ribose phosphate biosynthetic process",1,0.318576732960886
+"response to oxygen-containing compound",1,0.318576732960886
+"external encapsulating structure organization",2,0.322001316594676
+"cell wall organization",2,0.322001316594676
+"ribosomal subunit export from nucleus",1,0.322001316594676
+"purine nucleotide biosynthetic process",1,0.322001316594676
+"protein import into nucleus",1,0.322001316594676
+"ribosome localization",1,0.322001316594676
+"carboxylic acid transport",1,0.324561961083391
+"organic acid transport",1,0.327085284957009
+"membrane lipid biosynthetic process",1,0.329571844596076
+"import into nucleus",1,0.343786139932248
+"lipid transport",1,0.346831998379577
+"response to pheromone",1,0.346831998379577
+"alcohol biosynthetic process",1,0.346831998379577
+"cell wall organization or biogenesis",2,0.364624444394148
+"mitochondrial transport",1,0.364624444394148
+"protein transmembrane transport",1,0.364624444394148
+"cellular response to chemical stimulus",2,0.36872450526861
+"membrane lipid metabolic process",1,0.36872450526861
+"lipid localization",1,0.370728924593453
+"regulation of transport",1,0.37464871903887
+"purine-containing compound biosynthetic process",1,0.37464871903887
+"carboxylic acid catabolic process",1,0.383590659750682
+"organic acid catabolic process",1,0.385424057784476
+"protein localization to nucleus",1,0.390670832447827
+"conjugation with cellular fusion",1,0.400890119032353
+"organic hydroxy compound biosynthetic process",1,0.400890119032353
+"nucleotide biosynthetic process",1,0.409181792091395
+"metal ion transport",1,0.417301188814113
+"maturation of SSU-rRNA from tricistronic rRNA transcript (SSU-rRNA, 5.8S rRNA, LSU-rRNA)",1,0.418798456156248
+"amide metabolic process",1,0.4276896481777
+"organelle fusion",1,0.4276896481777
+"vacuole organization",1,0.4276896481777
+"organic anion transport",1,0.4276896481777
+"protein-containing complex localization",1,0.432149135227408
+"negative regulation of cellular component organization",1,0.440831996510171
+"establishment of protein localization to membrane",1,0.440831996510171
+"maturation of SSU-rRNA",1,0.448047539917948
+"glycerophospholipid metabolic process",1,0.451002986880854
+"protein ubiquitination",1,0.451002986880854
+"alcohol metabolic process",1,0.451002986880854
+"proteasome-mediated ubiquitin-dependent protein catabolic process",1,0.451002986880854
+"establishment of protein localization to organelle",2,0.451002986880854
+"protein folding",1,0.45472366977752
+"nucleoside phosphate biosynthetic process",1,0.458598684273498
+"endocytosis",1,0.468898771482484
+"nuclear export",1,0.468898771482484
+"sulfur compound metabolic process",1,0.469811326547273
+"glycerolipid metabolic process",1,0.47611308666957
+"regulation of cellular component organization",2,0.488321080339797
+"regulation of localization",1,0.488321080339797
+"small molecule catabolic process",1,0.489053110349053
+"protein localization to membrane",1,0.497468913757145
+"protein modification by small protein conjugation",1,0.503166775566442
+"phospholipid metabolic process",1,0.511219501122391
+"mitotic cell cycle phase transition",1,0.517862244917065
+"import into cell",1,0.517862244917065
+"organic hydroxy compound metabolic process",1,0.517862244917065
+"regulation of cellular component biogenesis",1,0.517862244917065
+"response to chemical",2,0.517862244917065
+"proteasomal protein catabolic process",1,0.517862244917065
+"nucleobase-containing compound transport",1,0.517862244917065
+"establishment of organelle localization",1,0.517862244917065
+"proteinogenic amino acid metabolic process",1,0.517862244917065
+"L-amino acid metabolic process",1,0.520557034933857
+"protein modification by small protein conjugation or removal",1,0.543225859417264
+"alpha-amino acid metabolic process",1,0.54560695068494
+"localization within membrane",1,0.552213938323674
+"post-translational protein modification",1,0.556558809490572
+"ubiquitin-dependent protein catabolic process",1,0.556652132368786
+"protein localization to organelle",2,0.564978455025239
+"modification-dependent protein catabolic process",1,0.564978455025239
+"modification-dependent macromolecule catabolic process",1,0.566990744255326
+"cell cycle phase transition",1,0.566990744255326
+"carbohydrate derivative biosynthetic process",1,0.592100476174589
+"mitochondrion organization",1,0.595640040751971
+"lipid biosynthetic process",1,0.604576517880584
+"membrane organization",1,0.62547970681232
+"regulation of biological quality",1,0.635225801474186
+"regulation of organelle organization",1,0.637991443189677
+"amino acid metabolic process",1,0.637991443189677
+"proteolysis involved in protein catabolic process",1,0.637991443189677
+"organelle localization",1,0.637991443189677
+"organophosphate biosynthetic process",1,0.674391919321756
+"protein catabolic process",1,0.6764866413416
+"DNA repair",1,0.720630241184708
+"cellular lipid metabolic process",1,0.727046449363389
+"mitotic cell cycle process",1,0.727078451249501
+"mitotic cell cycle",1,0.746104244070353
+"lipid metabolic process",1,0.748178398928381
+"intracellular signal transduction",1,0.751286022349474
+"intracellular protein transport",1,0.7550082437871
+"DNA damage response",1,0.7550082437871
+"rRNA processing",1,0.767098904723869
+"cellular catabolic process",1,0.785045379526316
+"protein modification process",1,0.796124000198137
+"sexual reproduction",1,0.799280426444782
+"cell communication",1,0.799280426444782
+"signal transduction",1,0.799280426444782
+"signaling",1,0.799280426444782
+"rRNA metabolic process",1,0.799280426444782
+"macromolecule catabolic process",1,0.824765626138672
+"reproductive process",1,0.834417187267851
+"negative regulation of cellular biosynthetic process",1,0.842370448699367
+"negative regulation of biosynthetic process",1,0.842370448699367

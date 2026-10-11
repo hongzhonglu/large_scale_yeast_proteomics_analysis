@@ -1,0 +1,48 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,4.69510387755037e-06
+"cytosolic large ribosomal subunit",6,1.92053977979595e-05
+"ribosomal subunit",8,1.92053977979595e-05
+"ribosome",8,3.41166850553026e-05
+"large ribosomal subunit",6,8.49878015730134e-05
+"proton-transporting two-sector ATPase complex, catalytic domain",2,0.00719306049018749
+"proton-transporting two-sector ATPase complex",2,0.0376318209646474
+"transmembrane transporter complex",2,0.0503464187951902
+"fungal-type cell wall",3,0.0503464187951902
+"cell wall",3,0.0503464187951902
+"external encapsulating structure",3,0.0503464187951902
+"cytosolic small ribosomal subunit",2,0.0791607034275728
+"transporter complex",2,0.0791607034275728
+"fungal-type vacuole membrane",3,0.121584532038753
+"lytic vacuole membrane",3,0.121584532038753
+"small ribosomal subunit",2,0.121584532038753
+"vacuolar proton-transporting V-type ATPase complex",1,0.121584532038753
+"proton-transporting V-type ATPase complex",1,0.121584532038753
+"cation-transporting ATPase complex",1,0.121584532038753
+"ATPase dependent transmembrane transport complex",1,0.121584532038753
+"mitochondrial membrane",4,0.121584532038753
+"proton-transporting ATP synthase complex",1,0.121584532038753
+"mitochondrial inner membrane",3,0.121584532038753
+"cation channel complex",1,0.121584532038753
+"monoatomic ion channel complex",1,0.122904230468028
+"organelle inner membrane",3,0.122904230468028
+"respiratory chain complex",1,0.122904230468028
+"mitochondrial envelope",4,0.122904230468028
+"extracellular region",2,0.122904230468028
+"vacuolar membrane",3,0.129247639974017
+"nucleoid",1,0.139482077154274
+"mitochondrial nucleoid",1,0.139482077154274
+"nuclear periphery",1,0.260938838686186
+"lipid droplet",1,0.260938838686186
+"mitochondrial matrix",2,0.260938838686186
+"mitochondrial intermembrane space",1,0.260938838686186
+"storage vacuole",3,0.260938838686186
+"lytic vacuole",3,0.260938838686186
+"fungal-type vacuole",3,0.260938838686186
+"organelle envelope lumen",1,0.269975970634466
+"ATPase complex",1,0.279133311926105
+"90S preribosome",1,0.31842596236357
+"membrane protein complex",2,0.31842596236357
+"mitochondrial outer membrane",1,0.353415346130789
+"organelle outer membrane",1,0.362366186838772
+"outer membrane",1,0.362366186838772
+"preribosome",1,0.462005301885482

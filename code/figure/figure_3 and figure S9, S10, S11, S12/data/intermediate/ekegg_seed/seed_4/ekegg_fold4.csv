@@ -1,22 +1,20 @@
 "Description","Count","p.adjust"
-"Ribosome",9,0.000258813479905939
-"Glycolysis / Gluconeogenesis",5,0.000479625009031144
-"Methane metabolism",3,0.00657756916494489
-"Carbon metabolism",5,0.00725509234826576
-"Carbon fixation by Calvin cycle",2,0.046591229867647
-"Biosynthesis of amino acids",4,0.0495634647173608
-"Biosynthesis of secondary metabolites",7,0.0539728562703133
-"RNA degradation",2,0.229075901643498
-"Propanoate metabolism",1,0.259074905928485
-"Oxidative phosphorylation",2,0.261470792682444
-"Fructose and mannose metabolism",1,0.308332250047108
-"Pentose phosphate pathway",1,0.308332250047108
-"Citrate cycle (TCA cycle)",1,0.308332250047108
-"Protein export",1,0.308332250047108
-"Glycerolipid metabolism",1,0.308332250047108
-"Phagosome",1,0.308332250047108
-"Longevity regulating pathway - multiple species",1,0.31972135536786
-"Lysosome biogenesis",1,0.469643021985587
-"Endocytosis",1,0.510523628587726
-"Spliceosome",1,0.516070264883228
-"Protein processing in endoplasmic reticulum",1,0.519538239623807
+"Ribosome",9,3.34257762158418e-05
+"Glycolysis / Gluconeogenesis",4,0.00471411158019592
+"Carbon fixation by Calvin cycle",2,0.0488337483331568
+"Biosynthesis of amino acids",4,0.0488337483331568
+"Biosynthesis of secondary metabolites",6,0.126952935043084
+"Carbon metabolism",3,0.138898643117235
+"Phenylalanine, tyrosine and tryptophan biosynthesis",1,0.312468375189157
+"Fructose and mannose metabolism",1,0.347342060167758
+"Methane metabolism",1,0.347342060167758
+"Pentose phosphate pathway",1,0.347342060167758
+"Glycerolipid metabolism",1,0.356147765060121
+"Longevity regulating pathway - multiple species",1,0.380124033752189
+"Nucleotide metabolism",1,0.382785549727218
+"Pyruvate metabolism",1,0.426025084812779
+"Purine metabolism",1,0.428893171854192
+"Spliceosome",1,0.46190229013253
+"Endocytosis",1,0.46190229013253
+"Oxidative phosphorylation",1,0.46190229013253
+"Protein processing in endoplasmic reticulum",1,0.489325356840662

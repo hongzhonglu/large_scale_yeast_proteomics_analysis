@@ -1,0 +1,44 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",11,2.29752181639652e-10
+"ribosomal subunit",11,4.01657215732748e-09
+"ribosome",11,9.14199607098069e-09
+"cytosolic large ribosomal subunit",7,3.1558549841907e-07
+"large ribosomal subunit",7,4.1728365951136e-06
+"cytosolic small ribosomal subunit",4,0.000477335384242814
+"small ribosomal subunit",4,0.00240974377889936
+"fungal-type cell wall",3,0.0506677789151595
+"cell wall",3,0.0506677789151595
+"external encapsulating structure",3,0.0506677789151595
+"small-subunit processome",2,0.0624315143418664
+"fungal-type vacuole membrane",3,0.138889465717253
+"lytic vacuole membrane",3,0.138889465717253
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.138889465717253
+"proton-transporting ATP synthase complex",1,0.166855368436161
+"cation channel complex",1,0.166855368436161
+"monoatomic ion channel complex",1,0.171625504360169
+"respiratory chain complex",1,0.171625504360169
+"extracellular region",2,0.171625504360169
+"vacuolar membrane",3,0.177371761240939
+"proton-transporting two-sector ATPase complex",1,0.22074895996213
+"preribosome",2,0.241137200796967
+"transmembrane transporter complex",1,0.277347348161533
+"mitochondrial membrane",3,0.303036803014838
+"lipid droplet",1,0.303036803014838
+"transporter complex",1,0.303036803014838
+"mitochondrial intermembrane space",1,0.303036803014838
+"storage vacuole",3,0.303036803014838
+"lytic vacuole",3,0.303036803014838
+"fungal-type vacuole",3,0.303036803014838
+"mitochondrial envelope",3,0.303036803014838
+"organelle envelope lumen",1,0.303036803014838
+"mitochondrial inner membrane",2,0.303036803014838
+"organelle inner membrane",2,0.32613484965985
+"cytoplasmic stress granule",1,0.370031999319917
+"mitochondrial outer membrane",1,0.395190209739629
+"organelle outer membrane",1,0.401321566386949
+"outer membrane",1,0.401321566386949
+"nucleolus",2,0.414760533170385
+"ribonucleoprotein granule",1,0.414760533170385
+"cytoplasmic ribonucleoprotein granule",1,0.414760533170385
+"supramolecular complex",1,0.636982059144645
+"membrane protein complex",1,0.667056773851848

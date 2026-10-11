@@ -1,20 +1,24 @@
 "Description","Count","p.adjust"
-"Ribosome",10,2.21413481101501e-05
-"Glycolysis / Gluconeogenesis",4,0.00674219728124589
-"Carbon metabolism",5,0.0087521748963206
-"Methane metabolism",2,0.0796694516738554
-"Citrate cycle (TCA cycle)",2,0.0890937407543052
-"Biosynthesis of secondary metabolites",6,0.164649134503522
-"Pyruvate metabolism",2,0.164649134503522
-"Biosynthesis of amino acids",3,0.166773503928395
-"Propanoate metabolism",1,0.234401105363867
-"Oxidative phosphorylation",2,0.236568812426973
-"Carbon fixation by Calvin cycle",1,0.2618119852268
-"Fructose and mannose metabolism",1,0.2618119852268
-"Pentose phosphate pathway",1,0.288930132338963
-"ATP-dependent chromatin remodeling",1,0.327021345933915
-"Longevity regulating pathway - multiple species",1,0.327841262805774
-"RNA degradation",1,0.472312578691237
-"Endocytosis",1,0.516243781288989
-"Spliceosome",1,0.518800795385256
-"Protein processing in endoplasmic reticulum",1,0.519538239623807
+"Glycolysis / Gluconeogenesis",6,5.78680371112893e-05
+"Carbon metabolism",6,0.00190027804919749
+"Methane metabolism",3,0.00759865272622497
+"Biosynthesis of amino acids",5,0.0135628786072638
+"Carbon fixation by Calvin cycle",2,0.0528630662265683
+"Ribosome",5,0.05407439487528
+"Biosynthesis of secondary metabolites",7,0.0548160880608158
+"Oxidative phosphorylation",3,0.0662453482189154
+"Fatty acid biosynthesis",1,0.252138943494341
+"Propanoate metabolism",1,0.259889342679842
+"Protein processing in endoplasmic reticulum",2,0.297564524944374
+"Fructose and mannose metabolism",1,0.297564524944374
+"Fatty acid metabolism",1,0.297564524944374
+"Pentose phosphate pathway",1,0.297794581171445
+"Glycine, serine and threonine metabolism",1,0.297794581171445
+"Citrate cycle (TCA cycle)",1,0.297794581171445
+"Various types of N-glycan biosynthesis",1,0.297794581171445
+"Longevity regulating pathway - multiple species",1,0.336055344827164
+"Pyruvate metabolism",1,0.414184017625522
+"RNA degradation",1,0.447254311803306
+"Nucleocytoplasmic transport",1,0.447254311803306
+"Spliceosome",1,0.46821022462045
+"Endocytosis",1,0.46821022462045

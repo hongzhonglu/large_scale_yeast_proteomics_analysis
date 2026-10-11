@@ -1,27 +1,24 @@
 "Description","Count","p.adjust"
-"Ribosome",9,0.000817691943158353
-"Glycolysis / Gluconeogenesis",4,0.0134922776689667
-"Carbon metabolism",5,0.0189546618048995
-"Biosynthesis of secondary metabolites",8,0.0584922910406762
-"Carbon fixation by Calvin cycle",2,0.0694451800484428
-"Biosynthesis of amino acids",4,0.0748076757205724
-"Methane metabolism",2,0.0748076757205724
-"Citrate cycle (TCA cycle)",2,0.0912670917114307
-"Lysine biosynthesis",1,0.275953973474431
-"Fatty acid biosynthesis",1,0.275953973474431
-"Propanoate metabolism",1,0.279618303038551
-"Lysine degradation",1,0.279618303038551
-"Oxidative phosphorylation",2,0.291277426271963
-"Fatty acid degradation",1,0.293100854247442
-"Fructose and mannose metabolism",1,0.293100854247442
-"Fatty acid metabolism",1,0.293100854247442
-"Base excision repair",1,0.297459495842614
-"Pentose phosphate pathway",1,0.310905816594966
-"Glycerolipid metabolism",1,0.340321090432762
-"Longevity regulating pathway - multiple species",1,0.365021717494894
-"Peroxisome",1,0.370694698736595
-"Pyruvate metabolism",1,0.429975354159597
-"RNA degradation",1,0.483420129142597
-"Endocytosis",1,0.535572045228159
-"Spliceosome",1,0.545884266384184
-"Protein processing in endoplasmic reticulum",1,0.553640534574104
+"Carbon fixation by Calvin cycle",4,0.000241073916923585
+"Carbon metabolism",7,0.000241073916923585
+"Glycolysis / Gluconeogenesis",5,0.000493561750966568
+"Biosynthesis of secondary metabolites",9,0.00776289077038049
+"Biosynthesis of amino acids",5,0.0135658975928903
+"Ribosome",6,0.0135658975928903
+"Fatty acid metabolism",2,0.0495292163171132
+"Methane metabolism",2,0.0548415512317394
+"Pentose phosphate pathway",2,0.0561333876181333
+"Citrate cycle (TCA cycle)",2,0.0612229722870547
+"Longevity regulating pathway - multiple species",2,0.0812571806268372
+"Biosynthesis of unsaturated fatty acids",1,0.154188003671254
+"Fatty acid biosynthesis",1,0.182853348162108
+"Propanoate metabolism",1,0.194382074891878
+"Oxidative phosphorylation",2,0.213281394985719
+"Fructose and mannose metabolism",1,0.24233923356107
+"Motor proteins",1,0.24233923356107
+"Base excision repair",1,0.24233923356107
+"Phagosome",1,0.301578644461282
+"RNA degradation",1,0.481596559524198
+"Spliceosome",1,0.50684546432283
+"Endocytosis",1,0.50684546432283
+"Protein processing in endoplasmic reticulum",1,0.543654565042876

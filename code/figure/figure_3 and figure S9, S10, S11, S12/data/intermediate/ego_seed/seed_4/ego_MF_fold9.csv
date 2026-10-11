@@ -1,0 +1,77 @@
+"Description","Count","p.adjust"
+"structural constituent of ribosome",6,0.00567240672868652
+"oxidoreduction-driven active transmembrane transporter activity",3,0.00567240672868652
+"primary active transmembrane transporter activity",4,0.00583905845572828
+"active monoatomic ion transmembrane transporter activity",4,0.00583905845572828
+"proton transmembrane transporter activity",4,0.00583905845572828
+"melatonin binding",2,0.00583905845572828
+"electron transfer activity",3,0.00583905845572828
+"ubiquinol-cytochrome-c reductase activity",2,0.00776132216169977
+"oxidoreductase activity, acting on diphenols and related substances as donors",2,0.00776132216169977
+"structural molecule activity",6,0.0123222796019159
+"metalloendopeptidase activity",2,0.0123222796019159
+"inorganic cation transmembrane transporter activity",4,0.0134252581687348
+"monoatomic cation transmembrane transporter activity",4,0.0134252581687348
+"unfolded protein binding",3,0.0134252581687348
+"monoatomic ion transmembrane transporter activity",4,0.0134252581687348
+"heat shock protein binding",2,0.0134252581687348
+"amide binding",2,0.0134252581687348
+"active transmembrane transporter activity",4,0.0134252581687348
+"ATP-dependent protein folding chaperone",2,0.0148944259040612
+"inorganic molecular entity transmembrane transporter activity",4,0.0150140265909136
+"carbon-carbon lyase activity",2,0.0269683639247683
+"protein folding chaperone",2,0.0314233176610634
+"metallopeptidase activity",2,0.0375321425358572
+"tRNA binding",2,0.0390320877547037
+"oxidoreductase activity",4,0.091887351529758
+"quaternary ammonium group binding",1,0.112275537455831
+"intramolecular phosphotransferase activity",1,0.113541345263242
+"acid-thiol ligase activity",1,0.113541345263242
+"endopeptidase activity",2,0.118015941995246
+"transmembrane transporter activity",4,0.118015941995246
+"sulfur compound binding",1,0.118015941995246
+"cytochrome-c oxidase activity",1,0.118015941995246
+"oxidoreductase activity, acting on a heme group of donors",1,0.118015941995246
+"nucleocytoplasmic carrier activity",1,0.118015941995246
+"lyase activity",2,0.118015941995246
+"proton channel activity",1,0.118015941995246
+"ATPase-coupled ion transmembrane transporter activity",1,0.118015941995246
+"ATPase activity, coupled to transmembrane movement of ions, rotational mechanism",1,0.118015941995246
+"proton-transporting ATP synthase activity, rotational mechanism",1,0.118015941995246
+"proton-transporting ATPase activity, rotational mechanism",1,0.118015941995246
+"transporter activity",4,0.123411503269859
+"NADP binding",1,0.124464094097675
+"ligase activity",2,0.124536920299209
+"ligase activity, forming carbon-sulfur bonds",1,0.124536920299209
+"carboxy-lyase activity",1,0.138463941488381
+"intramolecular transferase activity",1,0.140860638400954
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",1,0.143137301647119
+"monoatomic cation channel activity",1,0.14530149086319
+"heme binding",1,0.146374609521336
+"tetrapyrrole binding",1,0.146374609521336
+"NAD binding",1,0.146374609521336
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors",1,0.146374609521336
+"ATPase-coupled monoatomic cation transmembrane transporter activity",1,0.146374609521336
+"monoatomic ion channel activity",1,0.146374609521336
+"protein-folding chaperone binding",1,0.146374609521336
+"molecular carrier activity",1,0.146374609521336
+"ATP-dependent activity",3,0.146514874493573
+"peptidase activity",2,0.146514874493573
+"small GTPase binding",1,0.167351567027227
+"GTPase binding",1,0.172424755744809
+"channel activity",1,0.185658074227908
+"passive transmembrane transporter activity",1,0.185658074227908
+"transferase activity, transferring alkyl or aryl (other than methyl) groups",1,0.190021662756027
+"vitamin binding",1,0.194199714288071
+"ATPase-coupled transmembrane transporter activity",1,0.218882868213329
+"magnesium ion binding",1,0.225594397233317
+"ATP hydrolysis activity",2,0.250461641877514
+"isomerase activity",1,0.281342286221454
+"ribosome binding",1,0.331873219558953
+"ribonucleoside triphosphate phosphatase activity",2,0.362861825150316
+"ribonucleoprotein complex binding",1,0.364590443346208
+"pyrophosphatase activity",2,0.389191687943821
+"hydrolase activity, acting on acid anhydrides",2,0.389191687943821
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",2,0.389191687943821
+"enzyme binding",1,0.464326485733552
+"protein-containing complex binding",1,0.615271910047368

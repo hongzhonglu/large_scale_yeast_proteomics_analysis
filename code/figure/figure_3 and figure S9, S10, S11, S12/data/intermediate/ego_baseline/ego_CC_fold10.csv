@@ -1,0 +1,57 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,5.59416632218768e-06
+"cytosolic large ribosomal subunit",6,2.28830271635262e-05
+"ribosomal subunit",8,2.28830271635262e-05
+"ribosome",8,4.06496672999351e-05
+"large ribosomal subunit",6,0.000101262061448697
+"fungal-type cell wall",3,0.0824824307921201
+"cell wall",3,0.0824824307921201
+"external encapsulating structure",3,0.0824824307921201
+"cytosolic small ribosomal subunit",2,0.132329940618257
+"proteasome regulatory particle, base subcomplex",1,0.195784135911239
+"small ribosomal subunit",2,0.21226005811019
+"mitochondrial membrane",4,0.21226005811019
+"mitochondrial outer membrane",2,0.21226005811019
+"mitochondrial inner membrane",3,0.21226005811019
+"organelle outer membrane",2,0.21226005811019
+"outer membrane",2,0.21226005811019
+"proteasome regulatory particle",1,0.21226005811019
+"proteasome accessory complex",1,0.21226005811019
+"organelle inner membrane",3,0.21226005811019
+"mitochondrial envelope",4,0.21226005811019
+"endoplasmic reticulum-Golgi intermediate compartment",1,0.244609940794252
+"proteasome complex",1,0.353758542788559
+"COPII-coated ER to Golgi transport vesicle",1,0.353758542788559
+"endopeptidase complex",1,0.422964389067292
+"lipid droplet",1,0.451546141594714
+"mitochondrial intermembrane space",1,0.464791470795154
+"organelle envelope lumen",1,0.476553328779515
+"peptidase complex",1,0.508632659649662
+"side of membrane",1,0.526962179360524
+"cytoplasmic stress granule",1,0.562219161757393
+"coated vesicle",1,0.566684435164428
+"extracellular region",1,0.639757773399335
+"ribonucleoprotein granule",1,0.639757773399335
+"cytoplasmic ribonucleoprotein granule",1,0.639757773399335
+"Golgi membrane",1,0.639757773399335
+"storage vacuole",2,0.718401523278512
+"lytic vacuole",2,0.718401523278512
+"fungal-type vacuole",2,0.718401523278512
+"cellular bud neck",1,0.746296966774527
+"fungal-type vacuole membrane",1,0.754152829038079
+"lytic vacuole membrane",1,0.754152829038079
+"mitochondrial matrix",1,0.773952285210943
+"cellular bud",1,0.773952285210943
+"supramolecular complex",1,0.773952285210943
+"site of polarized growth",1,0.773952285210943
+"Golgi apparatus",1,0.773952285210943
+"vacuolar membrane",1,0.773952285210943
+"cytoplasmic vesicle",1,0.773952285210943
+"intracellular vesicle",1,0.773952285210943
+"vesicle",1,0.773952285210943
+"nucleolus",1,0.805322311881049
+"endoplasmic reticulum membrane",1,0.805322311881049
+"endoplasmic reticulum subcompartment",1,0.805322311881049
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.805322311881049
+"intracellular protein-containing complex",1,0.818294975082829
+"organelle subcompartment",1,0.820899544937382

@@ -1,26 +1,57 @@
+import os
+
+os.environ.setdefault("OMP_NUM_THREADS", "8")
+os.environ.setdefault("MKL_NUM_THREADS", "8")
+os.environ.setdefault("OPENBLAS_NUM_THREADS", "8")
+os.environ.setdefault("NUMEXPR_NUM_THREADS", "8")
+
 from sklearn.model_selection import KFold, train_test_split
 from sklearn.linear_model import Ridge
-from sklearn.feature_selection import RFE
 from sklearn.metrics import r2_score, mean_squared_error
 import numpy as np
 import pandas as pd
-import os
+import sys
 from datetime import datetime
+from tqdm import tqdm
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-DATA_DIR = os.path.join(SCRIPT_DIR, '..', '..', 'data')
-ORIGINAL_DATA_DIR = os.path.join(DATA_DIR, 'original_data')
-INTERMEDIATE_DIR = os.path.join(DATA_DIR, 'intermediate')
-organelle_path = os.path.join(ORIGINAL_DATA_DIR, "main_organelle_fraction_260414.xlsx")
+DATA_DIR = os.path.join(SCRIPT_DIR, "..", "..", "data")
+ORIGINAL_DATA_DIR = os.path.join(DATA_DIR, "original_data")
+INTERMEDIATE_DIR = os.path.join(DATA_DIR, "intermediate")
+organelle_path = os.path.join(ORIGINAL_DATA_DIR, "main_organelle_fraction_test_260905.xlsx")
 genes_path = os.path.join(ORIGINAL_DATA_DIR, "df_genes.csv")
 physiology_path = os.path.join(ORIGINAL_DATA_DIR, "physiology_collection.xlsx")
-out_dir = os.path.join(INTERMEDIATE_DIR, "ridge_10fold_R2_9to1_20260417")
 output_txt_file = os.path.join(INTERMEDIATE_DIR, "10fold_R2_results.txt")
 
 organelles_main = ["mitochondrion", "nucleus", "endoplasmic reticulum",
  "fungal-type vacuole",  "plasma membrane", "ribosome", "cytosol"]
 
+
+def rfe_ranking(X, y, random_state, pbar=None):
+    remaining = list(range(X.shape[1]))
+    ranking = np.zeros(X.shape[1], dtype=int)
+    current_rank = X.shape[1]
+    Xv = np.asarray(X, dtype=float)
+    yv = np.asarray(y, dtype=float)
+    model = Ridge(random_state=random_state)
+    while len(remaining) > 1:
+        model.fit(Xv[:, remaining], yv)
+        coef = np.abs(model.coef_)
+        scores = coef.sum(axis=0) if coef.ndim > 1 else coef
+        drop_local = int(np.argmin(scores))
+        drop_global = remaining.pop(drop_local)
+        ranking[drop_global] = current_rank
+        current_rank -= 1
+        if pbar is not None:
+            pbar.update(1)
+    ranking[remaining[0]] = 1
+    return ranking
+
+
 def main():
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "start seed=42", flush=True)
+    print("organelle_path:", organelle_path, flush=True)
+    print("output_txt_file:", output_txt_file, flush=True)
     df_organelle_raw = pd.read_excel(organelle_path)
     df_organelle = df_organelle_raw[df_organelle_raw["compartment"].isin(organelles_main)].copy()
     df_organelle = df_organelle.drop(columns=[c for c in ["Unnamed: 0"] if c in df_organelle.columns])
@@ -45,7 +76,7 @@ def main():
 
     required_cols = {"sampleID", "condition_unique"}
     if not required_cols.issubset(df_physiology.columns):
-        raise ValueError("260417_physiology_collection.xlsx must contain sampleID and condition_unique columns")
+        raise ValueError("physiology_collection.xlsx must contain sampleID and condition_unique columns")
 
     df_physiology["sampleID"] = df_physiology["sampleID"].astype(str).str.strip()
     df_physiology["condition_unique"] = df_physiology["condition_unique"].astype(str).str.strip()
@@ -75,9 +106,11 @@ def main():
         invalid_conditions = X_full.index[invalid_mask].astype(str).tolist()
         raise ValueError(f"Some Sheet5 conditions have no data in X/y after grouping: {invalid_conditions[:30]}")
 
+    print("X:", X_full.shape, "y:", y_full.shape, "y_vacuole_mean:", float(y_full["fungal-type vacuole"].mean()), flush=True)
+
     X_train_cv, X_test, y_train_cv, y_test = train_test_split(X_full, y_full, test_size=0.1, random_state=42)
 
-    os.makedirs(out_dir, exist_ok=True)
+    os.makedirs(INTERMEDIATE_DIR, exist_ok=True)
 
     kf = KFold(n_splits=10, shuffle=True, random_state=42)
     splits = list(kf.split(X_train_cv))
@@ -86,18 +119,19 @@ def main():
     with open(output_txt_file, "w", encoding="utf-8") as f:
         f.write(header)
 
-    from tqdm import tqdm
-    for fold_idx, (train_idx, val_idx) in enumerate(tqdm(splits, desc="Folds"), 1):
+    n_features = X_train_cv.shape[1]
+    for fold_idx, (train_idx, val_idx) in enumerate(tqdm(splits, desc="Folds", file=sys.stdout, mininterval=1), 1):
         X_train, X_val = X_train_cv.iloc[train_idx], X_train_cv.iloc[val_idx]
         y_train, y_val = y_train_cv.iloc[train_idx], y_train_cv.iloc[val_idx]
-        for n in range(1, 61):
-            model = Ridge(random_state=42)
-            selector = RFE(model, n_features_to_select=n)
-            selector.fit(X_train, y_train)
-            selected_cols = X_train.columns[selector.support_]
+        with tqdm(total=n_features - 1, desc=f"fold{fold_idx} RFE", file=sys.stdout, mininterval=2, leave=False) as pbar:
+            ranking = rfe_ranking(X_train, y_train, random_state=42, pbar=pbar)
+        for n in tqdm(range(1, 61), desc=f"fold{fold_idx} score", file=sys.stdout, mininterval=1, leave=False):
+            selected_mask = ranking <= n
+            selected_cols = X_train.columns[selected_mask]
             X_train_sel = X_train[selected_cols]
             X_val_sel = X_val[selected_cols]
             X_test_sel = X_test[selected_cols]
+            model = Ridge(random_state=42)
             model.fit(X_train_sel, y_train)
             y_pred_val = model.predict(X_val_sel)
             y_pred_test = model.predict(X_test_sel)
@@ -109,8 +143,10 @@ def main():
             txt_line = f"{fold_idx}\t{n}\t{r2_cv}\t{rmse_cv}\t{r2_test}\t{rmse_test}\t{';'.join(proteins)}\n"
             with open(output_txt_file, "a", encoding="utf-8") as f:
                 f.write(txt_line)
+        print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), f"fold {fold_idx}/10 done", flush=True)
 
-    print("out_dir:", out_dir)
+    print("output_txt_file:", output_txt_file, flush=True)
+    print(datetime.now().strftime("%Y-%m-%d %H:%M:%S"), "done seed=42", flush=True)
 
 
 if __name__ == "__main__":

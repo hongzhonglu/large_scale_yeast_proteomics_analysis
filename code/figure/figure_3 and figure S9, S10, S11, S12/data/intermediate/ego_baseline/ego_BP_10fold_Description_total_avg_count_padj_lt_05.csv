@@ -1,0 +1,138 @@
+Description,Total_count,Average_count
+generation of precursor metabolites and energy,85,8.5
+cytoplasmic translation,67,6.7
+carboxylic acid metabolic process,59,5.9
+organic acid metabolic process,59,5.9
+oxoacid metabolic process,59,5.9
+monocarboxylic acid metabolic process,56,5.6
+nucleoside phosphate metabolic process,54,5.4
+nucleobase-containing small molecule metabolic process,54,5.4
+purine-containing compound metabolic process,54,5.4
+pyruvate metabolic process,50,5.0
+protein-RNA complex organization,47,4.7
+organophosphate metabolic process,46,4.6
+purine nucleotide metabolic process,44,4.4
+nucleotide metabolic process,44,4.4
+purine ribonucleoside triphosphate metabolic process,43,4.3
+nucleoside triphosphate metabolic process,43,4.3
+purine nucleoside triphosphate metabolic process,43,4.3
+ATP metabolic process,43,4.3
+ribonucleoside triphosphate metabolic process,43,4.3
+ribose phosphate metabolic process,43,4.3
+ribonucleotide metabolic process,43,4.3
+purine ribonucleotide metabolic process,43,4.3
+monosaccharide metabolic process,41,4.1
+hexose metabolic process,41,4.1
+glucose metabolic process,41,4.1
+nicotinamide nucleotide metabolic process,40,4.0
+pyridine nucleotide metabolic process,40,4.0
+pyridine-containing compound metabolic process,40,4.0
+energy derivation by oxidation of organic compounds,39,3.9
+carbohydrate metabolic process,38,3.8
+carbohydrate catabolic process,36,3.6
+ADP catabolic process,36,3.6
+ADP metabolic process,36,3.6
+purine nucleoside diphosphate catabolic process,36,3.6
+purine nucleoside diphosphate metabolic process,36,3.6
+organophosphate catabolic process,36,3.6
+nucleotide catabolic process,36,3.6
+nucleoside diphosphate catabolic process,36,3.6
+nucleoside phosphate catabolic process,36,3.6
+glycolytic process,36,3.6
+carbohydrate derivative catabolic process,36,3.6
+nucleoside diphosphate metabolic process,36,3.6
+ribonucleotide catabolic process,36,3.6
+ribonucleoside diphosphate catabolic process,36,3.6
+purine ribonucleoside diphosphate metabolic process,36,3.6
+purine ribonucleotide catabolic process,36,3.6
+purine nucleotide catabolic process,36,3.6
+purine ribonucleoside diphosphate catabolic process,36,3.6
+purine-containing compound catabolic process,36,3.6
+ribonucleoside diphosphate metabolic process,36,3.6
+pyridine nucleotide catabolic process,36,3.6
+pyridine-containing compound catabolic process,36,3.6
+small molecule biosynthetic process,35,3.5
+protein-RNA complex assembly,32,3.2
+carbohydrate biosynthetic process,31,3.1
+cellular respiration,31,3.1
+nucleobase-containing compound catabolic process,31,3.1
+ribosome assembly,30,3.0
+gluconeogenesis,29,2.9
+hexose biosynthetic process,29,2.9
+monosaccharide biosynthetic process,29,2.9
+aerobic respiration,27,2.7
+ribosomal large subunit biogenesis,26,2.6
+carbohydrate derivative metabolic process,24,2.4
+non-membrane-bounded organelle assembly,21,2.1
+organelle assembly,19,1.9
+ribosome biogenesis,19,1.9
+ribosomal large subunit assembly,16,1.6
+oxidative phosphorylation,13,1.3
+nucleocytoplasmic transport,9,0.9
+tricarboxylic acid cycle,9,0.9
+nuclear transport,9,0.9
+cell death,8,0.8
+monoatomic ion transport,8,0.8
+apoptotic process,8,0.8
+programmed cell death,8,0.8
+alcohol metabolic process,6,0.6
+'de novo' protein folding,6,0.6
+'de novo' post-translational protein folding,6,0.6
+chaperone cofactor-dependent protein refolding,6,0.6
+respiratory electron transport chain,6,0.6
+chaperone-mediated protein folding,6,0.6
+ethanol metabolic process,6,0.6
+transmembrane transport,6,0.6
+electron transport chain,6,0.6
+ribosomal small subunit assembly,6,0.6
+primary alcohol metabolic process,6,0.6
+mitochondrial ATP synthesis coupled electron transport,5,0.5
+ATP synthesis coupled electron transport,5,0.5
+proteolysis,5,0.5
+reactive oxygen species metabolic process,4,0.4
+SRP-dependent cotranslational protein targeting to membrane,4,0.4
+"SRP-dependent cotranslational protein targeting to membrane, translocation",4,0.4
+intracellular protein transmembrane transport,4,0.4
+establishment of protein localization to endoplasmic reticulum,4,0.4
+cotranslational protein targeting to membrane,4,0.4
+monoatomic cation transport,4,0.4
+protein refolding,4,0.4
+protein targeting to ER,4,0.4
+mitochondria-associated ubiquitin-dependent protein catabolic process,4,0.4
+vacuole organization,3,0.3
+endosomal transport,3,0.3
+nuclear export,3,0.3
+cellular component disassembly,3,0.3
+proteasome-mediated ubiquitin-dependent protein catabolic process,3,0.3
+protein-containing complex localization,3,0.3
+ribosomal subunit export from nucleus,3,0.3
+ribosomal small subunit biogenesis,3,0.3
+proton transmembrane transport,3,0.3
+protein-containing complex disassembly,3,0.3
+ribosome localization,3,0.3
+ATP biosynthetic process,2,0.2
+nonfunctional rRNA decay,2,0.2
+aerobic electron transport chain,2,0.2
+branched-chain amino acid metabolic process,2,0.2
+actin filament bundle organization,2,0.2
+branched-chain amino acid catabolic process,2,0.2
+inner mitochondrial membrane organization,2,0.2
+acyl-CoA metabolic process,2,0.2
+alpha-amino acid catabolic process,2,0.2
+actin filament bundle assembly,2,0.2
+organelle disassembly,2,0.2
+nucleoside triphosphate biosynthetic process,2,0.2
+maintenance of translational fidelity,2,0.2
+purine ribonucleotide biosynthetic process,2,0.2
+protein transport to vacuole involved in ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway,2,0.2
+protein quality control for misfolded or incompletely synthesized proteins,2,0.2
+purine nucleoside triphosphate biosynthetic process,2,0.2
+proton motive force-driven ATP synthesis,2,0.2
+purine ribonucleoside triphosphate biosynthetic process,2,0.2
+ribonucleoside triphosphate biosynthetic process,2,0.2
+rRNA catabolic process,2,0.2
+regulation of vacuole organization,2,0.2
+thioester metabolic process,2,0.2
+ubiquitin-dependent protein catabolic process via the multivesicular body sorting pathway,2,0.2
+vacuole fusion,2,0.2
+"vacuole fusion, non-autophagic",2,0.2

@@ -1,0 +1,50 @@
+"Description","Count","p.adjust"
+"cytosolic large ribosomal subunit",7,1.43848273697995e-06
+"cytosolic ribosome",8,2.44744776595711e-06
+"large ribosomal subunit",7,7.92515477366536e-06
+"ribosomal subunit",8,1.50169865760641e-05
+"ribosome",8,2.84547671099545e-05
+"fungal-type cell wall",3,0.0721721269431051
+"cell wall",3,0.0721721269431051
+"external encapsulating structure",3,0.0721721269431051
+"lipid droplet",2,0.112410871286199
+"cytoplasmic side of plasma membrane",1,0.188123585186795
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.201433770575128
+"guanyl-nucleotide exchange factor complex",1,0.202813347060388
+"proton-transporting ATP synthase complex",1,0.202813347060388
+"cation channel complex",1,0.202813347060388
+"cytoplasmic side of membrane",1,0.202813347060388
+"monoatomic ion channel complex",1,0.217251209954525
+"respiratory chain complex",1,0.217251209954525
+"proton-transporting two-sector ATPase complex",1,0.293476330492289
+"transmembrane transporter complex",1,0.382583184061259
+"mitochondrial membrane",3,0.438292048725397
+"cytosolic small ribosomal subunit",1,0.438292048725397
+"transporter complex",1,0.438292048725397
+"mitochondrial intermembrane space",1,0.438292048725397
+"mitochondrial envelope",3,0.438292048725397
+"organelle envelope lumen",1,0.438292048725397
+"mitochondrial inner membrane",2,0.438292048725397
+"organelle inner membrane",2,0.467993677461938
+"side of membrane",1,0.477559475045475
+"small ribosomal subunit",1,0.513162564899981
+"mitochondrial outer membrane",1,0.540399635643958
+"organelle outer membrane",1,0.543067410328852
+"outer membrane",1,0.543067410328852
+"extracellular region",1,0.550628923638832
+"nucleolus",2,0.559788051724418
+"Golgi membrane",1,0.559788051724418
+"storage vacuole",2,0.628601332868698
+"lytic vacuole",2,0.628601332868698
+"fungal-type vacuole",2,0.628601332868698
+"fungal-type vacuole membrane",1,0.676380818543527
+"lytic vacuole membrane",1,0.676380818543527
+"mitochondrial matrix",1,0.701605111083735
+"Golgi apparatus",1,0.742858679971377
+"vacuolar membrane",1,0.742858679971377
+"membrane protein complex",1,0.742858679971377
+"endoplasmic reticulum membrane",1,0.809605941199565
+"endoplasmic reticulum subcompartment",1,0.809605941199565
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.809605941199565
+"intracellular protein-containing complex",1,0.82042595158044
+"organelle subcompartment",1,0.820899544937382

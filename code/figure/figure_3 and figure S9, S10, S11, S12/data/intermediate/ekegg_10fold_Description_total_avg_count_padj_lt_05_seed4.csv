@@ -1,11 +1,14 @@
 Description,Total_count,Average_count,n_folds
-Ribosome,75,7.5,10
-Carbon metabolism,48,4.8,9
-Glycolysis / Gluconeogenesis,44,4.4,9
-Biosynthesis of secondary metabolites,31,3.1,4
-Biosynthesis of amino acids,28,2.8,6
-Carbon fixation by Calvin cycle,21,2.1,8
-Methane metabolism,15,1.5,6
+Ribosome,76,7.6,10
+Glycolysis / Gluconeogenesis,47,4.7,10
+Carbon metabolism,35,3.5,6
+Biosynthesis of secondary metabolites,26,2.6,3
+Biosynthesis of amino acids,25,2.5,5
+Carbon fixation by Calvin cycle,15,1.5,5
 Oxidative phosphorylation,4,0.4,1
 Citrate cycle (TCA cycle),3,0.3,1
+Methane metabolism,3,0.3,1
+Pyruvate metabolism,3,0.3,1
+Fructose and mannose metabolism,2,0.2,1
+Lysine degradation,2,0.2,1
 Propanoate metabolism,2,0.2,1

@@ -1,0 +1,92 @@
+"Description","Count","p.adjust"
+"structural constituent of ribosome",7,0.00102805574939663
+"structural molecule activity",7,0.0107691681309444
+"melatonin binding",2,0.0161889708236111
+"magnesium ion binding",3,0.0280176485603283
+"amide binding",2,0.0578008945065622
+"lyase activity",3,0.0968732019929175
+"carbon-carbon lyase activity",2,0.0968732019929175
+"unfolded protein binding",2,0.206942409595541
+"adenine nucleotide transmembrane transporter activity",1,0.206942409595541
+"dicarboxylic acid transmembrane transporter activity",1,0.206942409595541
+"purine nucleotide transmembrane transporter activity",1,0.206942409595541
+"quaternary ammonium group binding",1,0.206942409595541
+"aldehyde dehydrogenase (NAD+) activity",1,0.206942409595541
+"acid-thiol ligase activity",1,0.206942409595541
+"aldehyde dehydrogenase [NAD(P)+] activity",1,0.206942409595541
+"serine-type endopeptidase activity",1,0.206942409595541
+"ubiquinol-cytochrome-c reductase activity",1,0.206942409595541
+"oxidoreductase activity, acting on diphenols and related substances as donors",1,0.206942409595541
+"endopeptidase activity",2,0.206942409595541
+"proton transmembrane transporter activity",2,0.206942409595541
+"sulfur compound binding",1,0.206942409595541
+"nucleotide transmembrane transporter activity",1,0.206942409595541
+"ATP hydrolysis activity",3,0.206942409595541
+"serine-type peptidase activity",1,0.206942409595541
+"metalloendopeptidase activity",1,0.206942409595541
+"proton channel activity",1,0.206942409595541
+"proton-transporting ATP synthase activity, rotational mechanism",1,0.206942409595541
+"serine hydrolase activity",1,0.206942409595541
+"ligase activity",2,0.206942409595541
+"ligase activity, forming carbon-sulfur bonds",1,0.206942409595541
+"calmodulin binding",1,0.206942409595541
+"carboxy-lyase activity",1,0.206942409595541
+"heat shock protein binding",1,0.206942409595541
+"carbohydrate derivative transmembrane transporter activity",1,0.206942409595541
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",1,0.206942409595541
+"ATP-dependent protein folding chaperone",1,0.206942409595541
+"monoatomic cation channel activity",1,0.206942409595541
+"nucleobase-containing compound transmembrane transporter activity",1,0.206942409595541
+"L-amino acid transmembrane transporter activity",1,0.206942409595541
+"organophosphate ester transmembrane transporter activity",1,0.206942409595541
+"oxidoreduction-driven active transmembrane transporter activity",1,0.206942409595541
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors",1,0.206942409595541
+"monoatomic ion channel activity",1,0.206942409595541
+"antiporter activity",1,0.206942409595541
+"protein-folding chaperone binding",1,0.206942409595541
+"ATP-dependent activity",3,0.206942409595541
+"inorganic cation transmembrane transporter activity",2,0.206942409595541
+"peptidase activity",2,0.206942409595541
+"ribonucleoside triphosphate phosphatase activity",3,0.206942409595541
+"monoatomic cation transmembrane transporter activity",2,0.206942409595541
+"oxidoreductase activity",3,0.206942409595541
+"hydro-lyase activity",1,0.206942409595541
+"phosphatidylinositol-3-phosphate binding",1,0.206942409595541
+"monoatomic ion transmembrane transporter activity",2,0.210055659889646
+"active transmembrane transporter activity",2,0.212041063723453
+"protein folding chaperone",1,0.212041063723453
+"pyrophosphatase activity",3,0.212041063723453
+"hydrolase activity, acting on acid anhydrides",3,0.212041063723453
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",3,0.212041063723453
+"inorganic molecular entity transmembrane transporter activity",2,0.212041063723453
+"carbon-oxygen lyase activity",1,0.212041063723453
+"metallopeptidase activity",1,0.212041063723453
+"electron transfer activity",1,0.212041063723453
+"channel activity",1,0.212041063723453
+"passive transmembrane transporter activity",1,0.212041063723453
+"tRNA binding",1,0.213942300192518
+"amino acid transmembrane transporter activity",1,0.213942300192518
+"vitamin binding",1,0.218850452015039
+"transmembrane transporter activity",3,0.220800639760513
+"kinase activity",2,0.24621688671542
+"carboxylic acid transmembrane transporter activity",1,0.252644687531858
+"organic acid transmembrane transporter activity",1,0.252644687531858
+"transporter activity",3,0.252644687531858
+"phosphatidylinositol phosphate binding",1,0.261940422348694
+"single-stranded DNA binding",1,0.261940422348694
+"organic anion transmembrane transporter activity",1,0.301410330183234
+"phosphatidylinositol binding",1,0.303846002906707
+"primary active transmembrane transporter activity",1,0.311441589115656
+"oxidoreductase activity, acting on the CH-OH group of donors, NAD or NADP as acceptor",1,0.311441589115656
+"secondary active transmembrane transporter activity",1,0.313514758077869
+"oxidoreductase activity, acting on CH-OH group of donors",1,0.318407093208162
+"active monoatomic ion transmembrane transporter activity",1,0.339960483286464
+"phospholipid binding",1,0.370810029239021
+"protein serine kinase activity",1,0.379267707674358
+"protein serine/threonine kinase activity",1,0.389782235724975
+"transferase activity, transferring phosphorus-containing groups",2,0.404541588689898
+"protein kinase activity",1,0.404541588689898
+"chromatin binding",1,0.413628476673019
+"lipid binding",1,0.42875387294092
+"phosphotransferase activity, alcohol group as acceptor",1,0.518503231739671
+"sequence-specific DNA binding",1,0.655872470269349

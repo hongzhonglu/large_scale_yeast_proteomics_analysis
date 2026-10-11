@@ -1,0 +1,89 @@
+"Description","Count","p.adjust"
+"melatonin binding",3,0.000406688719480465
+"structural constituent of ribosome",7,0.000497081900807161
+"amide binding",3,0.00221345331962118
+"structural molecule activity",7,0.00520707030507199
+"NADP binding",2,0.0388123118817114
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors, NAD or NADP as acceptor",2,0.0482036760801664
+"oxidoreduction-driven active transmembrane transporter activity",2,0.0482036760801664
+"NAD binding",2,0.0482036760801664
+"oxidoreductase activity, acting on the aldehyde or oxo group of donors",2,0.0482036760801664
+"proton transmembrane transporter activity",3,0.0482036760801664
+"oxidoreductase activity",5,0.0482036760801664
+"metallopeptidase activity",2,0.0768877090005819
+"electron transfer activity",2,0.0768877090005819
+"inorganic cation transmembrane transporter activity",3,0.116063874663201
+"monoatomic cation transmembrane transporter activity",3,0.116063874663201
+"monoatomic ion transmembrane transporter activity",3,0.123231435151275
+"inorganic molecular entity transmembrane transporter activity",3,0.143992688828847
+"unfolded protein binding",2,0.160764750705598
+"primary active transmembrane transporter activity",2,0.160764750705598
+"acid-thiol ligase activity",1,0.160764750705598
+"ubiquinol-cytochrome-c reductase activity",1,0.160764750705598
+"oxidoreductase activity, acting on diphenols and related substances as donors",1,0.160764750705598
+"active monoatomic ion transmembrane transporter activity",2,0.160764750705598
+"core promoter sequence-specific DNA binding",1,0.160764750705598
+"translation elongation factor activity",1,0.160764750705598
+"cytochrome-c oxidase activity",1,0.160764750705598
+"oxidoreductase activity, acting on a heme group of donors",1,0.160764750705598
+"lyase activity",2,0.160764750705598
+"pre-mRNA binding",1,0.160764750705598
+"aminopeptidase activity",1,0.160764750705598
+"metalloendopeptidase activity",1,0.160764750705598
+"metalloexopeptidase activity",1,0.160764750705598
+"proton channel activity",1,0.160764750705598
+"proton-transporting ATP synthase activity, rotational mechanism",1,0.160764750705598
+"ligase activity",2,0.176245232236308
+"ligase activity, forming carbon-sulfur bonds",1,0.176245232236308
+"ATPase activator activity",1,0.179345305398209
+"heat shock protein binding",1,0.189860529187669
+"ATP-dependent protein folding chaperone",1,0.199735451961026
+"monoatomic cation channel activity",1,0.201892597830958
+"calcium ion binding",1,0.201941230605023
+"oxidoreductase activity, acting on NAD(P)H",1,0.201941230605023
+"heme binding",1,0.201941230605023
+"tetrapyrrole binding",1,0.201941230605023
+"exopeptidase activity",1,0.201941230605023
+"rRNA binding",2,0.201941230605023
+"monoatomic ion channel activity",1,0.201941230605023
+"peptidase activity",2,0.204992302471271
+"hydro-lyase activity",1,0.216456469691321
+"carbon-carbon lyase activity",1,0.21765545693929
+"ATPase regulator activity",1,0.218788907625176
+"active transmembrane transporter activity",2,0.218993380939541
+"protein folding chaperone",1,0.226018547748905
+"carbon-oxygen lyase activity",1,0.236876714552851
+"channel activity",1,0.238005275607957
+"passive transmembrane transporter activity",1,0.238005275607957
+"tRNA binding",1,0.243185618263946
+"transmembrane transporter activity",3,0.254016954267874
+"guanyl-nucleotide exchange factor activity",1,0.270276798193189
+"translation factor activity, RNA binding",1,0.270276798193189
+"translation regulator activity, nucleic acid binding",1,0.278067117812204
+"magnesium ion binding",1,0.278067117812204
+"transporter activity",3,0.283096018263502
+"endopeptidase activity",1,0.403826947038887
+"GTPase regulator activity",1,0.444217886429688
+"nucleoside-triphosphatase regulator activity",1,0.444217886429688
+"phospholipid binding",1,0.444217886429688
+"translation regulator activity",1,0.446943193164677
+"molecular function regulator activity",2,0.502847554686948
+"chromatin binding",1,0.502847554686948
+"lipid binding",1,0.519733838859818
+"molecular function activator activity",1,0.545373275169166
+"transcription cis-regulatory region binding",1,0.547256520272577
+"transcription regulatory region nucleic acid binding",1,0.547256520272577
+"DNA-binding transcription factor activity",1,0.571582461171036
+"sequence-specific double-stranded DNA binding",1,0.635692517461965
+"kinase activity",1,0.636844984975416
+"ATP hydrolysis activity",1,0.671048941928851
+"transcription regulator activity",1,0.69373020984912
+"double-stranded DNA binding",1,0.69373020984912
+"sequence-specific DNA binding",1,0.712552807206207
+"enzyme regulator activity",1,0.734252108471883
+"ATP-dependent activity",1,0.738342565662667
+"ribonucleoside triphosphate phosphatase activity",1,0.738342565662667
+"pyrophosphatase activity",1,0.744117689655835
+"hydrolase activity, acting on acid anhydrides",1,0.744117689655835
+"hydrolase activity, acting on acid anhydrides, in phosphorus-containing anhydrides",1,0.744117689655835
+"transferase activity, transferring phosphorus-containing groups",1,0.744117689655835

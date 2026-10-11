@@ -1,22 +1,24 @@
 "Description","Count","p.adjust"
-"Ribosome",11,1.22508712407126e-05
-"Glycolysis / Gluconeogenesis",5,0.000991087487194472
-"Carbon metabolism",6,0.00244187675653134
-"Methane metabolism",3,0.00751044608693283
-"Biosynthesis of amino acids",4,0.0971214251580931
-"Citrate cycle (TCA cycle)",2,0.106847747121145
-"Biosynthesis of secondary metabolites",7,0.116038244247769
-"Pyruvate metabolism",2,0.204085191092454
-"Propanoate metabolism",1,0.295535641672275
-"Oxidative phosphorylation",2,0.326967580988604
-"Carbon fixation by Calvin cycle",1,0.326967580988604
-"Fructose and mannose metabolism",1,0.326967580988604
-"Base excision repair",1,0.326967580988604
-"Pentose phosphate pathway",1,0.333039787563449
-"Glycine, serine and threonine metabolism",1,0.333039787563449
-"Longevity regulating pathway - multiple species",1,0.382631699490624
-"RNA degradation",1,0.521697149152246
-"Nucleocytoplasmic transport",1,0.521697149152246
-"Endocytosis",1,0.563548123408935
-"Spliceosome",1,0.567801267533958
-"Protein processing in endoplasmic reticulum",1,0.569782464927556
+"Ribosome",8,0.00180188365361557
+"Carbon metabolism",5,0.0148180864450543
+"Citrate cycle (TCA cycle)",3,0.0148180864450543
+"Glycolysis / Gluconeogenesis",3,0.0570239349264852
+"Biosynthesis of secondary metabolites",7,0.100765814371223
+"Oxidative phosphorylation",3,0.100765814371223
+"2-Oxocarboxylic acid metabolism",2,0.153305754145298
+"Biosynthesis of amino acids",3,0.237583024916788
+"Lipoic acid metabolism",1,0.244765060782661
+"Propanoate metabolism",1,0.272134904848629
+"Terpenoid backbone biosynthesis",1,0.293078253497928
+"Carbon fixation by Calvin cycle",1,0.293078253497928
+"Fructose and mannose metabolism",1,0.293078253497928
+"Base excision repair",1,0.293078253497928
+"Methane metabolism",1,0.293078253497928
+"Pentose phosphate pathway",1,0.293078253497928
+"Glyoxylate and dicarboxylate metabolism",1,0.293078253497928
+"Longevity regulating pathway - multiple species",1,0.350375253771592
+"Pyruvate metabolism",1,0.430754565646541
+"Nucleocytoplasmic transport",1,0.487314063495682
+"Spliceosome",1,0.50684546432283
+"Endocytosis",1,0.50684546432283
+"Protein processing in endoplasmic reticulum",1,0.543654565042876

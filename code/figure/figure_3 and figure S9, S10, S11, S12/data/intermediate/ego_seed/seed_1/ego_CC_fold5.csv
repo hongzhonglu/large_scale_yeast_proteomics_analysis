@@ -1,0 +1,43 @@
+"Description","Count","p.adjust"
+"cytosolic ribosome",8,4.19562474164076e-06
+"ribosome",8,6.09745009499026e-05
+"ribosomal subunit",7,0.000224406198713348
+"cytosolic large ribosomal subunit",4,0.00367003010369753
+"cytosolic small ribosomal subunit",3,0.0112673261657542
+"large ribosomal subunit",4,0.0112673261657542
+"small ribosomal subunit",3,0.0311516070462813
+"mitochondrial intermembrane space",2,0.125087808363208
+"organelle envelope lumen",2,0.126907584438036
+"mitochondrial membrane",4,0.21226005811019
+"mitochondrial outer membrane",2,0.21226005811019
+"organelle outer membrane",2,0.21226005811019
+"outer membrane",2,0.21226005811019
+"respiratory chain complex",1,0.21226005811019
+"mitochondrial envelope",4,0.21226005811019
+"oxidoreductase complex",1,0.223702164087912
+"preribosome",2,0.304802699776193
+"nucleolus",3,0.327928443481079
+"transmembrane transporter complex",1,0.327928443481079
+"small-subunit processome",1,0.374490065900868
+"lipid droplet",1,0.395749952129038
+"transporter complex",1,0.395749952129038
+"mitochondrial inner membrane",2,0.424680494417155
+"organelle inner membrane",2,0.451279617552583
+"90S preribosome",1,0.480290142086898
+"cytoplasmic stress granule",1,0.486535813059283
+"extracellular region",1,0.519053516075148
+"fungal-type cell wall",1,0.519053516075148
+"cell wall",1,0.519053516075148
+"external encapsulating structure",1,0.519053516075148
+"ribonucleoprotein granule",1,0.519053516075148
+"cytoplasmic ribonucleoprotein granule",1,0.519053516075148
+"fungal-type vacuole membrane",1,0.682064690968263
+"lytic vacuole membrane",1,0.682064690968263
+"supramolecular complex",1,0.737273276362569
+"Golgi apparatus",1,0.737273276362569
+"vacuolar membrane",1,0.737273276362569
+"membrane protein complex",1,0.737273276362569
+"intracellular protein-containing complex",1,0.813195813513683
+"storage vacuole",1,0.813195813513683
+"lytic vacuole",1,0.813195813513683
+"fungal-type vacuole",1,0.813195813513683

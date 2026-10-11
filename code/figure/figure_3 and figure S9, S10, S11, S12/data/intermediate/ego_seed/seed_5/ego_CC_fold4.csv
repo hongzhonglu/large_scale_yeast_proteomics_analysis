@@ -1,0 +1,83 @@
+"Description","Count","p.adjust"
+"cytosolic large ribosomal subunit",7,2.40725682515012e-06
+"cytosolic ribosome",8,4.09572891445884e-06
+"large ribosomal subunit",7,1.32625039069502e-05
+"ribosomal subunit",8,2.51304673313726e-05
+"ribosome",8,4.76181816942096e-05
+"fungal-type cell wall",3,0.120777845088462
+"cell wall",3,0.120777845088462
+"external encapsulating structure",3,0.120777845088462
+"ATPase complex",2,0.227032766520955
+"proton-transporting two-sector ATPase complex, catalytic domain",1,0.227032766520955
+"Swr1 complex",1,0.227032766520955
+"vacuolar proton-transporting V-type ATPase complex",1,0.227032766520955
+"proton-transporting V-type ATPase complex",1,0.227032766520955
+"cation-transporting ATPase complex",1,0.227032766520955
+"ATPase dependent transmembrane transport complex",1,0.227032766520955
+"SWI/SNF complex",1,0.227032766520955
+"Ino80 complex",1,0.227032766520955
+"NuA4 histone acetyltransferase complex",1,0.227032766520955
+"H4/H2A histone acetyltransferase complex",1,0.227032766520955
+"H4 histone acetyltransferase complex",1,0.227032766520955
+"storage vacuole",4,0.259101294373201
+"lytic vacuole",4,0.259101294373201
+"fungal-type vacuole",4,0.259101294373201
+"extracellular region",2,0.259101294373201
+"phagophore assembly site membrane",1,0.278116238945908
+"INO80-type complex",1,0.278116238945908
+"nucleoid",1,0.278116238945908
+"mitochondrial nucleoid",1,0.278116238945908
+"proton-transporting two-sector ATPase complex",1,0.304835372136959
+"peroxisomal membrane",1,0.35172436434237
+"microbody membrane",1,0.35172436434237
+"histone acetyltransferase complex",1,0.365124367016318
+"transmembrane transporter complex",1,0.365124367016318
+"phagophore assembly site",1,0.365124367016318
+"protein acetyltransferase complex",1,0.380049289803695
+"acetyltransferase complex",1,0.380049289803695
+"histone deacetylase complex",1,0.380049289803695
+"mitochondrial membrane",3,0.380049289803695
+"fungal-type vacuole membrane",2,0.380049289803695
+"lytic vacuole membrane",2,0.380049289803695
+"SWI/SNF superfamily-type complex",1,0.38467989741276
+"lipid droplet",1,0.38467989741276
+"cytosolic small ribosomal subunit",1,0.38467989741276
+"transporter complex",1,0.38467989741276
+"mitochondrial matrix",2,0.38467989741276
+"mitochondrial intermembrane space",1,0.38467989741276
+"mitochondrial envelope",3,0.386022328404663
+"organelle envelope lumen",1,0.389187275253039
+"mitochondrial inner membrane",2,0.389187275253039
+"organelle inner membrane",2,0.422913470163563
+"side of membrane",1,0.43828985849982
+"vacuolar membrane",2,0.43828985849982
+"cytoplasmic stress granule",1,0.460275918171928
+"small ribosomal subunit",1,0.460275918171928
+"cellular bud tip",1,0.460275918171928
+"mitochondrial outer membrane",1,0.48292135420882
+"organelle outer membrane",1,0.48292135420882
+"outer membrane",1,0.48292135420882
+"mating projection tip",1,0.48292135420882
+"mating projection",1,0.48292135420882
+"plasma membrane bounded cell projection",1,0.48292135420882
+"cell projection",1,0.48292135420882
+"cell tip",1,0.48292135420882
+"cell pole",1,0.48292135420882
+"nucleolus",2,0.48292135420882
+"ribonucleoprotein granule",1,0.48292135420882
+"cytoplasmic ribonucleoprotein granule",1,0.48292135420882
+"peroxisome",1,0.48292135420882
+"microbody",1,0.48292135420882
+"nuclear chromosome",1,0.543504468952788
+"nucleoplasm",1,0.596179133748844
+"cellular bud",1,0.682847328011103
+"chromatin",1,0.682847328011103
+"supramolecular complex",1,0.689429984819032
+"site of polarized growth",1,0.704073226067768
+"membrane protein complex",1,0.719719150734889
+"endoplasmic reticulum membrane",1,0.801982798404883
+"endoplasmic reticulum subcompartment",1,0.801982798404883
+"nuclear outer membrane-endoplasmic reticulum membrane network",1,0.801982798404883
+"transferase complex",1,0.801982798404883
+"intracellular protein-containing complex",1,0.813604571786499
+"organelle subcompartment",1,0.820899544937382

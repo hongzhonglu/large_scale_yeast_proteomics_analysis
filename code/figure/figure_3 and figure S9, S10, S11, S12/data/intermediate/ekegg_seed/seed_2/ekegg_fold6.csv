@@ -1,20 +1,24 @@
 "Description","Count","p.adjust"
-"Carbon metabolism",8,2.64766670815148e-05
-"Glycolysis / Gluconeogenesis",6,2.95840888151432e-05
-"Ribosome",7,0.00679558872029893
-"Biosynthesis of secondary metabolites",9,0.00696747426075659
-"Citrate cycle (TCA cycle)",3,0.00696747426075659
-"Biosynthesis of amino acids",5,0.0086903786493894
-"Carbon fixation by Calvin cycle",2,0.0331160484923737
-"Methane metabolism",2,0.0437556293625489
-"Longevity regulating pathway - multiple species",2,0.0793247893226119
-"Pyruvate metabolism",2,0.125772366369933
-"Propanoate metabolism",1,0.197276814334538
-"Endocytosis",2,0.197276814334538
-"Oxidative phosphorylation",2,0.197276814334538
-"Spliceosome",2,0.20623126444014
-"Protein processing in endoplasmic reticulum",2,0.218256079099511
-"Base excision repair",1,0.221470654633111
-"Glycine, serine and threonine metabolism",1,0.245426137757015
-"RNA degradation",1,0.417804176033972
-"Nucleocytoplasmic transport",1,0.417804176033972
+"Glycolysis / Gluconeogenesis",5,0.000655429158789574
+"Carbon metabolism",6,0.000979939386597239
+"Citrate cycle (TCA cycle)",3,0.00932192909639985
+"Biosynthesis of secondary metabolites",8,0.0109261163133855
+"Pyruvate metabolism",3,0.0250286400190931
+"Ribosome",5,0.0337797356891009
+"Biosynthesis of amino acids",4,0.0337797356891009
+"2-Oxocarboxylic acid metabolism",2,0.100846330896707
+"Valine, leucine and isoleucine biosynthesis",1,0.186545551303865
+"Lipoic acid metabolism",1,0.186545551303865
+"Fatty acid biosynthesis",1,0.186545551303865
+"Propanoate metabolism",1,0.190241498897483
+"Oxidative phosphorylation",2,0.190241498897483
+"Carbon fixation by Calvin cycle",1,0.219466901168629
+"Pantothenate and CoA biosynthesis",1,0.219466901168629
+"Fatty acid metabolism",1,0.219466901168629
+"Methane metabolism",1,0.231190035050678
+"Longevity regulating pathway - multiple species",1,0.306766764080714
+"RNA degradation",1,0.432815512652053
+"Nucleocytoplasmic transport",1,0.432815512652053
+"Spliceosome",1,0.453114239088709
+"Endocytosis",1,0.453114239088709
+"Protein processing in endoplasmic reticulum",1,0.489325356840662
